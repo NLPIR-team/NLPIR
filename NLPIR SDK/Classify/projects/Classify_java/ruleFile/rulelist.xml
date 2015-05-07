@@ -1,0 +1,37 @@
+﻿<certainty>0.90</certainty>
+<rules>
+<rulenum>2</rulenum>
+<rule id="0">
+	<classid>军事</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>2</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>军委 武警</value>
+		</subrule>
+		<subrule id="2">
+			<operator>NOT/TEXT/1</operator>
+			<value>解放军 人民军队</value>
+		</subrule>
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+</rule>
+
+<rule id="1">
+	<classid>政治</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>习近平</value>
+		</subrule>
+	</subrules>
+	<toprule>OR</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+</rule>
+</rules>
