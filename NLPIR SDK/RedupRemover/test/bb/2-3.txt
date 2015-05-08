@@ -1,0 +1,127 @@
+iBatis框架batch处理优化 (转)
+为什么要做batch处理    
+    这个问题我就不解释了，因为我想你们肯定能比
+我解释的更好！如果你真的不知道，那就到Google上去搜
+索一下吧?
+Oracle回滚段
+    这个问题偶也不很明白，只是大概有个了解，如
+果你是这方面的专家，或者对这方面有比较深的理解，
+别忘了跟偶分享哦?
+在JDBC中如何做batch处理
+    JDBC提供了数据库batch处理的能力，在数据大批量操作（新增、删除等）的情况下可以大幅度提升系统的性能。我以前接触的一个项目，在没有采用batch处理时，删除5万条数据大概要半个小时左右，后来对系统进行改造，采用了batch处理的方式，删除5万条数据基本上不会超过1分钟。看一段JDBC代码：
+
+// 关闭自动执行
+con.setAutoCommit(false);
+Statement stmt = con.createStatement();
+stmt.addBatch("INSERT INTO employees VALUES (1000, 'Joe Jones')");
+stmt.addBatch("INSERT INTO departments VALUES (260, 'Shoe')");
+stmt.addBatch("INSERT INTO emp_dept VALUES (1000, 260)");
+// 提交一批要执行的更新命令
+int[] updateCounts = stmt.executeBatch();
+    本例中禁用了自动执行模式，从而在调用 Statement.executeBatch() 时可以防止 JDBC 执行事务处理。禁用自动执行使得应用程序能够在发生错误及批处理中的某些命令不能执行时决定是否执行事务处理。因此，当进行批处理更新时，通常应该关闭自动执行。
+    在JDBC 2.0 中，Statement 对象能够记住可以一起提交执行的命令列表。创建语句时，与它关联的命令列表为空。Statement.addBatch() 方法为调用语句的命令列表添加一个元素。如果批处理中包含有试图返回结果集的命令，则当调用 Statement. executeBatch() 时，将抛出 SQLException。只有 DDL 和 DML 命令（它们只返回简单的更新计数）才能作为批处理的一部分来执行。如果应用程序决定不提交已经为某语句构 造的命令批处理，则可以调用方法 Statement.clearBatch()（以上没有显示）来重新设置批处理。
+    Statement.executeBatch() 方法将把命令批处理提交给基本 DBMS 来执行。命令的执行将依照在批处理中的添加顺序来进行。ExecuteBatch() 为执行的命令返回更新计数数组。数组中对应于批处理中的每个命令都包含了一项，而数组中各元素依据命令的执行顺序（这还是和命令的最初添加顺序相同）来排序。调用executeBatch() 将关闭发出调用的 Statement 对象的当前结果集（如果有一个结果集是打开的）。executeBatch() 返回后，将重新将语句的内部批处理命令列表设置为空。
+    如果批处理中的某个命令无法正确执行，则 ExecuteBatch() 将抛出BatchUpdateException。可以调用BatchUpdateException.getUpdateCounts() 方法来为批处理中成功执行的命令返回更新计数的整型数组。因为当有第一个命令返回错误时，Statement.executeBatch() 就中止，而且这些命令是依据它们在批处理中的添加顺序而执行的。所以如果 BatchUpdateException.getUpdateCounts() 所返回的数组包含 N 个元素，这就意味着在调用 executeBatch() 时批处理中的前 N 个命令被成功执行。用PreparedStatement 可以象下面这样写代码：
+
+// 关闭自动执行
+con.setAutoCommit(false);
+PreparedStatement stmt = con.prepareStatement("INSERT INTO employees VALUES (?, ?)");
+stmt.setInt(1, 2000);
+stmt.setString(2, "Kelly Kaufmann");
+stmt.addBatch();
+???
+// 提交要执行的批处理
+int[] updateCounts = stmt.executeBatch();
+iBatis框架对batch处理的支持
+    iBatis框架对batch处理提供了很好的支持，底层的实现方式就是JDBC。下面看一段示例代码：
+
+    private void execute(SqlMapClient client){
+        if(log.isDebugEnabled()){
+            log.debug("execute start...");
+        }
+        client.startBatch();
+        
+        for(int i=0;i<2000;i++){
+            client.delete("delete from order where id=?",i);
+            
+        }
+        client.executeBatch();
+        if(log.isDebugEnabled()){
+            log.debug("execute end...");
+        }
+    }
+iBatis框架做batch处理的问题
+    在一个batch中只能对一个表进行操作，例如插入或删除。当有多个表需要处理时，只能放在多个batch中进行处理。看下面的一段代码：
+
+    private void execute(int from,int to,List list){
+        if(log.isDebugEnabled()){
+            log.debug("STRGHousekeepTask execute start...");
+        }
+        HKSqlMapWrapper sqlWrapper = HKSqlMapWrapper.newInstance();
+        sqlWrapper.startBatch();
+        
+        for(int i=from;i<to;i++){
+            sqlWrapper.delete(STRGHousekeepConstants.DELETE_STRG_CNTR_BL,list.get(i));
+            sqlWrapper.delete(STRGHousekeepConstants.DELETE_STRG_CNTR,list.get(i));
+            sqlWrapper.delete(STRGHousekeepConstants.DELETE_CNTR,list.get(i));
+        }
+        sqlWrapper.execBatch();
+        if(log.isDebugEnabled()){
+            log.debug("STRGHousekeepTask execute end...");
+        }
+    }
+                                            代码1
+    这段代码的目的就是要删除数据库中3个表的数据，sqlWrapper是iBatis的SqlMapClient的一个包装器，主要是封状对事物的控制。当批次（既to-from的值）很小的时候，这样写是没有问题的。尽管这段代码的本意是要享受batch处理带来的好处，但是事实上这段代码并不会真正达到预期的效果，至于原因，我们一会在进行分析?。我们先来看下面一段代码：
+
+    private void execute(int from,int to,List list){
+        if(log.isDebugEnabled()){
+            log.debug("STRGHousekeepTask execute start...");
+        }
+        HKSqlMapWrapper sqlWrapper = HKSqlMapWrapper.newInstance();
+        sqlWrapper.startBatch();
+        
+        for(int i=from;i<to;i++){
+            sqlWrapper.delete(STRGHousekeepConstants.DELETE_STRG_CNTR_BL,list.get(i));
+        }
+        for(int i=from;i<to;i++){
+            sqlWrapper.delete(STRGHousekeepConstants.DELETE_STRG_CNTR,list.get(i));
+        }
+        for(int i=from;i<to;i++){
+            sqlWrapper.delete(STRGHousekeepConstants.DELETE_CNTR,list.get(i));
+        }
+        sqlWrapper.execBatch();
+        if(log.isDebugEnabled()){
+            log.debug("STRGHousekeepTask execute end...");
+        }
+    }
+                                            代码2
+    正如你所看到的，和代码1相比它只是做了3次循环，每个循环执行一个表的操作。虽然麻烦，但是却真正的享受到了batch处理的好处！下面是时候解释一下这两段代码幕后的秘密了?。     在前面的章节里已经解释了JDBC如何做batch处理，如果还不清楚的话请查看前面的章节。要解释这两段代码里面的玄机，还得看一段代码?下面的代码是从iBatis源码中提取的：
+
+    public void addBatch(RequestScope request, Connection conn, String sql, Object[] parameters  ) {
+      PreparedStatement ps = null;
+      if (currentSql != null
+          && sql.hashCode() == currentSql.hashCode()
+          && sql.length() == currentSql.length()) {
+        int last = statementList.size() - 1;
+        ps = (PreparedStatement) statementList.get(last);
+      } else {
+        ps = conn.prepareStatement(sql);
+        currentSql = sql;
+        statementList.add(ps);
+      }
+      request.getParameterMap().setParameters(request, ps, parameters);
+      ps.addBatch();
+      size++;
+    }
+    这就是iBatis中batch处理的做法，在这里不想对这段代码做一一解释，有兴趣的可以自己查看一下iBatis的源码，我们只关心它如何对一条语句进行处理。参数sql是要进行batch处理的语句，parameters是sql的参数列表，如果sql和实例变量currentSql相等，则从statementList列表里面得到一个PreparedStatement，然后进行batch处理，如果不等就新生成一个PreparedStatement对象，并把它加到statementList列表里面，并把当前sql的值附给currentSql，下次传递来sql的时候就会和这个新的currentSql比较。这就是为什么在一个循环里面只对一个表进行处理的原因了。如果在一个循环里面对多个表进行处理，每次传给addBatch方法的sql都是新的，都会生成一个新的PreparedStatement，所以也就享受不到batch处理带来的好处了！    
+   按照代码1的方式执行程序，当batch size很小的时候尽管享受不到batch处理带来的好处，但是也不至于会出什么大问题，但是当batch size值很大的时候（我在程序中试验过1000-5000范围），数据库就会报错了！错误是"too many courses"，原因是每生成一个PreparedStatement实例，就会相应的生成一个course。假设batch size是5000，要删除10个表的数据，那么产生的course的数目就是5000*10=50000，这对数据库来说是不能接受 的，所以就会报错。
+    如果按照代码2的的方式写程序肯定是没有问题的，只会生成10个PreparedStatement实例，相应的也只会生成10个course，这样就真正的享受到了batch处理带来的好处。但是，作为一名“挑剔”的程序员，我们怎么能容忍这样的写法呢？明明一个循环就可以搞定，现在要分成10个循环来做，非但效率上存在问题，大量重复的代码也让我们的程序显得很没“水准”。
+    既然第一种方式不能享受batch处理带来的好处，并且还会出错，第二种方式代码又非常的丑陋，那么我们就得想个办法来解决这个问题了。请记住：解决问题的过程就是一种享受?。
+修改底层代码，支持多表batch处理
+    既然出问题的地方找到了，那么解决它就很容易了。什么,你说还不知道问题出在哪？My God! Kill me ,pleale?！ 
+    在这里分享一下我的思路，把每次传近来的sql作为key、把生成的PreparedStatement实例作为value放在一个Map里以后每次传来sql时先判断在Map里有没有这个key，如果有就直接拿到它的value作为PreparedStatement实例，如果没有就新生成一个PreparedStatement实例并把它放到Map里。这样有几个sql就有几个PreparedStatement 实例，和写多个循环效果是一样的。但写一个循环会更爽?！ 
+后记：
+      在一般的项目中做batch处理的地方似乎都是先取得一个条件列表list，然后直接根据这个list的大小作为batch　size做一个循环。如果你在这个循环里同时进行多个表的ＣＵＤ操作，那么这里就有一个安全隐患存在。当你的list不太大的时候，你怎么测试程序它都不会出问题，尽管可能会有执行效率上的问题，但是当突然有一天这个list变的很大的时候，你的程序可能就突然“罢工”了。 
+　　对于这个问题，我在上面的文档里提出了改进batch处理的方法，另外还有需要注意的一个问题就是这个list的大小的问题。如果这个list的size有可能会很大，那么我们应该考虑根据这个list的大小“分批”执行。因为并不是batch　size越大效果就越好，如果batch的size很大的话很可能产生效率和性能上的问题。至于这个batch　size的值为多少比较合适就没有一个固定的说法，这个可能要取决于你所使用的服务器和数据库的性能了，另外不同厂商的ＪＤＢＣ驱动也会有不同的性能表现，你可以向ＤＢＡ咨询相关的问题。 
+　　我们应该尽可能把问题扼杀在摇篮之中。除了改进iＢatis的batch处理机智外，还应该适当的规划batch　size大小，以避免发生问题，提高执行效率。 
+　　上述是我个人的观点，有些地方可能不是很准确。如果你的程序中存在类似的问题，可以适当参考一下我的意见，最好还是向专业人士咨询。
