@@ -1,8 +1,0 @@
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\bin\Debug\Classifier.exe.config
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\bin\Debug\Classifier.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\bin\Debug\Classifier.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\bin\Debug\Global.dll
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\bin\Debug\Global.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\obj\Debug\Classifier.csprojResolveAssemblyReference.cache
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\obj\Debug\Classifier.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Classifier\obj\Debug\Classifier.pdb
