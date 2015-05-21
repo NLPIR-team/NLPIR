@@ -5,6 +5,7 @@ NLPIR官方网站：<http://www.nlpir.org/>
 NLPIR是一套专门针对原始文本集进行处理和加工的软件，提供了中间件处理效果的可视化展示，也可以作为小规模数据的处理加工工具。用户可以使用该软件对自己的数据进行处理。
 >NLPIR分词系统前身为2000年发布的ICTCLAS词法分析系统，从2009年开始，为了和以前工作进行大的区隔，并推广NLPIR自然语言处理与信息检索共享平台，调整命名为NLPIR分词系统。</br>
 NLPIR 系统支持多种编码（GBK 编码、UTF8 编码、BIG5 编码）、多种操作系统（Windows, Linux， FreeBSD 等所有主流操作系统）、多种开发语言与平台（包括：C/C++/C#,Java,Python,Hadoop 等）。
+------
 ##NLPIR工程包简介
 License--七天授权文件</br>
 NLPIR_Demo--组件功能演示demo（NLPIR大数据搜索与挖掘共享开发平台）</br>
@@ -47,6 +48,7 @@ NLPIR_SDK--13个组件包，提供了用于技术二次开发的基础工具集�
 
 11. 编码自动识别与转换
 >自动识别文档内容的编码，并进行自动转换，目前支持Unicode/BIG5/UTF-8等编码自动转换为简体的GBK，同时将繁体BIG5和繁体GBK进行繁简转化。 
+------
 ##下载说明（Download Instructions）
 >如何在github上下载单个文件夹</br>
 例如，你只需要“classify”文件夹下的代码，先打开 ch03, 其 URL 为: "https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK"然后将 /tree/master/ 换成 /trunk/ 。</br>
