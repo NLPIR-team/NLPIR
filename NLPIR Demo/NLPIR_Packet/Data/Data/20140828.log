@@ -1,0 +1,52 @@
+[2014-08-28 09:20:33]	CLicense::IsValid started!
+[2014-08-28 09:20:33]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 09:20:33]	IsDateEffective started!
+[2014-08-28 09:20:33]	IsDateEffective true!
+[2014-08-28 09:20:34]	NLPIR_Init success!
+[2014-08-28 09:21:36]	start GetActiveInstance and g_pLicense=38433712,g_pCoreDict=64540736
+[2014-08-28 09:21:36]	CLicense::IsValid started!
+[2014-08-28 09:21:36]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 09:21:36]	IsDateEffective started!
+[2014-08-28 09:21:36]	IsDateEffective true!
+[2014-08-28 09:21:36]	IsDateEffective true!Original input=解放军
+ result=解放军 
+[2014-08-28 09:22:36]	CLicense::IsValid started!
+[2014-08-28 09:22:36]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 09:22:36]	IsDateEffective started!
+[2014-08-28 09:22:36]	IsDateEffective true!
+[2014-08-28 09:22:36]	NLPIR_Init success!
+[2014-08-28 09:22:46]	start GetActiveInstance and g_pLicense=9532336,g_pCoreDict=62640192
+[2014-08-28 09:22:46]	CLicense::IsValid started!
+[2014-08-28 09:22:46]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 09:22:46]	IsDateEffective started!
+[2014-08-28 09:22:46]	IsDateEffective true!
+[2014-08-28 09:22:46]	IsDateEffective true!Original input=解放军
+ result=解放军 
+[2014-08-28 09:23:29]	g_nNLPIRUsed=0
+[2014-08-28 09:24:06]	CLicense::IsValid started!
+[2014-08-28 09:24:06]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 09:24:06]	IsDateEffective started!
+[2014-08-28 09:24:06]	IsDateEffective true!
+[2014-08-28 09:24:06]	NLPIR_Init success!
+[2014-08-28 09:24:35]	start GetActiveInstance and g_pLicense=12809136,g_pCoreDict=62292032
+[2014-08-28 09:24:35]	CLicense::IsValid started!
+[2014-08-28 09:24:35]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 09:24:35]	IsDateEffective started!
+[2014-08-28 09:24:35]	IsDateEffective true!
+[2014-08-28 09:24:35]	IsDateEffective true!Original input=解放军
+ result=解放军 
+[2014-08-28 09:25:43]	start GetActiveInstance and g_pLicense=12809136,g_pCoreDict=62292032
+[2014-08-28 09:25:43]	start GetActiveInstance and g_pLicense=12809136,g_pCoreDict=62292032Original input=解放军
+ result=解放军 
+[2014-08-28 09:26:50]	g_nNLPIRUsed=0
+[2014-08-28 11:39:42]	CLicense::IsValid started!
+[2014-08-28 11:39:42]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 11:39:42]	IsDateEffective started!
+[2014-08-28 11:39:42]	IsDateEffective true!
+[2014-08-28 11:39:42]	NLPIR_Init success!
+[2014-08-28 11:41:23]	CLicense::IsValid started!
+[2014-08-28 11:41:23]	m_data.licence_type==LT_TRIAL started!
+[2014-08-28 11:41:23]	IsDateEffective started!
+[2014-08-28 11:41:23]	IsDateEffective true!
+[2014-08-28 11:41:23]	NLPIR_Init success!
+[2014-08-28 11:41:54]	g_nNLPIRUsed=0
