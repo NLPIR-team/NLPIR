@@ -51,7 +51,7 @@ NLPIR_SDK--13个组件包，提供了用于技术二次开发的基础工具集�
 
 ##下载说明（Download Instructions）
 >如何在github上下载单个文件夹</br>
-例如，你只需要“NLPIR SDK”中“classify”文件夹下的代码，先打开 classify, 其 URL 为: "https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/Classify"然后将 /tree/master/ 换成 /trunk/ 。</br>
+例如，你只需要“NLPIR SDK”中“classify”文件夹下的代码，先打开 classify, 其 URL 为: "https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/Classify"  然后将   /tree/master/ 换成 /trunk/ 。</br>
 "https://github.com/NLPIR-team/NLPIR/trunk/NLPIR%20SDK/Classify"</br>
 然后, 输入:</br>
 svn checkout https://github.com/NLPIR-team/NLPIR/trunk/NLPIR%20SDK/Classify</br>
