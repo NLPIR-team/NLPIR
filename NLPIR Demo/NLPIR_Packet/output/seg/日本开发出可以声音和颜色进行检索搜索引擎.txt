@@ -1,0 +1,7 @@
+　 　 新华网/nt 东京/nsf 3月/t 2日/t 电/n   （/wkz 记者/n   钱铮/nr ）/wky 日本/nsf 研究/vn 人员/n 最/d 新/a 开发/vn 出/vf 一/m 种/q 不/d 需要/v 依赖/v 文字/n 信息/n ，/wd 而/cc 仅/d 需/v 根据/p 声音/n 、/wn 颜色/n 等/udeng 特征/n 即/d 可/v 从/p 电脑/n 或/c 网络/n 上/f 检索/v 出/vf 音乐/n 、/wn 照片/n 或/c 动画/n 的/ude1 搜索引擎/n 。/wj 
+  
+　 　 据/p 共同/b 社/n 报道/v ，/wd 这种/r 名/ng 为/v “/wyz 三/m 媒体/n 漩涡/n ”/wyy 的/ude1 独特/a 搜索引擎/n 是/vshi 日本/nsf 北海道/nsf 大学/n 研究生/n 院/n 信息/n 科学/ad 研究/v 科教/b 授/vg 长谷/nrj 山/n 美/b 纪/ng 等/udeng 人/n 开发/vn 的/ude1 。/wj 它/rr 将/p 音乐/n 的/ude1 频率/n 、/wn 音强/n 分布/vi ，/wd 动画/n 中/b 物体/n 移动/vn 的/ude1 速度/n 、/wn 场面/n 切换/vn 形式/n ，/wd 以及/cc 照片/n 色调/n 分布/vi 等/udeng 1000/m 多/m 项/q 特征/n 数据/n 化/k ，/wd 再/d 根据/p 这些/rz 数据/n 搜索/v 与/p 之/rz 匹配/vi 的/ude1 音乐/n 、/wn 照片/n 或/c 动画/n 等/udeng 。/wj 
+  
+　 　 此外/c ，/wd 新/a 搜索引擎/n 还/d 能/v 进行/vx 跨/v 媒体/n 种类/n 的/ude1 搜索/vn 。/wj 比如/v ，/wd 通过/p 音乐/n 搜索/vn 照片/n 或者/c 利用/v 动画/n 搜索/vn 音乐/n 等/udeng 。/wj 
+ 
+　 　 现有/v 的/ude1 搜索引擎/n 主要/d 依靠/v 文字/n 信息/n 进行/vx 检索/vn 。/wj 然而/c ，/wd 人们/n 在/p 搜索/vn 音乐/n 和/cc 图像/n 文件/n 时/ng ，/wd 常/d 因/p 关键词/n 使用/v 不当/a 而/cc 检索/vn 失败/vn 。/wj 新/a 搜索引擎/n 则/d 有助/v 提高/v 搜索/v 的/ude1 成功率/n 。/wj 

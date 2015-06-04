@@ -1,0 +1,9 @@
+　 　 中新网/nt 11月/t 27日/t 电/n   据/p 香港/ns 《/wkz 文汇报/nz 》/wky 援引/v 外电/n 消息/n 称/v ，/wd 日本/nsf 一/m 证券/n 公司/n 日前/t 发售/v 了/ule 由/p 计算机/n 独立/ad 判断/v 进行/vx 股票/n 交易/vn 的/ude1 “/wyz 日本/nsf 股/n 机械人/n 炒股/vi 基金/n ”/wyy ，/wd 没/d 有/vyou 感情/n 的/ude1 炒股/vn 机械人/n 能/v 避免/v 因/p 心理/n 因素/n 而/cc 错失/v 机会/n 。/wj 
+  
+　 　 日本/nsf MONEX/n 证券/n 公司/n 今年/t 7月/t 发售/v 了/ule 由/p 计算机/n 独立/ad 判断/v 进行/vx 股票/n 交易/vn 的/ude1 “/wyz 日本/nsf 股/n 机械人/n 炒股/vi 基金/n ”/wyy 。/wj 该/rz 基金/n 由/p 机械人/n 按照/p 事先/d 设/v 好/a 的/ude1 规则/n ，/wd 以东/f 证/n 主/ag 板/ng 中/f 市值/n 总额/n 排名/vi 前/f 500/m 的/ude1 企业/n 为/p 对象/n 选/v 股/q ，/wd 再/d 根据/p 企业/n 业绩/n 和/cc 股价/n 动向/n 进行/vx 操作/vn ，/wd 是/vshi 一个/mq 追求/v 绝对/a 利益/n 的/ude1 积极/a 型/k 基金/n 。/wj 
+  
+　 　 其中/rz ，/wd 由/p “/wyz 主/ag 机械人/n ”/wyy 统管/v 投资/vn 组合/vn 、/wn 买卖/vn 委托/vn 、/wn 风险/n 管理/vn 等/udeng ，/wd 而/cc 其/rz 下/f 的/ude1 “/wyz 频繁/a 交易/n 型/k ”/wyy 、/wn “/wyz 市场/n 追随/v 型/k ”/wyy 、/wn “/wyz 逆向/d 投资/v 型/k ”/wyy 、/wn “/wyz 图表/n 分析/v 型/k ”/wyy 这/rzv 4/m 个/q 各/rz 具/vg 特长/n 的/ude1 应用/vn 机械人/n 则/c 根据/p 具体/a 行情/n 发挥/v 作用/n 。/wj 
+  
+　 　 “/wyz 炒股/vi 机械人/n ”/wyy 是/vshi 早/a 稻田/n 大学/n 2004年/t 启动/v 的/ude1 产/v 学/v 合作/vn 项目/n ，/wd 并/cc 征集/v 了/ule 采用/v 最/d 先进/a “/wyz 系统/n 下/f 单/d ”/wyy 的/ude1 程序/n 。/wj 该/rz 项目/n 实施/v 了/ule 竞赛/vn 形式/n 的/ude1 虚拟/vn 交易/vn ，/wd 并/cc 从中/d 挑选/v 了/ule 最/d 优秀/a 的/ude1 程序/n 。/wj 虚拟/vn 竞赛/vn 共有/v 2万/m 余/m 人/n 参加/v ，/wd 当前/t 启用/v 的/ude1 4/m 个/q 机械人/n 便是/v 在/p 竞赛/vn 中/f 脱颖而出/vl 的/ude1 超级/b 机械人/n 。/wj 但是/c ，/wd 当前/t 机械人/n 也/d 可能/v 会/v 根据/p 成绩/n 变化/vn ，/wd 被/pbei 排/v 在/p 后面/f 的/ude1 机械人/n 顶替/v 。/wj 
+  
+　 　 没/d 有/vyou 感情/n 的/ude1 炒股/vn 机械人/n 能/v 避免/v 因/p 心理/n 因素/n 而/cc 错失/v 机会/n ，/wd 但/c 有/vyou 基金/n 经理/n 表示/v ，/wd “/wyz 股票/n 的/ude1 大局/n 行情/n 观/vg 很/d 重要/a ，/wd 对/p 业绩/n 等/udeng 仅/d 靠/v 数字/n 无法/vd 估量/v 的/ude1 要素/n 进行/vx 定性分析/nl 也/d 不可或缺/al 。/wj 在/p 当前/t 剧烈/ad 变动/v 的/ude1 经济/n 形势/n 下/f ，/wd 我/rr 愿/v 领教/v 机械人/n 能否/v 预见/v 未来/t 走势/n 。/wj ”/wyy 

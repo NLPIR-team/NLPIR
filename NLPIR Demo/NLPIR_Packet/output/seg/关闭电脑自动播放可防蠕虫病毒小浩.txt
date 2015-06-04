@@ -1,0 +1,9 @@
+　 　 东方/s 网/n 记者/n 霍世杰/nr 8月/t 19日/t 报道/v ：/wp 继/vg “/wyz 熊猫/nz 烧香/vi ”/wyy 病毒/n 之后/f ，/wd 近期/t 又/d 出现/v 了/ule 个/q 利于/v Ｕ/n 盘/qv 进行/vx 传播/vn 的/ude1 新/a 蠕虫/n 病毒/n “/wyz 小浩/nr2 ”/wyy ，/wd 被/pbei 感染/v 后/f 的/ude1 文件/n 图标/n 变为/v 一个/mq “/wyz 浩/ag ”/wyy 字/n 的/ude1 图样/n 。/wj 国家/n 计算机/n 病毒/n 应急/vn 处理/vn 中心/n 提醒/v 网友/n ，/wd 及时/ad 更新/v 杀/v 毒/n 软件/n ，/wd 并/cc 关闭/v 微/ag 软/a 的/ude1 “/wyz 自动/d 播放/v ”/wyy 功能/n 。/wj 
+  　 　 
+ 　 　 据/p 新华网/nt 消息/n ，/wd 国家/n 计算机/n 病毒/n 应急/vn 处理/vn 中心/n 通过/p 对/p 互联网/n 的/ude1 监测/vn 发现/v ，/wd 近期/t 出现/v 一/m 种/q 利用/v Ｕ/n 盘/qv 进行/vx 传播/vn 的/ude1 新/a 蠕虫/n “/wyz 小浩/nr2 ”/wyy 。/wj 该/rz 蠕虫/n 和/cc 之前/f 出现/v 的/ude1 蠕虫/n “/wyz 熊猫/nz 烧香/vi ”/wyy 具有/v 相似/a 的/ude1 特点/n ，/wd 都/d 可以/v 感染/v 可/v 执行/v 文件/n 。/wj 与/p 其/rz 不同/a 的/ude1 是/vshi ，/wd 被/pbei 感染/v 后/f 的/ude1 可/c 执行/v 文件/n 将/d 无法/v 正常/a 运行/vn 和/cc 恢复/v 。/wj 
+  　 　 
+ 　 　 蠕虫/n 运行/vn 后/f ，/wd 会/v 在/p 受/v 感染/v 计算机/n 系统/n 中/f 的/ude1 每个/r 磁盘/n 根目录/n 下/f 释放/v 两/m 个/q 病毒/n 文件/n ，/wd 文件/n 运行/vn 后/f 会/v 查找/v 系统/n 中/f 的/ude1 可/c 执行/v 文件/n ，/wd 将/p 病毒/n 文件/n 写入/v 其中/rz ，/wd 从而/c 使/v 文件/n 感染/v 成为/v 新/a 的/ude1 病毒/n 文件/n ，/wd 同时/c 被/pbei 感染/v 后/f 的/ude1 文件/n 图标/n 变为/v 一个/mq “/wyz 浩/ag ”/wyy 字/n 的/ude1 图样/n 。/wj 
+  　 　 
+ 　 　 针对/p 这/rzv 一/m 类/q 利用/v 移动/vn 存储/vn 设备/n 进行/vx 传播/vn 的/ude1 病毒/n ，/wd 国家/n 计算机/n 病毒/n 应急/vn 处理/vn 中心/n 建议/n 广大/b 计算机/n 用户/n 养成/v 使用/v Ｕ/n 盘/ng 、/wn 移动/vn 硬盘/n 等/udeng 移动/vn 储存/vn 设备/n 的/ude1 良好/a 习惯/n ，/wd 例如/v 当/p 外来/b Ｕ/n 盘/qv 接入/vn 计算机/n 系统/n 时/ng ，/wd 切/d 勿/d 双/m 击/vg 打开/v ，/wd 一定/d 要/v 先/d 经过/p 杀/v 毒/n 处理/vn ，/wd 或是/c 采用/v 具有/v Ｕ/n 盘/qv 病毒/n 免疫/vn 功能/n 的/ude1 杀/v 毒/n 软件/n 查/v 杀/v 后/f ，/wd 再/d 接入/v 计算机/n 系统/n ，/wd 另外/c ，/wd 关闭/v 微/ag 软/a 的/ude1 “/wyz 自动/d 播放/v ”/wyy 功能/n 。/wj 
+  　 　 
+ 
