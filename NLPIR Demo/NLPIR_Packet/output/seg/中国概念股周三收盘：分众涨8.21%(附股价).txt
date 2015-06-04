@@ -1,0 +1,18 @@
+美国/nsf 东部/f 时间/n 12月/t 2日/t 16:00/m (/wkz 北京/ns 时间/n 12月/t 3日/t 5:00/m )/wky 消息/n ，/wd 美/b 股/n 主要/b 股指/n 周三/t 涨跌/v 互/d 见/v ，/wd 美联储/nt 称/v 经济/n 形势/n 正/d 在/p 好转/vi ，/wd 但/c 金融/n 与/cc 能源/n 股/n 的/ude1 下跌/vi 给/p 市场/n 带来/v 压力/n 。/wj 中国/ns 概念/n 股/n 周三/t 涨跌/v 互/d 现/tg 。/wj 
+  截至/v 收盘/vi ，/wd 道琼斯/nrf 工业/n 平均/a 指数/n 下跌/vi 了/ule 18.90/m 点/qt ，/wd 至/p 10452.68/m 点/qt ，/wd 跌幅/n 为/p 0.18%/m ；/wf 纳斯达克/nz 综合/vn 指数/n 上涨/vi 了/ule 9.22/m 点/qt ，/wd 至/p 2185.03/m 点/qt ，/wd 涨幅/n 为/p 0.42%/m ；/wf 标准/n 普尔/nz 500/m 指数/n 上涨/vi 了/ule 0.38/m 点/qt ，/wd 至/p 1109.24/m 点/qt ，/wd 涨幅/n 为/p 0.03%/m 。/wj 
+  中国/ns 概念/n 股/n 周三/t 涨跌/v 互/d 现/tg ，/wd 由于/c 受/v 侨兴/nz 环球/n (/wkz Nasdaq:XING/n )/wky 1098万/m 美元/q 出售/v 侨兴/nz 通讯/n (/wkz Nasdaq:QXM/n )/wky 消息/n 影响/vn ，/wd 侨兴/nz 环球/n 和/cc 侨兴/nz 通讯/n 股价/n 周三/t 收盘/vi 分别/d 大/a 涨/vi 8.63%/m 和/cc 8.48%/m 。/wj 
+  股票/n 名称/n   股票/n 代码/n   最新/a 价/n   涨跌/v 额/n   涨跌幅/b 
+ 新浪/nz   SINA/n   46.34/m   -/wp 0.38/m   -/wp 0.81%/m 
+ CRIC/n CRIC/n 12.95/m -/wp 0.02/m -/wp 0.15%/m 
+网易/nz   NTES/n   39.77/m   +0.01/m   +0.03%/m 
+ 搜狐/nz   SOHU/n   55.00/m   -/wp 1.27/m   -/wp 2.26%/m 
+ 百度/nz   BIDU/n   434.72/m   -/wp 0.83/m   -/wp 0.19%/m 
+ 分/v 众/ag 传媒/n   FMCN/n   14.50/m   +1.10/m   +8.21%/m 
+ 盛大/b   SNDA/n   52.67/m   -/wp 0.41/m   -/wp 0.77%/m 
+ 盛大/b 游戏/n   GAME/n   10.23/m   -/wp 0.38/m   -/wp 3.58%/m 
+ 巨人/n 网络/n   GA/n   7.25/m   +0.11/m   +1.54%/m 
+ 畅游/v   CYOU/n   32.85/m   -/wp 0.18/m   -/wp 0.54%/m 
+ 第九/m 城市/n   NCTY/n   7.67/m   -/wp 0.10/m   -/wp 1.29%/m 
+ 完美/a 时空/n   PWRD/n   44.17/m   -/wp 0.94/m   -/wp 2.08%/m 
+ 携/v 程/nr1 网/n   CTRP/n   77.21/m   +1.66/m   +2.20%/m 
+ 

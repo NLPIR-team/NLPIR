@@ -1,0 +1,4 @@
+　 　 近日/t ，/wd “/wyz 代尔夫/nrf ”/wyy 恶性/b 蠕虫/n 病毒/n 正在/d 多/m 个/q 企业/n 的/ude1 局域网/n 中/f 肆虐/v 。/wj 瑞星/nz 全球/n 反/vi 病毒/n 检测/vn 网/n 发布/v 的/ude1 预警/vn 指出/v ，/wd 该/rz 病毒/n 会/v 在/p 局域网/n 发动/v ARP/nz 攻击/vn ，/wd 造成/v 局域网/n 内/f 其他/rzv 计算机/n 上网/v 时/ng 自动/d 下载/v 病毒/n 并/cc 执行/vn ，/wd 严重/a 时/ng 甚至/d 造成/v 整个/b 局域网/n 瘫痪/vi 。/wj 
+  　 　 
+ 　 　 据/p 瑞星/nz 反/vi 病毒/n 专家/n 介绍/v ，/wd “/wyz 代尔夫/nrf ”/wyy 病毒/n 运行/vn 之后/f ，/wd 会/v 自动/d 从/p 网站/n 上/f 下载/v 其他/rzv 盗/vg 号/n 木马/n ，/wd 窃取/v 用户/n 的/ude1 隐私/n 文件/n 。/wj 同时/c ，/wd 该/rz 病毒/n 还/d 会/v 下载/v WinPcap/n 等/udeng 工具/n 软件/n 来/f 对/p 局域网/n 发动/v ARP/nz 攻击/vn ，/wd 使/v 其他/rzv 用户/n 在/p 浏览/v 网页/n 时/ng 自动/d 加入/v 一个/mq 名/ng 为/v hxxp://4255.biz/n 恶意/n 网址/n 。/wj 用户/n 的/ude1 计算机/n 访问/v 该/rz 网址/n 后/f 会/v 自动/d 下载/v 病毒/n 并/cc 运行/vn 。/wj 
+  

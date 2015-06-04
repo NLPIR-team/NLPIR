@@ -1,0 +1,8 @@
+
+　 　 新华网/nt 柏林/nsf 12月/t 2日/t 电/n (/wkz 报道/v 员/q 周/nr1 谷风/nz )/wky 德国/nsf 维尔茨堡/nrf 大学/n 2日/t 发表/v 公报/n 说/v ，/wd 该校/r 生物/n 中心/n 参与/v 研制/v 出/vf 一/m 种/q 能/v 实时/n 监测/vn 农作物/n 含水量/n 的/ude1 磁性/n 传感器/n ，/wd 它/rr 有望/v 帮助/v 农民/n 远程/b 适时/ad 灌溉/v 。/wj 
+  　 　 这种/r 传感器/n 主要/d 由/p 两/m 个/q 纽扣/n 电池/n 状/ng 磁性/n 部件/n 组成/v ，/wd 其中/rz 一个/mq 部件/n 里/f 装/v 有/vyou 压/v 敏/ag 芯片/n 。/wj 只要/c 让/v 作为/v 抽查/vn 对象/n 的/ude1 一/m 片/q 作物/n 叶子/n 夹/v 在/p 这/rzv 两/m 个/q 部件/n 之间/f ，/wd 就/d 能/v 进行/vx 监测/vn 。/wj 
+  　 　 该/rz 传感器/n 的/ude1 工作/vn 原理/n 是/vshi 当/p 作物/n 叶片/n 因/p 供水/vi 充足/a 而/cc 挺立/v 时/ng ，/wd 压/v 敏/ag 芯片/n 会/v 感应/n 到/v 较/d 小/a 的/ude1 压力/n ，/wd 当/p 叶片/n 因/p 供水/vn 不足/an 而/cc 打/v 蔫/vi 时/ng ，/wd 芯片/n 会/v 记录/v 较/d 高/a 的/ude1 压力/n 。/wj 由此/d 测出/v 的/ude1 压力/n 数据/n 会/v 通过/p 数据/n 线/n 传/v 到/v 固定/v 在/p 附近/f 作物/n 茎/n 秆/ng 上/f 的/ude1 一个/mq 手机/n 大小/n 的/ude1 发射器/n 中/f ，/wd 发射器/n 能/v 通过/p 信号/n 将/p 数据/n 发/v 送给/v 远处/s 的/ude1 控制/vn 终端/n ，/wd 进而/c 实现/v 数据/n 在线/vn 分析/vn 。/wj 
+  　 　 该/rz 装置/n 的/ude1 研发/v 人员/n 说/v ，/wd 此前/t 用/p 传感器/n 监测/vn 土壤/n 含水量/n 并/cc 指导/vn 灌溉/vn 的/ude1 方法/n ，/wd 不/d 能/v 直接/ad 反映/v 作物/n 实际/a 的/ude1 干渴/a 状况/n 。/wj 新/a 传感器/n 使/v 人们/n 能够/v 通过/p 便/d 携/v 电脑/n 甚至/c 手机/n 对/p 农作物/n 含水量/n 进行/vx 实时/n 监测/vn ，/wd 如果/c 把/pba 这种/r 小型/b 监测/vn 系统/n 与/p 自动/b 灌溉/vn 系统/n 相连/vi ，/wd 还/d 可/v 按/p 需/v 及时/ad 对/p 作物/n 进行/vx 定量/vn 自动/b 灌溉/vn 。/wj 
+  　 　 据/p 维尔茨堡/nrf 大学/n 研究/vn 人员/n 估计/v ，/wd 由于/c 这种/r 传/v 感/vg 系统/n 能/v 帮助/v 人们/n 更/d 准确/a 地/ude2 对/p 作物/n 进行/vx 按/p 需/v 灌溉/vn ，/wd 所以/c 能/v 节约/v 30%/m 左右/m 的/ude1 灌溉/vn 用/p 水/n ，/wd 此外/c 还/d 有助于/v 避免/v 因/p 过度/vd 灌溉/v 而/cc 导致/v 干旱/a 炎热/a 地区/n 土地/n 盐碱化/vn 。/wj 
+  　 　 目前/t ，/wd 研究/v 人员/n 已/d 制作/v 出/vf 这种/r 磁性/n 传感器/n 的/ude1 样品/n 并/cc 正在/d 测试/v 。/wj 通常/d ，/wd 每/rz 公顷/q 土地/n 只/d 需/v 安装/v 三四/m 个/q 这种/r 传感器/n 即可/v ，/wd 其/rz 使用/v 寿命/n 为/v 一个/mq 作物/n 生长/v 季/ng 。/wj 
+  
