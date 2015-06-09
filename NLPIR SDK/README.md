@@ -7,7 +7,7 @@ NLPIR SDK存放了13种组件包:
 - DeepClassifier训练分类组件
 - DocExtractor实体抽取组件
 - HTMLPaser网站正文提取组件
-- ICTCLAS分词组件
+- NLPIR-ICTCLAS分词组件
 - JZsearch精准搜索组件
 - JZSearch精准搜索客户端组件
 - KeyExtract关键词提取组件
