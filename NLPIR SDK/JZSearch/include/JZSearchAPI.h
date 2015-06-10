@@ -339,6 +339,10 @@ JZSearchAPI_API int JZSearch_SetAbstractArgu(unsigned int nAbstractLength,const 
 //nPrefixLeng: 摘要前缀的长度
 JZSearchAPI_API int JZSearch_SetIndexSizeLimit(int nLimitSize=20480);
 //设置索引内容的长度限制，默认为20KB；设为-1表示不限制
+
+JZSearchAPI_API int JZSearch_SetUniqeCountLimit(int nLimitSize=100);//added in 2015/6/10
+//设置Unique操作的最大去重输出个数，一般设置为100；过多导致效率低下
+//nLimitSize<0：不限制，全部去重
 JZSearchAPI_API int JZSearch_DocDelete(JZSEARCH_HANDLE handle,int doc_id);//删除handle搜索引擎中的内部编号为doc_id的文档
 
 #endif
