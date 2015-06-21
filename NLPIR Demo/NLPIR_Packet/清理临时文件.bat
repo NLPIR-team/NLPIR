@@ -17,3 +17,8 @@ del /Q DataFile\data.topic.txt
 del /Q DataFile\RunLog.txt
 del /Q result.xml
 del /Q field.dat.pdat
+del /Q Data\*.log
+del /Q Data\*.err
+del /Q Data\Data\*.log
+del /Q Data\Data\*.err
+

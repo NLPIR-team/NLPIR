@@ -1,6 +1,0 @@
-　 　 白天/t   阴/a 有/vyou 中/b 雷阵雨/n 东南风/n 2—3/m 级/q 降水/n 概率/n 60%/m 
- 　 　 夜间/t   阴/a 有/vyou 雷阵雨/n   东南风/n 2—3/m 级/q 降水/n 概率/n 60%/m 
- 　 　 温度/n   最高/a 29/m ℃/q   最低/a 21/m ℃/q 
- 　 　 自/p 19日/t 以来/f ，/wd 本市/r 户外/s 温度/n 直线/d 上升/vi ，/wd 昨天/t 下午/t 更/d 是/vshi 达到/v 了/ule 37/m ℃/q ，/wd 为/p 今年/t 以来/f 最高/a 值/n 。/wj 不过/c 怕/v 热/a 的/ude1 市民/n 别/d 担心/v ，/wd 今天/t 白天/t ，/wd 本市/r 的/ude1 最高/a 气温/n 将/d 回落/vi 至/p 29/m ℃/q 。/wj 
-  　 　 昨天/t 14时/t 20分/t ，/wd 因/p 气温/n 连续/ad 攀升/v ，/wd 市/n 气象台/n 紧急/ad 发布/v 了/ule 高温/n 橙色/n 预警/vn 。/wj 截至/v 记者/n 发稿/vi ，/wd 本市/r 静海/ns 最高/a 气温/n 达到/v 37/m ℃/q ，/wd 市区/s 最高/a 气温/n 也/d 达到/v 36.3/m ℃/q ，/wd 刷新/v 了/ule 今年/t 以来/f 本市/r 最高/a 气温/n 的/ude1 纪录/n 。/wj 受/v 高空/s 低/a 涡/n 影响/vn ，/wd 持续/vi 4/m 天/qt 的/ude1 高温/n 天气/n ，/wd 将/d 伴随/v 一/m 场/qv 降雨/vn 暂/d 告/v 段落/n 。/wj 根据/p 最新/a 的/ude1 气象/n 信息/n 分析/vn ，/wd 此次/rz 降雨/vn 过程/n 趁/p 夜/tg 而/cc 来/vf ，/wd 最/d 大/a 达到/v 中雨/n 级别/n 。/wj 受/v 此/rzs 影响/v ，/wd 最高/a 气温/n 将/d 降/v 至/p 29/m ℃/q ，/wd 最低/a 气温/n 在/p 23/m ℃/q 左右/m 。/wj 
-  
