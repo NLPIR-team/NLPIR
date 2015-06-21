@@ -1,14 +1,33 @@
 #NLPIR
-开发者：张华平教授</br>
+开发者：张华平/Dr. Kevin Zhang</br>
 NLPIR官方网站：<http://www.nlpir.org/>
 在线演示网址： http://ictclas.nlpir.org/nlpir/
+联系方式：
+张华平 博士 副教授  研究生导师
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+手机：13681251543
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN: pipy_zhang@msn.com;
+网站: http://www.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博:http://www.weibo.com/drkevinzhang/
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology 
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
 ##简介
 NLPIR是一套专门针对原始文本集进行处理和加工的软件，提供了中间件处理效果的可视化展示，也可以作为小规模数据的处理加工工具。用户可以使用该软件对自己的数据进行处理。
 >NLPIR分词系统前身为2000年发布的ICTCLAS词法分析系统，从2009年开始，为了和以前工作进行大的区隔，并推广NLPIR自然语言处理与信息检索共享平台，调整命名为NLPIR分词系统。</br>
 >NLPIR 系统支持多种编码（GBK 编码、UTF8 编码、BIG5 编码）、多种操作系统（Windows, Linux， FreeBSD 等所有主流操作系统）、多种开发语言与平台（包括：C/C++/C#,Java,Python,Hadoop 等）。
 
 ##NLPIR工程包简介
-License--一个月的授权文件</br>
+License--一个月的授权文件；如果发生授权过期的情况，可以在此目录下下载更新。</br>
 NLPIR_Demo--组件功能演示demo（NLPIR大数据搜索与挖掘共享开发平台）</br>
 NLPIR_SDK--13个组件包，提供了用于技术二次开发的基础工具集，各个组件API可以无缝地融合到客户的各类复杂应用系统之中，可兼容Windows，Linux， Android，Maemo5, FreeBSD等不同操作系统平台，可以供Java，C，C#等各类开发语言使用。
 
