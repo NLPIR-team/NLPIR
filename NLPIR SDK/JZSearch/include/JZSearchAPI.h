@@ -197,10 +197,13 @@ JZSearchAPI_API const char * JZSearch_ReloadQueryExpand(void);
 JZSearchAPI_API int JZSearch_ListFieldAllValue(const char *sFieldLine,const char *sExportFile,bool bDuplicateErase=false,SEARCHER_HANDLE handle=1);
 //列出指定字段索引的内容
 
-JZSearchAPI_API int JZSearch_Export(const char *sExportFile,const char *sWordList,char arg,SEARCHER_HANDLE handle=0);
+JZSearchAPI_API int JZSearch_Export(const char *sExportFile,char arg,SEARCHER_HANDLE handle=1);
 //导出内部的数据，以便核查
 
-JZSearchAPI_API int JZSearch_ExportTerm(int nTermID,const char *sExportFile,const char *sWordList,SEARCHER_HANDLE handle=0);
+JZSearchAPI_API int JZSearch_ExportTF(const char *sExportFile,SEARCHER_HANDLE handle=1);
+//导出内部的词频数据，以便核查；added in 2015/7/5
+
+JZSearchAPI_API int JZSearch_ExportTerm(int nTermID,const char *sExportFile,SEARCHER_HANDLE handle=0);
 //导出内部的数据，以便核查
 
 JZSearchAPI_API int JZSearch_Merge(SEARCHER_HANDLE handle=0);
