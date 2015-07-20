@@ -19,6 +19,7 @@ Associate Professor, Graduate Supervisor
 Director, Web Search,Mining and Security Lab.
 Beijing Institute of Technology 
 Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Mobile：+86-13681251543
 Tel: +86-10-68918642
 Email:kevinzhang@bit.edu.cn
 ##简介
