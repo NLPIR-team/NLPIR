@@ -1,0 +1,16 @@
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\bin\Debug\SentimentTest.exe.config
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\bin\Debug\SentimentTest.exe
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\bin\Debug\SentimentTest.pdb
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\bin\Debug\Global.dll
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\bin\Debug\Global.pdb
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\obj\Debug\SentimentTest.csprojResolveAssemblyReference.cache
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\obj\Debug\SentimentTest.exe
+D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentTest\obj\Debug\SentimentTest.pdb
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\bin\Debug\SentimentTest.exe.config
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\obj\Debug\SentimentTest.exe
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\obj\Debug\SentimentTest.pdb
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\bin\Debug\SentimentTest.exe
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\bin\Debug\SentimentTest.pdb
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\bin\Debug\Global.dll
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\bin\Debug\Global.pdb
+D:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\Sentiment\SentimentTest\obj\Debug\SentimentTest.csprojResolveAssemblyReference.cache

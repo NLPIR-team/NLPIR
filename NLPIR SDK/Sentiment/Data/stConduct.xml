@@ -5,7 +5,7 @@
 
     <category id="1">
       <description>明星</description>
-      <brandword>|奥巴马|李光耀|德云社|赵薇|范冰冰|</brandword>
+      <brandword>|郭德纲|德云社|赵薇|范冰冰|</brandword>
       <featureword></featureword>
       <sentimentword>
         <advantage>|[positive.dat]|</advantage>
@@ -27,7 +27,7 @@
 
     <category id="3">
       <description>地区</description>
-      <brandword>|亚洲|人民币|</brandword>
+      <brandword>|北京|人民币|</brandword>
       <featureword></featureword>
       <sentimentword>
         <advantage>|[positive.dat]|</advantage>
