@@ -51,6 +51,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Global">
+      <HintPath>..\..\..\所需依赖\C#\Global.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,91 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="data\BIG2GBK.map" />
-    <None Include="data\BIG5.pdat" />
-    <None Include="data\BIG5.wordlist" />
-    <None Include="data\BiWord.big" />
-    <None Include="data\CETrans.dict" />
-    <None Include="data\charset.type" />
-    <None Include="data\CodeTrans.model" />
-    <None Include="data\CoreDict.pdat" />
-    <None Include="data\CoreDict.pos" />
-    <None Include="data\CoreDict.unig" />
-    <None Include="data\Dict.pdat" />
-    <None Include="data\Dict.wordlist" />
-    <None Include="data\English\English.pdat" />
-    <None Include="data\English\English.pos" />
-    <None Include="data\English\English.ung" />
-    <None Include="data\English\English.wordlist" />
-    <None Include="data\English\Irrel2regular.map" />
-    <None Include="data\English\ne.pdat" />
-    <None Include="data\English\ne.pos" />
-    <None Include="data\English\ne.wordlist" />
-    <None Include="data\FieldDict.pdat" />
-    <None Include="data\FieldDict.pos" />
-    <None Include="data\GBK.pdat" />
-    <None Include="data\GBK.wordlist" />
-    <None Include="data\GBK2BIG.map" />
-    <None Include="data\GBK2GBKC.map" />
-    <None Include="data\GBK2UTF.map" />
-    <None Include="data\GBKA.pdat" />
-    <None Include="data\GBKA.wordlist" />
-    <None Include="data\GBKA2UTF.map" />
-    <None Include="data\GBKC.pdat" />
-    <None Include="data\GBKC.wordlist" />
-    <None Include="data\GBKC2GBK.map" />
-    <None Include="data\GranDict.pdat" />
-    <None Include="data\GranDict.pos" />
-    <None Include="data\ICTCLAS30.ctx" />
-    <None Include="data\ICTCLAS_First.map" />
-    <None Include="data\ICTPOS.map" />
-    <None Include="data\KeyBlackList.pdat" />
-    <None Include="data\location.map" />
-    <None Include="data\location.pdat" />
-    <None Include="data\location.wordlist" />
-    <None Include="data\NLPIR.ctx" />
-    <None Include="data\NLPIR_First.map" />
-    <None Include="data\nr.ctx" />
-    <None Include="data\nr.fsa" />
-    <None Include="data\nr.role" />
-    <None Include="data\PKU.map" />
-    <None Include="data\PKU_First.map" />
-    <None Include="data\sentiment.pdat" />
-    <None Include="data\sentiment.ung" />
-    <None Include="data\sentiment.wordlist" />
-    <None Include="data\stop.ung" />
-    <None Include="data\UTF2GBK.map" />
-    <None Include="data\UTF2GBKA.map" />
-    <None Include="data\UTF8.pdat" />
-    <None Include="data\UTF8.wordlist" />
-    <None Include="lib\linux32\libLJCluster.so" />
-    <None Include="lib\linux64\libLJCluster.so" />
-    <None Include="lib\win32\LJCluster.lib" />
-    <None Include="lib\win64\LJCluster.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Global\Global.csproj">
-      <Project>{f0858465-2e26-4807-971e-6fe232647656}</Project>
-      <Name>Global</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="data\cluster.user" />
-    <Content Include="data\Configure.xml" />
-    <Content Include="data\Data.txt" />
-    <Content Include="data\DocExtractor.dll" />
-    <Content Include="data\License.dll" />
-    <Content Include="data\NewWord.lst" />
-    <Content Include="data\UserDefinedDict.lst" />
-    <Content Include="data\userfilterword.txt" />
-    <Content Include="lib\win32\LJCluster.dll" />
-    <Content Include="lib\win64\LJCluster.dll" />
-    <Content Include="test\text1.txt" />
-    <Content Include="test\text2.txt" />
-    <Content Include="test\text3.txt" />
-    <Content Include="test\新建文件夹\text1.txt" />
-    <Content Include="test\新建文件夹\text2.txt" />
-    <Content Include="test\新建文件夹\text3.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

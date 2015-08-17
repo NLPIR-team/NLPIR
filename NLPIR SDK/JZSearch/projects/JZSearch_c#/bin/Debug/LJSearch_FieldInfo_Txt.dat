@@ -1,3 +1,0 @@
-序号	字段名称	索引名称	数据类型	是否需要索引	是否需要存储	是否为通配符检索域	是否需要摘要并红显	解释
-1	key	key	text	1	1	1	1	key
-2	value	value	text	1	1	1	1	value

@@ -1,8 +1,0 @@
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\bin\x86\Debug\JZSearchTest.exe.config
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\bin\x86\Debug\JZSearchTest.exe
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\bin\x86\Debug\JZSearchTest.pdb
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\bin\x86\Debug\Global.dll
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\bin\x86\Debug\Global.pdb
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\obj\x86\Debug\JZSearchTest.csprojResolveAssemblyReference.cache
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\obj\x86\Debug\JZSearchTest.exe
-d:\Users\Documents\灵玖软件\组件和案例\LingjoinSoft\JZSearch\JZSearchTest\obj\x86\Debug\JZSearchTest.pdb

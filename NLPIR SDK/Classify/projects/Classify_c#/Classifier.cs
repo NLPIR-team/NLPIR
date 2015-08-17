@@ -29,17 +29,17 @@ namespace Lingjoin.ClassifierTest
 
         protected override bool InitFunctions()
         {
-            d_Classifier_Init = (D_Classifier_Init)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "classifier_init", typeof(D_Classifier_Init));
+            d_Classifier_Init = (D_Classifier_Init)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "classifier_init", typeof(D_Classifier_Init));
 
-            d_Classifier_Exit = (D_Classifier_Exit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "classifier_exit", typeof(D_Classifier_Exit));
+            d_Classifier_Exit = (D_Classifier_Exit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "classifier_exit", typeof(D_Classifier_Exit));
 
-            d_Classifier_Exec = (D_Classifier_Exec)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "classifier_exec", typeof(D_Classifier_Exec));
+            d_Classifier_Exec = (D_Classifier_Exec)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "classifier_exec", typeof(D_Classifier_Exec));
 
-            d_Classifier_Detail = (D_Classifier_Detail)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "classifier_detail", typeof(D_Classifier_Detail));
+            d_Classifier_Detail = (D_Classifier_Detail)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "classifier_detail", typeof(D_Classifier_Detail));
 
             if (d_Classifier_Init == null || d_Classifier_Exit == null
                 || d_Classifier_Exec == null || d_Classifier_Detail == null)

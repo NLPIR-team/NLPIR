@@ -1,8 +1,0 @@
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\bin\Debug\Cluster.exe.config
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\bin\Debug\Cluster.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\bin\Debug\Cluster.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\bin\Debug\Global.dll
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\bin\Debug\Global.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\obj\Debug\Cluster.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\obj\Debug\Cluster.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Cluster\obj\Debug\Cluster.csprojResolveAssemblyReference.cache

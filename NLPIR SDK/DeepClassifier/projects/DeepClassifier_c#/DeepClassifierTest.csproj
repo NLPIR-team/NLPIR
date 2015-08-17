@@ -36,6 +36,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\所需依赖\C#\Global.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -426,12 +430,6 @@
     <Content Include="test\训练语料\艺术\2246.txt" />
     <Content Include="test\训练语料\艺术\2247.txt" />
     <Content Include="test\训练语料\艺术\2248.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Global\Global.csproj">
-      <Project>{f0858465-2e26-4807-971e-6fe232647656}</Project>
-      <Name>Global</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

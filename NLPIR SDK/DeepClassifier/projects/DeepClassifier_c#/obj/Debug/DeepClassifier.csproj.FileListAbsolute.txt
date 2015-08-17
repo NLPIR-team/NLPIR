@@ -1,8 +1,0 @@
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\bin\Debug\DeepClassifier.exe.config
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\bin\Debug\DeepClassifier.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\bin\Debug\DeepClassifier.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\bin\Debug\Global.dll
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\bin\Debug\Global.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\obj\Debug\DeepClassifier.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\obj\Debug\DeepClassifier.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\DeepClassifier\obj\Debug\DeepClassifier.csprojResolveAssemblyReference.cache

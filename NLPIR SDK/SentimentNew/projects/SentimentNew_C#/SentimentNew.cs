@@ -17,33 +17,34 @@ namespace Lingjoin.SentimentNewTest
 
         protected override bool InitFunctions()
         {
-            d_ST_Init = (D_ST_Init)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "ST_Init", typeof(D_ST_Init));
+            d_ST_Init = (D_ST_Init)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "ST_Init", typeof(D_ST_Init));
 
-            d_ST_GetOneObjectResult = (D_ST_GetOneObjectResult)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "ST_GetOneObjectResult", typeof(D_ST_GetOneObjectResult));
+            d_ST_GetOneObjectResult = (D_ST_GetOneObjectResult)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "ST_GetOneObjectResult", typeof(D_ST_GetOneObjectResult));
 
-            d_ST_GetMultiObjectResult = (D_ST_GetMultiObjectResult)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "ST_GetMultiObjectResult", typeof(D_ST_GetMultiObjectResult));
+            d_ST_GetMultiObjectResult = (D_ST_GetMultiObjectResult)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "ST_GetMultiObjectResult", typeof(D_ST_GetMultiObjectResult));
 
-            d_ST_GetLastErrMsg = (D_ST_GetLastErrMsg)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "ST_GetLastErrMsg", typeof(D_ST_GetLastErrMsg));
+            d_ST_GetLastErrMsg = (D_ST_GetLastErrMsg)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "ST_GetLastErrMsg", typeof(D_ST_GetLastErrMsg));
 
-            d_ST_Exit = (D_ST_Exit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "ST_Exit", typeof(D_ST_Exit));
+            d_ST_Exit = (D_ST_Exit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "ST_Exit", typeof(D_ST_Exit));
 
-            d_ST_ImportUserDict = (D_ST_ImportUserDict)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "ST_ImportUserDict", typeof(D_ST_ImportUserDict));
+            d_ST_ImportUserDict = (D_ST_ImportUserDict)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "ST_ImportUserDict", typeof(D_ST_ImportUserDict));
 
-            d_ST_GetSentencePoint = (D_ST_GetSentencePoint)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "ST_GetSentencePoint", typeof(D_ST_GetSentencePoint));
+            d_ST_GetSentencePoint = (D_ST_GetSentencePoint)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "ST_GetSentencePoint", typeof(D_ST_GetSentencePoint));
 
             //             d_ST_SentiDictIO = (D_ST_SentiDictIO)dllWrapper.GetFunctionAddress(
             //                 dllWrapper.hModule, "ST_SentiDictIO", typeof(D_ST_SentiDictIO));
 
             if (d_ST_Init == null || d_ST_GetOneObjectResult == null
                 || d_ST_GetMultiObjectResult == null || d_ST_GetLastErrMsg == null
-                || d_ST_Exit == null)
+                || d_ST_Exit == null || d_ST_GetSentencePoint == null
+                || d_ST_ImportUserDict == null)
             {
                 return false;
             }
@@ -52,11 +53,11 @@ namespace Lingjoin.SentimentNewTest
         }
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
-        private delegate bool D_ST_Init(String sInitDirPath, int encode, String sLicenseCode);
+        private delegate bool D_ST_Init(string sInitDirPath, int encode, string sLicenseCode);
         [UnmanagedFunctionPointer(CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
-        private delegate IntPtr D_ST_GetOneObjectResult(String sTitle, String sContent, String sObject);
+        private delegate IntPtr D_ST_GetOneObjectResult(string sTitle, string sContent, string sObject);
         [UnmanagedFunctionPointer(CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
-        private delegate IntPtr D_ST_GetMultiObjectResult(String sTitle, String sContent, String sObjectRuleFile);
+        private delegate IntPtr D_ST_GetMultiObjectResult(string sTitle, string sContent, string sObjectRuleFile);
         [UnmanagedFunctionPointer(CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
         private delegate void D_ST_Exit();
         [UnmanagedFunctionPointer(CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
@@ -79,17 +80,17 @@ namespace Lingjoin.SentimentNewTest
 
 
 
-        public bool ST_Init(String sInitDirPath, int encode, String sLicenseCode)
+        public bool ST_Init(string sInitDirPath, int encode, string sLicenseCode)
         {
             return d_ST_Init(sInitDirPath, encode, sLicenseCode);
         }
 
-        public String ST_GetOneObjectResult(String sTitle, String sContent, String sObject)
+        public string ST_GetOneObjectResult(string sTitle, string sContent, string sObject)
         {
             return Marshal.PtrToStringAnsi(d_ST_GetOneObjectResult(sTitle, sContent, sObject));
         }
 
-        public String ST_GetMultiObjectResult(String sTitle, String sContent, String sObjectRuleFile)
+        public string ST_GetMultiObjectResult(string sTitle, string sContent, string sObjectRuleFile)
         {
             return Marshal.PtrToStringAnsi(d_ST_GetMultiObjectResult(sTitle, sContent, sObjectRuleFile));
         }
@@ -99,7 +100,7 @@ namespace Lingjoin.SentimentNewTest
             d_ST_Exit();
         }
 
-        public String ST_GetLastErrMsg()
+        public string ST_GetLastErrMsg()
         {
             return Marshal.PtrToStringAnsi(d_ST_GetLastErrMsg());
         }

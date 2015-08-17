@@ -16,20 +16,20 @@ namespace Lingjoin.SentimentAnalysisTest
 
         protected override bool InitFunctions()
         {
-            d_LJST_Inits = (D_LJST_Inits)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "LJST_Inits", typeof(D_LJST_Inits));
+            d_LJST_Inits = (D_LJST_Inits)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "LJST_Inits", typeof(D_LJST_Inits));
 
-            d_LJST_ImportUserDict = (D_LJST_ImportUserDict)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "LJST_ImportUserDict", typeof(D_LJST_ImportUserDict));
+            d_LJST_ImportUserDict = (D_LJST_ImportUserDict)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "LJST_ImportUserDict", typeof(D_LJST_ImportUserDict));
 
-            d_LJST_GetFileSent = (D_LJST_GetFileSent)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "LJST_GetFileSent", typeof(D_LJST_GetFileSent));
+            d_LJST_GetFileSent = (D_LJST_GetFileSent)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "LJST_GetFileSent", typeof(D_LJST_GetFileSent));
 
-            d_LJST_GetParagraphSent = (D_LJST_GetParagraphSent)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "LJST_GetParagraphSent", typeof(D_LJST_GetParagraphSent));
+            d_LJST_GetParagraphSent = (D_LJST_GetParagraphSent)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "LJST_GetParagraphSent", typeof(D_LJST_GetParagraphSent));
 
-            d_LJST_Exits = (D_LJST_Exits)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "LJST_Exits", typeof(D_LJST_Exits));
+            d_LJST_Exits = (D_LJST_Exits)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "LJST_Exits", typeof(D_LJST_Exits));
 
             if (d_LJST_Inits == null || d_LJST_ImportUserDict == null
                 || d_LJST_GetFileSent == null || d_LJST_GetParagraphSent == null

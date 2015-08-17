@@ -1,8 +1,0 @@
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\bin\Release\SentimentAnalysisTest.exe.config
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\bin\Release\SentimentAnalysisTest.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\bin\Release\SentimentAnalysisTest.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\bin\Release\Global.dll
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\bin\Release\Global.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\obj\Release\SentimentAnalysisTest.csprojResolveAssemblyReference.cache
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\obj\Release\SentimentAnalysisTest.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysisTest\obj\Release\SentimentAnalysisTest.pdb

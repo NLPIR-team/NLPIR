@@ -47,38 +47,38 @@ namespace Lingjoin.DocExtractorTest
 
         protected override bool InitFunctions()
         {
-            d_DE_Init = (D_DE_Init)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_Init", typeof(D_DE_Init));
+            d_DE_Init = (D_DE_Init)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_Init", typeof(D_DE_Init));
 
-            d_DE_ParseDocE = (D_DE_ParseDocE)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_ParseDocE", typeof(D_DE_ParseDocE));
+            d_DE_ParseDocE = (D_DE_ParseDocE)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_ParseDocE", typeof(D_DE_ParseDocE));
 
-            d_DE_GetResult = (D_DE_GetResult)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_GetResult", typeof(D_DE_GetResult));
+            d_DE_GetResult = (D_DE_GetResult)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_GetResult", typeof(D_DE_GetResult));
 
-            d_DE_GetLastErrMsg = (D_DE_GetLastErrMsg)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_GetLastErrMsg", typeof(D_DE_GetLastErrMsg));
+            d_DE_GetLastErrMsg = (D_DE_GetLastErrMsg)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_GetLastErrMsg", typeof(D_DE_GetLastErrMsg));
 
-            d_DE_GetSentimentScore = (D_DE_GetSentimentScore)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_GetSentimentScore", typeof(D_DE_GetSentimentScore));
+            d_DE_GetSentimentScore = (D_DE_GetSentimentScore)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_GetSentimentScore", typeof(D_DE_GetSentimentScore));
 
-            d_DE_ReleaseHandle = (D_DE_ReleaseHandle)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_ReleaseHandle", typeof(D_DE_ReleaseHandle));
+            d_DE_ReleaseHandle = (D_DE_ReleaseHandle)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_ReleaseHandle", typeof(D_DE_ReleaseHandle));
 
-            d_DE_ImportSentimentDict = (D_DE_ImportSentimentDict)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_GetResult", typeof(D_DE_ImportSentimentDict));
+            d_DE_ImportSentimentDict = (D_DE_ImportSentimentDict)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_GetResult", typeof(D_DE_ImportSentimentDict));
 
-            d_DE_ImportUserDict = (D_DE_ImportUserDict)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_ImportUserDict", typeof(D_DE_ImportUserDict));
+            d_DE_ImportUserDict = (D_DE_ImportUserDict)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_ImportUserDict", typeof(D_DE_ImportUserDict));
 
-            d_DE_ImportKeyBlackList = (D_DE_ImportKeyBlackList)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_ImportUserDict", typeof(D_DE_ImportKeyBlackList));
+            d_DE_ImportKeyBlackList = (D_DE_ImportKeyBlackList)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_ImportUserDict", typeof(D_DE_ImportKeyBlackList));
 
-            d_DE_ComputeSentimentDoc = (D_DE_ComputeSentimentDoc)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_ComputeSentimentDoc", typeof(D_DE_ComputeSentimentDoc));
+            d_DE_ComputeSentimentDoc = (D_DE_ComputeSentimentDoc)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_ComputeSentimentDoc", typeof(D_DE_ComputeSentimentDoc));
 
-            d_DE_Exit = (D_DE_Exit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DE_Exit", typeof(D_DE_Exit));
+            d_DE_Exit = (D_DE_Exit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DE_Exit", typeof(D_DE_Exit));
 
             if (d_DE_Exit == null || d_DE_ComputeSentimentDoc == null
                 || d_DE_ImportKeyBlackList == null || d_DE_ImportUserDict == null

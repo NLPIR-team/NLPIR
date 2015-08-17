@@ -1,7 +1,0 @@
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysis\bin\Debug\SentimentAnalysis.exe.config
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysis\bin\Debug\SentimentAnalysis.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysis\bin\Debug\SentimentAnalysis.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysis\bin\Debug\Global.dll
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysis\bin\Debug\Global.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysis\obj\Debug\SentimentAnalysis.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentAnalysis\obj\Debug\SentimentAnalysis.pdb

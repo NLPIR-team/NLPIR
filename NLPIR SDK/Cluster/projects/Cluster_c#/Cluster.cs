@@ -18,29 +18,29 @@ namespace Lingjoin.ClusterTest
 
         protected override bool InitFunctions()
         {
-            d_CLUS_Init = (D_CLUS_Init)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_Init", typeof(D_CLUS_Init));
+            d_CLUS_Init = (D_CLUS_Init)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_Init", typeof(D_CLUS_Init));
 
-            d_CLUS_SetParameter = (D_CLUS_SetParameter)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_SetParameter", typeof(D_CLUS_SetParameter));
+            d_CLUS_SetParameter = (D_CLUS_SetParameter)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_SetParameter", typeof(D_CLUS_SetParameter));
 
-            d_CLUS_AddContent = (D_CLUS_AddContent)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_AddContent", typeof(D_CLUS_AddContent));
+            d_CLUS_AddContent = (D_CLUS_AddContent)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_AddContent", typeof(D_CLUS_AddContent));
 
-            d_CLUS_AddFile = (D_CLUS_AddFile)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_AddFile", typeof(D_CLUS_AddFile));
+            d_CLUS_AddFile = (D_CLUS_AddFile)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_AddFile", typeof(D_CLUS_AddFile));
 
-            d_CLUS_GetLatestResult = (D_CLUS_GetLatestResult)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_GetLatestResult", typeof(D_CLUS_GetLatestResult));
+            d_CLUS_GetLatestResult = (D_CLUS_GetLatestResult)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_GetLatestResult", typeof(D_CLUS_GetLatestResult));
 
-            d_CLUS_CleanData = (D_CLUS_CleanData)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_AddFile", typeof(D_CLUS_CleanData));
+            d_CLUS_CleanData = (D_CLUS_CleanData)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_AddFile", typeof(D_CLUS_CleanData));
 
-            d_CLUS_Exit = (D_CLUS_Exit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_GetLatestResult", typeof(D_CLUS_Exit));
+            d_CLUS_Exit = (D_CLUS_Exit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_GetLatestResult", typeof(D_CLUS_Exit));
 
-            d_CLUS_GetLastErrMsg = (D_CLUS_GetLastErrMsg)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "CLUS_Exit", typeof(D_CLUS_GetLastErrMsg));
+            d_CLUS_GetLastErrMsg = (D_CLUS_GetLastErrMsg)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "CLUS_Exit", typeof(D_CLUS_GetLastErrMsg));
 
             if (d_CLUS_Init == null || d_CLUS_SetParameter == null
                 || d_CLUS_AddContent == null || d_CLUS_AddFile == null

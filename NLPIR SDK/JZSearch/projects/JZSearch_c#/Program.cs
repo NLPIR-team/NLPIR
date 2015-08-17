@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using Lingjoin.Global;
+using Util.File;
 
 namespace Lingjoin.JZSearchTest
 {
@@ -173,7 +174,7 @@ namespace Lingjoin.JZSearchTest
             {
                 FileInfo fi = new FileInfo(file);
 
-                string sContext = FileOperate.ReadFile(file);
+                string sContext = FileHelper.ReadFile(file);
                 switch (fi.Extension.ToLower())
                 {
                     case ".xml":

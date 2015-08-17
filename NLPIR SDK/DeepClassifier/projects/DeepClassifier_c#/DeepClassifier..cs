@@ -103,32 +103,32 @@ namespace Lingjoin.ClassifierTest
 
         protected override bool InitFunctions()
         {
-            d_DC_Init = (D_DC_Init)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_Init", typeof(D_DC_Init));
+            d_DC_Init = (D_DC_Init)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_Init", typeof(D_DC_Init));
 
-            d_DC_Exit = (D_DC_Exit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_Exit", typeof(D_DC_Exit));
+            d_DC_Exit = (D_DC_Exit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_Exit", typeof(D_DC_Exit));
 
-            d_DC_AddTrain = (D_DC_AddTrain)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_AddTrain", typeof(D_DC_AddTrain));
+            d_DC_AddTrain = (D_DC_AddTrain)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_AddTrain", typeof(D_DC_AddTrain));
 
-            d_DC_AddTrainFile = (D_DC_AddTrainFile)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_AddTrainFile", typeof(D_DC_AddTrainFile));
+            d_DC_AddTrainFile = (D_DC_AddTrainFile)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_AddTrainFile", typeof(D_DC_AddTrainFile));
 
-            d_DC_Train = (D_DC_Train)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_Train", typeof(D_DC_Train));
+            d_DC_Train = (D_DC_Train)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_Train", typeof(D_DC_Train));
 
-            d_DC_LoadTrainResult = (D_DC_LoadTrainResult)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_LoadTrainResult", typeof(D_DC_LoadTrainResult));
+            d_DC_LoadTrainResult = (D_DC_LoadTrainResult)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_LoadTrainResult", typeof(D_DC_LoadTrainResult));
 
-            d_DC_Classify = (D_DC_Classify)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_Classify", typeof(D_DC_Classify));
+            d_DC_Classify = (D_DC_Classify)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_Classify", typeof(D_DC_Classify));
 
-            d_DC_ClassifyFile = (D_DC_ClassifyFile)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_ClassifyFile", typeof(D_DC_ClassifyFile));
+            d_DC_ClassifyFile = (D_DC_ClassifyFile)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_ClassifyFile", typeof(D_DC_ClassifyFile));
 
-            d_DC_GetLastErrorMsg = (D_DC_GetLastErrorMsg)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "DC_GetLastErrorMsg", typeof(D_DC_GetLastErrorMsg));
+            d_DC_GetLastErrorMsg = (D_DC_GetLastErrorMsg)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "DC_GetLastErrorMsg", typeof(D_DC_GetLastErrorMsg));
 
             if(d_DC_Init == null || d_DC_Exit == null || d_DC_AddTrain == null
                 || d_DC_AddTrainFile == null || d_DC_Train == null || d_DC_LoadTrainResult == null

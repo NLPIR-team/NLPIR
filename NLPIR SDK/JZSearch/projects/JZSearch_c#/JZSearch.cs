@@ -139,74 +139,74 @@ namespace Lingjoin.JZSearchTest
         protected override bool InitFunctions()
         {
 
-            d_JZIndexer_Init = (D_JZIndexer_Init)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_Init", typeof(D_JZIndexer_Init));
+            d_JZIndexer_Init = (D_JZIndexer_Init)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_Init", typeof(D_JZIndexer_Init));
 
-            d_JZIndexer_FieldAdd = (D_JZIndexer_FieldAdd)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_FieldAdd", typeof(D_JZIndexer_FieldAdd));
+            d_JZIndexer_FieldAdd = (D_JZIndexer_FieldAdd)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_FieldAdd", typeof(D_JZIndexer_FieldAdd));
 
-            d_JZIndexer_FieldSave = (D_JZIndexer_FieldSave)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_FieldSave", typeof(D_JZIndexer_FieldSave));
+            d_JZIndexer_FieldSave = (D_JZIndexer_FieldSave)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_FieldSave", typeof(D_JZIndexer_FieldSave));
 
-            d_JZIndexer_FieldLoad = (D_JZIndexer_FieldLoad)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_FieldLoad", typeof(D_JZIndexer_FieldLoad));
+            d_JZIndexer_FieldLoad = (D_JZIndexer_FieldLoad)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_FieldLoad", typeof(D_JZIndexer_FieldLoad));
 
-            d_JZIndexer_NewInstance = (D_JZIndexer_NewInstance)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_NewInstance", typeof(D_JZIndexer_NewInstance));
+            d_JZIndexer_NewInstance = (D_JZIndexer_NewInstance)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_NewInstance", typeof(D_JZIndexer_NewInstance));
 
-            d_JZIndexer_MemIndexing = (D_JZIndexer_MemIndexing)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_MemIndexing", typeof(D_JZIndexer_MemIndexing));
+            d_JZIndexer_MemIndexing = (D_JZIndexer_MemIndexing)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_MemIndexing", typeof(D_JZIndexer_MemIndexing));
 
-            d_JZIndexer_FileIndexing = (D_JZIndexer_FileIndexing)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_FileIndexing", typeof(D_JZIndexer_FileIndexing));
+            d_JZIndexer_FileIndexing = (D_JZIndexer_FileIndexing)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_FileIndexing", typeof(D_JZIndexer_FileIndexing));
 
-            d_JZIndexer_BigFileIndexing = (D_JZIndexer_BigFileIndexing)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_BigFileIndexing", typeof(D_JZIndexer_BigFileIndexing));
+            d_JZIndexer_BigFileIndexing = (D_JZIndexer_BigFileIndexing)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_BigFileIndexing", typeof(D_JZIndexer_BigFileIndexing));
 
-            d_JZIndexer_IntIndexing = (D_JZIndexer_IntIndexing)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_IntIndexing", typeof(D_JZIndexer_IntIndexing));
+            d_JZIndexer_IntIndexing = (D_JZIndexer_IntIndexing)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_IntIndexing", typeof(D_JZIndexer_IntIndexing));
 
-            d_JZIndexer_FloatIndexing = (D_JZIndexer_FloatIndexing)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_FloatIndexing", typeof(D_JZIndexer_FloatIndexing));
+            d_JZIndexer_FloatIndexing = (D_JZIndexer_FloatIndexing)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_FloatIndexing", typeof(D_JZIndexer_FloatIndexing));
 
-            d_JZIndexer_Save = (D_JZIndexer_Save)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_Save", typeof(D_JZIndexer_Save));
+            d_JZIndexer_Save = (D_JZIndexer_Save)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_Save", typeof(D_JZIndexer_Save));
 
-            d_JZIndexer_AddDoc = (D_JZIndexer_AddDoc)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_AddDoc", typeof(D_JZIndexer_AddDoc));
+            d_JZIndexer_AddDoc = (D_JZIndexer_AddDoc)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_AddDoc", typeof(D_JZIndexer_AddDoc));
 
-            d_JZIndexer_DeleteInstance = (D_JZIndexer_DeleteInstance)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_DeleteInstance", typeof(D_JZIndexer_DeleteInstance));
+            d_JZIndexer_DeleteInstance = (D_JZIndexer_DeleteInstance)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_DeleteInstance", typeof(D_JZIndexer_DeleteInstance));
 
-            d_JZIndexer_Exit = (D_JZIndexer_Exit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZIndexer_Exit", typeof(D_JZIndexer_Exit));
+            d_JZIndexer_Exit = (D_JZIndexer_Exit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZIndexer_Exit", typeof(D_JZIndexer_Exit));
 
-            d_JZSearch_Init = (D_JZSearch_Init)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearch_Init", typeof(D_JZSearch_Init));
+            d_JZSearch_Init = (D_JZSearch_Init)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearch_Init", typeof(D_JZSearch_Init));
 
-            d_JZSearch_Reload = (D_JZSearch_Reload)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearch_Reload", typeof(D_JZSearch_Reload));
+            d_JZSearch_Reload = (D_JZSearch_Reload)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearch_Reload", typeof(D_JZSearch_Reload));
 
-            d_JZSearch_Exit = (D_JZSearch_Exit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearch_Exit", typeof(D_JZSearch_Exit));
+            d_JZSearch_Exit = (D_JZSearch_Exit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearch_Exit", typeof(D_JZSearch_Exit));
 
-            d_JZSearcher_NewInstance = (D_JZSearcher_NewInstance)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearcher_NewInstance", typeof(D_JZSearcher_NewInstance));
+            d_JZSearcher_NewInstance = (D_JZSearcher_NewInstance)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearcher_NewInstance", typeof(D_JZSearcher_NewInstance));
 
-            d_JZSearcher_Search = (D_JZSearcher_Search)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearcher_Search", typeof(D_JZSearcher_Search));
+            d_JZSearcher_Search = (D_JZSearcher_Search)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearcher_Search", typeof(D_JZSearcher_Search));
 
-            d_JZSearcher_DeleteInstance = (D_JZSearcher_DeleteInstance)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearcher_DeleteInstance", typeof(D_JZSearcher_DeleteInstance));
+            d_JZSearcher_DeleteInstance = (D_JZSearcher_DeleteInstance)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearcher_DeleteInstance", typeof(D_JZSearcher_DeleteInstance));
 
-            d_JZSearch_SetAbstractArgu = (D_JZSearch_SetAbstractArgu)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearch_SetAbstractArgu", typeof(D_JZSearch_SetAbstractArgu));
+            d_JZSearch_SetAbstractArgu = (D_JZSearch_SetAbstractArgu)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearch_SetAbstractArgu", typeof(D_JZSearch_SetAbstractArgu));
 
-            d_JZSearch_DocDelete = (D_JZSearch_DocDelete)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearch_DocDelete", typeof(D_JZSearch_DocDelete));
+            d_JZSearch_DocDelete = (D_JZSearch_DocDelete)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearch_DocDelete", typeof(D_JZSearch_DocDelete));
 
-            d_JZSearch_SetIndexSizeLimit = (D_JZSearch_SetIndexSizeLimit)dllWrapper.GetFunctionAddress(
-                dllWrapper.hModule, "JZSearch_SetIndexSizeLimit", typeof(D_JZSearch_SetIndexSizeLimit));
+            d_JZSearch_SetIndexSizeLimit = (D_JZSearch_SetIndexSizeLimit)DllWrapper.GetFunctionAddress(
+                DllWrapper.hModule, "JZSearch_SetIndexSizeLimit", typeof(D_JZSearch_SetIndexSizeLimit));
 
             if (d_JZSearcher_DeleteInstance == null || d_JZSearcher_Search == null
                 || d_JZSearcher_NewInstance == null || d_JZSearch_Exit == null

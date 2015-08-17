@@ -1,8 +1,0 @@
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\bin\Debug\Sentiment.exe.config
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\bin\Debug\Sentiment.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\bin\Debug\Sentiment.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\bin\Debug\Global.dll
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\bin\Debug\Global.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\obj\Debug\Sentiment.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\obj\Debug\Sentiment.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\Sentiment\obj\Debug\Sentiment.csprojResolveAssemblyReference.cache

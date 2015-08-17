@@ -1,8 +1,0 @@
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\bin\Release\Global.dll
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\bin\Release\Global.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\obj\Release\SentimentNewTest.csprojResolveAssemblyReference.cache
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\bin\Release\SentimentNewTest.exe.config
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\bin\Release\SentimentNewTest.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\bin\Release\SentimentNewTest.pdb
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\obj\Release\SentimentNewTest.exe
-D:\Users\Documents\灵玖软件\组件和案例\C#\LingjoinSoft\SentimentNewTest\obj\Release\SentimentNewTest.pdb
