@@ -96,7 +96,7 @@ public class JZSearchTest {
 		}
 		
 		int handle = CLibraryJZSearch.Instance.JZSearcher_NewInstance(1, searcher_handle);
-		String query_line = "[field] id_card  [and] 411123199012012032 ";
+		String query_line = "[FIELD] contentall [AND] 人工服务 [FIELD] date [RANG] 1 123431234";
 		//-1 表示搜索全部
 		String xml = CLibraryJZSearch.Instance.JZSearcher_Search(handle, query_line, 0, 10);
 		System.out.println(xml);
@@ -110,6 +110,26 @@ public class JZSearchTest {
 //		}
 	}
 	
-	
+	@Test
+	/**
+	 * 导出词频
+	 */
+	public void testExportTF() throws Exception {
+		int searcher_handle = CLibraryJZSearch.Instance.JZSearch_Init(indexFilePath, dataDirPath, fieldFilePath, 512000000, 1, 0, false, 1, "");
+		if (searcher_handle != -1) {
+			System.out.println("jzsearch初始化成功");
+		} else {
+			System.out.println("jzsearch初始化失败!!!!!!!!!!!!!!");
+			System.exit(-1);
+		}
+		
+		int result = CLibraryJZSearch.Instance.JZSearch_ExportTF("dasdfd", searcher_handle);
+		if (result > -1) {
+			System.out.println("导出成功");
+		} else {
+			System.out.println("导出失败!!!!!!!!!!!!!!");
+			System.exit(-1);
+		}
+	}
 
 }

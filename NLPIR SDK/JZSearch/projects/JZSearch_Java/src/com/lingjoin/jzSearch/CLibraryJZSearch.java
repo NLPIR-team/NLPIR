@@ -11,7 +11,7 @@ import com.sun.jna.Native;
  *
  */
 public interface CLibraryJZSearch extends Library {
-	CLibraryJZSearch Instance = (CLibraryJZSearch) Native.loadLibrary("D:/NLPIR/bin/JZSearch/x64/JZSearchAPI.dll", CLibraryJZSearch.class);
+	CLibraryJZSearch Instance = (CLibraryJZSearch) Native.loadLibrary("./JZSearchAPI.dll", CLibraryJZSearch.class);
 	
 	/*
 	 * 索引部分的API - 开始
@@ -202,4 +202,10 @@ public interface CLibraryJZSearch extends Library {
 	 * 索引部分的API - 结束
 	 */
 
+	/*
+	 * 导出词频
+	 */
+	public int JZSearch_Export(String sExportFile, int handle);
+	
+	public int JZSearch_ExportTF(String sExportFile, int handle);
 }
