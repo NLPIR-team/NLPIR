@@ -1,3 +1,24 @@
+/****************************************************************************
+ *
+ * NLPIR/ICTCLAS Lexical Analysis System Copyright (c) 2000-2014
+ *     Dr. Kevin Zhang (Hua-Ping Zhang)
+ *     All rights reserved.
+ *
+ * This file is the confidential and proprietary property of 
+ * Kevin Zhang and the possession or use of this file requires 
+ * a written license from the author.
+ * Filename: 
+ * Abstract:
+ *          Sentiment.h: definition of the NLPIR Sentiment Analysis system API
+ * Author:   Kevin Zhang 
+ *          Email: pipy_zhang@msn.com kevinzhang@bit.edu.cn
+ *			Weibo: http://weibo.com/drkevinzhang
+ *			Homepage: http://ictclas.nlpir.org
+ * Date:     2013-12-19
+ *
+ * Notes:
+ *                
+ ****************************************************************************/
 #ifndef SENTIMENTANALYSIS_H
 #define SENTIMENTANALYSIS_H
 
@@ -8,8 +29,6 @@
 #define ENCODING_FANTI_UTF8 ENCODING_GBK+4
 #define ENCODING_COUNT 4
 
-#define ST_EXPORTS
-
 
 #ifdef __cplusplus
 #define EXTERNC extern "C"
@@ -17,13 +36,14 @@
 #define EXTERNC 
 #endif
 
-#define DLLIMPORT EXTERNC __declspec(dllimport)
-#define DLLEXPORT EXTERNC __declspec(dllexport)
-
-#ifdef ST_EXPORTS
-#define ST_API DLLEXPORT
+#ifdef OS_LINUX
+	#define ST_API EXTERNC 
 #else
-#define ST_API DLLIMPORT
+#ifdef ST_EXPORTS
+#define ST_API EXTERNC __declspec(dllexport)
+#else
+#define ST_API EXTERNC __declspec(dllimport)
+#endif
 #endif
 
 ST_API int ST_Init(const char * sDataPath, int encode, const char*sLicenceCode);
@@ -38,7 +58,7 @@ ST_API const char * ST_GetLastErrMsg();
 
 ST_API int ST_ImportUserDict(const char *sFilePath, int bSaveDict);
 
-ST_API int ST_DelUsrWord(const char *sWord);
+ST_API int ST_DelUsrWord(const char *sWord, int bSaveDict);
 
 ST_API double ST_GetSentimentPoint(const char *sSentence);
 
