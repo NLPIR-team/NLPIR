@@ -42,6 +42,8 @@ void test_svmtextc(int num,string & working_path,string & path)
 		printf("Init Failed! Reason is %s\n",DC_GetLastErrorMsg());
 		return ;
 	}
+	int handle=DC_NewInstance();
+	handle=DC_NewInstance();
 
 	std::map < string, vector<string> > class_map;
 	vector<string> dirs;
@@ -66,7 +68,7 @@ void test_svmtextc(int num,string & working_path,string & path)
 		for (int i = 0; i < maxindex; ++i) {
 			string spath = path + p->first + "/" + p->second[i];
 			//cout << "process : "<< spath<< "i"<< i <<"maxindex"<< maxindex <<endl;
-			DC_AddTrainFile(p->first.c_str(), spath.c_str());
+			DC_AddTrainFile(p->first.c_str(), spath.c_str(),handle);
 			++count;
 			printf("Training %d%%(%d/%d)\r",count*100/nFileCount,count,nFileCount);
 		}
@@ -74,7 +76,7 @@ void test_svmtextc(int num,string & working_path,string & path)
 	//DC_AddTrainComplete();
 	//printf("DC_AddTrainComplete Completed!\n");
 	
-	DC_Train();
+	DC_Train(handle);
 	printf("DC_Train Completed!\n");
 	DC_Exit();
 	//return ;
@@ -88,8 +90,9 @@ void test_svmtextc(int num,string & working_path,string & path)
 		printf("Init Failed! Reason is %s\n",DC_GetLastErrorMsg());
 		return ;
 	}
-
-	DC_LoadTrainResult();
+	handle=DC_NewInstance();
+	handle=DC_NewInstance();
+	DC_LoadTrainResult(handle);
 	
 	printf("DC_LoadTrainResult Completed!\n");
 
@@ -114,7 +117,7 @@ void test_svmtextc(int num,string & working_path,string & path)
 			string spath = path + p->first + "/" + p->second[i];
 			
 
-			string sc = DC_ClassifyFile(spath.c_str());
+			string sc = DC_ClassifyFile(spath.c_str(),handle);
 			++count;
 			++count_all;
 			c_info1[sc]++;

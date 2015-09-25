@@ -11,6 +11,7 @@
  * Abstract:
  *          Training: DC_Init; DC_AddTrain,DC_AddTrainFile;DC_Train;DC_Exit;
 			Classify: DC_Init;DC_LoadTrainResult;DC_Classify,DC_ClassifyFile;DC_Exit
+			Support Multiple Channel of Classification
  * Author:   Kevin Zhang 
  *          Email: pipy_zhang@msn.com kevinzhang@bit.edu.cn
  *			Weibo: http://weibo.com/drkevinzhang
@@ -34,6 +35,9 @@
 #endif
 #define GBK_CODE 0//Ä¬ÈÏÖ§³ÖGBK±àÂë
 #define UTF8_CODE GBK_CODE+1//UTF8±àÂë
+
+#define DC_HANDLE int  //Added in 2015/9/22
+
 /*********************************************************************
  *
  *  Func Name  : DC_Init
@@ -72,18 +76,49 @@ DEEP_CLASSIFIER_API void DC_Exit();
 
 /*********************************************************************
  *
+ *  Func Name  : DC_NewInstance
+ *
+ *  Description: New a  DeepClassifier Instance
+ *               The function must be invoked before mulitiple classifiers
+ *
+ *  Parameters : int nFeatureCount: Feature count
+ *  Returns    : DC_HANDLE , DeepClassifier Handle if success; otherwise return -1; 
+ *  Author     : Kevin Zhang  
+ *  History    : 
+ *              1.create 2015-9-22
+ *********************************************************************/
+DEEP_CLASSIFIER_API DC_HANDLE  DC_NewInstance(int nFeatureCount=800);
+
+/*********************************************************************
+ *
+ *  Func Name  : DC_DeleteInstance
+ *
+ *  Description: Delete a  DeepClassifier Instance with handle
+ *               The function must be invoked before release a specific classifier
+ *
+ *  Parameters : None
+ *  Returns    : DC_HANDLE , DeepClassifier Handle
+ *  Author     : Kevin Zhang  
+ *  History    : 
+ *              1.create 2015-9-22
+ *********************************************************************/
+DEEP_CLASSIFIER_API int DC_DeleteInstance(DC_HANDLE handle);
+
+/*********************************************************************
+ *
  *  Func Name  : DC_AddTrain
  *
  *  Description: DeepClassifier Training on given text in Memory    
  *
 	Parameter:   const char * sClassName: class name
  *				 sText: text content
+ *               handle: classifier handle
  *  Returns    : success or fail
  *  Author     : Kevin Zhang  
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_AddTrain(const char *sClassName,const char *sText);
+DEEP_CLASSIFIER_API bool DC_AddTrain(const char *sClassName,const char *sText,DC_HANDLE handle=0);
 
 /*********************************************************************
  *
@@ -99,21 +134,8 @@ DEEP_CLASSIFIER_API bool DC_AddTrain(const char *sClassName,const char *sText);
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_AddTrainFile(const char *sClassName,const char *sFilename);
+DEEP_CLASSIFIER_API bool DC_AddTrainFile(const char *sClassName,const char *sFilename,DC_HANDLE handle=0);
 
-/*********************************************************************
- *
- *  Func Name  : DC_AddTrainComplete
- *
- *  Description: DeepClassifier DC_AddTrainComplete    
- *
-	Parameter:   None
- *  Returns    : success or fail
- *  Author     : Kevin Zhang  
- *  History    : 
- *              1.create 2013-8-6
- *********************************************************************/
-//DEEP_CLASSIFIER_API bool DC_AddTrainComplete();
 /*********************************************************************
  *
  *  Func Name  : DC_Train
@@ -129,7 +151,7 @@ DEEP_CLASSIFIER_API bool DC_AddTrainFile(const char *sClassName,const char *sFil
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_Train();
+DEEP_CLASSIFIER_API bool DC_Train(DC_HANDLE handle=0);
 
 /*********************************************************************
  *
@@ -144,7 +166,7 @@ DEEP_CLASSIFIER_API bool DC_Train();
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_LoadTrainResult();
+DEEP_CLASSIFIER_API bool DC_LoadTrainResult(DC_HANDLE handle=0);
 
 /*********************************************************************
  *
@@ -160,7 +182,7 @@ DEEP_CLASSIFIER_API bool DC_LoadTrainResult();
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API const char * DC_Classify(const char *sText);
+DEEP_CLASSIFIER_API const char * DC_Classify(const char *sText,DC_HANDLE handle=0);
 /*********************************************************************
  *
  *  Func Name  : DC_ClassifyFile
@@ -175,7 +197,7 @@ DEEP_CLASSIFIER_API const char * DC_Classify(const char *sText);
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API const char * DC_ClassifyFile(const char *sFilename);
+DEEP_CLASSIFIER_API const char * DC_ClassifyFile(const char *sFilename,DC_HANDLE handle=0);
 /*********************************************************************
  *
  *  Func Name  : DC_GetLastErrorMsg
