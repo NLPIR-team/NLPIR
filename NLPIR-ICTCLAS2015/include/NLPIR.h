@@ -354,8 +354,10 @@ NLPIR_API const char * NLPIR_GetWordPOS(const char *sWord);
 *  Description: Extract keyword from sLine
 *
 *  Parameters : sLine, the input paragraph 
-				bArguOut,whether  the keyword weight output
-				nMaxKeyLimt:maximum of key words, up to 50
+*					the input size cannot be very big(less than 60MB). Process large memory, recommendate use NLPIR_NWI series functions
+*				bArguOut,whether  the keyword weight output
+				nMaxKeyLimit:maximum of key words ; -1 for unlimited
+				
 *  Returns    : keywords list like:
 *               "科学发展观 宏观经济 " or
 				"科学发展观/23.80/12#宏观经济/12.20/1" with weight(信息熵加上词频信息)
@@ -374,7 +376,7 @@ NLPIR_API const char * NLPIR_GetKeyWords(const char *sLine,int nMaxKeyLimit=50,b
 *
 *  Parameters : sFilename, the input text file name 
 				bArguOut,whether  the keyword weight output
-				nMaxKeyLimt:maximum of key words, up to 50
+				nMaxKeyLimit:maximum of key words, -1 for unlimited
 *  Returns    : keywords list like:
 *               "科学发展观 宏观经济 " or
 				"科学发展观 23.80 宏观经济 12.20" with weight
@@ -391,9 +393,10 @@ NLPIR_API const char * NLPIR_GetFileKeyWords(const char *sFilename,int nMaxKeyLi
 *
 *  Description: Extract New words from sLine
 *
-*  Parameters : sLine, the input paragraph 
-				bArguOut,whether  the keyword weight output
-				nMaxKeyLimt:maximum of key words, up to 50
+*  Parameters : sLine, the input paragraph; 
+*						the input size cannot be very big(less than 60MB). Process large memory, recommendate use NLPIR_NWI series functions
+*				bArguOut,whether  the keyword weight output
+*				nMaxKeyLimit:maximum of key words, up to 50
 *  Returns    : new words list like:
 *               "科学发展观 屌丝 "or
 				"科学发展观 23.80 屌丝 12.20" with weight
@@ -412,7 +415,7 @@ NLPIR_API const char * NLPIR_GetNewWords(const char *sLine,int nMaxKeyLimit=50,b
 *
 *  Parameters : sFilename, the input text file name 
 				bArguOut,whether  the keyword weight output
-				nMaxKeyLimt:maximum of key words, up to 50
+				nMaxKeyLimit:maximum of key words, up to 50
 *  Returns    : keywords list like:
 *               "科学发展观 宏观经济 " or
 				"科学发展观 23.80 宏观经济 12.20" with weight
@@ -589,7 +592,8 @@ NLPIR_API int NLPIR_NWI_AddMem(const char *sText);
 *  History    : 
 *              1.create 2013/11/23
 *********************************************************************/
-NLPIR_API int NLPIR_NWI_Complete();//新词
+NLPIR_API int NLPIR_NWI_Complete();//文件或者内存导入结束
+
 /*********************************************************************
 *
 *  Func Name  : NLPIR_NWI_GetResult
@@ -607,6 +611,25 @@ NLPIR_API int NLPIR_NWI_Complete();//新词
 *              1.create 2013/11/23
 *********************************************************************/
 NLPIR_API const char * NLPIR_NWI_GetResult(bool bWeightOut=false);//输出新词识别结果
+
+/*********************************************************************
+*
+*  Func Name  : NLPIR_NWI_GetKeyWordResult
+*
+*  Description: 获取关键词识别的结果
+*				需要在运行NLPIR_NWI_Complete()之后，才有效
+*
+*  Parameters : bWeightOut：是否需要输出每个新词的权重参数
+*				nMaxKeyLimit:maximum of key words, -1 for unlimited	
+*  Returns    : 输出格式为
+*				【新词1】 【权重1】 【新词2】 【权重2】 ... 
+*
+*  Author     : Kevin Zhang
+*  History    : 
+*              1.create 2015/10/13
+*********************************************************************/
+NLPIR_API const char * NLPIR_NWI_GetKeyWordResult(int nMaxKeyLimit=50,bool bWeightOut=false);
+
 /*********************************************************************
 *
 *  Func Name  : NLPIR_NWI_Result2UserDict
