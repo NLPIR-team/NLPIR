@@ -21,7 +21,7 @@
 #if !defined(__KEYEXTRACT_2013_LIB_INCLUDED__)
 #define __KeyExtract_2013_LIB_INCLUDED__
 #ifdef OS_LINUX
-#define KEYEXTRACT_API 
+#define KEYEXTRACT_API extern "C" 
 #else
 #ifdef KEYEXTRACT_EXPORTS
 #define KEYEXTRACT_API extern "C" __declspec(dllexport)
@@ -51,7 +51,7 @@
  *  History    : 
  *              1.create 2013-2-6
  *********************************************************************/
-KEYEXTRACT_API bool KeyExtract_Init(const char * sDataPath=0,int encode=GBK_CODE,const char*sLicenceCode=0);
+KEYEXTRACT_API int KeyExtract_Init(const char * sDataPath=0,int encode=GBK_CODE,const char*sLicenceCode=0);
 
 /*********************************************************************
  *
@@ -111,4 +111,17 @@ KEYEXTRACT_API const char * KeyExtract_GetKeyWords(const char *sLine,int nMaxKey
 *              1.create 2012/11/12
 *********************************************************************/
 KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
+/*********************************************************************
+ *
+ *  Func Name  : KeyExtract_ImportKeyBlackList
+ *
+ *  Description: Import keyword black list 
+ *  Parameters : Text filename for user dictionary, each line for a stop keyword
+ *  Returns    : The  number of  lexical entry imported successfully
+ *  Author     : Kevin Zhang
+ *  History    : 
+ *              1.create 2014-6-26
+ *********************************************************************/
+KEYEXTRACT_API unsigned int KeyExtract_ImportKeyBlackList(const char *sFilename);
+
 #endif

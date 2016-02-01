@@ -238,19 +238,6 @@ NLPIR_API double NLPIR_FileProcess(const char *sSourceFilename,const char *sResu
  *              1.create 2014-8-3
  *********************************************************************/
 NLPIR_API unsigned int NLPIR_ImportUserDict(const char *sFilename,bool bOverwrite=true);
-
-/*********************************************************************
- *
- *  Func Name  : NLPIR_ImportKeyBlackList
- *
- *  Description: Import keyword black list 
- *  Parameters : Text filename for user dictionary, each line for a stop keyword
- *  Returns    : The  number of  lexical entry imported successfully
- *  Author     : Kevin Zhang
- *  History    : 
- *              1.create 2014-6-26
- *********************************************************************/
-NLPIR_API unsigned int NLPIR_ImportKeyBlackList(const char *sFilename);
 /*********************************************************************
 *
 *  Func Name  : NLPIR_AddUserWord
@@ -347,6 +334,166 @@ NLPIR_API int NLPIR_IsWord(const char *sWord);
 *********************************************************************/
 NLPIR_API const char * NLPIR_GetWordPOS(const char *sWord);
 
+
+/*********************************************************************
+*
+*  Func Name  : NLPIR_SetPOSmap
+*
+*  Description: select which pos map will use
+*
+*  Parameters :nPOSmap, ICT_POS_MAP_FIRST  计算所一级标注集
+						ICT_POS_MAP_SECOND  计算所二级标注集
+						PKU_POS_MAP_SECOND   北大二级标注集
+						PKU_POS_MAP_FIRST 	  北大一级标注集
+*  Returns    : 0, failed; else, success
+*
+*  Author     :   
+*  History    : 
+*              1.create 11:10:2008
+*********************************************************************/
+NLPIR_API int NLPIR_SetPOSmap(int nPOSmap);
+
+
+/*********************************************************************
+*
+*  Func Name  : NLPIR_FinerSegment(const char *sLine)
+*
+*  Description: 当前的切分结果过大时，如“中华人民共和国”
+*				需要执行该函数，将切分结果细分为“中华 人民 共和国”
+*				细分粒度最大为三个汉字
+*  Parameters : sLine:输入的字符串
+*  Returns    : 返回的细分串，如果不能细分，则返回为空字符串""
+*
+*  Author     : Kevin Zhang
+*  History    : 
+*              1.create 2014/10/10
+*********************************************************************/
+NLPIR_API const char*  NLPIR_FinerSegment(const char *sLine);
+/*********************************************************************
+*
+*  Func Name  : NLPIR_GetEngWordOrign(const char *sWord)
+*
+*  Description: 获取各类英文单词的原型，考虑了过去分词、单复数等情况
+*  Parameters : sWord:输入的单词
+*  Returns    : 返回的词原型形式
+*               driven->drive   drives->drive   drove-->drive
+*  Author     : Kevin Zhang
+*  History    : 
+*              1.create 2014/12/11
+*********************************************************************/
+NLPIR_API const char*  NLPIR_GetEngWordOrign(const char *sWord);
+
+/*********************************************************************
+*
+*  Func Name  : NLPIR_WordFreqStat(const char *sText)
+*
+*  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
+*  Parameters : sWord:输入的文本内容
+*  Returns    : 返回的是词频统计结果形式如下：
+*				张华平/nr/10#博士/n/9#分词/n/8
+*  Author     : Kevin Zhang
+*  History    : 
+*              1.create 2014/12/11
+*********************************************************************/
+NLPIR_API const char*  NLPIR_WordFreqStat(const char *sText);
+/*********************************************************************
+*
+*  Func Name  : NLPIR_FileWordFreqStat(const char *sFilename)
+*
+*  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
+*  Parameters : sWord:输入的文本内容
+*  Returns    : 返回的是词频统计结果形式如下：
+*				张华平/nr/10#博士/n/9#分词/n/8
+*  Author     : Kevin Zhang
+*  History    : 
+*              1.create 2014/12/11
+*********************************************************************/
+NLPIR_API const char*  NLPIR_FileWordFreqStat(const char *sFilename);
+
+/*********************************************************************
+*
+*  class CNLPIR
+*   描述：
+*		   NLPIR 类，使用之前必须调用NLPIR_Init(),退出必须调用NLPIR_Exit
+*		   在使用过程中可以使用多份CNLPIR，支持多线程分词处理
+*			每个线程先调用GetActiveInstance，获取处理类，然后，设置SetAvailable(false)宣示线程主权，
+*			处理完成后，SetAvailable(true)释放线程主权
+*  History    : 
+*              1.create 2005-11-10
+*********************************************************************/
+#ifdef OS_LINUX
+class  CNLPIR {
+#else
+class  __declspec(dllexport) CNLPIR {
+#endif
+	public:
+		CNLPIR();
+		~CNLPIR();
+		double FileProcess(const char *sSourceFilename,const char *sResultFilename,int bPOStagged=1);
+		//Process a file，类似于C下的NLPIR_FileProcess
+		const char * ParagraphProcess(const char *sLine,int bPOStagged=1); 
+		//Process a file，类似于C下的NLPIR_ParagraphProcess
+		const result_t * ParagraphProcessA(const char *sParagraph,int *pResultCount,bool bUserDict=true);
+		//Process a file，类似于C下的NLPIR_ParagraphProcessA
+
+		void ParagraphProcessAW(int nCount,result_t * result);
+		int GetParagraphProcessAWordCount(const char *sParagraph);
+
+		bool SetAvailable(bool bAvailable=true);//当前线程释放该类，可为下一个线程使用
+		bool IsAvailable();//判断当前分词器是否被线程占用
+		unsigned int GetHandle()
+		{
+			return m_nHandle;
+		}
+
+#ifdef  NLPIR_KEY_NEW_FUNC//Include keyword and new word function
+		const char * GetKeyWords(const char *sLine,int nMaxKeyLimit,bool bWeightOut);
+		//获取关键词
+		const char * GetFileKeyWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
+		//从文本文件中获取关键词
+		const char * GetNewWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
+		//获取新词
+		const char * GetFileNewWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
+		//从文本文件中获取新词
+#endif
+private:
+		unsigned int m_nHandle;//该成员作为该类的Handle值，由系统自动分配，用户不可修改
+		bool m_bAvailable;//该成员作为多线程共享控制的参数，由系统自动分配，用户不可修改
+		int m_nThreadCount;//Thread Count
+		bool m_bWriting;//writing  protection
+};
+
+/*********************************************************************
+*
+*  Func Name  : GetActiveInstance
+*
+*  Description: 获取可用的CNLPIR类，适用于多线程开发，先获取可用的CNLP，再调用其中的功能
+
+*
+*  Parameters : None
+*  Returns    : CNLPIR*
+*
+*  Author     : Kevin Zhang
+*  History    : 
+*              1.create 1:10:2012
+*********************************************************************/
+NLPIR_API CNLPIR* GetActiveInstance();
+/*********************************************************************
+*
+*  Func Name  : NLPIR_FingerPrint
+*
+*  Description: Extract a finger print from the paragraph
+*
+*  Parameters :
+*  Returns    : 0, failed; else, the finger print of the content
+*
+*  Author     :   
+*  History    : 
+*              1.create 11:10:2008
+*********************************************************************/
+NLPIR_API unsigned long NLPIR_FingerPrint(const char *sLine);
+
+#ifdef  NLPIR_KEY_NEW_FUNC//Include keyword and new word function
 /*********************************************************************
 *
 *  Func Name  : NLPIR_GetKeyWords
@@ -387,6 +534,20 @@ NLPIR_API const char * NLPIR_GetKeyWords(const char *sLine,int nMaxKeyLimit=50,b
 *              1.create 2012/11/12
 *********************************************************************/
 NLPIR_API const char * NLPIR_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
+
+/*********************************************************************
+ *
+ *  Func Name  : NLPIR_ImportKeyBlackList
+ *
+ *  Description: Import keyword black list 
+ *  Parameters : Text filename for user dictionary, each line for a stop keyword
+ *  Returns    : The  number of  lexical entry imported successfully
+ *  Author     : Kevin Zhang
+ *  History    : 
+ *              1.create 2014-6-26
+ *********************************************************************/
+NLPIR_API unsigned int NLPIR_ImportKeyBlackList(const char *sFilename);
+
 /*********************************************************************
 *
 *  Func Name  : NLPIR_GetNewWords
@@ -426,106 +587,7 @@ NLPIR_API const char * NLPIR_GetNewWords(const char *sLine,int nMaxKeyLimit=50,b
 *              1.create 2012/11/12
 *********************************************************************/
 NLPIR_API const char * NLPIR_GetFileNewWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
-/*********************************************************************
-*
-*  Func Name  : NLPIR_FingerPrint
-*
-*  Description: Extract a finger print from the paragraph
-*
-*  Parameters :
-*  Returns    : 0, failed; else, the finger print of the content
-*
-*  Author     :   
-*  History    : 
-*              1.create 11:10:2008
-*********************************************************************/
-NLPIR_API unsigned long NLPIR_FingerPrint(const char *sLine);
 
-/*********************************************************************
-*
-*  Func Name  : NLPIR_SetPOSmap
-*
-*  Description: select which pos map will use
-*
-*  Parameters :nPOSmap, ICT_POS_MAP_FIRST  计算所一级标注集
-						ICT_POS_MAP_SECOND  计算所二级标注集
-						PKU_POS_MAP_SECOND   北大二级标注集
-						PKU_POS_MAP_FIRST 	  北大一级标注集
-*  Returns    : 0, failed; else, success
-*
-*  Author     :   
-*  History    : 
-*              1.create 11:10:2008
-*********************************************************************/
-NLPIR_API int NLPIR_SetPOSmap(int nPOSmap);
-
-
-/*********************************************************************
-*
-*  class CNLPIR
-*   描述：
-*		   NLPIR 类，使用之前必须调用NLPIR_Init(),退出必须调用NLPIR_Exit
-*		   在使用过程中可以使用多份CNLPIR，支持多线程分词处理
-*			每个线程先调用GetActiveInstance，获取处理类，然后，设置SetAvailable(false)宣示线程主权，
-*			处理完成后，SetAvailable(true)释放线程主权
-*  History    : 
-*              1.create 2005-11-10
-*********************************************************************/
-#ifdef OS_LINUX
-class  CNLPIR {
-#else
-class  __declspec(dllexport) CNLPIR {
-#endif
-	public:
-		CNLPIR();
-		~CNLPIR();
-		double FileProcess(const char *sSourceFilename,const char *sResultFilename,int bPOStagged=1);
-		//Process a file，类似于C下的NLPIR_FileProcess
-		const char * ParagraphProcess(const char *sLine,int bPOStagged=1); 
-		//Process a file，类似于C下的NLPIR_ParagraphProcess
-		const result_t * ParagraphProcessA(const char *sParagraph,int *pResultCount,bool bUserDict=true);
-		//Process a file，类似于C下的NLPIR_ParagraphProcessA
-
-		void ParagraphProcessAW(int nCount,result_t * result);
-		int GetParagraphProcessAWordCount(const char *sParagraph);
-
-		const char * GetKeyWords(const char *sLine,int nMaxKeyLimit,bool bWeightOut);
-		//获取关键词
-		const char * GetFileKeyWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
-		//从文本文件中获取关键词
-		const char * GetNewWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
-		//获取新词
-		const char * GetFileNewWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
-		//从文本文件中获取新词
-
-		bool SetAvailable(bool bAvailable=true);//当前线程释放该类，可为下一个线程使用
-		bool IsAvailable();//判断当前分词器是否被线程占用
-		unsigned int GetHandle()
-		{
-			return m_nHandle;
-		}
-private:
-		unsigned int m_nHandle;//该成员作为该类的Handle值，由系统自动分配，用户不可修改
-		bool m_bAvailable;//该成员作为多线程共享控制的参数，由系统自动分配，用户不可修改
-		int m_nThreadCount;//Thread Count
-		bool m_bWriting;//writing  protection
-};
-
-/*********************************************************************
-*
-*  Func Name  : GetActiveInstance
-*
-*  Description: 获取可用的CNLPIR类，适用于多线程开发，先获取可用的CNLP，再调用其中的功能
-
-*
-*  Parameters : None
-*  Returns    : CNLPIR*
-*
-*  Author     : Kevin Zhang
-*  History    : 
-*              1.create 1:10:2012
-*********************************************************************/
-NLPIR_API CNLPIR* GetActiveInstance();
 
 /*********************************************************************
 *
@@ -645,60 +707,5 @@ NLPIR_API const char * NLPIR_NWI_GetKeyWordResult(int nMaxKeyLimit=50,bool bWeig
 *              1.create 2013/11/23
 *********************************************************************/
 NLPIR_API unsigned int  NLPIR_NWI_Result2UserDict();//新词识别结果转为用户词典,返回新词结果数目
-/*********************************************************************
-*
-*  Func Name  : NLPIR_FinerSegment(const char *sLine)
-*
-*  Description: 当前的切分结果过大时，如“中华人民共和国”
-*				需要执行该函数，将切分结果细分为“中华 人民 共和国”
-*				细分粒度最大为三个汉字
-*  Parameters : sLine:输入的字符串
-*  Returns    : 返回的细分串，如果不能细分，则返回为空字符串""
-*
-*  Author     : Kevin Zhang
-*  History    : 
-*              1.create 2014/10/10
-*********************************************************************/
-NLPIR_API const char*  NLPIR_FinerSegment(const char *sLine);
-/*********************************************************************
-*
-*  Func Name  : NLPIR_GetEngWordOrign(const char *sWord)
-*
-*  Description: 获取各类英文单词的原型，考虑了过去分词、单复数等情况
-*  Parameters : sWord:输入的单词
-*  Returns    : 返回的词原型形式
-*               driven->drive   drives->drive   drove-->drive
-*  Author     : Kevin Zhang
-*  History    : 
-*              1.create 2014/12/11
-*********************************************************************/
-NLPIR_API const char*  NLPIR_GetEngWordOrign(const char *sWord);
-
-/*********************************************************************
-*
-*  Func Name  : NLPIR_WordFreqStat(const char *sText)
-*
-*  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
-*  Parameters : sWord:输入的文本内容
-*  Returns    : 返回的是词频统计结果形式如下：
-*				张华平/nr/10#博士/n/9#分词/n/8
-*  Author     : Kevin Zhang
-*  History    : 
-*              1.create 2014/12/11
-*********************************************************************/
-NLPIR_API const char*  NLPIR_WordFreqStat(const char *sText);
-/*********************************************************************
-*
-*  Func Name  : NLPIR_FileWordFreqStat(const char *sFilename)
-*
-*  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
-*  Parameters : sWord:输入的文本内容
-*  Returns    : 返回的是词频统计结果形式如下：
-*				张华平/nr/10#博士/n/9#分词/n/8
-*  Author     : Kevin Zhang
-*  History    : 
-*              1.create 2014/12/11
-*********************************************************************/
-NLPIR_API const char*  NLPIR_FileWordFreqStat(const char *sFilename);
-
+#endif//NLPIR_INTERNAL_CALL
 #endif//#define __NLPIR_ICTCLAS_2014_H_INCLUDED__
