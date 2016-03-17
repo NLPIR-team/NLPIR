@@ -113,6 +113,20 @@ KEYEXTRACT_API const char * KeyExtract_GetKeyWords(const char *sLine,int nMaxKey
 KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
 /*********************************************************************
  *
+ *  Func Name  : KeyExtract_ImportUserDict
+ *
+ *  Description: Import keyword user defined dictionary
+ *  Parameters : Text filename for user dictionary, each line for a imported keyword
+ *				 
+ *  Returns    : The  number of  lexical entry imported successfully
+ *  Author     : Kevin Zhang
+ *  History    : 
+ *              1.create 2014-6-26
+ *********************************************************************/
+KEYEXTRACT_API unsigned int KeyExtract_ImportUserDict(const char *sFilename);
+
+/*********************************************************************
+ *
  *  Func Name  : KeyExtract_ImportKeyBlackList
  *
  *  Description: Import keyword black list 
@@ -123,5 +137,21 @@ KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int
  *              1.create 2014-6-26
  *********************************************************************/
 KEYEXTRACT_API unsigned int KeyExtract_ImportKeyBlackList(const char *sFilename);
-
+/*********************************************************************
+ *
+ *  Func Name  : KeyExtract_GetLastErrorMsg
+ *
+ *  Description: GetLastErrorMessage
+ *    
+ *
+ *  Parameters : void
+ *               
+ *				  
+ *  Returns    : the result buffer pointer 
+ *
+ *  Author     : Kevin Zhang  
+ *  History    : 
+ *              1.create 2014-2-27
+ *********************************************************************/
+KEYEXTRACT_API const char * KeyExtract_GetLastErrorMsg();
 #endif

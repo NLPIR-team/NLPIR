@@ -10,7 +10,7 @@
  * a written license from the author.
  * Filename: 
  * Abstract:
- *          NewWordFinder.h: definition of the NLPIR lexical analysis system API
+ *          NewWordFinder.h: definition of the NewWordFinder new word finder system API
  * Author:   Kevin Zhang 
  *          Email: pipy_zhang@msn.com kevinzhang@bit.edu.cn
  *			Weibo: http://weibo.com/drkevinzhang
@@ -212,4 +212,21 @@ NEWWORDFINDER_API const char * NWF_Batch_GetResult(bool bWeightOut=false);//输出
 *              1.create 2013/11/23
 *********************************************************************/
 NEWWORDFINDER_API unsigned int  NWF_Result2UserDict();//新词识别结果转为用户词典,返回新词结果数目
+/*********************************************************************
+ *
+ *  Func Name  : KeyExtract_GetLastErrorMsg
+ *
+ *  Description: GetLastErrorMessage
+ *    
+ *
+ *  Parameters : void
+ *               
+ *				  
+ *  Returns    : the result buffer pointer 
+ *
+ *  Author     : Kevin Zhang  
+ *  History    : 
+ *              1.create 2014-2-27
+ *********************************************************************/
+NEWWORDFINDER_API const char *  NWF_GetLastErrorMsg();
 #endif
