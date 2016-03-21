@@ -237,7 +237,7 @@ NLPIR_API double NLPIR_FileProcess(const char *sSourceFilename,const char *sResu
  *  History    : 
  *              1.create 2014-8-3
  *********************************************************************/
-NLPIR_API unsigned int NLPIR_ImportUserDict(const char *sFilename,bool bOverwrite=true);
+NLPIR_API unsigned int NLPIR_ImportUserDict(const char *sFilename,bool bOverwrite=false);
 /*********************************************************************
 *
 *  Func Name  : NLPIR_AddUserWord

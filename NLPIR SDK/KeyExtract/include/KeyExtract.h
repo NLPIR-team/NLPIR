@@ -123,7 +123,7 @@ KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int
  *  History    : 
  *              1.create 2014-6-26
  *********************************************************************/
-KEYEXTRACT_API unsigned int KeyExtract_ImportUserDict(const char *sFilename);
+KEYEXTRACT_API unsigned int KeyExtract_ImportUserDict(const char *sFilename,bool bOverwrite=false);
 
 /*********************************************************************
  *

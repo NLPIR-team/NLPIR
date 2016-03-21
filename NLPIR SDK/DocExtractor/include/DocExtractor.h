@@ -118,7 +118,7 @@ DOCEXTRACTOR_API void DE_ReleaseHandle(DOC_PARSER_HANDLE handle);
 DOCEXTRACTOR_API unsigned int DE_ImportSentimentDict(const char *sFilename);//导入用户情感词典
 ////导入用户自定义的情感词表，每行一个词，空格后加上正负权重，如：语焉不详 -2;
 //如果导入的情感词属于新词，现在用户词典中导入，否则情感识别自动跳跃
-DOCEXTRACTOR_API unsigned int DE_ImportUserDict(const char *sFilename,bool bOverwite=true);//导入用户词典
+DOCEXTRACTOR_API unsigned int DE_ImportUserDict(const char *sFilename,bool bOverwite=false);//导入用户词典
 ////导入用户自定义的词典
 DOCEXTRACTOR_API unsigned int DE_ImportKeyBlackList(const char *sFilename);//导入关键词黑名单
 ////导入用户自定义的关键词黑名单
