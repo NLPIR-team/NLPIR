@@ -1,0 +1,4 @@
+序号	字段名称	索引名称	数据类型	是否需要索引	是否需要存储	解释
+1	Id	id	int	1	1	id
+2	name	name	text	1	1	name
+3	address	address	text	1	1	address

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<SearchServerConf>
+	<ReleaseVersion>
+		<version>3.0</version>
+		<lastModify>2011-8-28</lastModify>
+	</ReleaseVersion>
+	<Config>
+		<ServerIP>127.0.0.1</ServerIP>#检索服务器IP地址
+		<Port>98</Port>##检索服务进程的端口号
+		<ICTCLAS>on</ICTCLAS>
+		<dictpath>..\dict</dictpath>##词典等目标文件
+		<ReturnLimit>3000</ReturnLimit>
+		<AbstractLength>300</AbstractLength>//abstract length
+		<ReturnLimit>3000</ReturnLimit>
+		<AbstractStart><font color="red"></AbstractStart>//abstract start
+		<AbstractEnd></font></AbstractEnd>//abstract start
+                <protocol>Elephant</protocol>//GoldEye,表示支持黄金眼的协议； Elephant :表示支持大象金服协议;默认为后者
+		<index>
+			<indexfile>..\indexfile\JZSearch</indexfile>##原始标准数据及索引结果文件
+			<FieldInfo>..\indexfile\field.dat</FieldInfo>##字段信息文件
+			<SORT>DOCID</SORT>
+			##排序方式：
+			##DOCID=按照DOCID顺序排序（即文档建索引的顺序），默认方式；DOCID=按照DOCID排序
+			##REVERSE_DOCID=按照DOCID逆序排序（即后建索引的结果排名靠前）
+			##RELEVANCE=按照相关度排序
+			<Encoding>UTF8</Encoding>//编码：GBK,UTF8,BIG5,GBK-FANTI
+			<GroupMaxCount>50</GroupMaxCount>//分组最大条目数
+			<MexMem>8096000000</MexMem>//最大内存数
+		</index>		
+	</Config>
+</SearchServerConf>

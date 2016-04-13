@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<SearchAgentConf>
+	<ReleaseVersion version="1.0" lastModify="2009-12-30" />
+	<Config>
+		<ServerIP>127.0.0.1</ServerIP>#检索服务器IP地址127.0.0.1  192.168.1.130
+		<Port>98</Port>##检索服务进程的端口号
+		<FieldInfo>..\indexfile1\field.dat</FieldInfo>##字段信息文件
+		<Language>Chinese</Language>//少数民族语言
+		<Encode>UTF8</Encode>//少数民族语言
+	</Config>//E:\Projects\LJSearch\JZSearchInstall\IndexFile\field.dat
+</SearchAgentConf>
