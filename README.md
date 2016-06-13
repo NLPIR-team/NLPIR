@@ -2,26 +2,35 @@
 开发者：张华平/Dr. Kevin Zhang</br>
 NLPIR官方网站：<http://www.nlpir.org/>
 在线演示网址： http://ictclas.nlpir.org/nlpir/
-联系方式：
-张华平 博士 副教授  研究生导师
-北京理工大学网络搜索挖掘与安全实验室 主任
+张华平 博士 副教授 研究生导师
+大数据搜索挖掘实验室（北京市海量语言信息处理与云计算应用工程技术研究中心） 主任
 地址：北京海淀区中关村南大街5号 100081
-手机：13681251543
 电话：+86-10-68918642
+手机（助手）：+86-13681251543
 Email:kevinzhang@bit.edu.cn
-MSN: pipy_zhang@msn.com;
+MSN:  pipy_zhang@msn.com;
 网站: http://www.nlpir.org (自然语言处理与信息检索共享平台)
-博客:http://hi.baidu.com/drkevinzhang/
+http://www.bigdataBBS.com (大数据论坛)
 微博:http://www.weibo.com/drkevinzhang/
-
+微信：drkevinzhang
+微信公众号：大数据千人会
 Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
 Associate Professor, Graduate Supervisor
-Director, Web Search,Mining and Security Lab.
-Beijing Institute of Technology 
+Director, Big Data Search and Mining Lab. 
+Beijing Engineering Research Center of Massive Language Information Processing and Cloud Computing Application
+Beijing Institute of Technology
 Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
-Mobile：+86-13681251543
 Tel: +86-10-68918642
+Mobile(Assistant)：+86-13681251543
 Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://www.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+http://www.bigdataBBS.com (Big Data Forum)
+Twitter: http://www.weibo.com/drkevinzhang/
+Webchat: drkevinzhang
+Subscriptions: Thousands of  Big Data Experts
+ 
 ##简介
 NLPIR是一套专门针对原始文本集进行处理和加工的软件，提供了中间件处理效果的可视化展示，也可以作为小规模数据的处理加工工具。用户可以使用该软件对自己的数据进行处理。
 >NLPIR分词系统前身为2000年发布的ICTCLAS词法分析系统，从2009年开始，为了和以前工作进行大的区隔，并推广NLPIR自然语言处理与信息检索共享平台，调整命名为NLPIR分词系统。</br>
