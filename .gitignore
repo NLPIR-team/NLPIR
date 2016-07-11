@@ -3,6 +3,8 @@
 #################
 *.err
 *.log
+!/protege-CN/Protege-5.0.0-beta-22-SNAPSHOT/bin
+
 
 #################
 ## Android
