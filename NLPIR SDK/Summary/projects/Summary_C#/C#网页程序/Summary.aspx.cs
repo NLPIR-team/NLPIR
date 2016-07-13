@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 
-namespace SummaryCS
-{
 
-    class Program
+
+
+    public  partial class Summary : System.Web.UI.Page
     {
-
         //引用  lib\win64\KeyExtract.dll    以具体存放路径为准
         //const string path = @"../lib/LJSummary.dll";//设定dll的路径
         const string path = @"D:\NLPIR\bin\Summary\LJSummary.dll";
@@ -70,34 +71,48 @@ namespace SummaryCS
         [DllImport(path, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl, EntryPoint = "DS_GetLastErrMsg")]
         public static extern string DS_GetLastErrMsg();
 
-        static void Main(string[] args)
+
+
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!DS_Init(@"D:\NLPIR", 0, ""))//数据在上一层目录下，默认为GBK编码的分词
+            //string dataPath = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+            //C:\work\NLPIR\NLPIR SDK\Summary
+            if (!DS_Init(@"D:\NLPIR", 1, ""))//数据在上一层目录下，默认为GBK编码的分词
             {
-                System.Console.WriteLine("自动摘要初始化失败！");
+                Response.Write("自动摘要初始化失败！");
                 return;
             }
 
-            try
-            {
+            string str = "";
+             try 
+            {/*
                 IntPtr intPtr = DS_SingleDoc(@"
 对于有的粉丝，我真的无语了！大家都为姚贝娜感到惋惜，都觉得太可惜了。但有歌迷的观点真的让人无语，说什么:吴奇隆在姚贝娜追悼会的时候结婚，这样好吗？首先吴刘跟姚的不幸有半毛钱关系啊;其次难道说姚的不幸，全中国有人结婚都得为这事让行？
-", (float)0.50, 100, 0); 
+", (float)0.50, 100, 0);
                 String str = Marshal.PtrToStringAnsi(intPtr);//将切分结果转换为string
-                Console.WriteLine(str);
-
+                Console.WriteLine(str);*/
+                IntPtr intPtr =                 DS_SingleDoc(@"
+对于有的粉丝，我真的无语了！大家都为姚贝娜感到惋惜，都觉得太可惜了。但有歌迷的观点真的让人无语，说什么:吴奇隆在姚贝娜追悼会的时候结婚，这样好吗？首先吴刘跟姚的不幸有半毛钱关系啊;其次难道说姚的不幸，全中国有人结婚都得为这事让行？
+", (float)0.50, 100, 0);
+                string strSum = Marshal.PtrToStringAnsi(intPtr);//将切分结果转换为string
+                Response.Write(strSum);
+               // strSum = DS_GetLastErrMsg();
+                //Response.Write(strSum);
+               
             }
-            catch (Exception ea)
-            {
-                //Console.WriteLine(e.Message);
-                System.Console.WriteLine(ea.Message);
-                //Message返回异常对象中包含的错误信息 
-            }
-            //
-           // System.Console.WriteLine(str);
-            // string a = str;
-            DS_Exit();
-
+             catch (Exception ea)
+             {
+                 //Console.WriteLine(e.Message);
+                 Response.Write(ea.Message);
+                 //Message返回异常对象中包含的错误信息 
+             } 
+                //
+             Response.Write(str);
+               // string a = str;
+             DS_Exit();
+            
         }
+
+        
+        
     }
-}
