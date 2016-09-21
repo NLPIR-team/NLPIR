@@ -1,0 +1,3 @@
+MASM %1.ASM;
+LINK %1.OBJ;
+%1.EXE;
