@@ -19,7 +19,7 @@
  *                
  ****************************************************************************/
 #if !defined(__KEYEXTRACT_2013_LIB_INCLUDED__)
-#define __KeyExtract_2013_LIB_INCLUDED__
+#define __KEYEXTRACT_2013_LIB_INCLUDED__
 #ifdef OS_LINUX
 #define KEYEXTRACT_API extern "C" 
 #else
@@ -154,4 +154,4 @@ KEYEXTRACT_API unsigned int KeyExtract_ImportKeyBlackList(const char *sFilename)
  *              1.create 2014-2-27
  *********************************************************************/
 KEYEXTRACT_API const char * KeyExtract_GetLastErrorMsg();
-#endif
+#endif//__KEYEXTRACT_2013_LIB_INCLUDED__
