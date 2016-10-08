@@ -37,7 +37,7 @@
 #define UTF8_CODE GBK_CODE+1//UTF8±àÂë
 
 #define DC_HANDLE int  //Added in 2015/9/22
-
+#define FEATURE_COUNT 1000
 /*********************************************************************
  *
  *  Func Name  : DC_Init
@@ -57,7 +57,7 @@
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API int DC_Init(const char * sDataPath=0,int encode=GBK_CODE,int nFeatureCount=800,const char*sLicenceCode=0);
+DEEP_CLASSIFIER_API int DC_Init(const char * sDataPath = 0, int encode = GBK_CODE, int nFeatureCount = FEATURE_COUNT, const char*sLicenceCode = 0);
 
 /*********************************************************************
  *
@@ -87,7 +87,7 @@ DEEP_CLASSIFIER_API void DC_Exit();
  *  History    : 
  *              1.create 2015-9-22
  *********************************************************************/
-DEEP_CLASSIFIER_API DC_HANDLE  DC_NewInstance(int nFeatureCount=800);
+DEEP_CLASSIFIER_API DC_HANDLE  DC_NewInstance(int nFeatureCount = FEATURE_COUNT);
 
 /*********************************************************************
  *
