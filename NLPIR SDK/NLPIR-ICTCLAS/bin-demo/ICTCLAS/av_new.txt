@@ -1,0 +1,1740 @@
+No:1	word=development interest	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4862,4882,)
+LV(career(2),)
+RV(to(2),)
+No:2	word=managerial skill	pos=n_new	freq=4	LV=3	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1812,5456,5459,8121,)
+LV(末##末(2),and(1),relate(1),)
+RV(末##末(3),,(1),)
+No:3	word=analysis skill	pos=n_new	freq=7	LV=5	RV=5	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4139,6070,6077,6507,6540,6608,10672,)
+LV(and(2),&(1),financial(2),flow(1),impore(1),)
+RV(末##末(2),for(1),develop(1),need(2),;(1),)
+No:4	word=business partnering	pos=n_new	freq=5	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(891,983,1503,2639,3911,)
+LV(末##末(3),and(1),strengthen(1),)
+RV(末##末(3),.(1),mindset(1),)
+No:5	word=business unit	pos=n_new	freq=4	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1335,3768,4867,4893,)
+LV(other(2),/(1),each(1),)
+RV(to(1),,(1),/(2),)
+No:6	word=business partner	pos=n_new	freq=4	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7472,10914,11874,11886,)
+LV(with(1),good(1),from(1),play(1),)
+RV(末##末(1),.(1),role(1),within(1),)
+No:7	word=business orientation	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(8334,8337,)
+LV("(1),:(1),)
+RV("(1),:(1),)
+No:8	word=team member	pos=n_new	freq=10	LV=9	RV=6	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(232,634,1526,5000,5231,5254,11746,11867,12132,12147,)
+LV(to(2),with(1),other(1),their(1),support(1),monitor(1),guide(1),'coaching'(1),strong(1),)
+RV(末##末(1),to(2),.(4),with(1),,(1),when(1),)
+No:9	word=role expansion	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(790,4033,)
+LV(.(1),treasury(1),)
+RV(-(1),can(1),)
+No:10	word=address issue	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(91,529,)
+LV(to(2),)
+RV(on(1),/(1),)
+No:11	word=magnitude report	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(195,578,587,)
+LV(末##末(1),and(1),'s(1),)
+RV(in(1),would(1),will(1),)
+No:12	word=report requirement	pos=n_new	freq=3	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(786,798,10646,)
+LV(and(3),)
+RV(末##末(1),in(1),for(1),)
+No:13	word=result lu	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6351,11774,)
+LV(for(2),)
+RV(?(2),)
+No:14	word=box think	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(950,10285,)
+LV(the(2),)
+RV(lead(1),across(1),)
+No:15	word=share idea	pos=n_new	freq=5	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7955,8233,8684,10011,10134,)
+LV(to(5),)
+RV(to(5),)
+No:16	word=Supply Chain process	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2351,9838,)
+LV(on(1),in(1),)
+RV(.(1),and(1),)
+No:17	word=line manager	pos=n_new	freq=5	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5307,7573,7692,10852,12752,)
+LV(my(2),by(1),support(1),direct(1),)
+RV(on(2),in(1),.(1),,(1),)
+No:18	word=job rotation	pos=n_new	freq=3	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3394,12576,12887,)
+LV(末##末(3),)
+RV(to(1),未##数(1),plan(1),)
+No:19	word=coach session	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(203,10242,)
+LV(and(1),regular(1),)
+RV(with(1),will(1),)
+No:20	word=customer service	pos=n_new	freq=3	LV=3	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(240,243,10109,)
+LV(末##末(1),and(1),enhance(1),)
+RV(skill(2),enhance(1),)
+No:21	word=monitor team	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4987,5253,)
+LV("(1),and(1),)
+RV(member(1),members'(1),)
+No:22	word=team achievement	pos=n_new	freq=4	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(365,2906,2931,5513,)
+LV(the(4),)
+RV(.(4),)
+No:23	word=eQ train	pos=n_new	freq=6	LV=4	RV=5	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5579,5802,5807,9916,9937,12249,)
+LV(末##末(3),-(1),the(1),for(1),)
+RV(末##末(2),to(1),in(1),,(1),未##数(1),)
+No:24	word=project managment	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3438,3442,)
+LV(末##末(1),develop(1),)
+RV(skill(1),to(1),)
+No:25	word=face discussion	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(10239,10409,)
+LV(-(1),to(1),)
+RV(with(1),and(1),)
+No:26	word=promotion list	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(377,2943,5525,)
+LV(,(3),)
+RV(,(3),)
+No:27	word=tax payment	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7802,11046,)
+LV(make(1),internet(1),)
+RV("(1),on(1),)
+No:28	word=tax authority	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(10993,11003,)
+LV(with(2),)
+RV(to(1),in(1),)
+No:29	word=change agent	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2197,9987,)
+LV(a(2),)
+RV(末##末(1),"(1),)
+No:30	word=influence partner	pos=n_new	freq=3	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6622,6641,6657,)
+LV(ability(3),)
+RV(末##末(2),"(1),)
+No:31	word=term goal	pos=n_new	freq=5	LV=2	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(9164,9169,9188,11973,12043,)
+LV(long(2),short(3),)
+RV("(1),be(1),of(1),((2),)
+No:32	word=action plan	pos=n_new	freq=3	LV=3	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5258,5290,10902,)
+LV(末##末(1),"(1),appropriate(1),)
+RV(.(1),:(2),)
+No:33	word=sAP cOPA	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(9892,9899,)
+LV(-(1),in(1),)
+RV(to(1),derivation(1),)
+No:34	word=seminar course	pos=n_new	freq=4	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(8015,8293,8305,8742,)
+LV(a(2),tax(1),take(1),)
+RV(to(1),and(1),&(2),)
+No:35	word=credit management	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6548,6593,)
+LV(/(1),;(1),)
+RV(末##末(1),skill(1),)
+No:36	word=top management	pos=n_new	freq=5	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7958,8236,8687,10014,10137,)
+LV(to(5),)
+RV(末##末(5),)
+No:37	word=bU head	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4498,8910,)
+LV(with(2),)
+RV(末##末(1),to(1),)
+No:38	word=Internal Control area	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(12255,12274,)
+LV(and(1),within(1),)
+RV(末##末(1),"(1),)
+No:39	word=presentation slide	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(10363,11475,)
+LV(the(1),develop(1),)
+RV(.(1),of(1),)
+No:40	word=end user	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(11173,11180,)
+LV(well(2),)
+RV(in(2),)
+No:41	word=power user	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1906,1927,)
+LV(the(1),a(1),)
+RV(i(1),understand(1),)
+No:42	word=self confidence	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(9569,9642,9718,)
+LV(much(3),)
+RV(and(3),)
+No:43	word=ng vi	pos=n_new	freq=5	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6897,7088,7121,7177,7402,)
+LV(?(5),)
+RV(?(5),)
+No:44	word=ng ty	pos=n_new	freq=3	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6968,7140,7322,)
+LV(?(3),)
+RV(?(1),h(1),khi(1),)
+No:45	word=cFO asia	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(8634,8638,)
+LV(to(1),assist(1),)
+RV(末##末(1),on(1),)
+No:46	word=và hoàn	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6386,11809,)
+LV(pháp(2),)
+RV(thành(2),)
+)
+ Sentence Information:
+No:1	lineBussiness Writing Skill "- This workshop helps to improve on appropriate language to be use in business communication.
+weight=0.00
+wordid_list_size=0()
+No:2	line- It also helps to improve on sentence structure as well as reducing grammatical error.
+weight=0.00
+wordid_list_size=0()
+No:3	lineCooperate Transversally "While working with several workgroups, such as HSE, it would be helpful to delegate some of the tasks to other members.
+weight=0.00
+wordid_list_size=0()
+No:4	lineAs your role is critical, it is important to address issues on a timely basis and give feedback to stakeholders specifically on systems, reports and employee information.
+weight=0.00
+wordid_list_size=0()
+No:5	lineStrive for Results Continue to work on meeting timelines and attention to all deliverables.
+weight=0.00
+wordid_list_size=0()
+No:6	line  Keep stakeholders in the loop on updates on deliverables.
+weight=0.00
+wordid_list_size=0()
+No:7	lineCreative Thinking & Innovation This will help me provide better perspective or new ideas into my work.
+weight=0.00
+wordid_list_size=0()
+No:8	line2014-Technical Skills "On the job learning on the closing process and Magnitude report will be continued.
+weight=0.00
+wordid_list_size=0()
+No:9	lineRegular coaching session will be continued as well.
+weight=0.00
+wordid_list_size=0()
+No:10	lineProblem solving skills Learn how effectively solve work related problem to increase customer satisfaction.
+weight=0.00
+wordid_list_size=0()
+No:11	line Provide suggestion to other team member when certain issue arise.
+weight=0.00
+wordid_list_size=0()
+No:12	lineCustomer service Enhance customer service skills to improve customer satisfaction by participate in Business Writing training.
+weight=0.00
+wordid_list_size=0()
+No:13	line Improve on communication skills with customer.
+weight=0.00
+wordid_list_size=0()
+No:14	lineNew job scope "Learning other function other than invoice processing.
+weight=0.00
+wordid_list_size=0()
+No:15	lineNew project / entity such Merial.
+weight=0.00
+wordid_list_size=0()
+No:16	lineGroup financial system & tool strategy view and direction To participate in group financial system and tool strategy discussion.
+weight=0.00
+wordid_list_size=0()
+No:17	line This is to have a better understanding and align with the group financial system and tool strategy direction.
+weight=0.00
+wordid_list_size=0()
+No:18	lineImprove communication and professional skill with team Improve communication by regular meeting and review within the team so that they fully understand how to reach the team achievement.
+weight=0.00
+wordid_list_size=0()
+No:19	lineHMM-Developing an Employee "Learn how to encourage her team to learn and grow.
+weight=0.00
+wordid_list_size=0()
+No:20	lineHMM-Leading and Motivating "To aid her in improving her leadership skills.
+weight=0.00
+wordid_list_size=0()
+No:21	line Coaching will likewise be continued to support her.
+weight=0.00
+wordid_list_size=0()
+No:22	lineHMM-Delegating Learn to delegate some tasks as part of empowering the team.
+weight=0.00
+wordid_list_size=0()
+No:23	lineMagnitude report Would like to learn on Pharma's magnitude report in order to have better understanding on process flow from raw data to the end report.
+weight=0.00
+wordid_list_size=0()
+No:24	lineCoaching, communication skills "Long term plan in 3 years, to become a leader provide guidance to team members.
+weight=0.00
+wordid_list_size=0()
+No:25	lineExpand current role Have a better understanding on business and accounting process within the organisation.
+weight=0.00
+wordid_list_size=0()
+No:26	lineWorkload or Project management skills Hazel is currently involved in different projects.
+weight=0.00
+wordid_list_size=0()
+No:27	lineTax Impacts understanding various Tax schemes in place to support tax-optimized strategies and country proposals.
+weight=0.00
+wordid_list_size=0()
+No:28	lineProduct Knowledge related to business understanding on Diabetes / Biologics / Rare diseases ...
+weight=0.00
+wordid_list_size=0()
+No:29	lineChange the team mindset toward a more proactive and efficient culture.
+weight=0.00
+wordid_list_size=0()
+No:30	line2014 - Make Decisions Develop confidence and exposure to other functions to fully understand the business to make a sound decision.
+weight=0.00
+wordid_list_size=0()
+No:31	lineCoaching on Managerial Courage "Enhance skills on Communication, Leadership and influencing co-workers.
+weight=0.00
+wordid_list_size=0()
+No:32	lineSuch soft skills to be developed on the job.
+weight=0.00
+wordid_list_size=0()
+No:33	line  On the other hand, some formal training will be needed for the influencing others (via negotiation skills).
+weight=0.00
+wordid_list_size=0()
+No:34	lineHMM Project Management This will guide me in executing successfully current  (TM1) and future projects.
+weight=0.00
+wordid_list_size=0()
+No:35	lineHMM Strategic Thinking;
+weight=0.00
+wordid_list_size=0()
+No:36	line Creativity and Innovation Training that will develop innovation, strategic & operational planning and  business strategies.
+weight=0.00
+wordid_list_size=0()
+No:37	line   Explore participation in the ASEAN Junior team.
+weight=0.00
+wordid_list_size=0()
+No:38	lineTo attend in-house trainings on Leadership & Accountability.
+weight=0.00
+wordid_list_size=0()
+No:39	lineMore frontline interaction and engagement with BU to strengthen business partnering.
+weight=0.00
+wordid_list_size=0()
+No:40	linePeople management "Formal training on handling difficult customers & managing people related issues.
+weight=0.00
+wordid_list_size=0()
+No:41	lineContinue  'coaching'  team members, listening & having crucial conversations with them.
+weight=0.00
+wordid_list_size=0()
+No:42	lineContinue to seek guidance from HR on matters related to direct reports.
+weight=0.00
+wordid_list_size=0()
+No:43	lineBusiness knowledge On the job training through involvement in budget reviews, BD projects, business discussions & meetings.
+weight=0.00
+wordid_list_size=0()
+No:44	line Induction by R&D department into product registrations, clinical trials and other pharma related areas.
+weight=0.00
+wordid_list_size=0()
+No:45	lineStrategic thinking skills To further develop through formal training programs (financial & business strategy), on the job training through participation in business meetings, BD projects, budget reviews and EM2.0 projects.
+weight=0.00
+wordid_list_size=0()
+No:46	lineStrategic thinking skills Formal and on the job training.
+weight=0.00
+wordid_list_size=0()
+No:47	line Participation in budget/forecast, BD projects and business reviews.
+weight=0.00
+wordid_list_size=0()
+No:48	lineBusiness knowledge To further develop and enhance knowledge through on the job training.
+weight=0.00
+wordid_list_size=0()
+No:49	line Induction by medical team on R&D, registration & clinical.
+weight=0.00
+wordid_list_size=0()
+No:50	lineThink Strategically "Demonstrates a deep understanding of trends and facts that impact our business, stand in high level and managerial view to provide constructive, practicable, and simplified suggestion to our business and process.
+weight=0.00
+wordid_list_size=0()
+No:51	line1.
+weight=0.00
+wordid_list_size=0()
+No:52	line Get the view through directly interact with BU/functional head.
+weight=0.00
+wordid_list_size=0()
+No:53	line2.
+weight=0.00
+wordid_list_size=0()
+No:54	lineParticipate into company's public affairs Participate in the cross function organization or committee to get more understanding and build relationship with each BU or function.
+weight=0.00
+wordid_list_size=0()
+No:55	line2014 - Act for Change Always keep a mind of skepticism that you think that is not clear.
+weight=0.00
+wordid_list_size=0()
+No:56	line Investigation the problem and solve it in a proper way that fulfils SOP.
+weight=0.00
+wordid_list_size=0()
+No:57	lineSAP knowledge as a power user I wish I can back up Soo Young in the SAP CR approval process, I also think having the power user understanding could prepare my involvement in the 1 ERP project in a later phase.
+weight=0.00
+wordid_list_size=0()
+No:58	lineContinuously grow and develop Attend external seminars/forums to better understand the best practices of pharmaceutical industries.
+weight=0.00
+wordid_list_size=0()
+No:59	lineTo be promoted to Senior Manager in 2016 With sound experiences/knowledge, excellent abilities to adapt any changes/new roles, high quality deliveries as well as customers’ recognitions etc., I am expecting for a promotion to Senior Manager in 2016.
+weight=0.00
+wordid_list_size=0()
+No:60	lineSAP technical knowleadge "- SAP implementation is a very complex process and requires adequate knowledge and training on the subject to attain the maxim benefits.
+weight=0.00
+wordid_list_size=0()
+No:61	line- gain expertise in software and programs that run with SAP modules.
+weight=0.00
+wordid_list_size=0()
+No:62	line- builds a strong technical support for organization.
+weight=0.00
+wordid_list_size=0()
+No:63	lineBusiness Writing Skill "-increase productivity, resolve issues, avoid errors, and heighten credibility.
+weight=0.00
+wordid_list_size=0()
+No:64	line-step process to create writing that cuts through the clutter.
+weight=0.00
+wordid_list_size=0()
+No:65	line-learn how to write faster with more clarity, and gain skills for revising and fine-tuning every kind of document.
+weight=0.00
+wordid_list_size=0()
+No:66	line2014 - Supply Chain and Importation Find a time to follow supply chain and importation process with Rista to have better understand on Supply Chain process.
+weight=0.00
+wordid_list_size=0()
+No:67	lineImprove communication within team, vendors and other departments Already actively initiate to have a meeting with vendors to overcome the problem but still need improvement also to others vendors.
+weight=0.00
+wordid_list_size=0()
+No:68	line We will have regular meeting and review to build a good achievement for the team.
+weight=0.00
+wordid_list_size=0()
+No:69	lineStrategic thinking On the job training to enhance business & financial strategic thinking.
+weight=0.00
+wordid_list_size=0()
+No:70	line To improve the ability to link commercial decisions to financial impact and to understand the implications to the overall business.
+weight=0.00
+wordid_list_size=0()
+No:71	linePresentation skill Need to learn and have a sound presentation skill in front of large audience in order to get the message across clearly and effectively.
+weight=0.00
+wordid_list_size=0()
+No:72	lineLeadership skills To manage and lead internal projects within Finance and with other functions to further develop the ability to lead, coordinate and guide.
+weight=0.00
+wordid_list_size=0()
+No:73	lineDevelop in current role Continue develop in GL operation tasks.
+weight=0.00
+wordid_list_size=0()
+No:74	line2014 - Cooperate transversally th?
+weight=0.00
+wordid_list_size=0()
+No:75	lineng xuyên trao ?
+weight=0.00
+wordid_list_size=0()
+No:76	linei v?
+weight=0.00
+wordid_list_size=0()
+No:77	linei các driver khác ?
+weight=0.00
+wordid_list_size=0()
+No:78	line n?
+weight=0.00
+wordid_list_size=0()
+No:79	linem b?
+weight=0.00
+wordid_list_size=0()
+No:80	linet nhu c?
+weight=0.00
+wordid_list_size=0()
+No:81	lineu, l?
+weight=0.00
+wordid_list_size=0()
+No:82	linech trình c?
+weight=0.00
+wordid_list_size=0()
+No:83	linea car user nhi?
+weight=0.00
+wordid_list_size=0()
+No:84	lineu h?
+weight=0.00
+wordid_list_size=0()
+No:85	linen ?
+weight=0.00
+wordid_list_size=0()
+No:86	line lu?
+weight=0.00
+wordid_list_size=0()
+No:87	linen hoàn thành nhi?
+weight=0.00
+wordid_list_size=0()
+No:88	linem v?
+weight=0.00
+wordid_list_size=0()
+No:89	line th?
+weight=0.00
+wordid_list_size=0()
+No:90	linet t?
+weight=0.00
+wordid_list_size=0()
+No:91	lineThink Strategically Align the practice of ICP with group and region to ensure goal alignment and one Sanofi model.
+weight=0.00
+wordid_list_size=0()
+No:92	lineImprove communication by regular meeting and review within the team so that they fully understand how to reach the team achievement.
+weight=0.00
+wordid_list_size=0()
+No:93	line (such a Improve communication by regular meeting and review within the team so that they fully understand how to reach the team achievement.
+weight=0.00
+wordid_list_size=0()
+No:94	line2016 - Improve knowledge of tax rules and accounting eg.
+weight=0.00
+wordid_list_size=0()
+No:95	line- to find out information from internet resources, textbook, consultant, and so on.
+weight=0.00
+wordid_list_size=0()
+No:96	lineTo take Cross-function project Through continuous home-studying such as learning Harvard business 44 topics, Successfully completed and obtained 8 topics certificate sofar,I'd like to apply more those knowledge and contribute more for company business.
+weight=0.00
+wordid_list_size=0()
+No:97	lineStrengthen Operational Excellence Understand operations challenges  to provide pragmatic financial solutions (eg.
+weight=0.00
+wordid_list_size=0()
+No:98	lineFinancial Reporting and IFRS Updates "relevant in financial reporting and external audits.
+weight=0.00
+wordid_list_size=0()
+No:99	lineAttention to financial and technical details Attend and focus on details for each transaction.
+weight=0.00
+wordid_list_size=0()
+No:100	line  Assess the financial impact and promote better controls in financial operations.
+weight=0.00
+wordid_list_size=0()
+No:101	lineEnglish learning - Improve communication in written and spoken English.
+weight=0.00
+wordid_list_size=0()
+No:102	lineJob rotation to extend knowledge in current role.
+weight=0.00
+wordid_list_size=0()
+No:103	line- Project  e-VMF new version  for Thailand.
+weight=0.00
+wordid_list_size=0()
+No:104	line- Update knowledge of SD module.
+weight=0.00
+wordid_list_size=0()
+No:105	lineCoaching in Action "1) Call a meeting with Elsama to ask for coaching tips or any class I can attend.
+weight=0.00
+wordid_list_size=0()
+No:106	lineEnglish ability 1) Attend on line training center.
+weight=0.00
+wordid_list_size=0()
+No:107	line2014 - Develop People "Encourage team memebr to attend the training.
+weight=0.00
+wordid_list_size=0()
+No:108	lineRegular meeting to listen their job difficulties and need.
+weight=0.00
+wordid_list_size=0()
+No:109	lineDelegate identify project to subordinate.
+weight=0.00
+wordid_list_size=0()
+No:110	lineHMM-Time Management Learn how to take control of her schedule and be able to use her time wisely.
+weight=0.00
+wordid_list_size=0()
+No:111	lineHMM-Writing Skills To help her in writing/composing emails and written communication to customers.
+weight=0.00
+wordid_list_size=0()
+No:112	lineHMM-Difficult Interactions Learn to discuss and resolve difficult interactions in workplace.
+weight=0.00
+wordid_list_size=0()
+No:113	lineGain more exporsure in the Finance arena, build up networks with Corporate and Regional Finance.
+weight=0.00
+wordid_list_size=0()
+No:114	line, with the aspiration to become China CFO.
+weight=0.00
+wordid_list_size=0()
+No:115	line Jeff will benefit from further exposure to Senior leadership to demonstrate his ability to command the audience as needed.
+weight=0.00
+wordid_list_size=0()
+No:116	lineFinancial Business Operations To further my understanding of the business, I want to expand my knowledge of financial operations.
+weight=0.00
+wordid_list_size=0()
+No:117	line  One step toward that goal is to pivot into the controlling department to develop a clearer understanding of each business unit, the drivers behind growth, and to look for improvements within the business.
+weight=0.00
+wordid_list_size=0()
+No:118	line2014 - Presentation Skills Request for external training on presentation skills and/ or Toastmaster&#39;
+weight=0.00
+wordid_list_size=0()
+No:119	linePresentation Skill I need to improve the skill of presentation to manage the project more powerfully.
+weight=0.00
+wordid_list_size=0()
+No:120	lineManagement Essential program The Management Essentials Program is structured on four key dimensions: Management at Sanofi, Self Awareness, Coaching & Feedback and Team Effectiveness.
+weight=0.00
+wordid_list_size=0()
+No:121	lineBusiness Writing Skill Attended 2 days workshop ( 9 Aug -19 Aug 2016).
+weight=0.00
+wordid_list_size=0()
+No:122	lineContinue Improvement "Participate in SSC's Continue improvement project.
+weight=0.00
+wordid_list_size=0()
+No:123	lineContinue to support and propose solutions to improve current way of working.
+weight=0.00
+wordid_list_size=0()
+No:124	lineWorkload and/or project management Clare's involvement in different projects is an opportunity for her to develop her skills in handling an expanded role in Treasury.
+weight=0.00
+wordid_list_size=0()
+No:125	line Role expansion can include other treasury activities she has not handled before.
+weight=0.00
+wordid_list_size=0()
+No:126	line  A formal training in workload management may be needed to further strengthen her ability in handling various tasks.
+weight=0.00
+wordid_list_size=0()
+No:127	lineInterpersonal skills enhancement Clare's current role in Treasury exposes her to different types of customers.
+weight=0.00
+wordid_list_size=0()
+No:128	line Currently, she's also involved in Finance projects as a leader.
+weight=0.00
+wordid_list_size=0()
+No:129	lineCash management & banking activities Need to have self learning ability to learn about treasury, banking activities, cash management, banking regulations...
+weight=0.00
+wordid_list_size=0()
+No:130	linePresentation skill Learning on Harvard Online.
+weight=0.00
+wordid_list_size=0()
+No:131	lineHMM - Feedback Essentials Learn when and how to give effective positive or corrective feedback, how to offer feedback upward, and how to receive feedback.
+weight=0.00
+wordid_list_size=0()
+No:132	lineProcess improvement "Learn on why to improve business process and how to carry out a business process improvement initiative on current projects that she has.
+weight=0.00
+wordid_list_size=0()
+No:133	lineThis relates to her current job.
+weight=0.00
+wordid_list_size=0()
+No:134	lineCritical Thinking "The ability to analyze situations or statements and determine their validity is a very important foundation.
+weight=0.00
+wordid_list_size=0()
+No:135	lineCritical thinking would help me to breed creative thinking, which in turn solves problems.
+weight=0.00
+wordid_list_size=0()
+No:136	line This is definitely needed in order to be a successful marketeer.
+weight=0.00
+wordid_list_size=0()
+No:137	lineIncreased interaction and engagement with BU Heads to reinforce understanding of business strategy and needs.
+weight=0.00
+wordid_list_size=0()
+No:138	line Attend business reviews & strategy reviews.
+weight=0.00
+wordid_list_size=0()
+No:139	lineLeadership skills "This would be a great help in my day to day work as there is a need for me to lead in rolling out various projects which will be cascaded down from Corporate.
+weight=0.00
+wordid_list_size=0()
+No:140	lineHigh Impact Presentation Skills "Delivering presentations is a day to day task.
+weight=0.00
+wordid_list_size=0()
+No:141	line Good presentation will help to obtain approval, close the deal and receive the recognition.
+weight=0.00
+wordid_list_size=0()
+No:142	lineThis is much needed for an Internal Control person in delivering the concepts and frameworks for better internal control environment in order for the Company to achieve its objectives.
+weight=0.00
+wordid_list_size=0()
+No:143	lineIncreased visibility and conduct trainings (new processes, findings, etc) and front line engagement with key stakeholders.e.g.
+weight=0.00
+wordid_list_size=0()
+No:144	line presentations to MT meetings & briefings for staffs.
+weight=0.00
+wordid_list_size=0()
+No:145	lineMarco System user training Hope to have the chance to join Marco system user training if conduct in Asia.
+weight=0.00
+wordid_list_size=0()
+No:146	lineAs a chartered accountant, it is a mandatory requirement to attend 20 verifiable hours of training (be it internal or external) per year, out of which 2 hours must be dedicated to professional ethics.
+weight=0.00
+wordid_list_size=0()
+No:147	lineAs a chartered accountant, it is a mandatory requirement to attend at least 20 hours of verifiable training per year (be it internal or external), of which 2 hours must be dedicated to profession ethics.
+weight=0.00
+wordid_list_size=0()
+No:148	line2014 - Think Strategically Get into business.
+weight=0.00
+wordid_list_size=0()
+No:149	line Listen to different voices from peers and management team, esp.
+weight=0.00
+wordid_list_size=0()
+No:150	line senior management as they usually are more strategy focused.
+weight=0.00
+wordid_list_size=0()
+No:151	line    Then try develop own strategic thinking.
+weight=0.00
+wordid_list_size=0()
+No:152	lineHMM- Process Improvement "Learn on how to carry out a business process improvement initiative given the current projects that she has.
+weight=0.00
+wordid_list_size=0()
+No:153	lineHMM Goal Setting Learn to prioritize goal accordingly and to set achievable but challenging goal.
+weight=0.00
+wordid_list_size=0()
+No:154	lineCoaching and Leadership Skill "- Provide guidance to team member.
+weight=0.00
+wordid_list_size=0()
+No:155	line- Manage their query on daily operation or ad hoc task.
+weight=0.00
+wordid_list_size=0()
+No:156	line- Manage own EQ and monitor team member.
+weight=0.00
+wordid_list_size=0()
+No:157	line- On the job training.
+weight=0.00
+wordid_list_size=0()
+No:158	line- Attend in-house tranining for coaching skill related.
+weight=0.00
+wordid_list_size=0()
+No:159	lineon job training, mentoring and coaching from direct line manager.
+weight=0.00
+wordid_list_size=0()
+No:160	lineon job training in daily basis.
+weight=0.00
+wordid_list_size=0()
+No:161	line- Proactively anticipates differents knowledge and skill sets required in new environment;
+weight=0.00
+wordid_list_size=0()
+No:162	lineBank tool To update new service from bank to improve work process.
+weight=0.00
+wordid_list_size=0()
+No:163	lineImprove communication and professional skill with team Improve communication by regular meeting and review within the team so that they fully understand how to reach the team achievement.
+weight=0.00
+wordid_list_size=0()
+No:164	lineActive involve in the company event and team meetings Already actively involve in the company event and actively initiate to have a meeting with vendors to overcome the problem but still need improvement also to others vendors.
+weight=0.00
+wordid_list_size=0()
+No:165	line We will have regular meeting and review to build a good achievement for the team.
+weight=0.00
+wordid_list_size=0()
+No:166	line1.
+weight=0.00
+wordid_list_size=0()
+No:167	line2.
+weight=0.00
+wordid_list_size=0()
+No:168	line3.
+weight=0.00
+wordid_list_size=0()
+No:169	line Gain knowledge on how to solve issue.
+weight=0.00
+wordid_list_size=0()
+No:170	line4.
+weight=0.00
+wordid_list_size=0()
+No:171	line In 4 Years I will become the expertise.
+weight=0.00
+wordid_list_size=0()
+No:172	lineBusiness Writing Skills - To enhance skill in my email communication, Use/ choose the correct words in conversation.
+weight=0.00
+wordid_list_size=0()
+No:173	lineMicrosoft Excel 2010 ( Advanced) yes, I have attend and complete the training but i'm not master in excel or not able to applied the excel skill in my daily work.
+weight=0.00
+wordid_list_size=0()
+No:174	line I hope that I will have opportunity to have a task that require me to use that skill.
+weight=0.00
+wordid_list_size=0()
+No:175	lineMicrosoft Excel 2010 (Intermediate) i used excel in daily work and its very useful.
+weight=0.00
+wordid_list_size=0()
+No:176	lineEQ training 2 days for EQ Training, now i more clear on how people will behave / react.
+weight=0.00
+wordid_list_size=0()
+No:177	line  I really like attend this training.
+weight=0.00
+wordid_list_size=0()
+No:178	lineThink Strategically "On-the-job experience: Involvement in corporate projects (i.e. commercial policy) to find relevant ways of managing budgets and processes.
+weight=0.00
+wordid_list_size=0()
+No:179	lineFurther developing helicopter view whenever possible (e.g. when participating in the meetings about LRP and forecasts,...
+weight=0.00
+wordid_list_size=0()
+No:180	lineProject Management and Leading Teams "Lead team in the planning and execution of the TM1 budgeting tool that will improve the budget and forecasting process.
+weight=0.00
+wordid_list_size=0()
+No:181	lineInternal Control Obtain exposure on the internal control function with some involvement on the implementation and monitoring of policies.
+weight=0.00
+wordid_list_size=0()
+No:182	line2014 - Act for Change Possible engagement with other finance people in our industries to get their best practices and apply it in the company.
+weight=0.00
+wordid_list_size=0()
+No:183	lineEnglish Skills "- To improve listen and speaking skills.
+weight=0.00
+wordid_list_size=0()
+No:184	line2014 - Act for Change I wish to join professional training for executive assistant so that i can manage well with my current work.
+weight=0.00
+wordid_list_size=0()
+No:185	line Moreover, i can improve and learn some skills must have from a professional assistant.
+weight=0.00
+wordid_list_size=0()
+No:186	line I think I need to take English class, presentation skill, or  professional course for executive assistant.
+weight=0.00
+wordid_list_size=0()
+No:187	line2016 - Cooperate transversally I will develop strong cooperation with other assistant to make sure to support well and effectively for team and CFO.
+weight=0.00
+wordid_list_size=0()
+No:188	line In addition, i also keep good cooperation with regional assistants to catch right the information and coordinate with them for group meeting/training.
+weight=0.00
+wordid_list_size=0()
+No:189	line2016 - Commit to customers "- I will coordinate with legal team to make sure submitted documents signed by CFO reviewed and be right with company policy and memos.
+weight=0.00
+wordid_list_size=0()
+No:190	line- I will support other teams in Vietnam and international team in such kind of logistics task to make sure their works run well.
+weight=0.00
+wordid_list_size=0()
+No:191	line2014 - Develop  to project manager "-Involve some project manager.
+weight=0.00
+wordid_list_size=0()
+No:192	line-Training project manager skill.
+weight=0.00
+wordid_list_size=0()
+No:193	line2014 - Strive for Results Lu?
+weight=0.00
+wordid_list_size=0()
+No:194	linen tìm hi?
+weight=0.00
+wordid_list_size=0()
+No:195	lineu ván ?
+weight=0.00
+wordid_list_size=0()
+No:196	line m?
+weight=0.00
+wordid_list_size=0()
+No:197	linet cách th?
+weight=0.00
+wordid_list_size=0()
+No:198	lineu ?
+weight=0.00
+wordid_list_size=0()
+No:199	lineáo và toàn di?
+weight=0.00
+wordid_list_size=0()
+No:200	linen ?
+weight=0.00
+wordid_list_size=0()
+No:201	line ?
+weight=0.00
+wordid_list_size=0()
+No:202	linea ra gi?
+weight=0.00
+wordid_list_size=0()
+No:203	linei pháp và hoàn thành nhi?
+weight=0.00
+wordid_list_size=0()
+No:204	linem v?
+weight=0.00
+wordid_list_size=0()
+No:205	line t?
+weight=0.00
+wordid_list_size=0()
+No:206	linet nh?
+weight=0.00
+wordid_list_size=0()
+No:207	line2014 - Think Strategically Interact more with all relates departments to learn and fully understand the business need in short & long run to have suitable action & plan.
+weight=0.00
+wordid_list_size=0()
+No:208	line2014 - Develop People Understand each member streng & weakness and challenge them to maximize their strength.
+weight=0.00
+wordid_list_size=0()
+No:209	lineTechnical skill "- Technical skill include: cash forecasts & cash flow analysis skill;
+weight=0.00
+wordid_list_size=0()
+No:210	line cash and liquidity management;
+weight=0.00
+wordid_list_size=0()
+No:211	line    .Participate in training course of havard tool that have topics relative to analysis/cash management/risk management/credit management skills.
+weight=0.00
+wordid_list_size=0()
+No:212	line To be more proactive to voice up in meeting with expat or foreigner collegues.
+weight=0.00
+wordid_list_size=0()
+No:213	line Join english club to improve listening & speaking skill.
+weight=0.00
+wordid_list_size=0()
+No:214	lineLeading and Motivating It is useful for my current role, know how to energize and inspire others.
+weight=0.00
+wordid_list_size=0()
+No:215	line2014 - Lead Teams "+Help the cleaner team to have plan of what they do, control miscellaneous items effectively.
+weight=0.00
+wordid_list_size=0()
+No:216	line+Make them remember and do the task as the schedule automatically.
+weight=0.00
+wordid_list_size=0()
+No:217	line2014 - Act for Change C?
+weight=0.00
+wordid_list_size=0()
+No:218	line g?
+weight=0.00
+wordid_list_size=0()
+No:219	lineng làm vi?
+weight=0.00
+wordid_list_size=0()
+No:220	linec n?
+weight=0.00
+wordid_list_size=0()
+No:221	line l?
+weight=0.00
+wordid_list_size=0()
+No:222	linec và ch?
+weight=0.00
+wordid_list_size=0()
+No:223	line ?
+weight=0.00
+wordid_list_size=0()
+No:224	lineng h?
+weight=0.00
+wordid_list_size=0()
+No:225	linen trong c?
+weight=0.00
+wordid_list_size=0()
+No:226	lineng vi?
+weight=0.00
+wordid_list_size=0()
+No:227	linec ?
+weight=0.00
+wordid_list_size=0()
+No:228	line c?
+weight=0.00
+wordid_list_size=0()
+No:229	lineng v?
+weight=0.00
+wordid_list_size=0()
+No:230	linec ?
+weight=0.00
+wordid_list_size=0()
+No:231	linec t?
+weight=0.00
+wordid_list_size=0()
+No:232	linet h?
+weight=0.00
+wordid_list_size=0()
+No:233	linen!
+weight=0.00
+wordid_list_size=0()
+No:234	line2014 - Cooperate transversally "- L?
+weight=0.00
+wordid_list_size=0()
+No:235	lineng nghe ?
+weight=0.00
+wordid_list_size=0()
+No:236	line th?
+weight=0.00
+wordid_list_size=0()
+No:237	lineu hi?
+weight=0.00
+wordid_list_size=0()
+No:238	lineu h?
+weight=0.00
+wordid_list_size=0()
+No:239	linen v?
+weight=0.00
+wordid_list_size=0()
+No:240	line các m?
+weight=0.00
+wordid_list_size=0()
+No:241	linei quan tam  c?
+weight=0.00
+wordid_list_size=0()
+No:242	linea m?
+weight=0.00
+wordid_list_size=0()
+No:243	linei ng?
+weight=0.00
+wordid_list_size=0()
+No:244	linei trong n?
+weight=0.00
+wordid_list_size=0()
+No:245	linei b?
+weight=0.00
+wordid_list_size=0()
+No:246	line c?
+weight=0.00
+wordid_list_size=0()
+No:247	lineng ty ?
+weight=0.00
+wordid_list_size=0()
+No:248	line cùng t?
+weight=0.00
+wordid_list_size=0()
+No:249	lineo m?
+weight=0.00
+wordid_list_size=0()
+No:250	linei quan h?
+weight=0.00
+wordid_list_size=0()
+No:251	line và làm vi?
+weight=0.00
+wordid_list_size=0()
+No:252	linec v?
+weight=0.00
+wordid_list_size=0()
+No:253	linei nhau ?
+weight=0.00
+wordid_list_size=0()
+No:254	linec t?
+weight=0.00
+wordid_list_size=0()
+No:255	linet h?
+weight=0.00
+wordid_list_size=0()
+No:256	linen!
+weight=0.00
+wordid_list_size=0()
+No:257	line- S?
+weight=0.00
+wordid_list_size=0()
+No:258	linen sàng h?
+weight=0.00
+wordid_list_size=0()
+No:259	line tr?
+weight=0.00
+wordid_list_size=0()
+No:260	line h?
+weight=0.00
+wordid_list_size=0()
+No:261	linet mình khi có yêu c?
+weight=0.00
+wordid_list_size=0()
+No:262	lineu h?
+weight=0.00
+wordid_list_size=0()
+No:263	line tr?
+weight=0.00
+wordid_list_size=0()
+No:264	line t?
+weight=0.00
+wordid_list_size=0()
+No:265	lineEXPAND ACCOUNTING KNOWLEGE Willing to change my current position to expand experience.
+weight=0.00
+wordid_list_size=0()
+No:266	line2014 - Act for Change "- Ngoài qu?
+weight=0.00
+wordid_list_size=0()
+No:267	linen ly các c?
+weight=0.00
+wordid_list_size=0()
+No:268	lineng vi?
+weight=0.00
+wordid_list_size=0()
+No:269	linec do mình ph?
+weight=0.00
+wordid_list_size=0()
+No:270	line trách có th?
+weight=0.00
+wordid_list_size=0()
+No:271	line theo d?
+weight=0.00
+wordid_list_size=0()
+No:272	linei ph?
+weight=0.00
+wordid_list_size=0()
+No:273	linen ánh ho?
+weight=0.00
+wordid_list_size=0()
+No:274	linec h?
+weight=0.00
+wordid_list_size=0()
+No:275	line tr?
+weight=0.00
+wordid_list_size=0()
+No:276	line x?
+weight=0.00
+wordid_list_size=0()
+No:277	line ly các c?
+weight=0.00
+wordid_list_size=0()
+No:278	lineng vi?
+weight=0.00
+wordid_list_size=0()
+No:279	linec c?
+weight=0.00
+wordid_list_size=0()
+No:280	linea các nhan viên khác trong n?
+weight=0.00
+wordid_list_size=0()
+No:281	linei b?
+weight=0.00
+wordid_list_size=0()
+No:282	line c?
+weight=0.00
+wordid_list_size=0()
+No:283	lineng ty khi phát hi?
+weight=0.00
+wordid_list_size=0()
+No:284	line- Tìm hi?
+weight=0.00
+wordid_list_size=0()
+No:285	lineu k?
+weight=0.00
+wordid_list_size=0()
+No:286	line và ?
+weight=0.00
+wordid_list_size=0()
+No:287	lineánh giá nhanh các s?
+weight=0.00
+wordid_list_size=0()
+No:288	line vi?
+weight=0.00
+wordid_list_size=0()
+No:289	linec ?
+weight=0.00
+wordid_list_size=0()
+No:290	line gi?
+weight=0.00
+wordid_list_size=0()
+No:291	linei quy?
+weight=0.00
+wordid_list_size=0()
+No:292	linet c?
+weight=0.00
+wordid_list_size=0()
+No:293	lineng vi?
+weight=0.00
+wordid_list_size=0()
+No:294	linec nhanh h?
+weight=0.00
+wordid_list_size=0()
+No:295	line2014 - Strive for Results "- Trong th?
+weight=0.00
+wordid_list_size=0()
+No:296	linei gian ?
+weight=0.00
+wordid_list_size=0()
+No:297	lineu khi bàn giao và còn b?
+weight=0.00
+wordid_list_size=0()
+No:298	lineo hành theo sát các nhà cung c?
+weight=0.00
+wordid_list_size=0()
+No:299	linep tìm hi?
+weight=0.00
+wordid_list_size=0()
+No:300	lineu v?
+weight=0.00
+wordid_list_size=0()
+No:301	line nguyên ly v?
+weight=0.00
+wordid_list_size=0()
+No:302	linen hành t?
+weight=0.00
+wordid_list_size=0()
+No:303	linet các h?
+weight=0.00
+wordid_list_size=0()
+No:304	line th?
+weight=0.00
+wordid_list_size=0()
+No:305	lineng m?
+weight=0.00
+wordid_list_size=0()
+No:306	line- Lên danh sách các h?
+weight=0.00
+wordid_list_size=0()
+No:307	line th?
+weight=0.00
+wordid_list_size=0()
+No:308	lineng thi?
+weight=0.00
+wordid_list_size=0()
+No:309	linet b?
+weight=0.00
+wordid_list_size=0()
+No:310	line c?
+weight=0.00
+wordid_list_size=0()
+No:311	linen b?
+weight=0.00
+wordid_list_size=0()
+No:312	lineo trì b?
+weight=0.00
+wordid_list_size=0()
+No:313	lineo hành ?
+weight=0.00
+wordid_list_size=0()
+No:314	line khi s?
+weight=0.00
+wordid_list_size=0()
+No:315	line c?
+weight=0.00
+wordid_list_size=0()
+No:316	line x?
+weight=0.00
+wordid_list_size=0()
+No:317	liney ra s?
+weight=0.00
+wordid_list_size=0()
+No:318	line x?
+weight=0.00
+wordid_list_size=0()
+No:319	line ly nhanh h?
+weight=0.00
+wordid_list_size=0()
+No:320	line2014 - Commit to customers C?
+weight=0.00
+wordid_list_size=0()
+No:321	line g?
+weight=0.00
+wordid_list_size=0()
+No:322	lineng h?
+weight=0.00
+wordid_list_size=0()
+No:323	line tr?
+weight=0.00
+wordid_list_size=0()
+No:324	line các các b?
+weight=0.00
+wordid_list_size=0()
+No:325	line ph?
+weight=0.00
+wordid_list_size=0()
+No:326	linen khác trong n?
+weight=0.00
+wordid_list_size=0()
+No:327	linei b?
+weight=0.00
+wordid_list_size=0()
+No:328	line c?
+weight=0.00
+wordid_list_size=0()
+No:329	lineng ty h?
+weight=0.00
+wordid_list_size=0()
+No:330	linet kh?
+weight=0.00
+wordid_list_size=0()
+No:331	line n?
+weight=0.00
+wordid_list_size=0()
+No:332	lineng có th?
+weight=0.00
+wordid_list_size=0()
+No:333	line có th?
+weight=0.00
+wordid_list_size=0()
+No:334	line khi có yêu c?
+weight=0.00
+wordid_list_size=0()
+No:335	line2014 - Cooperate transversally th?
+weight=0.00
+wordid_list_size=0()
+No:336	lineng xuyên trao ?
+weight=0.00
+wordid_list_size=0()
+No:337	linei v?
+weight=0.00
+wordid_list_size=0()
+No:338	linei các b?
+weight=0.00
+wordid_list_size=0()
+No:339	lineo v?
+weight=0.00
+wordid_list_size=0()
+No:340	line outsource, tìm hi?
+weight=0.00
+wordid_list_size=0()
+No:341	lineu tác phong, ?
+weight=0.00
+wordid_list_size=0()
+No:342	linei?
+weight=0.00
+wordid_list_size=0()
+No:343	linem m?
+weight=0.00
+wordid_list_size=0()
+No:344	linenh y?
+weight=0.00
+wordid_list_size=0()
+No:345	lineu c?
+weight=0.00
+wordid_list_size=0()
+No:346	linea anh/em ?
+weight=0.00
+wordid_list_size=0()
+No:347	line h?
+weight=0.00
+wordid_list_size=0()
+No:348	line tr?
+weight=0.00
+wordid_list_size=0()
+No:349	line hoàn thành c?
+weight=0.00
+wordid_list_size=0()
+No:350	lineng vi?
+weight=0.00
+wordid_list_size=0()
+No:351	linec t?
+weight=0.00
+wordid_list_size=0()
+No:352	linet h?
+weight=0.00
+wordid_list_size=0()
+No:353	linen n?
+weight=0.00
+wordid_list_size=0()
+No:354	line2014 - Enter the title of the additional skill "- to make a plan how to use time in effective.
+weight=0.00
+wordid_list_size=0()
+No:355	line2014 - Act for Change "1.
+weight=0.00
+wordid_list_size=0()
+No:356	line  - Choose one current project and be part of the Mk't and sale team and exchange idea with the purpose to try to understand each other and develop better personnel and business working relationship.
+weight=0.00
+wordid_list_size=0()
+No:357	line2.
+weight=0.00
+wordid_list_size=0()
+No:358	line   - Attend the meeting with the boss to get well know about the key challenging question with Head  of marketing and head of sale.
+weight=0.00
+wordid_list_size=0()
+No:359	line3.
+weight=0.00
+wordid_list_size=0()
+No:360	line- Share my learning progress with my line manager on regularly basis and reflection as well as seeking for her feedback with constructive and profesional attitude.
+weight=0.00
+wordid_list_size=0()
+No:361	line2014 - Think Strategically "1.
+weight=0.00
+wordid_list_size=0()
+No:362	line  - Choose one current project and be part of the Mk't and sale team and exchange idea with the purpose to try to understand each other and develop better personnel and business working relationship.
+weight=0.00
+wordid_list_size=0()
+No:363	line2.
+weight=0.00
+wordid_list_size=0()
+No:364	line   - Attend the meeting with the boss to get well know about the key challenging question with Head  of marketing and head of sale.
+weight=0.00
+wordid_list_size=0()
+No:365	line3.
+weight=0.00
+wordid_list_size=0()
+No:366	line- Share my learning progress with my line manager on regularly basis and reflection as well as seeking for her feedback with constructive and profesional attitude.
+weight=0.00
+wordid_list_size=0()
+No:367	line- Job extension to improve accounting knowledge - In tax skill by take course in Tax Course.
+weight=0.00
+wordid_list_size=0()
+No:368	line-Coaching to back up user Coaching job backup about  sale data download to SAP .
+weight=0.00
+wordid_list_size=0()
+No:369	line2014 - Act for Change Lu?
+weight=0.00
+wordid_list_size=0()
+No:370	linen theo sát nh?
+weight=0.00
+wordid_list_size=0()
+No:371	lineng thay ?
+weight=0.00
+wordid_list_size=0()
+No:372	linei và nhu c?
+weight=0.00
+wordid_list_size=0()
+No:373	lineu c?
+weight=0.00
+wordid_list_size=0()
+No:374	linea car user ?
+weight=0.00
+wordid_list_size=0()
+No:375	line k?
+weight=0.00
+wordid_list_size=0()
+No:376	linep th?
+weight=0.00
+wordid_list_size=0()
+No:377	linei hoàn thành nhi?
+weight=0.00
+wordid_list_size=0()
+No:378	linem v?
+weight=0.00
+wordid_list_size=0()
+No:379	line th?
+weight=0.00
+wordid_list_size=0()
+No:380	linet t?
+weight=0.00
+wordid_list_size=0()
+No:381	lineBusiness Acumen Participate in management team meeting with Vaccine and Animal Health.
+weight=0.00
+wordid_list_size=0()
+No:382	lineFinancial expertise Following MBA course.
+weight=0.00
+wordid_list_size=0()
+No:383	line2014 - Lead Teams Attend training course to have an idea or concept of leading for practise.
+weight=0.00
+wordid_list_size=0()
+No:384	lineHMM-Feedback Essentials "Learn when and how to give and receive feedback.
+weight=0.00
+wordid_list_size=0()
+No:385	lineTo be able to participate in group meetings.
+weight=0.00
+wordid_list_size=0()
+No:386	line2014 - Tax and accounting knowledge Take a seminar course & self learning.
+weight=0.00
+wordid_list_size=0()
+No:387	line2014 - English Take a seminar course & short course for Crucial Communication Skill and English skill.
+weight=0.00
+wordid_list_size=0()
+No:388	line2014 - Act for Change Self Learning or Internal training.
+weight=0.00
+wordid_list_size=0()
+No:389	line1.
+weight=0.00
+wordid_list_size=0()
+No:390	line2.
+weight=0.00
+wordid_list_size=0()
+No:391	line Mentoring: Continue the Bi-Weekly catch up discussion with Regional API and MyTravel Deployment Lead to continuously get feedback and support to improve on this area.
+weight=0.00
+wordid_list_size=0()
+No:392	line3.
+weight=0.00
+wordid_list_size=0()
+No:393	line On the Job training (if possible) if there are any workshops relating to P2P – eBUY, API and MyTravel.
+weight=0.00
+wordid_list_size=0()
+No:394	lineAct for Change : Empowerment "Empowerment:  Being able to invite creative conflict to explore how to do things differently and better and make difficult decisions within my own area.
+weight=0.00
+wordid_list_size=0()
+No:395	line1.
+weight=0.00
+wordid_list_size=0()
+No:396	line2.
+weight=0.00
+wordid_list_size=0()
+No:397	line Mentoring: Continue the Bi-Weekly catch up discussion with Regional API and MyTravel Deployment Lead to continuously get feedback and support to improve on this area.
+weight=0.00
+wordid_list_size=0()
+No:398	line3.
+weight=0.00
+wordid_list_size=0()
+No:399	line On the Job training (if possible) if there are any workshops relating to P2P – eBUY, API and MyTravel.
+weight=0.00
+wordid_list_size=0()
+No:400	line4.
+weight=0.00
+wordid_list_size=0()
+No:401	line Education – external training or workshops relating to P2P – eBUY, API and MyTravel.
+weight=0.00
+wordid_list_size=0()
+No:402	line2014 - Strive for Results Take seminar course and self learning from internet and textbook.
+weight=0.00
+wordid_list_size=0()
+No:403	lineCoaching from May Nanquil Through proper guidance from my superior manager and maybe trainings that can help me further develop this skill.
+weight=0.00
+wordid_list_size=0()
+No:404	lineHMM Managing Upward "As a manager for a year, Donna would still need to further develop some soft skills set (focusing on skills to influence others, managing up, handling stress, and people skills) .
+weight=0.00
+wordid_list_size=0()
+No:405	line  This would enable her to increase further her confidence for possible future roles.
+weight=0.00
+wordid_list_size=0()
+No:406	lineDevelopment should start with formal training followed by the on-the-job applications.
+weight=0.00
+wordid_list_size=0()
+No:407	line- Exposure to some strategic projects (i.e. TM1, or other group projects) for me to gain more experience about the company and industry, and provide opportunity to express my opinions for better decision making.
+weight=0.00
+wordid_list_size=0()
+No:408	line Explore participation in the ASEAN Junior team.
+weight=0.00
+wordid_list_size=0()
+No:409	line2014 - Technical Skills "To expose her on the reporting side as part of her development.
+weight=0.00
+wordid_list_size=0()
+No:410	lineOrientation and on-the-job training on DIT/Income tax calculation, Inventory overstocking and NRV.
+weight=0.00
+wordid_list_size=0()
+No:411	lineEQ Traning Training is attended, think positive be more aware of how the training can help me on my daily work  and  take control of situation where if the requestors are rude.
+weight=0.00
+wordid_list_size=0()
+No:412	line Be more calm and professional dealing with difficult requestors.
+weight=0.00
+wordid_list_size=0()
+No:413	lineBusiness writing Skill to learn more on email writing skills, communicate more professionally with requestors and stake holders.
+weight=0.00
+wordid_list_size=0()
+No:414	lineShort term goal "My long term goal is becoming an internal control expert in Pharmaceutical industry.
+weight=0.00
+wordid_list_size=0()
+No:415	linePresentation skill Continuous improving the presentation skills.
+weight=0.00
+wordid_list_size=0()
+No:416	line2014 - Develop People "My aspiration is to move into an OD/learning & development role, either in an HR CoE or HR operational position.
+weight=0.00
+wordid_list_size=0()
+No:417	lineAs a transition into this position, my mid-year priorities (2014) include 'Staffing & Training’.
+weight=0.00
+wordid_list_size=0()
+No:418	line Specifically, I propose I develop a career development program for Finance to address attrition risks.
+weight=0.00
+wordid_list_size=0()
+No:419	lineHMM-Leading and Motivating "This will support her to further enhance her leadership skills.
+weight=0.00
+wordid_list_size=0()
+No:420	lineHMM-Developing Employees "To develop her skills in encouraging her team to learn and grow.
+weight=0.00
+wordid_list_size=0()
+No:421	lineRegular coaching will be conducted to support her.
+weight=0.00
+wordid_list_size=0()
+No:422	lineHMM-Presentation Skills This will help her in making effective presentations.
+weight=0.00
+wordid_list_size=0()
+No:423	linePersonal Development -Supply Chain & Controlling process Interim placement in Supply Chain process and budgeting/controlling area to have a general understanding of the process.
+weight=0.00
+wordid_list_size=0()
+No:424	linePersonal Development -NLP training To attend training on Personal Empowerment with Neuro Linguistic Programming (NLP)  to improve relationships and motivate others.
+weight=0.00
+wordid_list_size=0()
+No:425	lineTechnical knowledge development-SAP COPA To further enhance knowledge in SAP COPA derivation rule.
+weight=0.00
+wordid_list_size=0()
+No:426	linePersonal Development- EQ training To grow personally and acquire knowledge and skills to assist in my existing role.
+weight=0.00
+wordid_list_size=0()
+No:427	line We have attended the EQ training in April 2015.
+weight=0.00
+wordid_list_size=0()
+No:428	line2014 - Strive for Results "Training on influencing skills and relevant trainings on how best to communicate policies.
+weight=0.00
+wordid_list_size=0()
+No:429	lineConduct meetings with the team and encourage two-way communication.
+weight=0.00
+wordid_list_size=0()
+No:430	lineBi-monthly face to face discussion and coaching session with Team Leaders.
+weight=0.00
+wordid_list_size=0()
+No:431	line2015 - Presentations To present finance data to HQ functions.
+weight=0.00
+wordid_list_size=0()
+No:432	line Also to develop presentation slides.
+weight=0.00
+wordid_list_size=0()
+No:433	line And to get feedback from CFO on slides and performance.
+weight=0.00
+wordid_list_size=0()
+No:434	line2015 - Provide Training Provide training on processes or finance systems/tools to Countries' Finance, where required.
+weight=0.00
+wordid_list_size=0()
+No:435	line2015 - Cooperate Transversally To have face-to-face discussion with HQ Function Heads on a regular basis and to get frequent feedback from them on how we can improve on finance support, if any.
+weight=0.00
+wordid_list_size=0()
+No:436	line2015 - Strive for Results To improve FP&A processes and reports, and accuracy of forecast.
+weight=0.00
+wordid_list_size=0()
+No:437	linePeople Managing Skills To enhance my people skills in my day-to-day operations.
+weight=0.00
+wordid_list_size=0()
+No:438	lineStrategic Thinking Skills To enhance my strategic thinking and to apply it into my day to day operations.
+weight=0.00
+wordid_list_size=0()
+No:439	lineAccounting Knowledge To develop a broader knowledge on accounting entries and transaction.
+weight=0.00
+wordid_list_size=0()
+No:440	lineStrive for Results "To constantly improve on practical and theoretical knowledge so as to provide good advice to the business and to ensure that the company's tax position is optimized.
+weight=0.00
+wordid_list_size=0()
+No:441	lineImprovement can come through reading of case laws on relevant subjects, tax alerts received from tax agent, tax guides published by government and attending of workshops.
+weight=0.00
+wordid_list_size=0()
+No:442	lineThink Strategically Through wider exposure to the tax systems of different countries.
+weight=0.00
+wordid_list_size=0()
+No:443	line This may be achieved through the exposure gained in the Dream Team.
+weight=0.00
+wordid_list_size=0()
+No:444	lineAct for Change To better understand how systems work and reporting requirements in order to streamline the processes.
+weight=0.00
+wordid_list_size=0()
+No:445	line Able to achieve this through interaction with SSC / Ultimus / SAP team.
+weight=0.00
+wordid_list_size=0()
+No:446	line+ Ensure all Sanofi's commitments with the authority in relation to ACE project are kept tracked and supported by appropriate action plan.
+weight=0.00
+wordid_list_size=0()
+No:447	line+ tax rate applied for products;
+weight=0.00
+wordid_list_size=0()
+No:448	line+ others questions.
+weight=0.00
+wordid_list_size=0()
+No:449	lineTax compliance report "- Complete and submit monthly/quarterly/annual tax reports by the deadline;
+weight=0.00
+wordid_list_size=0()
+No:450	line- Prepare tax reports accurately;
+weight=0.00
+wordid_list_size=0()
+No:451	line- Follow up with Treasury team to make tax payment on time.
+weight=0.00
+wordid_list_size=0()
+No:452	line2014 - Cooperate transversally Proactively contact and work with relevant teams to defined the results, targets and improvement needs.
+weight=0.00
+wordid_list_size=0()
+No:453	linemy manager to explore and make best use of the education, experiences and exposure opportunities at Sanofi.
+weight=0.00
+wordid_list_size=0()
+No:454	lineAct for Change F&A communication tool to instill change in F&A + feedback box (open to stakeholders).
+weight=0.00
+wordid_list_size=0()
+No:455	lineMid Year Comments:  This has been deferred as Atty. Jazel is still looking for possible paralegal seminar that we can maximize opportunity.
+weight=0.00
+wordid_list_size=0()
+No:456	line  For the time being i am concentrated to be an expert administrator on Contract Database Management plus other works on legal (liasing with our Corporate Lawyers on various matters).
+weight=0.00
+wordid_list_size=0()
+No:457	line-Had attended last April 24, 2014 of the National Convention of Phil.
+weight=0.00
+wordid_list_size=0()
+No:458	line Association of Secretaries wherein I took a small talk/share within the group on how i personally  innovate the usual admin work in the office.
+weight=0.00
+wordid_list_size=0()
+No:459	line-Had attended the Strength Exploration Workshop last July 27, 2014 realizing my 5 areas of strenghts such as:  (1) Developer (2) Includer (3) Activator (4) Arranger (5) Strategic.
+weight=0.00
+wordid_list_size=0()
+No:460	line  Said strengths really validates my personality.
+weight=0.00
+wordid_list_size=0()
+No:461	line  From this, i may say that i may exert and focus on these areas of strengths for me to be more productive and collaborative.
+weight=0.00
+wordid_list_size=0()
+No:462	line-Had attended Atty. Darwin Mariano's Communication Workshop last June 2014 that helped me on how to produce impressive presentation deck on our regular eBulletin Board + other initiative improvements  on the presentation slides of the CFO/other Managers.
+weight=0.00
+wordid_list_size=0()
+No:463	lineTax accounting Public training: To update local tax for development on the current job.
+weight=0.00
+wordid_list_size=0()
+No:464	lineDevelopment in Current Role "1.
+weight=0.00
+wordid_list_size=0()
+No:465	line - More understanding of AR Closing -  the importance and the use of the report, investigate the need of the data in the report.
+weight=0.00
+wordid_list_size=0()
+No:466	line2.
+weight=0.00
+wordid_list_size=0()
+No:467	lineExcel Training Would like to gain more knowloedge in using Microsoft Excel and incorporate its usage into my daily work.
+weight=0.00
+wordid_list_size=0()
+No:468	line2014 - Strive for Results Lu?
+weight=0.00
+wordid_list_size=0()
+No:469	linen tìm hi?
+weight=0.00
+wordid_list_size=0()
+No:470	lineu ván ?
+weight=0.00
+wordid_list_size=0()
+No:471	line m?
+weight=0.00
+wordid_list_size=0()
+No:472	linet cách th?
+weight=0.00
+wordid_list_size=0()
+No:473	lineu ?
+weight=0.00
+wordid_list_size=0()
+No:474	lineáo và toàn di?
+weight=0.00
+wordid_list_size=0()
+No:475	linen ?
+weight=0.00
+wordid_list_size=0()
+No:476	line ?
+weight=0.00
+wordid_list_size=0()
+No:477	linea ra gi?
+weight=0.00
+wordid_list_size=0()
+No:478	linei pháp và hoàn thành nhi?
+weight=0.00
+wordid_list_size=0()
+No:479	linem v?
+weight=0.00
+wordid_list_size=0()
+No:480	line t?
+weight=0.00
+wordid_list_size=0()
+No:481	linet nh?
+weight=0.00
+wordid_list_size=0()
+No:482	lineHow to tell a good story Finance needs to do more communication to stakeholders.
+weight=0.00
+wordid_list_size=0()
+No:483	line  So that stakeholders can have better understanding of the rationale behind each process and then be able to roll out to their team members.
+weight=0.00
+wordid_list_size=0()
+No:484	lineHow to play Business Partner role better It is very critical to become a good business partner.
+weight=0.00
+wordid_list_size=0()
+No:485	line  I would like to learn best practices from other affiliates and take courses to enrich the skills.
+weight=0.00
+wordid_list_size=0()
+No:486	lineCommit to customers Better and faster to solve the problem.
+weight=0.00
+wordid_list_size=0()
+No:487	line- Attend technical trainings and obtain certificates on accounting, corporate management or compliance topics.
+weight=0.00
+wordid_list_size=0()
+No:488	lineCommunication Skill "- how to communicate with requestor and vendor in the right way.
+weight=0.00
+wordid_list_size=0()
+No:489	line-Attend training and meeting .
+weight=0.00
+wordid_list_size=0()
+No:490	line2014 - Make Decisions Propose decisions and drive for alignment in a timely manner.
+weight=0.00
+wordid_list_size=0()
+No:491	line2015 - Lead Teams Attend Neuro-Linguistic Programming (NLP) course to enhance my ability to develop rapport, connect with others, communicate to be understood, understand others.
+weight=0.00
+wordid_list_size=0()
+No:492	lineBetter understanding of finance process and bring some changes In 2016, I would like to spend more time in process understanding and improvement via the projects I will attend.
+weight=0.00
+wordid_list_size=0()
+No:493	line Think initiatively and self motivated.
+weight=0.00
+wordid_list_size=0()
+No:494	line Self improvement of knowledge of finance management and obtain certification.
+weight=0.00
+wordid_list_size=0()
+No:495	lineCooperate transversally Good liaise with the colleagues from different countries.
+weight=0.00
+wordid_list_size=0()
+No:496	lineMake Decisions Can give decisions for AP booking and reporting issues independently.
+weight=0.00
+wordid_list_size=0()
+No:497	lineMake Decisions Can give decisions for AP booking and reporting issues independently.
+weight=0.00
+wordid_list_size=0()
+No:498	lineAct for Change "This year we meet new Tax report tools, good learning and applied MyTax tool.
+weight=0.00
+wordid_list_size=0()
+No:499	lineAccording to the changes change the related working files.
+weight=0.00
+wordid_list_size=0()
+No:500	line提高财务专业水平 通过一定的学习和实践,提高财务专业水平,特别是制造业成本控制方面.
+weight=0.00
+wordid_list_size=0()
+No:501	line协调能力，鞭策能力 "Be more mature and confident to manage resources to achieve result;
+weight=0.00
+wordid_list_size=0()
+No:502	lineBe more proactive and persistent to drive things.
+weight=0.00
+wordid_list_size=0()
+No:503	lineDevelop new career areas I am willing to develop new career areas, e.g. GPS/SOX, compliance, controlling.
+weight=0.00
+wordid_list_size=0()
+No:504	lineTry to gain the promotion to manager within 1-2 years As a good performer recognized by line manager, I am willing and ready for more challenging tasks even beyond my current scope.
+weight=0.00
+wordid_list_size=0()
+No:505	line I will keep up good performance and try to gain the promotion to manager within 1-2 years.
+weight=0.00
+wordid_list_size=0()
+No:506	lineproject management skill, English "1.
+weight=0.00
+wordid_list_size=0()
+No:507	line1.1 Time management, which will help to complete the project on time;
+weight=0.00
+wordid_list_size=0()
+No:508	line1.2 Technical knowledge, which will help to better understand the process, coordinate the project, and confirm the effectiveness and efficiency of project;
+weight=0.00
+wordid_list_size=0()
+No:509	line2.
+weight=0.00
+wordid_list_size=0()
+No:510	line Improve English skill, especially on spoken English.
+weight=0.00
+wordid_list_size=0()
+No:511	lineFinance Controlling Knowledge I will be interested in short term assignment in controlling for better treasury forecasting.
+weight=0.00
+wordid_list_size=0()
+No:512	line2014 - Commit to customers Take part in more business meetings (internal/external).
+weight=0.00
+wordid_list_size=0()
+No:513	line1.
+weight=0.00
+wordid_list_size=0()
+No:514	line2.
+weight=0.00
+wordid_list_size=0()
+No:515	line3.
+weight=0.00
+wordid_list_size=0()
+No:516	line4.
+weight=0.00
+wordid_list_size=0()
+No:517	line1.
+weight=0.00
+wordid_list_size=0()
+No:518	line2.
+weight=0.00
+wordid_list_size=0()
