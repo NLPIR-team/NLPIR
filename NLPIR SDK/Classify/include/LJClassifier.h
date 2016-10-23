@@ -47,16 +47,10 @@ typedef struct _stDoc {
 	string sDatatype;
 }stDoc;
 
-
-// 功能：  数据库规则转化成配置文件
-// 返回值：成功/失败  
-//         出错信息记录在硬盘的./ljclassifier.log上
-CLASSIFIER_API bool classifier_db_ruleread(const char *dbconf="config.ini");
-
 // 功能：  文件方式初始化
 // 返回值：成功/失败  
 //         出错信息记录在硬盘的./ljclassifier.log和./DataFile/ljclassifier.log上
-CLASSIFIER_API bool classifier_init(const char *conf="rulelist.xml",const char *sInitDirPath="");
+CLASSIFIER_API bool classifier_init(const char *conf="rulelist.xml",const char *sInitDirPath="",const char *sLicenseCode=NULL);
 
 // 功能：对输入的文章结构进行分类
 // 参数：d:文章结构指针
@@ -80,6 +74,7 @@ CLASSIFIER_API void classifier_exit();
 
 CLASSIFIER_API void classifier_setsimthresh(float fSim);
 
+CLASSIFIER_API const char* classifier_GetLastErrorMsg();
 
 #endif //_H_CLASSIFIER_DLL
 

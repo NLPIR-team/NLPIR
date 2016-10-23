@@ -18,7 +18,9 @@
  *			Homepage: http://ictclas.nlpir.org
  * Date:     2013-12-19
  *
- * Notes:
+ * Notes: 
+ *  2016/10/9:
+ *	 增加了特征维度，最多1000类; 2.特征自动选择； 3.支持中文分类、英文分类以及中英文混合分类； 4.内测效果达到了95%
  *                
  ****************************************************************************/
 
@@ -118,7 +120,7 @@ DEEP_CLASSIFIER_API int DC_DeleteInstance(DC_HANDLE handle);
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_AddTrain(const char *sClassName,const char *sText,DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DC_AddTrain(const char *sClassName,const char *sText,DC_HANDLE handle=0);
 
 /*********************************************************************
  *
@@ -134,7 +136,7 @@ DEEP_CLASSIFIER_API bool DC_AddTrain(const char *sClassName,const char *sText,DC
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_AddTrainFile(const char *sClassName,const char *sFilename,DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DC_AddTrainFile(const char *sClassName,const char *sFilename,DC_HANDLE handle=0);
 
 /*********************************************************************
  *
@@ -151,7 +153,7 @@ DEEP_CLASSIFIER_API bool DC_AddTrainFile(const char *sClassName,const char *sFil
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_Train(DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DC_Train(DC_HANDLE handle=0);
 
 /*********************************************************************
  *
@@ -166,7 +168,7 @@ DEEP_CLASSIFIER_API bool DC_Train(DC_HANDLE handle=0);
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API bool DC_LoadTrainResult(DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DC_LoadTrainResult(DC_HANDLE handle=0);
 
 /*********************************************************************
  *

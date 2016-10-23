@@ -42,7 +42,8 @@
 #define DOC_EXTRACT_TYPE_POSITIVE 9//输出文章的正面情感词
 #define DOC_EXTRACT_TYPE_NEGATIVE 10//输出文章的负面情感词
 #define DOC_EXTRACT_TYPE_TEXT 11//输出文章去除网页等标签后的正文
-#define DOC_EXTRACT_TYPE_USER 12//用户自定义的词类，第一个自定义词
+#define DOC_EXTRACT_TYPE_TIME 12//输出时间词
+#define DOC_EXTRACT_TYPE_USER 13//用户自定义的词类，第一个自定义词
 //后续的自定义词，依次序号为：DOC_EXTRACT_TYPE_USER+1；DOC_EXTRACT_TYPE_USER+2；...
 
 #define PERSON_REQUIRED			0x0001
@@ -56,7 +57,7 @@
 #define ABSTRACT_REQUIRED		0x0800
 #define SENTIWORD_REQUIRED		0x1000
 #define SENTIMENT_REQUIRED		0x2000
-#define USER_REQUIRED			0x4000
+#define TIME_REQUIRED			0x4000
 #define HTML_REMOVER_REQUIRED	0x8000//是否需要去除网页标签的功能选项
 #define ALL_REQUIRED			0xffff
 
