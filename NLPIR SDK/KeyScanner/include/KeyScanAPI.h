@@ -39,7 +39,7 @@
 #define BIG5_CODE GBK_CODE+2//BIG5编码
 #define GBK_FANTI_CODE GBK_CODE+3//GBK编码，里面包含繁体字
 #define UTF8_FANTI_CODE GBK_CODE+4//UTF8编码
-
+#define ENCODING_UTF8_FJ ENCODING_GBK+5//UTF8编码转换过程中自动繁简转换处理，扫描过滤功能建议使用
 #define KS_HANDLE int
 /*********************************************************************
  *
@@ -114,7 +114,7 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *  Description: Import User-defined dictionary 导入用户词典
  *  Parameters : 
  *				sFilename:Text filename for user dictionary 
- *				bool bOverwrite: 
+ *				bool bOverwrite: true将覆盖系统已经有的词表；否则将采用追加的方式追加敏感词表
  *				KS_HANDLE handle： handle of KeyScanner
  *  Returns    : The  number of  lexical entry imported successfully
  *               成功导入的词典条数
