@@ -90,6 +90,15 @@ JZSearchAPI_API int JZIndexer_Init(const char *sDictPath=0,const char *sFieldInf
 //sDictPath：词典文件名；为空时，采用n-gram索引方法
 //sFieldInfoFile:域字段信息，用于支持多域索引，为空则只支持一个字段
 
+#define JZINDEX_STATUS_NORMAL 0//正常状态
+#define JZINDEX_STATUS_PROCESSING 1//正在索引过程中，不能再索引
+#define JZINDEX_STATUS_MERGE 2//正在归并过程中，不能再索引
+#define JZINDEX_STATUS_RELOAD 3//正在重新加载过程中，不能再索引
+#define JZINDEX_STATUS_UPDATED 4//最新的索引数据，检索服务还没有更新过来
+#define JZINDEX_STATUS_BACKUP 5//backup status,added in 2013/8/15
+JZSearchAPI_API int JZIndexer_SetStatus(int nStatus);
+//设置系统索引的状态锁，便于后续的操控
+
 JZSearchAPI_API int JZIndexer_Exit();
 //系统退出
 
@@ -261,6 +270,7 @@ public:
 	//nPageCount=-1:当前页需要返回所有的结果数目
 	//sResultName：结果存储的XML地址
 	//bMemUsed:false,结果保持到文件中，文件名由sResultName指定；否则，sResultName为内存起始地址
+
 	const RESULT_RECORD_VECTOR Search(const char *query_line,int *p_nResultCountRet,bool bNoSort=false,RESULT_RECORD_VECTOR pVecFKs=0,int nFKCount=0,const char *sFKFieldName=0);
 	//query_line: 查询表达式
 	//p_nResultCountRet:搜索结果总数
