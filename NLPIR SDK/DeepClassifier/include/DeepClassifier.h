@@ -169,6 +169,20 @@ DEEP_CLASSIFIER_API int DC_Train(DC_HANDLE handle=0);
  *              1.create 2013-6-8
  *********************************************************************/
 DEEP_CLASSIFIER_API int DC_LoadTrainResult(DC_HANDLE handle=0);
+/*********************************************************************
+*
+*  Func Name  : DC_ExportFeatures
+*
+*  Description: DeepClassifier Exports Features after training
+*
+Parameter:   None
+*
+*  Returns    : success or fail
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013-6-8
+*********************************************************************/
+DEEP_CLASSIFIER_API int DC_ExportFeatures(const char *sFilename,DC_HANDLE handle = 0);
 
 /*********************************************************************
  *
@@ -179,12 +193,30 @@ DEEP_CLASSIFIER_API int DC_LoadTrainResult(DC_HANDLE handle=0);
 	Parameter:   const char * sClassName: class name
  *				 sFilename: text file name
  *
- *  Returns    : success or fail
+ *  Returns    : the best class name
  *  Author     : Kevin Zhang  
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
 DEEP_CLASSIFIER_API const char * DC_Classify(const char *sText,DC_HANDLE handle=0);
+/*********************************************************************
+*
+*  Func Name  : DC_ClassifyEx
+*
+*  Description: DeepClassifier Classify on given text in Memory
+*				return multiple class with weights, sorted by weights
+Parameter:   const char * sClassName: class name
+*				 sFilename: text file name
+*
+*  Returns    : multiple class name with weights, sorted by weights
+*               For instance: 政治/1.20##经济/1.10
+*			bookyzjs/7.00##bookxkfl/6.00##booktslx/5.00##bookny-xyfl/4.00##booksy/3.00##bookdwpz/2.00##booknyjj/1.00##
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013-6-8
+*********************************************************************/
+DEEP_CLASSIFIER_API const char * DC_ClassifyEx(const char *sText, DC_HANDLE handle = 0);
+
 /*********************************************************************
  *
  *  Func Name  : DC_ClassifyFile
@@ -200,6 +232,21 @@ DEEP_CLASSIFIER_API const char * DC_Classify(const char *sText,DC_HANDLE handle=
  *              1.create 2013-6-8
  *********************************************************************/
 DEEP_CLASSIFIER_API const char * DC_ClassifyFile(const char *sFilename,DC_HANDLE handle=0);
+/*********************************************************************
+*
+*  Func Name  : DC_ClassifyExFile
+*
+*  Description: DeepClassifier Classify on given text in file
+*
+Parameter:   const char * sClassName: class name
+*				 sFilename: text file name
+*
+*  Returns    : success or fail
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013-6-8
+*********************************************************************/
+DEEP_CLASSIFIER_API const char * DC_ClassifyExFile(const char *sFilename, DC_HANDLE handle = 0);
 /*********************************************************************
  *
  *  Func Name  : DC_GetLastErrorMsg
