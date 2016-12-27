@@ -121,12 +121,31 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *  Author     : Kevin Zhang
  *  History    : 
  *              1.create 2014-8-3
- *  文本文件的格式为：　词条　　词类  权重 (注意，最多定义255个类别)
+ *  文本文件每行的格式为：　词条　　词类  权重 (注意，最多定义255个类别)
  *        例如： AV电影 色情 2
  *				 习近平 涉及领导人 1
 *********************************************************************/
 KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename, bool bOverwrite = false, KS_HANDLE handle=0);
- 
+
+/*********************************************************************
+*
+*  Func Name  : DeleteUserDict
+*
+*  Description: Delete User-defined dictionary 删除用户词典
+*  Parameters :
+*				sFilename:Text filename for user dictionary
+*				KS_HANDLE handle： handle of KeyScanner
+*  Returns    : The  number of  lexical entry deleted successfully
+*               成功删除的词典条数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2014-8-3
+*  文本文件每行的格式为：　词条
+*        例如： AV电影
+*				 习近平
+*********************************************************************/
+KEYSCANAPI_API int KS_DeleteUserDict(const char *sFilename, KS_HANDLE handle = 0);
+
 /*********************************************************************
  *
  *  Func Name  : KS_Scan
@@ -215,5 +234,24 @@ KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename, KS_HANDLE ha
  *********************************************************************/
 KEYSCANAPI_API const char* KS_GetLastErrorMsg();
 
+/*********************************************************************
+*
+*  Func Name  : KS_ExportDict
+*
+*  Description: ExportDict dictionary 导出已经定义的敏感词词典
+*				为保护知识产权，该功能仅局限于管理员内部调度使用
+*  Parameters :
+*				sFilename:Text filename for user dictionary
+*				KS_HANDLE handle： handle of KeyScanner
+*  Returns    : The  number of  lexical entry imported successfully
+*               成功导入的词典条数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2014-8-3
+*  文本文件的格式为：　词条　　词类  权重 (注意，最多定义255个类别)
+*        例如： AV电影 色情 2
+*				 习近平 涉及领导人 1
+*********************************************************************/
+KEYSCANAPI_API int KS_ExportDict(const char *sFilename, KS_HANDLE handle = 0);
 #endif //_H_KS_DLL
 
