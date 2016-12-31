@@ -1,0 +1,228 @@
+No:1	word=城南	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(355,362,)
+LV(《(2),)
+RV(》(2),)
+No:2	word=宫墙	pos=n_new	freq=4	LV=5	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(19,778,800,805,)
+LV(末##末(1),，(1),春色(1),“(3),过(1),)
+RV(，(1),柳(2),”(2),系(1),)
+No:3	word=墙柳	pos=n_new	freq=2	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(20,779,)
+LV(宫(2),)
+RV(。(1),一(1),”(1),)
+No:4	word=东风恶	pos=n_new	freq=2	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(23,860,)
+LV(。(1),“(1),用(1),)
+RV(，(1),”(1),指(1),)
+No:5	word=悼亡	pos=n_new	freq=3	LV=3	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(106,191,517,)
+LV(的(1),据(1),是(1),)
+RV(诗词(2),之(1),)
+No:6	word=痴情丈夫	pos=n_new	freq=3	LV=3	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(127,170,527,)
+LV(“(2),大(1),名列(2),)
+RV(。(1),”(3),榜(1),之(1),)
+No:7	word=唐情事	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(924,989,)
+LV(陆(2),)
+RV(，(1),的(1),)
+No:8	word=原配妻子	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(249,477,)
+LV(的(1),位(1),)
+RV(。(1),是(1),)
+No:9	word=专家学者	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(606,640,729,)
+LV(少数(1),现当代(1),综合(1),)
+RV(，(1),提出(1),们(1),)
+No:10	word=可能发生	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1026,1037,)
+LV(更(1),不大(1),)
+RV(在(2),)
+No:11	word=情无以	pos=n_new	freq=3	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1091,1096,1112,)
+LV(唐琬(1),赵士程(1),王氏(1),)
+RV(堪(3),)
+No:12	word=宫墙柳	pos=n_new	freq=2	LV=3	RV=3	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(19,778,)
+LV(末##末(1),春色(1),“(1),)
+RV(。(1),一(1),”(1),)
+No:13	word=陆唐情事	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(923,988,)
+LV(记载(1),言(1),)
+RV(，(1),的(1),)
+)
+ Sentence Information:
+No:1	line视频播放位置 
+weight=0.00
+wordid_list_size=0()
+No:2	line下载安装Flash播放器红酥手，黄藤酒，满城春色宫墙柳。
+weight=0.00
+wordid_list_size=0()
+No:3	line东风恶，欢情薄，一怀愁绪，几年离索。
+weight=0.00
+wordid_list_size=0()
+No:4	line错，错，错！
+weight=0.00
+wordid_list_size=0()
+No:5	line春如旧，人空瘦，泪痕红浥鲛绡透。
+weight=0.00
+wordid_list_size=0()
+No:6	line桃花落，闲池阁。
+weight=0.00
+wordid_list_size=0()
+No:7	line山盟虽在，锦书难托。
+weight=0.00
+wordid_list_size=0()
+No:8	line莫，莫，莫！
+weight=0.00
+wordid_list_size=0()
+No:9	line——陆游《钗头凤》 
+weight=0.00
+wordid_list_size=0()
+No:10	line潘岳、苏轼、贺铸、纳兰成（性）德都留下了深情动人的悼亡诗词，据此，我在一篇随笔里将他们戏称为中国古代“四大痴情丈夫”。
+weight=0.00
+wordid_list_size=0()
+No:11	line文章在博客上一贴出来，就有一些读者提出各种异议，其中有几位，因为宋代诗人陆游作有《钗头凤》一词，认为陆游应该名列“痴情丈夫”榜中，乃至位居榜首。
+weight=0.00
+wordid_list_size=0()
+No:12	line这种意见，不但跟我那篇随笔据悼亡诗词立论的思路不一致，也可能跟史实有出入。
+weight=0.00
+wordid_list_size=0()
+No:13	line陆游当然是一直深爱着他的表妹唐琬的。
+weight=0.00
+wordid_list_size=0()
+No:14	line江陵人唐意（非绍兴唐闳）之女唐琬，是陆游的表妹。
+weight=0.00
+wordid_list_size=0()
+No:15	line亲上加亲，成为陆游的原配妻子。
+weight=0.00
+wordid_list_size=0()
+No:16	line因为婆媳关系不和，被迫与陆游离婚，之后改嫁陆游表亲赵士程。
+weight=0.00
+wordid_list_size=0()
+No:17	line陆游、唐琬结婚之后，曾有过一段恩爱的生活。
+weight=0.00
+wordid_list_size=0()
+No:18	line陆游心中，难忘这一段情缘，前后写过多首诗歌，表达怀念之情。
+weight=0.00
+wordid_list_size=0()
+No:19	line保存至今（陆游晚年编辑《剑南诗稿》的时候，曾大量删除自己早年诗作）的就有《禹迹寺南有沈氏小园》、《十二月二日夜梦游沈氏园亭》、《沈园》、《城南》等。
+weight=0.00
+wordid_list_size=0()
+No:20	line其中《城南》一诗作于八十一岁那年。
+weight=0.00
+wordid_list_size=0()
+No:21	line可见，陆游一辈子都没有忘记唐琬。
+weight=0.00
+wordid_list_size=0()
+No:22	line这些诗中，最有名的是《沈园》绝句二首，诗如下： 
+weight=0.00
+wordid_list_size=0()
+No:23	line梦断香销四十年，沈园柳老不飞绵。
+weight=0.00
+wordid_list_size=0()
+No:24	line此身行作稽山土，犹吊遗踪一泫然。
+weight=0.00
+wordid_list_size=0()
+No:25	line城上斜阳画角哀，沈园无复旧池台。
+weight=0.00
+wordid_list_size=0()
+No:26	line伤心桥下春波绿，曾是惊鸿照影来！
+weight=0.00
+wordid_list_size=0()
+No:27	line怀恋之情，十分真挚。
+weight=0.00
+wordid_list_size=0()
+No:28	line可见，陆游对这位原配妻子是一往情深并且终生惦记的。
+weight=0.00
+wordid_list_size=0()
+No:29	line据记载，唐琬在跟陆游离婚之后五年，就因心情抑郁，病死了。
+weight=0.00
+wordid_list_size=0()
+No:30	line因此，陆游的这些诗歌都可以看作是悼亡之作，他完全可以名列“痴情丈夫”之列。
+weight=0.00
+wordid_list_size=0()
+No:31	line我之所以没有将其列入，主要是考虑到唐琬已经再醮，是他人的妻子了。
+weight=0.00
+wordid_list_size=0()
+No:32	line陆游的《钗头凤》一词，历来被当作陆、唐爱情的写照，自宋迄今，大部分文献记载，都言之凿凿，认定这是陆游为唐琬而作的。
+weight=0.00
+wordid_list_size=0()
+No:33	line但是，我更愿意相信另一种为少数专家学者提出、赞同的观点：《钗头凤》不是为唐琬而作的。
+weight=0.00
+wordid_list_size=0()
+No:34	line提出、赞同《钗头凤》不是为唐琬而作的现当代专家学者，先后有夏承焘、吴熊和、周本淳、黄世中、陈祖美等。
+weight=0.00
+wordid_list_size=0()
+No:35	line他们认为，《钗头凤》应该写于成都期间，是陆游在成都五年间的赠妓之作。
+weight=0.00
+wordid_list_size=0()
+No:36	line当然，在他们之前，宋代以降，刘克庄、马端临、张宗橚、吴骞等人，对《钗头凤》为陆游写自己与唐琬感情的“本事”，未予深信，或者曾予质疑。
+weight=0.00
+wordid_list_size=0()
+No:37	line综合专家学者们的论着，认为《钗头凤》不是陆游写自己与唐琬情事的论据主要有如下一些： 
+weight=0.00
+wordid_list_size=0()
+No:38	line《钗头凤》一词，用语过于香艳，有失持重，不符合唐琬的身份；
+weight=0.00
+wordid_list_size=0()
+No:39	line“宫墙柳”一语，不符合山阴（绍兴）环境。
+weight=0.00
+wordid_list_size=0()
+No:40	line绍兴不曾有过“宫墙”，“宫墙”系指成都故蜀王宫。
+weight=0.00
+wordid_list_size=0()
+No:41	line《钗头凤》调本名《撷芳词》，此调名乃陆游取原词“可怜孤如钗头凤”一语而另立之新名，这词调当时流行于成都；
+weight=0.00
+wordid_list_size=0()
+No:42	line陆游用“东风恶”指自己母亲，可疑；
+weight=0.00
+wordid_list_size=0()
+No:43	line《钗头凤》一词，在陆游词中，前后几首都是他在蜀赠妓之作。
+weight=0.00
+wordid_list_size=0()
+No:44	line陆游在成都，跟妓女有染，屡见载籍；
+weight=0.00
+wordid_list_size=0()
+No:45	line最早记载《钗头凤》为题于绍兴沈园壁间、言陆唐情事的宋人陈鹄、周密两家（着作分别为《耆旧续闻》、《齐东野语》），说法有抵牾之处。
+weight=0.00
+wordid_list_size=0()
+No:46	line陈鹄说写于“辛未三月”，周密说写于“绍兴乙亥岁”，相差四年；
+weight=0.00
+wordid_list_size=0()
+No:47	line《齐东野语》记载陆唐情事，说唐琬被逐出陆家之后，陆游曾措别馆予以安置，秘密来往。
+weight=0.00
+wordid_list_size=0()
+No:48	line被陆母发现之后，才断绝了往来。
+weight=0.00
+wordid_list_size=0()
+No:49	line这种情况，更可能发生在对妓女出身的妾身上，不大可能发生在唐琬这样有家庭、有背景的人身上；
+weight=0.00
+wordid_list_size=0()
+No:50	line《齐东野语》说陆游作《钗头凤》并将其题写于沈园壁间的时候，陆游三十一岁，唐琬跟赵士程结婚不久。
+weight=0.00
+wordid_list_size=0()
+No:51	line这种做法，有悖于情理。
+weight=0.00
+wordid_list_size=0()
+No:52	line不但唐琬情无以堪，赵士程情无以堪，给陆游生过三个儿子的第二任妻子王氏情无以堪，连同他们的家族，都是无法承受的。
+weight=0.00
+wordid_list_size=0()
+No:53	line他们都是书香仕宦之家，而且，陆、唐、赵三家都有亲戚关系。
+weight=0.00
+wordid_list_size=0()
+No:54	line历史往事，往往难以论定孰是孰非。
+weight=0.00
+wordid_list_size=0()
+No:55	line取舍之间，会因为学识、阅历、性情的不同而出现分歧。
+weight=0.00
+wordid_list_size=0()
+No:56	line我捃拾前人论述，写作此文，决不敢有强求读者全体赞同我所认可之观点的企图。
+weight=0.00
+wordid_list_size=0()
+No:57	line仅供参考云尔。
+weight=0.00
+wordid_list_size=0()
+No:58	line（丁启阵） 
+weight=0.00
+wordid_list_size=0()

@@ -21,4 +21,7 @@ del /Q Data\*.log
 del /Q Data\*.err
 del /Q Data\Data\*.log
 del /Q Data\Data\*.err
-
+del /Q *.log
+del /Q *.err
+del /Q *.pdb
+del /Q *.ilk
