@@ -219,6 +219,59 @@ KEYSCANAPI_API const char* KS_ScanFile(const char	*sFilename, KS_HANDLE handle =
 KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename, KS_HANDLE handle = 0);
 
 /*********************************************************************
+*
+*  Func Name  : KS_ScanLine
+*
+*  Description: 按行扫描输入的文本文件内容
+*  Parameters : sFilename:输入的文本文件名
+*			    sResultFilename: 输出的结果文件名
+*				KS_HANDLE handle： handle of KeyScanner
+*				int bEncript:0 不加密；1，加密
+*  Returns    : 返回涉及敏感的内容行数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2017-1-12
+// 返回的格式如下：
+// 返回值：返回包含了扫描结果的行号与内容，扫描结果明细:
+//		   *<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
+//		<class name="FLG" weight=1>法*輪大法</class>好！
+*********************************************************************/
+KEYSCANAPI_API int KS_ScanLine(const char	*sFilename, const char	*sResultFilename, KS_HANDLE handle = 0, int bEncript = false);
+
+/*********************************************************************
+*
+*  Func Name  : KS_ScanDir
+*
+*  Description: 多线程扫描按行扫描输入的文本夹文件内容
+*  Parameters : sInputDirPath:输入的文件夹路径
+*               sResultPath: 输出结果的文件夹路径
+*			    nThreadCount: 线程数，默认10个
+*				int bEncript:0 不加密；1，加密
+*  Returns    : 成功扫描到问题的文件数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2017-1-12
+// 返回的格式如下：
+*********************************************************************/
+KEYSCANAPI_API int KS_ScanDir(const char	*sInputDirPath,const char *sResultPath,int nThreadCount=10,int bEncript=false);
+/*********************************************************************
+*
+*  Func Name  : KS_Dencript
+*
+*  Description: 多线程转换扫描结果
+*  Parameters : sInputDirPath:输入的文件夹路径
+*               sResultPath: 输出结果的文件夹路径
+*			    nThreadCount: 线程数，默认10个
+*				int bEncript:0 不加密；1，加密
+*  Returns    : 成功扫描到问题的文件数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2017-1-12
+// 返回的格式如下：
+*********************************************************************/
+KEYSCANAPI_API int KS_Decrypt(const char *sInputDirPath, const char *sResultPath);
+
+/*********************************************************************
  *
  *  Func Name  : KS_GetLastErrorMsg
  *
