@@ -1,0 +1,9 @@
+DataFile/RunLog.txt
+DataFile/ChnDict.dct
+DataFile/ChnStopList.txt
+DataFile/EngStopList.txt
+InitSentiClfData is OK!
+Success in loading double-array!
+clfdata.WordNum=318615
+The size of trainset is51
+The size of labelset is51
