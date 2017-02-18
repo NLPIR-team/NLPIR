@@ -1,0 +1,454 @@
+Tue Apr 21 15:30:10 2015
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	1.000000	0.800000	0.888889
+教育	40	9	1.000000	0.700000	0.823529
+经济	40	9	0.600000	0.900000	0.720000
+军事	40	9	1.000000	0.600000	0.750000
+体育	40	9	0.900000	0.900000	0.900000
+艺术	40	9	1.000000	0.700000	0.823529
+政治	40	9	0.588235	1.000000	0.740741
+total :	0.800000
+Tue Apr 21 15:33:37 2015
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	1.000000	0.800000	0.888889
+教育	40	9	1.000000	0.700000	0.823529
+经济	40	9	0.600000	0.900000	0.720000
+军事	40	9	1.000000	0.600000	0.750000
+体育	40	9	0.900000	0.900000	0.900000
+艺术	40	9	1.000000	0.700000	0.823529
+政治	40	9	0.588235	1.000000	0.740741
+total :	0.800000
+Tue Apr 28 10:49:05 2015
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	1.000000	0.800000	0.888889
+教育	40	9	1.000000	0.700000	0.823529
+经济	40	9	0.600000	0.900000	0.720000
+军事	40	9	1.000000	0.600000	0.750000
+体育	40	9	0.900000	0.900000	0.900000
+艺术	40	9	1.000000	0.700000	0.823529
+政治	40	9	0.588235	1.000000	0.740741
+total :	0.800000
+Sat Sep 05 12:57:53 2015
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	1.000000	0.800000	0.888889
+教育	40	9	1.000000	0.700000	0.823529
+经济	40	9	0.600000	0.900000	0.720000
+军事	40	9	1.000000	0.600000	0.750000
+体育	40	9	0.900000	0.900000	0.900000
+艺术	40	9	1.000000	0.700000	0.823529
+政治	40	9	0.588235	1.000000	0.740741
+total :	0.800000
+Fri Sep 25 08:21:58 2015
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	1.000000	0.800000	0.888889
+教育	40	9	1.000000	0.700000	0.823529
+经济	40	9	0.600000	0.900000	0.720000
+军事	40	9	1.000000	0.600000	0.750000
+体育	40	9	0.900000	0.900000	0.900000
+艺术	40	9	1.000000	0.700000	0.823529
+政治	40	9	0.588235	1.000000	0.740741
+total :	0.800000
+Fri Sep 25 10:52:12 2015
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	1.000000	0.800000	0.888889
+教育	40	9	1.000000	0.700000	0.823529
+经济	40	9	0.600000	0.900000	0.720000
+军事	40	9	1.000000	0.600000	0.750000
+体育	40	9	0.900000	0.900000	0.900000
+艺术	40	9	1.000000	0.700000	0.823529
+政治	40	9	0.588235	1.000000	0.740741
+total :	0.800000
+Fri Jul 22 12:33:37 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+total :	-1.#IND00
+Sun Jul 24 09:15:35 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+total :	-1.#IND00
+Sun Jul 24 13:18:50 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+total :	-1.#IND00
+Mon Aug 22 17:02:00 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+total :	-1.#IND00
+Mon Aug 22 17:09:59 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookny-xyfl	31	0	0.500000	0.032258	0.060606
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.536585	0.687500	0.602740
+bookxkfl	60	0	0.575342	0.700000	0.631579
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.750000	0.692308	0.720000
+total :	0.530928
+Thu Sep 29 18:01:20 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+1-1	16	0	0.750000	0.937500	0.833333
+1-2	15	0	1.000000	0.533333	0.695652
+10-1	15	0	1.000000	1.000000	1.000000
+10-2	15	0	0.185185	1.000000	0.312500
+11-1	15	0	1.000000	0.933333	0.965517
+11-2	15	0	1.000000	0.866667	0.928571
+12-1	15	0	1.000000	1.000000	1.000000
+12-2	15	0	1.000000	1.000000	1.000000
+2-1	15	0	1.000000	0.600000	0.750000
+2-2	15	0	1.000000	0.400000	0.571429
+3-1	15	0	0.583333	0.466667	0.518519
+3-2	15	0	1.000000	0.600000	0.750000
+4-1	15	0	0.625000	0.666667	0.645161
+4-2	15	0	1.000000	0.866667	0.928571
+5-1	15	0	1.000000	0.733333	0.846154
+5-2	15	0	1.000000	0.333333	0.500000
+6-1	15	0	1.000000	0.733333	0.846154
+6-2	15	0	0.785714	0.733333	0.758621
+7-1	15	0	0.937500	1.000000	0.967742
+7-2	15	0	0.933333	0.933333	0.933333
+8-1	15	0	1.000000	0.600000	0.750000
+8-2	15	0	1.000000	0.733333	0.846154
+9-1	15	0	1.000000	0.733333	0.846154
+9-2	15	0	1.000000	0.800000	0.888889
+total :	0.759003
+Thu Sep 29 18:06:38 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookny-xyfl	31	0	0.500000	0.032258	0.060606
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.536585	0.687500	0.602740
+bookxkfl	60	0	0.575342	0.700000	0.631579
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.750000	0.692308	0.720000
+total :	0.530928
+Fri Sep 30 12:19:22 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookny-xyfl	31	0	0.500000	0.032258	0.060606
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.536585	0.687500	0.602740
+bookxkfl	60	0	0.575342	0.700000	0.631579
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.750000	0.692308	0.720000
+total :	0.530928
+Fri Oct 07 14:20:38 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookxkfl	60	0	0.309278	1.000000	0.472441
+total :	0.309278
+Fri Oct 07 14:27:09 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+total :	-1.#IND00
+Fri Oct 07 14:37:37 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+booknyjj	7	0	1.000000	0.285714	0.444444
+booktslx	32	0	1.000000	0.156250	0.270270
+bookxkfl	60	0	0.356250	0.950000	0.518182
+bookyzjs	20	0	0.500000	0.200000	0.285714
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.412371
+Fri Oct 07 14:44:44 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+booknyjj	7	0	1.000000	0.285714	0.444444
+booktslx	32	0	1.000000	0.156250	0.270270
+bookxkfl	60	0	0.356250	0.950000	0.518182
+bookyzjs	20	0	0.500000	0.200000	0.285714
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.412371
+Fri Oct 07 14:47:57 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+booknyjj	7	0	1.000000	0.285714	0.444444
+booktslx	32	0	1.000000	0.156250	0.270270
+bookxkfl	60	0	0.356250	0.950000	0.518182
+bookyzjs	20	0	0.500000	0.200000	0.285714
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.412371
+Fri Oct 07 15:08:44 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	-1.#IND00	0.000000	-1.#IND00
+bookny-xyfl	31	0	-1.#IND00	0.000000	-1.#IND00
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	-1.#IND00	0.000000	-1.#IND00
+booktslx	32	0	1.000000	0.156250	0.270270
+bookxkfl	60	0	0.356250	0.950000	0.518182
+bookyzjs	20	0	0.500000	0.200000	0.285714
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.412371
+Fri Oct 07 16:20:03 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	0.000000	0.000000	-1.#IND00
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.000000	0.000000	-1.#IND00
+booktslx	32	0	1.000000	0.156250	0.270270
+bookxkfl	60	0	0.356250	0.950000	0.518182
+bookyzjs	20	0	0.500000	0.200000	0.285714
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.412371
+Fri Oct 07 16:31:04 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	0.000000	0.000000	-1.#IND00
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.000000	0.000000	-1.#IND00
+booktslx	32	0	1.000000	0.156250	0.270270
+bookxkfl	60	0	0.356250	0.950000	0.518182
+bookyzjs	20	0	0.500000	0.200000	0.285714
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.412371
+Fri Oct 07 16:39:04 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	50	0	1.000000	1.000000	1.000000
+教育	50	0	0.742424	0.980000	0.844828
+经济	50	0	1.000000	0.900000	0.947368
+军事	50	0	1.000000	1.000000	1.000000
+体育	50	0	1.000000	0.980000	0.989899
+艺术	50	0	0.975000	0.780000	0.866667
+政治	50	0	1.000000	1.000000	1.000000
+total :	0.948571
+Fri Oct 07 16:44:31 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	0.800000	0.400000	0.533333
+教育	40	9	1.000000	0.800000	0.888889
+经济	40	9	0.818182	0.900000	0.857143
+军事	40	9	0.888889	0.800000	0.842105
+体育	40	9	1.000000	1.000000	1.000000
+艺术	40	9	0.875000	0.700000	0.777778
+政治	40	9	0.526316	1.000000	0.689655
+total :	0.800000
+Fri Oct 07 18:11:58 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	0.800000	0.400000	0.533333
+教育	40	9	1.000000	0.800000	0.888889
+经济	40	9	0.818182	0.900000	0.857143
+军事	40	9	0.888889	0.800000	0.842105
+体育	40	9	1.000000	1.000000	1.000000
+艺术	40	9	0.875000	0.700000	0.777778
+政治	40	9	0.526316	1.000000	0.689655
+total :	0.800000
+Fri Oct 07 18:20:22 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+交通	40	9	0.500000	0.400000	0.444444
+教育	40	9	1.000000	0.600000	0.750000
+经济	40	9	0.642857	0.900000	0.750000
+军事	40	9	0.888889	0.800000	0.842105
+体育	40	9	1.000000	0.900000	0.947368
+艺术	40	9	0.538462	0.700000	0.608696
+政治	40	9	0.727273	0.800000	0.761905
+total :	0.728571
+Fri Oct 07 18:57:44 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	8	2	0.000000	0.000000	-1.#IND00
+bookny-xyfl	24	6	0.000000	0.000000	-1.#IND00
+booknyjj	5	1	0.000000	0.000000	-1.#IND00
+booksy	16	3	0.500000	0.250000	0.333333
+booktslx	25	6	0.285714	0.285714	0.285714
+bookxkfl	48	11	0.461538	1.000000	0.631579
+bookyzjs	16	3	0.000000	0.000000	-1.#IND00
+bookzwbh	10	2	0.500000	0.666667	0.571429
+total :	0.404762
+Fri Oct 07 18:58:32 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	8	2	0.000000	0.000000	-1.#IND00
+bookny-xyfl	24	6	1.000000	0.064516	0.121212
+booknyjj	5	1	1.000000	0.285714	0.444444
+booksy	16	3	0.483871	0.750000	0.588235
+booktslx	25	6	0.611111	0.687500	0.647059
+bookxkfl	48	11	0.535714	0.750000	0.625000
+bookyzjs	16	3	0.400000	0.400000	0.400000
+bookzwbh	10	2	0.631579	0.923077	0.750000
+total :	0.546392
+Fri Oct 07 19:00:41 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	1.000000	0.064516	0.121212
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.611111	0.687500	0.647059
+bookxkfl	60	0	0.535714	0.750000	0.625000
+bookyzjs	20	0	0.400000	0.400000	0.400000
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.546392
+Fri Oct 07 19:02:53 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	0.388889	0.225806	0.285714
+booknyjj	7	0	0.000000	0.000000	-1.#IND00
+booksy	20	0	1.000000	0.250000	0.400000
+booktslx	32	0	0.818182	0.562500	0.666667
+bookxkfl	60	0	0.415385	0.900000	0.568421
+bookyzjs	20	0	0.000000	0.000000	-1.#IND00
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.494845
+Fri Oct 07 19:06:23 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	0.214286	0.193548	0.203390
+booknyjj	7	0	0.000000	0.000000	-1.#IND00
+booksy	20	0	0.000000	0.000000	-1.#IND00
+booktslx	32	0	1.000000	0.312500	0.476190
+bookxkfl	60	0	0.418440	0.983333	0.587065
+bookyzjs	20	0	0.000000	0.000000	-1.#IND00
+bookzwbh	13	0	0.800000	0.923077	0.857143
+total :	0.448454
+Fri Oct 07 19:07:54 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	0.000000	0.000000	-1.#IND00
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.000000	0.000000	-1.#IND00
+booktslx	32	0	1.000000	0.156250	0.270270
+bookxkfl	60	0	0.356250	0.950000	0.518182
+bookyzjs	20	0	0.500000	0.200000	0.285714
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.412371
+Fri Oct 07 19:09:49 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	1.000000	0.129032	0.228571
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.677419	0.656250	0.666667
+bookxkfl	60	0	0.594595	0.733333	0.656716
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.567010
+Fri Oct 07 19:11:20 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	0.000000	0.000000	-1.#IND00
+booknyjj	7	0	0.000000	0.000000	-1.#IND00
+booksy	20	0	0.000000	0.000000	-1.#IND00
+booktslx	32	0	0.000000	0.000000	-1.#IND00
+bookxkfl	60	0	0.329609	0.983333	0.493724
+bookyzjs	20	0	0.000000	0.000000	-1.#IND00
+bookzwbh	13	0	0.750000	0.692308	0.720000
+total :	0.350515
+Fri Oct 07 19:16:07 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	0.000000	0.000000	-1.#IND00
+booknyjj	7	0	0.000000	0.000000	-1.#IND00
+booksy	20	0	0.000000	0.000000	-1.#IND00
+booktslx	32	0	0.000000	0.000000	-1.#IND00
+bookxkfl	60	0	0.309278	1.000000	0.472441
+bookyzjs	20	0	0.000000	0.000000	-1.#IND00
+bookzwbh	13	0	0.000000	0.000000	-1.#IND00
+total :	0.309278
+Fri Oct 07 19:19:27 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	1.000000	0.129032	0.228571
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.677419	0.656250	0.666667
+bookxkfl	60	0	0.594595	0.733333	0.656716
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.567010
+Fri Oct 07 19:22:35 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	1.000000	0.129032	0.228571
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.677419	0.656250	0.666667
+bookxkfl	60	0	0.594595	0.733333	0.656716
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.567010
+Fri Oct 07 19:25:03 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	1.000000	0.129032	0.228571
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.677419	0.656250	0.666667
+bookxkfl	60	0	0.594595	0.733333	0.656716
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.567010
+Fri Oct 07 19:28:57 2016
+
+features : 	800
+class name	training set	testing set	precision	recall rate	F value
+bookdwpz	11	0	0.000000	0.000000	-1.#IND00
+bookny-xyfl	31	0	1.000000	0.129032	0.228571
+booknyjj	7	0	1.000000	0.285714	0.444444
+booksy	20	0	0.483871	0.750000	0.588235
+booktslx	32	0	0.687500	0.687500	0.687500
+bookxkfl	60	0	0.602740	0.733333	0.661654
+bookyzjs	20	0	0.363636	0.600000	0.452830
+bookzwbh	13	0	0.631579	0.923077	0.750000
+total :	0.572165
