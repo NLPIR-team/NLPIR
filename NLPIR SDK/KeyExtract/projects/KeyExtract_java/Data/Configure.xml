@@ -1,17 +1,17 @@
 <?xmlversion="1.0"encoding="GB2312"?>
 <NLPIR>
-	<TagSet>ICTPOS.map</TagSet>//ï¿½ï¿½ï¿½Ô±ï¿½×¢ï¿½ï¿½Ó³ï¿½ï¿½ï¿½Ä¼ï¿½
-	<UserDict>on</UserDict>//Onï¿½ï¿½UserDictionaryapplied;Off:notappliedï¿½ï¿½
-	<UserDictPrior>Off</UserDictPrior>//ï¿½Ã»ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½,Addedin2006-03-16,requiredbyNECOnï¿½ï¿½ï¿½Ã»ï¿½ï¿½Êµï¿½Íºï¿½ï¿½Ä´Êµï¿½ï¿½ï¿½Í¬Ê±ï¿½ÐµÄ´Ê»ã£¬ï¿½Ã»ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü²ï¿½Òªï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´Êµï¿½ï¿½ÐµÄ´Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ã»ï¿½ï¿½Êµä£¬ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Êµï¿½ï¿½ä·´
-	<FieldDict>on</FieldDict>//Onï¿½ï¿½FieldDictionaryapplied;Off:notappliedï¿½ï¿½  
+	<TagSet>ICTPOS.map</TagSet>//´ÊÐÔ±ê×¢¼¯Ó³ÉäÎÄ¼þ
+	<UserDict>on</UserDict>//On£ºUserDictionaryapplied;Off:notapplied£»
+	<UserDictPrior>Off</UserDictPrior>//ÓÃ»§´ÊµäÓÅÏÈ,Addedin2006-03-16,requiredbyNECOn£ºÓÃ»§´ÊµäºÍºËÐÄ´ÊµäÖÐÍ¬Ê±ÓÐµÄ´Ê»ã£¬ÓÃ»§´ÊµäÓÅÏÈ£¬±¾¹¦ÄÜ²»ÒªÀÄÓÃ£¬Èç¹û½«ºËÐÄ´ÊµäÖÐµÄ´Ê¶¼ÉèÖÃÎªÓÃ»§´Êµä£¬ÆäÐ§¹ûÊÊµÃÆä·´
+	<FieldDict>on</FieldDict>//On£ºFieldDictionaryapplied;Off:notapplied£»  
 	<GranularityContorl>off</GranularityContorl>
-	<Log>on</Log>//On,Offï¿½ï¿½ï¿½ï¿½ï¿½ç£ºOff:ï¿½Ø±ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ü£ï¿½On:ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
-	<version>2013</version>//ÏµÍ³ï¿½æ±¾ï¿½ï¿½
-	<Modify>2012-11-14</Modify>//ÏµÍ³ï¿½ï¿½ï¿½ï¿½Þ¶ï¿½Ê±ï¿½ï¿½
-	<Lexicon>2012-11-14</Lexicon>//ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Þ¶ï¿½Ê±ï¿½ï¿½
-	<Sentiment>On</Sentiment>//On,Offï¿½ï¿½ï¿½ï¿½ï¿½ç£ºOff:ï¿½Ø±ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½On:ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-	<adaptive>true</adaptive>//ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ö´Ê£ï¿½Ä¬ï¿½ï¿½Îªfalseï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ö´Êµï¿½Ð§ï¿½Ê»ï¿½Ïµï¿½
-	<FinerSegCombined>false</FinerSegCombined>//true:ï¿½ï¿½Ï¸ï¿½Ð·Ö½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ñ¹²ºÍ¹ï¿½ ï¿½Ð·Ö½ï¿½ï¿½Îªï¿½ï¿½ ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ñ¹²ºÍ¹ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í¹ï¿½Ä¬ï¿½ï¿½Îªfalse;
-	<author>ï¿½Å»ï¿½Æ½ï¿½ï¿½Ê¿</author>//ï¿½ï¿½ï¿½ï¿½
-	<Contact>pipy_zhang@msn.com</Contact>//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½Ê½
+	<Log>on</Log>//On,Off£»ÀýÈç£ºOff:¹Ø±ÕÈÕÖ¾¹¦ÄÜ£»On:´ò¿ªÈÕÖ¾¹¦ÄÜ
+	<version>2013</version>//ÏµÍ³°æ±¾ºÅ
+	<Modify>2012-11-14</Modify>//ÏµÍ³×î½üÐÞ¶©Ê±¼ä
+	<Lexicon>2012-11-14</Lexicon>//´Êµä×î½üÐÞ¶©Ê±¼ä
+	<Sentiment>On</Sentiment>//On,Off£»ÀýÈç£ºOff:¹Ø±ÕÇé¸Ð·ÖÎö¹¦ÄÜ£»On:´ò¿ªÇé¸Ð·ÖÎö¹¦ÄÜ
+	<adaptive>true</adaptive>//×ÔÊÊÓ¦·Ö´Ê£¬Ä¬ÈÏÎªfalse£¬×ÔÊÊÓ¦·Ö´ÊµÄÐ§ÂÊ»á½ÏµÍ
+	<FinerSegCombined>false</FinerSegCombined>//true:´ÖÏ¸ÇÐ·Ö½áºÏÄ£Ê½£¨ÖÐ»ªÈËÃñ¹²ºÍ¹ú ÇÐ·Ö½á¹ûÎª£º ÖÐ»ªÈËÃñ¹²ºÍ¹ú ÖÐ»ª ÈËÃñ ¹²ºÍ¹ú£©£¬Ä¬ÈÏÎªfalse;
+	<author>ÕÅ»ªÆ½²©Ê¿</author>//×÷Õß
+	<Contact>pipy_zhang@msn.com</Contact>//×÷ÕßÁªÏµ·½Ê½
 </NLPIR>
