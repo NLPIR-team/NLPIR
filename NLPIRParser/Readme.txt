@@ -61,7 +61,7 @@
 │      ├─LJSentimentAnalysis
 │      ├─Summary
 │      └─WordFreq
-├─演示语料-Small	  						    NLPIRParser提供的测试语料，可以自行替换
+├─演示语料				  						    NLPIRParser提供的测试语料，可以自行替换
 ├─编码转换测试文本	  						  NLPIRParser提供的编码转换测试语料，可以自行替换
 └─训练分类用文本  									NLPIRParser提供的分类训练语料，可以自行替换
     ├─交通
