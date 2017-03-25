@@ -147,7 +147,7 @@ NEWWORDFINDER_API int NWF_Batch_Start();//New Word Indentification Start
 *  History    : 
 *              1.create 20132/11/23
 *********************************************************************/
-NEWWORDFINDER_API int  NWF_Batch_AddFile(const char *sFilename);
+NEWWORDFINDER_API unsigned long  NWF_Batch_AddFile(const char *sFilename);
 /*********************************************************************
 *
 *  Func Name  : NWF_Batch_AddMem
@@ -162,7 +162,7 @@ NEWWORDFINDER_API int  NWF_Batch_AddFile(const char *sFilename);
 *  History    : 
 *              1.create 2013/11/23
 *********************************************************************/
-NEWWORDFINDER_API int NWF_Batch_AddMem(const char *sText);
+NEWWORDFINDER_API unsigned long NWF_Batch_AddMem(const char *sText);
 /*********************************************************************
 *
 *  Func Name  : NWF_Batch_Complete

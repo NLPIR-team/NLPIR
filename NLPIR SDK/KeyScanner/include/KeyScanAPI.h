@@ -237,7 +237,21 @@ KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename, KS_HANDLE ha
 //		<class name="FLG" weight=1>法*輪大法</class>好！
 *********************************************************************/
 KEYSCANAPI_API int KS_ScanLine(const char	*sFilename, const char	*sResultFilename, KS_HANDLE handle = 0, int bEncript = false);
-
+/*********************************************************************
+*
+*  Func Name  : KS_ScanStat
+*
+*  Description: 输出扫描结果的命中统计报告，利于进一步的分析核查
+*  Parameters : sResultFile: 输出结果的文件文件
+*			    
+*				KS_HANDLE handle： handle of KeyScanner
+*  Returns    : 成功扫描到问题的文件数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2017-1-12
+// 返回的格式如下：
+*********************************************************************/
+KEYSCANAPI_API int KS_ScanStat(const char *sResultFile, KS_HANDLE handle = 0);
 /*********************************************************************
 *
 *  Func Name  : KS_ScanDir
@@ -253,7 +267,8 @@ KEYSCANAPI_API int KS_ScanLine(const char	*sFilename, const char	*sResultFilenam
 *              1.create 2017-1-12
 // 返回的格式如下：
 *********************************************************************/
-KEYSCANAPI_API int KS_ScanDir(const char	*sInputDirPath,const char *sResultPath,int nThreadCount=10,int bEncript=false);
+KEYSCANAPI_API int KS_ScanDir(const char *sInputDirPath,const char *sResultPath,int nThreadCount=10,int bEncript=false);
+
 /*********************************************************************
 *
 *  Func Name  : KS_Dencript

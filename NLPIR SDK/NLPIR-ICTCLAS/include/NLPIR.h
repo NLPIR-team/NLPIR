@@ -253,8 +253,22 @@ NLPIR_API unsigned int NLPIR_ImportUserDict(const char *sFilename,bool bOverwrit
 *  History    : 
 *              1.create 11:10:2008
 *********************************************************************/
-NLPIR_API int NLPIR_AddUserWord(const char *sWord);//add by qp 2008.11.10
-
+NLPIR_API int NLPIR_AddUserWord(const char *sWord);
+/*********************************************************************
+*
+*  Func Name  : NLPIR_CleanUserWord
+*
+*  Description: Clean all temporary added user words
+*
+*  Parameters : sFilename: file name
+*
+*  Returns    : 1,true ; 0,false
+*
+*  Author     :
+*  History    :
+*              1.create 2017/2/26
+*********************************************************************/
+NLPIR_API int NLPIR_CleanUserWord();
 /*********************************************************************
 *
 *  Func Name  : Save
@@ -309,13 +323,26 @@ NLPIR_API double NLPIR_GetUniProb(const char *sWord);
 *    
 *
 *  Parameters : sWord: input word 
-*  Returns    : success: 
-*               fail: 
+*  Returns    :1: exists; 0: no exists
 *  Author     : Kevin Zhang  
 *  History    : 
 *              1.create 2005-11-22
 *********************************************************************/
 NLPIR_API int NLPIR_IsWord(const char *sWord);
+/*********************************************************************
+*
+*  Func Name  : NLPIR_IsUserWord
+*
+*  Description: Judge whether the word is included in the user-defined dictionary
+*
+*
+*  Parameters : sWord: input word
+*  Returns    :1: exists; 0: no exists
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2016-12-31
+*********************************************************************/
+NLPIR_API int NLPIR_IsUserWord(const char *sWord);
 
 /*********************************************************************
 *
@@ -329,7 +356,7 @@ NLPIR_API int NLPIR_IsWord(const char *sWord);
 *  Returns    : success: 
 *               fail: 
 *  Author     : Kevin Zhang  
-*  History    : 
+*  History    :  
 *              1.create 2014-10-10
 *********************************************************************/
 NLPIR_API const char * NLPIR_GetWordPOS(const char *sWord);
@@ -624,7 +651,7 @@ NLPIR_API int NLPIR_NWI_Start();//New Word Indentification Start
 *  History    : 
 *              1.create 20132/11/23
 *********************************************************************/
-NLPIR_API int  NLPIR_NWI_AddFile(const char *sFilename);
+NLPIR_API unsigned long  NLPIR_NWI_AddFile(const char *sFilename);
 /*********************************************************************
 *
 *  Func Name  : NLPIR_NWI_AddMem
@@ -639,7 +666,7 @@ NLPIR_API int  NLPIR_NWI_AddFile(const char *sFilename);
 *  History    : 
 *              1.create 2013/11/23
 *********************************************************************/
-NLPIR_API int NLPIR_NWI_AddMem(const char *sText);
+NLPIR_API unsigned long NLPIR_NWI_AddMem(const char *sText);
 /*********************************************************************
 *
 *  Func Name  : NLPIR_NWI_Complete

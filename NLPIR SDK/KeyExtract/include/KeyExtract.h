@@ -111,6 +111,7 @@ KEYEXTRACT_API const char * KeyExtract_GetKeyWords(const char *sLine,int nMaxKey
 *              1.create 2012/11/12
 *********************************************************************/
 KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
+
 /*********************************************************************
  *
  *  Func Name  : KeyExtract_ImportUserDict
@@ -124,7 +125,6 @@ KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int
  *              1.create 2014-6-26
  *********************************************************************/
 KEYEXTRACT_API unsigned int KeyExtract_ImportUserDict(const char *sFilename,bool bOverwrite=false);
-
 /*********************************************************************
  *
  *  Func Name  : KeyExtract_ImportKeyBlackList
@@ -154,4 +154,89 @@ KEYEXTRACT_API unsigned int KeyExtract_ImportKeyBlackList(const char *sFilename)
  *              1.create 2014-2-27
  *********************************************************************/
 KEYEXTRACT_API const char * KeyExtract_GetLastErrorMsg();
+
+
+/*********************************************************************
+*
+*  以下函数为2013版本专门针对关键词批量发现的过程，一般建议脱机实现，不宜在线处理
+*********************************************************************/
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_Batch_Start
+*
+*  Description: 启动关键词识别
+
+*
+*  Parameters : None
+*  Returns    : bool, true:success, false:fail
+*
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013/11/23
+*********************************************************************/
+KEYEXTRACT_API int KeyExtract_Batch_Start();//New Word Indentification Start
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_Batch_AddFile
+*
+*  Description: 往关键词识别系统中添加待识别关键词的文本文件
+*				需要在运行KeyExtract_Batch_Start()之后，才有效
+*
+*  Parameters : const char *sFilename：文件名
+*  Returns    : bool, true:success, false:fail
+*
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 20132/11/23
+*********************************************************************/
+KEYEXTRACT_API unsigned long  KeyExtract_Batch_AddFile(const char *sFilename);
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_Batch_AddMem
+*
+*  Description: 往关键词识别系统中添加一段待识别关键词的内存
+*				需要在运行KeyExtract_Batch_Start()之后，才有效
+*
+*  Parameters : const char *sFilename：文件名
+*  Returns    : bool, true:success, false:fail
+*
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013/11/23
+*********************************************************************/
+KEYEXTRACT_API unsigned long KeyExtract_Batch_AddMem(const char *sText);
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_Batch_Complete
+*
+*  Description: 关键词识别添加内容结束
+*				需要在运行KeyExtract_Batch_Start()之后，才有效
+*
+*  Parameters : None
+*  Returns    : bool, true:success, false:fail
+*
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013/11/23
+*********************************************************************/
+KEYEXTRACT_API int KeyExtract_Batch_Complete();//文件或者内存导入结束
+
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_Batch_GetResult
+*
+*  Description: 获取关键词识别的结果
+*				需要在运行KeyExtract_Batch_Complete()之后，才有效
+*
+*  Parameters : bWeightOut：是否需要输出每个关键词的权重参数
+*
+*  Returns    : 输出格式为
+*				【关键词1】 【权重1】 【关键词2】 【权重2】 ...
+*
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013/11/23
+*********************************************************************/
+KEYEXTRACT_API const char * KeyExtract_Batch_GetResult(bool bWeightOut = false);//输出关键词识别结果
+
 #endif//__KEYEXTRACT_2013_LIB_INCLUDED__
