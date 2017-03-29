@@ -6,7 +6,8 @@ del /Q bin-win32\*.tf
 del /Q bin-win32\*.dat
 del /Q bin-win32\output\*.*
 del /Q bin-win32\output\seg\*.*
-del /Q bin-win32\output\convert\*.*
+del /Q bin-win32\output\GBK\*.*
+del /Q bin-win32\output\UTF8\*.*
 del /Q bin-win32\output\scan\*.*
 del /Q bin-win32\log.html
 del /Q bin-win32\trainrule.xml
@@ -35,7 +36,8 @@ del /Q bin-win64\*.tf
 del /Q bin-win64\*.dat
 del /Q bin-win64\output\*.*
 del /Q bin-win64\output\seg\*.*
-del /Q bin-win64\output\convert\*.*
+del /Q bin-win64\output\GBK\*.*
+del /Q bin-win64\output\UTF8\*.*
 del /Q bin-win64\output\scan\*.*
 del /Q bin-win64\log.html
 del /Q bin-win64\trainrule.xml
