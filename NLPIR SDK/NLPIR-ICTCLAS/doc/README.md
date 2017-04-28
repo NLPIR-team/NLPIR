@@ -1,4 +1,4 @@
-# [NLPIR-ICTCLAS](https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR SDK/NLPIR-ICTCLAS) 中英文分词系统功能模块使用手册
+# [NLPIR-ICTCLAS]中英文分词系统功能模块使用手册
 
 ## 1. 功能模块概述
 
