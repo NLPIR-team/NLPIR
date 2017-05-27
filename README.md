@@ -38,7 +38,7 @@ NLPIR是一套专门针对原始文本集进行处理和加工的软件，提供
 
 ## 功能介绍
 
-##### NLPIR大数据搜索与挖掘共享开发平台的14种功能：
+### NLPIR大数据搜索与挖掘共享开发平台的14种功能：
                 
 1. **全文精准检索-JZSearch** 
 支持文本、数字、日期、字符串等各种数据类型，多字段的高效搜索，支持AND/OR/NOT以及NEAR邻近等查询语法，支持维语、藏语、蒙语、阿拉伯、韩语等多种少数民族语言的检索。可以无缝地与现有文本处理系统与数据库系统融合。
@@ -66,7 +66,7 @@ NLPIR是一套专门针对原始文本集进行处理和加工的软件，提供
 关键词扫描系统，可以设置一组关键词，可实现实时高效的关键词扫描出来。设置一个关键词，可以自动识别扫描各类敏感词的变体，如繁体形式、中间加各类干扰噪音。例如：法轮大法 可以自动匹配 	法_轮*大-法 及繁体形式。
 
 ## Author
-* Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
  * Associate Professor, Graduate Supervisor
  * Director, Big Data Search and Mining Lab. 
  * Beijing Engineering Research Center of Massive Language Information Processing and Cloud Computing Application
