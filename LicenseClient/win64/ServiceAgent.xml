@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<SearchAgentConf>
+  <ReleaseVersion version="1.0" lastModify="2009-12-30" />
+   <ServerIP>202.38.128.95</ServerIP>#检索服务器IP地址121.28.48.219 126
+   <Port>96</Port>##检索服务进程的端口号
+ </ConfigAll>
+</SearchAgentConf>
+
+
