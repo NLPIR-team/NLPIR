@@ -126,17 +126,80 @@ KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int
  *********************************************************************/
 KEYEXTRACT_API unsigned int KeyExtract_ImportUserDict(const char *sFilename,bool bOverwrite=false);
 /*********************************************************************
+*
+*  Func Name  : KeyExtract_AddUserWord
+*
+*  Description: add a word to the user dictionary ,example:
+*				一带一路  key
+*				需要作为关键词的，标引前缀必须为key
+*  Parameters : const char *sWord: 加入到临时用户词典重点词与词性，用空格分割
+*
+*  Returns    : 1,true ; 0,false
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+KEYEXTRACT_API int KeyExtract_AddUserWord(const char *sWord);
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_CleanUserWord
+*
+*  Description: Clean all temporary added user words
+*
+*  Parameters : 
+*  Returns    : 1,true ; 0,false
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+KEYEXTRACT_API int KeyExtract_CleanUserWord();
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_SaveTheUsrDic
+*
+*  Description: Save dictionary to file
+*
+*  Parameters :
+*
+*  Returns    : 1,true; 2,false
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+KEYEXTRACT_API int KeyExtract_SaveTheUsrDic();
+
+/*********************************************************************
+*
+*  Func Name  : KeyExtract_DelUsrWord
+*
+*  Description: delete a word from the  user dictionary
+*
+*  Parameters :
+*  Returns    : -1, the word not exist in the user dictionary; else, the handle of the word deleted
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+KEYEXTRACT_API int KeyExtract_DelUsrWord(const char *sWord);
+
+/*********************************************************************
  *
  *  Func Name  : KeyExtract_ImportKeyBlackList
  *
  *  Description: Import keyword black list 
- *  Parameters : Text filename for user dictionary, each line for a stop keyword
+ *  Parameters : sFilename: Text filename for user defined blacklist dictionary, each line for a stop keyword
+ *				 sPOSBlacklist: 停用的词性列表，即列为该词性列表访问的词不纳入关键词范围，
+ *								如设置为#nr#ns#表示nr,ns不作为关键词
  *  Returns    : The  number of  lexical entry imported successfully
  *  Author     : Kevin Zhang
- *  History    : 
- *              1.create 2014-6-26
+ *  History    :
+ *              1.create 2003-11-28
  *********************************************************************/
-KEYEXTRACT_API unsigned int KeyExtract_ImportKeyBlackList(const char *sFilename);
+KEYEXTRACT_API unsigned int KeyExtract_ImportKeyBlackList(const char *sFilename, const char *sPOSBlacklist = 0);
 /*********************************************************************
  *
  *  Func Name  : KeyExtract_GetLastErrorMsg

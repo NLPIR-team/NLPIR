@@ -121,9 +121,83 @@ DOCEXTRACTOR_API unsigned int DE_ImportSentimentDict(const char *sFilename);//导
 //如果导入的情感词属于新词，现在用户词典中导入，否则情感识别自动跳跃
 DOCEXTRACTOR_API unsigned int DE_ImportUserDict(const char *sFilename,bool bOverwite=false);//导入用户词典
 ////导入用户自定义的词典
-DOCEXTRACTOR_API unsigned int DE_ImportKeyBlackList(const char *sFilename);//导入关键词黑名单
+/*********************************************************************
+*
+*  Func Name  : DE_ImportKeyBlackList
+*
+*  Description: Import keyword black list
+*  Parameters : sFilename: Text filename for user defined blacklist dictionary, each line for a stop keyword
+*				 sPOSBlacklist: 停用的词性列表，即列为该词性列表访问的词不纳入关键词范围，
+*								如设置为#nr#ns#表示nr,ns不作为关键词
+*  Returns    : The  number of  lexical entry imported successfully
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2014-6-26
+*********************************************************************/
+
+DOCEXTRACTOR_API unsigned int DE_ImportKeyBlackList(const char *sFilename, const char *sPOSBlacklist = 0);//导入关键词黑名单
 ////导入用户自定义的关键词黑名单
 
+/*********************************************************************
+*
+*  Func Name  : DE_AddUserWord
+*
+*  Description: add a word to the user dictionary ,example:
+*				一带一路  key
+*				需要作为关键词的，标引前缀必须为key
+*  Parameters : const char *sWord: 加入到临时用户词典重点词与词性，用空格分割
+*
+*  Returns    : 1,true ; 0,false
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+DOCEXTRACTOR_API int DE_AddUserWord(const char *sWord);
+/*********************************************************************
+*
+*  Func Name  : DE_CleanUserWord
+*
+*  Description: Clean all temporary added user words
+*
+*  Parameters :
+*  Returns    : 1,true ; 0,false
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+DOCEXTRACTOR_API int DE_CleanUserWord();
+/*********************************************************************
+*
+*  Func Name  : DE_SaveTheUsrDic
+*
+*  Description: Save dictionary to file
+*
+*  Parameters :
+*
+*  Returns    : 1,true; 2,false
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+DOCEXTRACTOR_API int DE_SaveTheUsrDic();
+
+/*********************************************************************
+*
+*  Func Name  : DE_DelUsrWord
+*
+*  Description: delete a word from the  user dictionary
+*
+*  Parameters :
+*  Returns    : -1, the word not exist in the user dictionary; else, the handle of the word deleted
+*
+*  Author     :
+*  History    :
+*              1.create 2017/6/3
+*********************************************************************/
+DOCEXTRACTOR_API int DE_DelUsrWord(const char *sWord);
 
 /*----b--------------------------------------------------------------
 * 功能：生成单文档摘要
