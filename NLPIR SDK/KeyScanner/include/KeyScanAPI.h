@@ -57,7 +57,7 @@
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-KEYSCANAPI_API int KS_Init(const char *sInitDirPath = "", int encode = GBK_CODE, const char*sLicenceCode = 0);
+KEYSCANAPI_API int KS_Init(const char *sInitDirPath = "", int encode = GBK_CODE, const char*sLicenceCode = 0,const char *sDelimiter=",");
 
 
 /*********************************************************************
@@ -252,6 +252,7 @@ KEYSCANAPI_API int KS_ScanLine(const char	*sFilename, const char	*sResultFilenam
 // 返回的格式如下：
 *********************************************************************/
 KEYSCANAPI_API int KS_ScanStat(const char *sResultFile, KS_HANDLE handle = 0);
+
 /*********************************************************************
 *
 *  Func Name  : KS_ScanDir
@@ -268,6 +269,34 @@ KEYSCANAPI_API int KS_ScanStat(const char *sResultFile, KS_HANDLE handle = 0);
 // 返回的格式如下：
 *********************************************************************/
 KEYSCANAPI_API int KS_ScanDir(const char *sInputDirPath,const char *sResultPath,int nThreadCount=10,int bEncript=false);
+
+
+/*********************************************************************
+*
+*  Func Name  : KS_StatResultFilter
+*
+*  Description: 对扫描的统计结果进行过滤分析
+*  Parameters : sFilename:输入的结果文件名
+*				fThreshold：敏感得分的阈值
+*  Returns    : 成功扫描到问题的文件数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2017-4-24
+*********************************************************************/
+KEYSCANAPI_API int KS_StatResultFilter(const char *sInputFilename, const char *sResultFilename, float fThreshold = 5.0);
+/*********************************************************************
+*
+*  Func Name  : KS_ScanResultFilter
+*
+*  Description: 对扫描的详细结果文件进行过滤分析
+*  Parameters : sFilename:输入的结果文件名
+*				fThreshold：敏感得分的阈值
+*  Returns    : 成功扫描到问题的文件数
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2017-4-24
+*********************************************************************/
+KEYSCANAPI_API int KS_ScanResultFilter(const char *sInputFilename, const char *sResultFilename, float fThreshold =9.0);
 
 /*********************************************************************
 *
