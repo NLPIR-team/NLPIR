@@ -1,26 +1,146 @@
-关键词扫描系统文档
-1.关键词扫描系统，可以设置一组关键词，可实现实时高效的关键词扫描出来。设置一个关键词，可以自动识别扫描各类敏感词的变体，如繁体形式、中间加各类干扰噪音。例如：法轮大法 可以自动匹配 	法_轮*大-法 及繁体形式。
-2.关键词列表的格式，采用文本文件，每行的格式如下：
-	　词条　　词类  权重 (注意，最多定义255个类别)
-   例如： AV电影 色情 2
-				 习近平 涉及领导人 1
+					九眼智能过滤系统介绍
+   九眼智能过滤系统是专门针对复杂文本大数据的内容审计系统，可实时智能识别敏感关键词音变、形变与拆字等常见变体，并实现了语义的精准排歧，系统内置了国内最新最全的敏感词库，适用于国家安全、互联网内容发布、传媒出版等领域。
+
+1.关键词列表的格式，采用文本文件，每行的格式如下：
+	　词条　　词类  权重  是否变形处理
+   例如： AV电影 色情 2 0
+				 习近平 涉及领导人 1 1
 	 通过KS_ImportUserDict导入追加敏感词表
-3.目前系统内置了一部敏感词典，主要类型定义如下：
-	FLG
+2.目前系统内置了一部敏感词典，主要类型定义如下：
+FLG
 民运
 色情
 涉毒
 涉赌
+一号首长
 涉领导人
 涉日
 政治反动
-	 
-4.Data文件夹的设置同分词，只需要设置data所在目录即可。
-5.采用KS_Scan KS_ScanFile可以分别扫描文本内存与文件，返回的是各种可能的类别与权重，具体格式如下：
-	 	涉及敏感的所有类别与权重，按照权重排序。
- 			 如： 输出格式为： 政治反动/2#FLG/1#涉领导人/1#
- 	空字符串表示没有扫描到结果
- 	
-6.采用KS_ScanDetail KS_ScanFileDetail可以分别扫描文本内存与文件，返回的是各个扫描到的具体敏感扫描内容，具体格式如下：
-	 		*<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
-			<class name="FLG" weight=1>法*輪大法</class>好！
+3. 文件介绍如下：
++---bin                     可执行文件目录
+|   |   09Eyes.exe          九眼单机版演示程序
+|   |   importDict.bat      导入用户定义的关键词词典
+|   |   JZSearchAPI.dll     
+|   |   KeyScan.bat
+|   |   KeyScanAPI.dll 
+|   |   KeyScanAPI.lib
+|   |   KeyScanner.exe
+|   |   
+|   \---output             目录扫描结果存储目录
+|       \---scan
++---Data                   数据目录
+|   |   BIG2GBK.map
+|   |   BIG5.pdat
+|   |   BIG5.wordlist
+|   |   BiWord.big
+|   |   charset.type
+|   |   Configure.xml
+|   |   CoreDict.pdat
+|   |   CoreDict.pos
+|   |   CoreDict.unig
+|   |   DocExtractor.user
+|   |   GBK.pdat
+|   |   GBK.wordlist
+|   |   GBK2BIG.map
+|   |   GBK2GBKA.map
+|   |   GBK2UTF.map
+|   |   GBK2UTF8.map
+|   |   GBKA.pdat
+|   |   GBKA.wordlist
+|   |   GBKA2GBK.map
+|   |   GBKA2UTF.map
+|   |   GBKC2GBK.map
+|   |   GranDict.pdat
+|   |   GranDict.pos
+|   |   hanzi.pdat
+|   |   hanzi.wordlist
+|   |   hanzi2pinyin.map
+|   |   ICTPOS.map
+|   |   KeyBlackList.pdat
+|   |   LJHtmlParser.user
+|   |   location.map
+|   |   location.pdat
+|   |   location.wordlist
+|   |   NewWord.lst
+|   |   NLPIR.ctx
+|   |   NLPIR_First.map
+|   |   nr.ctx
+|   |   nr.fsa
+|   |   nr.role
+|   |   pinyin.pdat
+|   |   pinyin.wordlist
+|   |   PKU.map
+|   |   PKU_First.map
+|   |   sentiment.pdat
+|   |   sentiment.ung
+|   |   sentiment.wordlist
+|   |   summary.user
+|   |   UserDefinedDict.lst
+|   |   UserDict.pdat
+|   |   userdict2.txt
+|   |   UTF2GBK.map
+|   |   UTF2GBKA.map
+|   |   UTF8.pdat
+|   |   UTF8.wordlist
+|   |   UTF82GBK.map
+|   |   Xing.pdat
+|   |   Xing.wordlist
+|   |   Xing2Zi.map
+|   |   Zi.pdat
+|   |   Zi.wordlist
+|   |   清除log.bat
+|   |   
+|   +---English
+|   |       English.pdat
+|   |       English.pos
+|   |       English.ung
+|   |       English.wordlist
+|   |       Irrel2regular.map
+|   |       ne.pdat
+|   |       ne.pos
+|   |       ne.wordlist
+|   |       
+|   \---KeyScanner
+|           Filter0_class.pdat
+|           Filter0_class.wordlist
+|           Filter0_key.pdat
+|           Filter0_key.pos
+|           Filter0_key.wordlist
+|           Filter0_py.pdat
+|           Filter0_py.wordlist
+|           Filter0_py2word.map
+|           Filter0_word.pdat
+|           Filter0_word.wordlist
+|           keyScan.user
+|           
++---doc                                文档目录
+|       九眼智能过滤系统开发手册2017版.pdf
+|       
++---include                            头文件
+|       KeyScanAPI.h
+|       
++---lib                                开发包
+|   +---linux32
+|   |       libKeyScanAPI.so
+|   |       
+|   +---linux64
+|   |       libKeyScanAPI.so
+|   |       
+|   +---win32
+|   |       KeyScanAPI.dll
+|   |       KeyScanAPI.lib
+|   |       KeyScanner.exe
+|   |       
+|   \---win64
+|           KeyScanAPI.dll
+|           KeyScanAPI.lib
+|           KeyScanner.exe
+|           
++---sample                       示例程序
+|   \---c
+|           Sample.cpp
+|           
+\---敏感词测试文件               测试文件目录
+        keylist.txt              测试关键词表
+        sample.TXT	             测试的样本文件
+
