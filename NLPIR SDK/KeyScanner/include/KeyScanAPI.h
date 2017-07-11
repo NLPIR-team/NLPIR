@@ -1,6 +1,6 @@
 /****************************************************************************
 *
-* 关键词扫描过滤系统 Keyword Scan System Copyright (c) 2000-2016
+* 九眼智能过滤系统  9Eye Keyword Scan System Copyright (c) 2000-2017
 *     Dr. Kevin Zhang (Hua-Ping Zhang)
 *
 *     All rights reserved.
@@ -14,7 +14,7 @@
 * Author:   Kevin Zhang
 *          Email: pipy_zhang@msn.com kevinzhang@bit.edu.cn
 *			Weibo: http://weibo.com/drkevinzhang
-*			Homepage: http://ictclas.nlpir.org
+*			Homepage: http://9Eye.nlpir.org
 * Date:     2013-12-19
 *
 * Notes:一次设置关键词，可以扫描各类敏感词的变体，如繁体形式、中间加各类干扰噪音
@@ -60,7 +60,7 @@
 KEYSCANAPI_API int KS_Init(const char *sInitDirPath = "", int encode = GBK_CODE, const char*sLicenceCode = 0,const char *sDelimiter=",");
 
 
-/*********************************************************************
+/*************************************************************************
 *
 *  Func Name  : KS_Exit
 *
