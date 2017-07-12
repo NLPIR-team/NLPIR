@@ -17,7 +17,7 @@
 *			Homepage: http://9Eye.nlpir.org
 * Date:     2013-12-19
 *
-* Notes:一次设置关键词，可以扫描各类敏感词的变体，如繁体形式、中间加各类干扰噪音
+* Notes:一次设置关键词，可以扫描各类不良词的变体，如繁体形式、中间加各类干扰噪音
 *
 ****************************************************************************/
 #ifndef _H_KS_DLL
@@ -114,7 +114,7 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *  Description: Import User-defined dictionary 导入用户词典
  *  Parameters : 
  *				sFilename:Text filename for user dictionary 
- *				bool bOverwrite: true将覆盖系统已经有的词表；否则将采用追加的方式追加敏感词表
+ *				bool bOverwrite: true将覆盖系统已经有的词表；否则将采用追加的方式追加不良词表
  *				KS_HANDLE handle： handle of KeyScanner
  *  Returns    : The  number of  lexical entry imported successfully
  *               成功导入的词典条数
@@ -123,7 +123,7 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *              1.create 2014-8-3
  *  文本文件每行的格式为：　词条　　词类  权重 (注意，最多定义255个类别)
  *        例如： AV电影 色情 2
- *				 习近平 涉及领导人 1
+ *				 六合彩 涉赌 8 1
 *********************************************************************/
 KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename, bool bOverwrite = false, KS_HANDLE handle=0);
 
@@ -153,7 +153,7 @@ KEYSCANAPI_API int KS_DeleteUserDict(const char *sFilename, KS_HANDLE handle = 0
  *  Description: 扫描输入的文本内容
  *  Parameters : sContent:文本内容
  *				KS_HANDLE handle： handle of KeyScanner
- *  Returns    : const char*: 涉及敏感的所有类别与权重，按照权重排序。
+ *  Returns    : const char*: 涉及不良的所有类别与权重，按照权重排序。
  *				 如： 色情/10#暴力/1#
  *				 ""：表示无扫描命中结果
  *  Author     : Kevin Zhang
@@ -170,7 +170,7 @@ KEYSCANAPI_API const char* KS_Scan(const char*sContent, KS_HANDLE handle = 0);
  *  Description: 扫描输入的文本内容
  *  Parameters : sContent:文本内容
  *				KS_HANDLE handle： handle of KeyScanner
- *  Returns    : 返回具体涉及敏感的内容，并标引出来
+ *  Returns    : 返回具体涉及不良的内容，并标引出来
  *  Author     : Kevin Zhang
  *  History    : 
  *              1.create 2014-8-3
@@ -189,7 +189,7 @@ KEYSCANAPI_API const char* KS_ScanDetail(const char*sContent, KS_HANDLE handle =
 *  Description: 扫描输入的文本文件内容
 *  Parameters : sFilename:文本文件名
 *				KS_HANDLE handle： handle of KeyScanner
-*  Returns    : const char*: 涉及敏感的所有类别与权重，按照权重排序。
+*  Returns    : const char*: 涉及不良的所有类别与权重，按照权重排序。
 *				 如： 色情/10##暴力/1##
 *				 ""：表示无扫描命中结果
 *  Author     : Kevin Zhang
@@ -207,7 +207,7 @@ KEYSCANAPI_API const char* KS_ScanFile(const char	*sFilename, KS_HANDLE handle =
 *  Description: 扫描输入的文本文件内容
 *  Parameters : sFilename:文本文件名
 *				KS_HANDLE handle： handle of KeyScanner
-*  Returns    : 返回具体涉及敏感的内容，并标引出来
+*  Returns    : 返回具体涉及不良的内容，并标引出来
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2014-8-3
@@ -227,7 +227,7 @@ KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename, KS_HANDLE ha
 *			    sResultFilename: 输出的结果文件名
 *				KS_HANDLE handle： handle of KeyScanner
 *				int bEncript:0 不加密；1，加密
-*  Returns    : 返回涉及敏感的内容行数
+*  Returns    : 返回涉及不良的内容行数
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2017-1-12
@@ -277,7 +277,7 @@ KEYSCANAPI_API int KS_ScanDir(const char *sInputDirPath,const char *sResultPath,
 *
 *  Description: 对扫描的统计结果进行过滤分析
 *  Parameters : sFilename:输入的结果文件名
-*				fThreshold：敏感得分的阈值
+*				fThreshold：不良得分的阈值
 *  Returns    : 成功扫描到问题的文件数
 *  Author     : Kevin Zhang
 *  History    :
@@ -290,7 +290,7 @@ KEYSCANAPI_API int KS_StatResultFilter(const char *sInputFilename, const char *s
 *
 *  Description: 对扫描的详细结果文件进行过滤分析
 *  Parameters : sFilename:输入的结果文件名
-*				fThreshold：敏感得分的阈值
+*				fThreshold：不良得分的阈值
 *  Returns    : 成功扫描到问题的文件数
 *  Author     : Kevin Zhang
 *  History    :
@@ -335,7 +335,7 @@ KEYSCANAPI_API const char* KS_GetLastErrorMsg();
 *
 *  Func Name  : KS_ExportDict
 *
-*  Description: ExportDict dictionary 导出已经定义的敏感词词典
+*  Description: ExportDict dictionary 导出已经定义的不良词词典
 *				为保护知识产权，该功能仅局限于管理员内部调度使用
 *  Parameters :
 *				sFilename:Text filename for user dictionary
@@ -347,7 +347,7 @@ KEYSCANAPI_API const char* KS_GetLastErrorMsg();
 *              1.create 2014-8-3
 *  文本文件的格式为：　词条　　词类  权重 (注意，最多定义255个类别)
 *        例如： AV电影 色情 2
-*				 习近平 涉及领导人 1
+*				 六合彩 涉赌 8 1
 *********************************************************************/
 KEYSCANAPI_API int KS_ExportDict(const char *sFilename, KS_HANDLE handle = 0);
 #endif //_H_KS_DLL
