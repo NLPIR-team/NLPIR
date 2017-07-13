@@ -16,7 +16,7 @@
 
     <category id="2">
       <description>品牌</description>
-      <brandword>|比亚迪|五粮液|龙大花生油|方正笔记本|</brandword>
+      <brandword>|比亚迪|五粮液|龙大花生油|方正笔记本|比亚迪|</brandword>
       <featureword></featureword>
       <sentimentword>
         <advantage>|[positive.dat]|</advantage>
