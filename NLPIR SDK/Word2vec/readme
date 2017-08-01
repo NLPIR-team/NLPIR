@@ -8,15 +8,24 @@ This method boosts the training speed and gets a better result./算法加速了�
 int InitWord2vec(const char * data,const char * sLicenseCode);
 
 2.初始化训练参数
+//size：词向量维度
+//train:语料
+//entity:词典
+//model：CBOW：1和SKip-gram：0
+//outfile:输出模型
+//threads：线程数
 int InitPara(int size,const char * train,const char * entity,int model,float alp,const char * outfile,int win,float sam,int h,int neg,int threads, int it,int mincount);
 
 3.训练
+//训练
 int Train();
 
 4.加载模型
+//model模型位置
 int LoadModel(const char * model);
 
 5.计算词向量
+//word：输入词，N输出词个数
 const char * CalculateWord(const char * word,int N);
 
 #Build Train File
