@@ -33,8 +33,9 @@ void get_dirs(const std::string& dir, std::vector<std::string>& dirs)
 #else
 	_finddata_t file;
 	long longf;
-	std::string s = dir + "*.*";
-	if((longf = _findfirst(s.c_str(), &file))==-1l) {
+	std::string s = dir + "\\*.*";
+	if((longf = _findfirst(s.c_str(), &file))==-1l) 
+	{
 		printf("opendir error!\n");
 	}
 	else {
