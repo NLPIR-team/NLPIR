@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0807D3E3-8AA2-4D6F-9571-C62B008444BF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lingjoin.RedupTest</RootNamespace>
+    <AssemblyName>RedupTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Global">
+      <HintPath>..\..\..\所需依赖\C#\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Redup.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Configure.xml" />
+    <Content Include="Data\DocExtractor.dll" />
+    <Content Include="Data\ICTCLAS2011.user" />
+    <Content Include="Data\JZSearch.user" />
+    <Content Include="Data\keyExtract.user" />
+    <Content Include="Data\License.dll" />
+    <Content Include="Data\lingjoin.user" />
+    <Content Include="Data\LJDupRemover.user" />
+    <Content Include="Data\LJHtmlParser.user" />
+    <Content Include="Data\LJRedupRemover.user" />
+    <Content Include="Data\NewWord.lst" />
+    <Content Include="Data\NLPIR.user" />
+    <Content Include="Data\NLPIR_trial.user" />
+    <Content Include="Data\sentiment.user" />
+    <Content Include="Data\summary.user" />
+    <Content Include="Data\UserDefinedDict.lst" />
+    <Content Include="Data\userfilterword.txt" />
+    <Content Include="lib\win32\LJRedupRemover.dll" />
+    <Content Include="lib\win64\LJRedupRemover.dll" />
+    <Content Include="Test\1-0.txt" />
+    <Content Include="Test\1-2.txt" />
+    <Content Include="Test\1.txt" />
+    <Content Include="Test\2-1.txt" />
+    <Content Include="Test\2-2.txt" />
+    <Content Include="Test\2-3.txt" />
+    <Content Include="Test\2-4.txt" />
+    <Content Include="Test\2-5.txt" />
+    <Content Include="Test\2.txt" />
+    <Content Include="Test\aa\2-1.txt" />
+    <Content Include="Test\aa\2-2.txt" />
+    <Content Include="Test\aa\2-3.txt" />
+    <Content Include="Test\aa\2.txt" />
+    <Content Include="Test\bb\1-1.txt" />
+    <Content Include="Test\bb\1-2.txt" />
+    <Content Include="Test\bb\1.txt" />
+    <Content Include="Test\bb\2-1.txt" />
+    <Content Include="Test\bb\2-2.txt" />
+    <Content Include="Test\bb\2-3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\BIG2GBK.map" />
+    <None Include="Data\BIG5.pdat" />
+    <None Include="Data\BIG5.wordlist" />
+    <None Include="Data\BiWord.big" />
+    <None Include="Data\CETrans.dict" />
+    <None Include="Data\charset.type" />
+    <None Include="Data\CodeTrans.model" />
+    <None Include="Data\CoreDict.pdat" />
+    <None Include="Data\CoreDict.pos" />
+    <None Include="Data\CoreDict.unig" />
+    <None Include="Data\Dict.pdat" />
+    <None Include="Data\Dict.wordlist" />
+    <None Include="Data\English\English.pdat" />
+    <None Include="Data\English\English.pos" />
+    <None Include="Data\English\English.ung" />
+    <None Include="Data\English\English.wordlist" />
+    <None Include="Data\English\Irrel2regular.map" />
+    <None Include="Data\English\ne.pdat" />
+    <None Include="Data\English\ne.pos" />
+    <None Include="Data\English\ne.wordlist" />
+    <None Include="Data\FieldDict.pdat" />
+    <None Include="Data\FieldDict.pos" />
+    <None Include="Data\GBK.pdat" />
+    <None Include="Data\GBK.wordlist" />
+    <None Include="Data\GBK2BIG.map" />
+    <None Include="Data\GBK2GBKC.map" />
+    <None Include="Data\GBK2UTF.map" />
+    <None Include="Data\GBKA.pdat" />
+    <None Include="Data\GBKA.wordlist" />
+    <None Include="Data\GBKA2UTF.map" />
+    <None Include="Data\GBKC.pdat" />
+    <None Include="Data\GBKC.wordlist" />
+    <None Include="Data\GBKC2GBK.map" />
+    <None Include="Data\GranDict.pdat" />
+    <None Include="Data\GranDict.pos" />
+    <None Include="Data\ICTCLAS30.ctx" />
+    <None Include="Data\ICTCLAS_First.map" />
+    <None Include="Data\ICTPOS.map" />
+    <None Include="Data\KeyBlackList.pdat" />
+    <None Include="Data\location.map" />
+    <None Include="Data\location.pdat" />
+    <None Include="Data\location.wordlist" />
+    <None Include="Data\NLPIR.ctx" />
+    <None Include="Data\NLPIR_First.map" />
+    <None Include="Data\nr.ctx" />
+    <None Include="Data\nr.fsa" />
+    <None Include="Data\nr.role" />
+    <None Include="Data\PKU.map" />
+    <None Include="Data\PKU_First.map" />
+    <None Include="Data\sentiment.pdat" />
+    <None Include="Data\sentiment.ung" />
+    <None Include="Data\sentiment.wordlist" />
+    <None Include="Data\stop.ung" />
+    <None Include="Data\UserDict.pdat" />
+    <None Include="Data\UTF2GBK.map" />
+    <None Include="Data\UTF2GBKA.map" />
+    <None Include="Data\UTF8.pdat" />
+    <None Include="Data\UTF8.wordlist" />
+    <None Include="lib\linux32\libLJRedupRemover.so" />
+    <None Include="lib\linux64\libLJRedupRemover.so" />
+    <None Include="lib\Makefile" />
+    <None Include="lib\win32\LJRedupRemover.lib" />
+    <None Include="lib\win64\LJRedupRemover.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\English\人名\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

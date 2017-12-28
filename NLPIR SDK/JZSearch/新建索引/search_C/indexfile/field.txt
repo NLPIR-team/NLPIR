@@ -1,0 +1,4 @@
+序号	字段名称	索引名称	数据类型	是否需要索引	是否需要存储	是否需要通配索引	是否需要摘要并红显	解释
+0	id	Id	long	1	1	0	0
+1	name	name	text	1	1	1	0
+2	address	address	text	1	1	1	0
