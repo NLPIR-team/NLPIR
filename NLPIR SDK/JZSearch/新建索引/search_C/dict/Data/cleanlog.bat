@@ -1,2 +1,0 @@
-del *.log
-del *.err
