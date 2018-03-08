@@ -1,0 +1,8 @@
+<title>乐信成立区块链实验室</title>
+<href>http://it.sohu.com/20180306/n532097044.shtml</href>
+<publish_time>2018-03-06 13:15:00</publish_time>
+<source>Bianews</source>
+<file_name>区块链-Bianews-乐信成立区块链实验室.txt</file_name>
+<site_name>百度新闻搜索-搜狐</site_name>
+<crawler_time>2018-03-07 15:59:08</crawler_time>
+<content>原标题：乐信成立区块链实验室            Bianews 3月6日消息，乐信金融架构师、区块链实验室负责人Bill表示，目前乐信正在探索区块链在小微消费金融领域的落地应用，并成立了区块链实验室。据介绍，乐信目前每天有40万真实订单数据入链。据了解，乐信区块链实验室将推出多节点共享账本——“超级账本”，目前该系统处于旁路系统的测试中。今后将运用新技术、新方案在金融上进行更多的探索。此外，据Bill介绍，乐信还正与一家商业银行洽谈合作，计划一起做一套增信系统。返回搜狐，查看更多      责任编辑：</content>

@@ -1,0 +1,103 @@
+
+<certainty>0.90</certainty>
+
+<rules>
+
+<rulenum>6</rulenum>
+
+<rule id="0">
+	<classid>政治</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>中共媒体 中共人权 中共公安 中国工潮 资助达赖 支持达赖 纵容达赖 会见达赖 总书记 总理</value>
+		</subrule>	
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+
+</rule>
+
+<rule id="1">
+	<classid>民运</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>中国官场 北京当局 大陆官员</value>
+		</subrule>	
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+
+</rule>
+
+<rule id="2">
+	<classid>色情</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/2</operator>
+			<value>激情图片 性爱图片 成人图片 色情图片 淫秽图片 开房</value>
+		</subrule>	
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+
+</rule>
+
+<rule id="3">
+	<classid>涉日</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>中日角力  膏药旗 打倒日本 消灭日本 安倍晋三 自卫队</value>
+		</subrule>	
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+
+</rule>
+
+<rule id="4">
+	<classid>毒品</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>海洛因 快乐丸 罂栗 可卡因 Pethidine 摇头丸 K粉</value>
+		</subrule>	
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+
+</rule>
+
+<rule id="5">
+	<classid>赌博</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>葡京赌场 同花顺 扎金花 玩21点 梭哈 百家乐</value>
+		</subrule>	
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+
+</rule>
+</rules>
