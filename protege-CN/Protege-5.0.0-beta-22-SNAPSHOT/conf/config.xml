@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<launch>
+  <systemProperties>
+    <property name="file.encoding" value="utf-8"/>
+    <property name="apple.laf.useScreenMenuBar" value="true"/>
+    <property name="com.apple.mrj.application.growbox.intrudes" value="true"/>
+    <property name="org.protege.plugin.dir" value="plugins"/>
+  </systemProperties>
+  <frameworkProperties>
+    <property name="org.osgi.framework.bootdelegation" value="sun.*,com.sun.*,apple.*,com.apple.*"/>
+    <property name="org.osgi.framework.system.packages.extra" 
+              value="javax.xml.parsers,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpers"/>
+    <property name="org.osgi.framework.storage.clean" 
+              value="onFirstInit"/>
+    <property name="org.osgi.service.http.port" value="8081"/>
+  </frameworkProperties>
+  <!--
+  We need to start things at different levels.
+  Protege common needs starting first because it sets up the required XML parsing machinery.  Without this
+  The equinox stuff fails.
+   -->
+  <bundles>
+    <search path="bundles"/>
+    <search path="${user.home}/.Protege/bundles"/>
+    <!-- Just start the org.protege.common bundle here -->
+    <bundle name="protege-common.jar"/>
+  </bundles>
+  <bundles>
+    <search path="bundles"/>
+    <search path="${user.home}/.Protege/bundles"/>
+    <!-- Just start the eclipse equinox framework here -->
+    <bundle name="org.eclipse.equinox.common.jar"/>
+    <bundle name="org.eclipse.equinox.supplement.jar"/>
+  </bundles>
+  <bundles>
+    <search path="bundles"/>
+    <search path="${user.home}/.Protege/bundles"/>
+    <bundle name="org.eclipse.equinox.registry.jar"/>
+    <bundle name="org.protege.jaxb.jar"/>
+    <bundle name="protege-editor-core.jar"/>
+  </bundles>
+  <!-- Start everything else -->
+  <bundles>
+  	<search path="bundles"/>
+  	<search path="${user.home}/.Protege/bundles"/>
+  </bundles>
+<bundles>
+  	<search path="plugins"/>
+  	<search path="${user.home}/.Protege/plugins"/>
+  </bundles>
+
+</launch>
+
+
