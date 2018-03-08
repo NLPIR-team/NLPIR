@@ -1,0 +1,12 @@
+序号	字段名称	索引名称	数据类型	是否需要索引	是否需要存储	是否需要通配索引	是否需要提取摘要并红显	解释
+1	id	id	long	0	0	0	0	0
+2	article	article	text	1	1	1	0	0
+3	person_id	person_id	text	1	1	1	0	0
+4	author	author	text	1	1	1	0	0
+5	discuss	discuss	int	1	1	0	0	0
+6	transmit	transmit	int	1	1	0	0	0
+7	publishtime	publishtime	datetime	1	1	0	0	0
+8	insertTime	insertTime	datetime	1	1	0	0	0
+9	docurl	docurl	text	1	1	1	0	0
+10	grab_method	grab_method	text	1	1	0	0	0
+11	origin	origin	text	1	1	1	0	0

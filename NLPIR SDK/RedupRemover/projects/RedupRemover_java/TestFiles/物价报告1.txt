@@ -1,0 +1,27 @@
+﻿FileStream对象表示在磁盘或网络路径上指向文件的流。这个类提供了在文件中读写字节的方法，但经常使用StreamReader或StreamWriter执行这些功能。这是因为FileStream类操作的是字节和字节数组，而Stream类操作的是字符数据。字符数据易于使用，但是有些操作，比如随机文件访问(访问文件中间某点的数据)，就必须由FileStream对象执行，稍后对此进行介绍。
+
+还有几种方法可以创建FileStream对象。构造函数具有许多不同的重载版本，最简单的构造函数仅仅带有两个参数，即文件名和FileMode枚举值。
+
+FileStream aFile = new FileStream(filename, FileMode.Member);
+FileMode枚举有几个成员，规定了如何打开或创建文件。稍后介绍这些枚举成员。另一个常用的构造函数如下：
+
+FileStream aFile = new FileStream(filename, FileMode.Member, FileAccess. Member);
+第三个参数是FileAccess枚举的一个成员，它指定了流的作用。FileAccess枚举的成员如表22-6所示。
+
+表  22-6
+
+成   员
+
+说    明
+
+Read
+打开文件，用于只读
+Write
+打开文件，用于只写
+ReadWrite
+打开文件，用于读写
+对文件进行不是FileAccess枚举成员指定的操作会导致抛出异常。此属性的作用是，基于用户的身份验证级别改变用户对文件的访问权限。
+
+在FileStream构造函数不使用FileAccess枚举参数的版本中，使用默认值FileAccess. ReadWrite。
+
+FileMode枚举成员如表22-7所示。使用每个值会发生什么，取决于指定的文件名是否表示已有的文件。注意这个表中的项表示创建流时该流指向文件中的位置，下一节将详细讨论这个主题。除非特别说明，否则流就指向文件的开头。

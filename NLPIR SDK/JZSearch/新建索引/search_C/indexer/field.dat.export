@@ -1,0 +1,36 @@
+序号	字段名称	索引名称	数据类型	是否需要索引	是否需要存储	是否需要通配索引	是否需要摘要并红显	解释
+1	*	*	通配符		1	0	0	0	通配符
+2	id	id	long		1	1	0	0	
+3	site_id	site_id	long		1	0	0	0	
+4	site_name	site_name	text		1	1	0	0	
+5	class_id	class_id	text		1	0	0	0	
+6	country	country	text		1	1	0	0	
+7	area	area	text		1	1	0	0	
+8	type_id	type_id	text		1	0	0	0	
+9	doc_type	doc_type	text		1	1	0	0	
+10	url	url	text		0	1	0	0	
+11	title	title	text		1	1	1	1	
+12	publishtime	publishtime	date		1	1	0	0	
+13	people	people	text		1	1	0	1	
+14	location	location	text		1	1	0	1	
+15	organization	organization	text		1	1	0	1	
+16	keywords	keywords	text		1	1	0	1	
+17	author	author	text		1	1	0	1	
+18	media	media	text		1	1	0	1	
+19	sentiment	sentiment	int		1	1	0	0	
+20	summary	summary	text		1	1	0	1	
+21	inserttime	inserttime	long		1	1	0	0	
+22	up_info	up_info	int		1	1	0	0	
+23	down_info	down_info	int		1	1	0	0	
+24	txt_file@txt_offset@txt_length@e:\newgoldeyesearch\rawsitedata	abstract	bigtext		1	1	1	1	
+需要索引的字段序号为：
+<1>1(*)	<4>2(site_name)	<5>3(class_id)	<6>4(country)	<7>5(area)	<8>6(type_id)	<9>7(doc_type)	<11>8(title)	<13>9(people)	<14>10(location)	<15>11(organization)	<16>12(keywords)	<17>13(author)	<18>14(media)	<20>15(summary)	<24>16(abstract)	
+需要过滤的字段序号为：
+<2>1(id)	<3>2(site_id)	<12>3(publishtime)	<19>4(sentiment)	<21>5(inserttime)	<22>6(up_info)	<23>7(down_info)	
+需要存储的字段序号为：
+<2>1(id)	<4>2(site_name)	<6>3(country)	<7>4(area)	<9>5(doc_type)	<10>6(url)	<11>7(title)	<12>8(publishtime)	<13>9(people)	<14>10(location)	<15>11(organization)	<16>12(keywords)	<17>13(author)	<18>14(media)	<19>15(sentiment)	<20>16(summary)	<21>17(inserttime)	<22>18(up_info)	<23>19(down_info)	<24>20(abstract)	
+需要通配符索引的字段序号为：
+<11>1(title)	<24>2(abstract)	
+需要摘要提取与红显的字段序号为：
+<11>1(title)	<13>0(people)	<14>0(location)	<15>0(organization)	<16>0(keywords)	<17>0(author)	<18>0(media)	<20>0(summary)	<24>2(abstract)	
+m_bIDTxt=0

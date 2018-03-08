@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C5493D7-0221-4883-907C-4BC5F8EE0D66}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lingjoin.DeepClassifierTest</RootNamespace>
+    <AssemblyName>DeepClassifierTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\所需依赖\C#\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeepClassifier..cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\classifier.user" />
+    <Content Include="Data\cluster.user" />
+    <Content Include="Data\Configure.xml" />
+    <Content Include="Data\Data.txt" />
+    <Content Include="Data\deepclassifier.user" />
+    <Content Include="Data\DocExtractor.dll" />
+    <Content Include="Data\DocExtractor.user" />
+    <Content Include="test\test.txt" />
+    <Content Include="Data\ICTCLAS2011.user" />
+    <Content Include="Data\JZSearch.user" />
+    <Content Include="Data\keyExtract.user" />
+    <Content Include="Data\License.dll" />
+    <Content Include="Data\lingjoin.user" />
+    <Content Include="Data\LJDupRemover.user" />
+    <Content Include="Data\LJHtmlParser.user" />
+    <Content Include="Data\LJRedupRemover.user" />
+    <Content Include="Data\NewWord.lst" />
+    <Content Include="Data\NLPIR.user" />
+    <Content Include="Data\NLPIR_trial.user" />
+    <Content Include="Data\sentiment.user" />
+    <Content Include="Data\summary.user" />
+    <Content Include="Data\UserDefinedDict.lst" />
+    <Content Include="Data\userfilterword.txt" />
+    <Content Include="lib\win32\DeepClassifier.dll" />
+    <Content Include="lib\win64\DeepClassifier.dll" />
+    <Content Include="test\训练语料\交通\4150.txt" />
+    <Content Include="test\训练语料\交通\4151.txt" />
+    <Content Include="test\训练语料\交通\4152.txt" />
+    <Content Include="test\训练语料\交通\4153.txt" />
+    <Content Include="test\训练语料\交通\4154.txt" />
+    <Content Include="test\训练语料\交通\4155.txt" />
+    <Content Include="test\训练语料\交通\4156.txt" />
+    <Content Include="test\训练语料\交通\4157.txt" />
+    <Content Include="test\训练语料\交通\4158.txt" />
+    <Content Include="test\训练语料\交通\4159.txt" />
+    <Content Include="test\训练语料\交通\4160.txt" />
+    <Content Include="test\训练语料\交通\4161.txt" />
+    <Content Include="test\训练语料\交通\4162.txt" />
+    <Content Include="test\训练语料\交通\4163.txt" />
+    <Content Include="test\训练语料\交通\4164.txt" />
+    <Content Include="test\训练语料\交通\4165.txt" />
+    <Content Include="test\训练语料\交通\4166.txt" />
+    <Content Include="test\训练语料\交通\4167.txt" />
+    <Content Include="test\训练语料\交通\4168.txt" />
+    <Content Include="test\训练语料\交通\4169.txt" />
+    <Content Include="test\训练语料\交通\4170.txt" />
+    <Content Include="test\训练语料\交通\4171.txt" />
+    <Content Include="test\训练语料\交通\4172.txt" />
+    <Content Include="test\训练语料\交通\4173.txt" />
+    <Content Include="test\训练语料\交通\4174.txt" />
+    <Content Include="test\训练语料\交通\4175.txt" />
+    <Content Include="test\训练语料\交通\4176.txt" />
+    <Content Include="test\训练语料\交通\4177.txt" />
+    <Content Include="test\训练语料\交通\4178.txt" />
+    <Content Include="test\训练语料\交通\4193.txt" />
+    <Content Include="test\训练语料\交通\4194.txt" />
+    <Content Include="test\训练语料\交通\4195.txt" />
+    <Content Include="test\训练语料\交通\4196.txt" />
+    <Content Include="test\训练语料\交通\4197.txt" />
+    <Content Include="test\训练语料\交通\4198.txt" />
+    <Content Include="test\训练语料\交通\4206.txt" />
+    <Content Include="test\训练语料\交通\4207.txt" />
+    <Content Include="test\训练语料\交通\4208.txt" />
+    <Content Include="test\训练语料\交通\4209.txt" />
+    <Content Include="test\训练语料\交通\4210.txt" />
+    <Content Include="test\训练语料\交通\4211.txt" />
+    <Content Include="test\训练语料\交通\4212.txt" />
+    <Content Include="test\训练语料\交通\4213.txt" />
+    <Content Include="test\训练语料\交通\4214.txt" />
+    <Content Include="test\训练语料\交通\494.TXT" />
+    <Content Include="test\训练语料\交通\495.TXT" />
+    <Content Include="test\训练语料\交通\496.TXT" />
+    <Content Include="test\训练语料\交通\497.TXT" />
+    <Content Include="test\训练语料\交通\498.TXT" />
+    <Content Include="test\训练语料\交通\499.TXT" />
+    <Content Include="test\训练语料\体育\10401.txt" />
+    <Content Include="test\训练语料\体育\10402.txt" />
+    <Content Include="test\训练语料\体育\10403.txt" />
+    <Content Include="test\训练语料\体育\10404.txt" />
+    <Content Include="test\训练语料\体育\10405.txt" />
+    <Content Include="test\训练语料\体育\10406.txt" />
+    <Content Include="test\训练语料\体育\10407.txt" />
+    <Content Include="test\训练语料\体育\10408.txt" />
+    <Content Include="test\训练语料\体育\10409.txt" />
+    <Content Include="test\训练语料\体育\10410.txt" />
+    <Content Include="test\训练语料\体育\10411.txt" />
+    <Content Include="test\训练语料\体育\10412.txt" />
+    <Content Include="test\训练语料\体育\10413.txt" />
+    <Content Include="test\训练语料\体育\10414.txt" />
+    <Content Include="test\训练语料\体育\10415.txt" />
+    <Content Include="test\训练语料\体育\10416.txt" />
+    <Content Include="test\训练语料\体育\10417.txt" />
+    <Content Include="test\训练语料\体育\10418.txt" />
+    <Content Include="test\训练语料\体育\10419.txt" />
+    <Content Include="test\训练语料\体育\10420.txt" />
+    <Content Include="test\训练语料\体育\10421.txt" />
+    <Content Include="test\训练语料\体育\10422.txt" />
+    <Content Include="test\训练语料\体育\10423.txt" />
+    <Content Include="test\训练语料\体育\10424.txt" />
+    <Content Include="test\训练语料\体育\10425.txt" />
+    <Content Include="test\训练语料\体育\10426.txt" />
+    <Content Include="test\训练语料\体育\10427.txt" />
+    <Content Include="test\训练语料\体育\10428.txt" />
+    <Content Include="test\训练语料\体育\10429.txt" />
+    <Content Include="test\训练语料\体育\10430.txt" />
+    <Content Include="test\训练语料\体育\10431.txt" />
+    <Content Include="test\训练语料\体育\10432.txt" />
+    <Content Include="test\训练语料\体育\10433.txt" />
+    <Content Include="test\训练语料\体育\10434.txt" />
+    <Content Include="test\训练语料\体育\10435.txt" />
+    <Content Include="test\训练语料\体育\10436.txt" />
+    <Content Include="test\训练语料\体育\10437.txt" />
+    <Content Include="test\训练语料\体育\10438.txt" />
+    <Content Include="test\训练语料\体育\10439.txt" />
+    <Content Include="test\训练语料\体育\10440.txt" />
+    <Content Include="test\训练语料\体育\10441.txt" />
+    <Content Include="test\训练语料\体育\10442.txt" />
+    <Content Include="test\训练语料\体育\10443.txt" />
+    <Content Include="test\训练语料\体育\10444.txt" />
+    <Content Include="test\训练语料\体育\10445.txt" />
+    <Content Include="test\训练语料\体育\10446.txt" />
+    <Content Include="test\训练语料\体育\10447.txt" />
+    <Content Include="test\训练语料\体育\10448.txt" />
+    <Content Include="test\训练语料\体育\10449.txt" />
+    <Content Include="test\训练语料\体育\10450.txt" />
+    <Content Include="test\训练语料\军事\8202.txt" />
+    <Content Include="test\训练语料\军事\8203.txt" />
+    <Content Include="test\训练语料\军事\8204.txt" />
+    <Content Include="test\训练语料\军事\8205.txt" />
+    <Content Include="test\训练语料\军事\8206.txt" />
+    <Content Include="test\训练语料\军事\8207.txt" />
+    <Content Include="test\训练语料\军事\8208.txt" />
+    <Content Include="test\训练语料\军事\8209.txt" />
+    <Content Include="test\训练语料\军事\8210.txt" />
+    <Content Include="test\训练语料\军事\8211.txt" />
+    <Content Include="test\训练语料\军事\8212.txt" />
+    <Content Include="test\训练语料\军事\8213.txt" />
+    <Content Include="test\训练语料\军事\8214.txt" />
+    <Content Include="test\训练语料\军事\8215.txt" />
+    <Content Include="test\训练语料\军事\8216.txt" />
+    <Content Include="test\训练语料\军事\8217.txt" />
+    <Content Include="test\训练语料\军事\8218.txt" />
+    <Content Include="test\训练语料\军事\8219.txt" />
+    <Content Include="test\训练语料\军事\8220.txt" />
+    <Content Include="test\训练语料\军事\8221.txt" />
+    <Content Include="test\训练语料\军事\8222.txt" />
+    <Content Include="test\训练语料\军事\8223.txt" />
+    <Content Include="test\训练语料\军事\8224.txt" />
+    <Content Include="test\训练语料\军事\8225.txt" />
+    <Content Include="test\训练语料\军事\8226.txt" />
+    <Content Include="test\训练语料\军事\8227.txt" />
+    <Content Include="test\训练语料\军事\8228.txt" />
+    <Content Include="test\训练语料\军事\8229.txt" />
+    <Content Include="test\训练语料\军事\8230.txt" />
+    <Content Include="test\训练语料\军事\8231.txt" />
+    <Content Include="test\训练语料\军事\8232.txt" />
+    <Content Include="test\训练语料\军事\8233.txt" />
+    <Content Include="test\训练语料\军事\8234.txt" />
+    <Content Include="test\训练语料\军事\8235.txt" />
+    <Content Include="test\训练语料\军事\8236.txt" />
+    <Content Include="test\训练语料\军事\8237.txt" />
+    <Content Include="test\训练语料\军事\8238.txt" />
+    <Content Include="test\训练语料\军事\8239.txt" />
+    <Content Include="test\训练语料\军事\8240.txt" />
+    <Content Include="test\训练语料\军事\8241.txt" />
+    <Content Include="test\训练语料\军事\8242.txt" />
+    <Content Include="test\训练语料\军事\8243.txt" />
+    <Content Include="test\训练语料\军事\8244.txt" />
+    <Content Include="test\训练语料\军事\8245.txt" />
+    <Content Include="test\训练语料\军事\8246.txt" />
+    <Content Include="test\训练语料\军事\8247.txt" />
+    <Content Include="test\训练语料\军事\8248.txt" />
+    <Content Include="test\训练语料\军事\8249.txt" />
+    <Content Include="test\训练语料\军事\856.TXT" />
+    <Content Include="test\训练语料\军事\857.TXT" />
+    <Content Include="test\训练语料\政治\9427.TXT" />
+    <Content Include="test\训练语料\政治\9428.TXT" />
+    <Content Include="test\训练语料\政治\9429.TXT" />
+    <Content Include="test\训练语料\政治\9430.TXT" />
+    <Content Include="test\训练语料\政治\9431.TXT" />
+    <Content Include="test\训练语料\政治\9432.TXT" />
+    <Content Include="test\训练语料\政治\9433.TXT" />
+    <Content Include="test\训练语料\政治\9434.TXT" />
+    <Content Include="test\训练语料\政治\9435.TXT" />
+    <Content Include="test\训练语料\政治\9436.TXT" />
+    <Content Include="test\训练语料\政治\9437.TXT" />
+    <Content Include="test\训练语料\政治\9438.TXT" />
+    <Content Include="test\训练语料\政治\9439.TXT" />
+    <Content Include="test\训练语料\政治\9440.TXT" />
+    <Content Include="test\训练语料\政治\9441.TXT" />
+    <Content Include="test\训练语料\政治\9442.TXT" />
+    <Content Include="test\训练语料\政治\9444.TXT" />
+    <Content Include="test\训练语料\政治\9445.TXT" />
+    <Content Include="test\训练语料\政治\9446.TXT" />
+    <Content Include="test\训练语料\政治\9447.TXT" />
+    <Content Include="test\训练语料\政治\9448.TXT" />
+    <Content Include="test\训练语料\政治\9449.TXT" />
+    <Content Include="test\训练语料\政治\9457.TXT" />
+    <Content Include="test\训练语料\政治\9458.TXT" />
+    <Content Include="test\训练语料\政治\9459.TXT" />
+    <Content Include="test\训练语料\政治\9460.TXT" />
+    <Content Include="test\训练语料\政治\9461.TXT" />
+    <Content Include="test\训练语料\政治\9462.TXT" />
+    <Content Include="test\训练语料\政治\9463.TXT" />
+    <Content Include="test\训练语料\政治\9464.TXT" />
+    <Content Include="test\训练语料\政治\9465.TXT" />
+    <Content Include="test\训练语料\政治\9466.TXT" />
+    <Content Include="test\训练语料\政治\9467.TXT" />
+    <Content Include="test\训练语料\政治\9468.TXT" />
+    <Content Include="test\训练语料\政治\9469.TXT" />
+    <Content Include="test\训练语料\政治\9470.TXT" />
+    <Content Include="test\训练语料\政治\9492.TXT" />
+    <Content Include="test\训练语料\政治\9493.TXT" />
+    <Content Include="test\训练语料\政治\9494.TXT" />
+    <Content Include="test\训练语料\政治\9495.TXT" />
+    <Content Include="test\训练语料\政治\9496.TXT" />
+    <Content Include="test\训练语料\政治\9497.TXT" />
+    <Content Include="test\训练语料\政治\9498.TXT" />
+    <Content Include="test\训练语料\政治\9499.TXT" />
+    <Content Include="test\训练语料\政治\9500.TXT" />
+    <Content Include="test\训练语料\政治\9501.TXT" />
+    <Content Include="test\训练语料\政治\9502.TXT" />
+    <Content Include="test\训练语料\政治\9503.TXT" />
+    <Content Include="test\训练语料\政治\9504.TXT" />
+    <Content Include="test\训练语料\政治\9505.TXT" />
+    <Content Include="test\训练语料\教育\3158.txt" />
+    <Content Include="test\训练语料\教育\3159.txt" />
+    <Content Include="test\训练语料\教育\3160.txt" />
+    <Content Include="test\训练语料\教育\3161.txt" />
+    <Content Include="test\训练语料\教育\3162.txt" />
+    <Content Include="test\训练语料\教育\3163.txt" />
+    <Content Include="test\训练语料\教育\3164.txt" />
+    <Content Include="test\训练语料\教育\3165.txt" />
+    <Content Include="test\训练语料\教育\3166.txt" />
+    <Content Include="test\训练语料\教育\3167.txt" />
+    <Content Include="test\训练语料\教育\3168.txt" />
+    <Content Include="test\训练语料\教育\3169.txt" />
+    <Content Include="test\训练语料\教育\3170.txt" />
+    <Content Include="test\训练语料\教育\3171.txt" />
+    <Content Include="test\训练语料\教育\3172.txt" />
+    <Content Include="test\训练语料\教育\3173.txt" />
+    <Content Include="test\训练语料\教育\3174.txt" />
+    <Content Include="test\训练语料\教育\3175.txt" />
+    <Content Include="test\训练语料\教育\3176.txt" />
+    <Content Include="test\训练语料\教育\3177.txt" />
+    <Content Include="test\训练语料\教育\3178.txt" />
+    <Content Include="test\训练语料\教育\3179.txt" />
+    <Content Include="test\训练语料\教育\3180.txt" />
+    <Content Include="test\训练语料\教育\3181.txt" />
+    <Content Include="test\训练语料\教育\3182.txt" />
+    <Content Include="test\训练语料\教育\3183.txt" />
+    <Content Include="test\训练语料\教育\3184.txt" />
+    <Content Include="test\训练语料\教育\3185.txt" />
+    <Content Include="test\训练语料\教育\3195.txt" />
+    <Content Include="test\训练语料\教育\3196.txt" />
+    <Content Include="test\训练语料\教育\3197.txt" />
+    <Content Include="test\训练语料\教育\3198.txt" />
+    <Content Include="test\训练语料\教育\3199.txt" />
+    <Content Include="test\训练语料\教育\3200.txt" />
+    <Content Include="test\训练语料\教育\3201.txt" />
+    <Content Include="test\训练语料\教育\3202.txt" />
+    <Content Include="test\训练语料\教育\3203.txt" />
+    <Content Include="test\训练语料\教育\3204.txt" />
+    <Content Include="test\训练语料\教育\3205.txt" />
+    <Content Include="test\训练语料\教育\3206.txt" />
+    <Content Include="test\训练语料\教育\3207.txt" />
+    <Content Include="test\训练语料\教育\3208.txt" />
+    <Content Include="test\训练语料\教育\3209.txt" />
+    <Content Include="test\训练语料\教育\3210.txt" />
+    <Content Include="test\训练语料\教育\3211.txt" />
+    <Content Include="test\训练语料\教育\3216.txt" />
+    <Content Include="test\训练语料\教育\3217.txt" />
+    <Content Include="test\训练语料\教育\3218.txt" />
+    <Content Include="test\训练语料\教育\3219.txt" />
+    <Content Include="test\训练语料\教育\3220.txt" />
+    <Content Include="test\训练语料\经济\6265.txt" />
+    <Content Include="test\训练语料\经济\6266.txt" />
+    <Content Include="test\训练语料\经济\6267.txt" />
+    <Content Include="test\训练语料\经济\6268.txt" />
+    <Content Include="test\训练语料\经济\6269.txt" />
+    <Content Include="test\训练语料\经济\6270.txt" />
+    <Content Include="test\训练语料\经济\6271.txt" />
+    <Content Include="test\训练语料\经济\6272.txt" />
+    <Content Include="test\训练语料\经济\6273.txt" />
+    <Content Include="test\训练语料\经济\6274.txt" />
+    <Content Include="test\训练语料\经济\6275.txt" />
+    <Content Include="test\训练语料\经济\6276.txt" />
+    <Content Include="test\训练语料\经济\6277.txt" />
+    <Content Include="test\训练语料\经济\6278.txt" />
+    <Content Include="test\训练语料\经济\6279.txt" />
+    <Content Include="test\训练语料\经济\6280.txt" />
+    <Content Include="test\训练语料\经济\6281.txt" />
+    <Content Include="test\训练语料\经济\6282.txt" />
+    <Content Include="test\训练语料\经济\6283.txt" />
+    <Content Include="test\训练语料\经济\6284.txt" />
+    <Content Include="test\训练语料\经济\6285.txt" />
+    <Content Include="test\训练语料\经济\6286.txt" />
+    <Content Include="test\训练语料\经济\6287.txt" />
+    <Content Include="test\训练语料\经济\6288.txt" />
+    <Content Include="test\训练语料\经济\6289.txt" />
+    <Content Include="test\训练语料\经济\6301.txt" />
+    <Content Include="test\训练语料\经济\6302.txt" />
+    <Content Include="test\训练语料\经济\6303.txt" />
+    <Content Include="test\训练语料\经济\6304.txt" />
+    <Content Include="test\训练语料\经济\6305.txt" />
+    <Content Include="test\训练语料\经济\6306.txt" />
+    <Content Include="test\训练语料\经济\6307.txt" />
+    <Content Include="test\训练语料\经济\6308.txt" />
+    <Content Include="test\训练语料\经济\6309.txt" />
+    <Content Include="test\训练语料\经济\6310.txt" />
+    <Content Include="test\训练语料\经济\6311.txt" />
+    <Content Include="test\训练语料\经济\6312.txt" />
+    <Content Include="test\训练语料\经济\6313.txt" />
+    <Content Include="test\训练语料\经济\6314.txt" />
+    <Content Include="test\训练语料\经济\6315.txt" />
+    <Content Include="test\训练语料\经济\6316.txt" />
+    <Content Include="test\训练语料\经济\6317.txt" />
+    <Content Include="test\训练语料\经济\6318.txt" />
+    <Content Include="test\训练语料\经济\6319.txt" />
+    <Content Include="test\训练语料\经济\6320.txt" />
+    <Content Include="test\训练语料\经济\6321.txt" />
+    <Content Include="test\训练语料\经济\6322.txt" />
+    <Content Include="test\训练语料\经济\6323.txt" />
+    <Content Include="test\训练语料\经济\6324.txt" />
+    <Content Include="test\训练语料\经济\6325.txt" />
+    <Content Include="test\训练语料\艺术\2173.txt" />
+    <Content Include="test\训练语料\艺术\2174.txt" />
+    <Content Include="test\训练语料\艺术\2175.txt" />
+    <Content Include="test\训练语料\艺术\2176.txt" />
+    <Content Include="test\训练语料\艺术\2177.txt" />
+    <Content Include="test\训练语料\艺术\2178.txt" />
+    <Content Include="test\训练语料\艺术\2179.txt" />
+    <Content Include="test\训练语料\艺术\2180.txt" />
+    <Content Include="test\训练语料\艺术\2181.txt" />
+    <Content Include="test\训练语料\艺术\2182.txt" />
+    <Content Include="test\训练语料\艺术\2183.txt" />
+    <Content Include="test\训练语料\艺术\2184.txt" />
+    <Content Include="test\训练语料\艺术\2185.txt" />
+    <Content Include="test\训练语料\艺术\2186.txt" />
+    <Content Include="test\训练语料\艺术\2187.txt" />
+    <Content Include="test\训练语料\艺术\2188.txt" />
+    <Content Include="test\训练语料\艺术\2189.txt" />
+    <Content Include="test\训练语料\艺术\2190.txt" />
+    <Content Include="test\训练语料\艺术\2195.txt" />
+    <Content Include="test\训练语料\艺术\2196.txt" />
+    <Content Include="test\训练语料\艺术\2197.txt" />
+    <Content Include="test\训练语料\艺术\2198.txt" />
+    <Content Include="test\训练语料\艺术\2199.txt" />
+    <Content Include="test\训练语料\艺术\2200.txt" />
+    <Content Include="test\训练语料\艺术\2201.txt" />
+    <Content Include="test\训练语料\艺术\2202.txt" />
+    <Content Include="test\训练语料\艺术\2203.txt" />
+    <Content Include="test\训练语料\艺术\2204.txt" />
+    <Content Include="test\训练语料\艺术\2205.txt" />
+    <Content Include="test\训练语料\艺术\2206.txt" />
+    <Content Include="test\训练语料\艺术\2207.txt" />
+    <Content Include="test\训练语料\艺术\2208.txt" />
+    <Content Include="test\训练语料\艺术\2209.txt" />
+    <Content Include="test\训练语料\艺术\2210.txt" />
+    <Content Include="test\训练语料\艺术\2211.txt" />
+    <Content Include="test\训练语料\艺术\2212.txt" />
+    <Content Include="test\训练语料\艺术\2213.txt" />
+    <Content Include="test\训练语料\艺术\2236.txt" />
+    <Content Include="test\训练语料\艺术\2237.txt" />
+    <Content Include="test\训练语料\艺术\2238.txt" />
+    <Content Include="test\训练语料\艺术\2239.txt" />
+    <Content Include="test\训练语料\艺术\2240.txt" />
+    <Content Include="test\训练语料\艺术\2241.txt" />
+    <Content Include="test\训练语料\艺术\2242.txt" />
+    <Content Include="test\训练语料\艺术\2243.txt" />
+    <Content Include="test\训练语料\艺术\2244.txt" />
+    <Content Include="test\训练语料\艺术\2245.txt" />
+    <Content Include="test\训练语料\艺术\2246.txt" />
+    <Content Include="test\训练语料\艺术\2247.txt" />
+    <Content Include="test\训练语料\艺术\2248.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\BIG2GBK.map" />
+    <None Include="Data\BIG5.pdat" />
+    <None Include="Data\BIG5.wordlist" />
+    <None Include="Data\BiWord.big" />
+    <None Include="Data\CETrans.dict" />
+    <None Include="Data\charset.type" />
+    <None Include="Data\CodeTrans.model" />
+    <None Include="Data\CoreDict.pdat" />
+    <None Include="Data\CoreDict.pos" />
+    <None Include="Data\CoreDict.unig" />
+    <None Include="Data\dc_class.pdat" />
+    <None Include="Data\dc_class.wordlist" />
+    <None Include="Data\dc_features_gbk.dat" />
+    <None Include="Data\dc_features_utf.dat" />
+    <None Include="Data\dc_model.dat" />
+    <None Include="Data\dc_train.dat" />
+    <None Include="Data\Dict.pdat" />
+    <None Include="Data\Dict.wordlist" />
+    <None Include="Data\English\English.pdat" />
+    <None Include="Data\English\English.pos" />
+    <None Include="Data\English\English.ung" />
+    <None Include="Data\English\English.wordlist" />
+    <None Include="Data\English\Irrel2regular.map" />
+    <None Include="Data\English\ne.pdat" />
+    <None Include="Data\English\ne.pos" />
+    <None Include="Data\English\ne.wordlist" />
+    <None Include="Data\FieldDict.pdat" />
+    <None Include="Data\FieldDict.pos" />
+    <None Include="Data\GBK.pdat" />
+    <None Include="Data\GBK.wordlist" />
+    <None Include="Data\GBK2BIG.map" />
+    <None Include="Data\GBK2GBKC.map" />
+    <None Include="Data\GBK2UTF.map" />
+    <None Include="Data\GBKA.pdat" />
+    <None Include="Data\GBKA.wordlist" />
+    <None Include="Data\GBKA2UTF.map" />
+    <None Include="Data\GBKC.pdat" />
+    <None Include="Data\GBKC.wordlist" />
+    <None Include="Data\GBKC2GBK.map" />
+    <None Include="Data\GranDict.pdat" />
+    <None Include="Data\GranDict.pos" />
+    <None Include="Data\ICTCLAS30.ctx" />
+    <None Include="Data\ICTCLAS_First.map" />
+    <None Include="Data\ICTPOS.map" />
+    <None Include="Data\KeyBlackList.pdat" />
+    <None Include="Data\location.map" />
+    <None Include="Data\location.pdat" />
+    <None Include="Data\location.wordlist" />
+    <None Include="Data\NLPIR.ctx" />
+    <None Include="Data\NLPIR_First.map" />
+    <None Include="Data\nr.ctx" />
+    <None Include="Data\nr.fsa" />
+    <None Include="Data\nr.role" />
+    <None Include="Data\PKU.map" />
+    <None Include="Data\PKU_First.map" />
+    <None Include="Data\sentiment.pdat" />
+    <None Include="Data\sentiment.ung" />
+    <None Include="Data\sentiment.wordlist" />
+    <None Include="Data\stop.ung" />
+    <None Include="Data\UTF2GBK.map" />
+    <None Include="Data\UTF2GBKA.map" />
+    <None Include="Data\UTF8.pdat" />
+    <None Include="Data\UTF8.wordlist" />
+    <None Include="lib\linux32\DeepClassifier.so" />
+    <None Include="lib\linux64\DeepClassifier.so" />
+    <None Include="lib\win32\DeepClassifier.lib" />
+    <None Include="lib\win64\DeepClassifier.lib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
