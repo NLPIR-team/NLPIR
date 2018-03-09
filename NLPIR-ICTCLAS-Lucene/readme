@@ -1,0 +1,5 @@
+The Jar file of NLPIR/ICTCLAS for lucene 6.6.0 supports multi platform, just as MacOS,Linux X86/64,Windows X86/64.
+针对Lucene 6.6.0封装的中科院分词Jar包，适用于大部分Linux X86/64平台和Windows X86/64,MaxOS等。
+
+* Open Source code
+https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas

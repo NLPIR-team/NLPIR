@@ -1,0 +1,39 @@
+序号	字段名称	索引名称	数据类型	是否需要索引	是否需要存储	是否需要通配索引	是否需要摘要并红显	解释
+1	*	*	通配符		1	0	0	0	通配符
+2	id	id	long		1	1	0	0	
+3	site_name	site_name	text		1	1	0	0	
+4	class_id	class_id	text		1	0	0	0	
+5	country	country	text		1	1	0	0	
+6	area	area	text		1	1	0	0	
+7	type_id	type_id	text		1	0	0	0	
+8	doc_type	doc_type	text		1	1	0	0	
+9	url	url	text		1	1	0	0	
+10	title	title	text		1	1	1	1	
+11	publishtime	publishtime	date		1	1	0	0	
+12	people	people	text		1	1	0	1	
+13	location	location	text		1	1	0	1	
+14	organization	organization	text		1	1	0	1	
+15	keywords	keywords	text		1	1	0	1	
+16	author	author	text		1	1	0	1	
+17	media	media	text		1	1	0	1	
+18	sentiment	sentiment	int		1	1	0	0	
+19	summary	summary	text		1	1	0	1	
+20	inserttime	inserttime	long		1	1	0	0	
+21	up_info	up_info	int		1	1	0	0	
+22	down_info	down_info	int		1	1	0	0	
+23	txt_file@txt_offset@txt_length@g:\newgoldeye_cj\rawsitedata	abstract	bigtext		1	1	1	1	
+24	site_id	site_id	long		1	1	0	0	
+25	userdefine1	userdefine1	text		1	0	0	0	
+26	total_num	total_num	text		1	0	0	0	
+27	magazine_num	magazine_num	text		1	0	0	0	
+28	issue_name	issue_name	text		1	0	1	0	
+需要索引的字段序号为：
+<1>1(*)	<3>2(site_name)	<4>3(class_id)	<5>4(country)	<6>5(area)	<7>6(type_id)	<8>7(doc_type)	<9>8(url)	<10>9(title)	<12>10(people)	<13>11(location)	<14>12(organization)	<15>13(keywords)	<16>14(author)	<17>15(media)	<19>16(summary)	<23>17(abstract)	<25>18(userdefine1)	<26>19(total_num)	<27>20(magazine_num)	<28>21(issue_name)	
+需要过滤的字段序号为：
+<2>1(id)	<11>2(publishtime)	<18>3(sentiment)	<20>4(inserttime)	<21>5(up_info)	<22>6(down_info)	<24>7(site_id)	
+需要存储的字段序号为：
+<2>1(id)	<3>2(site_name)	<5>3(country)	<6>4(area)	<8>5(doc_type)	<9>6(url)	<10>7(title)	<11>8(publishtime)	<12>9(people)	<13>10(location)	<14>11(organization)	<15>12(keywords)	<16>13(author)	<17>14(media)	<18>15(sentiment)	<19>16(summary)	<20>17(inserttime)	<21>18(up_info)	<22>19(down_info)	<23>20(abstract)	<24>21(site_id)	
+需要通配符索引的字段序号为：
+<10>1(title)	<23>2(abstract)	<28>3(issue_name)	
+需要摘要提取与红显的字段序号为：
+<10>1(title)	<12>2(people)	<13>3(location)	<14>4(organization)	<15>5(keywords)	<16>6(author)	<17>7(media)	<19>8(summary)	<23>9(abstract)	

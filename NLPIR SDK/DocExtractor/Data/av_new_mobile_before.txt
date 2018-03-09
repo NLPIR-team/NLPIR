@@ -1,0 +1,81 @@
+No:1	word=末##末	pos=	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List()
+LV()
+RV()
+No:2	word=王安钰	pos=nr	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=5.28
+Inverted List(0,)
+LV(末##末(1),)
+RV(报(1),)
+No:3	word=报	pos=v	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(1,)
+LV()
+RV()
+No:4	word=在	pos=p	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(2,)
+LV()
+RV()
+No:5	word=燕丹村	pos=nr	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=5.28
+Inverted List(3,)
+LV(在(1),)
+RV(南北路(1),)
+No:6	word=南北路	pos=nr	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=5.28
+Inverted List(4,)
+LV(燕丹村(1),)
+RV(上(1),)
+No:7	word=上	pos=vf	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(5,)
+LV()
+RV()
+No:8	word=车	pos=n	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(6,)
+LV()
+RV()
+No:9	word=丢	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(7,)
+LV(车(1),)
+RV(了(1),)
+No:10	word=了	pos=y	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(8,)
+LV()
+RV()
+No:11	word=,	pos=wd	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(9,)
+LV()
+RV()
+No:12	word=我	pos=rr	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(10,)
+LV()
+RV()
+No:13	word=所	pos=usuo	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(11,)
+LV()
+RV()
+No:14	word=执行	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(12,)
+LV(所(1),)
+RV(民警(1),)
+No:15	word=民警	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(13,)
+LV(执行(1),)
+RV(在自忠(1),)
+No:16	word=在自忠	pos=nr	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=5.28
+Inverted List(14,)
+LV(民警(1),)
+RV(小学(1),)
+No:17	word=小学	pos=ns	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.76
+Inverted List(15,)
+LV(在自忠(1),)
+RV(对面(1),)
+No:18	word=对面	pos=f	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.48
+Inverted List(16,)
+LV(小学(1),)
+RV(查获(1),)
+No:19	word=查获	pos=v	freq=1	LV=1	RV=0	is_stopword=0	unit_count=1	weight=0.80
+Inverted List(17,)
+LV(对面(1),)
+RV()
+)
+ Sentence Information:
+No:1	line王安钰报在燕丹村南北路上车丢了,我所执行民警在自忠小学对面查获
+weight=0.00
+wordid_list_size=0()

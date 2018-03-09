@@ -1,0 +1,21 @@
+<DatabaseConf>
+	<DRIVER>com.mysql.jdbc.Driver</DRIVER>
+	<DBConnectString>jdbc:mysql://localhost:3306/test</DBConnectString>    //mysql
+	<Host>127.0.0.1</Host>
+	<Username>root</Username>
+	<Password>root</Password>
+	<Database>test</Database>
+	<Table>test</Table>
+	<SortField>id</SortField>
+	<IncrementField>id</IncrementField>
+	<UID>id</UID>
+	<MaxMem>2024000000</MaxMem>
+	<Compare> ></Compare>
+	<ICTCLAS>on</ICTCLAS>
+	<Encoding>UTF8</Encoding>
+	<KeyField></KeyField>
+	<SearchAgent>JZSearchAgent.exe</SearchAgent>
+	<ThreadCount>10</ThreadCount>
+	<filter></filter>
+	<MaxRecordCount>10000000</MaxRecordCount>
+</DatabaseConf>

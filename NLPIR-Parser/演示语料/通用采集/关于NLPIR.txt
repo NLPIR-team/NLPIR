@@ -1,0 +1,118 @@
+<title>关于NLPIR</title>
+<href>http://www.nlpir.org/?action-aboutus</href>
+<content>
+
+
+
+
+
+实验室介绍
+
+
+
+
+最新资讯
+
+科研课题
+实验室在研课题
+  国家自然科学基金面上项目
+  61772075
+  语义主题与社交关系融合的特定群体发现关键技术研究
+  2018.1
+  2021.12
+  61
+  在研
+  张...
+
+
+Big Data Search and Mining  Lab. Intr 
+Big Data Search and Mining  Lab. Introduction (English Version)
+ wSMS@BIT Introduction20110919.rar(1.65 MB)
+
+
+实验室介绍
+大数据搜索与挖掘实验室（ Big Data Search and Mining Lab.BDSM@BIT）隶属于北京理工大学海量语言信息处理与云计算工程研究中心（北京市级重点工程中心），定...
+
+
+
+
+
+图文资讯
+
+
+
+
+
+
+关于我们更多>>
+
+03-21科研课题
+09-20Big Data Search and Mining  Lab.  
+09-04实验室介绍
+04-21自然语言处理与信息检索共享平台架构 
+04-14关于NLPIR.org
+
+
+
+联系我们更多>>
+
+04-14联系我们
+
+
+
+
+
+
+
+热门标签
+
+aids(122)
+remove(121)
+serviette(121)
+une(121)
+realtime(121)
+german(120)
+deaf(120)
+Courses(120)
+urdu(120)
+ne(120)
+conseils(120)
+learning(119)
+technology(119)
+buy(119)
+jaune(119)
+rate(118)
+coffee(118)
+san(118)
+employment(118)
+ideas(117)
+take(116)
+roseau(116)
+court(115)
+screens(115)
+laws(114)
+products(114)
+pilage(113)
+point(113)
+latest(113)
+requirements(112)
+
+
+
+最新评论
+
+06-23科研课题
+06-23自然语言处理与信息检索共 
+03-30联系我们
+03-30关于NLPIR.org
+03-26Big Data Search and Min 
+03-06实验室介绍
+
+
+
+月度评论
+
+
+
+
+</content>

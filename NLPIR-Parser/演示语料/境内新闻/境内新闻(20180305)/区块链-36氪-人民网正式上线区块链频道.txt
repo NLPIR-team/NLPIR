@@ -1,0 +1,8 @@
+<title>人民网正式上线区块链频道</title>
+<href>http://finance.qq.com/a/20180305/003908.htm</href>
+<publish_time>2018-03-05 07:49:00</publish_time>
+<source>36氪</source>
+<file_name>区块链-36氪-人民网正式上线区块链频道.txt</file_name>
+<site_name>百度新闻搜索-腾讯</site_name>
+<crawler_time>2018-03-07 15:59:17</crawler_time>
+<content>36氪讯，人民网旗下创业与投资门户“人民创投”正式上线区块链频道。此前人民网官方回应将上线区块链频道消息称，未收到相关通知，一切以人民网发布为准。正文已结束，您可以按alt+4进行评论</content>

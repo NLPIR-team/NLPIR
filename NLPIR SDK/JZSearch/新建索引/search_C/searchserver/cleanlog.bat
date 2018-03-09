@@ -1,0 +1,2 @@
+del *.log
+del *.err

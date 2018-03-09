@@ -1,0 +1,1008 @@
+
+No.1:start:0, length:3,POS_ID:34,Word_ID:17774
+据
+No.2:start:3, length:6,POS_ID:51,Word_ID:75596
+国外
+No.3:start:9, length:6,POS_ID:21,Word_ID:66376
+媒体
+No.4:start:15, length:6,POS_ID:68,Word_ID:69696
+报道
+No.5:start:21, length:3,POS_ID:80,Word_ID:49
+，
+No.6:start:24, length:6,POS_ID:24,Word_ID:-1
+谷歌
+No.7:start:30, length:3,POS_ID:34,Word_ID:55282
+将
+No.8:start:33, length:6,POS_ID:21,Word_ID:74791
+巨资
+No.9:start:39, length:6,POS_ID:68,Word_ID:35054
+收购
+No.10:start:45, length:6,POS_ID:32,Word_ID:48499
+百度
+No.11:start:51, length:3,POS_ID:80,Word_ID:49
+，
+No.12:start:54, length:6,POS_ID:68,Word_ID:13057
+涉及
+No.13:start:60, length:6,POS_ID:21,Word_ID:42116
+金额
+No.14:start:66, length:3,POS_ID:3,Word_ID:80329
+高
+No.15:start:69, length:3,POS_ID:68,Word_ID:10235
+达
+No.16:start:72, length:6,POS_ID:18,Word_ID:-1
+300亿
+No.17:start:78, length:6,POS_ID:37,Word_ID:48195
+美元
+No.18:start:84, length:3,POS_ID:82,Word_ID:3
+。
+No.19:start:87, length:6,POS_ID:24,Word_ID:-1
+谷歌
+No.20:start:93, length:3,POS_ID:68,Word_ID:79759
+借
+No.21:start:96, length:3,POS_ID:48,Word_ID:57043
+此
+No.22:start:99, length:6,POS_ID:68,Word_ID:59998
+重返
+No.23:start:105, length:6,POS_ID:21,Word_ID:71033
+大陆
+No.24:start:111, length:6,POS_ID:21,Word_ID:52330
+市场
+No.25:start:117, length:3,POS_ID:82,Word_ID:3
+。
+No.26:start:120, length:1,POS_ID:0,Word_ID:-1
+
+
+No.27:start:121, length:3,POS_ID:0,Word_ID:-1
+　
+No.28:start:124, length:3,POS_ID:0,Word_ID:-1
+　
+No.29:start:127, length:3,POS_ID:47,Word_ID:22199
+该
+No.30:start:130, length:6,POS_ID:68,Word_ID:69696
+报道
+No.31:start:136, length:3,POS_ID:68,Word_ID:48865
+称
+No.32:start:139, length:3,POS_ID:80,Word_ID:49
+，
+No.33:start:142, length:6,POS_ID:52,Word_ID:68998
+目前
+No.34:start:148, length:3,POS_ID:22,Word_ID:62770
+谷
+No.35:start:151, length:3,POS_ID:21,Word_ID:12158
+歌
+No.36:start:154, length:3,POS_ID:34,Word_ID:72522
+与
+No.37:start:157, length:6,POS_ID:32,Word_ID:48499
+百度
+No.38:start:163, length:6,POS_ID:11,Word_ID:3505
+已经
+No.39:start:169, length:6,POS_ID:68,Word_ID:19541
+达成
+No.40:start:175, length:3,POS_ID:61,Word_ID:1129
+了
+No.41:start:178, length:6,POS_ID:74,Word_ID:35054
+收购
+No.42:start:184, length:6,POS_ID:21,Word_ID:35215
+协议
+No.43:start:190, length:3,POS_ID:80,Word_ID:49
+，
+No.44:start:193, length:3,POS_ID:11,Word_ID:55282
+将
+No.45:start:196, length:3,POS_ID:68,Word_ID:82136
+择
+No.46:start:199, length:3,POS_ID:22,Word_ID:71386
+机
+No.47:start:202, length:6,POS_ID:69,Word_ID:55859
+对外
+No.48:start:208, length:6,POS_ID:68,Word_ID:70327
+公布
+No.49:start:214, length:3,POS_ID:82,Word_ID:3
+。
+No.50:start:217, length:3,POS_ID:18,Word_ID:5055
+百
+No.51:start:220, length:3,POS_ID:39,Word_ID:41316
+度
+No.52:start:223, length:3,POS_ID:55,Word_ID:74123
+的
+No.53:start:226, length:9,POS_ID:21,Word_ID:28854
+管理层
+No.54:start:235, length:3,POS_ID:11,Word_ID:55282
+将
+No.55:start:238, length:4,POS_ID:18,Word_ID:-1
+100%
+No.56:start:242, length:6,POS_ID:68,Word_ID:45927
+保留
+No.57:start:248, length:3,POS_ID:80,Word_ID:49
+，
+No.58:start:251, length:3,POS_ID:9,Word_ID:42395
+但
+No.59:start:254, length:3,POS_ID:68,Word_ID:86557
+会
+No.60:start:257, length:3,POS_ID:34,Word_ID:55282
+将
+No.61:start:260, length:6,POS_ID:21,Word_ID:73115
+项目
+No.62:start:266, length:6,POS_ID:68,Word_ID:24015
+缩减
+No.63:start:272, length:3,POS_ID:80,Word_ID:49
+，
+No.64:start:275, length:6,POS_ID:68,Word_ID:13553
+包括
+No.65:start:281, length:3,POS_ID:77,Word_ID:13185
+有
+No.66:start:284, length:3,POS_ID:94,Word_ID:74
+啊
+No.67:start:287, length:6,POS_ID:21,Word_ID:46385
+商城
+No.68:start:293, length:3,POS_ID:80,Word_ID:49
+，
+No.69:start:296, length:6,POS_ID:10,Word_ID:17939
+以及
+No.70:start:302, length:6,POS_ID:52,Word_ID:68998
+目前
+No.71:start:308, length:6,POS_ID:68,Word_ID:61612
+实施
+No.72:start:314, length:6,POS_ID:2,Word_ID:18419
+不力
+No.73:start:320, length:3,POS_ID:55,Word_ID:74123
+的
+No.74:start:323, length:3,POS_ID:25,Word_ID:10519
+凤
+No.75:start:326, length:3,POS_ID:21,Word_ID:32354
+巢
+No.76:start:329, length:6,POS_ID:21,Word_ID:17708
+计划
+No.77:start:335, length:3,POS_ID:82,Word_ID:3
+。
+No.78:start:338, length:6,POS_ID:11,Word_ID:14236
+正在
+No.79:start:344, length:6,POS_ID:76,Word_ID:40232
+进行
+No.80:start:350, length:6,POS_ID:74,Word_ID:47571
+测试
+No.81:start:356, length:6,POS_ID:21,Word_ID:55646
+阶段
+No.82:start:362, length:3,POS_ID:55,Word_ID:74123
+的
+No.83:start:365, length:6,POS_ID:21,Word_ID:29922
+视频
+No.84:start:371, length:6,POS_ID:21,Word_ID:29821
+网站
+No.85:start:377, length:8,POS_ID:93,Word_ID:-1
+qiyi.com
+No.86:start:385, length:3,POS_ID:11,Word_ID:55282
+将
+No.87:start:388, length:6,POS_ID:68,Word_ID:76082
+输入
+No.88:start:394, length:3,POS_ID:11,Word_ID:55924
+更
+No.89:start:397, length:3,POS_ID:2,Word_ID:79269
+多
+No.90:start:400, length:3,POS_ID:55,Word_ID:74123
+的
+No.91:start:403, length:7,POS_ID:93,Word_ID:-1
+Youtube
+No.92:start:410, length:6,POS_ID:21,Word_ID:5009
+资源
+No.93:start:416, length:3,POS_ID:82,Word_ID:3
+。
+No.94:start:419, length:1,POS_ID:84,Word_ID:45
+(
+No.95:start:420, length:7,POS_ID:93,Word_ID:-1
+YouTube
+No.96:start:427, length:3,POS_ID:34,Word_ID:51842
+在
+No.97:start:430, length:6,POS_ID:21,Word_ID:71033
+大陆
+No.98:start:436, length:3,POS_ID:21,Word_ID:10776
+区
+No.99:start:439, length:3,POS_ID:34,Word_ID:23921
+因
+No.100:start:442, length:6,POS_ID:21,Word_ID:57230
+内容
+No.101:start:448, length:6,POS_ID:74,Word_ID:48561
+审查
+No.102:start:454, length:3,POS_ID:11,Word_ID:78131
+暂
+No.103:start:457, length:3,POS_ID:11,Word_ID:62487
+不
+No.104:start:460, length:3,POS_ID:68,Word_ID:77037
+能
+No.105:start:463, length:6,POS_ID:68,Word_ID:47574
+访问
+No.106:start:469, length:1,POS_ID:83,Word_ID:46
+)
+No.107:start:470, length:3,POS_ID:82,Word_ID:3
+。
+No.108:start:473, length:1,POS_ID:0,Word_ID:-1
+
+
+No.109:start:474, length:3,POS_ID:0,Word_ID:-1
+　
+No.110:start:477, length:3,POS_ID:0,Word_ID:-1
+　
+No.111:start:480, length:3,POS_ID:47,Word_ID:22199
+该
+No.112:start:483, length:6,POS_ID:21,Word_ID:80258
+消息
+No.113:start:489, length:6,POS_ID:11,Word_ID:22485
+似乎
+No.114:start:495, length:6,POS_ID:68,Word_ID:69033
+得到
+No.115:start:501, length:3,POS_ID:61,Word_ID:1129
+了
+No.116:start:504, length:6,POS_ID:24,Word_ID:-1
+谷歌
+No.117:start:510, length:3,POS_ID:93,Word_ID:-1
+CEO
+No.118:start:513, length:9,POS_ID:27,Word_ID:-1
+施密特
+No.119:start:522, length:3,POS_ID:55,Word_ID:74123
+的
+No.120:start:525, length:6,POS_ID:74,Word_ID:76890
+确认
+No.121:start:531, length:3,POS_ID:80,Word_ID:49
+，
+No.122:start:534, length:3,POS_ID:34,Word_ID:51842
+在
+No.123:start:537, length:3,POS_ID:47,Word_ID:63070
+其
+No.124:start:540, length:7,POS_ID:93,Word_ID:-1
+twitter
+No.125:start:547, length:3,POS_ID:15,Word_ID:21299
+上
+No.126:start:550, length:3,POS_ID:68,Word_ID:75929
+用
+No.127:start:553, length:6,POS_ID:2,Word_ID:86279
+简短
+No.128:start:559, length:3,POS_ID:10,Word_ID:32081
+而
+No.129:start:562, length:6,POS_ID:2,Word_ID:39435
+暧昧
+No.130:start:568, length:3,POS_ID:55,Word_ID:74123
+的
+No.131:start:571, length:6,POS_ID:21,Word_ID:42964
+文字
+No.132:start:577, length:6,POS_ID:76,Word_ID:40232
+进行
+No.133:start:583, length:3,POS_ID:61,Word_ID:1129
+了
+No.134:start:586, length:6,POS_ID:74,Word_ID:49263
+表述
+No.135:start:592, length:3,POS_ID:87,Word_ID:7
+：
+No.136:start:595, length:3,POS_ID:92,Word_ID:13
+“
+No.137:start:598, length:1,POS_ID:0,Word_ID:-1
+ 
+No.138:start:599, length:8,POS_ID:93,Word_ID:-1
+Withdraw
+No.139:start:607, length:1,POS_ID:0,Word_ID:-1
+ 
+No.140:start:608, length:4,POS_ID:93,Word_ID:-1
+from
+No.141:start:612, length:1,POS_ID:0,Word_ID:-1
+ 
+No.142:start:613, length:4,POS_ID:93,Word_ID:-1
+that
+No.143:start:617, length:1,POS_ID:0,Word_ID:-1
+ 
+No.144:start:618, length:6,POS_ID:93,Word_ID:-1
+market
+No.145:start:624, length:1,POS_ID:90,Word_ID:60
+?
+No.146:start:625, length:1,POS_ID:0,Word_ID:-1
+ 
+No.147:start:626, length:1,POS_ID:93,Word_ID:-1
+u
+No.148:start:627, length:1,POS_ID:21,Word_ID:-1
+'
+No.149:start:628, length:2,POS_ID:93,Word_ID:-1
+ll
+No.150:start:630, length:1,POS_ID:0,Word_ID:-1
+ 
+No.151:start:631, length:4,POS_ID:93,Word_ID:-1
+also
+No.152:start:635, length:1,POS_ID:0,Word_ID:-1
+ 
+No.153:start:636, length:3,POS_ID:93,Word_ID:-1
+see
+No.154:start:639, length:1,POS_ID:0,Word_ID:-1
+ 
+No.155:start:640, length:7,POS_ID:93,Word_ID:-1
+another
+No.156:start:647, length:1,POS_ID:0,Word_ID:-1
+ 
+No.157:start:648, length:6,POS_ID:93,Word_ID:-1
+result
+No.158:start:654, length:1,POS_ID:80,Word_ID:49
+,
+No.159:start:655, length:1,POS_ID:0,Word_ID:-1
+ 
+No.160:start:656, length:4,POS_ID:93,Word_ID:-1
+just
+No.161:start:660, length:1,POS_ID:0,Word_ID:-1
+ 
+No.162:start:661, length:7,POS_ID:93,Word_ID:-1
+wait...
+No.163:start:668, length:1,POS_ID:0,Word_ID:-1
+ 
+No.164:start:669, length:3,POS_ID:91,Word_ID:14
+”
+No.165:start:672, length:1,POS_ID:0,Word_ID:-1
+ 
+No.166:start:673, length:6,POS_ID:21,Word_ID:9858
+意思
+No.167:start:679, length:3,POS_ID:75,Word_ID:40459
+是
+No.168:start:682, length:3,POS_ID:87,Word_ID:7
+：
+No.169:start:685, length:3,POS_ID:34,Word_ID:65760
+从
+No.170:start:688, length:3,POS_ID:50,Word_ID:59896
+那
+No.171:start:691, length:3,POS_ID:37,Word_ID:42865
+个
+No.172:start:694, length:6,POS_ID:21,Word_ID:52330
+市场
+No.173:start:700, length:6,POS_ID:68,Word_ID:22301
+退出
+No.174:start:706, length:1,POS_ID:90,Word_ID:60
+?
+No.175:start:707, length:3,POS_ID:42,Word_ID:24971
+你
+No.176:start:710, length:3,POS_ID:11,Word_ID:62369
+还
+No.177:start:713, length:3,POS_ID:68,Word_ID:86557
+会
+No.178:start:716, length:6,POS_ID:68,Word_ID:58810
+看到
+No.179:start:722, length:6,POS_ID:47,Word_ID:36705
+另外
+No.180:start:728, length:6,POS_ID:20,Word_ID:15716
+一个
+No.181:start:734, length:6,POS_ID:21,Word_ID:84398
+结果
+No.182:start:740, length:3,POS_ID:82,Word_ID:3
+。
+No.183:start:743, length:12,POS_ID:13,Word_ID:60997
+毫无疑问
+No.184:start:755, length:3,POS_ID:80,Word_ID:49
+，
+No.185:start:758, length:3,POS_ID:50,Word_ID:59896
+那
+No.186:start:761, length:3,POS_ID:37,Word_ID:42865
+个
+No.187:start:764, length:6,POS_ID:21,Word_ID:52330
+市场
+No.188:start:770, length:3,POS_ID:68,Word_ID:55740
+指
+No.189:start:773, length:3,POS_ID:55,Word_ID:74123
+的
+No.190:start:776, length:6,POS_ID:68,Word_ID:17363
+就是
+No.191:start:782, length:6,POS_ID:29,Word_ID:32696
+中国
+No.192:start:788, length:6,POS_ID:21,Word_ID:71033
+大陆
+No.193:start:794, length:3,POS_ID:82,Word_ID:3
+。
+No.194:start:797, length:3,POS_ID:10,Word_ID:32081
+而
+No.195:start:800, length:6,POS_ID:47,Word_ID:36705
+另外
+No.196:start:806, length:3,POS_ID:55,Word_ID:74123
+的
+No.197:start:809, length:6,POS_ID:21,Word_ID:84398
+结果
+No.198:start:815, length:3,POS_ID:80,Word_ID:49
+，
+No.199:start:818, length:6,POS_ID:72,Word_ID:22294
+对应
+No.200:start:824, length:3,POS_ID:48,Word_ID:57043
+此
+No.201:start:827, length:6,POS_ID:21,Word_ID:66376
+媒体
+No.202:start:833, length:6,POS_ID:68,Word_ID:69696
+报道
+No.203:start:839, length:3,POS_ID:80,Word_ID:49
+，
+No.204:start:842, length:6,POS_ID:11,Word_ID:17363
+就是
+No.205:start:848, length:6,POS_ID:68,Word_ID:35054
+收购
+No.206:start:854, length:6,POS_ID:32,Word_ID:48499
+百度
+No.207:start:860, length:3,POS_ID:80,Word_ID:49
+，
+No.208:start:863, length:6,POS_ID:9,Word_ID:16063
+从而
+No.209:start:869, length:6,POS_ID:21,Word_ID:39067
+曲线
+No.210:start:875, length:6,POS_ID:68,Word_ID:4361
+返回
+No.211:start:881, length:6,POS_ID:21,Word_ID:71033
+大陆
+No.212:start:887, length:6,POS_ID:74,Word_ID:63497
+搜索
+No.213:start:893, length:6,POS_ID:21,Word_ID:52330
+市场
+No.214:start:899, length:3,POS_ID:82,Word_ID:3
+。
+No.215:start:902, length:1,POS_ID:0,Word_ID:-1
+
+
+No.216:start:903, length:3,POS_ID:0,Word_ID:-1
+　
+No.217:start:906, length:3,POS_ID:0,Word_ID:-1
+　
+No.218:start:909, length:3,POS_ID:34,Word_ID:51842
+在
+No.219:start:912, length:6,POS_ID:52,Word_ID:3856
+最近
+No.220:start:918, length:6,POS_ID:11,Word_ID:59762
+刚刚
+No.221:start:924, length:6,POS_ID:68,Word_ID:36337
+结束
+No.222:start:930, length:3,POS_ID:55,Word_ID:74123
+的
+No.223:start:933, length:6,POS_ID:29,Word_ID:51397
+深圳
+No.224:start:939, length:2,POS_ID:93,Word_ID:-1
+IT
+No.225:start:941, length:6,POS_ID:21,Word_ID:37126
+领袖
+No.226:start:947, length:6,POS_ID:21,Word_ID:80691
+峰会
+No.227:start:953, length:3,POS_ID:15,Word_ID:21299
+上
+No.228:start:956, length:3,POS_ID:80,Word_ID:49
+，
+No.229:start:959, length:9,POS_ID:24,Word_ID:-1
+李彦宏
+No.230:start:968, length:3,POS_ID:11,Word_ID:58062
+曾
+No.231:start:971, length:3,POS_ID:22,Word_ID:41114
+言
+No.232:start:974, length:3,POS_ID:80,Word_ID:49
+，
+No.233:start:977, length:3,POS_ID:92,Word_ID:13
+“
+No.234:start:980, length:6,POS_ID:24,Word_ID:-1
+谷歌
+No.235:start:986, length:6,POS_ID:11,Word_ID:69307
+没有
+No.236:start:992, length:6,POS_ID:68,Word_ID:22301
+退出
+No.237:start:998, length:6,POS_ID:29,Word_ID:32696
+中国
+No.238:start:1004, length:3,POS_ID:80,Word_ID:49
+，
+No.239:start:1007, length:6,POS_ID:9,Word_ID:46928
+因为
+No.240:start:1013, length:3,POS_ID:11,Word_ID:62369
+还
+No.241:start:1016, length:3,POS_ID:34,Word_ID:51842
+在
+No.242:start:1019, length:6,POS_ID:29,Word_ID:85142
+香港
+No.243:start:1025, length:3,POS_ID:91,Word_ID:14
+”
+No.244:start:1028, length:3,POS_ID:82,Word_ID:3
+。
+No.245:start:1031, length:3,POS_ID:11,Word_ID:10642
+也
+No.246:start:1034, length:6,POS_ID:11,Word_ID:22485
+似乎
+No.247:start:1040, length:3,POS_ID:34,Word_ID:51842
+在
+No.248:start:1043, length:6,POS_ID:68,Word_ID:24766
+验证
+No.249:start:1049, length:3,POS_ID:36,Word_ID:20520
+被
+No.250:start:1052, length:6,POS_ID:68,Word_ID:35054
+收购
+No.251:start:1058, length:3,POS_ID:55,Word_ID:74123
+的
+No.252:start:1061, length:3,POS_ID:50,Word_ID:11973
+这
+No.253:start:1064, length:3,POS_ID:18,Word_ID:85616
+一
+No.254:start:1067, length:6,POS_ID:21,Word_ID:54020
+事实
+No.255:start:1073, length:3,POS_ID:82,Word_ID:3
+。
+No.256:start:1076, length:1,POS_ID:0,Word_ID:-1
+
+
+No.257:start:1077, length:3,POS_ID:0,Word_ID:-1
+　
+No.258:start:1080, length:3,POS_ID:0,Word_ID:-1
+　
+No.259:start:1083, length:6,POS_ID:72,Word_ID:22974
+截止
+No.260:start:1089, length:6,POS_ID:72,Word_ID:8965
+发稿
+No.261:start:1095, length:3,POS_ID:80,Word_ID:49
+，
+No.262:start:1098, length:3,POS_ID:18,Word_ID:5055
+百
+No.263:start:1101, length:3,POS_ID:39,Word_ID:41316
+度
+No.264:start:1104, length:3,POS_ID:55,Word_ID:74123
+的
+No.265:start:1107, length:6,POS_ID:21,Word_ID:60904
+股价
+No.266:start:1113, length:3,POS_ID:34,Word_ID:66615
+为
+No.267:start:1116, length:3,POS_ID:18,Word_ID:-1
+597
+No.268:start:1119, length:6,POS_ID:37,Word_ID:48195
+美元
+No.269:start:1125, length:3,POS_ID:80,Word_ID:49
+，
+No.270:start:1128, length:6,POS_ID:21,Word_ID:66293
+市值
+No.271:start:1134, length:3,POS_ID:34,Word_ID:66615
+为
+No.272:start:1137, length:6,POS_ID:18,Word_ID:-1
+207亿
+No.273:start:1143, length:6,POS_ID:37,Word_ID:48195
+美元
+No.274:start:1149, length:3,POS_ID:82,Word_ID:3
+。
+No.275:start:1152, length:6,POS_ID:24,Word_ID:-1
+谷歌
+No.276:start:1158, length:3,POS_ID:34,Word_ID:33049
+以
+No.277:start:1161, length:3,POS_ID:2,Word_ID:80329
+高
+No.278:start:1164, length:3,POS_ID:68,Word_ID:10235
+达
+No.279:start:1167, length:6,POS_ID:18,Word_ID:-1
+300亿
+No.280:start:1173, length:6,POS_ID:37,Word_ID:48195
+美元
+No.281:start:1179, length:3,POS_ID:55,Word_ID:74123
+的
+No.282:start:1182, length:6,POS_ID:21,Word_ID:65158
+价格
+No.283:start:1188, length:3,POS_ID:80,Word_ID:49
+，
+No.284:start:1191, length:6,POS_ID:3,Word_ID:75374
+实际
+No.285:start:1197, length:3,POS_ID:68,Word_ID:18287
+溢
+No.286:start:1200, length:3,POS_ID:21,Word_ID:85328
+价
+No.287:start:1203, length:3,POS_ID:3,Word_ID:80329
+高
+No.288:start:1206, length:3,POS_ID:68,Word_ID:10235
+达
+No.289:start:1209, length:3,POS_ID:18,Word_ID:-1
+50%
+No.290:start:1212, length:3,POS_ID:82,Word_ID:3
+。
+No.291:start:1215, length:3,POS_ID:10,Word_ID:32081
+而
+No.292:start:1218, length:3,POS_ID:22,Word_ID:62770
+谷
+No.293:start:1221, length:3,POS_ID:21,Word_ID:12158
+歌
+No.294:start:1224, length:6,POS_ID:21,Word_ID:66293
+市值
+No.295:start:1230, length:3,POS_ID:3,Word_ID:80329
+高
+No.296:start:1233, length:3,POS_ID:68,Word_ID:10235
+达
+No.297:start:1236, length:7,POS_ID:18,Word_ID:-1
+1796亿
+No.298:start:1243, length:6,POS_ID:37,Word_ID:48195
+美元
+No.299:start:1249, length:3,POS_ID:80,Word_ID:49
+，
+No.300:start:1252, length:6,POS_ID:9,Word_ID:43850
+而且
+No.301:start:1258, length:3,POS_ID:21,Word_ID:49731
+手
+No.302:start:1261, length:3,POS_ID:68,Word_ID:34447
+握
+No.303:start:1264, length:6,POS_ID:18,Word_ID:15987
+大量
+No.304:start:1270, length:6,POS_ID:21,Word_ID:34764
+现金
+No.305:start:1276, length:3,POS_ID:80,Word_ID:49
+，
+No.306:start:1279, length:3,POS_ID:68,Word_ID:62550
+作
+No.307:start:1282, length:6,POS_ID:50,Word_ID:54401
+这样
+No.308:start:1288, length:3,POS_ID:55,Word_ID:74123
+的
+No.309:start:1291, length:6,POS_ID:21,Word_ID:26588
+决策
+No.310:start:1297, length:3,POS_ID:11,Word_ID:10642
+也
+No.311:start:1300, length:3,POS_ID:34,Word_ID:51842
+在
+No.312:start:1303, length:12,POS_ID:23,Word_ID:42021
+情理之中
+No.313:start:1315, length:3,POS_ID:82,Word_ID:3
+。
+No.314:start:1318, length:1,POS_ID:0,Word_ID:-1
+
+
+No.315:start:1319, length:1,POS_ID:0,Word_ID:-1
+ 
+No.316:start:1323, length:6,POS_ID:52,Word_ID:6930
+近日
+No.317:start:1329, length:3,POS_ID:80,Word_ID:49
+，
+No.318:start:1332, length:6,POS_ID:18,Word_ID:33870
+很多
+No.319:start:1338, length:6,POS_ID:21,Word_ID:66376
+媒体
+No.320:start:1344, length:3,POS_ID:11,Word_ID:22248
+都
+No.321:start:1347, length:3,POS_ID:34,Word_ID:51842
+在
+No.322:start:1350, length:6,POS_ID:68,Word_ID:69696
+报道
+No.323:start:1356, length:6,POS_ID:32,Word_ID:48499
+百度
+No.324:start:1362, length:9,POS_ID:21,Word_ID:56939
+创始人
+No.325:start:1371, length:3,POS_ID:86,Word_ID:2
+、
+No.326:start:1374, length:3,POS_ID:93,Word_ID:-1
+CEO
+No.327:start:1377, length:9,POS_ID:24,Word_ID:-1
+李彦宏
+No.328:start:1386, length:3,POS_ID:55,Word_ID:74123
+的
+No.329:start:1389, length:3,POS_ID:18,Word_ID:29495
+两
+No.330:start:1392, length:3,POS_ID:39,Word_ID:60277
+次
+No.331:start:1395, length:3,POS_ID:71,Word_ID:14180
+拒
+No.332:start:1398, length:3,POS_ID:71,Word_ID:30614
+购
+No.333:start:1401, length:3,POS_ID:87,Word_ID:7
+：
+No.334:start:1404, length:3,POS_ID:18,Word_ID:85616
+一
+No.335:start:1407, length:3,POS_ID:39,Word_ID:60277
+次
+No.336:start:1410, length:3,POS_ID:75,Word_ID:40459
+是
+No.337:start:1413, length:6,POS_ID:32,Word_ID:48499
+百度
+No.338:start:1419, length:6,POS_ID:72,Word_ID:54151
+上市
+No.339:start:1425, length:6,POS_ID:15,Word_ID:29971
+前夕
+No.340:start:1431, length:3,POS_ID:80,Word_ID:49
+，
+No.341:start:1434, length:9,POS_ID:24,Word_ID:-1
+李彦宏
+No.342:start:1443, length:6,POS_ID:68,Word_ID:64360
+拒绝
+No.343:start:1449, length:3,POS_ID:22,Word_ID:62770
+谷
+No.344:start:1452, length:3,POS_ID:21,Word_ID:12158
+歌
+No.345:start:1455, length:3,POS_ID:55,Word_ID:74123
+的
+No.346:start:1458, length:6,POS_ID:74,Word_ID:45481
+并购
+No.347:start:1464, length:3,POS_ID:80,Word_ID:49
+，
+No.348:start:1467, length:6,POS_ID:47,Word_ID:15422
+这个
+No.349:start:1473, length:6,POS_ID:21,Word_ID:74999
+细节
+No.350:start:1479, length:3,POS_ID:34,Word_ID:51842
+在
+No.351:start:1482, length:4,POS_ID:52,Word_ID:-1
+2月
+No.352:start:1486, length:5,POS_ID:52,Word_ID:-1
+28日
+No.353:start:1491, length:3,POS_ID:71,Word_ID:54704
+央
+No.354:start:1494, length:3,POS_ID:71,Word_ID:30096
+视
+No.355:start:1497, length:6,POS_ID:52,Word_ID:9755
+虎年
+No.356:start:1503, length:3,POS_ID:18,Word_ID:56230
+首
+No.357:start:1506, length:3,POS_ID:39,Word_ID:7575
+期
+No.358:start:1509, length:6,POS_ID:74,Word_ID:58592
+对话
+No.359:start:1515, length:6,POS_ID:21,Word_ID:31590
+节目
+No.360:start:1521, length:3,POS_ID:15,Word_ID:17242
+中
+No.361:start:1524, length:6,POS_ID:68,Word_ID:69033
+得到
+No.362:start:1530, length:3,POS_ID:18,Word_ID:56230
+首
+No.363:start:1533, length:3,POS_ID:39,Word_ID:60277
+次
+No.364:start:1536, length:6,POS_ID:68,Word_ID:49400
+披露
+No.365:start:1542, length:3,POS_ID:21,Word_ID:-1
+﹔
+No.366:start:1545, length:3,POS_ID:18,Word_ID:85616
+一
+No.367:start:1548, length:3,POS_ID:39,Word_ID:60277
+次
+No.368:start:1551, length:3,POS_ID:75,Word_ID:40459
+是
+No.369:start:1554, length:3,POS_ID:34,Word_ID:51842
+在
+No.370:start:1557, length:6,POS_ID:32,Word_ID:48499
+百度
+No.371:start:1563, length:9,POS_ID:74,Word_ID:27985
+国际化
+No.372:start:1572, length:6,POS_ID:21,Word_ID:65780
+战略
+No.373:start:1578, length:3,POS_ID:15,Word_ID:17242
+中
+No.374:start:1581, length:3,POS_ID:80,Word_ID:49
+，
+No.375:start:1584, length:6,POS_ID:68,Word_ID:64360
+拒绝
+No.376:start:1590, length:6,POS_ID:68,Word_ID:41561
+采用
+No.377:start:1596, length:6,POS_ID:51,Word_ID:13511
+海外
+No.378:start:1602, length:6,POS_ID:74,Word_ID:45481
+并购
+No.379:start:1608, length:3,POS_ID:55,Word_ID:74123
+的
+No.380:start:1611, length:6,POS_ID:21,Word_ID:27180
+方式
+No.381:start:1617, length:3,POS_ID:80,Word_ID:49
+，
+No.382:start:1620, length:6,POS_ID:9,Word_ID:10906
+而是
+No.383:start:1626, length:6,POS_ID:68,Word_ID:69372
+采取
+No.384:start:1632, length:3,POS_ID:61,Word_ID:1129
+了
+No.385:start:1635, length:3,POS_ID:34,Word_ID:65760
+从
+No.386:start:1638, length:6,POS_ID:30,Word_ID:33456
+日本
+No.387:start:1644, length:6,POS_ID:21,Word_ID:52330
+市场
+No.388:start:1650, length:6,POS_ID:68,Word_ID:11859
+开始
+No.389:start:1656, length:3,POS_ID:55,Word_ID:74123
+的
+No.390:start:1659, length:6,POS_ID:51,Word_ID:13511
+海外
+No.391:start:1665, length:6,POS_ID:69,Word_ID:52345
+自主
+No.392:start:1671, length:6,POS_ID:68,Word_ID:38302
+发展
+No.393:start:1677, length:3,POS_ID:67,Word_ID:50214
+之
+No.394:start:1680, length:3,POS_ID:21,Word_ID:61119
+路
+No.395:start:1683, length:3,POS_ID:82,Word_ID:3
+。
+No.396:start:1686, length:3,POS_ID:50,Word_ID:11973
+这
+No.397:start:1689, length:3,POS_ID:11,Word_ID:10642
+也
+No.398:start:1692, length:3,POS_ID:68,Word_ID:77072
+让
+No.399:start:1695, length:6,POS_ID:21,Word_ID:29914
+笔者
+No.400:start:1701, length:6,POS_ID:11,Word_ID:75319
+由此
+No.401:start:1707, length:6,POS_ID:68,Word_ID:11859
+开始
+No.402:start:1713, length:6,POS_ID:74,Word_ID:70020
+思考
+No.403:start:1719, length:6,POS_ID:21,Word_ID:39078
+民族
+No.404:start:1725, length:6,POS_ID:21,Word_ID:39926
+品牌
+No.405:start:1731, length:3,POS_ID:55,Word_ID:74123
+的
+No.406:start:1734, length:6,POS_ID:74,Word_ID:38302
+发展
+No.407:start:1740, length:3,POS_ID:67,Word_ID:50214
+之
+No.408:start:1743, length:3,POS_ID:21,Word_ID:61119
+路
+No.409:start:1746, length:3,POS_ID:82,Word_ID:3
+。
+No.410:start:1749, length:1,POS_ID:0,Word_ID:-1
+ 
+No.411:start:1750, length:1,POS_ID:0,Word_ID:-1
+
+
+No.412:start:1751, length:3,POS_ID:0,Word_ID:-1
+　
+No.413:start:1754, length:3,POS_ID:0,Word_ID:-1
+　
+No.414:start:1757, length:6,POS_ID:68,Word_ID:35054
+收购
+No.415:start:1763, length:3,POS_ID:75,Word_ID:40459
+是
+No.416:start:1766, length:3,POS_ID:68,Word_ID:13919
+打
+No.417:start:1769, length:3,POS_ID:68,Word_ID:83475
+压
+No.418:start:1772, length:6,POS_ID:29,Word_ID:32696
+中国
+No.419:start:1778, length:6,POS_ID:21,Word_ID:39926
+品牌
+No.420:start:1784, length:3,POS_ID:55,Word_ID:74123
+的
+No.421:start:1787, length:6,POS_ID:74,Word_ID:82389
+惯用
+No.422:start:1793, length:6,POS_ID:21,Word_ID:61974
+伎俩
+No.423:start:1799, length:1,POS_ID:0,Word_ID:-1
+
+
+No.424:start:1800, length:3,POS_ID:0,Word_ID:-1
+　
+No.425:start:1803, length:3,POS_ID:0,Word_ID:-1
+　
+No.426:start:1806, length:7,POS_ID:52,Word_ID:-1
+2010年
+No.427:start:1813, length:4,POS_ID:52,Word_ID:-1
+2月
+No.428:start:1817, length:5,POS_ID:52,Word_ID:-1
+28日
+No.429:start:1822, length:3,POS_ID:80,Word_ID:49
+，
+No.430:start:1825, length:3,POS_ID:71,Word_ID:54704
+央
+No.431:start:1828, length:3,POS_ID:71,Word_ID:30096
+视
+No.432:start:1831, length:6,POS_ID:21,Word_ID:219
+经济
+No.433:start:1837, length:6,POS_ID:21,Word_ID:58309
+频道
+No.434:start:1843, length:3,POS_ID:84,Word_ID:19
+《
+No.435:start:1846, length:6,POS_ID:74,Word_ID:58592
+对话
+No.436:start:1852, length:3,POS_ID:83,Word_ID:20
+》
+No.437:start:1855, length:6,POS_ID:21,Word_ID:31590
+节目
+No.438:start:1861, length:6,POS_ID:52,Word_ID:64125
+昨晚
+No.439:start:1867, length:6,POS_ID:68,Word_ID:20055
+推出
+No.440:start:1873, length:6,POS_ID:52,Word_ID:9755
+虎年
+No.441:start:1879, length:3,POS_ID:18,Word_ID:56230
+首
+No.442:start:1882, length:3,POS_ID:39,Word_ID:7575
+期
+No.443:start:1885, length:6,POS_ID:21,Word_ID:31590
+节目
+No.444:start:1891, length:3,POS_ID:80,Word_ID:49
+，
+No.445:start:1894, length:6,POS_ID:32,Word_ID:48499
+百度
+No.446:start:1900, length:9,POS_ID:21,Word_ID:28389
+董事长
+No.447:start:1909, length:3,POS_ID:68,Word_ID:32113
+兼
+No.448:start:1912, length:3,POS_ID:93,Word_ID:-1
+CEO
+No.449:start:1915, length:9,POS_ID:24,Word_ID:-1
+李彦宏
+No.450:start:1924, length:6,POS_ID:34,Word_ID:38582
+作为
+No.451:start:1930, length:6,POS_ID:21,Word_ID:18226
+嘉宾
+No.452:start:1936, length:6,POS_ID:72,Word_ID:2642
+做客
+No.453:start:1942, length:6,POS_ID:21,Word_ID:31590
+节目
+No.454:start:1948, length:3,POS_ID:82,Word_ID:3
+。
+No.455:start:1951, length:9,POS_ID:24,Word_ID:-1
+李彦宏
+No.456:start:1960, length:6,POS_ID:26,Word_ID:-1
+首度
+No.457:start:1966, length:6,POS_ID:68,Word_ID:13638
+谈及
+No.458:start:1972, length:7,POS_ID:52,Word_ID:-1
+2005年
+No.459:start:1979, length:6,POS_ID:32,Word_ID:48499
+百度
+No.460:start:1985, length:6,POS_ID:72,Word_ID:54151
+上市
+No.461:start:1991, length:6,POS_ID:15,Word_ID:29971
+前夕
+No.462:start:1997, length:3,POS_ID:80,Word_ID:49
+，
+No.463:start:2000, length:6,POS_ID:24,Word_ID:-1
+谷歌
+No.464:start:2006, length:3,POS_ID:93,Word_ID:-1
+CEO
+No.465:start:2009, length:9,POS_ID:27,Word_ID:-1
+施密特
+No.466:start:2018, length:3,POS_ID:11,Word_ID:58062
+曾
+No.467:start:2021, length:6,POS_ID:3,Word_ID:44045
+秘密
+No.468:start:2027, length:6,POS_ID:68,Word_ID:61720
+造访
+No.469:start:2033, length:6,POS_ID:32,Word_ID:48499
+百度
+No.470:start:2039, length:3,POS_ID:22,Word_ID:74063
+时
+No.471:start:2042, length:6,POS_ID:3,Word_ID:44045
+秘密
+No.472:start:2048, length:6,POS_ID:72,Word_ID:40427
+谈话
+No.473:start:2054, length:3,POS_ID:55,Word_ID:74123
+的
+No.474:start:2057, length:6,POS_ID:21,Word_ID:57230
+内容
+No.475:start:2063, length:3,POS_ID:80,Word_ID:49
+，
+No.476:start:2066, length:6,POS_ID:11,Word_ID:75516
+主要
+No.477:start:2072, length:3,POS_ID:75,Word_ID:40459
+是
+No.478:start:2075, length:6,POS_ID:68,Word_ID:81606
+劝阻
+No.479:start:2081, length:6,POS_ID:32,Word_ID:48499
+百度
+No.480:start:2087, length:6,POS_ID:72,Word_ID:54151
+上市
+No.481:start:2093, length:3,POS_ID:80,Word_ID:49
+，
+No.482:start:2096, length:9,POS_ID:24,Word_ID:-1
+李彦宏
+No.483:start:2105, length:6,POS_ID:11,Word_ID:69996
+断然
+No.484:start:2111, length:6,POS_ID:68,Word_ID:64360
+拒绝
+No.485:start:2117, length:3,POS_ID:61,Word_ID:1129
+了
+No.486:start:2120, length:9,POS_ID:27,Word_ID:-1
+施密特
+No.487:start:2129, length:3,POS_ID:55,Word_ID:74123
+的
+No.488:start:2132, length:3,POS_ID:92,Word_ID:13
+“
+No.489:start:2135, length:6,POS_ID:21,Word_ID:24503
+好意
+No.490:start:2141, length:3,POS_ID:91,Word_ID:14
+”
+No.491:start:2144, length:3,POS_ID:82,Word_ID:3
+。
+No.492:start:2147, length:6,POS_ID:52,Word_ID:36436
+今天
+No.493:start:2153, length:6,POS_ID:68,Word_ID:35392
+看来
+No.494:start:2159, length:3,POS_ID:80,Word_ID:49
+，
+No.495:start:2162, length:6,POS_ID:27,Word_ID:-1
+施密
+No.496:start:2168, length:3,POS_ID:11,Word_ID:13757
+特
+No.497:start:2171, length:6,POS_ID:52,Word_ID:69656
+当日
+No.498:start:2177, length:6,POS_ID:11,Word_ID:86021
+也许
+No.499:start:2183, length:3,POS_ID:11,Word_ID:7613
+已
+No.500:start:2186, length:3,POS_ID:77,Word_ID:13185
+有Processed docs 1
