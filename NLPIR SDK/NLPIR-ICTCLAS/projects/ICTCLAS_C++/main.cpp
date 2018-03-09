@@ -73,6 +73,6 @@ int main(void)
 	NLPIR_DelUsrWord(sDelWord.c_str());
 	printf("该词已经被删除：%s", sDelWord.c_str());
 	printf("\n\n");
-
+	NLPIR_Exit();
 	getchar();
 }

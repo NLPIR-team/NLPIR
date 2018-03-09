@@ -37,7 +37,11 @@ NLPIR_API int NLPIR_Init(const char * sDataPath=0,int encode=GBK_CODE,const char
 > ```
 >
 <<<<<<< HEAD
+<<<<<<< HEAD
 > * sLicenseCode：分词系统授权码，以授权码的形式授权分词。可以设置为空，自动引用nlpir.user授权文件
+=======
+> * sLicenceCode：分词系统授权码，以授权码的形式授权分词。可以设置为空，自动引用nlpir.user授权文件
+>>>>>>> 0f7977c44f2a601dffa078c14aeadbfc4ddc2990
 =======
 > * sLicenceCode：分词系统授权码，以授权码的形式授权分词。可以设置为空，自动引用nlpir.user授权文件
 >>>>>>> 0f7977c44f2a601dffa078c14aeadbfc4ddc2990
