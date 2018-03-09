@@ -1,0 +1,8 @@
+<title>区块链游戏《Etheremon》接入VR技术 打造区块链版《Pokemon Go》</title>
+<href>http://it.sohu.com/20180306/n532106596.shtml</href>
+<publish_time>2018-03-06 15:31:00</publish_time>
+<source>VR陀螺</source>
+<file_name>区块链-VR陀螺-区块链游戏《Etheremon》接入VR技术 打造区块链版《Pokemon Go》.txt</file_name>
+<site_name>百度新闻搜索-搜狐</site_name>
+<crawler_time>2018-03-07 15:59:10</crawler_time>
+<content>原标题：区块链游戏《Etheremon》接入VR技术 打造区块链版《Pokemon Go》            想要了解更多的VR游戏资讯 一定要关注VR陀螺！ 编辑/VR陀螺 ZJ 近日，区块链游戏《Etheremon》在推特上宣布，正式加入Decentraland的VR虚拟世界中。 Etheremon是一款基于以太坊（Ethereum）网络的去中心化应用。游戏模拟出一个以太小怪兽（etheremon）的世界，玩家可以在这个世界里捕捉，交易这些小怪兽，也可以在进化之后派它们与对手战斗。这个游戏方式的描述听起来与《Pokemon GO》类似，但《Etheremon》中的战斗并没有实际画面，而是以文字流程进行。  《Etheremon》在发展的第三阶段将凭借VR技术和去中心化来优化游戏体验。基于此番规划，《Etheremon》与Decentraland达成了合作。 Decentraland是一个在以太坊区块链上运行的VR平台，玩家可以购买土地，并在土地上创建自定义物品和脚本运营，即可以进行任何活动和创造，比如逛街、创建公司、看演唱会等等。这个平台的土地拍卖活动中吸引了上千人参加，售出了70399块土地，接下来Decentraland将进入铁器时代的发展。 加入VR世界后，《Etheremon》的游戏体验将发生很大变化。该游戏的联合创始人 Jarvis Nguyen在接受外媒采访中表示，他们的游戏包含了社交功能和互动功能，并将利用VR技术进一步提升娱乐性，让《Etheremon》有机会成为区块链版本的《Pokemon Go》，而这也是他们开发游戏的初衷之一。返回搜狐，查看更多      责任编辑：</content>
