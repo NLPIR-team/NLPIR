@@ -65,19 +65,19 @@ CLUSTER_API bool CLUS_AddFile(const char *sFileName, const char* sSignature);
 
 /*-----------------------------------------------------------------------
 * 功能：打印结果
-* 参数：sXmlFileName    
-- [OUT]聚类内容输出到XML文件格式的内存中
+* 参数：sXmlFileName- [OUT]聚类内容输出到XML文件格式的内存中
+		sResultPath- [OUT]按照聚类结果输出到sResultPath指定的路径下存储；为空则不输出
 * 返回：true - 成功；false - 失败
 ------------------------------------------------------------------------*/
-CLUSTER_API bool CLUS_GetLatestResult(const char* sXmlFileName);
+CLUSTER_API bool CLUS_GetLatestResult(const char* sXmlFileName,const char *sResultPath=0);
 
 
 /*-----------------------------------------------------------------------
 * 功能：打印结果
-* 参数：sXmlFileName    - [OUT]聚类内容输出到XML文件格式的内存中
-* 返回：true - 成功；false - 失败
+* 参数：sResultPath- [OUT]按照聚类结果输出到sResultPath指定的路径下存储；为空则不输出
+* 返回：输出的XML结果字符串
 ------------------------------------------------------------------------*/
-CLUSTER_API const char* CLUS_GetLatestResultE();
+CLUSTER_API const char* CLUS_GetLatestResultE(const char *sResultPath=0);
 
 //清空历史数据
 CLUSTER_API void CLUS_CleanData();
