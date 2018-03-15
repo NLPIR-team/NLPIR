@@ -1,8 +1,0 @@
-<title>区块链百度指数同比增1000%</title>
-<href>http://it.sohu.com/20180306/n532101267.shtml</href>
-<publish_time>2018-03-06 14:26:00</publish_time>
-<source>Bianews</source>
-<file_name>区块链-Bianews-区块链百度指数同比增1000%.txt</file_name>
-<site_name>百度新闻搜索-搜狐</site_name>
-<crawler_time>2018-03-07 15:59:06</crawler_time>
-<content>原标题：区块链百度指数同比增1000%            Bianews 3月6日消息，百度指数显示，区块链搜索量已在3月5日超越比特币搜索量。2月底以来，区块链搜索量就在逐渐缩小与比特币的差距。此前，比特币百度指数长期大幅度高于区块链。  据百度指数数据显示，近三十天内，区块链移动搜索量同比增长超过1000%，整体搜索量同比增长超过956%。 返回搜狐，查看更多      责任编辑：</content>

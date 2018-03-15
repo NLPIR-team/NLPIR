@@ -1,8 +1,0 @@
-<title>Ripple与日本的银行合作开发区块链支付app</title>
-<href>http://finance.sina.com.cn/7x24/2018-03-07/doc-ifyrztfz9820173.shtml</href>
-<publish_time>2018-03-07 10:58:50</publish_time>
-<source>新浪财经</source>
-<file_name>区块链-新浪财经-Ripple与日本的银行合作开发区块链支付app.txt</file_name>
-<site_name>百度新闻搜索-新浪</site_name>
-<crawler_time>2018-03-07 15:59:07</crawler_time>
-<content>【Ripple与日本的银行合作开发区块链支付app】据彭博，区块链公司Ripple正在与61家日本银行合作开发一款支付应用程序(app)，让客户一天24小时都能立即结算转账。SBI Sumishin Net Bank、Suruga Bank和Resona Bank将在2018年下半年率先上线，随后将向其他合作银行推出。Resona结算部门负责人Yoichiro Higuchi表示，该行的目标是“为促进无现金社会发展做出贡献，同时提高客户便利性并降低社会成本”。																														责任编辑：王永生 SF153</content>

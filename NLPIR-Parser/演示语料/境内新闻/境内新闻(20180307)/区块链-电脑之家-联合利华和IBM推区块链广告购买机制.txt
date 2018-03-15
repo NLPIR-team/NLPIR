@@ -1,8 +1,0 @@
-<title>联合利华和IBM推区块链广告购买机制</title>
-<href>http://digi.ifeng.com/a/20180307/44898733_0.shtml</href>
-<publish_time>2018-03-07 14:58:49</publish_time>
-<source>电脑之家</source>
-<file_name>区块链-电脑之家-联合利华和IBM推区块链广告购买机制.txt</file_name>
-<site_name>百度新闻搜索-凤凰</site_name>
-<crawler_time>2018-03-07 15:59:34</crawler_time>
-<content>原标题：联合利华和IBM推区块链广告购买机制 根据美国科技媒体Fast Company报道，联合利华                                                                                                                                                        原标题：联合利华和IBM推区块链广告购买机制 根据美国科技媒体Fast Company报道，联合利华已经和IBM达成了区块链广告投放合作，该方案基于IBM区块链。 图片来自网络 由于传统数字广告缺乏透明度，相当部分支出因为虚假数据都打了水漂，联合利华和宝洁一直致力于提高数字广告的透明度。 据悉，该区块链广告技术解决方案由IBM iX操刀，首先开发一个针对数字媒体购买广告的基本财务对账解决方案，从而成为解决整个系统的多种问题的基础设施，采用该方案将为广告公司提供更高的透明性。</content>

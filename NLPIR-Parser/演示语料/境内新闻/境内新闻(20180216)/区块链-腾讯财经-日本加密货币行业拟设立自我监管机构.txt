@@ -1,8 +1,0 @@
-<title>日本加密货币行业拟设立自我监管机构</title>
-<href>http://finance.qq.com/a/20180216/004405.htm</href>
-<publish_time>2018-02-16 10:13:00</publish_time>
-<source>腾讯财经</source>
-<file_name>区块链-腾讯财经-日本加密货币行业拟设立自我监管机构.txt</file_name>
-<site_name>百度新闻搜索-腾讯</site_name>
-<crawler_time>2018-03-07 15:59:31</crawler_time>
-<content>【日本加密货币行业拟设立自我监管机构】知情人士称，日本两个加密货币行业组织正计划合并，以组建一个自我监管机构，更好地保护投资者，避免再次发生类似上月5.3亿美元加密货币被盗的事件。该消息人士称，日本区块链协会与日本加密货币企业协会预计最早将于4月份合并。正文已结束，您可以按alt+4进行评论</content>

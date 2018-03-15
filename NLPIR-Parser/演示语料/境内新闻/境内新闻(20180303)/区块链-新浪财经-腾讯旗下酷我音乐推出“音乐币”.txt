@@ -1,8 +1,0 @@
-<title>腾讯旗下酷我音乐推出“音乐币”</title>
-<href>http://finance.sina.com.cn/7x24/2018-03-03/doc-ifyrzinh2513429.shtml</href>
-<publish_time>2018-03-03 23:04:00</publish_time>
-<source>新浪财经</source>
-<file_name>区块链-新浪财经-腾讯旗下酷我音乐推出“音乐币”.txt</file_name>
-<site_name>百度新闻搜索-新浪</site_name>
-<crawler_time>2018-03-07 15:59:10</crawler_time>
-<content>【腾讯旗下酷我音乐推出“音乐币”】腾讯音乐娱乐旗下的酷我音乐推出“酷链钱包”，将依托于区块链技术的音乐币用于奖励用户行为，总量固定。发行方会不定时以邀约竞价方式回购音乐币，目前处于测试阶段。																														责任编辑：孟敏江</content>

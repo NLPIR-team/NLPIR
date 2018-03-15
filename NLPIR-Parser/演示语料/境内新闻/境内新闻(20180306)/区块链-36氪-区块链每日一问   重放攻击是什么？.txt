@@ -1,8 +1,0 @@
-<title>区块链每日一问 | 重放攻击是什么？</title>
-<href>http://it.sohu.com/20180306/n532107713.shtml</href>
-<publish_time>2018-03-06 15:44:00</publish_time>
-<source>36氪</source>
-<file_name>区块链-36氪-区块链每日一问   重放攻击是什么？.txt</file_name>
-<site_name>百度新闻搜索-搜狐</site_name>
-<crawler_time>2018-03-07 15:59:06</crawler_time>
-<content>原标题：区块链每日一问 | 重放攻击是什么？             区块链每日一问是36氪围绕区块链相关内容推出的日更问答新栏目，每天一个问答，助你快速了解区块链的常用术语和基本概念。今天为我们答题的是区块链媒体咨询公司Blockshine（微信公众号ID：blockshine）的丸子 Sampson。如果你对区块链有任何疑问或想法，欢迎给我们留言，我们将邀请行家为你答疑解惑。返回搜狐，查看更多      责任编辑：</content>
