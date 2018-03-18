@@ -1,62 +1,26 @@
-del /Q bin-win32\*.log
-del /Q bin-win32\*.docid
-del /Q bin-win32\*.index
-del /Q bin-win32\*.offset
-del /Q bin-win32\*.tf
-del /Q bin-win32\*.dat
-del /Q bin-win32\output\*.*
-del /Q bin-win32\output\seg\*.*
-del /Q bin-win32\output\GBK\*.*
-del /Q bin-win32\output\UTF8\*.*
-del /Q bin-win32\output\scan\*.*
-del /Q bin-win32\log.html
-del /Q bin-win32\trainrule.xml
-del /Q bin-win32\RR_Data.txt
-del /Q bin-win32\CoreDict.pdat
-del /Q bin-win32\MatchWord.txt
-del /Q bin-win32\DataFile\data.txt
-del /Q bin-win32\DataFile\data.topic.txt
-del /Q bin-win32\DataFile\RunLog.txt
-del /Q bin-win32\result.xml
-del /Q bin-win32\field.dat.pdat
+del /Q *.log
+del /Q /s output\机器学习分类结果\*.* output\专家规则分类结果\*.*  output\去重结果\*.* output\聚类结果\*.*
+rmdir /Q /s output\机器学习分类结果 output\专家规则分类结果 output\去重结果 output\聚类结果
+del /Q output\搜索结果\JZSearch*.* output\搜索结果\field*.*
+del /Q output\*.*
+del /Q /s output\seg\*.*
+rmdir /q /s seg
+del /Q  /s output\GBK\*.*
+del /Q /s output\UTF8\*.*
+del /Q /s output\scan\*.*
+rmdir /Q /s output\GBK output\UTF8 output\scan
+del output\关键词分析\Key2D.html output\关键词分析\Key3D.html  output\关键词分析\Keylist.txt  output\关键词分析\NewTermlist.txt output\关键词分析\Key_Message.xml 
+del /Q log.html
+del /Q RR_Data.txt
+del /Q MatchWord.txt
+del /Q DataFile\data.txt
+del /Q DataFile\data.topic.txt
+del /Q DataFile\RunLog.txt
 del /Q Data\*.log
 del /Q Data\*.err
 del /Q Data\Data\*.log
 del /Q Data\Data\*.err
-del /Q bin-win32\*.log
-del /Q bin-win32\*.err
-del /Q bin-win32\*.pdb
-del /Q bin-win32\*.ilk
-del /Q bin-win32\RR*.txt
-del /Q bin-win64\*.log
-del /Q bin-win64\*.docid
-del /Q bin-win64\*.index
-del /Q bin-win64\*.offset
-del /Q bin-win64\*.tf
-del /Q bin-win64\*.dat
-del /Q bin-win64\output\*.*
-del /Q bin-win64\output\seg\*.*
-del /Q bin-win64\output\GBK\*.*
-del /Q bin-win64\output\UTF8\*.*
-del /Q bin-win64\output\scan\*.*
-del /Q bin-win64\log.html
-del /Q bin-win64\trainrule.xml
-del /Q bin-win64\RR_Data.txt
-del /Q bin-win64\CoreDict.pdat
-del /Q bin-win64\MatchWord.txt
-del /Q bin-win64\DataFile\data.txt
-del /Q bin-win64\DataFile\data.topic.txt
-del /Q bin-win64\DataFile\RunLog.txt
-del /Q bin-win64\result.xml
-del /Q bin-win64\field.dat.pdat
-del /Q bin-win64\Data\*.log
-del /Q bin-win64\Data\*.err
-del /Q bin-win64\Data\Data\*.log
-del /Q bin-win64\Data\Data\*.err
-del /Q bin-win64\*.log
-del /Q bin-win64\*.err
-del /Q bin-win64\*.pdb
-del /Q bin-win64\*.ilk
-del /Q bin-win64\RR*.txt
-
-
+del /Q *.log
+del /Q *.err
+del /Q *.pdb
+del /Q *.ilk

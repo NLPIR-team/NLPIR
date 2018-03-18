@@ -12,7 +12,7 @@
 		<subrulenum>1</subrulenum>
 		<subrule id="1">
 			<operator>OR/TEXT/1</operator>
-			<value>中共媒体 中共人权 中共公安 中国工潮 资助达赖 支持达赖 纵容达赖 会见达赖 总书记 总理</value>
+			<value>习近平 一带一路 十九大 中国特色社会主义</value>
 		</subrule>	
 	</subrules>
 	<toprule>AND</toprule>
@@ -22,22 +22,6 @@
 </rule>
 
 <rule id="1">
-	<classid>民运</classid>
-	<effectvalue>1.00</effectvalue>
-	<subrules>
-		<subrulenum>1</subrulenum>
-		<subrule id="1">
-			<operator>OR/TEXT/1</operator>
-			<value>中国官场 北京当局 大陆官员</value>
-		</subrule>	
-	</subrules>
-	<toprule>AND</toprule>
-	<perfectvsmsim>0.00</perfectvsmsim>
-	<imperfectvsmsim>0.00</imperfectvsmsim>
-
-</rule>
-
-<rule id="2">
 	<classid>色情</classid>
 	<effectvalue>1.00</effectvalue>
 	<subrules>
@@ -53,7 +37,7 @@
 
 </rule>
 
-<rule id="3">
+<rule id="2">
 	<classid>涉日</classid>
 	<effectvalue>1.00</effectvalue>
 	<subrules>
@@ -69,7 +53,7 @@
 
 </rule>
 
-<rule id="4">
+<rule id="3">
 	<classid>毒品</classid>
 	<effectvalue>1.00</effectvalue>
 	<subrules>
@@ -85,7 +69,7 @@
 
 </rule>
 
-<rule id="5">
+<rule id="4">
 	<classid>赌博</classid>
 	<effectvalue>1.00</effectvalue>
 	<subrules>
@@ -93,6 +77,20 @@
 		<subrule id="1">
 			<operator>OR/TEXT/1</operator>
 			<value>葡京赌场 同花顺 扎金花 玩21点 梭哈 百家乐</value>
+		</subrule>	
+	</subrules>
+	<toprule>AND</toprule>
+	<perfectvsmsim>0.00</perfectvsmsim>
+	<imperfectvsmsim>0.00</imperfectvsmsim>
+</rule>
+<rule id="5">
+	<classid>经济</classid>
+	<effectvalue>1.00</effectvalue>
+	<subrules>
+		<subrulenum>1</subrulenum>
+		<subrule id="1">
+			<operator>OR/TEXT/1</operator>
+			<value>供给侧改革 双创 营商环境 房地产 区块链</value>
 		</subrule>	
 	</subrules>
 	<toprule>AND</toprule>
