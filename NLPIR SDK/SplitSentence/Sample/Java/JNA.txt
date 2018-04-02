@@ -1,1 +1,0 @@
-采用JNA接口，可以模仿 https://github.com/NLPIR-team/NLPIR-ICTCLAS 实现
