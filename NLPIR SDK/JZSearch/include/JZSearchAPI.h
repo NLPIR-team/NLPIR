@@ -361,12 +361,13 @@ JZSearchAPI_API int JZIndexer_DeleteInstance(JZSEARCH_HANDLE handle);
 JZSearchAPI_API JZSEARCH_HANDLE  JZSearcher_NewInstance(int sort_type=SORT_TYPE_RELEVANCE,SEARCHER_HANDLE handle=1);
 //生成实例失败，则返回为-1，否则为实例的Handle
 
-JZSearchAPI_API  const char* JZSearcher_Search(JZSEARCH_HANDLE handle,const char *query_line,int nStart,int nPageCount);
-	//query_line: 查询表达式
-	//nStart:记录起始地址
-	//nPageCount：当前页返回结果数目
-	//当前页需要返回所有的结果jason字符串
-	
+JZSearchAPI_API  const char* JZSearcher_Search(JZSEARCH_HANDLE handle,const char *query_line,int nStart,int nPageCount,const char *sResultXMLFile=0);
+//query_line: 查询表达式
+//nStart:记录起始地址
+//nPageCount：当前页返回结果数目
+//当前页需要返回所有的结果jason字符串
+//const char *sResultXMLFile	默认为0，否则，存储到结果文件中；added in 2
+
 JZSearchAPI_API int JZSearcher_DeleteInstance(JZSEARCH_HANDLE handle);
 JZSearchAPI_API int JZSearch_SetAbstractArgu(unsigned int nAbstractLength,const char *sTagStart,const char*sTagEnd,int nPrefixLeng=6);
 //Set Abstract Argument
