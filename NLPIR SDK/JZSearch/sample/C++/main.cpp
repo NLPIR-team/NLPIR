@@ -1,5 +1,5 @@
 #ifdef _WIN64
-#pragma comment(lib, "../lib/win64/JZSearchAPI.lib")
+#pragma comment(lib, "..\\..\\..\\bin\\JZSearch\\x64\\JZSearchAPI.lib")
 #else
 #pragma comment(lib, "../lib/win32/JZSearchAPI.lib")
 #endif
@@ -8,19 +8,19 @@
 #include <string>
 #include <iostream>
 #include <sstream>
-#include "JZSearchAPI.h"
+#include "../API/JZSearchAPI.h"
 #include <io.h>
 #include <direct.h>
 
 using namespace std;
 
-const string rootDir = "../";
-const string indexDir = rootDir + "Index/";
-const string indexPath = indexDir + "JZSearch";
-const string fieldDir = rootDir + "Field/";
-const string fieldPath = fieldDir + "field.dat";
-const int encoding = INDEX_ENCODING_GBK; // 目前测试使用utf-8编码还有乱码的情况，原因还在排查
-
+const string rootDir = "D:\\NLPIR\\JZSearchInstall\\dict\\";//搜索词典存放地址，改地址下面有个Data目录
+const string testFilesPath = rootDir + "../test/";//测试的文本文件所在路径
+const string indexDir = rootDir + "../indexfile/";//索引存储的地址
+const string indexPath = indexDir + "JZSearch";//索引名称
+const string fieldDir = rootDir + "../Field/";//字段存储的地址
+const string fieldPath = fieldDir + "field.dat";//字段存储的文件名
+const int encoding = INDEX_ENCODING_GBK; // 编码信息
 SEARCHER_HANDLE handle = -1;
 
 enum SearchOption
@@ -62,7 +62,7 @@ void GetFiles(string folderPath, vector<string> &files, SearchOption op)
 	_findclose(Handle);
 }
 
-vector<string> GetFiles(string folderPath, SearchOption op = TopDirectoryOnly)
+vector<string> GetFiles(string folderPath, SearchOption op = AllDirectories)
 {
 	vector<string> files;
 	GetFiles(folderPath, files, op);
@@ -96,8 +96,8 @@ void CreateField()
 	}
 
 	printf("索引初始化成功");
-	JZIndexer_FieldAdd("key", "", FIELD_TYPE_TEXT, true, true, true, true);
-	JZIndexer_FieldAdd("value", "", FIELD_TYPE_TEXT, true, true, true, true);
+	JZIndexer_FieldAdd("key", "", FIELD_TYPE_TEXT, true, true);
+	JZIndexer_FieldAdd("value", "", FIELD_TYPE_TEXT, true, true);
 
 	if (JZIndexer_FieldSave(fieldPath.c_str()))
 	{
@@ -141,15 +141,15 @@ void StartIndex()
 
 	printf("JZIndexer_Init初始化成功");
 
-	auto indexer = new(nothrow)CJZIndexer(indexPath.c_str());
-	if (indexer == nullptr)
+	JZSEARCH_HANDLE indexer = JZIndexer_NewInstance(indexPath.c_str());
+	if (indexer<0)
 	{
 		printf("JZIndexer生成实例失败");
 		return;
 	}
 	printf("JZIndexer生成实例成功");
 
-	string testFilesPath = rootDir + "test/";
+	
 
 	vector<string> files = GetFiles(testFilesPath, AllDirectories);
 	JZSearch_SetIndexSizeLimit(-1);             // 建索引前调用该方法
@@ -158,20 +158,19 @@ void StartIndex()
 	{
 		string fileName = file.substr(file.find_last_of("\\") + 1);
 		// string sContext = FileOperate.ReadFile(file);
-		indexer->MemIndexing(fileName.c_str(), "key", 0);
+		JZIndexer_MemIndexing(indexer,fileName.c_str(), "key", 0);
 		// search.JZIndexer_MemIndexing(handle, sContext, "value", 0);
-		indexer->FileIndexing(file.c_str(), "value");
+		JZIndexer_FileIndexing(indexer,file.c_str(), "value");
 
-		if (indexer->AddDoc() < 1)
+		if (JZIndexer_AddDoc(indexer) < 1)
 		{
 			printf("索引添加失败：%s\n", fileName.c_str());
 			return;
 		}
 		printf("索引添加成功：%s\n", fileName.c_str());
 	}
-
-	indexer->Save();
-	delete indexer;
+	JZIndexer_Save(indexer);
+	JZIndexer_DeleteInstance(indexer);
 	JZIndexer_Exit();
 	printf("索引建立完成\n");
 }
@@ -188,8 +187,11 @@ void StartSearch(string keyword = "")
 		}
 
 	}
-	auto searcher = new(nothrow)CJZSearcher(SORT_TYPE_RELEVANCE);
-	if (searcher == nullptr)
+
+	JZSEARCH_HANDLE  instance=JZSearcher_NewInstance(SORT_TYPE_RELEVANCE, handle);
+	//生成实例失败，则返回为-1，否则为实例的Handle；每个多线程使用一个实例
+
+	if (instance<0)
 	{
 		printf("JZSearcher生成实例失败！！！！");
 		return;
@@ -205,21 +207,33 @@ void StartSearch(string keyword = "")
 		ss << "[FIELD] * [OR] " << keyword << " [SORT] relevance";
 		query = ss.str();
 	}
-	string xml = searcher->Search(query.c_str(), 0, 10);
-	cout << xml << endl;
+	//string xml = searcher->Search(query.c_str(), 0, 10);
+	const char *pResult = JZSearcher_Search(instance, query.c_str(), 0, 10);
+	//query_line: 查询表达式
+	//nStart:记录起始地址
+	//nPageCount：当前页返回结果数目
+	//当前页需要返回所有的结果jason字符串
+	//const char *sResultXMLFile	默认为0，否则，存储到结果文件中；added in 2
+	if (pResult!=0)
+	{
+		cout << pResult << endl;
+	}
 
-	delete searcher;
+	JZSearcher_DeleteInstance(instance);//释放实例
+
+	JZSearch_Exit();//全局退出才需要使用这个
+
 }
 
 int main(void)
 {
 	while (true)
 	{
-		printf("建立字段，输入：0");
-		printf("建立索引，输入：1");
-		printf("搜索，输入：2");
-		printf("列出所有索引内容：3");
-		printf("退出，输入：其他");
+		printf("\n建立字段，输入：0\n");
+		printf("建立索引，输入：1\n");
+		printf("搜索，输入：2\n");
+		printf("列出所有索引内容：3\n");
+		printf("退出，输入：其他\n");
 		int input;
 		cin >> input;
 
@@ -247,7 +261,7 @@ int main(void)
 				break;
 
 			default:
-				break;
+				return 1;
 		}
 	}
 }
