@@ -33,6 +33,9 @@
 	#endif
 #endif
 
+#ifdef KEY_SCAN_INTERNAL
+#define KEYSCANAPI_API 
+#endif
 
 #define GBK_CODE 0//默认支持GBK编码
 #define UTF8_CODE GBK_CODE+1//UTF8编码
@@ -41,6 +44,12 @@
 #define UTF8_FANTI_CODE GBK_CODE+4//UTF8编码
 #define ENCODING_UTF8_FJ ENCODING_GBK+5//UTF8编码转换过程中自动繁简转换处理，扫描过滤功能建议使用
 #define KS_HANDLE int
+
+#define SCAN_MODE_NORMAL 0//正常扫描模式
+#define SCAN_MODE_SHAPE 1//形变扫描模式
+#define SCAN_MODE_PINYIN 2//拼音扫描模式
+#define SCAN_MODE_CHECK 3//校对扫描模式
+
 /*********************************************************************
  *
  *  Func Name  : Init
@@ -116,6 +125,7 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *				sFilename:Text filename for user dictionary 
  *				bool bOverwrite: true将覆盖系统已经有的词表；否则将采用追加的方式追加不良词表
  *				KS_HANDLE handle： handle of KeyScanner
+ *
  *  Returns    : The  number of  lexical entry imported successfully
  *               成功导入的词典条数
  *  Author     : Kevin Zhang
@@ -124,8 +134,12 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *  文本文件每行的格式为：　词条　　词类  权重 (注意，最多定义255个类别)
  *        例如： AV电影 色情 2
  *				 六合彩 涉赌 8 1
-*********************************************************************/
-KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename, bool bOverwrite = false, KS_HANDLE handle=0);
+ * 复杂过滤条件： 支持与或非处理 ;表示或关系，+表示与关系，-表示否
+ * 格式如下：{key11;key12;key13;...;key1N}+{key21;key22;key23;...;key2N}+...+{keyM1;keyM2;keyM3;...;keyMN}  -{}
+//  示例： {中国;中华;中华人民共和国;中国共产党;中共}+{伟大;光荣;正确}-{中华民国;国民党}  政治类 5
+//   表示的是： 文本内容中包含 {中国;中华;中华人民共和国;中国共产党;中共}中的一种，同时出现 {伟大;光荣;正确}中的一个，但不能出现{中华民国;国民党}的任何一个
+ *********************************************************************/
+KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename,bool bPinyinAbbrevNeeded=false, bool bOverwrite = false, KS_HANDLE handle=0);
 
 /*********************************************************************
 *
@@ -180,7 +194,7 @@ KEYSCANAPI_API const char* KS_Scan(const char*sContent, KS_HANDLE handle = 0);
 //		*<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
 //		<class name="FLG" weight=1>法*輪大法</class>好！
 *********************************************************************/
-KEYSCANAPI_API const char* KS_ScanDetail(const char*sContent, KS_HANDLE handle = 0);
+KEYSCANAPI_API const char* KS_ScanDetail(const char*sContent, int nScanMode=SCAN_MODE_NORMAL, KS_HANDLE handle = 0);
 
 /*********************************************************************
 *
@@ -216,7 +230,7 @@ KEYSCANAPI_API const char* KS_ScanFile(const char	*sFilename, KS_HANDLE handle =
 //		   *<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
 //		<class name="FLG" weight=1>法*輪大法</class>好！
 *********************************************************************/
-KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename, KS_HANDLE handle = 0);
+KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename,KS_HANDLE handle = 0);
 
 /*********************************************************************
 *
@@ -236,7 +250,7 @@ KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename, KS_HANDLE ha
 //		   *<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
 //		<class name="FLG" weight=1>法*輪大法</class>好！
 *********************************************************************/
-KEYSCANAPI_API int KS_ScanLine(const char	*sFilename, const char	*sResultFilename, KS_HANDLE handle = 0, int bEncript = false);
+KEYSCANAPI_API int KS_ScanLine(const char	*sFilename, const char	*sResultFilename, KS_HANDLE handle = 0, int bEncript = false, int nScanMode = SCAN_MODE_NORMAL);
 /*********************************************************************
 *
 *  Func Name  : KS_ScanStat
@@ -268,7 +282,7 @@ KEYSCANAPI_API int KS_ScanStat(const char *sResultFile, KS_HANDLE handle = 0);
 *              1.create 2017-1-12
 // 返回的格式如下：
 *********************************************************************/
-KEYSCANAPI_API int KS_ScanDir(const char *sInputDirPath,const char *sResultPath,int nThreadCount=10,int bEncript=false);
+KEYSCANAPI_API int KS_ScanDir(const char *sInputDirPath,const char *sResultPath,int nThreadCount=10,int bEncript=false, int scan_mode=0);
 
 
 /*********************************************************************
