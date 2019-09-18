@@ -15,7 +15,7 @@
 using namespace std;
 
 const string rootDir = "D:\\NLPIR\\JZSearchInstall\\dict\\";//搜索词典存放地址，改地址下面有个Data目录
-const string testFilesPath = rootDir + "../test/";//测试的文本文件所在路径
+const string testFilesPath = rootDir + "../test/境内新闻(20181212)/";//测试的文本文件所在路径
 const string indexDir = rootDir + "../indexfile/";//索引存储的地址
 const string indexPath = indexDir + "JZSearch";//索引名称
 const string fieldDir = rootDir + "../Field/";//字段存储的地址
@@ -96,8 +96,10 @@ void CreateField()
 	}
 
 	printf("索引初始化成功");
+	JZIndexer_FieldAdd("id", "", FIELD_TYPE_INT, true, true);
 	JZIndexer_FieldAdd("key", "", FIELD_TYPE_TEXT, true, true);
-	JZIndexer_FieldAdd("value", "", FIELD_TYPE_TEXT, true, true);
+	JZIndexer_FieldAdd("text", "", FIELD_TYPE_TEXT, true, true);
+	JZIndexer_FieldAdd("value", "", FIELD_TYPE_FLOAT, true, true);
 
 	if (JZIndexer_FieldSave(fieldPath.c_str()))
 	{
@@ -136,6 +138,7 @@ void StartIndex()
 	if (flag == 0)
 	{
 		printf("JZIndexer_Init初始化失败");
+		JZIndexer_Exit();
 		return;
 	}
 
@@ -145,6 +148,9 @@ void StartIndex()
 	if (indexer<0)
 	{
 		printf("JZIndexer生成实例失败");
+		JZIndexer_DeleteInstance(indexer);
+		JZIndexer_Exit();
+
 		return;
 	}
 	printf("JZIndexer生成实例成功");
@@ -154,13 +160,20 @@ void StartIndex()
 	vector<string> files = GetFiles(testFilesPath, AllDirectories);
 	JZSearch_SetIndexSizeLimit(-1);             // 建索引前调用该方法
 
+	int i = 0;
+	char sVal[10];
 	for (auto file : files)
 	{
 		string fileName = file.substr(file.find_last_of("\\") + 1);
 		// string sContext = FileOperate.ReadFile(file);
 		JZIndexer_MemIndexing(indexer,fileName.c_str(), "key", 0);
 		// search.JZIndexer_MemIndexing(handle, sContext, "value", 0);
-		JZIndexer_FileIndexing(indexer,file.c_str(), "value");
+		JZIndexer_FileIndexing(indexer,file.c_str(), "text");
+		sprintf(sVal, "%d", i);
+//		JZIndexer_IntIndexing(indexer,i, "id");
+		JZIndexer_MemIndexing(indexer, sVal, "id");
+		JZIndexer_FloatIndexing(indexer,i, "value");
+		i++;
 
 		if (JZIndexer_AddDoc(indexer) < 1)
 		{
@@ -207,7 +220,8 @@ void StartSearch(string keyword = "")
 		ss << "[FIELD] * [OR] " << keyword << " [SORT] relevance";
 		query = ss.str();
 	}
-	//string xml = searcher->Search(query.c_str(), 0, 10);
+	query = " [field] * [and] 区块链 [field] id [max] 6";
+	////string xml = searcher->Search(query.c_str(), 0, 10);
 	const char *pResult = JZSearcher_Search(instance, query.c_str(), 0, 10);
 	//query_line: 查询表达式
 	//nStart:记录起始地址
@@ -221,7 +235,6 @@ void StartSearch(string keyword = "")
 
 	JZSearcher_DeleteInstance(instance);//释放实例
 
-	JZSearch_Exit();//全局退出才需要使用这个
 
 }
 
@@ -251,7 +264,9 @@ int main(void)
 			{
 				printf("请输入搜索内容：");
 				string keyword;
+				//std::getline(std::cin, keyword);
 				cin >> keyword;
+				//StartSearch("[field] id [and] 3");
 				StartSearch(keyword);
 				break;
 			}
@@ -261,6 +276,8 @@ int main(void)
 				break;
 
 			default:
+
+				JZSearch_Exit();//全局退出才需要使用这个
 				return 1;
 		}
 	}
