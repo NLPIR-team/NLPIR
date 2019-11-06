@@ -41,6 +41,10 @@ int main()
 	return 0;
 }
 
+采用test提供的a.txt与b.txt输出结果应该为：
+Using Char model, Sim between file a.txt and file b.txt is 0.24
+Using Word model, Sim between file a.txt and file b.txt is 0.20
+Using Keyword model, Sim between file a.txt and file b.txt is 0.77
 
 
 联系方式
