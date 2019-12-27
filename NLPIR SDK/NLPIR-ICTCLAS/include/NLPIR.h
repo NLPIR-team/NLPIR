@@ -15,7 +15,7 @@
  *			Weibo: http://weibo.com/drkevinzhang
  *			Homepage: http://www.nlpir.org
  * Date:     2018-2-28
- *
+ *			Adding NLPIR_Tokenizer4IR in 2019/12/26
  * Notes:
  *                
  ****************************************************************************/
@@ -341,7 +341,7 @@ NLPIR_API int NLPIR_IsWord(const char *sWord);
 *  History    :
 *              1.create 2016-12-31
 *********************************************************************/
-NLPIR_API int NLPIR_IsUserWord(const char *sWord);
+NLPIR_API int NLPIR_IsUserWord(const char *sWord, bool bAnsiCode=false);
 
 /*********************************************************************
 *
@@ -414,27 +414,29 @@ NLPIR_API const char*  NLPIR_GetEngWordOrign(const char *sWord);
 *  Func Name  : NLPIR_WordFreqStat(const char *sText)
 *
 *  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
-*  Parameters : sWord:输入的文本内容
+*  Parameters : sText:输入的文本内容
+*				bStopRemove: true-去除停用词;false-不去除停用词
 *  Returns    : 返回的是词频统计结果形式如下：
 *				张华平/nr/10#博士/n/9#分词/n/8
 *  Author     : Kevin Zhang
 *  History    : 
 *              1.create 2014/12/11
 *********************************************************************/
-NLPIR_API const char*  NLPIR_WordFreqStat(const char *sText);
+NLPIR_API const char*  NLPIR_WordFreqStat(const char *sText,bool bStopRemove=true);
 /*********************************************************************
 *
 *  Func Name  : NLPIR_FileWordFreqStat(const char *sFilename)
 *
 *  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
 *  Parameters : sFilename 文本文件的全路径
+*				bStopRemove: true-去除停用词;false-不去除停用词
 *  Returns    : 返回的是词频统计结果形式如下：
 *				张华平/nr/10#博士/n/9#分词/n/8
 *  Author     : Kevin Zhang
 *  History    : 
 *              1.create 2014/12/11
 *********************************************************************/
-NLPIR_API const char*  NLPIR_FileWordFreqStat(const char *sFilename);
+NLPIR_API const char*  NLPIR_FileWordFreqStat(const char *sFilename,bool bStopRemove=true);
 
 /*********************************************************************
 *
@@ -461,10 +463,9 @@ class  __declspec(dllexport) CNLPIR {
 		//Process a file，类似于C下的NLPIR_ParagraphProcess
 		const result_t * ParagraphProcessA(const char *sParagraph,int *pResultCount,bool bUserDict=true);
 		//Process a file，类似于C下的NLPIR_ParagraphProcessA
-
+		const char *WordFreqStat(const char *sLine, bool bStopRemove = true);//词频统计，
 		void ParagraphProcessAW(int nCount,result_t * result);
 		int GetParagraphProcessAWordCount(const char *sParagraph);
-
 		bool SetAvailable(bool bAvailable=true);//当前线程释放该类，可为下一个线程使用
 		bool IsAvailable();//判断当前分词器是否被线程占用
 		unsigned int GetHandle()
@@ -519,6 +520,55 @@ NLPIR_API CNLPIR* GetActiveInstance();
 *********************************************************************/
 NLPIR_API unsigned long NLPIR_FingerPrint(const char *sLine);
 
+
+/*********************************************************************
+*
+*  Func Name  : NLPIR_Tokenizer4IR
+*
+*  Description: Tokenization a paragraph for information retrieval
+*
+*
+*  Parameters : sParagraph: The source paragraph
+*
+*  Returns    : JSON format string
+*  Author     :  Kevin Zhang
+*  History    :
+*              1.create 2019-12-25
+*输入：国务院办公厅转发商务部的结果如下：
+*[
+{
+"begin" : 0,
+"end" : 6,
+"pos" : "nt",
+"text" : "国务院办公厅"
+},
+{
+"begin" : 0,
+"end" : 3,
+"pos" : "",
+"text" : "国务院"
+},
+{
+"begin" : 3,
+"end" : 6,
+"pos" : "",
+"text" : "办公厅"
+},
+{
+"begin" : 6,
+"end" : 8,
+"pos" : "v",
+"text" : "转发"
+},
+{
+"begin" : 8,
+"end" : 11,
+"pos" : "n",
+"text" : "商务部"
+}
+]
+*********************************************************************/
+NLPIR_API const char * NLPIR_Tokenizer4IR(const char *sLine);
 
 #ifdef  NLPIR_KEY_NEW_FUNC//Include keyword and new word function
 /*********************************************************************

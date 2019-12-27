@@ -1,0 +1,16 @@
+使用方法
+    	参数格式：
+		1.单个文件提取保持原有不变，加上参数-f
+                         
+			              1                2                              3
+	     09TxtExtraxtor.exe -f "C:\Users\Administrator\Desktop\ss.doc"  "C:\Users\Administrator\Desktop"
+                          (1.-f 表示转换的是一个文件)  
+			  (2.第一个路径是要转换的文件路径)  
+			  (3.第二个路径是要保存的位置，默认当前目录)
+		
+		2.提取文件夹， 加上参数-d 要转换的文件夹和要保存的文件夹都要有，否则提取不成功
+                                       1                  2                              3
+             09TxtExtraxtor.exe  -d  "C:\Users\Administrator\Desktop"  "C:\Users\Administrator\Desktop"
+			  (1.-d 表示要转换文件夹里面的所有文件)  
+			  (2.要转换的文件夹路径) 
+			  (3.要保存的文件夹路径)
