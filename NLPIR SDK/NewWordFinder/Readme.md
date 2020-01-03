@@ -1,25 +1,26 @@
-\uFEFF\u652F\u6301\u6DF7\u5408\u7F16\u7801\u7684\u65B0\u8BCD\u53D1\u73B0\uFF1A
-\u5177\u4F53\u6B65\u9AA4\u5982\u4E0B\uFF1A 
-1\uFF09\u521D\u59CB\u5316\u7684\u7F16\u7801\u8BBE\u7F6E\u4E3A-1\uFF08\u8868\u793A\u6DF7\u5408\u7F16\u7801\uFF09
-	if(!NWF_Init(sDataPath,nCode))//\u6570\u636E\u5728\u4E0A\u4E00\u5C42\u76EE\u5F55\u4E0B\uFF0C\u9ED8\u8BA4\u4E3AGBK\u7F16\u7801\u7684\u5206\u8BCD
+新词发现支持混合编码
+1 初始化时将编码设置为-1
+if(!NWF_Init(sDataPath,nCode))
 	{
 		printf("ICTCLAS INIT FAILED!\n");
 		return ;
 	}
-2\uFF09\u4EC5\u505A\u4E00\u4E2A\u6587\u4EF6\u6216\u5185\u5B58\u7684\u65B0\u8BCD\u53D1\u73B0\uFF0C\u76F4\u63A5\u8C03\u7528 NWF_GetFileNewWords/NWF_GetNewWords\uFF1A\u6CE8\u610F\u7B2C\u4E8C\u4E2A\u53C2\u6570\u8BBE\u7F6E\u4E3Atrue\uFF0C\u8FD4\u56DEjson\u7ED3\u679C\uFF0C\u683C\u5F0F\u5982\u4E0B
+2处理单个文件或者内存调用 NWF_GetFileNewWords/NWF_GetNewWords，bool bFormatJson参数为true输出json格式，false为XML格式；
+Json格式如下：
 [
    {
       "freq" : 152,
       "pos" : "n_new",
       "weight" : 77.884208081632579,
-      "word" : "\u516C\u5141\u4EF7\u503C"
+      "word" : "公允价值"
    },
    {
       "freq" : 71,
       "pos" : "n_new",
       "weight" : 75.102183562405372,
-      "word" : "\u957F\u671F\u80A1\u6743\u6295\u8D44"
+      "word" : "长期股权投资"
    }
 ]
 	
-3)\u6279\u5904\u7406 \u4F9D\u6B21\u8C03\u7528NWF_Batch_Start\uFF0C\u5FAA\u73AF\u8C03\u7528 NWF_Batch_AddFile NWF_Batch_AddMem\uFF0C\u8C03\u7528NWF_Batch_Complete\uFF0C\u518D\u8C03\u7528NWF_Batch_GetResult\u83B7\u53D6\u7ED3\u679C\u5373\u53EF
+3)处理大量文件的时候，采用批处理模式，先调用NWF_Batch_Start；循环调用NWF_Batch_AddFile NWF_Batch_AddMem添加文件或者内存，调用NWF_Batch_Complete结束处理，调用NWF_Batch_GetResult输出结果
+
