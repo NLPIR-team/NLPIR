@@ -81,6 +81,7 @@ struct result_t{
   int weight;//word weight,read weight
  };
 
+#define UNKNOWN_CODE -1//如果是各种编码混合，设置为-1，系统自动检测，并内部转换。会多耗费时间，不推荐使用
 #define GBK_CODE 0//默认支持GBK编码
 #define UTF8_CODE GBK_CODE+1//UTF8编码
 #define BIG5_CODE GBK_CODE+2//BIG5编码
