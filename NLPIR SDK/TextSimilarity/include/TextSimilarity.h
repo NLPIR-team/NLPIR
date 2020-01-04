@@ -37,7 +37,7 @@
 #define SIM_MODEL_WORD 2//词模型，速度适中，常规适用于正常规范的长文档
 #define SIM_MODEL_KEY 3//主题词模型，速度最慢，考虑语义最多，适合于复杂文本
 
-
+#define UNKNOWN_CODE -1//如果是各种编码混合，设置为-1，系统自动检测，并内部转换。会多耗费时间，不推荐使用
 #define GBK_CODE 0//默认支持GBK编码
 #define UTF8_CODE GBK_CODE+1//UTF8编码
 #define BIG5_CODE GBK_CODE+2//BIG5编码
