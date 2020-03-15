@@ -52,9 +52,8 @@ typedef  std::string tstring;
 #endif
 #endif
 
-//bool fn_vScanFiles(std::string& sFolderName, std::vector<std::string>& vsFileName,tstring& sFilter);
 bool gfn_bReadFile(const char* lpszFilename, string& sFileText);
-bool fn_vScanFiles(const char* sFolderName, std::vector<std::string>& vsFileName,const char* sFilter);
+bool gfn_vScanFiles(const char* sFolderName, std::vector<std::string>& vsFileName, const char* sFilter);
 int main(int argc, char* argv[])
 {
 
@@ -62,18 +61,17 @@ int main(int argc, char* argv[])
 		printf("usage: SummarySystem <CorpusDir>\n");
 		return 1;
 	}
-	FILE *fp=fopen("result.txt","wb");
-	// 初始化	
-	//if(!DS_Init("../../Data/Summary/")) {
 	if(!DS_Init("D:/NLPIR",GBK_CODE)) {//UTF8
 		printf("%s\n", DS_GetLastErrMsg());
 		return 1;
 	}
 
+	FILE *fp=fopen("result.txt","wb");
+	// 初始化	
 	// 扫描
 	int nRealCount;
 	vector<string> vsFileName;
-	fn_vScanFiles(argv[1], vsFileName,"txt");
+	gfn_vScanFiles(argv[1], vsFileName, "txt");
 
 	//fn_vScanFiles(std::string& sFolderName, std::vector<std::string>& vsFileName,tstring& sFilter)
 	string sOutput = "";
@@ -91,15 +89,6 @@ int main(int argc, char* argv[])
 		gfn_bReadFile(vsFileName[i].c_str(), sContent);
 		tStart=clock();
 		const char* pResult;
-		/*
-		pResult = DS_SingleDoc(sContent.c_str(), 0, 400, 0);
-		
-		fprintf(fp,"800summary--%s\n",pResult);
-		
-		pResult = DS_SingleDoc(sContent.c_str(), 0, 50,true);
-
-		fprintf(fp,"50summary---%s\n",pResult);
-*/
 		pResult = DS_SingleDoc(sContent.c_str(), 0,50,true);
 		printf("50: %s\n", pResult);
 		pResult = DS_SingleDoc(sContent.c_str(), 0,100,true);
@@ -139,34 +128,38 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-bool fn_vScanFiles(const char* sFolderName, std::vector<std::string>& vsFileName,const char* sFilter)
+//support subtree
+bool gfn_vScanFiles(const char* sFolderName, std::vector<std::string>& vsFileName, const char* sFilter)
 {//sFilter: "*.txt"
-
-	tstring sDirFiles = sFolderName;	
+	tstring sDirFiles = sFolderName;
 	sDirFiles += "/";
 	tstring sNoSuffixDir = sDirFiles;
-	sDirFiles+="*.";
-	sDirFiles +=sFilter;
+	sDirFiles += "*.*";
 
 #ifndef OS_LINUX
 
-	int iNoFile, hFoundFile=-1;
+	intptr_t iNoFile, hFoundFile = -1;
 	struct _finddata_t stFileStat;
 
 	hFoundFile = _findfirst(sDirFiles.c_str(), &stFileStat);
-	iNoFile =  (hFoundFile == -1);
+	iNoFile = (hFoundFile == -1);
 
 	while (!iNoFile)
 	{
 		if (stFileStat.name[0] == '.')
+		{//break;
+			//iNoFile = _findnext(hFoundFile, &stFileStat);
+		}
+		else if (stFileStat.attrib & _A_SUBDIR)
+		{//	滤掉"."和".."	子目录
+			tstring newPath = sFolderName;
+			newPath += "/";
+			newPath += stFileStat.name;
+			gfn_vScanFiles(newPath.c_str(), vsFileName, sFilter);
+		}
+		else if (sFilter[0] == '*' || stricmp(stFileStat.name + strlen(stFileStat.name) - strlen(sFilter), sFilter) == 0)
 		{
-			iNoFile = _findnext(hFoundFile, &stFileStat);
-		}
-		else if(stFileStat.attrib & _A_SUBDIR)
-		{	//	滤掉"."和".."	
-		}
-		else {
-			tstring sFullFilePath =  sNoSuffixDir + stFileStat.name;
+			tstring sFullFilePath = sNoSuffixDir + stFileStat.name;
 			vsFileName.push_back(sFullFilePath);
 		}
 		iNoFile = _findnext(hFoundFile, &stFileStat);
@@ -199,21 +192,27 @@ bool fn_vScanFiles(const char* sFolderName, std::vector<std::string>& vsFileName
 				//cerr<<"Error:stat " <<sFileName<<endl;
 				continue;                        
 			}			
-			if((st.st_mode& S_IFMT) == S_IFDIR) {     //判断是不是一个目录 
-			}else {
-				tstring sFullFilePath =  sNoSuffixDir + direntp->d_name;
-				if(sFullFilePath.rfind(sFilterExt) == sFullFilePath.size()-strlen(sFilterExt))
+			if((st.st_mode& S_IFMT) == S_IFDIR)
+			{//判断是不是一个目录 
+				tstring newPath=sFolderName;
+				newPath+="/";
+				newPath+=direntp->d_name;
+				gfn_vScanFiles(newPath.c_str(),vsFileName,sFilter);
+			}
+			else
+			{
+				tstring sFullFilePath = sNoSuffixDir + direntp->d_name;
+				if (sFullFilePath.rfind(sFilterExt) == sFullFilePath.size() - strlen(sFilterExt))
 					vsFileName.push_back(sFullFilePath);
 			}
 
-		}//if
-	}//while        
+	}//if
+}//while        
 
-	if(dirp != NULL) closedir(dirp);
+	if (dirp != NULL) closedir(dirp);
 
 #endif
-	return true;	
-
+	return true;
 }
 
 bool gfn_bReadFile(const char* lpszFilename, string& sFileText) {

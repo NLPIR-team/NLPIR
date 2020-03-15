@@ -1,0 +1,1143 @@
+No:1	word=ÉîÛÚ¿µ¼Ñ	pos=n_new	freq=5	LV=1	RV=5	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1508,1526,1542,1550,1568,)
+LV(Ö¸(5),)
+RV(Í¨ĞÅ(1),¾«ÃÜ(1),ĞÅÏ¢(1),ËÜ½º(1),µç×Ó(1),)
+No:2	word=ÖØÇì¿µ¼Ñ	pos=n_new	freq=3	LV=2	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1588,1591,1598,)
+LV(ÓĞÏŞ¹«Ë¾(1),Ö¸(2),)
+RV(Ö¸(1),µç×Ó(1),Æû³µ(1),)
+No:3	word=°²»Õ¿µ¼Ñ	pos=n_new	freq=4	LV=2	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1612,1615,1622,1779,)
+LV(ÓĞÏŞ¹«Ë¾(1),Ö¸(3),)
+RV(Ö¸(1),µçÆ÷(1),µç×Ó(1),Í¬´´(1),)
+No:4	word=¶«İ¸¿µ¼Ñ	pos=n_new	freq=4	LV=2	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1640,1643,1650,1658,)
+LV(ÓĞÏŞ¹«Ë¾(1),Ö¸(3),)
+RV(Ö¸(1),Ä£¾ß(1),µç×Ó(1),°ü×°(1),)
+No:5	word=²©ÂŞ¿µ¼Ñ	pos=n_new	freq=4	LV=3	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1663,1666,1675,5680,)
+LV(ÓĞÏŞ¹«Ë¾(1),Ö¸(2),£»(1),)
+RV(Í¨¹ı(1),Ö¸(1),¾«ÃÜ(1),Ó¡ÖÆ(1),)
+No:6	word=Ïã¸Û¿µ¼Ñ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1689,1692,)
+LV(Ö¸(1),ÖĞĞÄ(1),)
+RV(ÓĞÏŞ¹«Ë¾(1),Ö¸(1),)
+No:7	word=³Ç¿µ¼Ñ	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2134,2146,2202,)
+LV(»ªÇÈ(3),)
+RV(¼¯ÍÅ(3),)
+No:8	word=¿µ¼Ñµç×Ó	pos=n_new	freq=10	LV=9	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1569,1585,1592,1616,1630,1637,1644,1788,1804,1808,)
+LV(ÉîÛÚ(1),ÉÂÎ÷(1),ÖØÇì(1),°²»Õ(1),³£Êì(1),À¥É½(1),¶«İ¸(1),Ó¡Äá(1),±±¾©(2),)
+RV(ÓĞÏŞ¹«Ë¾(8),Ö¸(1),Åä¼ş(1),)
+No:9	word=¿µ¼Ñ¼¯ÍÅ	pos=n_new	freq=23	LV=4	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(0,9,18,210,1490,1812,1887,1991,2043,2135,2147,2203,2289,2374,2826,3221,3951,4661,5331,5886,6276,6835,7240,)
+LV(1(1),(17),Ãû³Æ(1),³Ç(3),)
+RV(¹É·İ(23),)
+No:10	word=¼¯ÍÅ¹É·İ	pos=n_new	freq=23	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1,10,19,211,1491,1813,1888,1992,2044,2136,2148,2204,2290,2375,2827,3222,3952,4662,5332,5887,6277,6836,7241,)
+LV(¿µ¼Ñ(23),)
+RV(ÓĞÏŞ¹«Ë¾(23),)
+No:11	word=¹É·İÓĞÏŞ¹«Ë¾	pos=n_new	freq=23	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2,11,20,212,1492,1814,1889,1993,2045,2137,2149,2205,2291,2376,2828,3223,3953,4663,5333,5888,6278,6837,7242,)
+LV(¼¯ÍÅ(23),)
+RV(2013(19),¹«Ë¾(1),¶­ÊÂ¾Ö(3),)
+No:12	word=¿Æ¼¼ÓĞÏŞ¹«Ë¾	pos=n_new	freq=4	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1511,1572,1678,1764,)
+LV(Í¨ĞÅ(1),¾«ÃÜ(1),´ï(1),Åä¼ş(1),)
+RV(ÊÓ(1),Äµµ¤½­(1),À¥É½(1),ÄÏº£(1),)
+No:13	word=µçÆ÷ÓĞÏŞ¹«Ë¾	pos=n_new	freq=4	LV=3	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1537,1579,1624,1782,)
+LV(¿µ¼Ñ(2),±±±ùÑó(1),Í¬´´(1),)
+RV(ĞÅÏ¢(1),ÉÂÎ÷(1),³£Êì(1),Ó¡Äá(1),)
+No:14	word=ËÜ½ºÓĞÏŞ¹«Ë¾	pos=n_new	freq=5	LV=1	RV=5	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1661,1748,1830,1839,1848,)
+LV(Ä£¾ß(5),)
+RV(¿µ¼Ñ(1),²©ÂŞ(1),Îäºº(1),³üÖİ(1),Éî½»Ëù(1),)
+No:15	word=µç×ÓÓĞÏŞ¹«Ë¾	pos=n_new	freq=11	LV=4	RV=7	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1563,1586,1593,1601,1610,1617,1631,1638,1645,1789,1809,)
+LV(¿µ¼Ñ(8),´ï(1),Æû³µ(1),¼Ñ(1),)
+RV((1),Êı(1),Åä¼ş(1),ÖØÇì(3),°²»Õ(2),À¥É½(1),¶«İ¸(2),)
+No:16	word=ÓĞÏŞ¹«Ë¾ÖØÇì	pos=n_new	freq=3	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1587,1594,1602,)
+LV(µç×Ó(3),)
+RV(¿µ¼Ñ(1),µç×Ó(1),Çì(1),)
+No:17	word=ÓĞÏŞ¹«Ë¾°²»Õ	pos=n_new	freq=3	LV=2	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1611,1618,1775,)
+LV(µç×Ó(2),·¢Õ¹(1),)
+RV(¿µ¼Ñ(1),µçÆ÷(1),Í¬´´(1),)
+No:18	word=ÓĞÏŞ¹«Ë¾¶«İ¸	pos=n_new	freq=3	LV=2	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1639,1646,1654,)
+LV(µç×Ó(2),²ÄÁÏ(1),)
+RV(¿µ¼Ñ(1),°ü×°(1),Ä£ËÜ(1),)
+No:19	word=ÓĞÏŞ¹«Ë¾2013	pos=n_new	freq=19	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3,12,21,213,1493,1815,1890,1994,2292,2377,2829,3224,3954,4664,5334,5889,6279,6838,7243,)
+LV(¹É·İ(19),)
+RV(Äê¶È(19),)
+No:20	word=±£Ö¤Äê¶È	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(48,171,)
+LV(ÈËÔ±(1),£º(1),)
+RV(±¨¸æ(2),)
+No:21	word=Äê¶È±¨¸æ	pos=n_new	freq=25	LV=5	RV=8	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5,14,23,49,172,185,215,221,1495,1817,1892,1996,2182,2192,2294,2379,2831,3226,3956,4666,5336,5891,6281,6840,7245,)
+LV(2013(20),±¾(1),¹«Ë¾(1),±£Ö¤(2),µÇÔØ(1),)
+RV(È«ÎÄ(18),2014-132014Äê04ÔÂ(1),ÄÚÈİ(1),µÄ(1),ÖĞ(1),Éæ¼°(1),.(1),±¸(1),)
+No:22	word=Äê¶ÈÓĞËù	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4579,5750,)
+LV(2012(2),)
+RV(Ôö³¤(2),)
+No:23	word=Äê¶È·¢Éú	pos=n_new	freq=6	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6168,6207,6570,6647,6685,6732,)
+LV(2013(6),)
+RV(Êı(6),)
+No:24	word=±¨¸æÈ«ÎÄ	pos=n_new	freq=18	LV=1	RV=18	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6,24,216,1496,1818,1893,1997,2295,2380,2832,3227,3957,4667,5337,5892,6282,6841,7246,)
+LV(Äê¶È(18),)
+RV(1(1),2(1),10(1),3(1),7(1),9(1),11(1),4(1),5(1),6(1),8(1),15(1),12£¨(1),13(1),14(1),16(1),17·Ö(1),18(1),)
+No:25	word=¿µ¼Ñ	pos=n_new	freq=17	LV=12	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(17,209,1489,1811,1886,1990,2288,2373,2825,3220,3950,4660,5330,5885,6275,6834,7239,)
+LV(ÓĞÏŞ¹«Ë¾(1),2014-132014Äê04ÔÂ(1),£¬(1),¡£(4),Ôª(2),Çé¿ö(1),209(1),ÊÂÎñËù(1),ÊÊÓÃ(2),Òµ(1),µÀ(1),%£©(1),)
+RV(¼¯ÍÅ(17),)
+No:26	word=¹¹³É¹«Ë¾	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(195,7356,)
+LV(²»(1),¶¼(1),)
+RV(µÄ(1),¶Ô(1),)
+No:27	word=ÉÏÊĞ¹«Ë¾	pos=n_new	freq=8	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2458,2482,2601,2664,2671,2746,2753,7454,)
+LV(ÓÚ(7),ÒµÎñ(1),)
+RV(¹É¶«(7),Õ¼(1),)
+No:28	word=¹«Ë¾¹É¶«	pos=n_new	freq=7	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2459,2483,2602,2665,2672,2747,2754,)
+LV(ÉÏÊĞ(7),)
+RV(µÄ(7),)
+No:29	word=¹«Ë¾ÊµÊ©	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4240,4749,6307,)
+LV(±¾(1),Îª(2),)
+RV(ÁË(1),²úÆ·(2),)
+No:30	word=¶­ÊÂ¾Ö»áÒé	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(90,96,)
+LV(µÄ(1),±¾´Î(1),)
+RV(¡£(1),ÉóÒé(1),)
+No:31	word=¶­ÊÂ¾ÖÃØÊé´¦	pos=n_new	freq=3	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2139,2151,2207,)
+LV(ÓĞÏŞ¹«Ë¾(3),)
+RV(ËÄ(1),ÖĞ¹ú(1),µç»°(1),)
+No:32	word=¹ÜÀíÈËÔ±	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(46,976,)
+LV(¸ß¼¶(2),)
+RV(ºÍ(1),±£Ö¤(1),)
+No:33	word=½»Ò×ĞÔ	pos=n_new	freq=4	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2996,3001,3015,3020,)
+LV(¡¢(2),´¦ÖÃ(1),³ÖÓĞ(1),)
+RV(½ğÈÚ(4),)
+No:34	word=ĞÔ½ğÈÚ	pos=n_new	freq=4	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2997,3002,3016,3021,)
+LV(½»Ò×(4),)
+RV(×Ê²ú(2),¸ºÕ®(2),)
+No:35	word=ÖØ´ó±ä¶¯	pos=n_new	freq=4	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7014,7028,7165,7176,)
+LV(ÏîÄ¿(2),%£©(2),)
+RV(Çé¿ö(2),ËµÃ÷(2),)
+No:36	word=ÖØ´ó±ä»¯	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5908,7334,)
+LV(·¢Éú(2),)
+RV(»ò(1),¡õ(1),)
+No:37	word=¹ú¼Ê»á¼Æ	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2641,2711,)
+LV(°´ÕÕ(1),°´(1),)
+RV(×¼Ôò(2),)
+No:38	word=¾³Íâ»á¼Æ	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2723,2793,)
+LV(°´ÕÕ(1),°´(1),)
+RV(×¼Ôò(2),)
+No:39	word=»á¼ÆÊı¾İ	pos=n_new	freq=7	LV=5	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(553,2385,2394,2417,2634,2807,2820,)
+LV(Äê¶È(1),½Ú(1),¡¢(1),Ö÷Òª(1),ÏÂ(3),)
+RV(ºÍ(3),ÎŞ(1),¡õ(1),²îÒì(2),)
+No:40	word=»á¼Æ×¼Ôò	pos=n_new	freq=11	LV=4	RV=5	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2631,2642,2647,2687,2712,2724,2729,2769,2794,2804,2817,)
+LV(¹ú¼Ê(2),ÖĞ¹ú(4),¾³ÄÚÍâ(3),¾³Íâ(2),)
+RV(ÅûÂ¶(2),Óë(2),µ÷Õû(2),45(2),ÏÂ(3),)
+No:41	word=²ÆÎñÖ¸±ê	pos=n_new	freq=3	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(556,2388,2397,)
+LV(ºÍ(3),)
+RV(¹«Ë¾(1),ÕªÒª(2),)
+No:42	word=¶ÔÍâÍ¶×Ê	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7420,7423,)
+LV(Çé¿ö(1),1£©(1),)
+RV(Çé¿ö(2),)
+No:43	word=¹ÉÈ¨Í¶×Ê	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7126,7415,)
+LV(¶ÔÍâ(1),³¤ÆÚ(1),)
+RV(Çé¿ö(1),446(1),)
+No:44	word=Ö÷ÓªÒµÎñÊı¾İ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6972,6996,)
+LV(¹«Ë¾(1),µÄ(1),)
+RV(¡õ(1),Í³¼Æ(1),)
+No:45	word=Ïà¹ØÊı¾İ	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5863,6544,)
+LV(·ñ(1),118.67433.5%(1),)
+RV(Í¬±È(2),)
+No:46	word=¼ÛÖµ±ä¶¯	pos=n_new	freq=3	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3008,7255,7264,)
+LV(¹«ÔÊ(3),)
+RV(Ëğ(2),±¾ÆÚ(1),)
+No:47	word=Çé¿öµ¥Î»	pos=n_new	freq=5	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2658,2740,6800,7016,7167,)
+LV(¹¹³É(1),±ä¶¯(2),²îÒì(2),)
+RV(£º(5),)
+No:48	word=Ö¸ÉîÛÚ	pos=n_new	freq=8	LV=7	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1507,1525,1541,1549,1558,1567,1795,1851,)
+LV(¿Æ¼¼(2),Ä£¾ß(1),ÍøÂç(1),ÖÆÆ·(1),´ï(1),ÎïÁ÷(1),Éî½»Ëù(1),)
+RV(¿µ¼Ñ(5),Êı(2),Ö¤È¯(1),)
+No:49	word=Ö¸ÖØÇì	pos=n_new	freq=3	LV=3	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1590,1597,1606,)
+LV(¿µ¼Ñ(1),µç×Ó(1),¼Ñ(1),)
+RV(¿µ¼Ñ(2),Çì(1),)
+No:50	word=Ö¸°²»Õ	pos=n_new	freq=3	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1614,1621,1778,)
+LV(¿µ¼Ñ(1),µçÆ÷(1),Í¬´´(1),)
+RV(¿µ¼Ñ(3),)
+No:51	word=Ö¸¶«İ¸	pos=n_new	freq=3	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1642,1649,1657,)
+LV(¿µ¼Ñ(1),°ü×°(1),Ä£ËÜ(1),)
+RV(¿µ¼Ñ(3),)
+No:52	word=Ö¸²©ÂŞ	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1665,1674,)
+LV(¿µ¼Ñ(1),¾«ÃÜ(1),)
+RV(¿µ¼Ñ(2),)
+No:53	word=Í¨ĞÅ¿Æ¼¼	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1505,1510,5420,)
+LV(¿µ¼Ñ(1),ÄÚÈİ(1),£¬(1),)
+RV(ÓĞÏŞ¹«Ë¾(1),¹«Ë¾(1),Ö¸(1),)
+No:54	word=¾«ÃÜÄ£¾ß	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1523,1528,)
+LV(¿µ¼Ñ(1),ÓĞÏŞ¹«Ë¾(1),)
+RV(Ö¸(1),ÖÆÔì(1),)
+No:55	word=Ä£¾ßËÜ½º	pos=n_new	freq=7	LV=4	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1660,1747,1829,1838,1847,7466,7472,)
+LV(¿µ¼Ñ(1),Í¨´ï(1),ÌØ(1),½ÜÂ×ÌØ(4),)
+RV(ÓĞÏŞ¹«Ë¾(5),ÒµÎñ(2),)
+No:56	word=ĞÅÏ¢ÅûÂ¶	pos=n_new	freq=5	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1922,2162,2171,3153,3183,)
+LV(¡¢(1),¹«Ë¾(2),µÄ(1),Ö¸¶¨(1),)
+RV(¼°(1),Ã½Ìå(1),±¨Ö½(1),½âÊÍ(2),)
+No:57	word=ÉÏÆÚÊı	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2678,2760,)
+LV(Êı(2),)
+RV(ÆÚÄ©(2),)
+No:58	word=·¢ÉúÊı	pos=n_new	freq=6	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6169,6208,6571,6648,6686,6733,)
+LV(Äê¶È(6),)
+RV(Îª(5),15(1),)
+No:59	word=ÊıÉÏÆÚ	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2677,2759,)
+LV(±¾ÆÚ(2),)
+RV(Êı(2),)
+No:60	word=ÎÈ¶¨·¢Õ¹	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4688,5307,5848,)
+LV(µÄ(1),½¡¿µ(2),)
+RV(¡£(2),¾Ó¹¦ÖÁÎ°(1),)
+No:61	word=ÖÃµØµã	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2166,2195,)
+LV(±¸(2),)
+RV(¹«Ë¾(1),ÖĞ¹ú(1),)
+No:62	word=½è¿î5	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7194,7209,)
+LV(³¤ÆÚ(1),¶ÌÆÚ(1),)
+RV(,(2),)
+No:63	word=½ÜÂ×	pos=n_new	freq=4	LV=4	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1822,1826,1833,1842,)
+LV(À¥É½(1),À¥É½ÊĞ(1),Îäºº(1),³üÖİ(1),)
+RV(ÌØÖ¸(3),ÌØ(1),)
+No:64	word=Â×ÌØÖ¸	pos=n_new	freq=3	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(1823,1834,1843,)
+LV(½Ü(3),)
+RV(À¥É½ÊĞ(1),ÎäººÊĞ(1),³üÖİÊĞ(1),)
+No:65	word=µØÖ·ÖĞ¹ú	pos=n_new	freq=3	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2081,2094,2128,)
+LV(×¢²á(1),°ì¹«(1),ÁªÏµ(1),)
+RV(¹ã¶«Ê¡(3),)
+No:66	word=¹ÉÆ±¼ò³Æ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2008,2025,)
+LV(µÄ(1),ĞÅÏ¢(1),)
+RV(£¨(1),Éî(1),)
+No:67	word=×¢²áµÇ¼Ç	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2214,2217,)
+LV(Çé¿ö(1),ÈÕÆÚ(1),)
+RV(µØµã(1),ÈÕÆÚ(1),)
+No:68	word=°ì¹«µØÖ·	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2093,2101,2307,)
+LV(³Ç(1),518053(1),ÊÂÎñËù(1),)
+RV(µÄ(1),ÖĞ¹ú(1),±±¾©ÊĞ(1),)
+No:69	word=ÖĞ¹ú¹ã¶«Ê¡	pos=n_new	freq=5	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.01
+Inverted List(2082,2095,2129,2141,2197,)
+LV(µØÖ·(3),ÃØÊé´¦(1),µØµã(1),)
+RV(ÉîÛÚÊĞ(5),)
+No:70	word=¹ã¶«Ê¡ÉîÛÚÊĞ	pos=n_new	freq=6	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2083,2096,2130,2142,2198,2234,)
+LV(ÖĞ¹ú(5),1980Äê10ÔÂ01ÈÕ(1),)
+RV(ÄÏÉ½Çø(5),É³ºÓ(1),)
+No:71	word=ÉîÛÚÊĞÄÏÉ½Çø	pos=n_new	freq=6	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2084,2097,2131,2143,2199,2248,)
+LV(¹ã¶«Ê¡(5),2011Äê12ÔÂ29ÈÕ(1),)
+RV(»ªÇÈ(6),)
+No:72	word=»ªÇÈ³Ç	pos=n_new	freq=6	LV=1	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2086,2099,2133,2145,2201,2250,)
+LV(ÄÏÉ½Çø(6),)
+RV(Ä©##Ä©(1),¿µ¼Ñ(3),×¢²á(1),°ì¹«(1),)
+No:73	word=»á¼ÆÊ¦ÊÂÎñËù	pos=n_new	freq=4	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2286,2298,2303,2305,)
+LV(µÄ(1),ÊÂÎñËù(1),8(1),»ª(1),)
+RV((1),Ãû³Æ(1),°ì¹«(1),»á¼ÆÊ¦(1),)
+No:74	word=ÊÊÓÃ¡Ì	pos=n_new	freq=8	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2351,2369,3216,5729,5874,5896,5915,6999,)
+LV(¡õ(8),)
+RV(²»(8),)
+No:75	word=¡Ì·ñ	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2421,7338,)
+LV(ÊÇ(2),)
+RV(Îå(1),2013Äê2012Äê(1),)
+No:76	word=Ö÷ÒªÔ­Òò	pos=n_new	freq=6	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6188,6225,6589,6663,6700,6748,)
+LV(£¬(4),Æä(2),)
+RV(ÊÇ(6),)
+No:77	word=ÓªÒµÊÕÈë	pos=n_new	freq=5	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2431,4575,5746,6804,6811,)
+LV(¹«Ë¾(2),Ôª(1),%)2011Äê(1),%)(1),)
+RV(£¨(1),±È(1),ÓªÒµ(1),½Ï(2),)
+No:78	word=ÓªÒµ³É±¾	pos=n_new	freq=6	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5972,5979,6041,6048,6806,6819,)
+LV(ÊÕÈë(1),Õ¼(4),%£©(1),)
+RV(±È(1),±ÈÖØ(4),Ã«ÀûÂÊ(1),)
+No:79	word=·Ç¾­³£ĞÔ	pos=n_new	freq=7	LV=5	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2487,2837,3071,3161,3169,3191,3199,)
+LV(¡¢(1),µÄ(2),¿Û³ı(1),·ûºÏ(1),¡ª¡ª(2),)
+RV(Ëğ(7),)
+No:80	word=¾­³£ĞÔËğ	pos=n_new	freq=8	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2488,2838,3072,3162,3170,3192,3200,3206,)
+LV(Îª(1),·Ç(7),)
+RV(Òæ(8),)
+No:81	word=ËğÒæ	pos=n_new	freq=15	LV=6	RV=8	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2489,2839,2859,2891,2934,3010,3073,3077,3163,3171,3193,3201,3207,7257,7527,)
+LV(µÄ(1),±ä¶¯(2),ÆÚ(2),¾­³£ĞÔ(8),´¦ÖÃ(1),½»»»(1),)
+RV(µÄ(3),£¬(1),£¨(2),¡·(2),ÏîÄ¿(4),71(1),¶¨Òå(1),¼ÆÈë(1),)
+No:82	word=¾­ÓªÒµ¼¨	pos=n_new	freq=5	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3575,4626,5403,5708,5797,)
+LV(Óë(1),ÊµÏÖ(2),ÕûÌå(1),Êµ¼Ê(1),)
+RV(ºÍ(2),µÄ(1),´ó·ù(1),½Ï(1),)
+No:83	word=¾­ÓªÖÊÁ¿	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3572,4629,5800,)
+LV(ºÍ(2),µ¥Ôª(1),)
+RV(µÄ(2),Óë(1),)
+No:84	word=¹«Òæ»î¶¯	pos=n_new	freq=3	LV=4	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3898,3909,3922,)
+LV(¡±(1),ÉÏ(1),¶ùÍ¯(1),Ñ§(1),)
+RV(£¬(1),£»(1),Ò²(1),)
+No:85	word=´ÙÏú»î¶¯	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5131,5156,)
+LV(6£©(1),³§Çì(1),)
+RV(£¬(1),¿ªÕ¹(1),)
+No:86	word=³ï×Ê»î¶¯	pos=n_new	freq=3	LV=3	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6468,6487,6506,)
+LV(503.01-142.11%(1),203.82-56.05%(1),418.72-47.41%(1),)
+RV(ÏÖ½ğ(2),²úÉú(1),)
+No:87	word=»î¶¯²úÉú	pos=n_new	freq=4	LV=3	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2511,6402,6451,6507,)
+LV(Í¶×Ê(1),¾­Óª(2),³ï×Ê(1),)
+RV(µÄ(4),)
+No:88	word=ÏÖ½ğÁ÷Á¿	pos=n_new	freq=5	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2514,6405,6454,6510,6766,)
+LV(µÄ(5),)
+RV(Óë(1),¾»(4),)
+No:89	word=¾»¶î	pos=n_new	freq=5	LV=2	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2516,6407,6456,6512,6729,)
+LV(ÏÖ½ğ(1),Á÷Á¿(4),)
+RV(2013(1),2(1),£¨(1),-(2),)
+No:90	word=Ó°Ïì¶î	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3093,3111,)
+LV(ËùµÃË°(1),È¨Òæ(1),)
+RV(£¨(1),31(1),)
+No:91	word=½ğÈÚ×Ê²ú	pos=n_new	freq=5	LV=3	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2998,3017,3028,7280,7286,)
+LV(ĞÔ(2),Êı(1),³öÊÛ(2),)
+RV(2(1),¡¢(2),È¡µÃ(1),3.(1),)
+No:92	word=×Ê²ú¼õ	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2866,2951,)
+LV(Ìá(1),¸÷Ïî(1),)
+RV(Öµ(2),)
+No:93	word=×Ê²ú±ÈÀı	pos=n_new	freq=4	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7034,7041,7182,7189,)
+LV(×Ü(4),)
+RV(£¨(4),)
+No:94	word=·ÖÀàµ¥Î»	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5958,6027,)
+LV(ĞĞÒµ(1),²úÆ·(1),)
+RV(£º(2),)
+No:95	word=·ÖÀàÏîÄ¿	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5963,6032,)
+LV(ĞĞÒµ(1),²úÆ·(1),)
+RV(2013Äê2012Äê(2),)
+No:96	word=²É¹º½ğ¶î	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6135,6152,)
+LV(ºÏ¼Æ(2),)
+RV(£¨(1),Õ¼(1),)
+No:97	word=ÒÔÏÂÔ­Òò	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4567,5738,)
+LV(ÓÉÓÚ(2),)
+RV(£¬(2),)
+No:98	word=Ô­ÒòËµÃ÷	pos=n_new	freq=4	LV=2	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2810,5871,6552,6776,)
+LV(µÄ(3),²îÒì(1),)
+RV(±¾(1),¡õ(1),¡Ì(2),)
+No:99	word=´¦ÖÃ¹Ì¶¨×Ê²ú	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6717,6752,)
+LV(£º(1),4£©(1),)
+RV(¡¢(1),ÊÕµ½(1),)
+No:100	word=¼ÆÌá	pos=n_new	freq=3	LV=3	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2864,2947,7267,)
+LV(ÒÑ(1),±¾ÆÚ(1),¶ø(1),)
+RV(µÄ(2),×Ê²ú(1),)
+No:101	word=Ìá¹æÄ£	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4592,5763,)
+LV(¡¢(2),)
+RV(¡¢(2),)
+No:102	word=¼õÖµ	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2867,2952,7270,)
+LV(µÄ(1),×Ê²ú(2),)
+RV(±¾ÆÚ(1),×¼±¸(2),)
+No:103	word=Öµ×¼±¸	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(2868,2953,)
+LV(¼õ(2),)
+RV(µÄ(1),-(1),)
+No:104	word=ÆóÒµÎÄ»¯	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.01
+Inverted List(4362,4376,4397,)
+LV(¿µ¼Ñ(1),µÄ(1),£©(1),)
+RV(µÄ(1),»î¶¯(1),½¨Éè(1),)
+No:105	word=²ÊµçÒµÎñ	pos=n_new	freq=6	LV=4	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4585,4852,5202,5219,5756,6865,)
+LV(¹«Ë¾(2),²úÆ·(1),ÄÚÏú(1),ÍâÏú(2),)
+RV(£º(2),ÒÔ(2),15(1),½ô½ô(1),)
+No:106	word=ÊÖ»úÒµÎñ	pos=n_new	freq=5	LV=3	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3980,4645,5415,5816,6886,)
+LV(¡¢(3),ÁË(1),67%-0.34%(1),)
+RV(1(1),¡¢(2),µÄ(1),£º(1),)
+No:107	word=ÍÆ¶¯ÒµÎñ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3569,3964,)
+LV(³ÖĞø(1),µ÷Õû(1),)
+RV(µ¥Ôª(1),ÎÈ²½(1),)
+No:108	word=ÍâÏúÒµÎñ	pos=n_new	freq=4	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4642,5304,5454,5813,)
+LV(¡¢(2),¶ÔÓÚ(1),Á¦(1),)
+RV(¡¢(2),ºÍ(1),µÄ(1),)
+No:109	word=ÑĞ·¢Ö§³ö	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6251,6258,)
+LV(¡¢(1),¹«Ë¾(1),)
+RV(±¨¸æ(1),Îª(1),)
+No:110	word=³öÊÛ½ğÈÚ	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3027,7285,)
+LV(¹©(2),)
+RV(×Ê²ú(2),)
+No:111	word=½ğÈÚ¸ºÕ®	pos=n_new	freq=3	LV=2	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3003,3022,7321,)
+LV(ĞÔ(2),999.30(1),)
+RV(ºÍ(1),²úÉú(1),0.000.000.000.000.00(1),)
+No:112	word=¹«ÔÊ¼ÛÖµ	pos=n_new	freq=4	LV=4	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3007,7229,7254,7263,)
+LV(µÄ(1),ÒÔ(1),±¾ÆÚ(1),ÀÛ¼Æ(1),)
+RV(±ä¶¯(3),¼ÆÁ¿(1),)
+No:113	word=¿Í»§ºÏ¼Æ	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5927,5944,)
+LV(Ãû(2),)
+RV(ÏúÊÛ(2),)
+No:114	word=¹©Ó¦ÉÌºÏ¼Æ	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6133,6150,)
+LV(Ãû(2),)
+RV(²É¹º(2),)
+No:115	word=ºÏ¼Æ²É¹º	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6134,6151,)
+LV(¹©Ó¦ÉÌ(2),)
+RV(½ğ¶î(2),)
+No:116	word=ĞĞÒµ·ÖÀà	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5957,5962,)
+LV(Ôª(1),³É±¾(1),)
+RV(µ¥Î»(1),ÏîÄ¿(1),)
+No:117	word=½ç¾ºÕù	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5012,)
+LV(¿ç(1),)
+RV(£¬(1),)
+No:118	word=¾ºÕùÓÅÊÆ	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7359,7404,)
+LV(µÄ(1),ÕûÌå(1),)
+RV(¡£(2),)
+No:119	word=ÖÇÄÜµçÊÓ	pos=n_new	freq=6	LV=5	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3272,4613,4938,5273,5288,5784,)
+LV(½øÈë(1),ÍâÏú(1),³ÉÎª(2),ÆÁ(1),·á¸»(1),)
+RV(µÄ(3),ÁìÓò(1),ÁìÏÈ(1),ÏúÁ¿(1),)
+No:120	word=²úÆ·½á¹¹	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3285,5265,)
+LV(£¬(1),2£©(1),)
+RV(³ÊÏÖ(1),¸ÄÉÆ(1),)
+No:121	word=²úÆ·Ïß	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4079,5373,)
+LV(ÁË(2),)
+RV(£¬(2),)
+No:122	word=²úÆ··ÖÀà	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6026,6031,)
+LV(Ôª(1),737.380.37%0.01%(1),)
+RV(µ¥Î»(1),ÏîÄ¿(1),)
+No:123	word=¼ÌĞø¸ßËÙ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3294,5059,)
+LV(ÒµÎñ(1),²úÒµ(1),)
+RV(Ñİ±ä(1),Ôö³¤(1),)
+No:124	word=¼ÌĞø¼ÓÇ¿	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4722,6270,)
+LV(¹«Ë¾(2),)
+RV(ÑĞ·¢(2),)
+No:125	word=¼ÌĞø±£³Ö	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4786,5208,6344,)
+LV(£¬(2),ÒµÎñ(1),)
+RV(ĞĞÒµ(2),½¡¿µ(1),)
+No:126	word=¶¥×¡Ñ¹Á¦	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4826,5423,)
+LV(¹«Ë¾(1),ÒµÎñ(1),)
+RV(£¬(2),)
+No:127	word=Í¬±ÈÔö³¤	pos=n_new	freq=4	LV=2	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3355,5546,5555,5627,)
+LV(£¬(2),²ú(2),)
+RV(9.10%(1),28.3%(1),62.8%(1),·­·¬(1),)
+No:128	word=ÓĞËùÔö³¤	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4580,5751,)
+LV(Äê¶È(2),)
+RV(£¨(2),)
+No:129	word=È«ÃæÌáÉı	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4632,5803,)
+LV(µÄ(2),)
+RV(¡£(2),)
+No:130	word=»úÖÆ´´ĞÂ	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4682,5842,)
+LV(¼¤Àø(2),)
+RV(£¬(2),)
+No:131	word=ÕË¿î	pos=n_new	freq=3	LV=1	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3503,4194,7062,)
+LV(ÊÕ(3),)
+RV(2(1),¡¢(1),ÕË(1),)
+No:132	word=Éú²úĞ§ÂÊ	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4776,5499,6334,)
+LV(¿µ(1),²úÆ·(2),)
+RV(£¬(2),ÊµÏÖ(1),)
+No:133	word=³É±¾±ÈÖØ	pos=n_new	freq=4	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(5973,5980,6042,6049,)
+LV(ÓªÒµ(4),)
+RV(£¨(4),)
+No:134	word=Æ·ÅÆĞÎÏó	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(3716,3947,4862,)
+LV(µÄ(1),£¬(1),ÁË(1),)
+RV(ºÍ(1),£¬(1),¡£(1),)
+No:135	word=¼¯ÖĞ×ÊÔ´	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4039,5450,)
+LV(£¬(1),²¢(1),)
+RV(·¢(1),Í¶Èë(1),)
+No:136	word=×ÊÔ´Í¶Èë	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4040,4352,)
+LV(ÍøÂç(1),¼¯ÖĞ(1),)
+RV(µÄ(1),µ½(1),)
+No:137	word=ÑĞ·¢Í¶Èë	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4699,4724,6272,)
+LV(µÄ(1),¼ÓÇ¿(2),)
+RV(¡¢(1),£¬(2),)
+No:138	word=ĞÅÏ¢»¯½¨Éè	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.01
+Inverted List(4135,4146,)
+LV(¹«Ë¾(1),£©(1),)
+RV(ÍÆ½ø(1),¸ß(1),)
+No:139	word=ºËĞÄ¾ºÕùÁ¦	pos=n_new	freq=5	LV=3	RV=4	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4284,4710,4783,6341,7342,)
+LV(¡¢(1),¹«Ë¾(3),µÄ(1),)
+RV(ºÍ(1),£¬(2),·ÖÎö(1),£»(1),)
+No:140	word=¼ÓÇ¿ÑĞ·¢	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(4723,6271,)
+LV(¼ÌĞø(2),)
+RV(Í¶Èë(2),)
+No:141	word=³¤ÆÚ½è¿î	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6230,7208,7222,)
+LV(¢Ù(1),486.4832.94%0.34%(1),¹é»¹(1),)
+RV(5(1),Ëù(1),¼õÉÙ(1),)
+No:142	word=ÏÖ½ğÁ÷Èë	pos=n_new	freq=4	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6365,6422,6470,6623,)
+LV(»î¶¯(3),Òò´Ë(1),)
+RV(Ö÷Òª(1),Ğ¡(3),)
+No:143	word=ÉÏÄêÍ¬ÆÚ	pos=n_new	freq=4	LV=2	RV=2	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6814,6822,6829,7432,)
+LV(£©(1),±È(3),)
+RV(Ôö¼õ(3),Í¶×Ê¶î(1),)
+No:144	word=Í¬ÆÚÔö¼õ	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(6815,6823,6830,)
+LV(ÉÏÄê(3),)
+RV(£¨(3),)
+No:145	word=ÆÚÄ©³Ö	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=2	weight=0.00
+Inverted List(7506,7513,)
+LV(£©(1),%£©(1),)
+RV(¹É(2),)
+No:146	word=Ö¸ÉîÛÚ¿µ¼Ñ	pos=n_new	freq=5	LV=4	RV=5	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1507,1525,1541,1549,1567,)
+LV(¿Æ¼¼(2),Ä£¾ß(1),ÍøÂç(1),ÖÆÆ·(1),)
+RV(Í¨ĞÅ(1),¾«ÃÜ(1),ĞÅÏ¢(1),ËÜ½º(1),µç×Ó(1),)
+No:147	word=Ö¸°²»Õ¿µ¼Ñ	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1614,1621,1778,)
+LV(¿µ¼Ñ(1),µçÆ÷(1),Í¬´´(1),)
+RV(µçÆ÷(1),µç×Ó(1),Í¬´´(1),)
+No:148	word=Ö¸¶«İ¸¿µ¼Ñ	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1642,1649,1657,)
+LV(¿µ¼Ñ(1),°ü×°(1),Ä£ËÜ(1),)
+RV(Ä£¾ß(1),µç×Ó(1),°ü×°(1),)
+No:149	word=Ö¸²©ÂŞ¿µ¼Ñ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1665,1674,)
+LV(¿µ¼Ñ(1),¾«ÃÜ(1),)
+RV(¾«ÃÜ(1),Ó¡ÖÆ(1),)
+No:150	word=¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾	pos=n_new	freq=8	LV=8	RV=6	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1585,1592,1616,1630,1637,1644,1788,1808,)
+LV(ÉÂÎ÷(1),ÖØÇì(1),°²»Õ(1),³£Êì(1),À¥É½(1),¶«İ¸(1),Ó¡Äá(1),±±¾©(1),)
+RV((1),Êı(1),ÖØÇì(2),°²»Õ(1),À¥É½(1),¶«İ¸(2),)
+No:151	word=³Ç¿µ¼Ñ¼¯ÍÅ	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2134,2146,2202,)
+LV(»ªÇÈ(3),)
+RV(¹É·İ(3),)
+No:152	word=¿µ¼Ñ¼¯ÍÅ¹É·İ	pos=n_new	freq=23	LV=4	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(0,9,18,210,1490,1812,1887,1991,2043,2135,2147,2203,2289,2374,2826,3221,3951,4661,5331,5886,6276,6835,7240,)
+LV(1(1),(17),Ãû³Æ(1),³Ç(3),)
+RV(ÓĞÏŞ¹«Ë¾(23),)
+No:153	word=¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾	pos=n_new	freq=23	LV=1	RV=3	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1,10,19,211,1491,1813,1888,1992,2044,2136,2148,2204,2290,2375,2827,3222,3952,4662,5332,5887,6277,6836,7241,)
+LV(¿µ¼Ñ(23),)
+RV(2013(19),¹«Ë¾(1),¶­ÊÂ¾Ö(3),)
+No:154	word=¿µ¼ÑµçÆ÷ÓĞÏŞ¹«Ë¾	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1536,1623,)
+LV(ÉîÛÚÊĞ(1),°²»Õ(1),)
+RV(ĞÅÏ¢(1),³£Êì(1),)
+No:155	word=Ä£¾ßËÜ½ºÓĞÏŞ¹«Ë¾	pos=n_new	freq=5	LV=4	RV=5	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1660,1747,1829,1838,1847,)
+LV(¿µ¼Ñ(1),Í¨´ï(1),ÌØ(1),½ÜÂ×ÌØ(2),)
+RV(¿µ¼Ñ(1),²©ÂŞ(1),Îäºº(1),³üÖİ(1),Éî½»Ëù(1),)
+No:156	word=µç×ÓÓĞÏŞ¹«Ë¾ÖØÇì	pos=n_new	freq=3	LV=2	RV=3	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1586,1593,1601,)
+LV(¿µ¼Ñ(2),Æû³µ(1),)
+RV(¿µ¼Ñ(1),µç×Ó(1),Çì(1),)
+No:157	word=¹É·İÓĞÏŞ¹«Ë¾2013	pos=n_new	freq=19	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2,11,20,212,1492,1814,1889,1993,2291,2376,2828,3223,3953,4663,5333,5888,6278,6837,7242,)
+LV(¼¯ÍÅ(19),)
+RV(Äê¶È(19),)
+No:158	word=ÓĞÏŞ¹«Ë¾2013Äê¶È	pos=n_new	freq=19	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(3,12,21,213,1493,1815,1890,1994,2292,2377,2829,3224,3954,4664,5334,5889,6279,6838,7243,)
+LV(¹É·İ(19),)
+RV(±¨¸æ(19),)
+No:159	word=±£Ö¤Äê¶È±¨¸æ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(48,171,)
+LV(ÈËÔ±(1),£º(1),)
+RV(ÄÚÈİ(1),ÖĞ(1),)
+No:160	word=Äê¶È±¨¸æÈ«ÎÄ	pos=n_new	freq=18	LV=1	RV=18	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(5,23,215,1495,1817,1892,1996,2294,2379,2831,3226,3956,4666,5336,5891,6281,6840,7245,)
+LV(2013(18),)
+RV(1(1),2(1),10(1),3(1),7(1),9(1),11(1),4(1),5(1),6(1),8(1),15(1),12£¨(1),13(1),14(1),16(1),17·Ö(1),18(1),)
+No:161	word=Äê¶È·¢ÉúÊı	pos=n_new	freq=6	LV=1	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(6168,6207,6570,6647,6685,6732,)
+LV(2013(6),)
+RV(Îª(5),15(1),)
+No:162	word=ÉÏÊĞ¹«Ë¾¹É¶«	pos=n_new	freq=7	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2458,2482,2601,2664,2671,2746,2753,)
+LV(ÓÚ(7),)
+RV(µÄ(7),)
+No:163	word=½»Ò×ĞÔ½ğÈÚ	pos=n_new	freq=4	LV=3	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2996,3001,3015,3020,)
+LV(¡¢(2),´¦ÖÃ(1),³ÖÓĞ(1),)
+RV(×Ê²ú(2),¸ºÕ®(2),)
+No:164	word=ĞÔ½ğÈÚ×Ê²ú	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2997,3016,)
+LV(½»Ò×(2),)
+RV(¡¢(2),)
+No:165	word=ĞÔ½ğÈÚ¸ºÕ®	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(3002,3021,)
+LV(½»Ò×(2),)
+RV(ºÍ(1),²úÉú(1),)
+No:166	word=ÏîÄ¿ÖØ´ó±ä¶¯	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(7013,7164,)
+LV(×Ê²ú(1),¸ºÕ®(1),)
+RV(Çé¿ö(2),)
+No:167	word=ÖØ´ó±ä¶¯Çé¿ö	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(7014,7165,)
+LV(ÏîÄ¿(2),)
+RV(µ¥Î»(2),)
+No:168	word=ÖØ´ó±ä¶¯ËµÃ÷	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(7028,7176,)
+LV(%£©(2),)
+RV(½ğ¶î(2),)
+No:169	word=¹ú¼Ê»á¼Æ×¼Ôò	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2641,2711,)
+LV(°´ÕÕ(1),°´(1),)
+RV(Óë(1),µ÷Õû(1),)
+No:170	word=¾³Íâ»á¼Æ×¼Ôò	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2723,2793,)
+LV(°´ÕÕ(1),°´(1),)
+RV(Óë(1),µ÷Õû(1),)
+No:171	word=±ä¶¯Çé¿öµ¥Î»	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(7015,7166,)
+LV(ÖØ´ó(2),)
+RV(£º(2),)
+No:172	word=²îÒìÇé¿öµ¥Î»	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2657,2739,)
+LV(¾»×Ê²ú(2),)
+RV(£º(2),)
+No:173	word=¹«Ë¾ĞÅÏ¢ÅûÂ¶	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(3152,3182,)
+LV(µÄ(2),)
+RV(½âÊÍ(2),)
+No:174	word=½ÜÂ×ÌØÖ¸	pos=n_new	freq=3	LV=3	RV=3	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(1822,1833,1842,)
+LV(À¥É½(1),Îäºº(1),³üÖİ(1),)
+RV(À¥É½ÊĞ(1),ÎäººÊĞ(1),³üÖİÊĞ(1),)
+No:175	word=µØÖ·ÖĞ¹ú¹ã¶«Ê¡	pos=n_new	freq=3	LV=3	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2081,2094,2128,)
+LV(×¢²á(1),°ì¹«(1),ÁªÏµ(1),)
+RV(ÉîÛÚÊĞ(3),)
+No:176	word=ÖĞ¹ú¹ã¶«Ê¡ÉîÛÚÊĞ	pos=n_new	freq=5	LV=3	RV=1	is_stopword=0	unit_count=3	weight=0.01
+Inverted List(2082,2095,2129,2141,2197,)
+LV(µØÖ·(3),ÃØÊé´¦(1),µØµã(1),)
+RV(ÄÏÉ½Çø(5),)
+No:177	word=»ªÇÈ³Ç¿µ¼Ñ	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2133,2145,2201,)
+LV(ÄÏÉ½Çø(3),)
+RV(¼¯ÍÅ(3),)
+No:178	word=¹«Ë¾ÓªÒµÊÕÈë	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(4574,5745,)
+LV(£¬(2),)
+RV(½Ï(2),)
+No:179	word=ÓªÒµ³É±¾±ÈÖØ	pos=n_new	freq=4	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(5972,5979,6041,6048,)
+LV(Õ¼(4),)
+RV(£¨(4),)
+No:180	word=·Ç¾­³£ĞÔËğ	pos=n_new	freq=7	LV=5	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2487,2837,3071,3161,3169,3191,3199,)
+LV(¡¢(1),µÄ(2),¿Û³ı(1),·ûºÏ(1),¡ª¡ª(2),)
+RV(Òæ(7),)
+No:181	word=¾­³£ĞÔËğÒæ	pos=n_new	freq=8	LV=2	RV=4	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2488,2838,3072,3162,3170,3192,3200,3206,)
+LV(Îª(1),·Ç(7),)
+RV(µÄ(2),¡·(2),ÏîÄ¿(3),¶¨Òå(1),)
+No:182	word=ÊµÏÖ¾­ÓªÒµ¼¨	pos=n_new	freq=2	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(4625,5796,)
+LV(£¬(2),)
+RV(ºÍ(2),)
+No:183	word=¾­Óª»î¶¯²úÉú	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(2510,6401,)
+LV(447.73(1),035.18-6.14%(1),)
+RV(µÄ(2),)
+No:184	word=³öÊÛ½ğÈÚ×Ê²ú	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(3027,7285,)
+LV(¹©(2),)
+RV(2(1),È¡µÃ(1),)
+No:185	word=¹«ÔÊ¼ÛÖµ±ä¶¯	pos=n_new	freq=3	LV=3	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(3007,7254,7263,)
+LV(µÄ(1),±¾ÆÚ(1),ÀÛ¼Æ(1),)
+RV(Ëğ(2),±¾ÆÚ(1),)
+No:186	word=¹«Ë¾ºËĞÄ¾ºÕùÁ¦	pos=n_new	freq=3	LV=2	RV=2	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(4709,4782,6340,)
+LV(¶Ô(1),Ìá¸ß(2),)
+RV(ºÍ(1),£¬(2),)
+No:187	word=»î¶¯ÏÖ½ğÁ÷Èë	pos=n_new	freq=3	LV=3	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(6364,6421,6469,)
+LV(Í¶×Ê(1),¾­Óª(1),³ï×Ê(1),)
+RV(Ğ¡(3),)
+No:188	word=ÉÏÄêÍ¬ÆÚÔö¼õ	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=3	weight=0.00
+Inverted List(6814,6822,6829,)
+LV(±È(3),)
+RV(£¨(3),)
+No:189	word=¿Æ¼¼Ö¸ÉîÛÚ¿µ¼Ñ	pos=n_new	freq=2	LV=2	RV=2	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(1506,1566,)
+LV(Í¨ĞÅ(1),Åä¼ş(1),)
+RV(Í¨ĞÅ(1),µç×Ó(1),)
+No:190	word=³Ç¿µ¼Ñ¼¯ÍÅ¹É·İ	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(2134,2146,2202,)
+LV(»ªÇÈ(3),)
+RV(ÓĞÏŞ¹«Ë¾(3),)
+No:191	word=¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾	pos=n_new	freq=23	LV=4	RV=3	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(0,9,18,210,1490,1812,1887,1991,2043,2135,2147,2203,2289,2374,2826,3221,3951,4661,5331,5886,6276,6835,7240,)
+LV(1(1),(17),Ãû³Æ(1),³Ç(3),)
+RV(2013(19),¹«Ë¾(1),¶­ÊÂ¾Ö(3),)
+No:192	word=¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È	pos=n_new	freq=19	LV=1	RV=1	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(2,11,20,212,1492,1814,1889,1993,2291,2376,2828,3223,3953,4663,5333,5888,6278,6837,7242,)
+LV(¼¯ÍÅ(19),)
+RV(±¨¸æ(19),)
+No:193	word=ÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æ	pos=n_new	freq=19	LV=1	RV=2	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(3,12,21,213,1493,1815,1890,1994,2292,2377,2829,3224,3954,4664,5334,5889,6279,6838,7243,)
+LV(¹É·İ(19),)
+RV(È«ÎÄ(18),2014-132014Äê04ÔÂ(1),)
+No:194	word=½»Ò×ĞÔ½ğÈÚ×Ê²ú	pos=n_new	freq=2	LV=2	RV=1	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(2996,3015,)
+LV(´¦ÖÃ(1),³ÖÓĞ(1),)
+RV(¡¢(2),)
+No:195	word=½»Ò×ĞÔ½ğÈÚ¸ºÕ®	pos=n_new	freq=2	LV=1	RV=2	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(3001,3020,)
+LV(¡¢(2),)
+RV(ºÍ(1),²úÉú(1),)
+No:196	word=µØÖ·ÖĞ¹ú¹ã¶«Ê¡ÉîÛÚÊĞ	pos=n_new	freq=3	LV=3	RV=1	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(2081,2094,2128,)
+LV(×¢²á(1),°ì¹«(1),ÁªÏµ(1),)
+RV(ÄÏÉ½Çø(3),)
+No:197	word=·Ç¾­³£ĞÔËğÒæ	pos=n_new	freq=7	LV=5	RV=4	is_stopword=0	unit_count=4	weight=0.00
+Inverted List(2487,2837,3071,3161,3169,3191,3199,)
+LV(¡¢(1),µÄ(2),¿Û³ı(1),·ûºÏ(1),¡ª¡ª(2),)
+RV(µÄ(1),¡·(2),ÏîÄ¿(3),¶¨Òå(1),)
+No:198	word=³Ç¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾	pos=n_new	freq=3	LV=1	RV=1	is_stopword=0	unit_count=5	weight=0.00
+Inverted List(2134,2146,2202,)
+LV(»ªÇÈ(3),)
+RV(¶­ÊÂ¾Ö(3),)
+No:199	word=¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æ	pos=n_new	freq=19	LV=1	RV=2	is_stopword=0	unit_count=5	weight=0.00
+Inverted List(2,11,20,212,1492,1814,1889,1993,2291,2376,2828,3223,3953,4663,5333,5888,6278,6837,7242,)
+LV(¼¯ÍÅ(19),)
+RV(È«ÎÄ(18),2014-132014Äê04ÔÂ(1),)
+No:200	word=ÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ	pos=n_new	freq=18	LV=1	RV=18	is_stopword=0	unit_count=5	weight=0.00
+Inverted List(3,21,213,1493,1815,1890,1994,2292,2377,2829,3224,3954,4664,5334,5889,6279,6838,7243,)
+LV(¹É·İ(18),)
+RV(1(1),2(1),10(1),3(1),7(1),9(1),11(1),4(1),5(1),6(1),8(1),15(1),12£¨(1),13(1),14(1),16(1),17·Ö(1),18(1),)
+No:201	word=·Ç¾­³£ĞÔËğÒæÏîÄ¿	pos=n_new	freq=3	LV=2	RV=3	is_stopword=0	unit_count=5	weight=0.00
+Inverted List(2837,3169,3199,)
+LV(¡¢(1),µÄ(2),)
+RV(¼°(1),£¬(1),½ç¶¨(1),)
+No:202	word=¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ	pos=n_new	freq=18	LV=1	RV=18	is_stopword=0	unit_count=6	weight=0.00
+Inverted List(2,20,212,1492,1814,1889,1993,2291,2376,2828,3223,3953,4663,5333,5888,6278,6837,7242,)
+LV(¼¯ÍÅ(18),)
+RV(1(1),2(1),10(1),3(1),7(1),9(1),11(1),4(1),5(1),6(1),8(1),15(1),12£¨(1),13(1),14(1),16(1),17·Ö(1),18(1),)
+)
+ Sentence Information:
+No:1	line¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ1¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æ2014-132014Äê04ÔÂ¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ2µÚÒ»½ÚÖØÒªÌáÊ¾¡¢Ä¿Â¼ºÍÊÍÒå±¾¹«Ë¾¶­ÊÂ¾Ö¡¢¼àÊÂ»á¼°¶­ÊÂ¡¢¼àÊÂ¡¢¸ß¼¶¹ÜÀíÈËÔ±±£Ö¤Äê¶È±¨¸æÄÚÈİµÄÕæÊµ¡¢×¼È·¡¢ÍêÕû£¬²»´æÔÚĞé¼Ù¼ÇÔØ¡¢Îóµ¼ĞÔ³ÂÊö»òÖØ´óÒÅÂ©£¬²¢³Ğµ£¸ö±ğºÍÁ¬´øµÄ·¨ÂÉÔğÈÎ¡£
+weight=0.00
+wordid_list_size=0()
+No:2	lineËùÓĞ¶­ÊÂ¾ùÒÑ³öÏ¯ÁËÉóÒé±¾±¨¸æµÄ¶­ÊÂ¾Ö»áÒé¡£
+weight=0.00
+wordid_list_size=0()
+No:3	line¹«Ë¾¾­±¾´Î¶­ÊÂ¾Ö»áÒéÉóÒéÍ¨¹ıµÄÀûÈó·ÖÅäÔ¤°¸Îª£ºÒÔ2013Äê12ÔÂ31ÈÕµÄ¹«Ë¾×Ü¹É±¾Îª»ùÊı£¬ÏòÈ«Ìå¹É¶«Ã¿10¹ÉÅÉ·¢ÏÖ½ğºìÀû0.10Ôª£¨º¬Ë°£©£¬ËÍºì¹É0¹É£¨º¬Ë°£©£¬²»ÒÔ¹«»ı½ğ×ªÔö¹É±¾¡£
+weight=0.00
+wordid_list_size=0()
+No:4	line¹«Ë¾¸ºÔğÈËÎâË¹Ô¶¡¢Ö÷¹Ü»á¼Æ¹¤×÷¸ºÔğÈËÑîéÅ¼°»á¼Æ»ú¹¹¸ºÔğÈË(»á¼ÆÖ÷¹ÜÈËÔ±)ĞìÓĞÉ½ÉùÃ÷£º±£Ö¤Äê¶È±¨¸æÖĞ²ÆÎñ±¨¸æµÄÕæÊµ¡¢×¼È·¡¢ÍêÕû¡£
+weight=0.00
+wordid_list_size=0()
+No:5	line±¾Äê¶È±¨¸æÉæ¼°Î´À´¼Æ»®µÈÇ°Õ°ĞÔ³ÂÊö£¬²»¹¹³É¹«Ë¾¶ÔÍ¶×ÊÕßµÄÊµÖÊ³ĞÅµ£¬ÇëÍ¶×ÊÕß×¢ÒâÍ¶×Ê·çÏÕ¡£
+weight=0.00
+wordid_list_size=0()
+No:6	line¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ3Ä¿Â¼2013Äê¶È±¨¸æ.
+weight=0.00
+wordid_list_size=0()
+No:7	line1Ò»¡¢ÖØÒªÌáÊ¾¡¢Ä¿Â¼ºÍÊÍÒå.
+weight=0.00
+wordid_list_size=0()
+No:8	line2¶ş¡¢¹«Ë¾¼ò½é.
+weight=0.00
+wordid_list_size=0()
+No:9	line7Èı¡¢»á¼ÆÊı¾İºÍ²ÆÎñÖ¸±êÕªÒª.
+weight=0.00
+wordid_list_size=0()
+No:10	line9ËÄ¡¢¶­ÊÂ¾Ö±¨¸æ.
+weight=0.00
+wordid_list_size=0()
+No:11	line11Îå¡¢ÖØÒªÊÂÏî.
+weight=0.00
+wordid_list_size=0()
+No:12	line33Áù¡¢¹É·İ±ä¶¯¼°¹É¶«Çé¿ö.
+weight=0.00
+wordid_list_size=0()
+No:13	line46Æß¡¢¶­ÊÂ¡¢¼àÊÂ¡¢¸ß¼¶¹ÜÀíÈËÔ±ºÍÔ±¹¤Çé¿ö.
+weight=0.00
+wordid_list_size=0()
+No:14	line51°Ë¡¢¹«Ë¾ÖÎÀí.
+weight=0.00
+wordid_list_size=0()
+No:15	line58¾Å¡¢ÄÚ²¿¿ØÖÆ.
+weight=0.00
+wordid_list_size=0()
+No:16	line67Ê®¡¢²ÆÎñ±¨¸æ.
+weight=0.00
+wordid_list_size=0()
+No:17	line69Ê®Ò»¡¢±¸²éÎÄ¼şÄ¿Â¼.
+weight=0.00
+wordid_list_size=0()
+No:18	line209¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ4ÊÍÒåÊÍÒåÏîÖ¸ÊÍÒåÄÚÈİÍ¨ĞÅ¿Æ¼¼Ö¸ÉîÛÚ¿µ¼ÑÍ¨ĞÅ¿Æ¼¼ÓĞÏŞ¹«Ë¾ÊÓÑ¶¹¤³ÌÖ¸ÉîÛÚÊĞ¿µ¼ÑÊÓÑ¶ÏµÍ³¹¤³ÌÓĞÏŞ¹«Ë¾¾«ÃÜÄ£¾ßÖ¸ÉîÛÚ¿µ¼Ñ¾«ÃÜÄ£¾ßÖÆÔìÓĞÏŞ¹«Ë¾¿µ¼ÑµçÆ÷Ö¸ÉîÛÚÊĞ¿µ¼ÑµçÆ÷ÓĞÏŞ¹«Ë¾ĞÅÏ¢ÍøÂçÖ¸ÉîÛÚ¿µ¼ÑĞÅÏ¢ÍøÂçÓĞÏŞ¹«Ë¾ËÜ½ºÖÆÆ·Ö¸ÉîÛÚ¿µ¼ÑËÜ½ºÖÆÆ·ÓĞÏŞ¹«Ë¾ÊıÊ±´ïÖ¸ÉîÛÚÊıÊ±´ïµç×ÓÓĞÏŞ¹«Ë¾Åä¼ş¿Æ¼¼Ö¸ÉîÛÚ¿µ¼Ñµç×ÓÅä¼ş¿Æ¼¼ÓĞÏŞ¹«Ë¾Äµµ¤½­µçÆ÷Ö¸Äµµ¤½­±±±ùÑóµçÆ÷ÓĞÏŞ¹«Ë¾ÉÂÎ÷¿µ¼ÑÖ¸ÉÂÎ÷¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾ÖØÇì¿µ¼ÑÖ¸ÖØÇì¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾ÖØÇìµç×ÓÖ¸ÖØÇì¿µ¼ÑÆû³µµç×ÓÓĞÏŞ¹«Ë¾ÖØÇìÇì¼ÑÖ¸ÖØÇìÇì¼Ñµç×ÓÓĞÏŞ¹«Ë¾°²»Õ¿µ¼ÑÖ¸°²»Õ¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾°²»ÕµçÆ÷Ö¸°²»Õ¿µ¼ÑµçÆ÷ÓĞÏŞ¹«Ë¾³£Êì¿µ¼ÑÖ¸³£Êì¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾À¥É½¿µ¼ÑÖ¸À¥É½¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾¶«İ¸¿µ¼ÑÖ¸¶«İ¸¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾¶«İ¸°ü×°Ö¸¶«İ¸¿µ¼Ñ°ü×°²ÄÁÏÓĞÏŞ¹«Ë¾¶«İ¸Ä£ËÜÖ¸¶«İ¸¿µ¼ÑÄ£¾ßËÜ½ºÓĞÏŞ¹«Ë¾²©ÂŞ¿µ¼ÑÖ¸²©ÂŞ¿µ¼ÑÓ¡ÖÆ°åÓĞÏŞ¹«Ë¾²©¿µ¾«ÃÜÖ¸²©ÂŞ¿µ¼Ñ¾«ÃÜ¿Æ¼¼ÓĞÏŞ¹«Ë¾ÄÏº£ÑĞ¾¿ËùÖ¸¿µ¼Ñ£¨ÄÏº££©¿ª·¢ÖĞĞÄÏã¸Û¿µ¼ÑÖ¸Ïã¸Û¿µ¼ÑÓĞÏŞ¹«Ë¾¿µµçÍ¶×ÊÖ¸¿µµçÍ¶×Ê·¢Õ¹ÓĞÏŞ¹«Ë¾¿µµçÃ³Ò×Ö¸¿µµç¹ú¼ÊÃ³Ò×ÓĞÏŞ¹«Ë¾ÃÀ¹ú¿µ¼ÑÖ¸KONKAAMERICA,INC.Å·ÖŞ¿µ¼ÑÖ¸¿µ¼Ñ£¨Å·ÖŞ£©ÓĞÏŞÔğÈÎ¹«Ë¾À¥É½ÖÃµØÖ¸¿µ¼Ñ£¨À¥É½£©ÖÃµØÍ¶×ÊÓĞÏŞ¹«Ë¾ĞñÍ¨´ïÖ¸¶«İ¸ÊĞĞñÍ¨´ïÄ£¾ßËÜ½ºÓĞÏŞ¹«Ë¾¿µ¼Ñ¹âµçÖ¸ÉîÛÚÊĞ¿µ¼Ñ¹âµç¼¼ÊõÓĞÏŞ¹«Ë¾Íò¿­´ïÖ¸ÉîÛÚÊĞÍò¿­´ï¿Æ¼¼ÓĞÏŞ¹«Ë¾À¥É½¿µÊ¢Ö¸À¥É½¿µÊ¢Í¶×Ê·¢Õ¹ÓĞÏŞ¹«Ë¾°²»ÕÍ¬´´Ö¸°²»Õ¿µ¼ÑÍ¬´´µçÆ÷ÓĞÏŞ¹«Ë¾Ó¡Äá¿µ¼ÑÖ¸Ó¡Äá¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾ÊıÊ±´ïÎïÁ÷Ö¸ÉîÛÚÊıÊ±´ïÎïÁ÷·şÎñÓĞÏŞ¹«Ë¾±±¾©¿µ¼Ñµç×ÓÖ¸±±¾©¿µ¼Ñµç×ÓÓĞÏŞ¹«Ë¾¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ5À¥É½½ÜÂ×ÌØÖ¸À¥É½ÊĞ½ÜÂ×ÌØÄ£¾ßËÜ½ºÓĞÏŞ¹«Ë¾Îäºº½ÜÂ×ÌØÖ¸ÎäººÊĞ½ÜÂ×ÌØÄ£¾ßËÜ½ºÓĞÏŞ¹«Ë¾³üÖİ½ÜÂ×ÌØÖ¸³üÖİÊĞ½ÜÂ×ÌØÄ£¾ßËÜ½ºÓĞÏŞ¹«Ë¾Éî½»ËùÖ¸ÉîÛÚÖ¤È¯½»Ò×ËùÉîÛÚÖ¤¼à¾ÖÖ¸ÖĞ¹úÖ¤È¯¼à¶½¹ÜÀíÎ¯Ô±»áÉîÛÚ¼à¹Ü¾ÖÔª¡¢ÍòÔª¡¢ÒÚÔªÖ¸ÈËÃñ±ÒÔª¡¢ÈËÃñ±ÒÍòÔª¡¢ÈËÃñ±ÒÒÚÔª¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ6ÖØ´ó·çÏÕÌáÊ¾Ò»¡¢¡¶Ö¤È¯Ê±±¨¡·¡¢Ïã¸Û¡¶´ó¹«±¨¡·µÈ±¨¿¯ºÍ¾Ş³±×ÊÑ¶Íøwww.cninfo.com.cnÎª±¾¹«Ë¾Ö¸¶¨ĞÅÏ¢ÅûÂ¶Ã½Ìå£¬±¾¹«Ë¾ËùÓĞĞÅÏ¢¾ùÒÔÔÚÉÏÊöÃ½Ìå¿¯µÇµÄĞÅÏ¢Îª×¼£¬¾´ÇëÍ¶×ÊÕß×¢ÒâÍ¶×Ê·çÏÕ¡£
+weight=0.00
+wordid_list_size=0()
+No:19	line¶ş¡¢¹«Ë¾ÒÑÔÚ±¾±¨¸æÖĞÏêÏ¸ÃèÊöÁË´æÔÚµÄ·çÏÕÊÂÏî£¬¾´Çë²éÔÄµÚËÄ½Ú¶­ÊÂ¾Ö±¨¸æÖĞ¹ØÓÚ¹«Ë¾Î´À´·¢Õ¹µÄÌÖÂÛÓë·ÖÎöÖĞ¿ÉÄÜÃæ¶ÔµÄ·çÏÕÒòËØ¼°¶Ô²ß²¿·ÖµÄÄÚÈİ¡£
+weight=0.00
+wordid_list_size=0()
+No:20	line¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ7µÚ¶ş½Ú¹«Ë¾¼ò½éÒ»¡¢¹«Ë¾ĞÅÏ¢¹ÉÆ±¼ò³ÆÉî¿µ¼ÑA¡¢Éî¿µ¼ÑB¹ÉÆ±´úÂë000016¡¢200016±ä¸üºóµÄ¹ÉÆ±¼ò³Æ£¨ÈçÓĞ£©ÎŞ¹ÉÆ±ÉÏÊĞÖ¤È¯½»Ò×ËùÉîÛÚÖ¤È¯½»Ò×Ëù¹«Ë¾µÄÖĞÎÄÃû³Æ¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾¹«Ë¾µÄÖĞÎÄ¼ò³Æ¿µ¼Ñ¼¯ÍÅ¹«Ë¾µÄÍâÎÄÃû³Æ£¨ÈçÓĞ£©KONKAGROUPCO.,LTD¹«Ë¾µÄÍâÎÄÃû³ÆËõĞ´£¨ÈçÓĞ£©KONKAGROUP¹«Ë¾µÄ·¨¶¨´ú±íÈËÎâË¹Ô¶×¢²áµØÖ·ÖĞ¹ú¹ã¶«Ê¡ÉîÛÚÊĞÄÏÉ½Çø»ªÇÈ³Ç×¢²áµØÖ·µÄÓÊÕş±àÂë518053°ì¹«µØÖ·ÖĞ¹ú¹ã¶«Ê¡ÉîÛÚÊĞÄÏÉ½Çø»ªÇÈ³Ç°ì¹«µØÖ·µÄÓÊÕş±àÂë518053¹«Ë¾ÍøÖ·www.konka.comµç×ÓĞÅÏäszkonka@konka.com¶ş¡¢ÁªÏµÈËºÍÁªÏµ·½Ê½¶­ÊÂ¾ÖÃØÊéÖ¤È¯ÊÂÎñ´ú±íĞÕÃûĞ¤ÇìÎâÓÂ¾üÁªÏµµØÖ·ÖĞ¹ú¹ã¶«Ê¡ÉîÛÚÊĞÄÏÉ½Çø»ªÇÈ³Ç¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾¶­ÊÂ¾ÖÃØÊé´¦ÖĞ¹ú¹ã¶«Ê¡ÉîÛÚÊĞÄÏÉ½Çø»ªÇÈ³Ç¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾¶­ÊÂ¾ÖÃØÊé´¦µç»°0755-266088660755-26608866´«Õæ0755-266000820755-26600082µç×ÓĞÅÏäszkonka@konka.comszkonka@konka.comÈı¡¢ĞÅÏ¢ÅûÂ¶¼°±¸ÖÃµØµã¹«Ë¾Ñ¡¶¨µÄĞÅÏ¢ÅûÂ¶±¨Ö½µÄÃû³Æ¡¶Ö¤È¯Ê±±¨¡·µÈµÇÔØÄê¶È±¨¸æµÄÖĞ¹úÖ¤¼à»áÖ¸¶¨ÍøÕ¾µÄÍøÖ·www.cninfo.com.cn¹«Ë¾Äê¶È±¨¸æ±¸ÖÃµØµãÖĞ¹ú¹ã¶«Ê¡ÉîÛÚÊĞÄÏÉ½Çø»ªÇÈ³Ç¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾¶­ÊÂ¾ÖÃØÊé´¦ËÄ¡¢×¢²á±ä¸üÇé¿ö×¢²áµÇ¼ÇÈÕÆÚ×¢²áµÇ¼ÇµØµãÆóÒµ·¨ÈËÓªÒµÖ´ÕÕ×¢²áºÅË°ÎñµÇ¼ÇºÅÂë×éÖ¯»ú¹¹´úÂëÊ×´Î×¢²á1980Äê10ÔÂ01ÈÕ¹ã¶«Ê¡ÉîÛÚÊĞÉ³ºÓ¹¤ÉÌÆóÔÁÉî190806ºÅ440301618815578-±¨¸æÆÚÄ©×¢²á2011Äê12ÔÂ29ÈÕÉîÛÚÊĞÄÏÉ½Çø»ªÇÈ³Ç440301501121863440301618815578618815578¹«Ë¾ÉÏÊĞÒÔÀ´Ö÷ÓªÒµÎñµÄ±ä»¯Çé¿ö£¨ÈçÓĞ£©ÎŞ±ä¸üÀú´Î¿Ø¹É¹É¶«µÄ±ä¸üÇé¿ö£¨ÈçÓĞ£©ÎŞ±ä¸üÎå¡¢ÆäËûÓĞ¹Ø×ÊÁÏ¹«Ë¾Æ¸ÇëµÄ»á¼ÆÊ¦ÊÂÎñËù¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ8»á¼ÆÊ¦ÊÂÎñËùÃû³ÆÈğ»ª»á¼ÆÊ¦ÊÂÎñËù»á¼ÆÊ¦ÊÂÎñËù°ì¹«µØÖ·±±¾©ÊĞ¶«³ÇÇøÓÀ¶¨ÃÅÎ÷±õºÓÂ·8ºÅÔº7ºÅÂ¥ÖĞº£µØ²ú¹ã³¡Î÷Ëş5-11²ãÇ©×Ö»á¼ÆÊ¦ĞÕÃûÁõ½£»ª¡¢ÌÀÆäÃÀ¹«Ë¾Æ¸ÇëµÄ±¨¸æÆÚÄÚÂÄĞĞ³ÖĞø¶½µ¼Ö°ÔğµÄ±£¼ö»ú¹¹¡õÊÊÓÃ¡Ì²»ÊÊÓÃ¹«Ë¾Æ¸ÇëµÄ±¨¸æÆÚÄÚÂÄĞĞ³ÖĞø¶½µ¼Ö°ÔğµÄ²ÆÎñ¹ËÎÊ¡õÊÊÓÃ¡Ì²»ÊÊÓÃ¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ9µÚÈı½Ú»á¼ÆÊı¾İºÍ²ÆÎñÖ¸±êÕªÒªÒ»¡¢Ö÷Òª»á¼ÆÊı¾İºÍ²ÆÎñÖ¸±ê¹«Ë¾ÊÇ·ñÒò»á¼ÆÕş²ß±ä¸ü¼°»á¼Æ²î´í¸üÕıµÈ×·Ëİµ÷Õû»òÖØÊöÒÔÇ°Äê¶È»á¼ÆÊı¾İ¡õÊÇ¡Ì·ñ2013Äê2012Äê±¾Äê±ÈÉÏÄêÔö¼õ(%)2011ÄêÓªÒµÊÕÈë£¨Ôª£©20,006,736,878.8218,337,861,657.299.10,217,619,883.23¹éÊôÓÚÉÏÊĞ¹«Ë¾¹É¶«µÄ¾»ÀûÈó£¨Ôª£©45,163,004.1045,829,234.02-1.45$,972,838.12¹éÊôÓÚÉÏÊĞ¹«Ë¾¹É¶«µÄ¿Û³ı·Ç¾­³£ĞÔËğÒæµÄ¾»ÀûÈó£¨Ôª£©-69,014,834.39-54,088,758.02-27.60%-111,552,447.73¾­Óª»î¶¯²úÉúµÄÏÖ½ğÁ÷Á¿¾»¶î£¨Ôª£©2,283,254,200.89-359,244,914.58735.57%-1,370,486,165.70»ù±¾Ã¿¹ÉÊÕÒæ£¨Ôª/¹É£©0.03750.0381-1.57%0.0207Ï¡ÊÍÃ¿¹ÉÊÕÒæ£¨Ôª/¹É£©0.03750.0381-1.57%0.0207¼ÓÈ¨Æ½¾ù¾»×Ê²úÊÕÒæÂÊ£¨%£©1.11%1.14%-0.03%0.62 13ÄêÄ©2012ÄêÄ©±¾ÄêÄ©±ÈÉÏÄêÄ©Ôö¼õ(%)2011ÄêÄ©×Ü×Ê²ú£¨Ôª£©15,743,284,335.4916,562,917,198.06-4.95,906,453,313.31¹éÊôÓÚÉÏÊĞ¹«Ë¾¹É¶«µÄ¾»×Ê²ú£¨Ôª£©4,080,458,151.634,043,591,538.850.91%4,009,723,963.82¶ş¡¢¾³ÄÚÍâ»á¼Æ×¼ÔòÏÂ»á¼ÆÊı¾İ²îÒì1¡¢Í¬Ê±°´ÕÕ¹ú¼Ê»á¼Æ×¼ÔòÓë°´ÖĞ¹ú»á¼Æ×¼ÔòÅûÂ¶µÄ²ÆÎñ±¨¸æÖĞ¾»ÀûÈóºÍ¾»×Ê²ú²îÒìÇé¿öµ¥Î»£ºÔª¹éÊôÓÚÉÏÊĞ¹«Ë¾¹É¶«µÄ¾»ÀûÈó¹éÊôÓÚÉÏÊĞ¹«Ë¾¹É¶«µÄ¾»×Ê²ú±¾ÆÚÊıÉÏÆÚÊıÆÚÄ©ÊıÆÚ³õÊı°´ÖĞ¹ú»á¼Æ×¼Ôò45,163,004.1045,829,234.024,080,458,151.634,043,591,538.85°´¹ú¼Ê»á¼Æ×¼Ôòµ÷ÕûµÄÏîÄ¿¼°½ğ¶î2¡¢Í¬Ê±°´ÕÕ¾³Íâ»á¼Æ×¼ÔòÓë°´ÖĞ¹ú»á¼Æ×¼ÔòÅûÂ¶µÄ²ÆÎñ±¨¸æÖĞ¾»ÀûÈóºÍ¾»×Ê²ú²îÒìÇé¿öµ¥Î»£ºÔª¹éÊôÓÚÉÏÊĞ¹«Ë¾¹É¶«µÄ¾»ÀûÈó¹éÊôÓÚÉÏÊĞ¹«Ë¾¹É¶«µÄ¾»×Ê²ú±¾ÆÚÊıÉÏÆÚÊıÆÚÄ©ÊıÆÚ³õÊı°´ÖĞ¹ú»á¼Æ×¼Ôò45,163,004.1045,829,234.024,080,458,151.634,043,591,538.85°´¾³Íâ»á¼Æ×¼Ôòµ÷ÕûµÄÏîÄ¿¼°½ğ¶î3¡¢¾³ÄÚÍâ»á¼Æ×¼ÔòÏÂ»á¼ÆÊı¾İ²îÒìÔ­ÒòËµÃ÷±¾¹«Ë¾2013Äê¶È¾³ÄÚÍâ»á¼Æ×¼ÔòÏÂ»á¼ÆÊı¾İÎŞ²îÒì¡£
+weight=0.00
+wordid_list_size=0()
+No:21	line¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ10Èı¡¢·Ç¾­³£ĞÔËğÒæÏîÄ¿¼°½ğ¶îµ¥Î»£ºÔªÏîÄ¿2013Äê½ğ¶î2012Äê½ğ¶î2011Äê½ğ¶îËµÃ÷·ÇÁ÷¶¯×Ê²ú´¦ÖÃËğÒæ£¨°üÀ¨ÒÑ¼ÆÌá×Ê²ú¼õÖµ×¼±¸µÄ³åÏú²¿·Ö£©61,547,807.916,267,350.9750,838,279.57¼ÆÈëµ±ÆÚËğÒæµÄÕş¸®²¹Öú£¨ÓëÆóÒµÒµÎñÃÜÇĞÏà¹Ø£¬°´ÕÕ¹ú¼ÒÍ³Ò»±ê×¼¶¨¶î»ò¶¨Á¿ÏíÊÜµÄÕş¸®²¹Öú³ıÍâ£©84,343,548.0779,452,692.0541,725,984.17·Ç»õ±ÒĞÔ×Ê²ú½»»»ËğÒæ71,191.44Òò²»¿É¿¹Á¦ÒòËØ£¬ÈçÔâÊÜ×ÔÈ»ÔÖº¦¶ø¼ÆÌáµÄ¸÷Ïî×Ê²ú¼õÖµ×¼±¸-1,041,162.02ÆóÒµÖØ×é·ÑÓÃ£¬Èç°²ÖÃÖ°¹¤µÄÖ§³ö¡¢ÕûºÏ·ÑÓÃµÈ-20,163,356.00³ıÍ¬¹«Ë¾Õı³£¾­ÓªÒµÎñÏà¹ØµÄÓĞĞ§Ì×ÆÚ±£ÖµÒµÎñÍâ£¬³ÖÓĞ½»Ò×ĞÔ½ğÈÚ×Ê²ú¡¢½»Ò×ĞÔ½ğÈÚ¸ºÕ®²úÉúµÄ¹«ÔÊ¼ÛÖµ±ä¶¯ËğÒæ£¬ÒÔ¼°´¦ÖÃ½»Ò×ĞÔ½ğÈÚ×Ê²ú¡¢½»Ò×ĞÔ½ğÈÚ¸ºÕ®ºÍ¿É¹©³öÊÛ½ğÈÚ×Ê²úÈ¡µÃµÄÍ¶×ÊÊÕÒæ21,115.8027,226,435.8642,485,002.97³ıÉÏÊö¸÷ÏîÖ®ÍâµÄÆäËûÓªÒµÍâÊÕÈëºÍÖ§³ö8,508,013.844,696,935.9312,439,462.20ÆäËû·ûºÏ·Ç¾­³£ĞÔËğÒæ¶¨ÒåµÄËğÒæÏîÄ¿-1,369,748.7737,723,217.44¼õ£ºËùµÃË°Ó°Ïì¶î31,336,650.8211,106,708.0325,328,935.86ÉÙÊı¹É¶«È¨ÒæÓ°Ïì¶î£¨Ë°ºó£©6,495,085.526,689,906.183,194,368.64ºÏ¼Æ114,177,838.4999,917,992.04136,525,285.85--¶Ô¹«Ë¾¸ù¾İ¡¶¹«¿ª·¢ĞĞÖ¤È¯µÄ¹«Ë¾ĞÅÏ¢ÅûÂ¶½âÊÍĞÔ¹«¸æµÚ1ºÅ¡ª¡ª·Ç¾­³£ĞÔËğÒæ¡·¶¨Òå½ç¶¨µÄ·Ç¾­³£ĞÔËğÒæÏîÄ¿£¬ÒÔ¼°°Ñ¡¶¹«¿ª·¢ĞĞÖ¤È¯µÄ¹«Ë¾ĞÅÏ¢ÅûÂ¶½âÊÍĞÔ¹«¸æµÚ1ºÅ¡ª¡ª·Ç¾­³£ĞÔËğÒæ¡·ÖĞÁĞ¾ÙµÄ·Ç¾­³£ĞÔËğÒæÏîÄ¿½ç¶¨Îª¾­³£ĞÔËğÒæµÄÏîÄ¿£¬Ó¦ËµÃ÷Ô­Òò¡õÊÊÓÃ¡Ì²»ÊÊÓÃ¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ11µÚËÄ½Ú¶­ÊÂ¾Ö±¨¸æÒ»¡¢¸ÅÊö2013Äê£¬ÔÚ»¥ÁªÍøµÄ¸ßËÙ³å»÷ÏÂ£¬¹«Ë¾Ëù´ÓÊÂµÄÖ÷ÒªĞĞÒµ¶¼ÃæÁÙ×ÅĞÂµÄÌôÕ½£¬²ÊµçÒµ»¥ÁªÍøÆóÒµ·×·×¡°¿ç½ç¡±¾ºÕù£¬¾ºÏà½øÈëÖÇÄÜµçÊÓÁìÓò£»
+weight=0.00
+wordid_list_size=0()
+No:22	line±ùÏä²úÒµÊĞ³¡ÈİÁ¿ÎÈÖĞÂÔ½µ£¬²úÆ·½á¹¹³ÊÏÖĞÂµÄÇ÷ÊÆ£»
+weight=0.00
+wordid_list_size=0()
+No:23	lineÊÖ»ú²úÒµ¼ÌĞø¸ßËÙÑİ±ä£¬²úÆ·¸üĞÂËÙ¶È¼Ó¿ì¡£
+weight=0.00
+wordid_list_size=0()
+No:24	lineÔÚÈç´Ë¸´ÔÓµÄ¾ºÕùĞÎÊÆÏÂ£¬±¾¹«Ë¾ÒÔ¼ÛÖµ¾­Óª²ßÂÔÎªÍ³Áì£¬È«ÌåÔ±¹¤¹²Í¬Å¬Á¦£¬¾­ÊÜ×¡¸÷ÖÖ¿¼ÑéºÍÑ¹Á¦£¬Ô²ÂúÍê³ÉÁËÄê¶È¸÷Ïî¾­ÓªÖ¸±ê£¬ÊµÏÖÁËÆóÒµµÄ³ÖĞø½¡¿µ·¢Õ¹¡£
+weight=0.00
+wordid_list_size=0()
+No:25	lineÈ«ÄêÊµÏÖÏúÊÛÊÕÈë200.07ÒÚÔª£¬Í¬±ÈÔö³¤9.10%£¬´´ÔìÁË¿µ¼ÑÏúÊÛÒµ¼¨µÄÀúÊ·ĞÂ¼ÍÂ¼¡£
+weight=0.00
+wordid_list_size=0()
+No:26	lineÊµÏÖ¹éÊôÓÚÄ¸¹«Ë¾ËùÓĞÕßµÄ¾»ÀûÈó4,516.30ÍòÔª¡£
+weight=0.00
+wordid_list_size=0()
+No:27	line2013Äê£¬¹«Ë¾ÔÚ¾­Óª¹ÜÀíÉÏ¿ªÕ¹ÁËÒÔÏÂµÄÖ÷Òª¹¤×÷£º£¨Ò»£©ÒµÎñÔËÓªµÄ¾«Ï¸»¯¹ÜÀíÉÏÌ¨½×2013Äê£¬±¾¹«Ë¾ÔÚÍÆĞĞ¹ÜÀíÌáÉıµÄÍ¬Ê±£¬ÖØµãÇ¿»¯ÁË¶ÔÒµÎñµ¥Ôª¾­ÓªÇé¿öµÄ¸ú×Ù¡¢¼à¿Ø¡¢·ÖÎöºÍ¸Ä½ø¡£
+weight=0.00
+wordid_list_size=0()
+No:28	lineÍ¨¹ıÔÂ¶È¾­Óª·ÖÎö»á¡¢×¨ÏîÑĞÌÖ»áµÈ»áÒé»úÖÆ£¬ÊµÏÖÁË¶Ô¸÷ÏîÒµÎñ¾­ÓªÇé¿öµÄÓĞĞ§¹ÜÀí£¬¶øÇÒÔ¤ÏÈÑĞ¾¿¡¢ÌáÇ°×¼±¸£¬±£ÕÏÁË¸÷¸öÒµÎñ°´¼Æ»®¡¢ÓĞĞò¡¢ÓĞ½Ú×àµØÁ¼ĞÔÔË×ª£»
+weight=0.00
+wordid_list_size=0()
+No:29	lineÍ¨¹ı¶ÔKPI¿¼ºËÌåÏµµÄÍêÉÆºÍÓÅ»¯£¬ÔÚ¹Ø×¢ÒµÎñµ¥ÔªÊÕÈëºÍ¾»ÀûÈóµÄÍ¬Ê±£¬Ò²¹Ø×¢Ó¦ÊÕÕË¿î¡¢¿â´æÖÜ×ª¡¢ÖØµãÇøÓòÌáÉıµÈÓªÔËĞ§ÂÊÖ¸±ê£¬°ÑKPIÖ¸±ê´ÓÕ½ÂÔµÄ¸ß¶ÈÓĞĞ§ÂäÊµµ½Ã¿ÔÂµÄ¾ßÌå¾­ÓªÖĞ£¬È«·½Î»¡¢¶à½Ç¶ÈµØÍÆ½ø¸÷ÏîÒµÎñµÄ·¢Õ¹£»
+weight=0.00
+wordid_list_size=0()
+No:30	lineÍ¨¹ı³ÖĞøµÄ¶Ô±ê¹ÜÀí£¬ÓÃĞĞÒµ±ê¸ËÆóÒµ×öµÃºÃµÄÔËÓªÄ£Ê½¼°Òµ¼¨Ö¸±ê×÷ÌáÉı²ÎÕÕ£¬³ÖĞøÍÆ¶¯ÒµÎñµ¥Ôª¾­ÓªÖÊÁ¿Óë¾­ÓªÒµ¼¨µÄ²»¶Ï¸ÄÉÆ¡£
+weight=0.00
+wordid_list_size=0()
+No:31	lineÕâÒ»ÏµÁĞ¾«Ï¸»¯¹ÜÀí´ëÊ©µÄÍÆ½ø£¬Ê¹µÃ±¾¹«Ë¾µÄÒµÎñ¼à¿Ø¸üÓĞÕë¶ÔĞÔºÍÊµĞ§ĞÔ£¬¹Ü¿Ø»úÖÆÒ²¸ü¼ÓÍêÉÆ£¬¸üÓĞÀûÓÚÍÆ¶¯¸÷ÏîÒµÎñµÄ½¡¿µ³É³¤¡£
+weight=0.00
+wordid_list_size=0()
+No:32	line£¨¶ş£©²ÆÎñ¹ÜÀíµÄ´´ĞÂĞÔÌ½Ë÷³ö³ÉĞ§2013Äê£¬¹ú¼Ê½ğÈÚÊĞ³¡²»ÎÈ¶¨£¬¾³ÄÚÈÚ×ÊÄÑ¶È²»¶ÏÌá¸ß£¬ĞÎÊÆÑÏ¾ş¡£
+weight=0.00
+wordid_list_size=0()
+No:33	lineµ«±¾¹«Ë¾Ê¼ÖÕ¼á³Ö¡°±£¹©¸ø¡¢½µ³É±¾¡¢¿Ø·çÏÕ¡±ÈıÕß¼æ¹ËµÄÔ­Ôò£¬×¼È·°ÑÎÕ×Ê½ğ¼°Íâ»ãÊĞ³¡×ßÊÆ£¬»ı¼«ÍØ¿íÈÚ×ÊÇşµÀ£¬ÓÅ»¯²ÆÎñ¼à¹Ü£¬´óµ¨´´ĞÂÈÚ×Ê¹¤¾ß£¬È«ÄêÈÚ×Ê³É±¾Í¬±È´ó·ùÏÂ½µ¡£
+weight=0.00
+wordid_list_size=0()
+No:34	line£¨Èı£©Æ·ÅÆ´«²¥µÄÄêÇá»¯ËÜÔìÓĞÍ»ÆÆ2013Äê£¬±¾¹«Ë¾ÖÂÁ¦ÓÚ´òÔìÄêÇá»¯µÄÆ·ÅÆĞÎÏó£¬²ß»®ÊµÊ©ÁËÒ»ÏµÁĞ»ùÓÚĞÂÃ½ÌåÆ½Ì¨µÄÆ·ÅÆÓªÏúÊÂ¼ş£º4ÔÂ·İ£¬±¾¹«Ë¾²ÎÓëÔŞÖúÁËµÚ17½ìÈ«Çò»ªÓï°ñÖĞ°ñ°ä½±µäÀñ£¬Í¨¹ıÆ·ÅÆµÄÖ²Èë£¬ÈÃ¸ü¶àµÄÄêÇáÏû·ÑÕßÖ±½Ó¡¢È«ÃæµØÁË½âÁË¿µ¼ÑÆ·ÅÆ£¬½øÒ»²½ÌáÉıÁË¿µ¼ÑÆ·ÅÆÔÚÄêÇáÈËÈºÖĞµÄÖªÃû¶È¼°Ó°ÏìÁ¦£»
+weight=0.00
+wordid_list_size=0()
+No:35	line8ÔÂºÍ9ÔÂ£¬±¾¹«Ë¾´ó¹æÄ£Ğû´«KKTVµÄÉÏÊĞ£¬Í¨¹ıÊÂ¼şÓªÏú£¬Ñ¸ËÙÀ©´óÁË¿µ¼ÑÔÚ»¥ÁªÍøÉÏµÄÓ°ÏìÁ¦£»
+weight=0.00
+wordid_list_size=0()
+No:36	line10ÔÂ·İ£¬±¾¹«Ë¾ÁªºÏÖĞ¹úÇàÉÙÄê·¢Õ¹»ù½ğ»á£¬Æô¶¯ÁË¡°ĞÄÖ®ÂÃ-¿µ¿µ¼Ñ¼ÑËÍÄã»Ø¼Ò¡±´óĞÍ¹«ÒæÓªÏú»î¶¯£¬Í¨¹ıÔÚÏß»¥¶¯µÄ·½Ê½£¬¾è³ö300Íò¹«ÀïµÄ»Ø¼ÒÀï³Ì£¬°ïÖú¼¸Ç§ÈËÍê³É»Ø¼ÒÍÅ¾ÛµÄ°®ĞÄÖ®ÂÃ£¬ÊÇ¹«Ë¾½üÄêÀ´Ê±¼ä¿ç¶È×î³¤¡¢¸²¸ÇÈËÈº×î¹ã¡¢°ï·öÁ¦¶È×î´óµÄÒ»´Î¹«ÒæĞĞ¶¯£¬Ò²ÊÇµÚÒ»´Î´ó¹æÄ£µÄ´¿ÏßÉÏ¹«Òæ»î¶¯£»
+weight=0.00
+wordid_list_size=0()
+No:37	line¶ø¶àÃ½Ìå³ÖĞø¿ªÕ¹µÄ¹Ø°®ÁôÊØ¶ùÍ¯¹«Òæ»î¶¯Ò²ÓĞÉùÓĞÉ«£¬Í¬Ê±Í¨¹ıÍÆ¹ã¡°»Æ¸ÔÖúÑ§¡±¹«Òæ»î¶¯£¬»ı¼«Ì½Ë÷¹«ÒæÓªÏúµÄĞÂÄ£Ê½¡£
+weight=0.00
+wordid_list_size=0()
+No:38	lineÕâĞ©»î¶¯¶¼´ó´óÌá¸ßÁË¿µ¼ÑµÄÆ·ÅÆÆØ¹â¶È£¬ÌáÉıÁËÆ·ÅÆĞÎÏó¡£
+weight=0.00
+wordid_list_size=0()
+No:39	line¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ12£¨ËÄ£©²ßÂÔµ÷ÕûÍÆ¶¯ÒµÎñÎÈ²½ÌáÉıÕë¶ÔÊÖ»úĞĞÒµµÄ¾ºÕùÌØµã£¬±¾¹«Ë¾ÖØĞÂÉóÊÓÁËÊÖ»úÒµÎñµÄÔËÓªÄ£Ê½£¬ÔÚÉîÈëÆÀ¹ÀµÄ»ù´¡ÉÏ£¬¸Ä±äÁËÄÚÏúÒµÎñµÄ´«Í³ÇşµÀÄ£Ê½£¬³·ÏûÁË·Ö¹«Ë¾ºÍ´óÇø¡¢ÉÌÎñ´¦£¬½«ÒµÎñÄ£Ê½ÓÉB2C×ª±äÎªB2B£¬Í¬Ê±ÅäºÏÒÔ×éÖ¯¼Ü¹¹µÄÕûºÏ¡¢ÔË×÷Á÷³ÌµÄÊáÀíºÍÈËÔ±¶ÓÎéµÄÓÅ»¯£¬¼¯ÖĞ×ÊÔ´Í¶Èëµ½ÍâÏú¼°ÔËÓªÉÌÒµÎñÖĞ£¬Ê¹ÒµÎñ·½Ïò¸üÃ÷Îú£¬¸üÓĞÀûÓÚÓ¦¶Ôµ±Ç°¾çÁÒµÄÊĞ³¡¾ºÕù¡£
+weight=0.00
+wordid_list_size=0()
+No:40	lineÍ¬Ê±£¬±¾¹«Ë¾µÄ°×µçÒµÎñÒ²´ó¹æÄ£µØÇĞ»»ÁË²úÆ·Ïß£¬ÒÔ²îÒì»¯µÄ²úÆ·ÔËÓªÎªÍ»ÆÆ¿Ú£¬×ÅÁ¦´òÔì½¡¿µ±ùÏäµÄ²úÆ·ĞÎÏó£»
+weight=0.00
+wordid_list_size=0()
+No:41	line¶Ô¾­ÓªÄ£ĞÍ½øĞĞÁËÏµÍ³µÄÊáÀí£¬ÓĞĞ§ÌáÉıÁËÒµÎñÔËÓªµÄÏµÍ³ºÏÁ¦£»
+weight=0.00
+wordid_list_size=0()
+No:42	line¶Ô×éÖ¯¼Ü¹¹½øĞĞÁËÎ¢µ÷£¬Ç¿»¯ÁË²úÆ·¹ÜÀíµÄ×éÖ¯±£Ö¤¡£
+weight=0.00
+wordid_list_size=0()
+No:43	line£¨Îå£©ĞÅÏ¢»¯½¨Éè¸ßÖÊÁ¿ÂäÊµÍÆ½ø2013Äê£¬ÊÇ±¾¹«Ë¾ĞÅÏ¢»¯½¨ÉèÍÆ½ø×î¹ã·º¡¢×îÉîÈëµÄÒ»Äê¡£
+weight=0.00
+wordid_list_size=0()
+No:44	lineÔÚÈ«¹«Ë¾·¶Î§ÄÚ£¬±¾¹«Ë¾ÍÆĞĞÁËÎŞÖ½»¯°ì¹«£¬È«Ãæµ¼Èëµç×ÓÉóÅú£¬ÓĞĞ§Ìá¸ßÁËÉóÅúĞ§ÂÊ£»
+weight=0.00
+wordid_list_size=0()
+No:45	lineÔÚ²ÆÎñÌåÏµ£¬±¾¹«Ë¾Æô¶¯ÁËÓ¦ÊÕÕË¿îÕËÁä·ÖÎö¡¢ÎïÁÏ¼Û¸ñ¿ØÖÆ¡¢Ö°ÄÜÖĞĞÄ·ÑÓÃÊä³öÓÅ»¯¡¢ÍøÒ³°æERPÆ½Ì¨´î½¨µÈ·½ÃæµÄĞÅÏ¢»¯×ª»¯ºÍ»ù´¡ÌáÉı£¬¹æ·¶¹¤×÷Á÷³Ì£¬ÓĞĞ§Ìá¸ßÁË¹¤×÷Ğ§ÂÊ£»
+weight=0.00
+wordid_list_size=0()
+No:46	lineÔÚ¶àÃ½ÌåÊÂÒµ±¾²¿£¬±¾¹«Ë¾ÊµÊ©ÁËÔ¤Ëã¿ØÖÆ¼°×Ê½ğÆ½Ì¨¡¢ÇşµÀĞÅÏ¢¹ÜÀíÏµÍ³ºÍÖÆÔìÖ´ĞĞÏµÍ³£¨MES£©£¬Ìá¸ßÁË×Ê½ğµÄÊ¹ÓÃĞ§ÂÊ£¬ÍÆ½øÁËÈ«ÇşµÀµÄ½øÏú´æ¹ÜÀí£¬ÌáÉıÁËÉú²úÖÆÔìÏµÍ³µÄºËĞÄ¾ºÕùÁ¦£»
+weight=0.00
+wordid_list_size=0()
+No:47	lineÔÚ·Ö¹«Ë¾£¬±¾¹«Ë¾Íê³ÉÁË·Ö¹«Ë¾ÈËÔ±ĞÅÏ¢ºÍĞ½³ê¹Ü¿ØÏµÍ³¡¢·Ö¹«Ë¾Ö§ÏßÎïÁ÷ÔË·ÑºËËãÏµÍ³£¬Ìá¸ßÁË·Ö¹«Ë¾ÈËÁ¦×ÊÔ´¹ÜÀíºÍÔË·ÑºËËãµÄÍ¸Ã÷»¯³Ì¶È£»
+weight=0.00
+wordid_list_size=0()
+No:48	line±¾¹«Ë¾»¹Íê³ÉÁË¹«Ë¾¹ÙÍøµÄ¸Ä°æºÍÍøÕ¾ÌåÏµµÄ¹æ·¶£¬²»½öÍ³Ò»ÁË¶ÔÍâ´«²¥ĞÎÏó£¬¶øÇÒ±£Ö¤ÁËÍøÂç×ÊÔ´Í¶ÈëµÄºÏÀíĞÔºÍÕë¶ÔĞÔ¡£
+weight=0.00
+wordid_list_size=0()
+No:49	line£¨Áù£©ÆóÒµÎÄ»¯½¨Éè´«³ĞÖĞÓĞ´´ĞÂ2013Äê£¬±¾¹«Ë¾³ä·Ö·¢Ñï¿µ¼ÑÆóÒµÎÄ»¯µÄ´«Í³£¬¹ÄÀø´´ĞÂ£¬¹ÄÀø¼ÛÖµ´´Ôì£¬Å¬Á¦ÓªÔì¹éÊô¸Ğ£¬¿ªÕ¹ÁËÒ»ÏµÁĞµÄÆóÒµÎÄ»¯»î¶¯£¬Ô±¹¤¼ÒÊôÈÕ¡¢Ô±¹¤ÉúÈÕ»á¡¢ÔË¶¯»áµÈ£¬ÊÜµ½ÁË´ó¼ÒµÄ¹ã·ººÃÆÀ¡£
+weight=0.00
+wordid_list_size=0()
+No:50	lineÃæ¶ÔĞÂµÄ·¢Õ¹ĞÎÊÆ£¬±¾¹«Ë¾Ò²ÔÚ¼Ì³ĞÕâĞ©ÓÅĞãÎÄ»¯»ùÒòµÄÍ¬Ê±£¬¶Ô¹«Ë¾µÄºËĞÄ¼ÛÖµ¹Û½øĞĞÁËÖØĞÂÊáÀíºÍ×Ü½á£¬ÒÔ¸üºÃµØÓ¦¶Ô¾ºÕùÇ¿¶ÈµÄÉÏÉıºÍ·¢Õ¹Ñ¹Á¦µÄ½øÒ»²½¼ÓÇ¿¡£
+weight=0.00
+wordid_list_size=0()
+No:51	line¹«Ë¾ÌáÁ¶³ö¡°ÕıÖ±¡¢Ì¹³Ï¡¢Êµ¸É¡¢½øÈ¡¡±µÄºËĞÄ¼ÛÖµÀíÄî£¬°ÑËü¶¨ÒåÎª±¾¹«Ë¾µÄºËĞÄ¼ÛÖµ¹Û£¬ÓÃÒÔ¹æ·¶¿µ¼Ñ×ÔÉíµÄĞĞÎª£¬Í³Ò»´ó¼ÒµÄË¼Ïë¡£
+weight=0.00
+wordid_list_size=0()
+No:52	line³ı´ËÖ®Íâ£¬2013Äê£¬±¾¹«Ë¾µÄÓªÔË¹ÜÀí¡¢ÈËÁ¦×ÊÔ´¡¢²ÆÎñºËËã¡¢Éó¼Æ·¨Îñ¡¢²úÒµÑĞ¾¿¡¢ÎïÁ÷ÍÆ½ø¡¢ºô½Ğ·şÎñµÈ·½ÃæÒ²Î§ÈÆ×ÅÆóÒµµÄ¾­ÓªÈÎÎñÉîÈë¿ªÕ¹¹¤×÷£¬Îª¹«Ë¾µÄ³ÖĞø·¢Õ¹·¢»ÓÁË»ı¼«µÄ×÷ÓÃ¡£
+weight=0.00
+wordid_list_size=0()
+No:53	line¶ş¡¢Ö÷ÓªÒµÎñ·ÖÎö1¡¢¸ÅÊö1.1¡¢ÓÉÓÚÒÔÏÂÔ­Òò£¬±¨¸æÆÚÄÚ£¬¹«Ë¾ÓªÒµÊÕÈë½Ï2012Äê¶ÈÓĞËùÔö³¤£¨1£©¹«Ë¾²ÊµçÒµÎñÒÔ¡°ËÜÆ·ÅÆ¡¢Ìá¹æÄ£¡¢µ÷½á¹¹¡¢ÍÚÇ±Á¦¡±Îª¾­Óª·½Õë£¬·¢»ÓÑĞ²ú¹©ÏúÒ»Ìå»¯Ğ­Í¬Ğ§Ó¦£¬³ÉÎªÖÇÄÜµçÊÓµÄÁìÏÈ³§ÉÌ£¬±ä¸ï¹ÜÀí£¬´´ĞÂÓªÏú£¬ÊµÏÖ¾­ÓªÒµ¼¨ºÍ¾­ÓªÖÊÁ¿µÄÈ«ÃæÌáÉı¡£
+weight=0.00
+wordid_list_size=0()
+No:54	line£¨2£©¹«Ë¾°×µçÒµÎñ¡¢ÍâÏúÒµÎñ¡¢ÊÖ»úÒµÎñ¡¢Êı×ÖÍøÂçÒµÎñ¡¢LED´óÆÁÒµÎñ¡¢Éú»îµçÆ÷Òµ¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ13ÎñµÈÒµÎñÊµÊ©ÓªÏúÇşµÀ´´ĞÂ¡¢²úÆ·´´ĞÂ¡¢¼¤Àø»úÖÆ´´ĞÂ£¬ÊµÏÖÁË½¡¿µÎÈ¶¨·¢Õ¹¡£
+weight=0.00
+wordid_list_size=0()
+No:55	line1.2¡¢±¨¸æÆÚÄÚ£¬¹«Ë¾µÄÑĞ·¢Í¶Èë¡¢¼¼Êõ´´ĞÂÇé¿ö¡¢×ÔÖ÷´´ĞÂ¶Ô¹«Ë¾ºËĞÄ¾ºÕùÁ¦ºÍĞĞÒµµØÎ»µÄÓ°Ïì±¨¸æÆÚÄÚ£¬¹«Ë¾¼ÌĞø¼ÓÇ¿ÑĞ·¢Í¶Èë£¬Í¨¹ı²»¶ÏÑĞ·¢ĞÂ²úÆ·£¬ÑĞ¾¿ĞÂ¹¤ÒÕ¡¢¸ÄÔìÏÖĞĞÉè±¸£¬²»¶Ï·á¸»²úÆ·Æ·ÖÖÓëÏµÁĞ£¬Îª¹«Ë¾ÊµÊ©²úÆ·²îÒì»¯´òÏÂÔúÊµ»ù´¡¡£
+weight=0.00
+wordid_list_size=0()
+No:56	lineÍ¬Ê±ÔÚ¹«Ë¾ÄÚ³ÖĞø¿ªÕ¹¼¼Êõ¸ïĞÂºÍºÏÀí»¯½¨Òé»î¶¯µÈ´ëÊ©£¬²»¶ÏÌá¸ß²úÆ·Éú²úĞ§ÂÊ£¬´Ó¶ø²»¶ÏÌá¸ß¹«Ë¾ºËĞÄ¾ºÕùÁ¦£¬¼ÌĞø±£³ÖĞĞÒµÁìÏÈÊÆÍ·¡£
+weight=0.00
+wordid_list_size=0()
+No:57	line2¡¢¹«Ë¾»Ø¹Ë×Ü½áÇ°ÆÚÅûÂ¶µÄ·¢Õ¹Õ½ÂÔºÍ¾­Óª¼Æ»®ÔÚ±¨¸æÆÚÄÚµÄ½øÕ¹Çé¿ö2013Äê£¬ÔÚ¼¤ÁÒµÄÊĞ³¡¾ºÕùÖĞ£¬±¾¹«Ë¾µÄ¸÷ÏîÒµÎñ¶¥×¡Ñ¹Á¦£¬ÎÈÔúÎÈ´ò£¬¾ºÕùÄÜÁ¦Öğ²½ÔöÇ¿£¬È¡µÃÁËÒ»ÏµÁĞ³É¼¨£¬ÆäÖĞÖ÷ÒªµÄ¾­ÓªÁÁµãÈçÏÂ£º2.1¡¢ÄÚÏú²ÊµçÒµÎñ£º£¨1£©Òµ¼¨ÔÙ´´ĞÂ¸ß£¬Æ·ÅÆĞÎÏóºÍÊĞ³¡µØÎ»ÓĞËùÌáÉı£»
+weight=0.00
+wordid_list_size=0()
+No:58	line£¨2£©²úÆ·±£³ÖÁìÏÈ£¬ÎÈ¾ÓÊĞ³¡Ç°ÁĞ¡£
+weight=0.00
+wordid_list_size=0()
+No:59	line2013Äê£¬±¾¹«Ë¾ÂÊÏÈ·¢ÆğºËÉı¼¶£¬´Ó6ºË¡¢8ºËµ½10ºË£¬´Ó2Kµ½4Kµ½OLED£¬Ê¼ÖÕ¼á³Ö¼¤½øµÄ¹æ»®Óë²¼¾Ö£¬±£³ÖÁË²úÆ·ºÍ¼¼ÊõµÄÁìÏÈĞÔ£»
+weight=0.00
+wordid_list_size=0()
+No:60	lineÍ¬Ê±£¬Ó¦ÓÃÆ½Ì¨´Ó°²×¿4.0¡¢4.2µ½4.3£¬²»¶Ï·á¸»ÖÇÄÜµçÊÓµÄÄÚÈİºÍÓ¦ÓÃ£¬²¢Óë°®ÆæÒÕ¡¢ÀÖÊÓ¡¢°Ù¶ÈµÈ¿ªÕ¹Éî¶ÈºÏ×÷£¬ÔÚÈí¼ş·½ÃæÒ²±£³ÖÁËÊĞ³¡ÉÏµÄÁìÏÈµØÎ»£»
+weight=0.00
+wordid_list_size=0()
+No:61	line£¨3£©ÂÊÏÈÄæÏò¿ç½ç¡£
+weight=0.00
+wordid_list_size=0()
+No:62	lineÔÚ2013Äê9ÔÂ³õ£¬±¾¹«Ë¾ÔÚÒµÄÚµÚÒ»¼ÒÍÆ³öÏßÉÏÆ·ÅÆ¡ª¡ªKKTV£¬ÏÆÆğ¡°ĞÂ¸Ğ¹Ù¸ïÃü¡±£¬ÒÔÉî¶ÈµÄÄæÏòÕûºÏÓ¦¶Ô»¥ÁªÍøÊ±´úµÄ¿ç½ç¾ºÕù£¬ÕâÒ²ÊÇ¹úÄÚ²ÊµçĞĞÒµÊ×´ÎÕë¶Ô»¥ÁªÍøµçÊÓÊĞ³¡·¢²¼µÄ×¨ÃÅÆ·ÅÆ£¬Í¬Ê±»¹´´ÔìÁËÁ½¸öĞÍºÅµ¥Æ·3¸öÔÂ»¥ÁªÍøÏúÊÛÊÕÈë³¬ÒÚÔªµÄºÃ³É¼¨£»
+weight=0.00
+wordid_list_size=0()
+No:63	line£¨4£©µçÉÌÒµÎñ¼ÌĞø¸ßËÙÔö³¤¡£
+weight=0.00
+wordid_list_size=0()
+No:64	lineB2BÒµÎñÆ½ºâ·¢Õ¹¡¢B2CÒµÎñÏÔÖøÌáÉı£¬×öµ½ÁËÏúÁ¿Óë·şÎñ¿Ú±®µÄË«·áÊÕ£»
+weight=0.00
+wordid_list_size=0()
+No:65	line£¨5£©¹©Ó¦Á´½Ú×à°Ñ¿ØµÃµ±¡£
+weight=0.00
+wordid_list_size=0()
+No:66	line¾¡¹ÜÃæÁÙ¾Ş´óµÄÊĞ³¡²»È·¶¨ĞÔ£¬µ«ÊÇ±¾¹«Ë¾¼á³Ö·¢Õ¹ºËĞÄÕ½ÂÔºÏ×÷»ï°é£¬±£Ö¤ÁË¹©Ó¦£»
+weight=0.00
+wordid_list_size=0()
+No:67	lineÈ«ÄêÖÜ×ª½øÒ»²½¼Ó¿ì£¬ÖÜ×ªÌìÊı½øÒ»²½Ëõ¶Ì£»
+weight=0.00
+wordid_list_size=0()
+No:68	line²É¹º³É±¾³ÖĞøÏÂ½µ£»
+weight=0.00
+wordid_list_size=0()
+No:69	line£¨6£©´ÙÏú»î¶¯¿ªÕ¹µÃÁ¦¡£
+weight=0.00
+wordid_list_size=0()
+No:70	lineÈ«Äê´ÓÄê³õµ½ÄêÄ©£¬ÔÂÔÂÓĞÖ÷Ìâ£¬ÔÂÔÂ´ó´ÙÏú£¬ÓÈÆäÊÇÎåÔÂ·İ33ÖÜÄê³§Çì´ÙÏú»î¶¯£¬µş¼Ó½ÚÄÜ²¹ÌùÊÕÎ²µÄÀûºÃÒòËØ£¬´´ÔìÁË10Ìì10¸öÒÚµÄÏúÊÛÒµ¼¨¡£
+weight=0.00
+wordid_list_size=0()
+No:71	line¶øÇÒ£¬ÔÚÂäÊµ½ÚÄÜ»İÃñ¹¤³Ì¡¢·¢»ÓÕş²ßÓÅÊÆ¡¢¹æ±ÜÕş²ß·çÏÕ·½ÃæÒ²È¡µÃÍ»³ö³É¼¨¡£
+weight=0.00
+wordid_list_size=0()
+No:72	line2.2¡¢ÍâÏú²ÊµçÒµÎñ£º£¨1£©ÒµÎñ¼ÌĞø±£³Ö½¡¿µÎÈ¶¨£¬Ó¯ÀûÄÜÁ¦³ÖĞøÁìÏÈ¡£
+weight=0.00
+wordid_list_size=0()
+No:73	lineÍâÏú²ÊµçÒµÎñ½ô½ô×¥×¡¹ã½»»áºÍ°ÍÎ÷ÊÀ½ç±­Ô¤ÈÈµÄÆõ»ú£¬¶¥×¡ÈËÃñ±Ò´ó·ùÉıÖµ¡¢Ö÷Òª¿Í»§ÊÜ»ãÂÊÓ°Ïì¶ø¾Ş¶î¿÷ËğµÄ²»ÀûÌõ¼ş£¬È«ÄêÏúÊÛÊÕÈë»ù±¾ÎÈ¶¨£¬ÀûÈóË®Æ½Ò²±£³ÖÎÈ¶¨£¬ÊµÊôÀ´Ö®²»Ò×¡£
+weight=0.00
+wordid_list_size=0()
+No:74	line£¨2£©²úÆ·½á¹¹¸ÄÉÆÃ÷ÏÔ¡£
+weight=0.00
+wordid_list_size=0()
+No:75	line±¾¹«Ë¾ÍâÏúÖÇÄÜµçÊÓÁìÏÈÓÚĞĞÒµ£¬ÔÚ10ÔÂ·İ¿ªÊ¼ÊµÏÖÏúÊÛ£¬µ±ÔÂ´óÆÁÖÇÄÜµçÊÓÏúÁ¿³¬¹ıÁË1ÍòÌ¨£¬¹±Ï×ÁË¿É¹ÛµÄÏúÊÛÃ«Àû£¬¶ÔÓÚÍâÏúÒµÎñµÄÎÈ¶¨·¢Õ¹¾Ó¹¦ÖÁÎ°¡£
+weight=0.00
+wordid_list_size=0()
+No:76	line£¨3£©¼á³Ö²»Ğ¸³¢ÊÔ±¾µØ»¯Æ·ÅÆ²ßÂÔ£¬¼ÌĞø¼á¶¨²»ÒÆµØÌ½Ë÷Æ·ÅÆ±¾µØ»¯¡¢¹ú¼Ê»¯·¢Õ¹µÄµÀ¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ14Â·¡£
+weight=0.00
+wordid_list_size=0()
+No:77	line2.3¡¢°×µçÒµÎñ£º2013Äê£¬°×µçÒµÎñÏúÊÛÔÙ´´ĞÂ¸ß¡£
+weight=0.00
+wordid_list_size=0()
+No:78	lineÍ¬Ê±£¬°×µçÒµÎñ½øĞĞÁËÏµÍ³µÄÒµÎñÊáÀí£¬ÖØĞÂÕûºÏÁË²úÆ·Ïß£¬ÕûÌå°áÇ¨µ½ÁË³üÖİ£¬ÔÚ³üÖİ¹ÒÅÆ³ÉÁ¢ÁË°×µçÑĞ·¢ÖĞĞÄ£¬×ÊÔ´¸ü¼¯ÖĞ£¬Ğ§ÂÊ¸ü¸ß£¬Îª½ñºóÕûÌå¾­ÓªÒµ¼¨´ó·ùÌáÉı´´ÔìÁËÌõ¼ş¡£
+weight=0.00
+wordid_list_size=0()
+No:79	line2¡¢4¡¢ÊÖ»úÒµÎñ£º2013Äê£¬Í¨ĞÅ¿Æ¼¼¹«Ë¾¶¥×¡Ñ¹Á¦£¬¿Ë·şÖØÖØÀ§ÄÑ£¬Íê³ÉÁËÒµÎñÄ£Ê½ÓÉB2CÏòB2BµÄ³õ²½×ª±ä£¬Ã÷È·ÁË¹«Ë¾µÄ·¢Õ¹¶¨Î»£¬²¢¼¯ÖĞ×ÊÔ´·¢Á¦ÍâÏúÒµÎñºÍÔËÓªÉÌÒµÎñ£¬²»½öÏÈºóÖĞ±êÒÆ¶¯¶¨ÖÆµÄ´óµ¥£¬¶øÇÒÈ¡µÃÁËº£ÍâÊĞ³¡ÖÇÄÜÊÖ»úµ¥ÔÂ²úÏúÁ¿Í»ÆÆ40ÍòÌ¨µÄºÃ³É¼¨¡£
+weight=0.00
+wordid_list_size=0()
+No:80	line2.5¡¢·Ö¿µÖÆÔìÒµÎñ£º2013Äê£¬¸÷·Ö¿µÉú²úĞ§ÂÊÊµÏÖ½øÒ»²½ÌáÉı¡£
+weight=0.00
+wordid_list_size=0()
+No:81	lineÈ«ÄêIEÍÆ¹ãÏîÄ¿ÖĞ£¬42¸ö¿¼ºË»úĞÍ¾ùÊµÏÖÌáÉı10%ÒÔÉÏµÄÄ¿±ê£¬ÆäÖĞ32´ç»úĞÍÈ«ÄêUPPHÖµÍ¬±ÈÌáÉı15.4%£¬42´çÍ¬±ÈÌáÉı21.5%£¬°²¿µ50´çÕû»úÊ±²úÍ¬±ÈÔö³¤28.3%£¬55´çÕû»úÊ±²úÍ¬±ÈÔö³¤62.8%£»
+weight=0.00
+wordid_list_size=0()
+No:82	line¾«ÒæÖÆÔì³ÉĞ§ÏÔÖø¡£
+weight=0.00
+wordid_list_size=0()
+No:83	lineÉú²ú¼Æ»®¼°Ê±Íê³ÉÂÊ´ï99%£¬²¢Íê³ÉÁËÎåÌõÄ£×éÉú²úÏß¡¢Á½Ìõµ¼¹â°åÉú²úÏßºÍÒ»ÌõSMTÉú²úÏßµÄ½¨Éè£¬½øÒ»²½ÍêÉÆÁËÒ»Ìå»¯Éú²úµÄ²¼¾Ö¡£
+weight=0.00
+wordid_list_size=0()
+No:84	line2.6¡¢ĞÂĞËÒµÎñ£º2013Äê£¬ĞÂĞËÒµÎñÒ²ÓĞÒ»¶¨½øÕ¹¡£
+weight=0.00
+wordid_list_size=0()
+No:85	lineÊı×ÖÍøÂç¹«Ë¾º£ÍâÏúÊÛÊµÏÖ½Ï´óÍ»ÆÆ£¬Í¬±ÈÔö³¤·­·¬£»
+weight=0.00
+wordid_list_size=0()
+No:86	lineÊÓÑ¶¹«Ë¾³¬¶îÍê³É¸÷ÏîÈÎÎñ£¬º£Íâ¡¢¹úÄÚ¶©µ¥¶¼ÓĞºÜ´óÊÕ»ñ£¬ÄÚ²¿¹ÜÀíĞ§ÂÊÌáÉıÒ²ºÜÃ÷ÏÔ£»
+weight=0.00
+wordid_list_size=0()
+No:87	lineÉú»îµçÆ÷¹«Ë¾³É¹¦ÍÆ³öÁË×ÔÖ÷ÑĞ·¢µÄKKpadµç´ÅÂ¯ºÍKKcookerµç·¹ìÒ£¬²úÆ·ÉÏÓĞºÜ´ó½ø²½£»
+weight=0.00
+wordid_list_size=0()
+No:88	line²©ÂŞ¿µ¼ÑÍ¨¹ıÇ¿»¯ÄÚ²¿¹ÜÀíºÍ¼Ó´óÍâµ¥¿ªÍØ£¬¸÷Ïî»ù´¡¹ÜÀíÈ«Ãæº»Êµ£¬ÀûÈó´ó·ù¶È¸ÄÉÆ£¬¾­Óª¾ÖÃæ»ÀÈ»Ò»ĞÂ¡£
+weight=0.00
+wordid_list_size=0()
+No:89	line¹«Ë¾Êµ¼Ê¾­ÓªÒµ¼¨½ÏÔø¹«¿ªÅûÂ¶¹ıµÄ±¾Äê¶ÈÓ¯ÀûÔ¤²âµÍÓÚ»ò¸ßÓÚ20%ÒÔÉÏµÄ²îÒìÔ­Òò¡õÊÊÓÃ¡Ì²»ÊÊÓÃ3¡¢ÊÕÈëËµÃ÷ÓÉÓÚÒÔÏÂÔ­Òò£¬±¨¸æÆÚÄÚ£¬¹«Ë¾ÓªÒµÊÕÈë½Ï2012Äê¶ÈÓĞËùÔö³¤£¨1£©¹«Ë¾²ÊµçÒµÎñÒÔ¡°ËÜÆ·ÅÆ¡¢Ìá¹æÄ£¡¢µ÷½á¹¹¡¢ÍÚÇ±Á¦¡±Îª¾­Óª·½Õë£¬·¢»ÓÑĞ²ú¹©ÏúÒ»Ìå»¯Ğ­Í¬Ğ§Ó¦£¬³ÉÎªÖÇÄÜµçÊÓµÄÁìÏÈ³§ÉÌ£¬±ä¸ï¹ÜÀí£¬´´ĞÂÓªÏú£¬ÊµÏÖ¾­ÓªÒµ¼¨ºÍ¾­ÓªÖÊÁ¿µÄÈ«ÃæÌáÉı¡£
+weight=0.00
+wordid_list_size=0()
+No:90	line£¨2£©¹«Ë¾°×µçÒµÎñ¡¢ÍâÏúÒµÎñ¡¢ÊÖ»úÒµÎñ¡¢Êı×ÖÍøÂçÒµÎñ¡¢LED´óÆÁÒµÎñ¡¢Éú»îµçÆ÷ÒµÎñµÈÒµÎñÊµÊ©ÓªÏúÇşµÀ´´ĞÂ¡¢²úÆ·´´ĞÂ¡¢¼¤Àø»úÖÆ´´ĞÂ£¬ÊµÏÖÁË½¡¿µÎÈ¶¨·¢Õ¹¡£
+weight=0.00
+wordid_list_size=0()
+No:91	line¹«Ë¾ÊµÎïÏúÊÛÊÕÈëÊÇ·ñ´óÓÚÀÍÎñÊÕÈë¡ÌÊÇ¡õ·ñÏà¹ØÊı¾İÍ¬±È·¢Éú±ä¶¯30%ÒÔÉÏµÄÔ­ÒòËµÃ÷¡õÊÊÓÃ¡Ì²»ÊÊÓÃ¹«Ë¾ÖØ´óµÄÔÚÊÖ¶©µ¥Çé¿ö¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ15¡õÊÊÓÃ¡Ì²»ÊÊÓÃ¹«Ë¾±¨¸æÆÚÄÚ²úÆ·»ò·şÎñ·¢ÉúÖØ´ó±ä»¯»òµ÷ÕûÓĞ¹ØÇé¿ö¡õÊÊÓÃ¡Ì²»ÊÊÓÃ¹«Ë¾Ö÷ÒªÏúÊÛ¿Í»§Çé¿öÇ°ÎåÃû¿Í»§ºÏ¼ÆÏúÊÛ½ğ¶î£¨Ôª£©3,743,686,942.08Ç°ÎåÃû¿Í»§ºÏ¼ÆÏúÊÛ½ğ¶îÕ¼Äê¶ÈÏúÊÛ×Ü¶î±ÈÀı£¨%£©18.71%4¡¢³É±¾ĞĞÒµ·ÖÀàµ¥Î»£ºÔªĞĞÒµ·ÖÀàÏîÄ¿2013Äê2012ÄêÍ¬±ÈÔö¼õ(%)½ğ¶îÕ¼ÓªÒµ³É±¾±ÈÖØ£¨%£©½ğ¶îÕ¼ÓªÒµ³É±¾±ÈÖØ£¨%£©µç×ÓĞĞÒµÔ­²ÄÁÏ15,793,215,821.6894.79,348,909,508.7995.42%-0.63%µç×ÓĞĞÒµÈË¹¤³É±¾605,504,760.443.63R7,599,977.963.51%0.13%µç×ÓĞĞÒµÕÛ¾É·Ñ62,570,334.600.38U,789,737.380.37%0.01%²úÆ··ÖÀàµ¥Î»£ºÔª²úÆ··ÖÀàÏîÄ¿2013Äê2012ÄêÍ¬±ÈÔö¼õ(%)½ğ¶îÕ¼ÓªÒµ³É±¾±ÈÖØ£¨%£©½ğ¶îÕ¼ÓªÒµ³É±¾±ÈÖØ£¨%£©²Êµç²Êµç13,072,644,058.7379.41,811,816,367.6379.10%0.31%ÊÖ»úÊÖ»ú1,418,629,105.828.62%1,217,298,414.048.15%0.47%°×µç°×µç1,204,755,092.167.32%1,031,814,437.986.91%0.41%ÆäËûÆäËû765,262,660.014.65‡1,370,004.485.84%-1.19%ËµÃ÷¹«Ë¾Ö÷Òª²úÆ·µÄ³É±¾¹¹³ÉÓë2012Äê¶È»ù±¾Ò»ÖÂ¡£
+weight=0.00
+wordid_list_size=0()
+No:92	line¹«Ë¾Ö÷Òª¹©Ó¦ÉÌÇé¿öÇ°ÎåÃû¹©Ó¦ÉÌºÏ¼Æ²É¹º½ğ¶î£¨Ôª£©7,598,812,054.58Ç°ÎåÃû¹©Ó¦ÉÌºÏ¼Æ²É¹º½ğ¶îÕ¼Äê¶È²É¹º×Ü¶î±ÈÀı£¨%£©59.92%5¡¢·ÑÓÃ£¨1£©ÏúÊÛ·ÑÓÃ2013Äê¶È·¢ÉúÊıÎª2,548,603,146.99Ôª£¬±ÈÉÏÄêÊıÔö¼Ó10.01%£¬ÆäÖ÷ÒªÔ­ÒòÊÇ£ºÊÕÈëÉÏÕÇµÄÍ¬Ê±´ÙÏú·Ñ¡¢¹¤×ÊÉÏÕÇ¡£
+weight=0.00
+wordid_list_size=0()
+No:93	line£¨2£©²ÆÎñ·ÑÓÃ2013Äê¶È·¢ÉúÊıÎª-59,637,103.92Ôª£¬±ÈÉÏÄêÊı¼õÉÙ133.22%£¬Ö÷ÒªÔ­ÒòÊÇ£º¢Ù³¤ÆÚ½è¿î¼õÉÙµ¼ÖÂµÄÀûÏ¢Ö§³ö¼õÉÙ£»
+weight=0.00
+wordid_list_size=0()
+No:94	line¢Ú»ãÂÊ²¨¶¯´øÀ´µÄ»ã¶ÒÊÕÒæµÄÔö¼Ó¡£
+weight=0.00
+wordid_list_size=0()
+No:95	line6¡¢ÑĞ·¢Ö§³ö±¨¸æÆÚÄÚ£¬¹«Ë¾ÑĞ·¢Ö§³öÎª2.30ÒÚÔª£¬±È2012ÄêÔö³¤10.87%¡£
+weight=0.00
+wordid_list_size=0()
+No:96	line¹«Ë¾¼ÌĞø¼ÓÇ¿ÑĞ·¢Í¶Èë£¬¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ16Í¨¹ı²»¶ÏÑĞ·¢ĞÂ²úÆ·£¬ÑĞ¾¿ĞÂ¹¤ÒÕ¡¢¸ÄÔìÏÖĞĞÉè±¸£¬²»¶Ï·á¸»²úÆ·Æ·ÖÖÓëÏµÁĞ£¬Îª¹«Ë¾ÊµÊ©²úÆ·²îÒì»¯´òÏÂÔúÊµ»ù´¡¡£
+weight=0.00
+wordid_list_size=0()
+No:97	lineÍ¬Ê±ÔÚ¹«Ë¾ÄÚ³ÖĞø¿ªÕ¹¼¼Êõ¸ïĞÂºÍºÏÀí»¯½¨Òé»î¶¯µÈ´ëÊ©£¬²»¶ÏÌá¸ß²úÆ·Éú²úĞ§ÂÊ£¬´Ó¶ø²»¶ÏÌá¸ß¹«Ë¾ºËĞÄ¾ºÕùÁ¦£¬¼ÌĞø±£³ÖĞĞÒµÁìÏÈÊÆÍ·¡£
+weight=0.00
+wordid_list_size=0()
+No:98	line7¡¢ÏÖ½ğÁ÷µ¥Î»£ºÔªÏîÄ¿2013Äê2012ÄêÍ¬±ÈÔö¼õ£¨%£©¾­Óª»î¶¯ÏÖ½ğÁ÷ÈëĞ¡¼Æ19,995,164,215.6018,510,554,120.608.02%¾­Óª»î¶¯ÏÖ½ğÁ÷³öĞ¡¼Æ17,711,910,014.7118,869,799,035.18-6.14%¾­Óª»î¶¯²úÉúµÄÏÖ½ğÁ÷Á¿¾»¶î2,283,254,200.89-359,244,914.58735.57%Í¶×Ê»î¶¯ÏÖ½ğÁ÷ÈëĞ¡¼Æ65,625,565.82964,620,953.74-93.20%Í¶×Ê»î¶¯ÏÖ½ğÁ÷³öĞ¡¼Æ289,680,969.24432,563,450.73-33.03%Í¶×Ê»î¶¯²úÉúµÄÏÖ½ğÁ÷Á¿¾»¶î-224,055,403.42532,057,503.01-142.11%³ï×Ê»î¶¯ÏÖ½ğÁ÷ÈëĞ¡¼Æ5,819,964,097.4313,241,294,203.82-56.05%³ï×Ê»î¶¯ÏÖ½ğÁ÷³öĞ¡¼Æ6,956,511,999.2813,227,320,418.72-47.41%³ï×Ê»î¶¯²úÉúµÄÏÖ½ğÁ÷Á¿¾»¶î-1,136,547,901.8513,973,785.10-8,233.43%ÏÖ½ğ¼°ÏÖ½ğµÈ¼ÛÎï¾»Ôö¼Ó¶î947,446,251.84177,592,118.67433.5%Ïà¹ØÊı¾İÍ¬±È·¢Éú±ä¶¯30%ÒÔÉÏµÄÔ­ÒòËµÃ÷¡ÌÊÊÓÃ¡õ²»ÊÊÓÃ£¨1£©ÏúÊÛÉÌÆ·¡¢Ìá¹©ÀÍÎñÊÕµ½µÄÏÖ½ğ2013Äê¶È·¢ÉúÊıÎª19,149,831,826.42Ôª£¬±ÈÉÏÄêÔö¼Ó8.19%£¬ÆäÖ÷ÒªÔ­ÒòÊÇ£º¢Ù2012ÄêÏúÊÛÍú¼¾ÔÚÏÂ°ëÄê£¬2013ÄêÏúÊÛÍú¼¾ÔÚÉÏ°ëÄê£¬±¾¹«Ë¾ÏúÊÛ½áËã·½Ê½¶àÎª6¸öÔÂÄÚµÄÒøĞĞ³Ğ¶Ò»ãÆ±£¬Òò´ËÏÖ½ğÁ÷ÈëÖ÷Òª¼¯ÖĞµ½2013ÄêÉÏ°ëÄê¡£
+weight=0.00
+wordid_list_size=0()
+No:99	line¢Ú±¾ÆÚÏúÊÛÊÕÈë½ÏÉÏÆÚÔö¼Ó¡£
+weight=0.00
+wordid_list_size=0()
+No:100	line£¨2£©ÊÕµ½µÄË°·Ñ·µ»¹2013Äê¶È·¢ÉúÊıÎª445,649,913.63Ôª£¬±ÈÉÏÄêÔö¼Ó33.50%£¬Ö÷ÒªÔ­ÒòÊÇ£ºÊÕµ½µÄÇ¶ÈëÊ½Èí¼şÔöÖµË°ÍËË°½ğ¶îÔö¼Ó¡£
+weight=0.00
+wordid_list_size=0()
+No:101	line£¨3£©ÊÕ»ØÍ¶×ÊÊÕµ½µÄÏÖ½ğ2013Äê¶È·¢ÉúÊı15,172,260.00Ôª£¬±ÈÉÏÄêÔö¼Ó470.96%£¬Ö÷ÒªÔ­ÒòÊÇ£ºÊÕ»Ø¶Ô²¿·ÖÁªÓªÆóÒµºÍÆäËûµ¥Î»µÄÍ¶×Ê¡£
+weight=0.00
+wordid_list_size=0()
+No:102	line£¨4£©´¦ÖÃ¹Ì¶¨×Ê²ú¡¢ÎŞĞÎ×Ê²úºÍÆäËû³¤ÆÚ×Ê²úÊÕ»ØµÄÏÖ½ğ¾»¶î2013Äê¶È·¢ÉúÊıÎª31,815,716.67Ôª£¬±ÈÉÏÄêÔö¼Ó86.12%£¬Ö÷ÒªÔ­ÒòÊÇ£º´¦ÖÃ¹Ì¶¨×Ê²úÊÕµ½µÄÏÖ½ğÔö¼Ó¡£
+weight=0.00
+wordid_list_size=0()
+No:103	line±¨¸æÆÚÄÚ¹«Ë¾¾­Óª»î¶¯µÄÏÖ½ğÁ÷Á¿Óë±¾Äê¶È¾»ÀûÈó´æÔÚÖØ´ó²îÒìµÄÔ­ÒòËµÃ÷¡ÌÊÊÓÃ¡õ²»ÊÊÓÃÏêÏ¸Ô­ÒòÇë¼û¸½×¢Áù£¬69ÏÖ½ğÁ÷Á¿±í²¹³ä×ÊÁÏ¡£
+weight=0.00
+wordid_list_size=0()
+No:104	lineÈı¡¢Ö÷ÓªÒµÎñ¹¹³ÉÇé¿öµ¥Î»£ºÔªÓªÒµÊÕÈëÓªÒµ³É±¾Ã«ÀûÂÊ(%)ÓªÒµÊÕÈë±ÈÉÏÄêÍ¬ÆÚÔö¼õ£¨%£©ÓªÒµ³É±¾±ÈÉÏÄêÍ¬ÆÚÔö¼õ£¨%£©Ã«ÀûÂÊ±ÈÉÏÄêÍ¬ÆÚÔö¼õ£¨%£©¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ17·ÖĞĞÒµµç×ÓĞĞÒµ19,754,547,950.8416,461,290,916.7216.67%8.6.
+weight=0.00
+wordid_list_size=0()
+No:105	line24%-1.24%·Ö²úÆ·²ÊµçÒµÎñ15,904,547,663.2613,072,644,058.7317.81.
+weight=0.00
+wordid_list_size=0()
+No:106	line67%-0.34%ÊÖ»úÒµÎñ1,551,294,607.931,418,629,105.828.55.
+weight=0.00
+wordid_list_size=0()
+No:107	line54%-4.33%°×µçÒµÎñ1,369,927,530.081,204,755,092.1612.06%6.96.
+weight=0.00
+wordid_list_size=0()
+No:108	line76%-7.38%ÆäËû928,778,149.57765,262,660.0117.61%-14.16%-12.18%-1.86%·ÖµØÇø¾³ÄÚÏúÊÛ15,775,639,484.8512,808,035,030.7318.81%9.68.
+weight=0.00
+wordid_list_size=0()
+No:109	line6%-2.1%¾³ÍâÏúÊÛ3,978,908,465.993,653,255,885.998.18%4.52%2.69%1.64%¹«Ë¾Ö÷ÓªÒµÎñÊı¾İÍ³¼Æ¿Ú¾¶ÔÚ±¨¸æÆÚ·¢Éúµ÷ÕûµÄÇé¿öÏÂ£¬¹«Ë¾×î½ü1Äê°´±¨¸æÆÚÄ©¿Ú¾¶µ÷ÕûºóµÄÖ÷ÓªÒµÎñÊı¾İ¡õÊÊÓÃ¡Ì²»ÊÊÓÃËÄ¡¢×Ê²ú¡¢¸ºÕ®×´¿ö·ÖÎö1¡¢×Ê²úÏîÄ¿ÖØ´ó±ä¶¯Çé¿öµ¥Î»£ºÔª2013ÄêÄ©2012ÄêÄ©±ÈÖØÔö¼õ£¨%£©ÖØ´ó±ä¶¯ËµÃ÷½ğ¶îÕ¼×Ü×Ê²ú±ÈÀı£¨%£©½ğ¶îÕ¼×Ü×Ê²ú±ÈÀı£¨%£©»õ±Ò×Ê½ğ1,843,743,089.9411.71%1,728,946,511.1110.44%1.27%Ó¦ÊÕÕË¿î2,460,996,984.9215.63%1,975,605,771.0711.93%3.7%±¾ÆÚÊÕÈëµÄÔö¼Óµ¼ÖÂÓ¦ÊÕ¿îÓà¶îÔö¼Ó¡¢Ïã¿µ¶ÔÍâÏúÊÛÕËÆÚÑÓ³¤ËùÖÂ´æ»õ3,582,669,024.2622.76%4,059,339,049.2524.51%-1.75%Í¶×ÊĞÔ·¿µØ²ú237,986,524.121.51#5,680,171.891.42%0.09%³¤ÆÚ¹ÉÈ¨Í¶×Ê446,155,499.422.83G2,423,533.192.85%-0.02%¹Ì¶¨×Ê²ú1,908,503,979.8012.12%1,887,836,271.0211.4%0.72%ÔÚ½¨¹¤³Ì49,924,027.970.32P,682,893.850.31%0.01%2¡¢¸ºÕ®ÏîÄ¿ÖØ´ó±ä¶¯Çé¿öµ¥Î»£ºÔª2013Äê2012Äê±ÈÖØÔö¼õ£¨%£©ÖØ´ó±ä¶¯ËµÃ÷½ğ¶îÕ¼×Ü×Ê²ú±ÈÀı£¨%£©½ğ¶îÕ¼×Ü×Ê²ú±ÈÀı£¨%£©¶ÌÆÚ½è¿î5,239,069,764.4833.28%5,456,351,486.4832.94%0.34%³¤ÆÚ½è¿î5,000,000.000.03@0,000,000.002.42%-2.39%±¾ÆÚ¹é»¹³¤ÆÚ½è¿îËùÖÂ3¡¢ÒÔ¹«ÔÊ¼ÛÖµ¼ÆÁ¿µÄ×Ê²úºÍ¸ºÕ®µ¥Î»£ºÔª¿µ¼Ñ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾2013Äê¶È±¨¸æÈ«ÎÄ18ÏîÄ¿ÆÚ³õÊı±¾ÆÚ¹«ÔÊ¼ÛÖµ±ä¶¯ËğÒæ¼ÆÈëÈ¨ÒæµÄÀÛ¼Æ¹«ÔÊ¼ÛÖµ±ä¶¯±¾ÆÚ¼ÆÌáµÄ¼õÖµ±¾ÆÚ¹ºÂò½ğ¶î±¾ÆÚ³öÊÛ½ğ¶îÆÚÄ©Êı½ğÈÚ×Ê²ú3.¿É¹©³öÊÛ½ğÈÚ×Ê²ú2,311,748.071,369,748.77941,999.30Í¶×ÊĞÔ·¿µØ²ú0.000.00Éú²úĞÔÉúÎï×Ê²ú0.000.00ÉÏÊöºÏ¼Æ2,311,748.071,369,748.77941,999.30½ğÈÚ¸ºÕ®0.000.000.000.000.00±¨¸æÆÚÄÚ¹«Ë¾Ö÷Òª×Ê²ú¼ÆÁ¿ÊôĞÔÊÇ·ñ·¢ÉúÖØ´ó±ä»¯¡õÊÇ¡Ì·ñÎå¡¢ºËĞÄ¾ºÕùÁ¦·ÖÎö¹«Ë¾µÄÑĞ·¢ÄÜÁ¦¡¢ÓªÏúÍøÂçºÍÖÆÔìÄÜÁ¦¶¼¹¹³É¹«Ë¾µÄ¾ºÕùÓÅÊÆ¡£
+weight=0.00
+wordid_list_size=0()
+No:110	line¹«Ë¾½«Í¨¹ı×ÊÔ´ÕûºÏ£¬»ı¼«Ñ°ÇóÔÚÖÇÄÜ»¯²úÆ·¡¢ÔÆ¼ÆËãºÍÍøÂç»¯¼¼ÊõÓ¦ÓÃ¼°Ó¦ÓÃÈí¼şµÈ·½Ãæ»ñµÃÊµÖÊĞÔµÄÍ»ÆÆ£¬²»¶Ï¼ÓÇ¿¼¼Êõ´´ĞÂµÄÁ¦¶ÈºÍºñ¶È£¬ÒÔÌáÉı¹«Ë¾µÄÕûÌå¾ºÕùÓÅÊÆ¡£
+weight=0.00
+wordid_list_size=0()
+No:111	lineÁù¡¢Í¶×Ê×´¿ö·ÖÎö1¡¢¶ÔÍâ¹ÉÈ¨Í¶×ÊÇé¿ö£¨1£©¶ÔÍâÍ¶×ÊÇé¿ö¶ÔÍâÍ¶×ÊÇé¿ö±¨¸æÆÚÍ¶×Ê¶î£¨Ôª£©ÉÏÄêÍ¬ÆÚÍ¶×Ê¶î£¨Ôª£©±ä¶¯·ù¶È£¨%£©0202,800,000.00-100%±»Í¶×Ê¹«Ë¾Çé¿ö¹«Ë¾Ãû³ÆÖ÷ÒªÒµÎñÉÏÊĞ¹«Ë¾Õ¼±»Í¶×Ê¹«Ë¾È¨Òæ±ÈÀı£¨%£©³üÖİ½ÜÂ×ÌØÄ£¾ßËÜ½ºÒµÎñ46.31%Îäºº½ÜÂ×ÌØÄ£¾ßËÜ½ºÒµÎñ46.31%£¨2£©³ÖÓĞ½ğÈÚÆóÒµ¹ÉÈ¨Çé¿ö¹«Ë¾Ãû³Æ¹«Ë¾Àà±ğ×î³õÍ¶×Ê³É±¾£¨Ôª£©ÆÚ³õ³Ö¹ÉÊıÁ¿£¨¹É£©ÆÚ³õ³Ö¹É±ÈÀı£¨%£©ÆÚÄ©³Ö¹ÉÊıÁ¿£¨¹É£©ÆÚÄ©³Ö¹É±ÈÀı£¨%£©ÆÚÄ©ÕËÃæÖµ£¨Ôª£©±¨¸æÆÚËğÒæ£¨Ôª£©»á¼ÆºËËã¿ÆÄ¿¹É·İÀ´Ô´ÎŞÆäËû0.0000
+weight=0.00
+wordid_list_size=0()
