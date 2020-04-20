@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<total_content>
+  <file_info>
+    <name>KeySample</name>
+    <format>cpp</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档\KeyExtract</from_route>
+    <to_size>1K</to_size>
+    <from_size>1K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档\KeyExtract</to_route>
+    <extract_time>2020-04-20 10:20:55</extract_time>
+  </file_info>
+  <file_info>
+    <name>SentimentDemo</name>
+    <format>cpp</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档\LJSentimentAnalysis</from_route>
+    <to_size>1K</to_size>
+    <from_size>1K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档\LJSentimentAnalysis</to_route>
+    <extract_time>2020-04-20 10:20:55</extract_time>
+  </file_info>
+  <file_info>
+    <name>ReadMe</name>
+    <format>txt</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档</from_route>
+    <to_size>2K</to_size>
+    <from_size>2K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档</to_route>
+    <extract_time>2020-04-20 10:20:55</extract_time>
+  </file_info>
+  <file_info>
+    <name>ClusterDemo</name>
+    <format>cpp</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档\Cluster</from_route>
+    <to_size>2K</to_size>
+    <from_size>2K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档\Cluster</to_route>
+    <extract_time>2020-04-20 10:20:55</extract_time>
+  </file_info>
+  <file_info>
+    <name>SummaryDemo</name>
+    <format>cpp</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档\Summary</from_route>
+    <to_size>5K</to_size>
+    <from_size>5K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档\Summary</to_route>
+    <extract_time>2020-04-20 10:20:56</extract_time>
+  </file_info>
+  <file_info>
+    <name>DocExtractorSample</name>
+    <format>cpp</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档\DocExtractor</from_route>
+    <to_size>8K</to_size>
+    <from_size>8K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档\DocExtractor</to_route>
+    <extract_time>2020-04-20 10:20:56</extract_time>
+  </file_info>
+  <file_info>
+    <name>CDemoJZSearch</name>
+    <format>cpp</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档\JZSearch</from_route>
+    <to_size>7K</to_size>
+    <from_size>7K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档\JZSearch</to_route>
+    <extract_time>2020-04-20 10:20:56</extract_time>
+  </file_info>
+  <file_info>
+    <name>DemoDos</name>
+    <format>cpp</format>
+    <from_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\doc\大数据组件接口文档\Classifier</from_route>
+    <to_size>11K</to_size>
+    <from_size>10K</from_size>
+    <to_route>e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\doc\大数据组件接口文档\Classifier</to_route>
+    <extract_time>2020-04-20 10:20:56</extract_time>
+  </file_info>
+</total_content>
