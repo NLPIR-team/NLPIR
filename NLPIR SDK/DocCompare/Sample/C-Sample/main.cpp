@@ -11,12 +11,12 @@
 int main()
 {
     std::vector<std::string> filelist = {
-		"D:\\NLPIR\\test\\compare\\word.txt",
+		"D:\\NLPIR\\test\\compare\\doc.doc",
         
 	};
 	std::vector<std::string> testfiles = 
 	{
-		"D:\\NLPIR\\test\\compare\\pdf.txt"
+		"D:\\NLPIR\\test\\compare\\pdf.pdf"
 	};
 
     if(DC_Init("D:\\NLPIR")!=1)
@@ -25,7 +25,7 @@ int main()
         return -1;
     }
     printf("初始化成功！\n");
-    DC_HANDLE test = DC_NewInstance("./", false);//第一个参数为结果存放路径，第二个参数选择的是XML存储
+    DC_HANDLE test = DC_NewInstance("D:\\NLPIR\\test\\compare\\", false);//第一个参数为结果存放路径，第二个参数选择的是XML存储
     double start = clock();
     size_t length = filelist.size();
     const bool isTestFile = true;
