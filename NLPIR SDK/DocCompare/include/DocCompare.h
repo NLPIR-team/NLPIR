@@ -76,7 +76,7 @@ DOCCOMPARE_API void DC_Exit(void);
 *  History    :
 *              1.create 2013-6-8
 *********************************************************************/
-DOCCOMPARE_API DC_HANDLE DC_NewInstance(const char* outputDir,  bool useJson=false);
+DOCCOMPARE_API DC_HANDLE DC_NewInstance(const char* outputDir,  bool useJson=true);
 
 /*********************************************************************
 *
@@ -163,11 +163,30 @@ DOCCOMPARE_API const char * DC_Cmp2Str(DC_HANDLE pDCHandle, const char* sStr1, c
 *********************************************************************/
 DOCCOMPARE_API int DC_AddFile2Lib(DC_HANDLE pDCHandle, const char* sFilename);
 
+
+/*********************************************************************
+*
+*  Func Name  : DC_AddStr2Lib
+*
+*  Description: 添加待比较的字符串进入模板文档库
+*
+*  Parameters : DC_HANDLE：由DC_NewInstance生成的Handle
+*				const char* sFilename：模板文件名
+*				sText: 文本字符串内容；
+*				sTextID: 文本字符串的唯一ID
+*  Returns    : success or fail
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013-6-8
+*********************************************************************/
+DOCCOMPARE_API int DC_AddStr2Lib(DC_HANDLE pDCHandle, const char* sText,const char*sTextID);
+
+
 /*********************************************************************
 *
 *  Func Name  : DC_CmpFile2Lib
 *
-*  Description: 添加待比较的文档进入模板文档库
+*  Description: 将待比较的文档与模板文档库比较出结果
 *
 *  Parameters : DC_HANDLE：由DC_NewInstance生成的Handle
 *				const char* sFilename：待比较的文本文件
@@ -178,5 +197,21 @@ DOCCOMPARE_API int DC_AddFile2Lib(DC_HANDLE pDCHandle, const char* sFilename);
 *              1.create 2013-6-8
 *********************************************************************/
 DOCCOMPARE_API const char * DC_CmpFile2Lib(DC_HANDLE pDCHandle, const char* sFilename);
+
+/*********************************************************************
+*
+*  Func Name  : DC_CmpStr2Lib
+*
+*  Description: 将待比较的字符串与模板文档库比较出结果
+*
+*  Parameters : DC_HANDLE：由DC_NewInstance生成的Handle
+*				const char* sFilename：待比较的文本文件
+*
+*  Returns    : success or fail
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2013-6-8
+*********************************************************************/
+DOCCOMPARE_API const char * DC_CmpStr2Lib(DC_HANDLE pDCHandle, const char* sText, const char*sTextID);
 
 #endif // !__NLPIR_DOC_COMPARE_INCLUDED_H___
