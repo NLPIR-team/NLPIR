@@ -162,6 +162,7 @@ ST_API double ST_GetSentimentPoint(const char *sSentence);
  *              1.create 2014-8-3
  *********************************************************************/
 ST_API int ST_ImportUserDict(const char *sFilePath, int bOverwrite=false);
+
 /*********************************************************************
  *
  *  Func Name  : ST_GetLastErrMsg
@@ -247,4 +248,20 @@ ST_API const char * ST_GetLastErrMsg();
 </LJSentiment-Config>
 
 */
+
+/*********************************************************************
+*
+*  Func Name  : ST_ProcesDir
+*
+*  Description: 批量处理指定的目录下的文本文件
+*               分析结果，输出到指定的Excel文件中
+*
+*  Parameters : const char* sPath
+*
+*  Returns    : 在sPath目录下，自动生成"SentimentRankResult.xls",返回该文件的全路径名称
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2020-11-30
+*********************************************************************/
+ST_API const char* ST_ProcesDir(const char*sPath);
 #endif

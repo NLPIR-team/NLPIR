@@ -35,6 +35,10 @@
 #define BIG5_CODE GBK_CODE+2//BIG5编码
 #define GBK_FANTI_CODE GBK_CODE+3//GBK编码，里面包含繁体字
 
+#define OUTPUT_FORMAT_SHARP 0//正常的字符串按照#链接的输出新词结果
+#define OUTPUT_FORMAT_JSON 1//正常的JSON字符串输出新词结果
+#define OUTPUT_FORMAT_EXCEL  2//正常的CSV字符串输出新词结果,保存为csv格式即可采用Excel打开
+
 /*********************************************************************
  *
  *  Func Name  : Init
@@ -89,7 +93,7 @@ KEYEXTRACT_API bool KeyExtract_Exit();
 *  History    : 
 *              1.create 2012/11/12
 *********************************************************************/
-KEYEXTRACT_API const char * KeyExtract_GetKeyWords(const char *sLine,int nMaxKeyLimit=50,bool bWeightOut=false);
+KEYEXTRACT_API const char * KeyExtract_GetKeyWords(const char *sLine,int nMaxKeyLimit=50, int nFormat = OUTPUT_FORMAT_SHARP);
 
 /*********************************************************************
 *
@@ -110,7 +114,7 @@ KEYEXTRACT_API const char * KeyExtract_GetKeyWords(const char *sLine,int nMaxKey
 *  History    : 
 *              1.create 2012/11/12
 *********************************************************************/
-KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
+KEYEXTRACT_API const char * KeyExtract_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50, int nFormat = OUTPUT_FORMAT_SHARP);
 
 /*********************************************************************
  *
