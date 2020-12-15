@@ -43,7 +43,7 @@
 #define GBK_FANTI_CODE GBK_CODE+3//GBK编码，里面包含繁体字
 #define UTF8_FANTI_CODE GBK_CODE+4//UTF8编码
 #define ENCODING_UTF8_FJ ENCODING_GBK+5//UTF8编码转换过程中自动繁简转换处理，扫描过滤功能建议使用
-#define KS_HANDLE int
+#define KS_HANDLE int//扫描示例基于扫描类，一类可以有多个实体，以支持多线程处理
 
 #define SCAN_MODE_NORMAL 0//正常扫描模式
 #define SCAN_MODE_SHAPE 1//形变扫描模式
@@ -66,7 +66,7 @@
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-KEYSCANAPI_API int KS_Init(const char *sInitDirPath = "", int encode = GBK_CODE, const char*sLicenceCode = 0,const char *sDelimiter=",");
+KEYSCANAPI_API int KS_Init(const char *sInitDirPath = "", int encode = GBK_CODE, const char*sLicenceCode = 0);
 
 
 /*************************************************************************
@@ -99,7 +99,7 @@ KEYSCANAPI_API void KS_Exit();
 *  History    :
 *              1.create 2016-11-15
 *********************************************************************/
-KEYSCANAPI_API KS_HANDLE KS_NewInstance();
+KEYSCANAPI_API KS_HANDLE KS_NewInstance(int nFilterTypeIndex=0);
 
 /*********************************************************************
 *
@@ -124,6 +124,7 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *  Parameters : 
  *				sFilename:Text filename for user dictionary 
  *				bool bOverwrite: true将覆盖系统已经有的词表；否则将采用追加的方式追加不良词表
+ *				bPinyinAbbrevNeeded: 是否应用拼音缩写
  *				KS_HANDLE handle： handle of KeyScanner
  *
  *  Returns    : The  number of  lexical entry imported successfully
@@ -139,7 +140,7 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
 //  示例： {中国;中华;中华人民共和国;中国共产党;中共}+{伟大;光荣;正确}-{中华民国;国民党}  政治类 5
 //   表示的是： 文本内容中包含 {中国;中华;中华人民共和国;中国共产党;中共}中的一种，同时出现 {伟大;光荣;正确}中的一个，但不能出现{中华民国;国民党}的任何一个
  *********************************************************************/
-KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename,bool bPinyinAbbrevNeeded=false, bool bOverwrite = false, KS_HANDLE handle=0);
+KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename, bool bOverwrite = false, bool bPinyinAbbrevNeeded = false, KS_HANDLE handle=0);
 
 /*********************************************************************
 *
@@ -274,6 +275,8 @@ KEYSCANAPI_API int KS_ScanStat(const char *sResultFile, KS_HANDLE handle = 0);
 *  Description: 多线程扫描按行扫描输入的文本夹文件内容
 *  Parameters : sInputDirPath:输入的文件夹路径
 *               sResultPath: 输出结果的文件夹路径
+*				const char*sFilter： 输入的文件后缀名，默认是：
+*			
 *			    nThreadCount: 线程数，默认10个
 *				int bEncript:0 不加密；1，加密
 *  Returns    : 成功扫描到问题的文件数
@@ -282,8 +285,9 @@ KEYSCANAPI_API int KS_ScanStat(const char *sResultFile, KS_HANDLE handle = 0);
 *              1.create 2017-1-12
 // 返回的格式如下：
 *********************************************************************/
-KEYSCANAPI_API int KS_ScanDir(const char *sInputDirPath,const char *sResultPath,int nThreadCount=10,int bEncript=false, int scan_mode=0);
-
+KEYSCANAPI_API int KS_ScanDir(const char *sInputDirPath,const char *sResultPath, const char*sFilter,int nThreadCount=10,int bEncript=false, int scan_mode=0);
+KEYSCANAPI_API void KS_MergeResult(const char *sPath);//Merge多线程的扫描结果
+KEYSCANAPI_API int KS_ScanAddStat(const char *sResultFile, KS_HANDLE handle);//将handle线程扫描结果归并到0线程
 
 /*********************************************************************
 *
