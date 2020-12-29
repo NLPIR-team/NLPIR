@@ -1,0 +1,18 @@
+﻿  SummarySystem.cpp
+..\..\..\Src\Summary\Sample\SummarySystem.cpp(108): warning C4267: “+=”: 从“size_t”转换到“long”，可能丢失数据
+..\..\..\Src\Summary\Sample\SummarySystem.cpp(69): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+..\..\..\Src\Summary\Sample\SummarySystem.cpp(80): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+  ..\..\..\Src\Summary\Sample\SummarySystem.cpp(80): note: 请考虑在格式字符串中使用“%zd”
+..\..\..\Src\Summary\Sample\SummarySystem.cpp(117): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+  ..\..\..\Src\Summary\Sample\SummarySystem.cpp(117): note: 请考虑在格式字符串中使用“%zd”
+..\..\..\Src\Summary\Sample\SummarySystem.cpp(72): warning C4101: “nRealCount”: 未引用的局部变量
+..\..\..\Src\Summary\Sample\SummarySystem.cpp(160): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(568): note: 参见“stricmp”的声明
+..\..\..\Src\Summary\Sample\SummarySystem.cpp(226): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  正在生成代码
+  All 173 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  SummarySystem.vcxproj -> E:\NLPIR-team\NLPIR\NLPIR SDK\Summary\projects\Summary_C\packet\Project\Summary\SummarySystem\..\..\..\bin\Summary\SummarySystem.exe
+  SummarySystem.vcxproj -> ..\..\..\bin\Summary\SummarySystem.pdb (Full PDB)
