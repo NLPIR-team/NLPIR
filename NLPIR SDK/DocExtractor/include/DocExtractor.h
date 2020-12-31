@@ -213,4 +213,4 @@ DOCEXTRACTOR_API int  DE_ComputeSentimentDoc(const char *sText);
 DOCEXTRACTOR_API void DE_Exit();
 
 //获得错误消息
-DOCEXTRACTOR_API const char* DE_GetLastErrMsg();
+DOCEXTRACTOR_API const char* DE_GetLastErrorMsg();

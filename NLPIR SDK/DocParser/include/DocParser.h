@@ -3,6 +3,10 @@
 * DocParser  (c) 2019-2020
 *     Dr. Kevin Zhang (Hua-Ping Zhang)
 *     All rights reserved.
+* 
+*	强大的文档解析的工具，可以解析doc,docx,pdf,excel,ppt,htm,txt等常见文档；
+*	可以识别pdf里面的图片；
+*	并读取文档中的图片与表格信息
 *
 * This file is the confidential and proprietary property of
 * Kevin Zhang and the possession or use of this file requires
@@ -38,7 +42,7 @@
 #define DOCPARSER_API 
 #endif
 
-#define DP_HANDLE  size_t 
+#define DP_HANDLE  unsigned long long 
 
 /*********************************************************************
 *
@@ -61,12 +65,64 @@ DOCPARSER_API int DP_Init(const char * sDataPath = 0, const char*sLicenceCode = 
 
 /*********************************************************************
 *
+*  Func Name  : DP_Exit
+*
+*  Description: Destroy  Document Parser
+*               The function must be invoked before quit the system
+*
+*  Parameters :void
+*  Returns    : void
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2020-3-19
+*********************************************************************/
+DOCPARSER_API void DP_Exit(void);
+
+/*********************************************************************
+*
+*  Func Name  : DP_File2Txt
+*
+*  Description: Parse any file to txt json string
+*				file type: zip/rar/tar/7z/bz/
+*						   doc/docx/xls/xlsx/ppt/pptx
+*						   pdf/txt/eml/html
+*
+*  Parameters : const char *sDocFilename: document filename
+*
+*
+*  Returns    : const char*: the result json string with utf-8 encoded
+*
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2020-3-18
+*********************************************************************/
+DOCPARSER_API const char* DP_File2Txt(const char *sFilename);
+
+/*********************************************************************
+*
+*  Func Name  : DP_GetFileExt
+*
+*  Description: 返回能处理的文档文件格式后缀
+*
+*  Parameters : const char *sDocFilename: document filename
+*
+*
+*  Returns    : const char*: the result string
+*
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2020-3-18
+*********************************************************************/
+DOCPARSER_API const char* DP_GetFileExt();
+
+/*********************************************************************
+*
 *  Func Name  : DP_Parse
 *
 *  Description: Parse a document file
 *
 *
-*  Parameters : DP_HANDLE: the result handle
+*  Parameters : const char *sDocFilename: document filename
 *
 *				 
 *  Returns    : DP_HANDLE: the result handle

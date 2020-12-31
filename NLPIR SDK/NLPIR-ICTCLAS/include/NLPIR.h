@@ -37,7 +37,7 @@
 #ifdef NLPIR_INTERNAL_CALL
 #define NLPIR_API 
 #endif
-#ifdef NLPIR_STATIC
+#ifdef _LIB
 #define NLPIR_API extern "C"  
 #endif
 
@@ -87,6 +87,11 @@ struct result_t{
 #define BIG5_CODE GBK_CODE+2//BIG5编码
 #define GBK_FANTI_CODE GBK_CODE+3//GBK编码，里面包含繁体字
 #define UTF8_FANTI_CODE GBK_CODE+4//UTF8编码
+
+
+#define OUTPUT_FORMAT_SHARP 0//正常的字符串按照#链接的输出新词结果
+#define OUTPUT_FORMAT_JSON 1//正常的JSON字符串输出新词结果
+#define OUTPUT_FORMAT_EXCEL  2//正常的CSV字符串输出新词结果,保存为csv格式即可采用Excel打开
 
 /*********************************************************************
  *
@@ -412,7 +417,7 @@ NLPIR_API const char*  NLPIR_GetEngWordOrign(const char *sWord);
 
 /*********************************************************************
 *
-*  Func Name  : NLPIR_WordFreqStat(const char *sText)
+*  Func Name  : NLPIR_WordFreqStat(const char *sText,bool bStopRemove)
 *
 *  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
 *  Parameters : sText:输入的文本内容
@@ -475,13 +480,13 @@ class  __declspec(dllexport) CNLPIR {
 		}
 
 #ifdef  NLPIR_KEY_NEW_FUNC//Include keyword and new word function
-		const char * GetKeyWords(const char *sLine,int nMaxKeyLimit,bool bWeightOut);
+		const char * GetKeyWords(const char *sLine,int nMaxKeyLimit,int nFormat);
 		//获取关键词
-		const char * GetFileKeyWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
+		const char * GetFileKeyWords(const char *sFilename,int nMaxKeyLimit,int nFormat);
 		//从文本文件中获取关键词
-		const char * GetNewWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
+		const char * GetNewWords(const char *sFilename,int nMaxKeyLimit,int nFormat);
 		//获取新词
-		const char * GetFileNewWords(const char *sFilename,int nMaxKeyLimit,bool bWeightOut);
+		const char * GetFileNewWords(const char *sFilename,int nMaxKeyLimit,int nFormat);
 		//从文本文件中获取新词
 #endif
 private:
@@ -529,8 +534,9 @@ NLPIR_API unsigned long NLPIR_FingerPrint(const char *sLine);
 *  Description: Tokenization a paragraph for information retrieval
 *
 *
-*  Parameters : sParagraph: The source paragraph
-*
+*  Parameters : const char* sLine: The source line
+*				bool bFineSegment: true: need finer segment（国务院办公厅->国务院  办公厅）; false: no need
+*					
 *  Returns    : JSON format string
 *  Author     :  Kevin Zhang
 *  History    :
@@ -569,7 +575,7 @@ NLPIR_API unsigned long NLPIR_FingerPrint(const char *sLine);
 }
 ]
 *********************************************************************/
-NLPIR_API const char * NLPIR_Tokenizer4IR(const char *sLine);
+NLPIR_API const char * NLPIR_Tokenizer4IR(const char *sLine,bool bFineSegment=true);
 
 #ifdef  NLPIR_KEY_NEW_FUNC//Include keyword and new word function
 /*********************************************************************
@@ -591,7 +597,7 @@ NLPIR_API const char * NLPIR_Tokenizer4IR(const char *sLine);
 *  History    : 
 *              1.create 2012/11/12
 *********************************************************************/
-NLPIR_API const char * NLPIR_GetKeyWords(const char *sLine,int nMaxKeyLimit=50,bool bWeightOut=false);
+NLPIR_API const char * NLPIR_GetKeyWords(const char *sLine,int nMaxKeyLimit=50, int nFormat = OUTPUT_FORMAT_SHARP);
 
 /*********************************************************************
 *
@@ -611,7 +617,7 @@ NLPIR_API const char * NLPIR_GetKeyWords(const char *sLine,int nMaxKeyLimit=50,b
 *  History    : 
 *              1.create 2012/11/12
 *********************************************************************/
-NLPIR_API const char * NLPIR_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
+NLPIR_API const char * NLPIR_GetFileKeyWords(const char *sFilename,int nMaxKeyLimit=50, int nFormat = OUTPUT_FORMAT_SHARP);
 
 /*********************************************************************
  *
@@ -646,7 +652,7 @@ NLPIR_API unsigned int NLPIR_ImportKeyBlackList(const char *sFilename,const char
 *  History    : 
 *              1.create  2012/11/12
 *********************************************************************/
-NLPIR_API const char * NLPIR_GetNewWords(const char *sLine,int nMaxKeyLimit=50,bool bWeightOut=false);
+NLPIR_API const char * NLPIR_GetNewWords(const char *sLine,int nMaxKeyLimit=50, int nFormat = OUTPUT_FORMAT_SHARP);
 
 /*********************************************************************
 *
@@ -666,7 +672,7 @@ NLPIR_API const char * NLPIR_GetNewWords(const char *sLine,int nMaxKeyLimit=50,b
 *  History    : 
 *              1.create 2012/11/12
 *********************************************************************/
-NLPIR_API const char * NLPIR_GetFileNewWords(const char *sFilename,int nMaxKeyLimit=50,bool bWeightOut=false);
+NLPIR_API const char * NLPIR_GetFileNewWords(const char *sFilename,int nMaxKeyLimit=50, int nFormat = OUTPUT_FORMAT_SHARP);
 
 
 /*********************************************************************
@@ -752,7 +758,7 @@ NLPIR_API int NLPIR_NWI_Complete();//文件或者内存导入结束
 *  History    : 
 *              1.create 2013/11/23
 *********************************************************************/
-NLPIR_API const char * NLPIR_NWI_GetResult(bool bWeightOut=false);//输出新词识别结果
+NLPIR_API const char * NLPIR_NWI_GetResult(int nFormat = OUTPUT_FORMAT_SHARP);//输出新词识别结果
 
 /*********************************************************************
 *
@@ -770,7 +776,7 @@ NLPIR_API const char * NLPIR_NWI_GetResult(bool bWeightOut=false);//输出新词识别
 *  History    : 
 *              1.create 2015/10/13
 *********************************************************************/
-NLPIR_API const char * NLPIR_NWI_GetKeyWordResult(int nMaxKeyLimit=50,bool bWeightOut=false);
+NLPIR_API const char * NLPIR_NWI_GetKeyWordResult(int nMaxKeyLimit=50,int nFormat=false);
 
 /*********************************************************************
 *
