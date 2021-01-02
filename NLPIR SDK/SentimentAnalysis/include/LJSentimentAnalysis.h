@@ -1,8 +1,7 @@
-#ifndef __LJSENTIMENTANALYSIS__H__
-#define __LJSENTIMENTANALYSIS__H__
-#include <string>
 #if !defined(LJSentimentAnalysis_2014_INCLUDE)
 #define LJSentimentAnalysis_2014_INCLUDE
+
+#include <string>
  
 #ifdef OS_LINUX
 	#define LJSentimentAnalysis_API extern "C" 
@@ -14,11 +13,11 @@
 #endif
 #endif
 
-#define GBK_CODE 0
-#define UTF8_CODE GBK_CODE+1
-#define BIG5_CODE GBK_CODE+2
-#define GBK_FANTI_CODE GBK_CODE+3
-#define UTF8_FANTI_CODE GBK_CODE+4
+#define GBK_CODE 0//Ã-- INSERT --         ¬ÃÃ§³ÃBK±àÃ«
+#define UTF8_CODE GBK_CODE+1//UTF8±àÃ«
+#define BIG5_CODE GBK_CODE+2//BIG5±àÃ«
+#define GBK_FANTI_CODE GBK_CODE+3//GBK±àÃ«£¬Ã¯Ã¦°üº¬·±Ã¥Ã
+#define UTF8_FANTI_CODE GBK_CODE+4//GBK±àÃ«£¬Ã¯Ã¦°üº¬·±Ã¥Ã
 
 //feeling define
 #define EMOTION_HAPPY 0
@@ -32,8 +31,11 @@
 LJSentimentAnalysis_API int LJST_Inits(const char *path, int encode, const char*sLicenceCode=0);
 LJSentimentAnalysis_API bool LJST_GetParagraphSent(const char* lpszParagraph, char* szRes);
 LJSentimentAnalysis_API bool LJST_GetFileSent(const char* lpszFilename, char* szRes);
+
+LJSentimentAnalysis_API const char * LJST_GetParagraphSentE(const char* lpszParagraph);
+LJSentimentAnalysis_API const char * LJST_GetFileSentE(const char* lpszFilename);
 LJSentimentAnalysis_API void LJST_Exits();
 LJSentimentAnalysis_API int LJST_ImportUserDict(const char* lpszFilename,bool bOverwrite=true);
-#endif
+LJSentimentAnalysis_API const char * LJST_GetLastErrorMsg();
 
 #endif
