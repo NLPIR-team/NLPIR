@@ -28,7 +28,7 @@
 #define EMOTION_EVIL EMOTION_HAPPY+5
 #define EMOTION_SURPRISE EMOTION_HAPPY+6
 
-LJSentimentAnalysis_API int LJST_Inits(const char *path, int encode, const char*sLicenceCode=0);
+LJSentimentAnalysis_API int LJST_Init(const char *path, int encode, const char*sLicenceCode=0);
 LJSentimentAnalysis_API bool LJST_GetParagraphSent(const char* lpszParagraph, char* szRes);
 LJSentimentAnalysis_API bool LJST_GetFileSent(const char* lpszFilename, char* szRes);
 

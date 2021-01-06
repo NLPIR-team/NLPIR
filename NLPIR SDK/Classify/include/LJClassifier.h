@@ -38,7 +38,6 @@ using namespace std;
 #endif
 #endif
 
-
 typedef struct _stDoc {
 	string sTitle;
 	string sContent;

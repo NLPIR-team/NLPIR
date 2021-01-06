@@ -7,12 +7,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Src\Summary\API\LJSummary.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
+    <ClInclude Include="D:\NLPIR\Src\Summary\API\LJSummary.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Src\Summary\Sample\SummarySystem.cpp">
+    <ClCompile Include="D:\NLPIR\Src\Summary\Sample\SummarySystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

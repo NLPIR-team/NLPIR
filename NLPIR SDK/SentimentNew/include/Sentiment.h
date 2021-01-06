@@ -179,7 +179,7 @@ ST_API int ST_ImportUserDict(const char *sFilePath, int bOverwrite=false);
  *  History    : 
  *              1.create 2014-2-27
  *********************************************************************/
-ST_API const char * ST_GetLastErrMsg();
+ST_API const char * ST_GetLastErrorMsg();
 
 
 /*Appendix I:Sentimental analysis result sample

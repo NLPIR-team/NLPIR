@@ -25,7 +25,7 @@
     <LocalDebuggerCommandArguments>D:\NLPIR\feedback\summary\test300o.xml 250 d:\nlpir</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>D:\NLPIR\test</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>D:/NLPIR  D:/NLPIR/test/test.txt   D:/NLPIR/test/test2.txt </LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerWorkingDirectory>..\..\..\bin\Summary\x64\</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
@@ -33,5 +33,10 @@
     <LocalDebuggerCommandArguments>D:\NLPIR\test</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerWorkingDirectory>..\..\..\bin\Summary\x64\</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerWorkingDirectory>..\..\..\bin\Summary\x64\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>D:/NLPIR  D:/NLPIR/test/test.txt   D:/NLPIR/test/test2.txt </LocalDebuggerCommandArguments>
   </PropertyGroup>
 </Project>

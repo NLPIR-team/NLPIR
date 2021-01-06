@@ -35,10 +35,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Src\Summary\API\LJSummary.h" />
+    <ClInclude Include="D:\NLPIR\Src\Summary\API\LJSummary.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Src\Summary\Sample\SummarySystem.cpp" />
+    <ClCompile Include="D:\NLPIR\Src\Summary\Sample\SummarySystem.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CD7DA50E-F299-4DB9-9C8E-1A1B636D832E}</ProjectGuid>
@@ -135,7 +135,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugDog|x64'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\bin\Summary\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDog|Win32'">..\..\..\bin\Summary\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\bin\Summary\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\bin\Summary\x64\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDog|x64'">..\..\..\bin\Summary\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDog|Win32'">$(Configuration)\</IntDir>
