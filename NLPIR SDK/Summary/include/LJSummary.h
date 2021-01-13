@@ -40,33 +40,36 @@ DOCSUMMARY_API int DS_Init(const char *sPath=0,int nEncoding=GBK_CODE,const char
 * 参数：sText	    -[IN] 文档内容
 *		fSumRate	-[IN] 文档摘要占原文百分比（为0.00则不限制）
 *		iSumLen		-[IN] 用户限定的摘要长度  （为0则不限制）
+*		nSentenceCount-[IN] 用户限定的句子数量 （为0则不限制）
 *		bHtmlTagRemove-[IN] 是否需要对原文进行Html标签的去除
 * 返回：摘要字符串；出错返回空串
 * 备注：在进程中此函数可以执行多次
 ------------------------------------------------------------------------*/
-DOCSUMMARY_API const char* DS_SingleDoc(const char *sText, float fSumRate=0.00, int iSumLen=250,int bHtmlTagRemove=0);
+DOCSUMMARY_API const char* DS_SingleDoc(const char *sText, float fSumRate=0.00, int iSumLen=500,int nSentenceCount=0,int bHtmlTagRemove=0);
 /*-----------------------------------------------------------------------
 * 功能：生成单文档摘要该函数支持多线程，是多线程安全的
 * 参数：sResult    -[IN] 摘要内容
 *		sText	    -[IN] 文档内容
 *		fSumRate	-[IN] 文档摘要占原文百分比（为0.00则不限制）
 *		iSumLen		-[IN] 用户限定的摘要长度  （为0则不限制）
+*		nSentenceCount-[IN] 用户限定的句子数量  （为0则不限制）
 *		bHtmlTagRemove-[IN] 是否需要对原文进行Html标签的去除
 * 返回：摘要字符串；出错返回空串
 * 备注：在进程中此函数可以执行多次
 ------------------------------------------------------------------------*/
-DOCSUMMARY_API const char* DS_SingleDocE(char *sResult,const char *sText, float fSumRate=0.00, int iSumLen=250,int bHtmlTagRemove=false);
+DOCSUMMARY_API const char* DS_SingleDocE(char *sResult,const char *sText, float fSumRate=0.00, int iSumLen=500, int nSentenceCount = 0,int bHtmlTagRemove=false);
 //
 /*-----------------------------------------------------------------------
 * 功能：生成单文档摘要该函数支持多线程，是多线程安全的
 * 参数：sTextFilename	    -[IN] 文档文件名
 *		fSumRate	-[IN] 文档摘要占原文百分比（为0.00则不限制）
 *		iSumLen		-[IN] 用户限定的摘要长度  （为0则不限制）
+*		nSentenceCount-[IN] 用户限定的句子数量  （为0则不限制）
 *		bHtmlTagRemove-[IN] 是否需要对原文进行Html标签的去除
 * 返回：摘要字符串；出错返回空串
 * 备注：在进程中此函数可以执行多次
 ------------------------------------------------------------------------*/
-DOCSUMMARY_API const char* DS_FileProcess(const char *sTextFilename, float fSumRate=0.00, int iSumLen=250,int bHtmlTagRemove=false);
+DOCSUMMARY_API const char* DS_FileProcess(const char *sTextFilename, float fSumRate=0.00, int iSumLen=500, int nSentenceCount = 0,int bHtmlTagRemove=false);
 //
 
 //退出，释放资源；进程结束前须调用它释放所占用的内存资源

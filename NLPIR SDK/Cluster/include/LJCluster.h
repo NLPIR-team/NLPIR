@@ -29,10 +29,10 @@
 * 参数：sDefaultPath - 数据词典Data文件夹所在的路径
 *		sLicenseCode - 授权码
 *		encode - 编码
-* 返回：true - 成功；false - 失败
+* 返回：1 - 成功；其他 - 失败码
 * 备注：在进程中此函数必须在其他函数之前调用（只需执行一次）
 ------------------------------------------------------------------------*/
-CLUSTER_API bool CLUS_Init(const char *sDefaultPath,const char *sLicenseCode=0,int encode=GBK_CODE);
+CLUSTER_API int CLUS_Init(const char *sDefaultPath,int encode=GBK_CODE,const char *sLicenseCode=0);
 //聚类最大数量，每个聚类最大文档数，停用词文件路径
 
 /*-----------------------------------------------------------------------
@@ -61,12 +61,12 @@ CLUSTER_API bool CLUS_AddContent(const char *sText, const char* sSignature);
 * 返回：true - 成功；false - 失败
 * 备注：在进程中此函数可以在打印结果之前执行多次
 ------------------------------------------------------------------------*/
-CLUSTER_API bool CLUS_AddFile(const char *sFileName, const char* sSignature);
+CLUSTER_API bool CLUS_AddFile(const char *sFileName);
 
 /*-----------------------------------------------------------------------
 * 功能：打印结果
 * 参数：sXmlFileName- [OUT]聚类内容输出到XML文件格式的内存中
-		sResultPath- [OUT]按照聚类结果输出到sResultPath指定的路径下存储；为空则不输出
+		sResultPath- [OUT]在sResultPath指定的路径下，按照聚类结果作为不同子目录存储；为空则不输出
 * 返回：true - 成功；false - 失败
 ------------------------------------------------------------------------*/
 CLUSTER_API bool CLUS_GetLatestResult(const char* sXmlFileName,const char *sResultPath=0);
@@ -86,7 +86,7 @@ CLUSTER_API void CLUS_CleanData();
 CLUSTER_API void CLUS_Exit();
 
 //获得错误消息
-CLUSTER_API const char* CLUS_GetLastErrMsg();
+CLUSTER_API const char* CLUS_GetLastErrorMsg();
 
 #endif //_H_CLUSTER_DLL
 

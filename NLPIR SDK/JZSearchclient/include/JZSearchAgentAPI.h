@@ -11,8 +11,8 @@
 #else
 #define JZSEARCHAGENTAPI_API extern "C" __declspec(dllimport)//extern "C"
 #endif
-#ifdef OS_LINUX
-#define JZSEARCHAGENTAPI_API
+#if defined(OS_LINUX)||defined(SERACHAGENT_INTERNAL_CALL)
+#define JZSEARCHAGENTAPI_API extern "C" 
 #endif
 
 JZSEARCHAGENTAPI_API const char* jzsearch_query_client(const char *query_line,int nStart,int nPageCount,const char *sHostIP,int nPortID);

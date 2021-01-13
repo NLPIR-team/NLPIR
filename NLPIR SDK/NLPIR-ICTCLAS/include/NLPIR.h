@@ -103,7 +103,7 @@ struct result_t{
  *  Parameters : const char * sInitDirPath=NULL
  *				 sDataPath:  Path where Data directory stored.
  *				 the default value is NULL, it indicates the initial directory is current working directory path
- *				 encode: encoding code;
+ *				 int encode: encoding code;
  *				 sLicenseCode: license code for unlimited usage. common user ignore it
  *  Returns    : success or fail
  *  Author     : Kevin Zhang  

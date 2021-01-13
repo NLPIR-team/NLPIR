@@ -45,6 +45,13 @@
 
 typedef int IE_CODE_TYPE;
 
+#ifndef Size_t
+#ifdef WIN64
+	#define Size_t unsigned long long
+#else
+	#define Size_t unsigned int
+#endif
+#endif
 /*********************************************************************
 *
 *  Func Name  : Init
@@ -113,7 +120,7 @@ IENCODINGAPI_API const char * IE_GetLastErrorMsg();
 *  History    :
 *              1.create 2014-2-27
 *********************************************************************/
-IENCODINGAPI_API IE_CODE_TYPE IE_CodeDetect(const char* sSrc, size_t nSrcLen);
+IENCODINGAPI_API IE_CODE_TYPE IE_CodeDetect(const char* sSrc, Size_t nSrcLen);
 
 
 /*********************************************************************
@@ -130,13 +137,13 @@ IENCODINGAPI_API IE_CODE_TYPE IE_CodeDetect(const char* sSrc, size_t nSrcLen);
 *				sDest: [OUT], 编码转换后的文本
 *				nDestLen: [IN/OUT], pcDest的有效长度，输出编码转换后的文本长度
 *
-*  Returns    : 实际转换的字节数，出错返回(size_t)-1
+*  Returns    : 实际转换的字节数，出错返回(Size_t)-1
 *
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2014-2-27
 *********************************************************************/
-IENCODINGAPI_API size_t IE_ToUnicode(const char* sSrc, size_t nSrcLen, char* sDest, size_t nDestLen, IE_CODE_TYPE codeType = IE_UNKNOWN_CODE);
+IENCODINGAPI_API Size_t IE_ToUnicode(const char* sSrc, Size_t nSrcLen, char* sDest, Size_t nDestLen, IE_CODE_TYPE codeType = IE_UNKNOWN_CODE);
 
 /*********************************************************************
 *
@@ -149,13 +156,13 @@ IENCODINGAPI_API size_t IE_ToUnicode(const char* sSrc, size_t nSrcLen, char* sDe
 *  Parameters : sSrcFilename: [IN], 源文本文本文件
 *				sDestFilename: [OUT], 编码转换后的文本文件
 *
-*  Returns    : 实际转换的字节数，出错返回(size_t)-1
+*  Returns    : 实际转换的字节数，出错返回(Size_t)-1
 *
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2014-2-27
 *********************************************************************/
-IENCODINGAPI_API  size_t IE_ToUnicodeFile(const char* sSrcFilename, const char* sDestFilename);
+IENCODINGAPI_API  Size_t IE_ToUnicodeFile(const char* sSrcFilename, const char* sDestFilename);
 /*********************************************************************
 *
 *  Func Name  : IE_ToUtf8
@@ -170,13 +177,13 @@ IENCODINGAPI_API  size_t IE_ToUnicodeFile(const char* sSrcFilename, const char* 
 *				sDest: [OUT], 编码转换后的文本
 *				nDestLen: [IN/OUT], pcDest的有效长度，输出编码转换后的文本长度
 *
-*  Returns    : 实际转换的字节数，出错返回(size_t)-1
+*  Returns    : 实际转换的字节数，出错返回(Size_t)-1
 *
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2014-2-27
 *********************************************************************/
-IENCODINGAPI_API size_t IE_ToUtf8( const char* sSrc, size_t nSrcLen, char* pcDest, size_t iDestLen, IE_CODE_TYPE codeType = IE_UNKNOWN_CODE);
+IENCODINGAPI_API Size_t IE_ToUtf8( const char* sSrc, Size_t nSrcLen, char* pcDest, Size_t iDestLen, IE_CODE_TYPE codeType = IE_UNKNOWN_CODE);
 /*********************************************************************
 *
 *  Func Name  : IE_ToUtf8File
@@ -188,13 +195,13 @@ IENCODINGAPI_API size_t IE_ToUtf8( const char* sSrc, size_t nSrcLen, char* pcDes
 *  Parameters : sSrcFilename: [IN], 源文本文本文件
 *				sDestFilename: [OUT], 编码转换后的文本文件
 *
-*  Returns    : 实际转换的字节数，出错返回(size_t)-1
+*  Returns    : 实际转换的字节数，出错返回(Size_t)-1
 *
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2014-2-27
 *********************************************************************/
-IENCODINGAPI_API size_t IE_ToUtf8File(const char* sSrcFilename, const char* sDestFilename);
+IENCODINGAPI_API Size_t IE_ToUtf8File(const char* sSrcFilename, const char* sDestFilename);
 /*********************************************************************
 *
 *  Func Name  : IE_ToGBK
@@ -209,13 +216,13 @@ IENCODINGAPI_API size_t IE_ToUtf8File(const char* sSrcFilename, const char* sDes
 *				sDest: [OUT], 编码转换后的文本
 *				nDestLen: [IN/OUT], pcDest的有效长度，输出编码转换后的文本长度
 *
-*  Returns    : 实际转换的字节数，出错返回(size_t)-1
+*  Returns    : 实际转换的字节数，出错返回(Size_t)-1
 *
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2014-2-27
 *********************************************************************/
-IENCODINGAPI_API size_t IE_ToGBK(const char* sSrc, size_t nSrcLen, char* pcDest, size_t iDestLen, IE_CODE_TYPE codeType = IE_UNKNOWN_CODE);
+IENCODINGAPI_API Size_t IE_ToGBK(const char* sSrc, Size_t nSrcLen, char* pcDest, Size_t iDestLen, IE_CODE_TYPE codeType = IE_UNKNOWN_CODE);
 /*********************************************************************
 *
 *  Func Name  : IE_ToGBKFile
@@ -227,11 +234,11 @@ IENCODINGAPI_API size_t IE_ToGBK(const char* sSrc, size_t nSrcLen, char* pcDest,
 *  Parameters : sSrcFilename: [IN], 源文本文本文件
 *				sDestFilename: [OUT], 编码转换后的文本文件
 *
-*  Returns    : 实际转换的字节数，出错返回(size_t)-1
+*  Returns    : 实际转换的字节数，出错返回(Size_t)-1
 *
 *  Author     : Kevin Zhang
 *  History    :
 *              1.create 2014-2-27
 *********************************************************************/
-IENCODINGAPI_API size_t IE_ToGBKFile(const char* sSrcFilename, const char* sDestFilename);
+IENCODINGAPI_API Size_t IE_ToGBKFile(const char* sSrcFilename, const char* sDestFilename);
 #endif

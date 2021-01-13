@@ -9,8 +9,8 @@
  * a written license from the author.
  * Filename: 
  * Abstract:
- *          Training: DC_Init; DC_AddTrain,DC_AddTrainFile;DC_Train;DC_Exit;
-			Classify: DC_Init;DC_LoadTrainResult;DC_Classify,DC_ClassifyFile;DC_Exit
+ *          Training: DeepClassifier_Init; DeepClassifier_AddTrain,DeepClassifier_AddTrainFile;DeepClassifier_Train;DeepClassifier_Exit;
+			Classify: DeepClassifier_Init;DeepClassifier_LoadTrainResult;DeepClassifier_Classify,DeepClassifier_ClassifyFile;DeepClassifier_Exit
 			Support Multiple Channel of Classification
  * Author:   Kevin Zhang 
  *          Email: pipy_zhang@msn.com kevinzhang@bit.edu.cn
@@ -38,11 +38,11 @@
 #define GBK_CODE 0//Ä¬ÈÏÖ§³ÖGBK±àÂë
 #define UTF8_CODE GBK_CODE+1//UTF8±àÂë
 
-#define DC_HANDLE int  //Added in 2015/9/22
+#define DeepClassifier_Handle int  //Added in 2015/9/22
 #define FEATURE_COUNT 1000
 /*********************************************************************
  *
- *  Func Name  : DC_Init
+ *  Func Name  : DeepClassifier_Init
  *
  *  Description: Init DeepClassifier
  *               The function must be invoked before any operation listed as following
@@ -59,11 +59,11 @@
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API int DC_Init(const char * sDataPath = 0, int encode = GBK_CODE, int nFeatureCount = FEATURE_COUNT, const char*sLicenceCode = 0);
+DEEP_CLASSIFIER_API int DeepClassifier_Init(const char * sDataPath = 0, int encode = GBK_CODE, int nFeatureCount = FEATURE_COUNT, const char*sLicenceCode = 0);
 
 /*********************************************************************
  *
- *  Func Name  : DC_Exit
+ *  Func Name  : DeepClassifier_Exit
  *
  *  Description: Exit DeepClassifier
  *               The function must be invoked before quit the whole system
@@ -74,41 +74,41 @@ DEEP_CLASSIFIER_API int DC_Init(const char * sDataPath = 0, int encode = GBK_COD
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API void DC_Exit();
+DEEP_CLASSIFIER_API void DeepClassifier_Exit();
 
 /*********************************************************************
  *
- *  Func Name  : DC_NewInstance
+ *  Func Name  : DeepClassifier_NewInstance
  *
  *  Description: New a  DeepClassifier Instance
  *               The function must be invoked before mulitiple classifiers
  *
  *  Parameters : int nFeatureCount: Feature count
- *  Returns    : DC_HANDLE , DeepClassifier Handle if success; otherwise return -1; 
+ *  Returns    : DeepClassifier_Handle , DeepClassifier Handle if success; otherwise return -1; 
  *  Author     : Kevin Zhang  
  *  History    : 
  *              1.create 2015-9-22
  *********************************************************************/
-DEEP_CLASSIFIER_API DC_HANDLE  DC_NewInstance(int nFeatureCount = FEATURE_COUNT);
+DEEP_CLASSIFIER_API DeepClassifier_Handle  DeepClassifier_NewInstance(int nFeatureCount = FEATURE_COUNT);
 
 /*********************************************************************
  *
- *  Func Name  : DC_DeleteInstance
+ *  Func Name  : DeepClassifier_DeleteInstance
  *
  *  Description: Delete a  DeepClassifier Instance with handle
  *               The function must be invoked before release a specific classifier
  *
  *  Parameters : None
- *  Returns    : DC_HANDLE , DeepClassifier Handle
+ *  Returns    : DeepClassifier_Handle , DeepClassifier Handle
  *  Author     : Kevin Zhang  
  *  History    : 
  *              1.create 2015-9-22
  *********************************************************************/
-DEEP_CLASSIFIER_API int DC_DeleteInstance(DC_HANDLE handle);
+DEEP_CLASSIFIER_API int DeepClassifier_DeleteInstance(DeepClassifier_Handle handle);
 
 /*********************************************************************
  *
- *  Func Name  : DC_AddTrain
+ *  Func Name  : DeepClassifier_AddTrain
  *
  *  Description: DeepClassifier Training on given text in Memory    
  *
@@ -120,11 +120,11 @@ DEEP_CLASSIFIER_API int DC_DeleteInstance(DC_HANDLE handle);
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API int DC_AddTrain(const char *sClassName,const char *sText,DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DeepClassifier_AddTrain(const char *sClassName,const char *sText,DeepClassifier_Handle handle=0);
 
 /*********************************************************************
  *
- *  Func Name  : DC_AddTrainFile
+ *  Func Name  : DeepClassifier_AddTrainFile
  *
  *  Description: DeepClassifier Training on given text in file    
  *
@@ -136,15 +136,15 @@ DEEP_CLASSIFIER_API int DC_AddTrain(const char *sClassName,const char *sText,DC_
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API int DC_AddTrainFile(const char *sClassName,const char *sFilename,DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DeepClassifier_AddTrainFile(const char *sClassName,const char *sFilename,DeepClassifier_Handle handle=0);
 
 /*********************************************************************
  *
- *  Func Name  : DC_Train
+ *  Func Name  : DeepClassifier_Train
  *
  *  Description: DeepClassifier Training on given text in Memory    
  *				 After training, the training result will stored.
- *				Then the classifier can load it with DC_LoadTrainResult at any time(offline or online).
+ *				Then the classifier can load it with DeepClassifier_LoadTrainResult at any time(offline or online).
 	Parameter:   const char * sClassName: class name
  *				 sFilename: text file name
  *
@@ -153,11 +153,11 @@ DEEP_CLASSIFIER_API int DC_AddTrainFile(const char *sClassName,const char *sFile
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API int DC_Train(DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DeepClassifier_Train(DeepClassifier_Handle handle=0);
 
 /*********************************************************************
  *
- *  Func Name  : DC_LoadTrainResult
+ *  Func Name  : DeepClassifier_LoadTrainResult
  *
  *  Description: DeepClassifier Load already training data    
  *
@@ -168,10 +168,10 @@ DEEP_CLASSIFIER_API int DC_Train(DC_HANDLE handle=0);
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API int DC_LoadTrainResult(DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API int DeepClassifier_LoadTrainResult(DeepClassifier_Handle handle=0);
 /*********************************************************************
 *
-*  Func Name  : DC_ExportFeatures
+*  Func Name  : DeepClassifier_ExportFeatures
 *
 *  Description: DeepClassifier Exports Features after training
 *
@@ -182,11 +182,11 @@ Parameter:   None
 *  History    :
 *              1.create 2013-6-8
 *********************************************************************/
-DEEP_CLASSIFIER_API int DC_ExportFeatures(const char *sFilename,DC_HANDLE handle = 0);
+DEEP_CLASSIFIER_API int DeepClassifier_ExportFeatures(const char *sFilename,DeepClassifier_Handle handle = 0);
 
 /*********************************************************************
  *
- *  Func Name  : DC_Classify
+ *  Func Name  : DeepClassifier_Classify
  *
  *  Description: DeepClassifier Classify on given text in Memory    
  *
@@ -198,10 +198,10 @@ DEEP_CLASSIFIER_API int DC_ExportFeatures(const char *sFilename,DC_HANDLE handle
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API const char * DC_Classify(const char *sText,DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API const char * DeepClassifier_Classify(const char *sText,DeepClassifier_Handle handle=0);
 /*********************************************************************
 *
-*  Func Name  : DC_ClassifyEx
+*  Func Name  : DeepClassifier_ClassifyEx
 *
 *  Description: DeepClassifier Classify on given text in Memory
 *				return multiple class with weights, sorted by weights
@@ -215,11 +215,11 @@ Parameter:   const char * sClassName: class name
 *  History    :
 *              1.create 2013-6-8
 *********************************************************************/
-DEEP_CLASSIFIER_API const char * DC_ClassifyEx(const char *sText, DC_HANDLE handle = 0);
+DEEP_CLASSIFIER_API const char * DeepClassifier_ClassifyEx(const char *sText, DeepClassifier_Handle handle = 0);
 
 /*********************************************************************
  *
- *  Func Name  : DC_ClassifyFile
+ *  Func Name  : DeepClassifier_ClassifyFile
  *
  *  Description: DeepClassifier Classify on given text in file    
  *
@@ -231,10 +231,10 @@ DEEP_CLASSIFIER_API const char * DC_ClassifyEx(const char *sText, DC_HANDLE hand
  *  History    : 
  *              1.create 2013-6-8
  *********************************************************************/
-DEEP_CLASSIFIER_API const char * DC_ClassifyFile(const char *sFilename,DC_HANDLE handle=0);
+DEEP_CLASSIFIER_API const char * DeepClassifier_ClassifyFile(const char *sFilename,DeepClassifier_Handle handle=0);
 /*********************************************************************
 *
-*  Func Name  : DC_ClassifyExFile
+*  Func Name  : DeepClassifier_ClassifyExFile
 *
 *  Description: DeepClassifier Classify on given text in file
 *
@@ -246,10 +246,10 @@ Parameter:   const char * sClassName: class name
 *  History    :
 *              1.create 2013-6-8
 *********************************************************************/
-DEEP_CLASSIFIER_API const char * DC_ClassifyExFile(const char *sFilename, DC_HANDLE handle = 0);
+DEEP_CLASSIFIER_API const char * DeepClassifier_ClassifyExFile(const char *sFilename, DeepClassifier_Handle handle = 0);
 /*********************************************************************
  *
- *  Func Name  : DC_GetLastErrorMsg
+ *  Func Name  : DeepClassifier_GetLastErrorMsg
  *
  *  Description: GetLastErrorMessage
  *    
@@ -263,6 +263,6 @@ DEEP_CLASSIFIER_API const char * DC_ClassifyExFile(const char *sFilename, DC_HAN
  *  History    : 
  *              1.create 2014-2-27
  *********************************************************************/
-DEEP_CLASSIFIER_API const char * DC_GetLastErrorMsg();
+DEEP_CLASSIFIER_API const char * DeepClassifier_GetLastErrorMsg();
 #endif //__DEEP_CLASSIFIER_H_INCLUDED__
 
