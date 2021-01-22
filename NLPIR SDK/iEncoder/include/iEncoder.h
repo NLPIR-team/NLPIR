@@ -47,9 +47,9 @@ typedef int IE_CODE_TYPE;
 
 #ifndef Size_t
 #ifdef WIN64
-	#define Size_t unsigned long long
+#define Size_t unsigned long long
 #else
-	#define Size_t unsigned int
+#define Size_t unsigned int
 #endif
 #endif
 /*********************************************************************
