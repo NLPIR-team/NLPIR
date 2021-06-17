@@ -111,7 +111,7 @@ int main(int argc, char* argv[])
 	default:
 		//t D:\NLPIR\Data\KeyScanner\ 0 D:\NLPIR\Data\KeyScanner\dict/sample.TXT
 		//t D:\NLPIR\Data\KeyScanner\ 1 D:\NLPIR\Data\KeyScanner\dict/sampleUTF8.TXT
-		pResult = KS_ScanDetail("孙中山东习近平");
+		pResult = KS_ScanDetail("孙中山东");
 		printf("KS_ScanDetail Result=%s\n", pResult);
 		pResult = KS_ScanDetail("毛泽东");
 		printf("KS_ScanDetail Result=%s\n", pResult);
