@@ -277,6 +277,22 @@ NLPIR_API int NLPIR_AddUserWord(const char *sWord);
 NLPIR_API int NLPIR_CleanUserWord();
 /*********************************************************************
 *
+*  Func Name  : NLPIR_CleanCurrentUserWord
+*
+*  Description: Clean all Current temporary added user words and restore previous stored data
+*
+*  Parameters :
+*
+*  Returns    : 1,true ; 0,false
+*
+*  Author     :
+*  History    :
+*              1.create 2021/6/19
+*********************************************************************/
+NLPIR_API int NLPIR_CleanCurrentUserWord();
+
+/*********************************************************************
+*
 *  Func Name  : Save
 *
 *  Description: Save dictionary to file

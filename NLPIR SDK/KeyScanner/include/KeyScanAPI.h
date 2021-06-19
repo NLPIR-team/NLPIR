@@ -137,8 +137,6 @@ KEYSCANAPI_API int KS_DeleteInstance(KS_HANDLE handle);
  *				 六合彩 涉赌 8 1
  * 复杂过滤条件： 支持与或非处理 ;表示或关系，+表示与关系，-表示否
  * 格式如下：{key11;key12;key13;...;key1N}+{key21;key22;key23;...;key2N}+...+{keyM1;keyM2;keyM3;...;keyMN}  -{}
-//  示例： {中国;中华;中华人民共和国;中国共产党;中共}+{伟大;光荣;正确}-{中华民国;国民党}  政治类 5
-//   表示的是： 文本内容中包含 {中国;中华;中华人民共和国;中国共产党;中共}中的一种，同时出现 {伟大;光荣;正确}中的一个，但不能出现{中华民国;国民党}的任何一个
  *********************************************************************/
 KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename, bool bOverwrite = false, bool bPinyinAbbrevNeeded = false, KS_HANDLE handle=0);
 
@@ -156,8 +154,6 @@ KEYSCANAPI_API int KS_ImportUserDict(const char *sFilename, bool bOverwrite = fa
 *  History    :
 *              1.create 2014-8-3
 *  文本文件每行的格式为：　词条
-*        例如： AV电影
-*				 习近平
 *********************************************************************/
 KEYSCANAPI_API int KS_DeleteUserDict(const char *sFilename, KS_HANDLE handle = 0);
 
@@ -174,7 +170,6 @@ KEYSCANAPI_API int KS_DeleteUserDict(const char *sFilename, KS_HANDLE handle = 0
  *  Author     : Kevin Zhang
  *  History    : 
  *              1.create 2014-8-3
- *  例如输出格式为： 政治反动/2#FLG/1#涉领导人/1#
 *********************************************************************/
 KEYSCANAPI_API const char* KS_Scan(const char*sContent, KS_HANDLE handle = 0);
 
@@ -192,8 +187,6 @@ KEYSCANAPI_API const char* KS_Scan(const char*sContent, KS_HANDLE handle = 0);
 // 返回的格式如下：
 // 返回值：返回包含了扫描结果的内容，扫描结果明细:
 //
-//		*<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
-//		<class name="FLG" weight=1>法*輪大法</class>好！
 *********************************************************************/
 KEYSCANAPI_API const char* KS_ScanDetail(const char*sContent, int nScanMode=SCAN_MODE_NORMAL, KS_HANDLE handle = 0);
 
@@ -211,7 +204,6 @@ KEYSCANAPI_API const char* KS_ScanDetail(const char*sContent, int nScanMode=SCAN
 *  History    :
 *              1.create 2014-8-3
 *  文本文件的格式为：　词条　　词类
-*        例如： AV电影 色情
 *********************************************************************/
 KEYSCANAPI_API const char* KS_ScanFile(const char	*sFilename, KS_HANDLE handle = 0);
 
@@ -228,8 +220,8 @@ KEYSCANAPI_API const char* KS_ScanFile(const char	*sFilename, KS_HANDLE handle =
 *              1.create 2014-8-3
 // 返回的格式如下：
 // 返回值：返回包含了扫描结果的内容，扫描结果明细:
-//		   *<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
-//		<class name="FLG" weight=1>法*輪大法</class>好！
+//     *<class name="诈骗" weight=1>發漂</class>量大优惠
+//		<class name="赌博" weight=1>六人一口菜</class>好！
 *********************************************************************/
 KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename,KS_HANDLE handle = 0);
 
@@ -248,8 +240,8 @@ KEYSCANAPI_API const char* KS_ScanFileDetail(const char	*sFilename,KS_HANDLE han
 *              1.create 2017-1-12
 // 返回的格式如下：
 // 返回值：返回包含了扫描结果的行号与内容，扫描结果明细:
-//		   *<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
-//		<class name="FLG" weight=1>法*輪大法</class>好！
+//     *<class name="诈骗" weight=1>發漂</class>量大优惠
+//		<class name="赌博" weight=1>六人一口菜</class>好！
 *********************************************************************/
 KEYSCANAPI_API int KS_ScanLine(const char	*sFilename, const char	*sResultFilename, KS_HANDLE handle = 0, int bEncript = false, int nScanMode = SCAN_MODE_NORMAL);
 /*********************************************************************
@@ -364,7 +356,7 @@ KEYSCANAPI_API const char* KS_GetLastErrorMsg();
 *  History    :
 *              1.create 2014-8-3
 *  文本文件的格式为：　词条　　词类  权重 (注意，最多定义255个类别)
-*        例如： AV电影 色情 2
+*        例如： AV 色情 2
 *				 六合彩 涉赌 8 1
 *********************************************************************/
 KEYSCANAPI_API int KS_ExportDict(const char *sFilename, KS_HANDLE handle = 0);
