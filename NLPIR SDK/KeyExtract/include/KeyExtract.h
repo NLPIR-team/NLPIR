@@ -191,6 +191,21 @@ KEYEXTRACT_API int KeyExtract_SaveTheUsrDic();
 KEYEXTRACT_API int KeyExtract_DelUsrWord(const char *sWord);
 
 /*********************************************************************
+*
+*  Func Name  : KeyExtract_CleanCurrentUserWord
+*
+*  Description: Clean all Current temporary added user words and restore previous stored data
+*
+*  Parameters :
+*
+*  Returns    : 1,true ; 0,false
+*
+*  Author     :
+*  History    :
+*              1.create 2021/6/19
+*********************************************************************/
+KEYEXTRACT_API int KeyExtract_CleanCurrentUserWord();
+/*********************************************************************
  *
  *  Func Name  : KeyExtract_ImportKeyBlackList
  *
