@@ -1,0 +1,17 @@
+﻿
+Find Repeat time:	2021/8/18 19:25:26
+Repeat 1:
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\凤凰新闻\境内新闻(20210804)\中文教育-人民网-泰国“孔敬大学孔子学院本土中文教师培训中心”成立.txt
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\腾讯新闻\境内新闻(20210804)\中文教育-腾讯新闻-泰国“孔敬大学孔子学院本土中文教师培训中心”成立.txt
+Repeat 2:
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\凤凰新闻\境内新闻(20210812)\中文教育-人民网-中文何以进一步成为国际公共产品.txt
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\新浪网\境内新闻(20210812)\中文教育-新浪网-中文何以进一步成为国际公共产品.txt
+Repeat 3:
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\凤凰新闻\境内新闻(20210802)\中文教育-财报网-教育成文化“出海”新力量 巨鲸未来布局海外中文教育.txt
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\网易新闻\境内新闻(20210802)\中文教育-网易新闻-教育成文化“出海”新力量 巨鲸未来布局海外中文教育.txt
+Repeat 4:
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\新浪网\境内新闻(20210816)\中文教育-新浪网-华侨大学与菲律宾市立大学合作 致力培养中文人才.txt
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\中文教育\网易新闻\境内新闻(20210816)\中文教育-2021-08-16 105516 中国侨网资讯-华侨大学与菲律宾市立大学合作 致力培养中文人才.txt
+Repeat 5:
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\区块链\网易新闻\境内新闻(20210817)\区块链-2021-08-17 141752 晓枫说-区块链渐入主流话语体系，链上天眼做对了什么？.txt
+e:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\区块链\腾讯新闻\境内新闻(20210817)\区块链-腾讯新闻-区块链渐入主流话语体系，链上天眼做对了什么？.txt

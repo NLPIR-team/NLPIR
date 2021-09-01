@@ -1,0 +1,4 @@
+序号	字段名称	索引名称	数据类型	是否需要索引	是否需要存储	解释
+1	title	title	text	1	1	title
+2	content	content	text	1	1	content
+3	file	file	text	1	1	file
