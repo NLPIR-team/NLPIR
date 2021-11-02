@@ -1,0 +1,987 @@
+No:1	word=末##末	pos=	freq=47	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(10,11,27,28,34,42,75,116,155,159,165,191,193,195,201,209,239,277,313,317,383,385,387,393,401,433,473,511,515,618,620,622,628,636,666,704,740,744,774,777,779,781,)
+LV()
+RV()
+No:2	word=高速	pos=d	freq=8	LV=3	RV=3	is_stopword=0	unit_count=1	weight=1.86
+Inverted List(0,35,179,202,330,367,394,629,)
+LV(末##末(5),在(1),广(2),)
+RV(上演(5),荆州(2),护栏(1),)
+No:3	word=上演	pos=v	freq=5	LV=1	RV=3	is_stopword=0	unit_count=1	weight=2.14
+Inverted List(1,36,203,395,630,)
+LV(高速(5),)
+RV(惊险(1),“(4),车(4),)
+No:4	word=惊险	pos=a	freq=2	LV=2	RV=3	is_stopword=0	unit_count=1	weight=1.89
+Inverted List(2,189,)
+LV(上演(1),十分(1),)
+RV(“(1),车(1),。(1),)
+No:5	word=“	pos=wyz	freq=6	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(3,37,204,348,396,631,)
+LV()
+RV()
+No:6	word=车	pos=n	freq=10	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(4,38,205,397,632,)
+LV()
+RV()
+No:7	word=歪	pos=a	freq=12	LV=4	RV=5	is_stopword=0	unit_count=1	weight=1.02
+Inverted List(5,6,39,40,206,207,349,398,399,633,634,)
+LV(“(1),车(5),歪(5),挂车(1),)
+RV(末##末(4),歪(5),”(6),一(1),在(1),)
+No:8	word=”	pos=wyy	freq=6	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(7,41,208,350,400,635,)
+LV()
+RV()
+No:9	word=一	pos=m	freq=4	LV=4	RV=2	is_stopword=0	unit_count=1	weight=0.41
+Inverted List(8,168,342,)
+LV(歪(1),”(1),，(1),发现(1),)
+RV(幕(1),辆(2),)
+No:10	word=幕	pos=q	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(9,)
+LV()
+RV()
+No:11	word=http	pos=x	freq=13	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(12,43,76,117,210,240,278,402,434,474,637,667,705,)
+LV(末##末(13),)
+RV(:(13),)
+No:12	word=:	pos=wm	freq=17	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(13,44,77,118,157,211,241,279,315,403,435,475,513,638,668,706,742,)
+LV()
+RV()
+No:13	word=//	pos=session	freq=13	LV=1	RV=3	is_stopword=0	unit_count=1	weight=0.27
+Inverted List(14,45,78,119,212,242,280,404,436,476,639,669,707,)
+LV(:(13),)
+RV(slide.news.sina.com.cn(1),n.sinaimg.cn(4),k.sinaimg.cn(8),)
+No:14	word=slide.news.sina.com.cn	pos=x	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(15,)
+LV(//(1),)
+RV(/(1),)
+No:15	word=/	pos=w	freq=102	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(16,18,47,49,53,55,59,64,66,80,82,84,88,90,94,99,101,110,121,123,125,129,131,135,140,142,151,214,216,220,222,226,231,233,244,246,248,252,254,258,263,265,271,282,284,286,290,292,296,301,303,309,406,408,412,414,418,423,425,438,440,442,446,448,452,457,459,467,478,480,482,486,488,492,497,499,507,641,643,647,649,653,658,660,671,673,675,679,681,685,690,692,698,709,711,713,717,719,723,728,730,736,)
+LV()
+RV()
+No:16	word=s	pos=x	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(17,)
+LV(/(1),)
+RV(/(1),)
+No:17	word=slide	pos=x	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(19,)
+LV(/(1),)
+RV(_(1),)
+No:18	word=_	pos=n	freq=15	LV=3	RV=5	is_stopword=0	unit_count=1	weight=1.83
+Inverted List(20,22,24,51,86,127,218,250,288,410,444,484,645,677,715,)
+LV(slide(1),1(13),86058(1),)
+RV(1(1),86058(1),245386.(1),img(4),ori(8),)
+No:19	word=1	pos=m	freq=13	LV=2	RV=1	is_stopword=0	unit_count=1	weight=0.22
+Inverted List(21,50,85,126,217,249,287,409,443,483,644,676,714,)
+LV(/(12),_(1),)
+RV(_(13),)
+No:20	word=86058	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(23,)
+LV(_(1),)
+RV(_(1),)
+No:21	word=245386.	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(25,)
+LV(_(1),)
+RV(html(1),)
+No:22	word=html	pos=x	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(26,)
+LV(245386.(1),)
+RV(末##末(1),)
+No:23	word=货物	pos=n	freq=10	LV=7	RV=7	is_stopword=0	unit_count=1	weight=9.20
+Inverted List(29,171,196,359,388,564,583,603,614,623,)
+LV(末##末(4),，(1),满载(1),的(1),由于(1),此类(1),将(1),)
+RV(装载(4),的(1),时(1),向(1),本身(1),非常(1),固(1),)
+No:24	word=装载	pos=v	freq=5	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.20
+Inverted List(30,197,389,624,762,)
+LV(货物(4),规范(1),)
+RV(固定(4),，(1),)
+No:25	word=固定	pos=a	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.80
+Inverted List(31,198,390,625,)
+LV(装载(4),)
+RV(不(4),)
+No:26	word=不	pos=d	freq=4	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(32,199,391,626,)
+LV()
+RV()
+No:27	word=牢	pos=a	freq=5	LV=2	RV=2	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(33,200,392,616,627,)
+LV(不(4),固(1),)
+RV(末##末(4),。(1),)
+No:28	word=n.sinaimg.cn	pos=x	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(46,213,405,640,)
+LV(//(4),)
+RV(/(4),)
+No:29	word=default	pos=x	freq=12	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(48,83,124,215,247,285,407,441,481,642,674,712,)
+LV(/(12),)
+RV(/(12),)
+No:30	word=img	pos=x	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(52,219,411,646,)
+LV(_(4),)
+RV(/(4),)
+No:31	word=upload	pos=x	freq=12	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(54,89,130,221,253,291,413,447,487,648,680,718,)
+LV(/(12),)
+RV(/(12),)
+No:32	word=3933	pos=m	freq=12	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(56,91,132,223,255,293,415,449,489,650,682,720,)
+LV(/(12),)
+RV(d(12),)
+No:33	word=d	pos=x	freq=12	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(57,92,133,224,256,294,416,450,490,651,683,721,)
+LV(3933(12),)
+RV(981(12),)
+No:34	word=981	pos=m	freq=12	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(58,93,134,225,257,295,417,451,491,652,684,722,)
+LV(d(12),)
+RV(/(12),)
+No:35	word=w	pos=x	freq=20	LV=1	RV=3	is_stopword=0	unit_count=1	weight=0.28
+Inverted List(60,95,111,136,152,227,259,272,297,310,419,453,468,493,508,654,686,699,724,737,)
+LV(/(20),)
+RV(800(12),160(4),50(4),)
+No:36	word=800	pos=m	freq=12	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(61,96,137,228,260,298,420,454,494,655,687,725,)
+LV(w(12),)
+RV(h(12),)
+No:37	word=h	pos=x	freq=16	LV=2	RV=4	is_stopword=0	unit_count=1	weight=0.47
+Inverted List(62,97,113,138,229,261,274,299,421,455,470,495,656,688,701,726,)
+LV(800(12),160(4),)
+RV(452(6),120(4),455(3),450(3),)
+No:38	word=452	pos=m	freq=6	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(63,98,139,422,456,496,)
+LV(h(6),)
+RV(/(6),)
+No:39	word=20180301	pos=xt	freq=12	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(65,100,141,232,264,302,424,458,498,659,691,729,)
+LV()
+RV()
+No:40	word=7	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(67,102,143,)
+LV(/(3),)
+RV(o(3),)
+No:41	word=o	pos=x	freq=6	LV=2	RV=2	is_stopword=0	unit_count=1	weight=0.42
+Inverted List(68,70,103,105,144,146,)
+LV(7(3),4(3),)
+RV(4(3),-(3),)
+No:42	word=4	pos=m	freq=6	LV=2	RV=2	is_stopword=0	unit_count=1	weight=0.42
+Inverted List(69,104,145,427,461,501,)
+LV(o(3),r(3),)
+RV(o(3),js(3),)
+No:43	word=-	pos=w	freq=6	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(71,106,147,429,463,503,)
+LV()
+RV()
+No:44	word=fwnpcns	pos=x	freq=12	LV=3	RV=4	is_stopword=0	unit_count=1	weight=1.85
+Inverted List(72,107,148,236,268,306,430,464,504,663,695,733,)
+LV(-(6),0-(3),4-(3),)
+RV(5208604.(3),5208653.(3),5208705.(3),5208745.(3),)
+No:45	word=5208604.	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(73,108,149,)
+LV(fwnpcns(3),)
+RV(jpg(3),)
+No:46	word=jpg	pos=x	freq=12	LV=4	RV=2	is_stopword=0	unit_count=1	weight=0.72
+Inverted List(74,109,150,238,270,308,432,466,506,665,697,735,)
+LV(5208604.(3),5208653.(3),5208705.(3),5208745.(3),)
+RV(末##末(4),/(8),)
+No:47	word=k.sinaimg.cn	pos=x	freq=8	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(79,120,243,281,437,477,670,708,)
+LV(//(8),)
+RV(/(8),)
+No:48	word=n	pos=x	freq=8	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(81,122,245,283,439,479,672,710,)
+LV(/(8),)
+RV(/(8),)
+No:49	word=ori	pos=x	freq=8	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(87,128,251,289,445,485,678,716,)
+LV(_(8),)
+RV(/(8),)
+No:50	word=160	pos=m	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(112,273,469,700,)
+LV(w(4),)
+RV(h(4),)
+No:51	word=120	pos=m	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(114,275,471,702,)
+LV(h(4),)
+RV(hdp.jpg(4),)
+No:52	word=hdp.jpg	pos=x	freq=8	LV=2	RV=1	is_stopword=0	unit_count=1	weight=0.78
+Inverted List(115,154,276,312,472,510,703,739,)
+LV(120(4),50(4),)
+RV(末##末(8),)
+No:53	word=50	pos=m	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(153,311,509,738,)
+LV(w(4),)
+RV(hdp.jpg(4),)
+No:54	word=2018年03月01日 08	pos=t	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.58
+Inverted List(156,314,512,741,)
+LV(末##末(4),)
+RV(:(4),)
+No:55	word=29	pos=m	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(158,316,514,743,)
+LV(:(4),)
+RV(末##末(4),)
+No:56	word=人民	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.61
+Inverted List(160,)
+LV(末##末(1),)
+RV(网(1),)
+No:57	word=网	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(161,)
+LV(人民(1),)
+RV(武汉(1),)
+No:58	word=武汉	pos=ns	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.76
+Inverted List(162,)
+LV(网(1),)
+RV(2月28日(1),)
+No:59	word=2月28日	pos=t	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.58
+Inverted List(163,)
+LV(武汉(1),)
+RV(电(1),)
+No:60	word=电	pos=n	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(164,)
+LV()
+RV()
+No:61	word=26日	pos=t	freq=2	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.58
+Inverted List(166,318,)
+LV(末##末(2),)
+RV(，(2),)
+No:62	word=，	pos=wd	freq=22	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(167,185,319,340,354,364,370,373,518,524,538,551,562,568,574,582,588,592,605,751,755,763,)
+LV()
+RV()
+No:63	word=辆	pos=q	freq=3	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(169,343,554,)
+LV()
+RV()
+No:64	word=满载	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(170,)
+LV(辆(1),)
+RV(货物(1),)
+No:65	word=的	pos=ude1	freq=5	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(172,358,557,560,768,)
+LV()
+RV()
+No:66	word=重型	pos=b	freq=2	LV=2	RV=1	is_stopword=0	unit_count=1	weight=0.65
+Inverted List(173,345,)
+LV(的(1),红色(1),)
+RV(半(2),)
+No:67	word=半	pos=m	freq=2	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.16
+Inverted List(174,346,)
+LV(重型(2),)
+RV(挂车(2),)
+No:68	word=挂车	pos=n	freq=2	LV=1	RV=3	is_stopword=0	unit_count=1	weight=2.43
+Inverted List(175,347,)
+LV(半(2),)
+RV(“(1),歪(1),在(1),)
+No:69	word=在	pos=p	freq=7	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(176,351,366,535,575,600,)
+LV()
+RV()
+No:70	word=二	pos=m	freq=2	LV=2	RV=1	is_stopword=0	unit_count=1	weight=0.22
+Inverted List(177,328,)
+LV(在(1),至(1),)
+RV(广(2),)
+No:71	word=广	pos=b	freq=2	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.16
+Inverted List(178,329,)
+LV(二(2),)
+RV(高速(2),)
+No:72	word=荆州	pos=ns	freq=2	LV=1	RV=2	is_stopword=0	unit_count=1	weight=2.37
+Inverted List(180,331,)
+LV(高速(2),)
+RV(段(1),长江(1),)
+No:73	word=段	pos=ng	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(181,)
+LV()
+RV()
+No:74	word=发生	pos=v	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.51
+Inverted List(182,586,)
+LV(段(1),容易(1),)
+RV(侧(1),移动(1),)
+No:75	word=侧	pos=vd	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(183,)
+LV(发生(1),)
+RV(倾(1),)
+No:76	word=倾	pos=vi	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=1.17
+Inverted List(184,362,)
+LV(侧(1),右侧(1),)
+RV(，(1),翻(1),)
+No:77	word=现场	pos=s	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=1.05
+Inverted List(186,536,)
+LV(，(1),在(1),)
+RV(可谓(1),警戒(1),)
+No:78	word=可谓	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(187,)
+LV(现场(1),)
+RV(十分(1),)
+No:79	word=十分	pos=d	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.64
+Inverted List(188,)
+LV(可谓(1),)
+RV(惊险(1),)
+No:80	word=。	pos=wj	freq=7	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(190,382,532,547,598,617,771,)
+LV()
+RV()
+No:81	word=评论	pos=n	freq=4	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(192,384,619,778,)
+LV(末##末(4),)
+RV(末##末(4),)
+No:82	word=1668629	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(194,)
+LV(末##末(1),)
+RV(末##末(1),)
+No:83	word=455	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(230,262,300,)
+LV(h(3),)
+RV(/(3),)
+No:84	word=qPN	pos=x	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(234,266,304,)
+LV(/(3),)
+RV(0-(3),)
+No:85	word=0-	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(235,267,305,)
+LV(qPN(3),)
+RV(fwnpcns(3),)
+No:86	word=5208653.	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(237,269,307,)
+LV(fwnpcns(3),)
+RV(jpg(3),)
+No:87	word=湖北省	pos=ns	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.76
+Inverted List(320,)
+LV(，(1),)
+RV(高(1),)
+No:88	word=高	pos=a	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(321,)
+LV()
+RV()
+No:89	word=警	pos=ng	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(322,)
+LV(高(1),)
+RV(公安(1),)
+No:90	word=公安	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(323,)
+LV(警(1),)
+RV(大队(1),)
+No:91	word=大队	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(324,)
+LV(公安(1),)
+RV(民警(1),)
+No:92	word=民警	pos=n	freq=3	LV=3	RV=3	is_stopword=0	unit_count=1	weight=4.96
+Inverted List(325,533,745,)
+LV(末##末(1),。(1),大队(1),)
+RV(巡逻(1),立即(1),提醒(1),)
+No:93	word=巡逻	pos=vi	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(326,)
+LV(民警(1),)
+RV(至(1),)
+No:94	word=至	pos=p	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(327,)
+LV()
+RV()
+No:95	word=长江	pos=ns	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.76
+Inverted List(332,)
+LV(荆州(1),)
+RV(大桥(1),)
+No:96	word=大桥	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(333,)
+LV(长江(1),)
+RV(桥(1),)
+No:97	word=桥	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(334,)
+LV(大桥(1),)
+RV(南(1),)
+No:98	word=南	pos=b	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.16
+Inverted List(335,)
+LV(桥(1),)
+RV(服务(1),)
+No:99	word=服务	pos=vn	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(336,)
+LV(南(1),)
+RV(区(1),)
+No:100	word=区	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(337,)
+LV(服务(1),)
+RV(附近(1),)
+No:101	word=附近	pos=f	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.48
+Inverted List(338,)
+LV(区(1),)
+RV(时(1),)
+No:102	word=时	pos=ng	freq=2	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(339,604,)
+LV()
+RV()
+No:103	word=发现	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(341,)
+LV(，(1),)
+RV(一(1),)
+No:104	word=红色	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(344,)
+LV(辆(1),)
+RV(重型(1),)
+No:105	word=应急	pos=vn	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(352,)
+LV(在(1),)
+RV(车道(1),)
+No:106	word=车道	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(353,)
+LV(应急(1),)
+RV(，(1),)
+No:107	word=挂	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(355,)
+LV(，(1),)
+RV(车上(1),)
+No:108	word=车上	pos=s	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.48
+Inverted List(356,)
+LV(挂(1),)
+RV(运载(1),)
+No:109	word=运载	pos=vn	freq=2	LV=2	RV=1	is_stopword=0	unit_count=1	weight=2.15
+Inverted List(357,556,)
+LV(车上(1),货车(1),)
+RV(的(2),)
+No:110	word=向	pos=p	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(360,)
+LV()
+RV()
+No:111	word=右侧	pos=f	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.48
+Inverted List(361,)
+LV(向(1),)
+RV(倾(1),)
+No:112	word=翻	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(363,)
+LV(倾(1),)
+RV(，(1),)
+No:113	word=压	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(365,)
+LV(，(1),)
+RV(在(1),)
+No:114	word=护栏	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(368,)
+LV(高速(1),)
+RV(上(1),)
+No:115	word=上	pos=f	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(369,)
+LV()
+RV()
+No:116	word=因为	pos=c	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(371,)
+LV()
+RV()
+No:117	word=失重	pos=vi	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(372,)
+LV(因为(1),)
+RV(，(1),)
+No:118	word=车辆	pos=n	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.51
+Inverted List(374,580,)
+LV(，(1),伴随(1),)
+RV(左边(1),转弯(1),)
+No:119	word=左边	pos=f	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.48
+Inverted List(375,)
+LV(车辆(1),)
+RV(一侧(1),)
+No:120	word=一侧	pos=f	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.48
+Inverted List(376,)
+LV(左边(1),)
+RV(轮胎(1),)
+No:121	word=轮胎	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(377,)
+LV(一侧(1),)
+RV(全部(1),)
+No:122	word=全部	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.48
+Inverted List(378,)
+LV(轮胎(1),)
+RV(悬空(1),)
+No:123	word=悬空	pos=vd	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(379,)
+LV(全部(1),)
+RV(离(1),)
+No:124	word=离	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(380,)
+LV(悬空(1),)
+RV(地(1),)
+No:125	word=地	pos=n	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(381,)
+LV()
+RV()
+No:126	word=1668630	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(386,)
+LV(末##末(1),)
+RV(末##末(1),)
+No:127	word=r	pos=x	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(426,460,500,)
+LV(/(3),)
+RV(4(3),)
+No:128	word=js	pos=x	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(428,462,502,)
+LV(4(3),)
+RV(-(3),)
+No:129	word=5208705.	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(431,465,505,)
+LV(fwnpcns(3),)
+RV(jpg(3),)
+No:130	word=所	pos=usuo	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(516,)
+LV()
+RV()
+No:131	word=幸	pos=vg	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(517,)
+LV(所(1),)
+RV(，(1),)
+No:132	word=并	pos=cc	freq=2	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(519,539,)
+LV()
+RV()
+No:133	word=没有	pos=d	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.64
+Inverted List(520,)
+LV(并(1),)
+RV(造成(1),)
+No:134	word=造成	pos=v	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.51
+Inverted List(521,529,)
+LV(没有(1),通行(1),)
+RV(人员(1),一定(1),)
+No:135	word=人员	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(522,)
+LV(造成(1),)
+RV(受伤(1),)
+No:136	word=受伤	pos=vi	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(523,)
+LV(人员(1),)
+RV(，(1),)
+No:137	word=但	pos=c	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(525,)
+LV()
+RV()
+No:138	word=对	pos=p	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(526,)
+LV()
+RV()
+No:139	word=道路	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(527,)
+LV(对(1),)
+RV(通行(1),)
+No:140	word=通行	pos=vi	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(528,)
+LV(道路(1),)
+RV(造成(1),)
+No:141	word=一定	pos=b	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=1.05
+Inverted List(530,606,)
+LV(，(1),造成(1),)
+RV(影响(1),要(1),)
+No:142	word=影响	pos=vn	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.51
+Inverted List(531,595,)
+LV(一定(1),会(1),)
+RV(。(1),安全(1),)
+No:143	word=立即	pos=d	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.64
+Inverted List(534,)
+LV(民警(1),)
+RV(在(1),)
+No:144	word=警戒	pos=vn	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(537,)
+LV(现场(1),)
+RV(，(1),)
+No:145	word=通知	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(540,)
+LV(并(1),)
+RV(施(1),)
+No:146	word=施	pos=vg	freq=2	LV=2	RV=1	is_stopword=0	unit_count=1	weight=0.72
+Inverted List(541,545,)
+LV(通知(1),进行(1),)
+RV(救(2),)
+No:147	word=救	pos=v	freq=2	LV=1	RV=2	is_stopword=0	unit_count=1	weight=0.72
+Inverted List(542,546,)
+LV(施(2),)
+RV(。(1),部门(1),)
+No:148	word=部门	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(543,)
+LV(救(1),)
+RV(进行(1),)
+No:149	word=进行	pos=vx	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.61
+Inverted List(544,)
+LV(部门(1),)
+RV(施(1),)
+No:150	word=经过	pos=p	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(548,)
+LV()
+RV()
+No:151	word=调查	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(549,)
+LV(经过(1),)
+RV(询问(1),)
+No:152	word=询问	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(550,)
+LV(调查(1),)
+RV(，(1),)
+No:153	word=原来	pos=d	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.64
+Inverted List(552,)
+LV(，(1),)
+RV(这(1),)
+No:154	word=这	pos=rzv	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(553,)
+LV()
+RV()
+No:155	word=货车	pos=n	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.51
+Inverted List(555,756,)
+LV(，(1),辆(1),)
+RV(运载(1),运输(1),)
+No:156	word=是	pos=vshi	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(558,)
+LV()
+RV()
+No:157	word=一箱箱	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(559,)
+LV(是(1),)
+RV(的(1),)
+No:158	word=卫生纸	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(561,)
+LV(的(1),)
+RV(，(1),)
+No:159	word=由于	pos=c	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(563,)
+LV()
+RV()
+No:160	word=本身	pos=rz	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(565,)
+LV()
+RV()
+No:161	word=较	pos=d	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(566,)
+LV()
+RV()
+No:162	word=轻	pos=a	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.27
+Inverted List(567,)
+LV(较(1),)
+RV(，(1),)
+No:163	word=加上	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(569,)
+LV(，(1),)
+RV(塑料(1),)
+No:164	word=塑料	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(570,)
+LV(加上(1),)
+RV(包装(1),)
+No:165	word=包装	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(571,)
+LV(塑料(1),)
+RV(很(1),)
+No:166	word=很	pos=d	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(572,)
+LV()
+RV()
+No:167	word=滑	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.53
+Inverted List(573,)
+LV(很(1),)
+RV(，(1),)
+No:168	word=行进	pos=vi	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(576,)
+LV(在(1),)
+RV(过程(1),)
+No:169	word=过程	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(577,)
+LV(行进(1),)
+RV(中(1),)
+No:170	word=中	pos=f	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(578,)
+LV()
+RV()
+No:171	word=伴随	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(579,)
+LV(中(1),)
+RV(车辆(1),)
+No:172	word=转弯	pos=vi	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(581,)
+LV(车辆(1),)
+RV(，(1),)
+No:173	word=非常	pos=d	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.64
+Inverted List(584,)
+LV(货物(1),)
+RV(容易(1),)
+No:174	word=容易	pos=ad	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.80
+Inverted List(585,)
+LV(非常(1),)
+RV(发生(1),)
+No:175	word=移动	pos=vn	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(587,)
+LV(发生(1),)
+RV(，(1),)
+No:176	word=一旦	pos=c	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(589,)
+LV()
+RV()
+No:177	word=重心	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(590,)
+LV(一旦(1),)
+RV(偏移(1),)
+No:178	word=偏移	pos=vn	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(591,)
+LV(重心(1),)
+RV(，(1),)
+No:179	word=就	pos=d	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(593,)
+LV()
+RV()
+No:180	word=会	pos=v	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(594,)
+LV()
+RV()
+No:181	word=安全	pos=an	freq=3	LV=3	RV=3	is_stopword=0	unit_count=1	weight=2.48
+Inverted List(596,760,770,)
+LV(影响(1),行车(1),做到(1),)
+RV(。(1),行车(1),规范(1),)
+No:182	word=行车	pos=vn	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.51
+Inverted List(597,769,)
+LV(的(1),安全(1),)
+RV(。(1),安全(1),)
+No:183	word=所以	pos=c	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(599,)
+LV()
+RV()
+No:184	word=运输	pos=vn	freq=2	LV=2	RV=2	is_stopword=0	unit_count=1	weight=3.51
+Inverted List(601,757,)
+LV(在(1),货车(1),)
+RV(此类(1),请(1),)
+No:185	word=此类	pos=r	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(602,)
+LV()
+RV()
+No:186	word=要	pos=v	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(607,)
+LV()
+RV()
+No:187	word=用	pos=p	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(608,)
+LV()
+RV()
+No:188	word=夹板	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(609,)
+LV(用(1),)
+RV(、(1),)
+No:189	word=、	pos=wn	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(610,)
+LV()
+RV()
+No:190	word=绳索	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(611,)
+LV(、(1),)
+RV(等(1),)
+No:191	word=等	pos=udeng	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(612,)
+LV()
+RV()
+No:192	word=将	pos=p	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(613,)
+LV()
+RV()
+No:193	word=固	pos=dg	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.21
+Inverted List(615,)
+LV(货物(1),)
+RV(牢(1),)
+No:194	word=1668631	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(621,)
+LV(末##末(1),)
+RV(末##末(1),)
+No:195	word=450	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(657,689,727,)
+LV(h(3),)
+RV(/(3),)
+No:196	word=lHW	pos=x	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.29
+Inverted List(661,693,731,)
+LV(/(3),)
+RV(4-(3),)
+No:197	word=4-	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.19
+Inverted List(662,694,732,)
+LV(lHW(3),)
+RV(fwnpcns(3),)
+No:198	word=5208745.	pos=m	freq=3	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(664,696,734,)
+LV(fwnpcns(3),)
+RV(jpg(3),)
+No:199	word=提醒	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(746,)
+LV(民警(1),)
+RV(：(1),)
+No:200	word=：	pos=wm	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(747,)
+LV()
+RV()
+No:201	word=正值	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(748,)
+LV(：(1),)
+RV(春运(1),)
+No:202	word=春运	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(749,)
+LV(正值(1),)
+RV(期间(1),)
+No:203	word=期间	pos=f	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(750,)
+LV()
+RV()
+No:204	word=高速公路	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(752,)
+LV(，(1),)
+RV(车流量(1),)
+No:205	word=车流量	pos=n	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(753,)
+LV(高速公路(1),)
+RV(大(1),)
+No:206	word=大	pos=a	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(754,)
+LV()
+RV()
+No:207	word=请	pos=v	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(758,)
+LV()
+RV()
+No:208	word=做到	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(759,)
+LV(请(1),)
+RV(安全(1),)
+No:209	word=规范	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(761,)
+LV(安全(1),)
+RV(装载(1),)
+No:210	word=保证	pos=v	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=1.60
+Inverted List(764,)
+LV(，(1),)
+RV(您(1),)
+No:211	word=您	pos=rr	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(765,)
+LV()
+RV()
+No:212	word=和	pos=cc	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(766,)
+LV()
+RV()
+No:213	word=他人	pos=rr	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(767,)
+LV()
+RV()
+No:214	word=（	pos=wkz	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(772,)
+LV()
+RV()
+No:215	word=肖璐欣	pos=nr	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=5.28
+Inverted List(773,)
+LV(（(1),)
+RV(末##末(1),)
+No:216	word=张思	pos=nr	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=5.28
+Inverted List(775,)
+LV(末##末(1),)
+RV(）(1),)
+No:217	word=）	pos=wky	freq=1	LV=0	RV=0	is_stopword=1	unit_count=1	weight=-1.00
+Inverted List(776,)
+LV()
+RV()
+No:218	word=1668632	pos=m	freq=1	LV=1	RV=1	is_stopword=0	unit_count=1	weight=0.58
+Inverted List(780,)
+LV(末##末(1),)
+RV(末##末(1),)
+No:219	word=高速上演	pos=n_new	freq=5	LV=1	RV=3	is_stopword=0	unit_count=2	weight=5.56
+Inverted List(0,35,202,394,629,)
+LV(末##末(4),)
+RV(惊险(1),“(4),车(4),)
+No:220	word=货物装载	pos=n_new	freq=4	LV=1	RV=1	is_stopword=0	unit_count=2	weight=-1.00
+Inverted List(29,196,388,623,)
+LV(末##末(4),)
+RV(固定(4),)
+)
+ Sentence Information:
+No:1	line高速上演惊险“车歪歪”一幕  
+weight=0.00
+wordid_list_size=0()
+No:2	line   http://slide.news.sina.com.cn/s/slide_1_86058_245386.html  
+weight=0.00
+wordid_list_size=0()
+No:3	line       货物装载固定不牢 高速上演“车歪歪” 
+weight=0.00
+wordid_list_size=0()
+No:4	line http://n.sinaimg.cn/default/1_img/upload/3933d981/w800h452/20180301/7o4O-fwnpcns5208604.jpg 
+weight=0.00
+wordid_list_size=0()
+No:5	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h452/20180301/7o4O-fwnpcns5208604.jpg/w160h120hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:6	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h452/20180301/7o4O-fwnpcns5208604.jpg/w50hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:7	line 2018年03月01日 08:29 
+weight=0.00
+wordid_list_size=0()
+No:8	line 人民网武汉2月28日电 26日，一辆满载货物的重型半挂车在二广高速荆州段发生侧倾，现场可谓十分惊险。
+weight=0.00
+wordid_list_size=0()
+No:9	line 1668629 
+weight=0.00
+wordid_list_size=0()
+No:10	line     货物装载固定不牢 高速上演“车歪歪” 
+weight=0.00
+wordid_list_size=0()
+No:11	line http://n.sinaimg.cn/default/1_img/upload/3933d981/w800h455/20180301/qPN0-fwnpcns5208653.jpg 
+weight=0.00
+wordid_list_size=0()
+No:12	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h455/20180301/qPN0-fwnpcns5208653.jpg/w160h120hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:13	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h455/20180301/qPN0-fwnpcns5208653.jpg/w50hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:14	line 2018年03月01日 08:29 
+weight=0.00
+wordid_list_size=0()
+No:15	line 26日，湖北省高警公安大队民警巡逻至二广高速荆州长江大桥桥南服务区附近时，发现一辆红色重型半挂车“歪”在应急车道，挂车上运载的货物向右侧倾翻，压在高速护栏上，因为失重，车辆左边一侧轮胎全部悬空离地。
+weight=0.00
+wordid_list_size=0()
+No:16	line 1668630 
+weight=0.00
+wordid_list_size=0()
+No:17	line     货物装载固定不牢 高速上演“车歪歪” 
+weight=0.00
+wordid_list_size=0()
+No:18	line http://n.sinaimg.cn/default/1_img/upload/3933d981/w800h452/20180301/r4js-fwnpcns5208705.jpg 
+weight=0.00
+wordid_list_size=0()
+No:19	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h452/20180301/r4js-fwnpcns5208705.jpg/w160h120hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:20	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h452/20180301/r4js-fwnpcns5208705.jpg/w50hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:21	line 2018年03月01日 08:29 
+weight=0.00
+wordid_list_size=0()
+No:22	line 所幸，并没有造成人员受伤，但对道路通行造成一定影响。
+weight=0.00
+wordid_list_size=0()
+No:23	line民警立即在现场警戒，并通知施救部门进行施救。
+weight=0.00
+wordid_list_size=0()
+No:24	line经过调查询问，原来这辆货车运载的是一箱箱的卫生纸，由于货物本身较轻，加上塑料包装很滑，在行进过程中伴随车辆转弯，货物非常容易发生移动，一旦重心偏移，就会影响安全行车。
+weight=0.00
+wordid_list_size=0()
+No:25	line所以在运输此类货物时，一定要用夹板、绳索等将货物固牢。
+weight=0.00
+wordid_list_size=0()
+No:26	line 1668631 
+weight=0.00
+wordid_list_size=0()
+No:27	line     货物装载固定不牢 高速上演“车歪歪” 
+weight=0.00
+wordid_list_size=0()
+No:28	line http://n.sinaimg.cn/default/1_img/upload/3933d981/w800h450/20180301/lHW4-fwnpcns5208745.jpg 
+weight=0.00
+wordid_list_size=0()
+No:29	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h450/20180301/lHW4-fwnpcns5208745.jpg/w160h120hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:30	line http://k.sinaimg.cn/n/default/1_ori/upload/3933d981/w800h450/20180301/lHW4-fwnpcns5208745.jpg/w50hdp.jpg 
+weight=0.00
+wordid_list_size=0()
+No:31	line 2018年03月01日 08:29 
+weight=0.00
+wordid_list_size=0()
+No:32	line 民警提醒：正值春运期间，高速公路车流量大，货车运输请做到安全规范装载，保证您和他人的行车安全。
+weight=0.00
+wordid_list_size=0()
+No:33	line（肖璐欣 张思） 
+weight=0.00
+wordid_list_size=0()
+No:34	line 1668632 
+weight=0.00
+wordid_list_size=0()
+No:35	line     
+weight=0.00
+wordid_list_size=0()
