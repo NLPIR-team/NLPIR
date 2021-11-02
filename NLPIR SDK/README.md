@@ -14,6 +14,7 @@ NLPIR SDK存放了20种NLPIR语义增强分析平台的组件包:
 - KeyExtract关键词提取组件：自动标引各类关键词，包含各类新词
 - KeyScanner九眼智能过滤组件：识别各种变种，实时扫描不良内容
 - NLPIR-ICTCLAS汉语分词标注组件：经典之作
+- NLPIR-TC 繁体分词标注组件
 - NewWordFinder新词发现组件
 - RedupRemover文档去重组件：文档去重工具
 - SentimentAnalysis情感分析组件：情绪分析
