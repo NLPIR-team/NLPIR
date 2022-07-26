@@ -1,0 +1,1 @@
+batchlicense.exe w
