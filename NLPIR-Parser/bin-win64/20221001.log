@@ -1,0 +1,13 @@
+[2022-10-01 22:19:08]	CLicense::IsValid started!
+[2022-10-01 22:19:08]	NLPIR_Init started 
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\GBKA.pdat
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\UTF8.pdat
+[2022-10-01 22:19:08]	encode=1
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\FieldDict.pdat
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\sentiment.pdat
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\CoreDict.pdat
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\KeyBlackList.pdat
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\English\English.pdat
+[2022-10-01 22:19:08]	GetAnsiFilename ../\Data\English\ne.pdat
+[2022-10-01 22:19:08]	NLPIR_Init success!
+[2022-10-01 22:19:08]	default path is f:\NLPIR-team\NLPIR\NLPIR-Parser
