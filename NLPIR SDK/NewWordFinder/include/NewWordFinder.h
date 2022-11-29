@@ -79,6 +79,20 @@ NEWWORDFINDER_API bool NWF_Exit();
 
 /*********************************************************************
 *
+*  Func Name  : NWF_ImportKeyBlackList
+*
+*  Description: Import keyword black list
+*  Parameters : sFilename: Text filename for user defined blacklist dictionary, each line for a stop keyword
+*				 sPOSBlacklist: 停用的词性列表，即列为该词性列表访问的词不纳入新词关键词范围，
+*								如设置为#nr#ns#表示nr,ns不作为关键词
+*  Returns    : The  number of  lexical entry imported successfully
+*  Author     : Kevin Zhang
+*  History    :
+*              1.create 2003-11-28
+*********************************************************************/
+NEWWORDFINDER_API unsigned int NWF_ImportKeyBlackList(const char *sFilename, const char *sPOSBlacklist = 0);
+/*********************************************************************
+*
 *  Func Name  : NWF_GetNewWords
 *
 *  Description: Extract New words from sLine
