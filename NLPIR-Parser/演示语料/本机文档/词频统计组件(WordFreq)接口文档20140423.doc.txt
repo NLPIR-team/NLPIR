@@ -1,0 +1,317 @@
+﻿
+
+
+
+
+
+                      词频统计组件(LJWordFreq) 接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+For    the    latest    information    about     NLPIR,     please     visit
+Http://ICTCLAS.nlpir.org/
+
+
+                                    目录
+
+
+词频统计组件(LJWordFreq) 接口文档    1
+
+
+目录   2
+
+
+0. 词频统计组件(又名LJWordFreq）简介 3
+
+
+1．C＋＋接口  4
+
+
+   1.1 LJWF_Inits   4
+
+
+   1.2 LJWF_Exits   5
+
+
+   1.3 LJWF_WordFreqOutput    6
+
+
+2  LJWordFreq运行环境  7
+
+
+3 常见问题（FAQ）   8
+
+
+   Q1: LJWordFreq组件初始化老是失败 8
+
+
+   Q2: java获取xls中词频统计结果失败    8
+
+
+4 作者简介    9
+
+
+
+
+
+   词频统计组件(又名LJWordFreq）简介
+
+   指词的频率,即词在一定的语料中出现的次数。词频的统计计算是计算语言学的重要
+内容之一。...词频统计的应用范围很广，它可以用于某部著作或某人的全部著作，从而
+揭示作家或著作的用词特点和语言风格。
+   自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取Key
+Extract组件的最新版本，并欢迎您关注张华平博士的新浪微博 @ICTCLAS张华平博士
+交流。1P_bR$vk0 自然语言处理与信息检索共享平台1H9^+}NE*W;^
+[pic]自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+                 图1：词频统计组件演示
+
+
+
+
+
+自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 LJWF_Inits
+
+Init the analyzer and prepare necessary data for LJWFaccording the
+configure file.
+int LJWF_Inits(const char *path, int encode, const char*sLicenceCode=0);
+
+|Routine      |Required Header   |
+|LJWF_Inits   |< LJWordFreq.h>   |
+
+
+Return Value
+Return non 0 if init succeed. Otherwise return lower 0.
+Parameters
+sDataPath: Initial Directory Path, where Data directory stored.  the
+default value is 0, it indicates the initial directory is current working
+directory path
+int encoding: 默认为 GBK_CODE (GBK encoding), 也能是 UTF8_CODE (UTF8
+encoding) 和 BIG5_CODE (BIG5 encoding).
+char* sLicenceCode: license code, special use for some commercial users.
+Other users ignore the argument
+Remarks
+The LJWF_Inits function must be invoked before any operation with
+LJWordFreq. The whole system need call the function only once before
+starting LJWordFreq. When stopping the system and make no more operation,
+LJWF_Inits should be invoked to destroy all working buffer. Any operation
+will fail if init do not succeed.
+LJWF_Inits fails mainly because of two reasons: 1) Required data is
+incompatible or missing 2) invalid parameters. Moreover, you could learn
+more from the log file 2014****.log in the current directory.
+Example
+int main(int argc, char* argv[])
+{
+    if(LJWF_Inits("",0) < 0)
+    {
+       printf("初始化失败\n");
+       return -1;
+    }
+
+    if(!LJWF_WordFreqOutput("E:\\LJParse\\演示语料\\", "./"))
+    {
+       printf("词频统计失败\n");
+       return -1;
+    }
+    LJWF_Exits();
+    return 0;
+}
+ Output
+
+1.2 LJWF_Exits
+
+Exit the program and free all resources and destroy all working buffer used
+in LJWordFreq.
+void LJWF_Exits();
+|Routine      |Required Header   |
+|LJWF_Exits   |< LJWordFreq.h>   |
+
+
+Return Value
+NULL.
+Parameters
+none
+Remarks
+The LJWF_Exits function must be invoked while stopping the system and make
+no more operation. And call LJWF_Exits  function to restart LJWordFreq.
+Example
+int main(int argc, char* argv[])
+{
+    if(LJWF_Inits("",0) < 0)
+    {
+       printf("初始化失败\n");
+       return -1;
+    }
+
+    if(!LJWF_WordFreqOutput("E:\\LJParse\\演示语料\\", "./"))
+    {
+       printf("词频统计失败\n");
+       return -1;
+    }
+    LJWF_Exits();
+    return 0;
+}
+Output
+
+1.3 LJWF_WordFreqOutput
+
+
+bool LJWF_WordFreqOutput(const char* lpszFilename, char* DataPath);
+
+|Routine            |Required Header     |
+|LJWF_WordFreqOutput|< LJWordFreq.h>     |
+
+
+Return Value
+Return true if succeed,or return false.
+Parameters
+lpszFilename:  [IN] directory that process statistics of word frequency   or
+not;
+DataPath:   [OUT] directory that dictionary file [Data].
+Remarks
+The dynamic library depends on NLPIR.dll or  libNLPIR.so.and  you  will  get
+the result from current directory ,the directory  “/output”  ,you  wil  find
+three .xls file
+[Bigrams.xls] :[FreqSortByWord.xls]:[FreqTrans.xls]
+So you will find the answer from this file .
+The   directory   [/seg]   include   all   file   have   been   process   by
+NLPIR_FileProcess;
+Example
+int main(int argc, char* argv[])
+{
+    if(LJWF_Inits("",0) < 0)
+    {
+       printf("初始化失败\n");
+       return -1;
+    }
+
+    if(!LJWF_WordFreqOutput("E:\\LJParse\\演示语料\\", "./"))
+    {
+       printf("词频统计失败\n");
+       return -1;
+    }
+    LJWF_Exits();
+    return 0;
+}
+Output
+
+
+
+
+
+
+2  LJWordFreq运行环境
+
+   1. 目前可以支持Windows环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q1: LJWordFreq组件初始化老是失败
+
+Answer:
+请您保证NLPIR.user文件未过期，另外可参考“20***.err”文件查看错误信息
+
+Q2: java获取xls中词频统计结果失败
+
+Answer:
+请您保证java的LJWF_WordFreqOutput接口的第一个参数的路径不是中文路径，Java中S
+tring默认是unicode编码格式，传入到该接口中可能无法访问该路径，另外可参考“20*
+**.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+

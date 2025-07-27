@@ -1,0 +1,326 @@
+﻿
+
+
+
+
+文本/n 分类/vn 组件/n (/wkz Classifier/n )/wky   接口/n 文档/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[/wkz pic/n ]/wky pic/n ]/wky http/n :/wm ICTCLAS.nlpir.org/n //wp @/wp ICTCLAS/x 张华平/nr 博士/n 
+2012-12/t 
+For/p the/rzt latest/a information/n about/p NLPIR/n ,/wd please/v visit/n Http/n :/wm ICTCLAS.nlpir.org/n //wp Document/n Information/n 
+
+目录/n 
+
+
+文本/n 分类/vn 组件/n (/wkz Classifier/n )/wky   接口/n 文档/n         1/m 
+
+
+目录/n       3/m 
+
+
+0./m   文本/n 分类/vn 组件/n (/wkz 又/d 名/q Classifier/n ）/wky 简介/n   4/m 
+
+
+1．C＋＋/x 接口/n     6/m 
+
+
+1.1/m classifier_init/n 6/m 
+
+1.2/m classifier_exit/n (/wkz 7/m 
+
+1.3/m classifier_exec/n 9/m 
+
+1.4/m classifier_exec_ext/n 11/m 
+
+1.5/m classifier_detail/n 12/m 
+
+1.6/m classifier_setsimthresh/n 14/m 
+
+2/m     Classifier/n 运行/vn 环境/n     15/m 
+
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky       16/m 
+
+
+Q1/x :/wm   Linux/x 调用/v libLJClassifier.so/x 的/ude1 时候/n ，/wd 链接/n_new 不/d 上/vf 库/n   16/m 
+
+
+Q2/x :/wm   LJClassifier/x 系统/n 初始化/v 老是/d 失败/vi       16/m 
+
+
+4/m   作者/n 简介/n         16/m 
+
+
+
+
+
+文本/n 分类/vn 组件/n (/wkz 又/d 名/q Classifier/n ）/wky 简介/n 
+
+文本/n 分类/vn 是/vshi 指/v 在/p 给/v 定/v 的/ude1 分类体系/n_new 下/f ,/wd 根据/p 文/ng 语义/n 元/q 是/vshi 统计/v 语义/n 方法/n 中/f 的/ude1 原子/n ,/wd 是/vshi 不可/v 分/v 
+本/rz 的/ude1 内容/n 自动/d 确定/v 文本/n 类别/n 的/ude1 过程/n ./wj 当前/t 的/ude1 文本/n 割/v 的/ude1 最/d 小/a 单位/n ,/wd 在/p 文本/n 分类/vn 中/f 语义/n 元/q 是/vshi 词/n 
+；/wf 
+文本/n 分类/vd 一般/ad 包括/v 了/ule 文本/n 的/ude1 表达/vn 、/wn                                             分类/vn 器/n 的/ude1 选择/vn 与/cc 训练/vn 、/wn 
+分类/vn 结果/n 的/ude1 评价/vn 与/cc 反馈/v 等/udeng 过程/n ，/wd 其中/rz 文本/n 的/ude1 表达/vn 又/d 可/v 细分/v 为/p 文本/n 预处理/vn 、/wn 索引/n 和/cc 统计/vn 、/wn 
+特征/n 抽取/v 等/udeng 步骤/n 。/wj 文本/n 分类/vn 系统/n 的/ude1 总体/n 功能/n 模块/n 为/v :/wm 
+（/wkz 1）/m   预处理/vn ：/wm 将/d 原始/a 语料/n 格式化/v 为/p 同一/b 格式/n ，/wd 便于/v 后续/vn 的/ude1 统一/ad 处理/v ；/wf 
+（/wkz 2）/m   索引/n ：/wm 将/p 文档/n 分解/v 为/v 基本/ad 处理/v 单元/n ，/wd 同时/c 降低/v 后续/vd 处理/v 的/ude1 开销/n ；/wf 
+（/wkz 3）/m   统计/v ：/wm 词频统计/n_new ，/wd 项/q （/wkz 单词/n 、/wn 概念/n ）/wky 与/cc 分类/vn 的/ude1 相关/vn 概率/n ；/wf 
+（/wkz 4）/m   特征/n 抽取/v ：/wm 从/p 文档/n 中/f 抽取/v 出/vf 反映/v 文档/n 主题/n 的/ude1 特征/n ；/wf 
+（/wkz 5）/m   分类/vn 器/n ：/wm 分类/vi 器/ng 的/ude1 训练/vn ；/wf 
+（/wkz 6）/m   评价/v ：/wm 分类/vi 器/ng 的/ude1 测试/vn 结果/n 分析/vn 
+
+
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n //w J/n   nHB/x -/wp O/nz (/wkz b1/x [/wkz 
+Y/o X/n 
+
+
+
+
+访问/v http/x :/wm //w //w ictclas.nlpir.org/x //w (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky ，/wd 您/rr 可以/v 获取/v Cla/x 
+ssifier/x 组/n 件/q 的/ude1 最新/a 版本/n ，/wd 并/cc 欢迎/v 您/rr 关注/v 张华平/nr 博士/n 的/ude1 新浪/ntz 微/ag 博/ag   @/wp ICTCLAS/x 张华平/nr 博士/n 
+交流/vn 。/wj 1P/x _/n bR/x $/wp vk0/x   自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 1H9/x ^/wp +/wp }/wp NE/nz */wp W/n ;/wf ^/wp 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 5H8/x ]/wky   |/wp U/o   ]/wky 4`/m s/vshi "/wyz Q/n [/wkz pic/n ]/wky ^/wp 
+
+[/wkz pic/n ]/wky 6b/x ;/wf t.P/x   s/xe @/wp )/wky \/n J0/x 然/rz 语言/n 处理/vn 与/cc 信息检索/n_new 共享/vn 平台/n -/wp l3/x ?/ww 3v/x "/wyz Z/n #/wp X/n |/wp {/wp t/rzt #/wp A/rzv !/wt d/o   Z/n 
+图/n 1/m ：/wm 文本/n 分类/vn 功能/n 训练/vn 展示/v 
+[/wkz pic/n ]/wky 
+
+
+
+)/wky O1pa/x [/wkz ?/ww ]/wky C/o -/wp M/o (/wkz ]/wky &/wp U0/x   自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n tO/pba [/wkz ?/ww ]/wky RZ/x ;/wf ]/wky 0e/x 
+图/n 2/m ：/wm 文本/n 分类/vn 功能/n 语料/n 分类/vd 展示/v 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n -/wp r/o 
+UM/n "/w c3u/n pic/n ]/wky 
+1．C＋＋/x 接口/n 
+
+
+1.1/m classifier_init/n 
+Init/n the/rzt analyzer/v and/c prepare/v necessary/a data/n for/p NLPIR/n according/p the/rzt configure/n file/n ./wj bool/n classifier_init/n (/wkz const/n char/n conf/n =/wp rulelist.xml/n "/w const/n char/n */w sLicenceCode/n =/wp NULL/a )/wky |/w Routine/n Required/vd Header/a |/w classifier_in/n |/w LJClassifier.h/n >/wky |/wp it/rzt                       |/wp                                   |/wp 
+
+
+Return/value Value/n Return/value true/a if/c init/n succeed/v ./wj Otherwise/d return/value false/a ./wj Parameters/n conf/n :/wm Initial/directory Directory/n Path/n ,/wd where/ry file/n Configure.xml/n and/c Data/n directory/n stored/n ./wj the/rzt default/n value/n is/vshi 0/m ,/wd it/rzt indicates/v the/rzt initial/directory directory/n is/vshi current/directory working/vi directory/n path/n const/n char/n */w sLicenceCode/n :/wm slicence/n code/n default/n is/vshi NULL/a ./wj Remarks/n The/rzt classifier_init/n function/n must/vyou be/vshi invoked/vd before/p any/rzv operation/n with/p Classifier/n ./wj The/rzt whole/a system/n need/n call/v the/rzt function/n only/d once/d before/p starting/v Classifier/n ./wj When/ry stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ,/wd Classifier_Exit/n should/vyou be/vshi invoked/vd to/pba destroy/v all/a working/vi buffer/n ./wj Any/rzv operation/n will/vyou fail/v if/c init/n do/vyou not/d succeed/v ./wj classifier_init/n fails/v mainly/d because/c of/p two/m reasons/n :/wm 1/m )/wky Required/vd data/n is/vshi incompatible/a or/c missing/a 2/m )/wky Configure/n file/n missing/a or/c invalid/n parameters/n ./wj Moreover/d ,/wd you/rzt could/vyou learn/v more/cc from/p the/rzt log/n file/n NLPIR.log/n in/p the/rzt default/n directory/n ./wj Example/n #/wp include/v NLPIR.h/n "/w #/wp include/v stdio.h/n >/wky #/wp include/v string.h/n >/wky int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+if/c (/wkz classifier_init/n (/wkz rulelist.xml/n "/w printf/n (/wkz classifier_init/n failed/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+stDoc/n d/o ;/wf d.sTitle/x   =/wp   "/wyz 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x "/wyy ;/wf 
+d.sContent/x   =/wp   "/wyz 全球/n 旅行/vi 必备/v :/wm 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x   新浪/ntz   2011-9-26/t 
+15/m :/wm 53/m 手机/n ——/wp 这/rzv 项/q 人们/n 使用率/n 最高/a 的/ude1 电子/n 产品/n ,/wd 其/rz 更新换代/vl 速度/n 更/d 是/vshi 快/a 得/ude3 无法/d 想象/v 。/wj 那么/rz 
+对于/p 我们/rr 消费者/n 而言/uls ,/wd 应当/v 如何/ryv 选择/v 呢/y ?/ww 
+显然/a ,/wd 频繁/a 的/ude1 换/v 机/ng 是/vshi 非常/d 不/d 划算/a 的/ude1 ,/wd 更/d 会/v 增加/v 生活/vn 开支/n ,/wd 平白/ad 增添/v 生活/vn 负担/n 。/wj 因此/c ,/wd 我们/rr 在/p 
+购机/vn 之/uzhi 初/ng 就/d 应当/v 选择/v 一/m 款/q 满足/v 自身/rr 需求/n 的/ude1 手机/n 。/wj ./wj ./wj ./wj "/wyz ;/wf 
+
+d.sAuthor/n   =/wp   "/wyz 飞香/nr2 "/wyy ;/wf 
+d.sBoard/x   =/wp   "/wyz 69/m "/wyy ;/wf 
+d.sDatatype/x   =/wp   "/wyz 论坛/n "/wyy ;/wf 
+string/n sResult/n classifier_exec/n (/wkz d/o )/wky printf/x (/wkz "/wyz \/n n/o 过滤/vn 结果/n ：/wm   %s/x \/n n/o \/n n/o "/wyy ,/wd   sResult.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+vector/n </wkz string/n >/wky vsItems/n ;/wf gfn_bSplit/n (/wkz sResult.c_str/n (/wkz vsItems/n ,/wd \t/n "/w for/p (/wkz int/x   i/rzt =/wp 0/m ;/wf   i/rzt </wp vsItems.size/n (/wkz )/wky ;/wf   i/rzt ++/wp )/wky   {/wp                             //w //w 保存/v 分类/vn 结果/n 到/v 内存/n 
+string/n sDetail/n classifier_detail/n (/wkz vsItems/n [/wkz i/rzt ]/wky .c_str/n (/wkz printf/x (/wkz "/wyz 过滤/v 理由/n ：/wm   %s/x \/n n/o "/wyy ,/wd   sDetail.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+}/wp 
+classifier_exit/n (/wkz printf/n (/wkz Please/v input/n enter/v to/pba quit../n ./wj getchar/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.2/m classifier_exit/n (/wkz 
+Exit/a the/rzt program/n and/c free/a all/a resources/n and/c destroy/v all/a working/vi buffer/n used/vd in/p Classifier/n ./wj void/n classifier_exit/n (/wkz 
+|/w Routine/n Required/vd Header/a |/w classifier_ex/n |/w LJClassifier.h/n >/wky |/wp it/rzt                       |/wp                                   |/wp 
+
+
+Return/value Value/n none/d ./wj Parameters/n none/d Remarks/n The/rzt classifier_exit/n function/n must/vyou be/vshi invoked/vd while/c stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ./wj And/c call/v classifier_exit/n (/wkz function/n to/pba restart/n Classifier/n ./wj Example/n #/wp include/v NLPIR.h/n "/w #/wp include/v stdio.h/n >/wky #/wp include/v string.h/n >/wky int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+if/c (/wkz classifier_init/n (/wkz rulelist.xml/n "/w printf/n (/wkz classifier_init/n failed/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+stDoc/n d/o ;/wf d.sTitle/x   =/wp   "/wyz 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x "/wyy ;/wf 
+d.sContent/x   =/wp   "/wyz 全球/n 旅行/vi 必备/v :/wm 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x   新浪/ntz   2011-9-26/t 
+15/m :/wm 53/m 手机/n ——/wp 这/rzv 项/q 人们/n 使用率/n 最高/a 的/ude1 电子/n 产品/n ,/wd 其/rz 更新换代/vl 速度/n 更/d 是/vshi 快/a 得/ude3 无法/d 想象/v 。/wj 那么/rz 
+对于/p 我们/rr 消费者/n 而言/uls ,/wd 应当/v 如何/ryv 选择/v 呢/y ?/ww 
+显然/a ,/wd 频繁/a 的/ude1 换/v 机/ng 是/vshi 非常/d 不/d 划算/a 的/ude1 ,/wd 更/d 会/v 增加/v 生活/vn 开支/n ,/wd 平白/ad 增添/v 生活/vn 负担/n 。/wj 因此/c ,/wd 我们/rr 在/p 
+购机/vn 之/uzhi 初/ng 就/d 应当/v 选择/v 一/m 款/q 满足/v 自身/rr 需求/n 的/ude1 手机/n 。/wj ./wj ./wj ./wj "/wyz ;/wf 
+
+d.sAuthor/n   =/wp   "/wyz 飞香/nr2 "/wyy ;/wf 
+d.sBoard/x   =/wp   "/wyz 69/m "/wyy ;/wf 
+d.sDatatype/x   =/wp   "/wyz 论坛/n "/wyy ;/wf 
+string/n sResult/n classifier_exec/n (/wkz d/o )/wky printf/x (/wkz "/wyz \/n n/o 过滤/vn 结果/n ：/wm   %s/x \/n n/o \/n n/o "/wyy ,/wd   sResult.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+vector/n </wkz string/n >/wky vsItems/n ;/wf gfn_bSplit/n (/wkz sResult.c_str/n (/wkz vsItems/n ,/wd \t/n "/w for/p (/wkz int/x   i/rzt =/wp 0/m ;/wf   i/rzt </wp vsItems.size/n (/wkz )/wky ;/wf   i/rzt ++/wp )/wky   {/wp                             //w //w 保存/v 分类/vn 结果/n 到/v 内存/n 
+string/n sDetail/n classifier_detail/n (/wkz vsItems/n [/wkz i/rzt ]/wky .c_str/n (/wkz printf/x (/wkz "/wyz 过滤/v 理由/n ：/wm   %s/x \/n n/o "/wyy ,/wd   sDetail.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+}/wp 
+classifier_exit/n (/wkz printf/n (/wkz Please/v input/n enter/v to/pba quit../n ./wj getchar/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.3/m classifier_exec/n 
+classifies/n the/rzt article/n structure/n of/p the/rzt input/n ./wj const/n char/n */w classifier_exec/n (/wkz stDoc/n &/w d/o ,/wd int/n iType/n =/wp 0/m )/wky 
+|/w Routine/n Required/vd |/wp                                       |/wp Header/a               |/wp 
+|/w classifier_exec/n LJClassifier/n |/w |/wp                                       |/wp ./wj h/o >/wp                     |/wp 
+
+
+Return/value Value/n Topic/n categories/n ,/wd All/a are/vshi separated/vd by/p an/rzv \t/n The/rzt class/name name/n ranking/n from/p high/a to/pba low/a according/p to/pba confidence/n level/n ./wj Parameters/n d/o :/wm a/rzv point/n of/p article/n structure/n ./wj typedef/n struct/n _stDoc/n string/n sTitle/n ;/wf string/n sContent/n ;/wf string/n sAuthor/n ;/wf string/n sBoard/n ;/wf string/n sDatatype/n ;/wf }/wky stDoc/n ;/wf int/n itype/n iType/n =/wp 0/m :/wm output/n class/name name/n ,/wd separated/vd by/p an/rzv \t/n between/p the/rzt various/a classes/n ,/wd   For/p   example/n   “/wyz 要闻/n   敏感/an     诉讼/vi ”/wyy 
+iType/n =/wp 1/m :/wm output/n class/name name/n and/c confidence/n level/n ,/wd separated/vd by/p an/rzv \t/n between/p the/rzt various/a classes/n ,/wd separated/vd by/p an/rzv “/w ”/w between/p class/name name/n and/c weight/n ,/wd   for/p   example/n   “/wyz 要闻/n   1.00/m       敏感/an   0.95/m   诉讼/vi   0.82/m ”/wyy 
+Default/n :/wm itype/n 0/m Remarks/n The/rzt classifier_exec/n function/n works/n properly/d only/d if/c classifier_init/n succeeds/vd ./wj Example/n #/wp include/v NLPIR.h/n "/w #/wp include/v stdio.h/n >/wky #/wp include/v string.h/n >/wky int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+if/c (/wkz classifier_init/n (/wkz rulelist.xml/n "/w printf/n (/wkz classifier_init/n failed/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+stDoc/n d/o ;/wf d.sTitle/x   =/wp   "/wyz 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x "/wyy ;/wf 
+d.sContent/x   =/wp   "/wyz 全球/n 旅行/vi 必备/v :/wm 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x   新浪/ntz   2011-9-26/t 
+15/m :/wm 53/m 手机/n ——/wp 这/rzv 项/q 人们/n 使用率/n 最高/a 的/ude1 电子/n 产品/n ,/wd 其/rz 更新换代/vl 速度/n 更/d 是/vshi 快/a 得/ude3 无法/d 想象/v 。/wj 那么/rz 
+对于/p 我们/rr 消费者/n 而言/uls ,/wd 应当/v 如何/ryv 选择/v 呢/y ?/ww 
+显然/a ,/wd 频繁/a 的/ude1 换/v 机/ng 是/vshi 非常/d 不/d 划算/a 的/ude1 ,/wd 更/d 会/v 增加/v 生活/vn 开支/n ,/wd 平白/ad 增添/v 生活/vn 负担/n 。/wj 因此/c ,/wd 我们/rr 在/p 
+购机/vn 之/uzhi 初/ng 就/d 应当/v 选择/v 一/m 款/q 满足/v 自身/rr 需求/n 的/ude1 手机/n 。/wj ./wj ./wj ./wj "/wyz ;/wf 
+
+d.sAuthor/n   =/wp   "/wyz 飞香/nr2 "/wyy ;/wf 
+d.sBoard/x   =/wp   "/wyz 69/m "/wyy ;/wf 
+d.sDatatype/x   =/wp   "/wyz 论坛/n "/wyy ;/wf 
+string/n sResult/n classifier_exec/n (/wkz d/o )/wky printf/x (/wkz "/wyz \/n n/o 过滤/vn 结果/n ：/wm   %s/x \/n n/o \/n n/o "/wyy ,/wd   sResult.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+vector/n </wkz string/n >/wky vsItems/n ;/wf gfn_bSplit/n (/wkz sResult.c_str/n (/wkz vsItems/n ,/wd \t/n "/w for/p (/wkz int/x   i/rzt =/wp 0/m ;/wf   i/rzt </wp vsItems.size/n (/wkz )/wky ;/wf   i/rzt ++/wp )/wky   {/wp                             //w //w 保存/v 分类/vn 结果/n 到/v 内存/n 
+string/n sDetail/n classifier_detail/n (/wkz vsItems/n [/wkz i/rzt ]/wky .c_str/n (/wkz printf/x (/wkz "/wyz 过滤/v 理由/n ：/wm   %s/x \/n n/o "/wyy ,/wd   sDetail.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+}/wp 
+classifier_exit/n (/wkz printf/n (/wkz Please/v input/n enter/v to/pba quit../n ./wj getchar/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n DataFile/n //wp RunLog.txt/n DataFile/n //wp ChnDict.dct/n InitSentiClfData/n is/vshi OK/n !/wt Success/n in/p loading/vd double/njtgj -/wp array/n !/wt clfdata.WordNum/n =/wp 318615/m The/rzt size/n of/p trainset/n is/vshi 2/m The/rzt size/n of/p labelset/n is/vshi 2/m 0/m       0/m 
+InitTextClf/n is/vshi OK/n !/wt 1/m               E600/x   Completed/vd !/wt 
+2/m               天/qt 翼/ng 定制/v 手机/n 天/qt 语/ng   Completed/vd !/wt 
+3/m               分割/vn 符号/n   Completed/vd !/wt 
+
+过滤/v 结果/n ：/wm   天/qt 语/ng E600/x 
+
+过滤/v 理由/n ：/wm   RULE0/x :/wm 
+SUBRULE1/n :/wm   E600/x   2/m                 天/qt 翼/ng 定制/v 手机/n 天/qt 语/ng   2/m 
+
+
+1.4/m classifier_exec_ext/n 
+
+classifies/n the/rzt article/n structure/n of/p the/rzt input，It/n is/vshi the/rzt 1.3/m expansion/n ./wj 
+const/n char/n */w classifier_exec_ext/n (/wkz const/n char/n */w sTitle/n ,/wd const/n char/n */w sContent/n ,/wd const/n char/n */w sAuthor/n ,/wd const/n char/n */w sBoard/n ,/wd const/n char/n */w sDatatyp/n ,/wd int/n iType/n =/wp 0/m )/wky |/wp Routine/n                         |/wp Required/n             |/wp 
+|/wp                                       |/wp Header/a                 |/wp 
+|/w classifier_exec_ext/n |/w LJClassifier/n ./wj |/wp                                       |/wp h/o >/wp                         |/wp 
+
+
+Return/value Value/n Topic/n categories/n ,/wd All/a are/vshi separated/vd by/p an/rzv \t/n The/rzt class/name name/n ranking/n from/p high/a to/pba low/a according/p to/pba confidence/n level/n ./wj Parameters/n sTitle/n :/wm The/rzt Text/n title/n sContent/n :/wm The/rzt Text/n content/n sAuthor/n :/wm the/rzt Text/n Author/n sBoard/n :/wm The/rzt Text/n Board/n sDatatype/n :/wm The/rzt Text/n DataType/n int/n itype/n iType/n =/wp 0/m :/wm output/n class/name name/n ,/wd separated/vd by/p an/rzv \t/n between/p the/rzt various/a classes/n ,/wd   For/p   example/n   “/wyz 要闻/n   敏感/an     诉讼/vi ”/wyy 
+iType/n =/wp 1/m :/wm output/n class/name name/n and/c confidence/n level/n ,/wd separated/vd by/p an/rzv \t/n between/p the/rzt various/a classes/n ,/wd separated/vd by/p an/rzv “/w ”/w between/p class/name name/n and/c weight/n ,/wd   for/p   example/n   “/wyz 要闻/n   1.00/m       敏感/an   0.95/m   诉讼/vi   0.82/m ”/wyy 
+Default/n :/wm itype/n 0/m Remarks/n The/rzt classifier_exec_ext/n function/n works/n properly/d only/d if/c classifier_init/n succeeds/vd ./wj Example/n #/wp include/v NLPIR.h/n "/w #/wp include/v stdio.h/n >/wky #/wp include/v string.h/n >/wky int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+if/c (/wkz classifier_init/n (/wkz rulelist.xml/n "/w printf/n (/wkz classifier_init/n failed/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+stDoc/n d/o ;/wf d.sTitle/x   =/wp   "/wyz 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x "/wyy ;/wf 
+d.sContent/x   =/wp   "/wyz 全球/n 旅行/vi 必备/v :/wm 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x   新浪/ntz   2011-9-26/t 
+15/m :/wm 53/m 手机/n ——/wp 这/rzv 项/q 人们/n 使用率/n 最高/a 的/ude1 电子/n 产品/n ,/wd 其/rz 更新换代/vl 速度/n 更/d 是/vshi 快/a 得/ude3 无法/d 想象/v 。/wj 那么/rz 
+对于/p 我们/rr 消费者/n 而言/uls ,/wd 应当/v 如何/ryv 选择/v 呢/y ?/ww 
+显然/a ,/wd 频繁/a 的/ude1 换/v 机/ng 是/vshi 非常/d 不/d 划算/a 的/ude1 ,/wd 更/d 会/v 增加/v 生活/vn 开支/n ,/wd 平白/ad 增添/v 生活/vn 负担/n 。/wj 因此/c ,/wd 我们/rr 在/p 
+购机/vn 之/uzhi 初/ng 就/d 应当/v 选择/v 一/m 款/q 满足/v 自身/rr 需求/n 的/ude1 手机/n 。/wj ./wj ./wj ./wj "/wyz ;/wf 
+
+d.sAuthor/n   =/wp   "/wyz 飞香/nr2 "/wyy ;/wf 
+d.sBoard/x   =/wp   "/wyz 69/m "/wyy ;/wf 
+d.sDatatype/x   =/wp   "/wyz 论坛/n "/wyy ;/wf 
+string/n sResult/n classifier_exec_ext/n (/wkz d.sTitle/n ,/wd d.sContent/n ,/wd d.sAuthor/n ,/wd d.sBoard/n ,/wd d.sDatatype/n )/wky printf/x (/wkz "/wyz \/n n/o 过滤/vn 结果/n ：/wm   %s/x \/n n/o \/n n/o "/wyy ,/wd   sResult.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+vector/n </wkz string/n >/wky vsItems/n ;/wf gfn_bSplit/n (/wkz sResult.c_str/n (/wkz vsItems/n ,/wd \t/n "/w for/p (/wkz int/x   i/rzt =/wp 0/m ;/wf   i/rzt </wp vsItems.size/n (/wkz )/wky ;/wf   i/rzt ++/wp )/wky   {/wp                             //w //w 保存/v 分类/vn 结果/n 到/v 内存/n 
+string/n sDetail/n classifier_detail/n (/wkz vsItems/n [/wkz i/rzt ]/wky .c_str/n (/wkz printf/x (/wkz "/wyz 过滤/v 理由/n ：/wm   %s/x \/n n/o "/wyy ,/wd   sDetail.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+}/wp 
+classifier_exit/n (/wkz printf/n (/wkz Please/v input/n enter/v to/pba quit../n ./wj getchar/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.5/m classifier_detail/n 
+const/n char/n */w classifier_detail/n (/wkz const/n char/n classname/n )/wky |/wp Routine/n                               |/wp Required/n           |/wp 
+|/wp                                             |/wp Header/a               |/wp 
+|/w classifier_detail/n LJClassifier/n |/w |/wp                                             |/wp ./wj h/o >/wp                     |/wp 
+
+
+Return/value Value/n Detailed/n results/n ,/wd for/p example/n :/wm //w */wp                 RULE3/x :/wm 
+SUBRULE1/n :/wm   内幕/n   1/m 
+SUBRULE2/n :/wm   股市/n   1/m   基金/n   3/m         股票/n   8/m 
+SUBRULE3/n :/wm   书/vg 摘/v   2/m   */wp //w 
+
+Parameters/n Const/n char/n */w classname/n :/wm Returns/n the/rzt class/name name/n Remarks/n The/rzt classifier_detail/n function/n works/n properly/d only/d if/c classifier_Init/n succeeds/vd ./wj For/p the/rzt current/directory document/n ,/wd enter/v the/rzt class/name name/n ,/wd get/v the/rzt details/n ./wj Example/n if/c (/wkz classifier_init/n (/wkz rulelist.xml/n "/w printf/n (/wkz classifier_init/n failed/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+stDoc/n d/o ;/wf d.sTitle/x   =/wp   "/wyz 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x "/wyy ;/wf 
+d.sContent/x   =/wp   "/wyz 全球/n 旅行/vi 必备/v :/wm 天/n 翼/ng 定制/v 手机/n 天/qt 语/ng E600/x   新浪/ntz   2011-9-26/t 
+15/m :/wm 53/m 手机/n ——/wp 这/rzv 项/q 人们/n 使用率/n 最高/a 的/ude1 电子/n 产品/n ,/wd 其/rz 更新换代/vl 速度/n 更/d 是/vshi 快/a 得/ude3 无法/d 想象/v 。/wj 那么/rz 
+对于/p 我们/rr 消费者/n 而言/uls ,/wd 应当/v 如何/ryv 选择/v 呢/y ?/ww 
+显然/a ,/wd 频繁/a 的/ude1 换/v 机/ng 是/vshi 非常/d 不/d 划算/a 的/ude1 ,/wd 更/d 会/v 增加/v 生活/vn 开支/n ,/wd 平白/ad 增添/v 生活/vn 负担/n 。/wj 因此/c ,/wd 我们/rr 在/p 
+购机/vn 之/uzhi 初/ng 就/d 应当/v 选择/v 一/m 款/q 满足/v 自身/rr 需求/n 的/ude1 手机/n 。/wj ./wj ./wj ./wj "/wyz ;/wf 
+
+d.sAuthor/n   =/wp   "/wyz 飞香/nr2 "/wyy ;/wf 
+d.sBoard/x   =/wp   "/wyz 69/m "/wyy ;/wf 
+d.sDatatype/x   =/wp   "/wyz 论坛/n "/wyy ;/wf 
+string/n sResult/n classifier_exec/n (/wkz d/o )/wky printf/x (/wkz "/wyz \/n n/o 过滤/vn 结果/n ：/wm   %s/x \/n n/o \/n n/o "/wyy ,/wd   sResult.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+vector/n </wkz string/n >/wky vsItems/n ;/wf gfn_bSplit/n (/wkz sResult.c_str/n (/wkz vsItems/n ,/wd \t/n "/w for/p (/wkz int/x   i/rzt =/wp 0/m ;/wf   i/rzt </wp vsItems.size/n (/wkz )/wky ;/wf   i/rzt ++/wp )/wky   {/wp                             //w //w 保存/v 分类/vn 结果/n 到/v 内存/n 
+string/n sDetail/n classifier_detail/n (/wkz vsItems/n [/wkz i/rzt ]/wky .c_str/n (/wkz printf/x (/wkz "/wyz 过滤/v 理由/n ：/wm   %s/x \/n n/o "/wyy ,/wd   sDetail.c/n _/n str/d (/wkz )/wky )/wky ;/wf 
+}/wp 
+classifier_exit/n (/wkz Output/n 
+1.6/m classifier_setsimthresh/n 
+Set/vd document/n similar/a ./wj void/n classifier_setsimthresh/n (/wkz float/v fSim/n )/wky 
+|/wp Routine/n                         |/wp Required/n             |/wp 
+|/wp                                       |/wp Header/a                 |/wp 
+|/w classifier_setsimth/n |/w LJClassifier/n ./wj |/wp resh/v                               |/wp h/o >/wp                         |/wp 
+
+
+Return/value Value/n NULL/a ./wj Parameters/n fSim/n :/wm Similarity/a ;/wf Remarks/n The/rzt classifier_setsimthresh/n function/n works/n properly/d only/d if/c classifier_Init/n succeeds/vd ./wj Example/n if/c (/wkz classifier_init/n (/wkz rulelist.xml/n "/w printf/n (/wkz classifier_init/n failed/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+float/v fSim/n theDlg/n -/wp m_SliderSim.GetPos/n (/wkz 100.0/m ;/wf classifier_setsimthresh/n (/wkz fSim/n )/wky classifier_exit/n (/wkz Output/n 
+
+
+
+
+2/m     Classifier/n 运行/vn 环境/n 
+
+1./m   可以/v 支持/v Windows/n 、/wn Linux/x 、/wn FreeBSD/x 等/udeng 多种/m 环境/n ，/wd 支持/v 普通/a PC/x 机器/n 即可/v 运行/vi 。/wj 
+2./m   支持/v GBK/x //w UTF/x -/wp 8/m //w BIG5/x 
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky 
+
+
+Q1/x :/wm   Linux/x 调用/v libLJClassifier.so/x 的/ude1 时候/n ，/wd 链接/n_new 不/d 上/vf 库/n 
+
+例如/v 执行/v 示例/n 程序/n 结果/n 如下/vi ：/wm 
+[/wkz root@localhost/xe linux_c_sample/n ]/wky ./wj //wp test/n ./wj //wp test/n :/wm error/n while/c loading/vd shared/v libraries/n :/wm libLJClassifier.so/n :/wm cannot/n open/a shared/v object/n file/n :/wm No/rzt such/p file/n or/c directory/n Answer/n :/wm 应当/v 设置/v 系统/n 的/ude1 LD/a _/n LIBRARY/n _/n PATH/n ，/wd 即/v ：/wm export/n   LD/a _/n LIBRARY/n _/n PATH/n =/wp ./wj //w 
+并且/c 请/v 保证/v 在/p 本/rz 目录/n 也/d 有/vyou libNLPIR.so/x 
+
+Q2/x :/wm   LJClassifier/x 系统/n 初始化/v 老是/d 失败/vi 
+
+Answer/n :/wm 请/v 您/rr 保证/v 在/p 您/rr 的/ude1 本/rz 目录/n 中/f 包含/v 有/vyou Datafile/n 目录/n ，/wd 并且/c classifier.user/x 文件/n 未/d 过期/vi ，/wd 另外/c 
+可/v 参考/v “/wyz 20***./m err/v ”/wyy 文件/n 查看/v 错误/a 信息/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4/m   作者/n 简介/n 
+
+
+
+
+
+
+
+
+
+
+
+张华平/nr   博士/n   副教授/n   硕/ag 导/vg 
+北京理工大学/nt 计算机/n 学院/n   院长/n 助理/n 
+北京理工大学/nt 网络/n 搜索/vn 挖掘/vn 与/cc 安全实验室/n_new   主任/n 
+地址/n ：/wm 北京海淀区中关村/ns 南/b 大街/n 5/m 号/q   100081/m 
+电话/n ：+/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf 网站/n :/wm   http/x :/wm //w //w ictclas.nlpir.org/x   (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky 
+博客/nz :/wm http/x :/wm //w //w hi.baidu.com/x //w drkevinzhang/x //w 
+微/ag 博/ag :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+
+
+Dr./a   Kevin/x   Zhang/x     (/wkz 张华平/nr ，/wd Zhang/x   Hua/x -/wp Ping/n )/wky 
+Associate/n Professor/nr1 ,/wd Graduate/n Supervisor/n Dean/nz Assistant/n ,/wd School/n of/p Computer/n Director/nr1 ,/wd Web/n Search/n ,/wd Mining/nz and/c Security/n Lab/n ./wj Beijing/nsf Institute/n of/p Technology/n Add/v :/wm No.5/n ,/wd South/nz St./n ,/wd Zhongguancun/n ,/wd Haidian/n District/n ,/wd Beijing/nsf ,/wd P.R.C/n PC/n :/wm 100081/m Tel/x :/wm   +/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf Website/n :/wm http/n :/wm ictclas.nlpir.org/n Natural/n Language/n Processing/n and/c Information/n Retrieval/a Sharing/vi Platform/n )/wky Blog/n :/wm http/n :/wm hi.baidu.com/n //wp drkevinzhang/n //wp Twitter/vi :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+[/wkz pic/n ]/wky pic/n ]/wky 

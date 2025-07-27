@@ -1,0 +1,549 @@
+﻿
+
+
+
+
+
+                        实体抽取及情感正负度分析组件
+
+
+                                  接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+
+
+                                    目录
+
+
+实体抽取及情感正负度分析组件  1
+
+
+接口文档  1
+
+
+目录   3
+
+
+0. 实体抽取组件简介 4
+
+
+1．C＋＋接口  5
+
+
+   1.1 DE_Init   5
+
+
+   1.2 DE_Exit() 7
+
+
+   1.3 DE_ParseDoc  8
+
+
+   1.4 CLUS_AddContent 11
+
+
+   1.5 DE_GetLastErrMsg   12
+
+
+2  DocExtrator运行环境 13
+
+
+3 常见问题（FAQ）   14
+
+
+   Q1: Linux调用libDocExtrator.so的时候，链接不上库  14
+
+
+   Q2: DocExtractor系统初始化老是失败   14
+
+
+4 作者简介    15
+
+
+
+
+
+   实体抽取组件简介
+
+    实体抽取（Entity
+Extrator）实体关系抽取是指自动识别包含在自然语言文本中的两个实体之间的预定义
+关系。所谓实体是指文本中包含的特定事实信息,如人物、组织机构、地理位置等。实体
+关系抽取在数据结构化、信息检索和自动应答系统等领域有着重要的研究意义。美国国
+家标准技术研究院(NIST)在2008年组织的自动内容抽取(ACE,AutomaticContentExtract
+ion)评测中定义了7种实体关系类型和18种子类型。
+
+
+    自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取Doc
+Extrator组件的最新版本，并欢迎您关注张华平博士的新浪微博 @ICTCLAS张华平博士
+交流。1P_bR$vk0 自然语言处理与信息检索共享平台1H9^+}NE*W;^
+自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+[pic]
+        6b;t.P s@)\J0然语言处理与信息检索共享平台-l3?3v"Z#X|{t#A!d Z
+                        图1：文档正负情感分析功能展示
+                      自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 DE_Init
+
+Init the analyzer and prepare necessary data for DocExtrator according the
+configure file.
+int DE_Init(const char *sPath=0,int nEncoding=GBK_CODE,const char
+*sLicenseCode=0);
+|Routine      |Required Header  |
+|DE_Init      |<DocExtractor.h> |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sDefaultPath: Initial Directory Path, where Data directory stored.  the
+default value is 0, it indicates the initial directory is current working
+directory path
+nEncoding:  Encoding of input string, default is GBK_CODE (GBK encoding),
+and it can be set with UTF8_CODE (UTF8 encoding) and BIG5_CODE (BIG5
+encoding).
+const char* sLicenceCode: licence coding of input string,
+Remarks
+The DE_Init function must be invoked before any operation with DocExtrator.
+The whole system need call the function only once before starting
+DocExtrator. When stopping the system and make no more operation, DE_Exit
+should be invoked to destroy all working buffer. Any operation will fail if
+init do not succeed.
+DE_Init fails mainly because of two reasons: 1) Required data is
+incompatible or missing 2) invalid parameters. Moreover, you could learn
+more from the log file 2014****.log in the current directory.
+Example
+int main(int argc, char* argv[])
+{
+    // 初始化
+    if(!DE_Init("",UTF8_CODE)) {
+       printf("%s\n", DE_GetLastErrMsg());
+       return 1;
+    }
+
+    // 扫描
+    int nRealCount;
+    vector<string> vsFileName;
+    fn_vScanFiles(argv[1], vsFileName,"txt");
+
+    //fn_vScanFiles(std::string& sFolderName, std::vector<std::string>&
+vsFileName,tstring& sFilter)
+    string sOutput = "";
+
+    // 加载
+    printf("分析文章（Total %d）...\n",vsFileName.size());
+    int i;
+    _tDocExtractResult result;
+    for(i=0; i<vsFileName.size(); i++) {
+       string sContent;
+       gfn_bReadFile(vsFileName[i].c_str(), sContent);
+
+DE_ParseDoc(sContent.c_str(),result,true);//,LOCATION_REQUIRED|ORGANIZATION_
+REQUIRED|PERSON_REQUIRED
+       printf("-------------------------------------
+\n文件:%s\n内容：\n%s\n\n------------------------------------
+\n分析结果：\n", vsFileName[i].c_str(), sContent.c_str());
+       printf("Person
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_PERSON]);
+       printf("Loc
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_LOCATION]);
+       printf("Org
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_ORGANIZATION]);
+       printf("Abstract
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_ABSTRACT]);
+       printf("Keyword
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_KEYWORD]);
+       printf("Media
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_MEDIA]);
+       printf("Author
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_AUTHOR]);
+       printf("Country:%s\n",result.entity_list[DOC_EXTRACT_TYPE_COUNTRY]);
+
+printf("Province:%s\n",result.entity_list[DOC_EXTRACT_TYPE_PROVINCE]);
+       printf("Food:%s\n",result.entity_list[DOC_EXTRACT_TYPE_FOOD]);
+
+printf("Transportation:%s\n",result.entity_list[DOC_EXTRACT_TYPE_TRANS]);
+       printf("Apps:%s\n",result.entity_list[DOC_EXTRACT_TYPE_APPS]);
+       printf("SENTIMENT:%d\n",result.sentiment_score);
+       fTime=(float)lTime/(float)CLOCKS_PER_SEC;//Time cost
+       printf("Size=%d Bytes\n",sContent.size());
+    }
+
+    // 退出
+    DE_Exit();
+    return 0;
+}
+Output
+
+1.2 DE_Exit()
+
+Exit the program and free all resources and destroy all working buffer used
+in DocExtrator.
+void DE_Exit();
+|Routine      |Required Header  |
+|DE_Exit      |<DocExtractor.h> |
+
+
+Return Value
+none.
+Parameters
+none
+Remarks
+The DE_Exit function must be invoked while stopping the system and make no
+more operation. And call DE_Exit function to restart DocExtrator.
+Example
+int main(int argc, char* argv[])
+{
+    // 初始化
+    if(!DE_Init("",UTF8_CODE)) {
+       printf("%s\n", DE_GetLastErrMsg());
+       return 1;
+    }
+
+    // 扫描
+    int nRealCount;
+    vector<string> vsFileName;
+    fn_vScanFiles(argv[1], vsFileName,"txt");
+
+    //fn_vScanFiles(std::string& sFolderName, std::vector<std::string>&
+vsFileName,tstring& sFilter)
+    string sOutput = "";
+
+    // 加载
+    printf("分析文章（Total %d）...\n",vsFileName.size());
+    int i;
+    _tDocExtractResult result;
+    for(i=0; i<vsFileName.size(); i++) {
+       string sContent;
+       gfn_bReadFile(vsFileName[i].c_str(), sContent);
+
+DE_ParseDoc(sContent.c_str(),result,true);//,LOCATION_REQUIRED|ORGANIZATION_
+REQUIRED|PERSON_REQUIRED
+       printf("-------------------------------------
+\n文件:%s\n内容：\n%s\n\n------------------------------------
+\n分析结果：\n", vsFileName[i].c_str(), sContent.c_str());
+       printf("Person
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_PERSON]);
+       printf("Loc
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_LOCATION]);
+       printf("Org
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_ORGANIZATION]);
+       printf("Abstract
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_ABSTRACT]);
+       printf("Keyword
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_KEYWORD]);
+       printf("Media
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_MEDIA]);
+       printf("Author
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_AUTHOR]);
+       printf("Country:%s\n",result.entity_list[DOC_EXTRACT_TYPE_COUNTRY]);
+
+printf("Province:%s\n",result.entity_list[DOC_EXTRACT_TYPE_PROVINCE]);
+       printf("Food:%s\n",result.entity_list[DOC_EXTRACT_TYPE_FOOD]);
+
+printf("Transportation:%s\n",result.entity_list[DOC_EXTRACT_TYPE_TRANS]);
+       printf("Apps:%s\n",result.entity_list[DOC_EXTRACT_TYPE_APPS]);
+       printf("SENTIMENT:%d\n",result.sentiment_score);
+       fTime=(float)lTime/(float)CLOCKS_PER_SEC;//Time cost
+       printf("Size=%d Bytes\n",sContent.size());
+    }
+
+    // 退出
+    DE_Exit();
+    return 0;
+}
+Output
+
+1.3 DE_ParseDoc
+
+Generation of single document summarization.
+bool DE_ParseDoc(const char *sText,_tDocExtractResult& result,bool
+bSummaryNeeded=true,unsigned int nFuncRequired=ALL_REQUIRED);
+|Routine            |Required Header|
+|DE_ParseDoc        |<DocExtractor.h|
+|                   |>              |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sText:  document content
+result:   document extract result
+typedef struct _tDocExtractResult{
+Char  entity_list[DOC_EXTRACT_TYPE_COUNT][DOC_EXTRACT_TYPE_MAX_LENGTH+1];
+   //personal name list, delimiter with #
+int sentiment_score;//情感极性判分
+}DOC_EXTRAXT_RESULT;
+bSummaryNeeded: whether or not calculated summary
+Remarks
+Example
+int main(int argc, char* argv[])
+{
+    // 初始化
+    if(!DE_Init("",UTF8_CODE)) {
+       printf("%s\n", DE_GetLastErrMsg());
+       return 1;
+    }
+
+    // 扫描
+    int nRealCount;
+    vector<string> vsFileName;
+    fn_vScanFiles(argv[1], vsFileName,"txt");
+    string sOutput = "";
+
+    // 加载
+    printf("分析文章（Total %d）...\n",vsFileName.size());
+    int i;
+    _tDocExtractResult result;
+    for(i=0; i<vsFileName.size(); i++) {
+       string sContent;
+       gfn_bReadFile(vsFileName[i].c_str(), sContent);
+
+DE_ParseDoc(sContent.c_str(),result,true);//,LOCATION_REQUIRED|ORGANIZATION_
+REQUIRED|PERSON_REQUIRED
+       printf("-------------------------------------
+\n文件:%s\n内容：\n%s\n\n------------------------------------
+\n分析结果：\n", vsFileName[i].c_str(), sContent.c_str());
+       printf("Person
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_PERSON]);
+       printf("Loc
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_LOCATION]);
+       printf("Org
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_ORGANIZATION]);
+       printf("Abstract
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_ABSTRACT]);
+       printf("Keyword
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_KEYWORD]);
+       printf("Media
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_MEDIA]);
+       printf("Author
+list:%s\n",result.entity_list[DOC_EXTRACT_TYPE_AUTHOR]);
+       printf("Country:%s\n",result.entity_list[DOC_EXTRACT_TYPE_COUNTRY]);
+
+printf("Province:%s\n",result.entity_list[DOC_EXTRACT_TYPE_PROVINCE]);
+       printf("Food:%s\n",result.entity_list[DOC_EXTRACT_TYPE_FOOD]);
+
+printf("Transportation:%s\n",result.entity_list[DOC_EXTRACT_TYPE_TRANS]);
+       printf("Apps:%s\n",result.entity_list[DOC_EXTRACT_TYPE_APPS]);
+       printf("SENTIMENT:%d\n",result.sentiment_score);
+       fTime=(float)lTime/(float)CLOCKS_PER_SEC;//Time cost
+       printf("Size=%d Bytes\n",sContent.size());
+    }
+
+    // 退出
+    DE_Exit();
+    return 0;
+}
+Output
+
+
+
+1.4 CLUS_AddContent
+
+
+get Positive or negative emotion in the document.
+
+int  DE_ComputeSentimentDoc(const char *sText);
+|Routine            |Required      |
+|                   |Header        |
+|DE_ComputeSentiment|<DocExtractor.|
+|Doc                |h>            |
+
+
+Return Value
+the emotional value about the document.
+Parameters
+sText: [IN] Document content
+
+Remarks
+This function can be performed repeatedly before the result is printed
+in the process
+Example
+int main(int argc, char* argv[])
+{
+    // 初始化
+    if(!DE_Init("",UTF8_CODE)) {
+       printf("%s\n", DE_GetLastErrMsg());
+       return 1;
+    }
+    // 扫描
+    int nRealCount;
+    vector<string> vsFileName;
+    fn_vScanFiles(argv[1], vsFileName,"txt");
+    string sOutput = "";
+    printf("分析文章（Total %d）...\n",vsFileName.size());
+    int i;
+    for(i=0; i<vsFileName.size(); i++) {
+       string sContent;
+       gfn_bReadFile(vsFileName[i].c_str(), sContent);
+       int nSent = DE_ComputeSentimentDoc(sContent.c_str());
+       printf("SENTIMENT:%d\n",nSent);
+    }
+
+    // 退出
+    DE_Exit();
+}
+Output
+
+
+1.5 DE_GetLastErrMsg
+
+const char* DE_GetLastErrMsg();
+|Routine               |Required     |
+|                      |Header       |
+|DE_GetLastErrMsg      |<DocExtractor|
+|                      |.h>          |
+
+
+Return Value
+Return the lastest error msg.
+
+Parameters
+NULL
+Remarks
+This function can be performed repeatedly before the result is printed
+in the process
+Example
+int main(int argc, char* argv[])
+{
+    // 初始化
+    if(!DE_Init("",UTF8_CODE)) {
+       printf("%s\n", DE_GetLastErrMsg());
+       return 1;
+    }
+    // 扫描
+    int nRealCount;
+    vector<string> vsFileName;
+    fn_vScanFiles(argv[1], vsFileName,"txt");
+    string sOutput = "";
+    printf("分析文章（Total %d）...\n",vsFileName.size());
+    int i;
+    for(i=0; i<vsFileName.size(); i++) {
+       string sContent;
+       gfn_bReadFile(vsFileName[i].c_str(), sContent);
+       int nSent = DE_ComputeSentimentDoc(sContent.c_str());
+       printf("SENTIMENT:%d\n",nSent);
+    }
+
+    // 退出
+    DE_Exit();
+}
+Output
+
+
+
+
+2  DocExtrator运行环境
+
+   1. 可以支持Windows、Linux、FreeBSD等多种环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q1: Linux调用libDocExtrator.so的时候，链接不上库
+
+例如执行示例程序结果如下：
+[root@localhost linux_c_sample]# ./test
+./test: error while  loading  shared  libraries:  libDocExtrator.so:  cannot
+open shared object file: No such file or directory
+Answer:
+应当设置系统的LD_LIBRARY_PATH，即：export LD_LIBRARY_PATH=./
+并且请保证在本目录也有libNLPIR.so
+
+Q2: DocExtractor系统初始化老是失败
+
+Answer:
+请您保证NLPIR.user文件未过期，另外可参考“20***.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+

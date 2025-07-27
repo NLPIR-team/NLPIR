@@ -1,0 +1,393 @@
+﻿
+
+
+
+
+
+                     关键字提取组件(KeyExtract) 接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+For    the    latest    information    about     NLPIR,     please     visit
+Http://ICTCLAS.nlpir.org/
+  Document Information
+
+
+                                    目录
+
+
+关键字提取组件(KeyExtract) 接口文档  1
+
+
+目录   3
+
+
+0. 关键字提取组件(又名KeyExtract）简介  4
+
+
+1．C＋＋接口  5
+
+
+   1.1 KeyExtract_Init 5
+
+
+   1.2 KeyExtract_Exit 6
+
+
+   1.3 KeyExtract_GetKeyWords 7
+
+
+   1.4 KeyExtract_GetFileKeyWords   8
+
+
+2  KeyExtract运行环境  10
+
+
+3 常见问题（FAQ）   11
+
+
+   Q1: Linux调用libKeyExtract.so的时候，链接不上库   11
+
+
+   Q2: KeyExtract组件初始化老是失败 11
+
+
+4 作者简介    12
+
+
+
+
+
+   关键字提取组件(又名KeyExtract）简介
+
+    关键词，就是您输入搜索框中的文字，也就是您命令搜索引擎寻找的相关信息。您可
+以命令搜索引擎寻找任何相关内容，所以关键词的内容可以是：人名、网站、新闻、小
+说、软件、游戏、星座、工作、购物、论文、视频等。
+   自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取Key
+Extract组件的最新版本，并欢迎您关注张华平博士的新浪微博 @ICTCLAS张华平博士
+交流。1P_bR$vk0 自然语言处理与信息检索共享平台1H9^+}NE*W;^
+自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+[pic]
+        6b;t.P s@)\J0然语言处理与信息检索共享平台-l3?3v"Z#X|{t#A!d Z
+                           图1：关键字提取功能展示
+                      自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 KeyExtract_Init
+
+Init the analyzer and prepare necessary data for KeyExtract according the
+configure file.
+bool KeyExtract_Init(const char * sDataPath=0,int encode=GBK_CODE,const
+char*sLicenceCode=0);
+|Routine      |Required Header  |
+|KeyExtract_In|<KeyExtract.h>   |
+|it           |                 |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sDataPath: Initial Directory Path, where Data directory stored.  the
+default value is 0, it indicates the initial directory is current working
+directory path
+encode:  Encoding of input string, default is GBK_CODE (GBK encoding), and
+it can be set with UTF8_CODE (UTF8 encoding) and BIG5_CODE (BIG5 encoding).
+const char* sLicenceCode: licence coding of input string,
+Remarks
+The KeyExtract_Init function must be invoked before any operation with
+KeyExtract. The whole system need call the function only once before
+starting KeyExtract. When stopping the system and make no more operation,
+KeyExtract_Init should be invoked to destroy all working buffer. Any
+operation will fail if init do not succeed.
+KeyExtract_Init fails mainly because of two reasons: 1) Required data is
+incompatible or missing 2) invalid parameters. Moreover, you could learn
+more from the log file 2014****.log in the current directory.
+Example
+int main(int argc, const char * argv[])
+{
+
+
+if(!KeyExtract_Init("D:\\NLPIR",GBK_CODE,""))//数据在上一层目录下，默认为GBK
+编码的分词
+    {
+       printf("ICTCLAS INIT FAILED!\n");
+       return 1;
+    }
+    const char
+*pKeys=KeyExtract_GetKeyWords("去年开始，打开百度李毅吧，满屏的帖子大多含有“
+屌丝”二字，一般网友不仅不懂这词什么意思，更难理解这个词为什么会这么火。然而从
+下半年开始，“屌丝”已经覆盖网络各个角落，人人争说屌丝，人人争当屌丝。",50,tru
+e);
+    //从文本中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+
+pKeys=KeyExtract_GetFileKeyWords("D:\\NLPIR\\test\\十八大报告.txt",50,true);
+
+    //从文本文件中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+    KeyExtract_Exit();
+    return 0;
+}
+Output
+
+1.2 KeyExtract_Exit
+
+Exit the program and free all resources and destroy all working buffer used
+in KeyExtract.
+bool KeyExtract_Exit();
+|Routine      |Required Header  |
+|KeyExtract_Ex|<KeyExtract.h>   |
+|it           |                 |
+
+
+Return Value
+Return true if succeed,or return false.
+Parameters
+none
+Remarks
+The KeyExtract_Exit function must be invoked while stopping the system and
+make no more operation. And call KeyExtract_Exit  function to restart
+KeyExtract.
+Example
+int main(int argc, const char * argv[])
+{
+
+
+if(!KeyExtract_Init("D:\\NLPIR",GBK_CODE,""))//数据在上一层目录下，默认为GBK
+编码的分词
+    {
+       printf("ICTCLAS INIT FAILED!\n");
+       return 1;
+    }
+    const char
+*pKeys=KeyExtract_GetKeyWords("去年开始，打开百度李毅吧，满屏的帖子大多含有“
+屌丝”二字，一般网友不仅不懂这词什么意思，更难理解这个词为什么会这么火。然而从
+下半年开始，“屌丝”已经覆盖网络各个角落，人人争说屌丝，人人争当屌丝。",50,tru
+e);
+    //从文本中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+
+pKeys=KeyExtract_GetFileKeyWords("D:\\NLPIR\\test\\十八大报告.txt",50,true);
+
+    //从文本文件中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+    KeyExtract_Exit();
+    return 0;
+}
+Output
+
+1.3 KeyExtract_GetKeyWords
+
+
+const char * KeyExtract_GetKeyWords(const char *sLine,int
+nMaxKeyLimit=50,bool bWeightOut=false);
+
+|Routine            |Required Header|
+|KeyExtract_GetKeyWo|<KeyExtract.h> |
+|rds                |               |
+
+
+Return Value
+Return  keywords list like. Otherwise return NULL.
+Parameters
+sLine:  [IN] the input paragraph
+nMaxKeyLimit:   [IN] maximum of key words, up to 50
+bWeightOut:  [IN] whether  the keyword weight output
+Remarks
+Extract keyword from sLine.
+Example
+int main(int argc, const char * argv[])
+{
+
+
+if(!KeyExtract_Init("D:\\NLPIR",GBK_CODE,""))//数据在上一层目录下，默认为GBK
+编码的分词
+    {
+       printf("ICTCLAS INIT FAILED!\n");
+       return 1;
+    }
+    const char
+*pKeys=KeyExtract_GetKeyWords("去年开始，打开百度李毅吧，满屏的帖子大多含有“
+屌丝”二字，一般网友不仅不懂这词什么意思，更难理解这个词为什么会这么火。然而从
+下半年开始，“屌丝”已经覆盖网络各个角落，人人争说屌丝，人人争当屌丝。",50,tru
+e);
+    //从文本中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+
+pKeys=KeyExtract_GetFileKeyWords("D:\\NLPIR\\test\\十八大报告.txt",50,true);
+
+    //从文本文件中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+    KeyExtract_Exit();
+    return 0;
+}
+Output
+
+
+
+1.4 KeyExtract_GetFileKeyWords
+
+
+
+const   char   *   KeyExtract_GetFileKeyWords(const   char    *sFilename,int
+nMaxKeyLimit=50,bool bWeightOut=false);
+|Routine               |Required    |
+|                      |Header      |
+|KeyExtract_GetFileKeyW|<KeyExtract.|
+|ords                  |h>          |
+
+
+Return Value
+Return keywords list like. Otherwise return NULL.
+Parameters
+sFilename:  [IN] the input text file name
+nMaxKeyLimit:   [IN] maximum of key words, up to 50
+bWeightOut:  [IN] whether  the keyword weight output
+
+Remarks
+Extract keyword from a text file.
+Example
+int main(int argc, const char * argv[])
+{
+
+
+if(!KeyExtract_Init("D:\\NLPIR",GBK_CODE,""))//数据在上一层目录下，默认为GBK
+编码的分词
+    {
+       printf("ICTCLAS INIT FAILED!\n");
+       return 1;
+    }
+    const char
+*pKeys=KeyExtract_GetKeyWords("去年开始，打开百度李毅吧，满屏的帖子大多含有“
+屌丝”二字，一般网友不仅不懂这词什么意思，更难理解这个词为什么会这么火。然而从
+下半年开始，“屌丝”已经覆盖网络各个角落，人人争说屌丝，人人争当屌丝。",50,tru
+e);
+    //从文本中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+
+pKeys=KeyExtract_GetFileKeyWords("D:\\NLPIR\\test\\十八大报告.txt",50,true);
+
+    //从文本文件中分析关键词
+    printf("Keywords are:\n%s\n",pKeys);
+    KeyExtract_Exit();
+    return 0;
+}
+Output
+
+
+
+
+
+2  KeyExtract运行环境
+
+   1. 可以支持Windows、Linux、FreeBSD等多种环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q1: Linux调用libKeyExtract.so的时候，链接不上库
+
+例如执行示例程序结果如下：
+[root@localhost linux_c_sample]# ./test
+./test: error while loading shared libraries: libKeyExtract.so: cannot  open
+shared object file: No such file or directory
+Answer:
+应当设置系统的LD_LIBRARY_PATH，即：export LD_LIBRARY_PATH=./
+并且请保证在本目录也有libNLPIR.so
+
+Q2: KeyExtract组件初始化老是失败
+
+Answer:
+请您保证keyExtract.user文件未过期，另外可参考“20***.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+

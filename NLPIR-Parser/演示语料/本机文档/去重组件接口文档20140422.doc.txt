@@ -1,0 +1,596 @@
+﻿
+
+
+
+
+
+                              去重组件接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+
+
+                                    目录
+
+
+去重组件接口文档 1
+
+
+目录   2
+
+
+0. 去重组件简介  3
+
+
+1．C＋＋接口  4
+
+
+   1.1 RR_Init   4
+
+
+   1.2 RR_Exit;  5
+
+
+   1.3 RR_FileProcess  6
+
+
+   1.4 RR_FindRepeat   7
+
+
+   1.5 RR_Output 9
+
+
+   1.6 RR_SaveData  11
+
+
+   1.7 RR_GetLastErrMsg   12
+
+
+2  LJDupRemover运行环境    14
+
+
+3 常见问题（FAQ）   15
+
+
+   Q: LJDupRemover系统初始化老是失败    15
+
+
+4 作者简介    15
+
+
+
+
+
+   去重组件简介
+
+    能够快速准确地判断文件集合或数据库中是否存在相同或相似内容的记录，同时找出
+所有的重复记录。
+    自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取LJD
+upRemover组件的最新版本，并欢迎您关注张华平博士的新浪微博
+@ICTCLAS张华平博士 交流。1P_bR$vk0
+自然语言处理与信息检索共享平台1H9^+}NE*W;^
+自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+[pic]
+        6b;t.P s@)\J0然语言处理与信息检索共享平台-l3?3v"Z#X|{t#A!d Z
+                            图1：文档去重功能展示
+                      自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 RR_Init
+
+Init the analyzer and prepare necessary data for LJDupRemove according the
+configure file.
+bool RR_Init(const char *DataFilePath = "Data.txt", const char
+*sLicenseCode=0);
+|Routine      |Required Header  |
+|RR_Init      |<LJDupRemover.h> |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+DataFilePath : Initial , load the “Data.txt” file  that  contain   Duplicate
+removal data.
+const char* sLicenceCode: licence coding of input string,
+Remarks
+The RR_Init function must be invoked before any operation with LJDupRemove.
+The whole system need call the function only once before starting
+LJDupRemove. When stopping the system and make no more operation, RR_Exit
+should be invoked to destroy all working buffer. Any operation will fail if
+init do not succeed.
+RR_Init  fails mainly because of two reasons: 1) Required data.txt is
+incompatible or missing 2) invalid parameters. Moreover, you could learn
+more from the log file 2014****.log in the current directory.
+Example
+int _tmain(int argc, _TCHAR* argv[])
+{
+    if (!RR_Init("RR_Data.txt","Data"))
+    {
+       printf("%s\r\n", RR_GetLastErrMsg());
+
+printf("去重组件初始化失败，请退出并检查！该联系www.nlpir.org/或者新浪微博@I
+CTCLAS张华平博士！\n");
+       return-1;
+    }
+
+    vector<string> fileDir;
+    string path = "./test/";
+    string sContent = "";
+    if(!gfn_bScanFiles(path.c_str(),fileDir))
+    {
+       printf("获取文件夹中文件失败......\n");
+       system("pause");
+       return -1;
+    }
+    string sFilename;
+    char *pcFindAll = new char[65565];
+    for (int i = 0; i < fileDir.size();i++)
+    {
+       gfn_bReadFile((path + fileDir.at(i)).c_str(), sContent);
+       sFilename = fileDir.at(i).c_str();
+       sContent += "\r\n";
+       if (RR_FileProcess(sContent.c_str(), sFilename.c_str()) == 1)
+       {
+          memset(pcFindAll, 0, 65565);
+          RR_FindRepeat(pcFindAll, true);
+       }
+    }
+
+    if (pcFindAll != NULL)
+    {
+       delete[] pcFindAll;
+       pcFindAll = NULL;
+    }
+
+    RR_Output("");
+    RR_SaveData("RR_Data.txt");
+   RR_Exit();
+    return 0;
+}
+Output
+
+1.2 RR_Exit;
+
+Exit the program and free all resources and destroy all working buffer used
+in LJDupRemover.
+void RR_Exit();
+|Routine      |Required Header  |
+|RR_Exit      |<LJDupRemover.h> |
+
+
+Return Value
+none.
+Parameters
+none
+Remarks
+The RR_Exit function must be invoked while stopping the system and make no
+more operation. And call RR_Exit function to restart LJDupRemover.
+Example
+看上例红色。
+Output
+
+1.3 RR_FileProcess
+
+int RR_FileProcess(const char *FileText, const char *FileName);
+|Routine            |Required Header|
+|RR_FileProcess     |<LJDupRemover.h|
+|                   |>              |
+
+
+Return Value
+Return 1 if FileProcess check duplicate content. Otherwise return other.
+Parameters
+FileText:  file content that paragraph 2;
+FileName:   filename that will be processed.
+Remarks
+Example
+int _tmain(int argc, _TCHAR* argv[])
+{
+    if (!RR_Init("RR_Data.txt","Data"))
+    {
+       printf("%s\r\n", RR_GetLastErrMsg());
+
+printf("去重组件初始化失败，请退出并检查！该联系www.nlpir.org/或者新浪微博@I
+CTCLAS张华平博士！\n");
+       return-1;
+    }
+
+    vector<string> fileDir;
+    string path = "./test/";
+    string sContent = "";
+    if(!gfn_bScanFiles(path.c_str(),fileDir))
+    {
+       printf("获取文件夹中文件失败......\n");
+       system("pause");
+       return -1;
+    }
+    string sFilename;
+    char *pcFindAll = new char[65565];
+    for (int i = 0; i < fileDir.size();i++)
+    {
+       gfn_bReadFile((path + fileDir.at(i)).c_str(), sContent);
+       sFilename = fileDir.at(i).c_str();
+       sContent += "\r\n";
+       if (RR_FileProcess(sContent.c_str(), sFilename.c_str()) == 1)
+       {
+          memset(pcFindAll, 0, 65565);
+          RR_FindRepeat(pcFindAll, true);
+       }
+    }
+
+    if (pcFindAll != NULL)
+    {
+       delete[] pcFindAll;
+       pcFindAll = NULL;
+    }
+
+    RR_Output("");
+    RR_SaveData("RR_Data.txt");
+   RR_Exit();
+    return 0;
+}
+Output
+
+
+
+1.4 RR_FindRepeat
+
+
+
+bool RR_FindRepeat(char * ReturnString, bool isAll = false);
+|Routine            |Required      |
+|                   |Header        |
+|RR_FindRepeat      |<LJDupRemover.|
+|                   |h>            |
+
+
+Return Value
+Return true if succeed. Otherwise return false.
+Parameters
+ReturnString: [OUT]  duplicate content
+isAll : contain all duplicate content or not
+
+Remarks
+This function can be performed repeatedly before the result is printed
+in the process
+Example
+int _tmain(int argc, _TCHAR* argv[])
+{
+    if (!RR_Init("RR_Data.txt","Data"))
+    {
+       printf("%s\r\n", RR_GetLastErrMsg());
+
+printf("去重组件初始化失败，请退出并检查！该联系www.nlpir.org/或者新浪微博@I
+CTCLAS张华平博士！\n");
+       return-1;
+    }
+
+    vector<string> fileDir;
+    string path = "./test/";
+    string sContent = "";
+    if(!gfn_bScanFiles(path.c_str(),fileDir))
+    {
+       printf("获取文件夹中文件失败......\n");
+       system("pause");
+       return -1;
+    }
+    string sFilename;
+    char *pcFindAll = new char[65565];
+    for (int i = 0; i < fileDir.size();i++)
+    {
+       gfn_bReadFile((path + fileDir.at(i)).c_str(), sContent);
+       sFilename = fileDir.at(i).c_str();
+       sContent += "\r\n";
+       if (RR_FileProcess(sContent.c_str(), sFilename.c_str()) == 1)
+       {
+          memset(pcFindAll, 0, 65565);
+          RR_FindRepeat(pcFindAll, true);
+       }
+    }
+
+    if (pcFindAll != NULL)
+    {
+       delete[] pcFindAll;
+       pcFindAll = NULL;
+    }
+
+    RR_Output("");
+    RR_SaveData("RR_Data.txt");
+   RR_Exit();
+    return 0;
+}
+Output
+
+
+1.5 RR_Output
+
+bool RR_Output(const char *OutputPath = "RepeatFile.txt");
+|Routine               |Required     |
+|                      |Header       |
+|RR_Output             |<LJDupRemover|
+|                      |.h>          |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+
+Parameters
+OutputPath : output Duplicate removal result record;
+Example
+int _tmain(int argc, _TCHAR* argv[])
+{
+    if (!RR_Init("RR_Data.txt","Data"))
+    {
+       printf("%s\r\n", RR_GetLastErrMsg());
+
+printf("去重组件初始化失败，请退出并检查！该联系www.nlpir.org/或者新浪微博@I
+CTCLAS张华平博士！\n");
+       return-1;
+    }
+
+    vector<string> fileDir;
+    string path = "./test/";
+    string sContent = "";
+    if(!gfn_bScanFiles(path.c_str(),fileDir))
+    {
+       printf("获取文件夹中文件失败......\n");
+       system("pause");
+       return -1;
+    }
+    string sFilename;
+    char *pcFindAll = new char[65565];
+    for (int i = 0; i < fileDir.size();i++)
+    {
+       gfn_bReadFile((path + fileDir.at(i)).c_str(), sContent);
+       sFilename = fileDir.at(i).c_str();
+       sContent += "\r\n";
+       if (RR_FileProcess(sContent.c_str(), sFilename.c_str()) == 1)
+       {
+          memset(pcFindAll, 0, 65565);
+          RR_FindRepeat(pcFindAll, true);
+       }
+    }
+
+    if (pcFindAll != NULL)
+    {
+       delete[] pcFindAll;
+       pcFindAll = NULL;
+    }
+
+    RR_Output("RepeatFile.txt");
+    RR_SaveData("RR_Data.txt");
+   RR_Exit();
+    return 0;
+}
+Output
+
+1.6 RR_SaveData
+
+bool RR_SaveData(const char *DataFilePath = "RR_Data.txt");
+|Routine               |Required     |
+|                      |Header       |
+|RR_Output             |<LJDupRemover|
+|                      |.h>          |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+
+Parameters
+DataFilePath : output Duplicate removal data file;
+Example
+int _tmain(int argc, _TCHAR* argv[])
+{
+    if (!RR_Init("RR_Data.txt","Data"))
+    {
+       printf("%s\r\n", RR_GetLastErrMsg());
+
+printf("去重组件初始化失败，请退出并检查！该联系www.nlpir.org/或者新浪微博@I
+CTCLAS张华平博士！\n");
+       return-1;
+    }
+
+    vector<string> fileDir;
+    string path = "./test/";
+    string sContent = "";
+    if(!gfn_bScanFiles(path.c_str(),fileDir))
+    {
+       printf("获取文件夹中文件失败......\n");
+       system("pause");
+       return -1;
+    }
+    string sFilename;
+    char *pcFindAll = new char[65565];
+    for (int i = 0; i < fileDir.size();i++)
+    {
+       gfn_bReadFile((path + fileDir.at(i)).c_str(), sContent);
+       sFilename = fileDir.at(i).c_str();
+       sContent += "\r\n";
+       if (RR_FileProcess(sContent.c_str(), sFilename.c_str()) == 1)
+       {
+          memset(pcFindAll, 0, 65565);
+          RR_FindRepeat(pcFindAll, true);
+       }
+    }
+
+    if (pcFindAll != NULL)
+    {
+       delete[] pcFindAll;
+       pcFindAll = NULL;
+    }
+
+    RR_Output("RepeatFile.txt");
+    RR_SaveData("RR_Data.txt");
+   RR_Exit();
+    return 0;
+}
+Output
+
+1.7 RR_GetLastErrMsg
+
+const char* RR_GetLastErrMsg();
+|Routine               |Required     |
+|                      |Header       |
+|RR_GetLastErrMsg      |<LJDupRemover|
+|                      |.h>          |
+
+
+Return Value
+Return err message if succeed. Otherwise return NULL.
+
+Parameters
+NULL
+Example
+int _tmain(int argc, _TCHAR* argv[])
+{
+    if (!RR_Init("RR_Data.txt","Data"))
+    {
+       printf("%s\r\n", RR_GetLastErrMsg());
+
+printf("去重组件初始化失败，请退出并检查！该联系www.nlpir.org/或者新浪微博@I
+CTCLAS张华平博士！\n");
+       return-1;
+    }
+
+    vector<string> fileDir;
+    string path = "./test/";
+    string sContent = "";
+    if(!gfn_bScanFiles(path.c_str(),fileDir))
+    {
+       printf("获取文件夹中文件失败......\n");
+       system("pause");
+       return -1;
+    }
+    string sFilename;
+    char *pcFindAll = new char[65565];
+    for (int i = 0; i < fileDir.size();i++)
+    {
+       gfn_bReadFile((path + fileDir.at(i)).c_str(), sContent);
+       sFilename = fileDir.at(i).c_str();
+       sContent += "\r\n";
+       if (RR_FileProcess(sContent.c_str(), sFilename.c_str()) == 1)
+       {
+          memset(pcFindAll, 0, 65565);
+          RR_FindRepeat(pcFindAll, true);
+       }
+    }
+
+    if (pcFindAll != NULL)
+    {
+       delete[] pcFindAll;
+       pcFindAll = NULL;
+    }
+
+    RR_Output("RepeatFile.txt");
+    RR_SaveData("RR_Data.txt");
+   RR_Exit();
+    return 0;
+}
+Output
+
+
+
+
+2  LJDupRemover运行环境
+
+   1. 可以支持Windows、Linux、FreeBSD等多种环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q: LJDupRemover系统初始化老是失败
+
+Answer:
+请您保证LJDupRemover.user文件未过期，另外可参考“20***.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+

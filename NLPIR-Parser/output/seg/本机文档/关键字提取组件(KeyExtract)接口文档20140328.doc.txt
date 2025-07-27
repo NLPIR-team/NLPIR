@@ -1,0 +1,257 @@
+﻿
+
+
+
+
+关键字/n 提取组件/n_new (/wkz KeyExtract/x )/wky   接口/n 文档/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[/wkz pic/n ]/wky pic/n ]/wky http/n :/wm ICTCLAS.nlpir.org/n //wp @/wp ICTCLAS/x 张华平/nr 博士/n 
+2012-12/t 
+For/p the/rzt latest/a information/n about/p NLPIR/n ,/wd please/v visit/n Http/n :/wm ICTCLAS.nlpir.org/n //wp Document/n Information/n 
+
+目录/n 
+
+
+关键字/n 提取组件/n_new (/wkz KeyExtract/x )/wky   接口/n 文档/n     1/m 
+
+
+目录/n       3/m 
+
+
+0./m   关键字/n 提取组件/n_new (/wkz 又/d 名/q KeyExtract/x ）/wky 简介/n     4/m 
+
+
+1．C＋＋/x 接口/n     5/m 
+
+
+1.1/m KeyExtract_Init/n 5/m 
+
+1.2/m KeyExtract_Exit/n 6/m 
+
+1.3/m KeyExtract_GetKeyWords/n 7/m 
+
+1.4/m KeyExtract_GetFileKeyWords/n 8/m 
+
+2/m     KeyExtract/x 运行/vn 环境/n     10/m 
+
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky       11/m 
+
+
+Q1/x :/wm   Linux/x 调用/v libKeyExtract.so/x 的/ude1 时候/n ，/wd 链接/n_new 不/d 上/vf 库/n       11/m 
+
+
+Q2/x :/wm   KeyExtract/x 组件/n 初始化/v 老是/d 失败/vi   11/m 
+
+
+4/m   作者/n 简介/n         12/m 
+
+
+
+
+
+关键字/n 提取组件/n_new (/wkz 又/d 名/q KeyExtract/x ）/wky 简介/n 
+
+关键词/n ，/wd 就是/v 您/rr 输入/v 搜索/v 框/ng 中/f 的/ude1 文字/n ，/wd 也/d 就是/v 您/rr 命令/v 搜索引擎/n 寻找/v 的/ude1 相关/vn 信息/n 。/wj 您/rr 可/v 
+以/p 命令/n 搜索引擎/n 寻找/v 任何/rz 相关/vn 内容/n ，/wd 所以/c 关键词/n 的/ude1 内容/n 可以/v 是/vshi ：/wm 人/n 名/q 、/wn 网站/n 、/wn 新闻/n 、/wn 小/a 
+说/v 、/wn 软件/n 、/wn 游戏/n 、/wn 星座/n 、/wn 工作/vn 、/wn 购物/vi 、/wn 论文/n 、/wn 视频/n 等/udeng 。/wj 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n //w J/n   nHB/x -/wp O/nz (/wkz b1/x [/wkz 
+Y/o X/n 
+
+
+
+
+访问/v http/x :/wm //w //w ictclas.nlpir.org/x //w (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky ，/wd 您/rr 可以/v 获取/v Key/n 
+Extract/v 组/n 件/q 的/ude1 最新/a 版本/n ，/wd 并/cc 欢迎/v 您/rr 关注/v 张华平/nr 博士/n 的/ude1 新浪/ntz 微/ag 博/ag   @/wp ICTCLAS/x 张华平/nr 博士/n 
+交流/vn 。/wj 1P/x _/n bR/x $/wp vk0/x   自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 1H9/x ^/wp +/wp }/wp NE/nz */wp W/n ;/wf ^/wp 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 5H8/x ]/wky   |/wp U/o   ]/wky 4`/m s/vshi "/wyz Q/n [/wkz pic/n ]/wky ^/wp 
+
+[/wkz pic/n ]/wky 6b/x ;/wf t.P/x   s/xe @/wp )/wky \/n J0/x 然/rz 语言/n 处理/vn 与/cc 信息检索/n_new 共享/vn 平台/n -/wp l3/x ?/ww 3v/x "/wyz Z/n #/wp X/n |/wp {/wp t/rzt #/wp A/rzv !/wt d/o   Z/n 
+图/n 1/m ：/wm 关键字/n 提取/v 功能/n 展示/v 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n -/wp r/o 
+UM/n "/w c3u/n pic/n ]/wky 
+1．C＋＋/x 接口/n 
+
+
+1.1/m KeyExtract_Init/n 
+Init/n the/rzt analyzer/v and/c prepare/v necessary/a data/n for/p KeyExtract/n according/p the/rzt configure/n file/n ./wj bool/n KeyExtract_Init/n (/wkz const/n char/n sDataPath/n =/wp 0/m ,/wd int/n encode/v =/wp GBK_CODE/n ,/wd const/n char/n */w sLicenceCode/n =/wp 0/m )/wky |/w Routine/n Required/vd Header/a |/w KeyExtract_In/n |/w KeyExtract.h/n >/wky |/wp it/rzt                       |/wp                                   |/wp 
+
+
+Return/value Value/n Return/value true/a if/c init/n succeed/v ./wj Otherwise/d return/value false/a ./wj Parameters/n sDataPath/n :/wm Initial/directory Directory/n Path/n ,/wd where/ry Data/n directory/n stored/n ./wj the/rzt default/n value/n is/vshi 0/m ,/wd it/rzt indicates/v the/rzt initial/directory directory/n is/vshi current/directory working/vi directory/n path/n encode/v :/wm Encoding/n of/p input/n string/n ,/wd default/n is/vshi GBK_CODE/n GBK/n encoding/n )/wky and/c it/rzt can/vyou be/vshi set/vd with/p UTF8_CODE/n UTF8/n encoding/n )/wky and/c BIG5_CODE/n BIG5/n encoding/n )/wky ./wj const/n char/n */w sLicenceCode/n :/wm licence/n coding/n of/p input/n string/n ,/wd Remarks/n The/rzt KeyExtract_Init/n function/n must/vyou be/vshi invoked/vd before/p any/rzv operation/n with/p KeyExtract/n ./wj The/rzt whole/a system/n need/n call/v the/rzt function/n only/d once/d before/p starting/v KeyExtract/n ./wj When/ry stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ,/wd KeyExtract_Init/n should/vyou be/vshi invoked/vd to/pba destroy/v all/a working/vi buffer/n ./wj Any/rzv operation/n will/vyou fail/v if/c init/n do/vyou not/d succeed/v ./wj KeyExtract_Init/n fails/v mainly/d because/c of/p two/m reasons/n :/wm 1/m )/wky Required/vd data/n is/vshi incompatible/a or/c missing/a 2/m )/wky invalid/n parameters/n ./wj Moreover/d ,/wd you/rzt could/vyou learn/v more/cc from/p the/rzt log/n file/n 2014/m */w .log/n in/p the/rzt current/directory directory/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd const/n char/n argv/n [/wkz {/wp 
+
+
+if/c (/wkz !/wt KeyExtract/x _/n Init/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x "/wyy ,/wd GBK/x _/n CODE/n ,/wd "/wyz "/wyy )/wky )/wky //w //w 数据/n 在/p 上/f 一/m 层/qv 目录/n 下/f ，/wd 默认/v 为/v GBK/x 
+编码/n 的/ude1 分词/v 
+{/wp 
+printf/n (/wkz ICTCLAS/n INIT/n FAILED/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+const/n char/n */wp pKeys/x =/wp KeyExtract/x _/n GetKeyWords/n (/wkz "/wyz 去年/t 开始/v ，/wd 打开/v 百度/nz 李毅/nr 吧/y ，/wd 满/v 屏/ng 的/ude1 帖子/n_new 大多/d 含有/v “/wyz 
+屌/n 丝/n ”/wyy 二/m 字/n ，/wd 一般/a 网友/n 不仅/c 不/d 懂/v 这/rzv 词/n 什么/ry 意思/n ，/wd 更/d 难/ad 理解/v 这个/rz 词/n 为什么/ryv 会/v 这么/rz 火/n 。/wj 然而/c 从/p 
+下半年/t 开始/v ，/wd “/wyz 屌/n 丝/n ”/wyy 已经/d 覆盖/v 网络/n 各个/rz 角落/n ，/wd 人人/n 争/v 说/v 屌/n 丝/q ，/wd 人人/n 争/v 当/p 屌/n 丝/q 。/wj "/wyz ,/wd 50/m ,/wd tru/x 
+e/o )/wky ;/wf 
+//w //w 从/p 文本/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky 
+pKeys/x =/wp KeyExtract/x _/n GetFileKeyWords/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x \/n \/n test/n \/n \/n 十/m 八大/nz 报告/n ./wj txt/x "/wyy ,/wd 50/m ,/wd true/a )/wky ;/wf 
+
+//w //w 从/p 文本文件/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky KeyExtract_Exit/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.2/m KeyExtract_Exit/n 
+Exit/a the/rzt program/n and/c free/a all/a resources/n and/c destroy/v all/a working/vi buffer/n used/vd in/p KeyExtract/n ./wj bool/n KeyExtract_Exit/n (/wkz |/w Routine/n Required/vd Header/a |/w KeyExtract_Ex/n |/w KeyExtract.h/n >/wky |/wp it/rzt                       |/wp                                   |/wp 
+
+
+Return/value Value/n Return/value true/a if/c succeed/v ,/wd or/c return/value false/a ./wj Parameters/n none/d Remarks/n The/rzt KeyExtract_Exit/n function/n must/vyou be/vshi invoked/vd while/c stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ./wj And/c call/v KeyExtract_Exit/n function/n to/pba restart/n KeyExtract/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd const/n char/n argv/n [/wkz {/wp 
+
+
+if/c (/wkz !/wt KeyExtract/x _/n Init/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x "/wyy ,/wd GBK/x _/n CODE/n ,/wd "/wyz "/wyy )/wky )/wky //w //w 数据/n 在/p 上/f 一/m 层/qv 目录/n 下/f ，/wd 默认/v 为/v GBK/x 
+编码/n 的/ude1 分词/v 
+{/wp 
+printf/n (/wkz ICTCLAS/n INIT/n FAILED/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+const/n char/n */wp pKeys/x =/wp KeyExtract/x _/n GetKeyWords/n (/wkz "/wyz 去年/t 开始/v ，/wd 打开/v 百度/nz 李毅/nr 吧/y ，/wd 满/v 屏/ng 的/ude1 帖子/n_new 大多/d 含有/v “/wyz 
+屌/n 丝/n ”/wyy 二/m 字/n ，/wd 一般/a 网友/n 不仅/c 不/d 懂/v 这/rzv 词/n 什么/ry 意思/n ，/wd 更/d 难/ad 理解/v 这个/rz 词/n 为什么/ryv 会/v 这么/rz 火/n 。/wj 然而/c 从/p 
+下半年/t 开始/v ，/wd “/wyz 屌/n 丝/n ”/wyy 已经/d 覆盖/v 网络/n 各个/rz 角落/n ，/wd 人人/n 争/v 说/v 屌/n 丝/q ，/wd 人人/n 争/v 当/p 屌/n 丝/q 。/wj "/wyz ,/wd 50/m ,/wd tru/x 
+e/o )/wky ;/wf 
+//w //w 从/p 文本/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky 
+pKeys/x =/wp KeyExtract/x _/n GetFileKeyWords/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x \/n \/n test/n \/n \/n 十/m 八大/nz 报告/n ./wj txt/x "/wyy ,/wd 50/m ,/wd true/a )/wky ;/wf 
+
+//w //w 从/p 文本文件/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky KeyExtract_Exit/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.3/m KeyExtract_GetKeyWords/n 
+
+const/n char/n KeyExtract_GetKeyWords/n (/wkz const/n char/n sLine/n ,/wd int/n nMaxKeyLimit/n =/wp 50/m ,/wd bool/n bWeightOut/n =/wp false/a )/wky 
+|/w Routine/n Required/vd Header/a |/w |/w KeyExtract_GetKeyWo/n |/w KeyExtract.h/n >/wky |/wp rds/x                                 |/wp                               |/wp 
+
+
+Return/value Value/n Return/value keywords/n list/n like/p ./wj Otherwise/d return/value NULL/a ./wj Parameters/n sLine/n :/wm IN/p ]/wky the/rzt input/n paragraph/n nMaxKeyLimit/n :/wm IN/p ]/wky maximum/a of/p key/n words/n ,/wd up/pbei to/pba 50/m bWeightOut/n :/wm IN/p ]/wky whether/c the/rzt keyword/n weight/n output/n Remarks/n Extract/v keyword/n from/p sLine/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd const/n char/n argv/n [/wkz {/wp 
+
+
+if/c (/wkz !/wt KeyExtract/x _/n Init/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x "/wyy ,/wd GBK/x _/n CODE/n ,/wd "/wyz "/wyy )/wky )/wky //w //w 数据/n 在/p 上/f 一/m 层/qv 目录/n 下/f ，/wd 默认/v 为/v GBK/x 
+编码/n 的/ude1 分词/v 
+{/wp 
+printf/n (/wkz ICTCLAS/n INIT/n FAILED/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+const/n char/n */wp pKeys/x =/wp KeyExtract/x _/n GetKeyWords/n (/wkz "/wyz 去年/t 开始/v ，/wd 打开/v 百度/nz 李毅/nr 吧/y ，/wd 满/v 屏/ng 的/ude1 帖子/n_new 大多/d 含有/v “/wyz 
+屌/n 丝/n ”/wyy 二/m 字/n ，/wd 一般/a 网友/n 不仅/c 不/d 懂/v 这/rzv 词/n 什么/ry 意思/n ，/wd 更/d 难/ad 理解/v 这个/rz 词/n 为什么/ryv 会/v 这么/rz 火/n 。/wj 然而/c 从/p 
+下半年/t 开始/v ，/wd “/wyz 屌/n 丝/n ”/wyy 已经/d 覆盖/v 网络/n 各个/rz 角落/n ，/wd 人人/n 争/v 说/v 屌/n 丝/q ，/wd 人人/n 争/v 当/p 屌/n 丝/q 。/wj "/wyz ,/wd 50/m ,/wd tru/x 
+e/o )/wky ;/wf 
+//w //w 从/p 文本/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky 
+pKeys/x =/wp KeyExtract/x _/n GetFileKeyWords/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x \/n \/n test/n \/n \/n 十/m 八大/nz 报告/n ./wj txt/x "/wyy ,/wd 50/m ,/wd true/a )/wky ;/wf 
+
+//w //w 从/p 文本文件/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky KeyExtract_Exit/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+
+
+1.4/m KeyExtract_GetFileKeyWords/n 
+
+
+const/n char/n KeyExtract_GetFileKeyWords/n (/wkz const/n char/n sFilename/n ,/wd int/n nMaxKeyLimit/n =/wp 50/m ,/wd bool/n bWeightOut/n =/wp false/a )/wky |/wp Routine/n                               |/wp Required/n         |/wp 
+|/wp                                             |/wp Header/a             |/wp 
+|/w KeyExtract_GetFileKeyW/n |/w KeyExtract/n ./wj |/wp ords/n                                     |/wp h/o >/wp                     |/wp 
+
+
+Return/value Value/n Return/value keywords/n list/n like/p ./wj Otherwise/d return/value NULL/a ./wj Parameters/n sFilename/n :/wm IN/p ]/wky the/rzt input/n text/n file/n name/n nMaxKeyLimit/n :/wm IN/p ]/wky maximum/a of/p key/n words/n ,/wd up/pbei to/pba 50/m bWeightOut/n :/wm IN/p ]/wky whether/c the/rzt keyword/n weight/n output/n 
+Remarks/n Extract/v keyword/n from/p a/rzv text/n file/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd const/n char/n argv/n [/wkz {/wp 
+
+
+if/c (/wkz !/wt KeyExtract/x _/n Init/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x "/wyy ,/wd GBK/x _/n CODE/n ,/wd "/wyz "/wyy )/wky )/wky //w //w 数据/n 在/p 上/f 一/m 层/qv 目录/n 下/f ，/wd 默认/v 为/v GBK/x 
+编码/n 的/ude1 分词/v 
+{/wp 
+printf/n (/wkz ICTCLAS/n INIT/n FAILED/v !/wt \n/n "/w return/value 1/m ;/wf }/wp 
+const/n char/n */wp pKeys/x =/wp KeyExtract/x _/n GetKeyWords/n (/wkz "/wyz 去年/t 开始/v ，/wd 打开/v 百度/nz 李毅/nr 吧/y ，/wd 满/v 屏/ng 的/ude1 帖子/n_new 大多/d 含有/v “/wyz 
+屌/n 丝/n ”/wyy 二/m 字/n ，/wd 一般/a 网友/n 不仅/c 不/d 懂/v 这/rzv 词/n 什么/ry 意思/n ，/wd 更/d 难/ad 理解/v 这个/rz 词/n 为什么/ryv 会/v 这么/rz 火/n 。/wj 然而/c 从/p 
+下半年/t 开始/v ，/wd “/wyz 屌/n 丝/n ”/wyy 已经/d 覆盖/v 网络/n 各个/rz 角落/n ，/wd 人人/n 争/v 说/v 屌/n 丝/q ，/wd 人人/n 争/v 当/p 屌/n 丝/q 。/wj "/wyz ,/wd 50/m ,/wd tru/x 
+e/o )/wky ;/wf 
+//w //w 从/p 文本/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky 
+pKeys/x =/wp KeyExtract/x _/n GetFileKeyWords/x (/wkz "/wyz D/o :/wm \/n \/n NLPIR/x \/n \/n test/n \/n \/n 十/m 八大/nz 报告/n ./wj txt/x "/wyy ,/wd 50/m ,/wd true/a )/wky ;/wf 
+
+//w //w 从/p 文本文件/n 中/f 分析/v 关键词/n 
+printf/n (/wkz Keywords/n are/vshi :/wm \n%s\n/n "/w pKeys/n )/wky KeyExtract_Exit/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+
+
+
+
+2/m     KeyExtract/x 运行/vn 环境/n 
+
+1./m   可以/v 支持/v Windows/n 、/wn Linux/x 、/wn FreeBSD/x 等/udeng 多种/m 环境/n ，/wd 支持/v 普通/a PC/x 机器/n 即可/v 运行/vi 。/wj 
+2./m   支持/v GBK/x //w UTF/x -/wp 8/m //w BIG5/x 
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky 
+
+
+Q1/x :/wm   Linux/x 调用/v libKeyExtract.so/x 的/ude1 时候/n ，/wd 链接/n_new 不/d 上/vf 库/n 
+
+例如/v 执行/v 示例/n 程序/n 结果/n 如下/vi ：/wm 
+[/wkz root@localhost/xe linux_c_sample/n ]/wky ./wj //wp test/n ./wj //wp test/n :/wm error/n while/c loading/vd shared/v libraries/n :/wm libKeyExtract.so/n :/wm cannot/n open/a shared/v object/n file/n :/wm No/rzt such/p file/n or/c directory/n Answer/n :/wm 应当/v 设置/v 系统/n 的/ude1 LD/a _/n LIBRARY/n _/n PATH/n ，/wd 即/v ：/wm export/n   LD/a _/n LIBRARY/n _/n PATH/n =/wp ./wj //w 
+并且/c 请/v 保证/v 在/p 本/rz 目录/n 也/d 有/vyou libNLPIR.so/x 
+
+Q2/x :/wm   KeyExtract/x 组件/n 初始化/v 老是/d 失败/vi 
+
+Answer/n :/wm 请/v 您/rr 保证/v keyExtract.user/x 文件/n 未/d 过期/vi ，/wd 另外/c 可/v 参考/v “/wyz 20***./m err/v ”/wyy 文件/n 查看/v 错误/a 信息/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4/m   作者/n 简介/n 
+
+
+
+
+
+
+
+
+
+
+
+张华平/nr   博士/n   副教授/n   硕/ag 导/vg 
+北京理工大学/nt 计算机/n 学院/n   院长/n 助理/n 
+北京理工大学/nt 网络/n 搜索/vn 挖掘/vn 与/cc 安全实验室/n_new   主任/n 
+地址/n ：/wm 北京海淀区中关村/ns 南/b 大街/n 5/m 号/q   100081/m 
+电话/n ：+/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf 网站/n :/wm   http/x :/wm //w //w ictclas.nlpir.org/x   (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky 
+博客/nz :/wm http/x :/wm //w //w hi.baidu.com/x //w drkevinzhang/x //w 
+微/ag 博/ag :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+
+
+Dr./a   Kevin/x   Zhang/x     (/wkz 张华平/nr ，/wd Zhang/x   Hua/x -/wp Ping/n )/wky 
+Associate/n Professor/nr1 ,/wd Graduate/n Supervisor/n Dean/nz Assistant/n ,/wd School/n of/p Computer/n Director/nr1 ,/wd Web/n Search/n ,/wd Mining/nz and/c Security/n Lab/n ./wj Beijing/nsf Institute/n of/p Technology/n Add/v :/wm No.5/n ,/wd South/nz St./n ,/wd Zhongguancun/n ,/wd Haidian/n District/n ,/wd Beijing/nsf ,/wd P.R.C/n PC/n :/wm 100081/m Tel/x :/wm   +/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf Website/n :/wm http/n :/wm ictclas.nlpir.org/n Natural/n Language/n Processing/n and/c Information/n Retrieval/a Sharing/vi Platform/n )/wky Blog/n :/wm http/n :/wm hi.baidu.com/n //wp drkevinzhang/n //wp Twitter/vi :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+[/wkz pic/n ]/wky pic/n ]/wky 

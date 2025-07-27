@@ -1,0 +1,509 @@
+总词数为：506, 所有词的平均频率为：5.616601
+词语	词性	词频	一元概率	信息熵	译文
+张华平	nr	62	0.021816	0.083448	
+信息检索	n_new	57	0.020056	0.078404	information retrieval
+博士	n	54	0.019001	0.075305	①（具有博士学位的人） doctor; doctoral (adj.) 理科～ Doctor of Science; (D.Sc.; Sc.D.) 文学～ Doctor of Literature; (D.Litt; Litt.D) 医学～ Doctor of Medicine (MD)
+自然语言处理	n_new	49	0.017241	0.070008	
+组件	n	46	0.016186	0.066744	
+文本	n	36	0.012667	0.055339	text; version
+接口	n	34	0.011963	0.052949	〈计〉 interface
+平	a	33	0.011612	0.051738	①（不斜，无凹凸） flat; level; even; smooth 把衣服弄～ smooth one's dress 躺～ lie stretched out; lie flat 这块地相当～。This piece of ground is flat enough. ②（使平） level; even ～一～地面 level the ground; even the land ③（高度相同） be on the same level; be on a par; qual ～全国纪录 equal a national record ④（平局） make the same score; tie; draw 双方踢成二～。The two teams tied at 2-2. ⑤（平均；公平） equal; fair; impartial ⑥（平静） calm; peaceful; quiet 风～浪静 the sea was calm ⑦（平定） put down; suppress ～乱 suppress a riot ⑧（平常的） average; common
+共享	v	33	0.011612	0.051738	enjoy together; share
+简介	n	32	0.011260	0.050517	brief introduction; synopsis; summarized account
+目录	n	29	0.010204	0.046785	①（事物名录） catalogue; list 分类～ classified catalogue ②（篇章目录） table of contents; contents
+文章	n	27	0.009500	0.044238	①（短篇论著） article; essay 一篇关于船舶的～
+分类	vn	27	0.009500	0.044238	classify; classification (n.)
+情感	n	27	0.009500	0.044238	①（心理反应） feeling; affection; affective (adj.) ②（感情） emotion; emotional (adj.); sentiment; sentimental (adj.) 易动～ emotional; sentimental
+文件	n	27	0.009500	0.044238	①（公文、信件） documents; papers 机密～ classified documents 获得～ obtain a document ②（学术文章） professional article; academic article ③〈计〉 file; document file
+文档	n	26	0.009148	0.042945	
+分析	vn	25	0.008797	0.041638	analyse ～当前形势 analyse the present situation 对…做了精辟的～ made a penetrating analysis of
+结果	n	24	0.008445	0.040317	①（结局） result; outcome; ending ②（最终） finally; at last ～，他们打赢了。 Finally, they won the game. ③（杀死） kill; finish of
+失败	vi	24	0.008445	0.040317	①（被打败） be defeated; lose 我们队足球赛～了。 Our team lost the football match. ②（没有成功） fail; failure (n.) 计划已经～。 The plan fell through. ～是成功之母。 Failure is the mother of success.
+初始化	v	24	0.008445	0.040317	
+环境	n	24	0.008445	0.040317	①（指地方） environment; environmental (adj.) 保护～免遭污染 protect environment from pollution ②（指情况和条件） environment; surroundings; circumstances 自然～ natural environment 完善投资～ improve the investment environment 争取有利的国际～ create a favorable international environment
+支持	v	24	0.008445	0.040317	①（勉强维持） sustain; hold out; bear ②（鼓励或赞助） support; back; stand by 在…支持下 under the auspices of
+手机	n	22	0.007741	0.037631	①（电话手机） receiver; handset ②（移动电话） cellphone
+博	ag	22	0.007741	0.037631	①（多） rich; abundant; plentiful ②（取得） win; gain
+微	ag	22	0.007741	0.037631	①（细微） minute; tiny ②（精深） profound; abstruse 精～ subtle ③（衰落） decline ④（百万分之一） one millionth part of; micro- ～米 micron (μ)
+共享	vn	22	0.007741	0.037631	enjoy together; share
+平台	n	22	0.007741	0.037631	terrace; platform
+摘要	n	22	0.007741	0.037631	①（摘录） make a summary ～发表 publish excerpts of sth. 请给这篇科学论文写个～。 Please abstract this scientific article. ②（摘录的要点） summary; abstract 文章～ summary of a article
+请	v	21	0.007389	0.036264	①（请求） request; ask ～勿动手。 Keep your hands off. ②（邀请） invite; engage ～外国学者来华讲学 invite foreign scholars to lecture in China ③［敬］ please ～坐。 Sit down, please. （或：Please be seated.)
+初始化失败	n_new	20	0.007037	0.034881	
+名	q	20	0.007037	0.034881	①（名字；名称） name; title 人～ name of a person 书～ title of a book 您尊姓大～？ May I ask your name? ②（不带姓的名字） given name ③（名声） fame; reputation; renown ④（有名声的） famous;
+新浪	ntz	19	0.006685	0.033479	
+问题	n	18	0.006334	0.032060	①（需解答的题目） question; problem 有争议的～ the question at issue 提～ raise questions ②（需解决的问题） problem; matter; question 解决～ solve a problem 共同关心的～ questions of common interest; question of common concern 关系革命和建设兴衰成败的大～ an issue which has a vital bearing on
+台	n	17	0.005982	0.030621	①（平台） platform; stage; terrace ②（座子） stand; support ③（窗台等） sill; platform 窗～ windowsill; window sill ④（桌子） table; desk 写字～ writing desk ⑤〈量〉 一～机器 a machine ⑥（台湾省） Taiwan; Taiwan province
+可以	v	17	0.005982	0.030621	①（能够） can; may 我～在这里吸烟吗？ May I smoke here? ②（好；不坏） passable; pretty good; not bad 她的俄语还～。 Her Russian is pretty good. ③（利害） awful 她那张嘴真～。 What a sharp tongue she has got!
+北京理工大学	nt	16	0.005630	0.029161	
+常见	a	16	0.005630	0.029161	common
+作者	n	16	0.005630	0.029161	author; writer
+获取	v	16	0.005630	0.029161	
+应当	v	16	0.005630	0.029161	should; ought to
+系统	n	16	0.005630	0.029161	system; systematic (adj.) ～的选择方案 system alternative
+运行	vn	16	0.005630	0.029161	
+词	n	16	0.005630	0.029161	①〈文〉 word; term ②（讲话） speech; statement 欢迎～ speech of welcome
+台	q	16	0.005630	0.029161	①（平台） platform; stage; terrace ②（座子） stand; support ③（窗台等） sill; platform 窗～ windowsill; window sill ④（桌子） table; desk 写字～ writing desk ⑤〈量〉 一～机器 a machine ⑥（台湾省） Taiwan; Taiwan province
+老是	d	16	0.005630	0.029161	
+天	qt	15	0.005278	0.027679	①（天空） sky; heaven ②（一昼夜；白天） day 第二～ the next day; the following day 第三～ the third day 雨好几～都没停。 It hasn't stopped raining for days. ③（在上面的） overhead ④（时间） time; a period of time in a day ⑤（季节） season 春～ spring 夏～ summer ⑥（天气） weather ～晴了。 It's fine. ⑦（天然的） naturarl ⑧（天生的） natural; innate ⑨（指大自然） nature ⑩（神） God; Heaven
+保证	v	15	0.005278	0.027679	①（担保） guarantee; assure; ensure ～顾客满意 guarantee satisfaction to customers 我向你～没危险。 I assure you there's no danger. ②（确保应有标准） guarantee ～质量 guarantee the quality ③（起保证作用） guarantee; guaranty 产品质量是商业成功的～。 The quality of products is a guarantee of commercial success.
+篇	q	14	0.004926	0.026173	①（篇章） a piece of writing ②（单张纸） sheet (of paper) ③〈量〉 piece; sheet
+信息	n	14	0.004926	0.026173	①（消息） information; news; message 内部～ confidential information 专利～ patent information 供求～ information on supply and demand ②（数据） information
+上	vf	13	0.004574	0.024643	①（与“下”相对） upper; up; upward; upwards ～身 the upper part of the body ～嘴唇 upper lip 树向～长。 The tree grows upwards. 人们都向～看。 The people were all looking upwards. ②（次序在前的） first (part); last; previous ～半年 the first half of the year ～星期 last week ③（等级高的） higher; superior; better 中～水平
+语	ng	13	0.004574	0.024643	①（语言） language; tongue; words 外国～ foreign language ②（说） speak; say 低～ speak in a low voice ③（谚语） set phrase; proverb; saying ④（代替语） nonlinguistic means of communicating ideas; sign; signal
+库	n	13	0.004574	0.024643	①（仓库；车库） warehouse; storehouse; depository; depot ②〈计〉 library
+件	q	13	0.004574	0.024643	① 〈量〉 piece ②（零件） piece ③（文书） letter; correspondence; paper; document 来～ a letter received; a document received
+到	v	13	0.004574	0.024643	①（到达） arrive; reach ②（往） go to; leave for ～西安去
+可	v	12	0.004222	0.023085	①（同意） approve ②（许可；可能） can; may ～供效法 it may serve as a model ③（值得） need (doing); be worth (doing) ④（适合） fit; suit 这帽子你～心吗？ Does the hat suit you? ⑤（可是） but; yet
+翼	ng	12	0.004222	0.023085	①（翅膀） wing ②（机翼） wing 副～ aileron 襟～ wing flap 三角形～ delta wing 水平尾～ tail plane 右～ starboard wing 左～ port wing ③（侧） flank
+链接	n_new	12	0.004222	0.023085	
+时候	n	12	0.004222	0.023085	①（一段时间） (the duration of) time Array?②（某一时间） (a point in) time; moment
+调用	v	12	0.004222	0.023085	transfer sb.; reallocate sth.
+词频统计	n_new	12	0.004222	0.023085	
+网络	n	12	0.004222	0.023085	〈电〉 network; electric network
+定制	v	12	0.004222	0.023085	have sth. made to order; have sth. custom-made ～家具 have furniture made to order
+去	vf	11	0.003871	0.021498	①（离开某地到某地） go; leave ～游泳 go swimming ～广州 go to Guangzhou 从北京～上海 leave Beijing for Shanghai 到泰国～旅游 go out to Thailand 我要到呼和浩特去。 I'm going to Huhhot. ②（除去） remove; get rid of ～掉几个字 take off some words ③（距离） be apart from ～今三十多年 more than thirty years ago ④（去年的） of last year ～秋 last autumn
+关键词	n	11	0.003871	0.021498	
+退出	v	11	0.003871	0.021498	withdraw from; secede; quit ～会场 leave the meeting
+聚类	n_new	10	0.003519	0.019879	
+选择	v	10	0.003519	0.019879	select; choose; opt ～职业 choose one's occupation 由我方～ at our option 如果他想去旧金山，只能～乘飞机。 If he wants to get to San Francisco, he has no alternative but to go by plane.
+生活	vn	10	0.003519	0.019879	①（日常生活） life; living 高水准的～ high standards of living 改善～待遇 improve one's living standard 过上温饱～ have secured a life with enough food and clothing 过上小康～ lead a fairly comfortable life ②（生存） live 靠工资～ live on one's wages ③（衣、食、住） livelihood ～俭朴 lead a thrifty and simple life
+内容	n	10	0.003519	0.019879	content; substance ～丰富 rich in content
+天	n	10	0.003519	0.019879	①（天空） sky; heaven ②（一昼夜；白天） day 第二～ the next day; the following day 第三～ the third day 雨好几～都没停。 It hasn't stopped raining for days. ③（在上面的） overhead ④（时间） time; a period of time in a day ⑤（季节） season 春～ spring 夏～ summer ⑥（天气） weather ～晴了。 It's fine. ⑦（天然的） naturarl ⑧（天生的） natural; innate ⑨（指大自然） nature ⑩（神） God; Heaven
+为	v	10	0.003519	0.019879	①（给；替） for; for the benefit of; in the interests of ②（为了） for; for the sake of ～国增光 bring credit to one's country ③（因为） because; for; on account of
+中	b	10	0.003519	0.019879	①（正对上） fit exactly; hit ～靶 hit the target 说～ be right about ②（受到） be hit by; fall into; be affected by; suffer ～圈套 fall into a trap
+机器	n	9	0.003167	0.018225	①（指设备） machine; machinery; apparatus ②（比喻） apparatus 表决～ voting apparatus
+网站	n	9	0.003167	0.018225	
+分析	v	9	0.003167	0.018225	analyse ～当前形势 analyse the present situation 对…做了精辟的～ made a penetrating analysis of
+搜索	vn	9	0.003167	0.018225	hunting; search for; hunt for; scout around
+会	v	9	0.003167	0.018225	①（会聚） get together; assemble ②（会见） meet; see ③（会议） meeting; gathering; party; conference ④（团体）
+人	n	9	0.003167	0.018225	①（泛指） man; person;
+关注	v	9	0.003167	0.018225	attention; concern
+模块	n	9	0.003167	0.018225	
+参考	v	9	0.003167	0.018225	①（查阅） consult; refer to ②（参考） reference 仅供～ for reference only
+访问	v	9	0.003167	0.018225	visit; call on 非正式～ an unofficial visit 私人～ private visit 友好～ friendly visit; goodwill visit
+错误	a	9	0.003167	0.018225	①（不正确） wrong; mistaken; erroneous ～估计形势 make a wrong estimate of the situation ②（不正确的事物、行为等） mistake; error; blunder; fault 犯～ make a mistake; commit an error
+计算机	n	9	0.003167	0.018225	computer 电子～ electronic computer 个人～ personal computer (PC) 小型～ microcomputer
+重	a	9	0.003167	0.018225	①（重量） weight 过～ over weight 你体～有多少？ What is your weight? ②（重量大） heavy; weighty; important 他比我～。 He is heavier than me. ③（程度深） deep; heavy; serious ～伤 severe wound ④（重要） important 分别轻～ distinguish the trivial from the important ⑤（重视） lay stress on; attach importance to ～信义 pay stress to faith and righteousness ～友谊 set store by friendship; value friendship ⑥（不轻率） discreet
+查看	v	9	0.003167	0.018225	look over; examine ～账目 examine the accounts
+博客	nz	8	0.002815	0.016532	
+开始	v	8	0.002815	0.016532	①（从头起） begin; start; commence 从头～ start from the very beginning 跑了500米之后，我～感到累了。 After running half a kilometer, I began to feel tired. ②（开始阶段） initial stage; beginning; outset 一～ at the initial stage; at the beginning
+南	b	8	0.002815	0.016532	south; southern ～岸 south coast ～屋 a room with a northern exposure 正～偏东 south by east
+人人	n	8	0.002815	0.016532	everybody; everyone ～平等。 Everyone is equal. （或：All men are equal.)
+最新	a	8	0.002815	0.016532	
+欢迎	v	8	0.002815	0.016532	①（高兴地迎接） welcome; greet ②（乐意接受） welcome; favorably receive 受到观众～ be warmly received by the audience
+挖掘	vn	8	0.002815	0.016532	excavate; unearth; excavation (n.) 参加了兵马俑的～工作 take part in excavations of clay figures of warriors and horses
+图	n	8	0.002815	0.016532	①（图画） picture; drawing; chart; map 地～ map 示意～ sketch; sketch map ②（谋划） scheme; plan; attempt ③（贪图） pursue; seek ④（意图） intention; intent
+电话	n	8	0.002815	0.016532	①（电话设备） telephone; phone 公用～ public telephone; pay telephone ②（打电话） call; phone call 国内长途直拨～ （缩写为DDD）domestic direct dialing 国际长途直拨～ （缩写为IDD）international direct dialing 打～ make a phone call; phone sb.; call sb. up; ring sb. up; give sb. a ring
+加载	nr2	8	0.002815	0.016532	
+地址	n	8	0.002815	0.016532	address 能把您的地址给我吗？ Could you give me your address, please?
+过期	vi	8	0.002815	0.016532	exceed the time limit; be overdue ～作废 in valid after the specified date
+丝	q	8	0.002815	0.016532	①（丝绸；蚕丝） silk ②（丝状物） a threadlike thing 钢～ steel wire ③（极少、极小的量） a tiny bit; trace 一～不差 not a bit of difference
+即可	v	8	0.002815	0.016532	
+丝	n	8	0.002815	0.016532	①（丝绸；蚕丝） silk ②（丝状物） a threadlike thing 钢～ steel wire ③（极少、极小的量） a tiny bit; trace 一～不差 not a bit of difference
+硕	ag	8	0.002815	0.016532	large
+导	vg	8	0.002815	0.016532	①（引导） lead; guide ②（传导） transmit; conduct ③（开导） instruct; teach; give guidance to 教～ teach; instruct
+副教授	n	8	0.002815	0.016532	associate professor
+交流	vn	8	0.002815	0.016532	①（沟通） exchange; interflow; interchange; bilateral exchange 文化～ cultural exchange ～经验 exchange experiences ②〈电〉 alternating
+安全实验室	n_new	8	0.002815	0.016532	
+功能	n	8	0.002815	0.016532	function; functional (adj.)
+语言	n	8	0.002815	0.016532	language; linguistic (adj.) ～能力 linguistic competence
+院长	n	8	0.002815	0.016532	
+运行	vi	8	0.002815	0.016532	
+普通	a	8	0.002815	0.016532	ordinary; common; average 劳动人民的～一员 an ordinary member of the working people
+大街	n	8	0.002815	0.016532	main street; street; avenue ～小巷 streets and lanes
+版本	n	8	0.002815	0.016532	edition
+争	v	8	0.002815	0.016532	①（力争） contend; vie; strive ～权 scramble for power 不～一日之短长 not strive for only temporary superiority ②（争执） argue; dispute ～得面红耳赤 flush to the roots of one's hair in the hot dispute
+学院	n	8	0.002815	0.016532	college; academy; institute 音乐～ an academy of music
+北京海淀区中关村	ns	8	0.002815	0.016532	
+主任	n	8	0.002815	0.016532	director; head; chairman
+助理	n	8	0.002815	0.016532	assistant 部长～ assistant minister
+号	q	8	0.002815	0.016532	①（名称） name ②（别号；字） assumed name; alternative name ③（商店） business house ④（信号） mark; sign; signal ⑤（次第） number （符号为 ＃ ） ⑥（服装号码） size ⑦（日期） date ⑧（号令） order ⑨（号角） horn ⑩（号声） bugle call; any call made on a bugle 吹冲锋～ sound the call to charge
+组	n	8	0.002815	0.016532	①（组织） organize; form ～阁 form a cabinet ②（小组） group 学习～ a study group 心脏专家～施行了外科手术。 A team of heart specialists performed the surgery. ③〈量〉 set; series; battery 一～邮票 a set of stamps
+默认	v	7	0.002463	0.014794	give tacit consent to; tacitly approve; acquiesce in ～既成事实
+即	v	7	0.002463	0.014794	①（靠近） approach; reach; be near ②（当时） at present; in immediate future ③（对此） prompted by the occasion ④（就是） be; mean; namely ⑤（就便） promptly; at once; immediately; in no time ⑥（即使） even; even if
+代表	n	7	0.002463	0.014794	①（指人） deputy; delegate; representative 常驻～ permanent representative; permanent delegate 全国人大～ deputy to the National People's Congress 首席～ chief delegate ②（体现） represent; stand for ～时代精神 embody the spirit of the era ③（替人办事或讲话） on behalf of; in the name of ～…向大会作报告 present a report to the congress on behalf of ...
+多种	m	7	0.002463	0.014794	
+过滤	v	7	0.002463	0.014794	filter; filtrate
+时间	n	7	0.002463	0.014794	time; hour 上课～ school hours 屏幕～ screen time 没有～ have no time 你在家里怎么打发～？ How do you spend your
+展示	v	7	0.002463	0.014794	open up before one's eyes; reveal; show; lay bare
+当家作主	vl	7	0.002463	0.014794	be master in one's own house; be the master of one's own affairs
+正式	a	7	0.002463	0.014794	formal; official; regular 达成～协议 reach a formal agreement
+正式	ad	7	0.002463	0.014794	formal; official; regular 达成～协议 reach a formal agreement
+文件夹	n	7	0.002463	0.014794	
+成立	vi	7	0.002463	0.014794	①（建立） found; establish; set up ②（有根据） be tenable; hold water 这个理论不能～。 This theory is untenable.
+中华人民共和国	ns	7	0.002463	0.014794	the People's Republic of China ～国务院 the State Council of the People's Republic of China
+中文	nz	7	0.002463	0.014794	the Chinese language; Chinese
+日子	n	7	0.002463	0.014794	①（日期） day; date ②（天数） days; time ③（生活） life; livelihood ～好过 enjoy a happy life
+语料	n	6	0.002111	0.013006	
+类型	n	6	0.002111	0.013006	type; pattern
+如下	vi	6	0.002111	0.013006	as follows 发表～声明 make the following statement
+理由	n	6	0.002111	0.013006	reason; ground; argument 有充足的～ have every reason; there are sufficient reasons
+处理	vn	6	0.002111	0.013006	①（安排；解决） handle; deal with; dispose of; manage; settle ～垃圾 dispose of rubbish ～污水 dispose of sewage ～遗留问题 settle the remaining problems 妥善～国内和对外关系中的一系列重大问题 properly settle a series
+抽取	v	6	0.002111	0.013006	extract; extraction (n.)
+例如	v	6	0.002111	0.013006	for instance; for example (e.g.); such as
+检查	v	6	0.002111	0.013006	①（查看） check up; inspect; examine 定期～ periodical examination ～身体 have a health check; have a medical check-up ②（检讨） self-criticism
+执行	v	6	0.002111	0.013006	carry out;execute;implement ～决议　implement a decision ～命令　carry out orders ～判决　enforcement of judgment
+程序	n	6	0.002111	0.013006	①（次序） order; procedure; course; sequence 符合～ be in order ②〈计〉 program 写～ write a program
+联系	v	6	0.002111	0.013006	①（接上关系） contact; touch; connection; relation 对外经济～ foreign economic relation 科技～ scientific and technical links 商业～ trade contacts 取得～
+自动	d	6	0.002111	0.013006	①（主动） voluntarily; of one's own accord ②〈机〉 automatic
+项	q	6	0.002111	0.013006	①（后颈） nape (of the neck) ②〈量〉 item 四～基本原则 four basic principles; four fundamentals ③（款项） sum 进～ income 欠～ liabilities ④〈数〉 term x + 2xy + y 有三项。 The x + 2xy + yhas three terms.
+设置	v	6	0.002111	0.013006	①（设立） set up; establish ～一个专门委员会
+示例	n	6	0.002111	0.013006	give typical examples; give a demonstration
+更新换代	vl	5	0.001759	0.011159	replace sth. old with sth. new; replace a product with one of new generation 产品～ production renewal and change
+购机	vn	5	0.001759	0.011159	
+过滤	vn	5	0.001759	0.011159	filter; filtrate
+内存	n	5	0.001759	0.011159	〈计〉 memory 扩充～ expanded memory (XMS) 扩展～ extented memory (EMS) 装入上端～ load into upper memory
+频繁	a	5	0.001759	0.011159	frequently; often ～交往 frequent contacts
+平白	ad	5	0.001759	0.011159	①（无缘无故） for no reason; gratuitously ②（浅显） plain; obvious; easy to understand
+全球	n	5	0.001759	0.011159	the whole world; global (adj.) ～战略 global strategy
+人们	n	5	0.001759	0.011159	people; men; the public
+扫描	vn	5	0.001759	0.011159	〈电〉 scan; scanning (n.)
+实体	n	5	0.001759	0.011159	entity 真正独立的经济～ really independent economic entities
+实体抽取	n_new	5	0.001759	0.011159	
+使用率	n	5	0.001759	0.011159	rate of utilization; utilization ratio
+数据	n	5	0.001759	0.011159	data 科学～ scientific data
+说	v	5	0.001759	0.011159	①（说话） speak; talk; say ～某人好话 speak well of sb. 她～过想搬到天津去。 He talked of moving to Tianjin. 用英语再～一遍。 Say it again in English. ②（解释） explain 怎么也～不明白。 You can't make it clear, no matter how hard you try to explain. ③（言论，主张） theory; teachings; doctrine ④（责备） scold 爸爸～了他几句。 Daddy gave him a talking-to
+速度	n	5	0.001759	0.011159	①〈物〉 speed; velocity ②（快慢） speed; rate; pace 加快～ build up speed ③〈音〉 tempo
+提取组件	n_new	5	0.001759	0.011159	
+细	a	5	0.001759	0.011159	①（跟“粗”相对） thin; slender ～线 fine thread 一根～绳子 a thin piece of string ②（颗粒小） in small particles; fine ～沙 fine sand ③（音量小） thin and soft ④（精细） fine; exquisite; delicate ～瓷 fine porcelain ⑤（仔细；详细） careful; meticulous; detailed ～看 examine carefully ～问 ask about details ⑥（细微；细小） minute; trifling 事无巨～ a matters, big and small
+显然	a	5	0.001759	0.011159	obvious; evident; clear; patent 他～是在说谎。 He was patently lying.
+想象	v	5	0.001759	0.011159	
+消费者	n	5	0.001759	0.011159	consumer; user 最终～ ultimate consumer
+需求	n	5	0.001759	0.011159	requirement; demand 刺激～ stimulate the demand 有～ be in demand
+已经	d	5	0.001759	0.011159	already 那部电影他～看过两次了。 He has seen that film twice already.
+保存	v	5	0.001759	0.011159	preserve; conserve; keep ～精力 conserve one's vitality
+无法	d	5	0.001759	0.011159	unable; incapable ～理解 unable to understand ～想像 unable to imagine
+必备	v	5	0.001759	0.011159	
+编码	n	5	0.001759	0.011159	encode; put into code
+粒度	n	5	0.001759	0.011159	
+增加	v	5	0.001759	0.011159	increase; raise; add ～财政收入 increase revenues ～对农业的投入 increase investment in agriculture ～工资 increase the wages and salaries ～国民收入 increase national income ～花色品种 increase varieties and designs ～教育经费 increase the funds allocated for education
+增添	v	5	0.001759	0.011159	add; increase ～设备 get additional equipment
+开支	n	5	0.001759	0.011159	①（支付） pay (expenses); spend ②（费用） expenses; expenditure; spending 军费～ military spending 意外～ incidental expenses 节省～ reduce expenses 缩减～ cut down expenses ③（发工资） pay wages; pay salaries; get the pay
+划算	a	5	0.001759	0.011159	①（盘算） calculate; weigh ②（合算） be to one's profit; pay 做某事～。 It is worthwhile doing sth.
+产品	n	5	0.001759	0.011159	product; produce 长线～ product in excess supply
+初	ng	5	0.001759	0.011159	①（开始） at the beginning of;
+换	v	5	0.001759	0.011159	①（交换） exchange; barter; trade 用一匹马～一头牛 barter a
+词汇本体	n_new	5	0.001759	0.011159	
+旅行	vi	5	0.001759	0.011159	travel; journey; tour ～经验丰富的人 a traveled man; a travelled man
+机	ng	5	0.001759	0.011159	①（机器） machine; engine 缝纫～ sewing machine ②（飞机） aircraft; airplane; aeroplane; plane ③（重要环节） crucial point; pivot; key link ④（机会） chance; occasion; opportunity 良～ good chance; good opportunity ⑤（生活机能） organic ⑥（灵活） flexible; quick-witted
+电子	n	5	0.001759	0.011159	electron; electronic (adj.) 负～ negatron 正～ positron
+度	qv	5	0.001759	0.011159	①（计量长短） linear measure ②（程度） degree of intensity ③（计量单位） degree ④（千瓦小时） （缩写为kwh）kilowatt-hour ⑤（限度） limit; extent; degree 劳累过～ be overworked ⑥（宽容程度） tolerance; magnanimity ⑦（考虑） consideration 把生死置之～外 give no thought to personal safety ⑧（次） occasion; time ⑨（过度） spend; pass
+快	a	5	0.001759	0.011159	①（速度快） fast; quick; rapid; swift; speedy 动作～ be quick in action 这表～了一分钟。 The watch is a minute fast. ②（速度） speed 这公共汽车能跑多～？ How fast can this bus go? ③（赶快） hurry up; make haste ～，开开门！ Quickly, open the door! ④（快要） soon; before long; be about to 春天～来了。 Spring is coming. ⑤（灵敏） quick-witted; ingenious 她脑子～。
+款	q	5	0.001759	0.011159	①（诚恳） sincere ②（招待；款待） receive with hospitality; entertain ③（条款） section; paragraph; item 第十条第二～ Article 10, Section 2 ④（款项） a sum of money; fund; money 拨～set aside a sum 捐～ contribute money ⑤（书画的上下款） 上～ the name of recipient 下～ the signature ⑥（缓；慢） leisurely; slow
+重组	v	5	0.001759	0.011159	
+论坛	n	5	0.001759	0.011159	forum; tribune 文学～ forum on literature
+非常	d	5	0.001759	0.011159	①（特殊） extraordinary; unusual; special ～措施 emergency measures ②（十分） very; extremely; highly ～重要 extremely important
+飞香	nr2	5	0.001759	0.011159	
+满足	v	5	0.001759	0.011159	①（觉得足够） satisfied; content; contented 切不可～于这些数目字。 Never be satisfied with such figures. ②（使满足） satisfy; meet ～读者的需要 meet the reader's demands
+负担	n	5	0.001759	0.011159	①（承当） bear (a burden); shoulder ②（指责任） burden; load; encumbrance 减轻…的精神～ take a load off sb.'s mind
+类别	n	5	0.001759	0.011159	classification; category
+最高	a	5	0.001759	0.011159	highest; supreme; tallest ～国家权力机关 the highest organ　of state power
+处理	v	4	0.001407	0.009241	①（安排；解决） handle; deal with; dispose of; manage; settle ～垃圾 dispose of rubbish ～污水 dispose of sewage ～遗留问题 settle the remaining problems 妥善～国内和对外关系中的一系列重大问题 properly settle a series
+小	a	4	0.001407	0.009241	①（跟“大”相对） small; little; petty; minor 雨开始～了。 The rain began to let up. ②（短时间） for a while; for a short time ～住 stay for a few days ③（年纪小） young
+李毅	nr	4	0.001407	0.009241	
+八大	nz	4	0.001407	0.009241	
+百度	nz	4	0.001407	0.009241	
+包含	v	4	0.001407	0.009241	contain; embody; include 他的发言～了他的全部论点。 His statement embraces all his arguments.
+意思	n	4	0.001407	0.009241	①（语义） meaning; idea ②（意见，愿望） opinion; wish; desire ③（心意） a token of affection, appreciation, gratitude, etc. ④（趋势） look like; seem 天有点要下雨的～。 It looks like rain. ⑤（情趣） interest; fun 游泳很有～。 Swimming is a lot of fun.
+二	m	4	0.001407	0.009241	①（一加一） two; second ②（两样） different
+敏感	an	4	0.001407	0.009241	sensitive; susceptible 人们对此很～。 People are very sensitive to it.
+帖子	n_new	4	0.001407	0.009241	
+报告	n	4	0.001407	0.009241	①（告诉） report; make known ②（讲演） report; speech; talk; lecture 做～ make a speech; give a talk ③（书面申请或总结） report 调查～ investigation report 打～ give a report
+诉讼	vi	4	0.001407	0.009241	lawsuit; litigation 专利～ patent action 损失赔偿～ action for damage
+懂	v	4	0.001407	0.009241	understand; know ～德语 know German
+演示	vn	4	0.001407	0.009241	demonstrate
+字	n	4	0.001407	0.009241	①（文字） word; character 常用～ basic vocabulary; general service words 简体～ simplified Chinese character ②（字音） pronunciation ③（字体） form of a written or printed character; style of handwriting; printing type 繁体～ the original complex form of a simplified Chinese character ④（书法作品） scripts; writings; calligraphy ⑤（字据） receipt; written pledge
+自动提取	n_new	4	0.001407	0.009241	
+网友	n	4	0.001407	0.009241	
+分词	v	4	0.001407	0.009241	
+含有	v	4	0.001407	0.009241	contain; have ～盐分 contain salt
+分类	vi	4	0.001407	0.009241	classify; classification (n.)
+重要	a	4	0.001407	0.009241	important; significant; major 这是非常～的事。 This is a matter of cardinal significance.
+文本文件	n	4	0.001407	0.009241	〈计〉 document file
+大多	d	4	0.001407	0.009241	for the most part; mostly
+打开	v	4	0.001407	0.009241	①（开） open; unfold ②（开收音机等） turn on; switch on 谁把电视～了？Who turned the television on? ③（攻开） break through ～缺口 make a breach ～一条出路 break through an encirclement or fight a way out ④（开展） open up; spread ～地图 spread out the map
+火	n	4	0.001407	0.009241	①（光焰） fire 着～ be on fire ②（炮火） firearms; ammunition ③〈中医〉 internal heat ④（红色） fiery; flaming ⑤（紧急） urgent; pressing ⑥（发怒） anger; temper 把人惹～了 make sb. angry
+覆盖	v	4	0.001407	0.009241	①（遮盖） cover ②（植被的保护作用） plant cover; vegetation
+屏	ng	4	0.001407	0.009241	①（抑止） hold ～着呼吸 hold one's breath ②（除去） reject; get rid of; abandon
+指	v	4	0.001407	0.009241	①（手指） finger 屈～可数 can be counted on one's fingers; very few ②（指向） point at; point to 向南～ point to the south ③（一指宽度） fingerbreadth; digit 二～宽 two digits wide ④（指点） indicate; point out; refer to ⑤（指靠） depend on; count on 大家就～着你帮忙。 We're counting on your help. ⑥（影射） allude to 很明显她～的是王先生。 It was clear she was alluding to Mr. Wang.
+十	m	4	0.001407	0.009241	①（数目） ten; tenth ②（达到顶点） topmost
+角落	n	4	0.001407	0.009241	corner; nook 在房间～ in the corner of the room
+层	qv	4	0.001407	0.009241	①〈量〉 layer; tier; stratum 一～泥 a layer of clay ②（楼层） story; floor 第一～ the first floor (AmE.); the ground floor (BrE.) 第二～ the second floor (AmE.); the first floor (BrE.) 第三～ the third floor (AmE.); the second floor (BrE.) 第四～ the forth floor (AmE.); the third floor (BrE.) 20～的大楼 a building of twenty stories ③（可分项分步的事物） a component part in a sequence
+满	v	4	0.001407	0.009241	①（充满）full; filled; packed ～～一箱书 a full case of book 她的眼里～是泪水。Her eyes were full of tears. 公共汽车上挤～了人。The bus was packed with people. 杯子～了，盛～了牛奶。The glass is full-it is full of milk. ②（使满）fill 把杯子斟～啤酒 fill a glass with beer 给水桶装～水
+关系	n	4	0.001407	0.009241	①（相互关系） relation; relationship 外交～
+下半年	t	4	0.001407	0.009241	
+关键字	n	4	0.001407	0.009241	
+理解	v	4	0.001407	0.009241	understand; comprehend
+一般	a	4	0.001407	0.009241	①（一样） same as; just like ②（一种） sort; kind ③（普通；通常） general; ordinary; common ～常识 general knowledge 晚餐～在7点用。 Dinner is generally served at 7 p.m.
+训练	vn	4	0.001407	0.009241	train; drill
+难	ad	4	0.001407	0.009241	①（灾难） catastrophe; disaster; calamity 大～临头 be faced with imminent disaster ②（质问） blame; reproach 非～ blame
+要闻	n	4	0.001407	0.009241	important news; front-page story
+去年	t	4	0.001407	0.009241	last year
+类	n	3	0.001056	0.007235	①（种类） kind; type; class; category 各～ all sorts of ②（类似） resemble; be similar to ③（构词成分） quasi-
+方法	n	3	0.001056	0.007235	method; way; means 改进～ improve one's methods 学习～ method of study
+路径	n	3	0.001056	0.007235	①（道路） route; way ②（门路） method; ways and means
+特征	n	3	0.001056	0.007235	characteristic; feature; trait 基本～ essential features
+分类体系	n_new	3	0.001056	0.007235	
+著作	n	3	0.001056	0.007235	①（作品） work; book; writings ～等身 an author with many works to his credit ②（写作）write
+资源	n	3	0.001056	0.007235	natural resources; resources 国家～ national resources 人力～ manpower resources 未利用的～ idle resources 稀缺～ tight resources ～相对不足 relatively short of natural resources 进一步发挥市场对～配置的基础性作用 make better use of the basic role of the market in the allocation of resources 发挥～优势 make use of their advantages in natural resources
+自动	b	3	0.001056	0.007235	①（主动） voluntarily; of one's own accord ②〈机〉 automatic
+文摘	n	3	0.001056	0.007235	abstract; digest
+相关	vn	3	0.001056	0.007235	be interrelated; be bound up with; be related to
+相似	a	3	0.001056	0.007235	resemble; be similar; be alike 这三个孩子有～之处。 There is a likeness between the three boys.
+句子	n	3	0.001056	0.007235	sentence
+计算	v	3	0.001056	0.007235	①（求未知数） count; compute; calculate; reckon ～生产成本 calculate the cost of production ②（考虑；筹划） consideration; planning
+一个	mq	3	0.001056	0.007235	
+语义	n	3	0.001056	0.007235	
+过程	n	3	0.001056	0.007235	course; process 在发展～中 in the process of development
+失败	vn	3	0.001056	0.007235	①（被打败） be defeated; lose 我们队足球赛～了。 Our team lost the football match. ②（没有成功） fail; failure (n.) 计划已经～。 The plan fell through. ～是成功之母。 Failure is the mother of success.
+正负	n	3	0.001056	0.007235	
+所谓	v	2	0.000704	0.005108	①（所说的） what is called ②（某些人所说的） so-called
+反映	v	2	0.000704	0.005108	①（反照） reflect; mirror 时代的～ mirror of the times ②（报告上级） report; make known 向上级～ report to the higher level ③〈生〉 reflect; reflection
+提取	v	2	0.000704	0.005108	①（取出） draw; pick up; collect ～利润 derive a profit ②（提炼） extract; abstract; recover
+倾向性	n	2	0.000704	0.005108	tendentiousness; tendencies
+计算	vn	2	0.000704	0.005108	①（求未知数） count; compute; calculate; reckon ～生产成本 calculate the cost of production ②（考虑；筹划） consideration; planning
+统计	v	2	0.000704	0.005108	①（统计学） statistics; statistical (adj.) ②（总括地计算） add up; count 据初步～ according to preliminary counting
+标注	v	2	0.000704	0.005108	
+寻找	v	2	0.000704	0.005108	seek; look for ～机会 look for an opportunity
+预处理	vn	2	0.000704	0.005108	
+领域	n	2	0.000704	0.005108	①（指国家领土） territory; domain; realm ～广大
+原始	a	2	0.000704	0.005108	①（最初的） original; firsthand ～积累 primitive accumulation ～记录 original record ～凭证 original certificate ～数据 raw data ～资料 initial data ②（最古老的；未开发的） primeval; primitive ～森林 primeval forest; virgin forest ～社会 primitive society
+进行	vx	2	0.000704	0.005108	①（开展）be in progress;go on;be underway 会谈正在顺利～中。 The talks are in good progress. ②（从事） carry on; carry out; conduct; make ～处分 take disciplinary action 经济上～改革　carry out economic reform ③（前进）be on the march;march;advance
+解决	v	2	0.000704	0.005108	①（处理） solve; resolve; settle ～困难 overcome a difficulty ～矛盾 resolve a contradiction 扎扎实实地～温饱问题 solve the problem of food and clothing in a down-to-earth way ～所有问题的关键在于依靠自己的发展。 The key to the solution of all our problems lies in our own development. ②（消灭） finish off; dispose of ～了敌人一个连
+线性	n	2	0.000704	0.005108	
+一定	b	2	0.000704	0.005108	①（规定的） fixed; established; regular ②（固定不变的） definite; constant ③（必定） surely; certainly; be bound to ④（特定的） certain; specific; given
+个	q	2	0.000704	0.005108	①〈量〉 10～苹果 ten apples 一～玩具汽车 a toy car ②（单独的） individual
+格式	n	2	0.000704	0.005108	form; pattern 文件～ the form of an document
+表达	vn	2	0.000704	0.005108	express; show; voice; convey
+无	v	2	0.000704	0.005108	①（没有） nothing; nil; not have; without ②（不） not ～碍大局 not affect the situation as a whole ③（不论） regardless of; no matter whether, what, etc.
+研究	vn	2	0.000704	0.005108	①（探讨） study; research ～与开发 research and development ②（商讨） consider; discuss; deliberate
+序列	n	2	0.000704	0.005108	①（排好的行列） alignment; array ②〈数〉 sequence
+成为	v	2	0.000704	0.005108	become; turn into ～事实 come true
+需要	v	2	0.000704	0.005108	①（应该有） need; want; require; demand 他们什么也不～。 They lacked for nothing. ②（欲望或要求） needs 满足市场～ meet the needs of the market
+能	v	2	0.000704	0.005108	①（能力） ability; capability; skill 无～的人 a man of small caliber ②（能量） energy 动～ kinetic energy 位～ potential energy ③（有能力的） able; capable ④（能够；会） can; be able to; be capable of ～吃苦耐劳 able to bear hardship
+包括	v	2	0.000704	0.005108	include; consist of; comprise; incorporate 这发票～了税款和服务费用。 The bill includes tax and service.
+出	vf	2	0.000704	0.005108	①（从里到外） go or come out ～国 go abroad ②（来到） come ～席 attend; be present ③（超出） exceed; go beyond ④（拿出） issue; put up; give; offer ～钱 offer money ～主意 offer advice; supply ideas; make suggestions ⑤（生产；产生） produce; turn out ～成果 produce result ～煤 produce coal ～人才 turn out talents ⑥（发生） arise; happen; take place; occur 这事故～在三年前。
+索引	n	2	0.000704	0.005108	index 书目～ title index
+文献	n	2	0.000704	0.005108	document; literature
+权	n	2	0.000704	0.005108	①（权利）right 选举～ the right to vote 特～ special right and privilege ②（权力） power; authority ③（有利形势） advantageous position ④（权衡） weigh up ⑤（权且） tentatively; for the time being; temporarily ⑥（权变；权宜） expediency
+种	q	2	0.000704	0.005108	grow; plant; cultivate ～花 cultivate flowers ～小麦 grow wheat
+就是	v	2	0.000704	0.005108	①（即使） even if; even 你～送来，我也不要。 Even if you
+基础	n	2	0.000704	0.005108	①（根本，起点） foundation; base; basis 互利～
+器	n	2	0.000704	0.005108	①（器具） implement; utensil; ware 瓷～ chinaware; china; porcelain 玉～ jade article 乐～ musical instrument ②（器官） organ 生殖～ reproductive organs; generative organs; genitals ③（才能） capacity; talent
+旅游业	n	2	0.000704	0.005108	
+应用	vn	2	0.000704	0.005108	①（使用） apply; use 在工业上～新的技术流程 apply a new technical process to industry ②（直接用于生活的） applied
+分类	vd	2	0.000704	0.005108	classify; classification (n.)
+准确	a	2	0.000704	0.005108	accurate; exact; precise 发音～ pronounce accurately ～答案 an accurate answer
+好	a	2	0.000704	0.005108	①（喜爱） like; love; be fond of ～学 be eager to learn ②（易于） be liable to ～晕车 be liable to carsickness
+和	n	2	0.000704	0.005108	mix; blend
+极性	n	2	0.000704	0.005108	
+可以用于	n_new	2	0.000704	0.005108	
+分	v	2	0.000704	0.005108	①（成分） component ②（限度） what is within one's rights or duty
+技术	n	2	0.000704	0.005108	technology; skill; technique 科学～ science and technology 高新～产业开发区 the development zones for industries using high and new technology
+搜索引擎	n	2	0.000704	0.005108	
+器	ng	2	0.000704	0.005108	①（器具） implement; utensil; ware 瓷～ chinaware; china; porcelain 玉～ jade article 乐～ musical instrument ②（器官） organ 生殖～ reproductive organs; generative organs; genitals ③（才能） capacity; talent
+组织	v	2	0.000704	0.005108	①（组成） organize; form ～一个歌咏队 organize a chorus ②（组织系统） organization; organized system 党团～ Party and Youth League organizations ③（积存） accumulate ～货源 accumulate stocks ④〈纺〉 weave 平纹～ plain weave 斜纹～ twill weave ⑤〈生理〉 tissue 神经～ nerve tissue
+统计	vn	2	0.000704	0.005108	①（统计学） statistics; statistical (adj.) ②（总括地计算） add up; count 据初步～ according to preliminary counting
+元	q	2	0.000704	0.005108	①（开始的） first; primary ～月 the first month of the year ②（为首的） chief; principal ～首 head of state ③（主要） basic; fundamental ～音 vowel ④（构成整体的） unit; component 单～ unit ⑤（货币单位） yuan
+定义	v	1	0.000352	0.002798	definition 下～ give a definition
+软件	n	1	0.000352	0.002798	〈计〉 software
+短文	n	1	0.000352	0.002798	short essay
+短语	n	1	0.000352	0.002798	
+段	ng	1	0.000352	0.002798	①（部分） section; segment; part 边界西～ the western sector of the boundary ②（文章的段落） paragraph; passage
+多	a	1	0.000352	0.002798	①（数量大） many; much; more ②（过多） more than the correct or required number; too many ③（过分的；不必要的） excessive; too much ④（放在数量词后，表示有零头） more; over; odd 六十～岁 over sixty years old ⑤（相差程度大） much more; far more 难得～ much more difficult ⑥（表示程度） how 看他～精神！ Look how energetic he is!
+恶	a	1	0.000352	0.002798	loathe; dislike; hate 一个人的好～ one's likes and dislikes 可～ loathsome; hateful
+法	n	1	0.000352	0.002798	①（法律） law 依～惩办
+反馈	v	1	0.000352	0.002798	①〈电〉 feedback ②（返回信息） feedback 信息～ information feedback
+范围	n	1	0.000352	0.002798	scope; limits; range 活动～ scope of activities
+描述	v	1	0.000352	0.002798	describe 文章生动地～了该地区的山色。
+分割	vn	1	0.000352	0.002798	cut apart; break up; carve up
+分解	v	1	0.000352	0.002798	resolve; decompose; break down; decomposition (n.)
+识别	v	1	0.000352	0.002798	identify; distinguish; discern; spot 这些标记模糊不清，难以～。 The markings are so blurred that it is
+分为	v	1	0.000352	0.002798	
+风格	n	1	0.000352	0.002798	①（作风） way; style 发扬～ go out of one's way to help others ②（特点） style 艺术～ artistic style
+事实	n	1	0.000352	0.002798	fact 歪曲～ distort the facts ～胜于雄辩。 Facts speak louder than words.
+是否	v	1	0.000352	0.002798	whether or not; whether; if
+视频	n	1	0.000352	0.002798	〈物〉 video frequency
+视为	v	1	0.000352	0.002798	
+手	n	1	0.000352	0.002798	①（人的手） hand ～拉～ hand in hand 伸出友谊之～ stretch out the hand of friendship 与某人握～ shake hands with sb. ②（拿着） have in one's hand; hold 人～一册。 Everyone has a copy. ③（方便的） handy; convenient ④（亲手） personally ⑤（擅长某种技能的人） a person doing or good at a certain job 歌～ singer 水～ seaman
+手段	n	1	0.000352	0.002798	①（方法） means; medium; measure; method 不择～ by fair means or foul; by hook or by crook; unscrupulously 强制～ coercive method; coercion ②（不正当的方法）trick; artifice 耍～ play tricks
+手工	d	1	0.000352	0.002798	①（手做的工作） handwork ②（用手操作） by hand; manual 这玩具是～制做的。 The toy was made by hand. ③（手工费） charge for a piece of handwork ～是多少？ How much did you pay for this?
+符号	n	1	0.000352	0.002798	①（记号） symbol; mark; sign 化学～
+输入	v	1	0.000352	0.002798	①（指从外到内） feed in; transport in ②（指商品等） import 资本～ import of capital ～商品 import of commodities ③〈电〉 input 同步～ simultaneous input
+书	vg	1	0.000352	0.002798	①（书写） write 大～特～ record in letters of gold ②（字体） style of calligraphy; script 楷～ regular script ③（书籍） book 写～ write a book ④（信） letter 家～ a letter to or from home ⑤（文件） document 证～ certificate
+辅助	vn	1	0.000352	0.002798	①（从旁帮助） assist ②（非主要的） supplementary; auxiliary; subsidiary
+数据库	n	1	0.000352	0.002798	data base
+概率	n	1	0.000352	0.002798	probability
+说明	v	1	0.000352	0.002798	①（解释明白） explain; illustrate; show ②（说明文字） explanation; directions; caption ③（证明） prove; verify 事实本身就是很好的～。 Facts speak for themselves.
+概念	n	1	0.000352	0.002798	concept; conception; notion; idea 形成一个～ from a concept
+高	a	1	0.000352	0.002798	①（与“低”相反） tall; high ～矮不一 some tall and some short 改变～投入、低产出，～消耗、低效益的状况 put an end to the situation
+割	v	1	0.000352	0.002798	cut ～草 cut the grass 他～破了手指。 He cut his finger.
+搜索	v	1	0.000352	0.002798	hunting; search for; hunt for; scout around
+格式化	v	1	0.000352	0.002798	〈计〉 format
+给	v	1	0.000352	0.002798	①（供给） supply; provide ②（富裕） ample; well provided for
+给定	vn	1	0.000352	0.002798	
+工大	nt	1	0.000352	0.002798	
+工作	vn	1	0.000352	0.002798	①（人劳动；机器运行） work ②（职业） job 分配～ assign jobs ③（任务） task
+构建	v	1	0.000352	0.002798	
+所有	b	1	0.000352	0.002798	①（拥有） own; possess 这老人死后家产归谁～？ Who did the property go to when the old man died? ②（领有的东西） possessions 完全～ absolute property 毗邻～ adjoining property 尽其～ give everything one has; give one's all ③（一切；全部） all; whole ～的学生 all the students
+构造	n	1	0.000352	0.002798	①（结构） structure; construction ②〈地〉 tectonic; structural
+购物	vi	1	0.000352	0.002798	
+特点	n	1	0.000352	0.002798	characteristic; peculiarity; trait; distinguishing feature
+特定	b	1	0.000352	0.002798	①（特别指定的） specially appointed; specially designated ②（某一个） given; specified; specific
+股票	n	1	0.000352	0.002798	share certificate; share; stock 不上市～ unlisted stock 发行～ issue share; issue stock
+提供	v	1	0.000352	0.002798	provide; supply; furnish; offer ～成套设备和材料 delivery of complete equipment and materials ～援助 render assistance ～最基本的社会保障 provide the basic social security
+股市	n	1	0.000352	0.002798	the stock market
+广	a	1	0.000352	0.002798	①（宽阔） wide; vast; extensive 地～人稀 a vast and densely populated country ②（多） numerous 她在大庭～众之中出了丑。 She made a fool of herself in public. ③（扩大） expand; spread ～为流传的民间故事 a widely spread folk-tale
+国	n	1	0.000352	0.002798	①（国家） country; state; nation ②（代表国家的） of the state; national ③（指我国的） of our country; Chinese
+国外	s	1	0.000352	0.002798	external; overseas; abroad
+宏	nz	1	0.000352	0.002798	great; grand; magnificent
+同类	n	1	0.000352	0.002798	of the same kind; similar
+同一	b	1	0.000352	0.002798	same; identical ～竞争规则 compete under the same rules 请明天～时间和我见面。 Meet me at the same time tomorrow.
+红色	n	1	0.000352	0.002798	①（红颜色） red ②（象征革命） red; revolutionary
+后续	vd	1	0.000352	0.002798	
+统一	ad	1	0.000352	0.002798	
+后续	vn	1	0.000352	0.002798	
+划分	vn	1	0.000352	0.002798	①（分成部分） divide ～行政区域 divide a country into administrative areas ②（区别） differentiate
+化	v	1	0.000352	0.002798	①（变化） change; turn; transform ～悲痛为力量 transform grief into strength ②（教化） convert; influence ③（融化） melt; dissolve 冰～了。 The ice has melted. ④（消化） digest ⑤（火化） burn up ⑥（化学） chemistry ⑦（词尾） -ize; -ify 电气～ electrify 现代～ modernize
+汇	v	1	0.000352	0.002798	①（汇合） converge ②（聚集） gather together ③（聚集而成的东西） things collected; assemblage; collection ④（寄） remit ～钱 remit money to ⑤（指外汇） foreign exchange
+基本	ad	1	0.000352	0.002798	①（根本的） basic; fundamental ～国策 the country's basic policies ～国情 fundamental reality ②（主要的） main; essential ～特征 essential features ③（基础的） elementary; rudimentary ～知识 elementary knowledge ④（大体上） basically; in the main; on the whole; by and large
+基金	n	1	0.000352	0.002798	fund; foundation; pool
+机构	n	1	0.000352	0.002798	① 〈机〉 mechanism ②（机关团体） organ; organization; institution; setup ③（机关团体内部组织） the internal structure of an organization ～臃肿 inflated departments; overexpansion of organizations
+集合	v	1	0.000352	0.002798	
+位置	n	1	0.000352	0.002798	①（所在地方） seat; place; site; location 地理～ geographic location 这个街角是设加油站的好～。 This corner would make a good location for a gas station. ②（地位） place; position 占据重要～ occupy an important place ③（职位） post; position; office
+文	ng	1	0.000352	0.002798	①（字） character; script; writing ②（文字） language 中～ Chinese language 英～ English language ③（文章） literary composition; writing ④（文言） literary language 半～半白 half literary and half vernacular ⑤（非军事的） civilian; civil ⑥（自然界某些现象） certain natural phenomena 天～ astronomy ⑦（掩饰） cover up; paint over ～过饰非 conceal faults and gloss over wrongs ⑧〈量〉 一～不名 penniless
+记录	n	1	0.000352	0.002798	①（写下来） take notes; keep the minutes; record ②（所记录下来的材料） minutes; notes; record 会谈～ a transcript of talks ③（记录者） notetaker; recorder ④（最高成绩） record 世界～ world record 打破～ break a record
+记录	v	1	0.000352	0.002798	①（写下来） take notes; keep the minutes; record ②（所记录下来的材料） minutes; notes; record 会谈～ a transcript of talks ③（记录者） notetaker; recorder ④（最高成绩） record 世界～ world record 打破～ break a record
+家	q	1	0.000352	0.002798	①（家庭） family; household 养～ support one's family ②（住所） home 回～ go home 他的～很远。 His home is far away. ③（行家） expert; a specialist in a certain field ④（流派） a school of thought; school 儒～ the Confucian School ⑤（饲养的） domestic; tame ⑥〈谦〉 my ～父 my father ⑦〈量〉 三～饭馆 three restaurants
+加入	v	1	0.000352	0.002798	①（加上） add; mix; put in ②（参加） join; accede to ～条约 accede to a treaty
+假设	n	1	0.000352	0.002798	①（假定） suppose; assume; grant; presume ②（科学假说） hypothesis ③（虚构） invent; invention
+监督	vn	1	0.000352	0.002798	①（察看、督促） supervise; superintend; control 国际～ international control 建立有效的管理、～和营运机制 build an effective mechanism for the management, supervision and operation ②（监督人） supervisor
+简单	a	1	0.000352	0.002798	①（不复杂） simple; uncomplicated ②（平凡，多用否定式） commonplace; ordinary 不～ not simple; fairly complicated; remarkable ③（不细致） casual; oversimplified ～从事 do things in a casual way
+角度	n	1	0.000352	0.002798	①〈数〉 angle 给照相机换个～ angle a camera ②（看问题的出发点） point of view; angle 从另一个～看问题 regard the issue from another point of view
+文字	n	1	0.000352	0.002798	①（书写符号） characters; script; writing ②（书面语） written language 游戏～ play with words; juggle with terms ③（文章形式） writing (as regards form or style) ～清通 lucid writing
+教授	n	1	0.000352	0.002798	①（指职称） professor 客座～ visiting professor; guest professor 副～ associate professor ②（讲授） instruct; teach ～得法 have tact in teaching
+教研室	n	1	0.000352	0.002798	teaching and research section
+揭示	v	1	0.000352	0.002798	①（公布） announce; promulgate; proclaim ②（使人看到） reveal; bring to light
+捷	ag	1	0.000352	0.002798	①（敏捷） prompt; nimble; quick; agile ②（胜利） victory; triumph
+结构	n	1	0.000352	0.002798	①（组织） structure; composition; construction 经济～ economic structure ②〈建〉 structure; construction 钢筋混凝土～ reinforced concrete structure ③〈地〉 texture
+细分	v	1	0.000352	0.002798	
+惊	v	1	0.000352	0.002798	①（惊恐） start; be frightened ～叫 give a cry of alarm ②（惊动） surprise; shock; alarm ③（动物受惊） shy; stampede
+精	a	1	0.000352	0.002798	①（精选）
+具有	v	1	0.000352	0.002798	possess; have; be provided with ～传统风味特色
+惧	vi	1	0.000352	0.002798	fear; dread
+开销	n	1	0.000352	0.002798	①（支付） pay expenses ②（费用） expense 你搬家的～有多少？ What are your expenses of moving house?
+相同	a	1	0.000352	0.002798	identical; the same; alike 两个过程各不～。 The two processes are not analogous (with each other).
+看	v	1	0.000352	0.002798	①（观看） see; look at; watch ～电视 watch TV ～电影 see a film; go to the movies ～球赛 watch a ball game ～戏 go to the theater; see a play, an opera, etc. 老师叫我们～黑板。 The teacher told us to look at the blackboard. ②（阅读） read ～报 read a newspaper ～书 read (a book) ③（观察并加以判断） think; consider; view; observe; judge ④（访问） call on; visit; go to see ～朋友 visit a friend; call on a friend ⑤（诊治） treat 她正在～病。 She is under medical treatment. ⑥（照料） look after ～孩子 look after children
+可靠	a	1	0.000352	0.002798	reliable; dependable; trustworthy ～消息 reliable news 为人～ be reliable
+可能	v	1	0.000352	0.002798	①（可以实现） possible; probable; can; may ～达到的国民生产总值 potential gross national product ②（或许） probably; maybe 她～在教室里。 Maybe she is in the classroom. ③（可能性） possibility 甲队没有获胜的～。 Team A has no chance of winning.
+快速	d	1	0.000352	0.002798	fast; quick; high-speed; speedy
+框	ng	1	0.000352	0.002798	①（框子） frame; circle; case 窗～ window frame; window case 镜～儿 picture frame ②（加框） circumscribe; draw a frame round ③（约束；限制） put in a strait-jacket
+新闻	n	1	0.000352	0.002798	①（媒体发布的） news 电视～ television news ②（新发生的事） recent social events
+乐	v	1	0.000352	0.002798	music
+类	q	1	0.000352	0.002798	①（种类） kind; type; class; category 各～ all sorts of ②（类似） resemble; be similar to ③（构词成分） quasi-
+星座	n	1	0.000352	0.002798	〈天〉 constellation
+利用	v	1	0.000352	0.002798	①（使发挥效用） use; utilize; make use of ～国外资金 utilize foreign capital 充分～有利条件 take full advantage of one's favorable conditions ②（利用手段） take advantage of; exploit ～地位，追求特权 use one's position to seek personal privileges
+例	n	1	0.000352	0.002798	①（例子） example; instance 举～ give an example; cite an instance ②（先例） precedent 破～ break all precedents; make an exception ③（事例） case; instance ④（规则） rule; regulation 旧～ an old rule ⑤（照成规办的） regular; routine
+连贯	a	1	0.000352	0.002798	①（连接贯通） link up; piece together; hang together ②（首尾一致） coherent; consistent
+连理	n	1	0.000352	0.002798	
+选择	vn	1	0.000352	0.002798	select; choose; opt ～职业 choose one's occupation 由我方～ at our option 如果他想去旧金山，只能～乘飞机。 If he wants to get to San Francisco, he has no alternative but to go by plane.
+学	v	1	0.000352	0.002798	①（学习） study; learn ～游泳 learn to swim 我正在～英语。 I'm learning English. 她正在～古典文学。 She's studying the classical literature. ②（模仿） imitate; mimic ③（学问） learning; knowledge 才疏～浅 have little talent and less learning ④（学科） subject of study; branch of learning ⑤（学校） school; college
+学习	v	1	0.000352	0.002798	①（获得知识） study; learn ②（效法） emulate
+两	m	1	0.000352	0.002798	①（二） two ～本书 two books ～层楼房 a two-story house ②（双方） both (sides); either (side) ～者缺一不可 neither is dispensable ③（不定数目） a few; some 我过～天再来。 I'll come again in a few days.
+林鸿飞	nr	1	0.000352	0.002798	
+灵活性	n	1	0.000352	0.002798	flexibility; adaptability; mobility
+论文	n	1	0.000352	0.002798	thesis; dissertation 学术～ academic thesis 博士～ thesis for the Doctorate; doctoral dissertation
+研究室	n	1	0.000352	0.002798	
+研究院	n	1	0.000352	0.002798	
+美国	nsf	1	0.000352	0.002798	the United States of America (U.S.A.; U.S.); American (adj.)
+单位	n	1	0.000352	0.002798	①（计量单位） unit 货币～ monetary unit ②（部门） unit 超编～ over-staffed units 基层～ basic unit; grass-roots unit 行政～ administrative unit
+哀	vg	1	0.000352	0.002798	①（悲哀） grief; sorrow ②（哀悼） mourn over sb.'s death ③（怜悯） pity
+一般	ad	1	0.000352	0.002798	①（一样） same as; just like ②（一种） sort; kind ③（普通；通常） general; ordinary; common ～常识 general knowledge 晚餐～在7点用。 Dinner is generally served at 7 p.m.
+褒义	n	1	0.000352	0.002798	commendation; commendatory (adj.)
+命令	n	1	0.000352	0.002798	①（下命令） order; command; give an order 上尉～他的人开火。 The captain commanded his men to shoot. ②（下的命令） order; command 服从～ obey command 下～ give a command; issue an order
+命令	v	1	0.000352	0.002798	①（下命令） order; command; give an order 上尉～他的人开火。 The captain commanded his men to shoot. ②（下的命令） order; command 服从～ obey command 下～ give a command; issue an order
+本体	n	1	0.000352	0.002798	
+意义	n	1	0.000352	0.002798	①（意思） meaning; sense 在某种～上 in a sense ②（价值；作用） significance; importance 现实～ realistic significance
+义	ng	1	0.000352	0.002798	①（正义） justice; righteousness 仁～ benevolence and righteousness ②（正义的） righteous; equitable; just ～战 just war ③（情谊） human ties; relationship ④（抚养或拜认的） adopted; adoptive ～父 adoptive father ⑤（意义） meaning; significance 词～ the meaning of a word ⑥（人工制造的） artificial; false ～齿 false tooth
+比较	d	1	0.000352	0.002798	①（对比） compare; contrast ②〈副〉 fairly; comparatively; relatively; quite; rather
+应答	vi	1	0.000352	0.002798	reply; answer
+便于	v	1	0.000352	0.002798	easy to; convenient for ～携带 easy to carry; portable
+目前	t	1	0.000352	0.002798	present; at the moment 就～情况看 as matters stand; as things are at the moment
+影响	vn	1	0.000352	0.002798	①（起作用） influence; affect ～交通 hold up traffic 吸烟～了他的健康。 Smoking affected his health. ②（所起的作用） effect; influence 社会～ social influence
+用于	v	1	0.000352	0.002798	
+游戏	n	1	0.000352	0.002798	①（娱乐） recreation;game 做～　play games ①（玩耍） play
+有效	a	1	0.000352	0.002798	efficacious; effective; valid 六个月～ valid for six months ～措施 effective measure 这张票两星期～。 This ticket is good for two weeks.
+有着	v	1	0.000352	0.002798	
+标准	n	1	0.000352	0.002798	standard; criterion 达到～ be up to the standard
+不可	v	1	0.000352	0.002798	①（不可以） can not; should not; must not ②（非…不可） must 非去～ simply must go
+不同	a	1	0.000352	0.002798	not alike; different; distinct ～情节 distinctive circumstances
+语言学	n	1	0.000352	0.002798	linguistics; linguistic science; linguistic (adj.)Array?
+内幕	n	1	0.000352	0.002798	what goes on behind the scenes; inside story
+步骤	n	1	0.000352	0.002798	step; move; procedure 采取适当的～ take proper steps
+预定	vn	1	0.000352	0.002798	fix in advance; predetermine; schedule ～时间 scheduled time
+降低	v	1	0.000352	0.002798	reduce; cut down; drop; lower ～消耗 cut down the consumption
+参数	n	1	0.000352	0.002798	〈数〉 parameter
+能够	v	1	0.000352	0.002798	can; be able to; be capable of ～独立操作
+原子	n	1	0.000352	0.002798	atom; atomic (adj.)
+能力	n	1	0.000352	0.002798	ability; capacity; capability 出口创汇～
+越来越多	n_new	1	0.000352	0.002798	
+努力	ad	1	0.000352	0.002798	make great efforts; try hard; exert oneself ～不懈
+怒	vg	1	0.000352	0.002798	①（愤怒） anger; rage; fury 大～ in great anger ②（形容 气势很盛） in profusion; burst 心花～放 be beside oneself with joy; be
+判	v	1	0.000352	0.002798	①（判别） distinguish; discriminate ②（明显） obviously (different) ③（评定） appraise; give a mark ④（判决） judge; decide ⑤（判处） sentence; condemn ～死刑 sentence sb. to death
+判断	v	1	0.000352	0.002798	①（断定） judge; decide; determine 逻辑的～ logical judgment 科学的～ scientific judgment ②〈逻〉 judgment
+摘	v	1	0.000352	0.002798	①（取） pick; pluck; take off ～苹果 pick apples ②（选取） select; make extracts from ～译 translation of selected passages
+测试	vn	1	0.000352	0.002798	test
+产业	n	1	0.000352	0.002798	①（财产） estate; property ②（工业生产） industry; industrial (adj.) 支柱～ pillar industries
+频率	n	1	0.000352	0.002798	frequency 低～ low frequency 高～ high frequency
+找	v	1	0.000352	0.002798	①（寻找） look for;
+成员	n	1	0.000352	0.002798	member
+整理	v	1	0.000352	0.002798	put in order; straighten out; arrange; sort out ～资料 sort out the data 他把书架上的书～了一下。 He arranged the books on the shelf.
+正负	b	1	0.000352	0.002798	
+出现	v	1	0.000352	0.002798	appear; arise; emerge; turn up
+传入	v	1	0.000352	0.002798	
+评测	vn	1	0.000352	0.002798	
+评价	v	1	0.000352	0.002798	①（进行评价） appraise; evaluate; assess ～过低 rate sth. unreasonably low 高度～ highly appraise ②（所给的评价） appraisal; evaluation; assessment 给予很高的～ give a highly appraisal
+评价	vn	1	0.000352	0.002798	①（进行评价） appraise; evaluate; assess ～过低 rate sth. unreasonably low 高度～ highly appraise ②（所给的评价） appraisal; evaluation; assessment 给予很高的～ give a highly appraisal
+词频	n	1	0.000352	0.002798	
+指导	vn	1	0.000352	0.002798	guide; direct 在…～下 under the guidance of... 基金将在委员会的～下开支。 Funds will be spent under the committee's guidance.
+致	v	1	0.000352	0.002798	①（给与） send; extend; deliver ～电 send a telegram ～欢迎词 deliver a welcoming speech ②（专心于） devote 专心～志 be wholly absorbed in; be wholeheartedly devoted to ③（招致） incur; result in; cause 招～重大损失 incur a heavy loss ④（精致） fine; delicate 精～ exquisite ⑤（情趣） manner or style that engages attention or arouses interest 兴～ interest; mood for enjoyment
+词性	n	1	0.000352	0.002798	
+词语	词性	1	0.000352	0.002798	words and expressions; terms
+次数	n	1	0.000352	0.002798	
+中心	n	1	0.000352	0.002798	①（指位置、地区） center (AmE.); centre (BrE.); focus; core 贸易～ a center of trade 商业～ business center ②（主要的） central; main ～工作 central task ～思想 central idea; gist ～问题 central issue; crucial question ③（指机构等） center; centre 购物～ shopping center 文化～ cultural center 信息～ information center
+强度	n	1	0.000352	0.002798	①（指作用力） intensity ②（指能力） strength 抗震～
+种类	n	1	0.000352	0.002798	kind; type; variety
+种子	n	1	0.000352	0.002798	〈农〉 seed
+存在	v	1	0.000352	0.002798	exist; be
+重复	vd	1	0.000352	0.002798	repeat; duplicate
+大规模	b	1	0.000352	0.002798	large-scale; extensive; massive; mass
+单词	n	1	0.000352	0.002798	①〈文〉 individual word; word ②（一个词素的词） single-morpheme word
+单元	n	1	0.000352	0.002798	unit 28号楼12～302号 No. 302, Entrance 12, Building 28
+主题	n	1	0.000352	0.002798	theme; subject; motif 和平与发展已成为当今时代的～。 Peace and development have become the main themes of the present era.
+主要	d	1	0.000352	0.002798	main; chief; principal; major ～产品 major products; staple products
+著名	a	1	0.000352	0.002798	famous; celebrated; well-known ～演员 famous actor
+当前	t	1	0.000352	0.002798	①（在面前） before one; facing one ②（目前） present; current ～的中心任务 the central task at present ～利益 immediate interests
+导航	vn	1	0.000352	0.002798	navigate; navigation (n.) 无线电信号常用于给飞机或船舶～。 Radio signals are used for navigating both aircraft and ships.
+准	a	1	0.000352	0.002798	①（准许） allow; grant; permit ～假三天 grant sb. three days' leave 此处不～吸烟。 Smoking is not allowed here. ②（标准） standard; norm; criterion 以此为～ take this as the standard ③（依据） in accordance with; follow ④（准确） accurate; exact 我的表不～。 My watch doesn't keep good time. ⑤（一定） definitely; certainly 她～会来。 Definitely she will come. ⑥（类似） quasi-; para- ～契约 quasi-contract
+全部	m	1	0.000352	0.002798	whole; complete; total; all ～保险 full insurance ～付讫 payment in full ～真相 the whole truth; the full truth
+全面	a	1	0.000352	0.002798	overall; comprehensive; all-round ～发展 all-round development ～规划 overall planning ～强制性制裁 comprehensive mandatory sanctions
+地理	n	1	0.000352	0.002798	①（总情况） geographical features of a place ②（地理学） geography; geographical (adj.) 经济～ economic geography 自然～ physical geography
+全体	n	1	0.000352	0.002798	all; entire; whole ～出席 full attendance ～同意。 All are agreed.
+自动化	vd	1	0.000352	0.002798	automation
+确定	v	1	0.000352	0.002798	①（使确定） define; fix; determine; ascertain 各单位要～编制。 Each unit should determine its appropriate size and structure. ②（明确而肯定） definite; certain; for sure
+自然	n	1	0.000352	0.002798	①（自然界） natural world; nature ②（自由发展） naturally; in the ordinary course of events 听其～ let things take their own course ③（理所当然） of course; naturally 她认为这是～而然的事。She took it as a matter of course. ④（不勉强） at ease; natural; free from affectation 笑得很～ smile naturally
+地区	n	1	0.000352	0.002798	①（较大的地方） area; district; region 上海～ the Shanghai area 沿边～ border area ②（行政划分单位） prefecture
+第一	m	1	0.000352	0.002798	first; primary; foremost
+宗旨	n	1	0.000352	0.002798	aim; purpose
+总体	n	1	0.000352	0.002798	overall; total ～规划 overall plan
+定	v	1	0.000352	0.002798	①（稳定） calm; stable ②（决定） decide; fix; set ③（已确定的） fixed; settled; established ④（预定） subscribe to; book; order ～杂志 subscribe to a
+人物	n	1	0.000352	0.002798	①（指有代表性的人） figure; personage 历史～ a historical figure 大～ VIP; very important person ②（指文艺作品中的人） person (in literature); character 反面～ negative character 正面～ positive character ③figure painting （AmE）
+组织	n	1	0.000352	0.002798	①（组成） organize; form ～一个歌咏队 organize a chorus ②（组织系统） organization; organized system 党团～ Party and Youth League organizations ③（积存） accumulate ～货源 accumulate stocks ④〈纺〉 weave 平纹～ plain weave 斜纹～ twill weave ⑤〈生理〉 tissue 神经～ nerve tissue
+人员	n	1	0.000352	0.002798	personnel; staff 教学～ the teaching staff; the faculty 专业技能～ efficient staff
+定义	n	1	0.000352	0.002798	definition 下～ give a definition
+如	v	1	0.000352	0.002798	①（依照） in compliance with; according to ～数付清 pay in full ②（如同） like; as; as if ③（比得上） can compare with; be as good as 我不～她。 I'm no match for her. ④（比如） for instance; such as; as ⑤ 〈连〉 if ～遇火警，即按警铃。In case of fire, ring the alarm bell.
+最终	b	1	0.000352	0.002798	final; ultimate
+作家	n	1	0.000352	0.002798	writer
+预先	d	1	0.000352	0.002798	in advance; beforehand ～通知 notify in advance
+信息熵总和	5.610508

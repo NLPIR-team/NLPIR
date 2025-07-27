@@ -1,0 +1,473 @@
+﻿
+
+
+
+
+
+                       文本摘要组件(Summary) 接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+For    the    latest    information    about     NLPIR,     please     visit
+Http://ICTCLAS.nlpir.org/
+  Document Information
+
+
+                                    目录
+
+
+文本摘要组件(Summary) 接口文档   1
+
+
+目录   3
+
+
+0. 文本摘要组件(又名Summary）简介    4
+
+
+1．C＋＋接口  5
+
+
+   1.1 DS_Init   5
+
+
+   1.2 DS_Exit   7
+
+
+   1.3 DS_SingleDoc 8
+
+
+   1.4 DS_SingleDocE   9
+
+
+   1.5 DS_GetLastErrMsg   11
+
+
+2  Summary运行环境  12
+
+
+3 常见问题（FAQ）   13
+
+
+   Q1: Linux调用libSummary.so的时候，链接不上库  13
+
+
+   Q2: Summary组件初始化老是失败 13
+
+
+4 作者简介    14
+
+
+
+
+
+   文本摘要组件(又名Summary）简介
+
+所谓自动文摘就是利用计算机自动地从原始文献中提取文摘，文摘是全面准确地反映某
+一文献中心内容地简单连贯的短文。常用方法是自动摘要将文本作为句子的线性序列，
+将句子视为词的线性序列。
+技术应用类型：
+·自动提取给定文章的摘要信息
+·自动计算文章中词的权重
+·自动计算文章中句子的权重
+·单篇文章的摘要自动提取
+·大规模文档的摘要自动提取
+·基于分类的摘要自动提取
+    自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取Sum
+mary组件的最新版本，并欢迎您关注张华平博士的新浪微博 @ICTCLAS张华平博士
+交流。1P_bR$vk0 自然语言处理与信息检索共享平台1H9^+}NE*W;^
+自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+[pic]
+        6b;t.P s@)\J0然语言处理与信息检索共享平台-l3?3v"Z#X|{t#A!d Z
+                            图1：文本摘要功能展示
+                      自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 DS_Init
+
+Init the analyzer and prepare necessary data for Summary according the
+configure file.
+bool DS_Init(const char *sPath=0,int nEncoding=GBK_CODE,const char
+*sLicenseCode=0);
+|Routine      |Required Header  |
+|DS_Init      |<LJSummary.h>    |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sPath: Initial Directory Path, where Data directory stored.  the default
+value is 0, it indicates the initial directory is current working directory
+path
+nEncoding:  Encoding of input string, default is GBK_CODE (GBK encoding),
+and it can be set with UTF8_CODE (UTF8 encoding) and BIG5_CODE (BIG5
+encoding).
+const char* sLicenceCode: licence coding of input string,
+Remarks
+The DS_Init function must be invoked before any operation with Summary. The
+whole system need call the function only once before starting Summary. When
+stopping the system and make no more operation, DS_Exit should be invoked
+to destroy all working buffer. Any operation will fail if init do not
+succeed.
+DS_Init fails mainly because of two reasons: 1) Required data is
+incompatible or missing 2) invalid parameters. Moreover, you could learn
+more from the log file 2014****.log in the current directory.
+Example
+int main(int argc,char* argv[])
+{
+       if(!DS_Init("",GBK_CODE))
+       {
+          printf("sErrorMsg : %s \n", DS_GetLastErrMsg());
+          return -1;
+       }
+
+       vector<string> vsFileName;
+       fn_vScanFiles(argv[1], vsFileName,"txt");
+
+       string sOutput = "";
+
+       // 加载
+       printf("分析文章（Total %d）...\n",vsFileName.size());
+
+       for(int i=0; i<vsFileName.size(); i++) {
+          string sContent;
+          gfn_bReadFile(vsFileName[i].c_str(), sContent);
+          const char* sSummary = DS_SingleDoc(sContent.c_str());
+          printf("[1]本篇文章的摘要是SingleDoc：%s \n", sSummary);
+
+          char szSummary[1024] = {0};
+          const char* sRes = DS_SingleDocE(szSummary,sContent.c_str());
+          printf("[2]本篇文章的摘要是SingleDocE：%s \n, [3]%s\n",
+sRes,szSummary);
+       }
+       //const char* DS_SingleDoc(const char *sText, float fSumRate=0.00,
+int iSumLen=250);
+       DS_Exit();
+}
+Output
+
+1.2 DS_Exit
+
+Exit the program and free all resources and destroy all working buffer used
+in Summary.
+void DS_Exit();
+|Routine      |Required Header  |
+|DS_Exit      |<LJSummary.h>    |
+
+
+Return Value
+none.
+Parameters
+none
+Remarks
+The DS_Exit function must be invoked while stopping the system and make no
+more operation. And call DS_Exit() function to restart Summary.
+Example
+int main(int argc,char* argv[])
+{
+       if(!DS_Init("",GBK_CODE))
+       {
+          printf("sErrorMsg : %s \n", DS_GetLastErrMsg());
+          return -1;
+       }
+
+       vector<string> vsFileName;
+       fn_vScanFiles(argv[1], vsFileName,"txt");
+
+       string sOutput = "";
+
+       // 加载
+       printf("分析文章（Total %d）...\n",vsFileName.size());
+
+       for(int i=0; i<vsFileName.size(); i++) {
+          string sContent;
+          gfn_bReadFile(vsFileName[i].c_str(), sContent);
+          const char* sSummary = DS_SingleDoc(sContent.c_str());
+          printf("[1]本篇文章的摘要是SingleDoc：%s \n", sSummary);
+
+          char szSummary[1024] = {0};
+          const char* sRes = DS_SingleDocE(szSummary,sContent.c_str());
+          printf("[2]本篇文章的摘要是SingleDocE：%s \n, [3]%s\n",
+sRes,szSummary);
+       }
+       //const char* DS_SingleDoc(const char *sText, float fSumRate=0.00,
+int iSumLen=250);
+       DS_Exit();
+}
+Output
+
+1.3 DS_SingleDoc
+
+
+const char* DS_SingleDoc(const char *sText, float fSumRate=0.00, int
+iSumLen=250);
+
+|Routine            |Required Header|
+|CLUS_SetParameter  |<LJSummary.h>  |
+
+
+Return Value
+Return summary string. Otherwise return NULL.
+Parameters
+sText:  [IN] document content
+fSumRate:   [IN] the percentage of the document’s summary
+iSumLen:  [IN] document summary of the limited length
+Remarks
+Generation of single document summarization.
+Example
+int main(int argc,char* argv[])
+{
+       if(!DS_Init("",GBK_CODE))
+       {
+          printf("sErrorMsg : %s \n", DS_GetLastErrMsg());
+          return -1;
+       }
+
+       vector<string> vsFileName;
+       fn_vScanFiles(argv[1], vsFileName,"txt");
+
+       string sOutput = "";
+
+       // 加载
+       printf("分析文章（Total %d）...\n",vsFileName.size());
+
+       for(int i=0; i<vsFileName.size(); i++) {
+          string sContent;
+          gfn_bReadFile(vsFileName[i].c_str(), sContent);
+          const char* sSummary = DS_SingleDoc(sContent.c_str());
+          printf("[1]本篇文章的摘要是SingleDoc：%s \n", sSummary);
+
+          char szSummary[1024] = {0};
+          const char* sRes = DS_SingleDocE(szSummary,sContent.c_str());
+          printf("[2]本篇文章的摘要是SingleDocE：%s \n, [3]%s\n",
+sRes,szSummary);
+       }
+       //const char* DS_SingleDoc(const char *sText, float fSumRate=0.00,
+int iSumLen=250);
+       DS_Exit();
+}
+Output
+
+
+
+1.4 DS_SingleDocE
+
+
+
+const   char*   DS_SingleDocE(char   *sResult,const   char   *sText,   float
+fSumRate=0.00, int iSumLen=250);
+|Routine            |Required      |
+|                   |Header        |
+|DS_SingleDocE      |<LJSummary.h> |
+
+
+Return Value
+Return summary string. Otherwise return NULL.
+Parameters
+sResult: [OUT] document summary string
+sText:  [IN] document content
+fSumRate:   [IN] the percentage of the document’s summary
+iSumLen:  [IN] document summary of the limited length
+
+Remarks
+Generation of single document summarization.
+Example
+int main(int argc,char* argv[])
+{
+       if(!DS_Init("",GBK_CODE))
+       {
+          printf("sErrorMsg : %s \n", DS_GetLastErrMsg());
+          return -1;
+       }
+
+       vector<string> vsFileName;
+       fn_vScanFiles(argv[1], vsFileName,"txt");
+
+       string sOutput = "";
+
+       // 加载
+       printf("分析文章（Total %d）...\n",vsFileName.size());
+
+       for(int i=0; i<vsFileName.size(); i++) {
+          string sContent;
+          gfn_bReadFile(vsFileName[i].c_str(), sContent);
+          const char* sSummary = DS_SingleDoc(sContent.c_str());
+          printf("[1]本篇文章的摘要是SingleDoc：%s \n", sSummary);
+
+          char szSummary[1024] = {0};
+          const char* sRes = DS_SingleDocE(szSummary,sContent.c_str());
+          printf("[2]本篇文章的摘要是SingleDocE：%s \n, [3]%s\n",
+sRes,szSummary);
+       }
+       //const char* DS_SingleDoc(const char *sText, float fSumRate=0.00,
+int iSumLen=250);
+       DS_Exit();
+}
+Output
+
+1.5 DS_GetLastErrMsg
+
+const char* DS_GetLastErrMsg();
+|Routine               |Required     |
+|                      |Header       |
+|DS_GetLastErrMsg      |<LJSummary.h>|
+
+
+Return Value
+Return the lastest error msg.
+
+Parameters
+NULL
+Remarks
+
+Example
+int main(int argc,char* argv[])
+{
+       if(!DS_Init("",GBK_CODE))
+       {
+          printf("sErrorMsg : %s \n", DS_GetLastErrMsg());
+          return -1;
+       }
+
+       vector<string> vsFileName;
+       fn_vScanFiles(argv[1], vsFileName,"txt");
+
+       string sOutput = "";
+
+       // 加载
+       printf("分析文章（Total %d）...\n",vsFileName.size());
+
+       for(int i=0; i<vsFileName.size(); i++) {
+          string sContent;
+          gfn_bReadFile(vsFileName[i].c_str(), sContent);
+          const char* sSummary = DS_SingleDoc(sContent.c_str());
+          printf("[1]本篇文章的摘要是SingleDoc：%s \n", sSummary);
+
+          char szSummary[1024] = {0};
+          const char* sRes = DS_SingleDocE(szSummary,sContent.c_str());
+          printf("[2]本篇文章的摘要是SingleDocE：%s \n, [3]%s\n",
+sRes,szSummary);
+       }
+       //const char* DS_SingleDoc(const char *sText, float fSumRate=0.00,
+int iSumLen=250);
+       DS_Exit();
+}
+Output
+
+
+
+
+
+2  Summary运行环境
+
+   1. 可以支持Windows、Linux、FreeBSD等多种环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q1: Linux调用libSummary.so的时候，链接不上库
+
+例如执行示例程序结果如下：
+[root@localhost linux_c_sample]# ./test
+./test: error while loading shared  libraries:  libSummary.so:  cannot  open
+shared object file: No such file or directory
+Answer:
+应当设置系统的LD_LIBRARY_PATH，即：export LD_LIBRARY_PATH=./
+并且请保证在本目录也有libNLPIR.so
+
+Q2: Summary组件初始化老是失败
+
+Answer:
+请您保证summary.user文件未过期，另外可参考“20***.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+

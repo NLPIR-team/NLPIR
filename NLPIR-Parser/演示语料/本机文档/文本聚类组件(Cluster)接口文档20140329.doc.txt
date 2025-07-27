@@ -1,0 +1,563 @@
+﻿
+
+
+
+
+
+                       文本聚类组件(Cluster) 接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+For    the    latest    information    about     NLPIR,     please     visit
+Http://ICTCLAS.nlpir.org/
+  Document Information
+
+
+                                    目录
+
+
+文本聚类组件(Cluster) 接口文档   1
+
+
+目录   3
+
+
+0. 文本聚类组件(又名Cluster）简介    4
+
+
+1．C＋＋接口  5
+
+
+   1.1 CLUS_Init 5
+
+
+   1.2 CLUS_Exit()  6
+
+
+   1.3 CLUS_SetParameter  7
+
+
+   1.4 CLUS_AddContent 8
+
+
+   1.5 CLUS_AddFile 10
+
+
+   1.6 CLUS_GetLatestResult   11
+
+
+   1.7 CLUS_CleanData  12
+
+
+   1.8 CLUS_GetLastErrMsg 13
+
+
+2  Cluster运行环境  14
+
+
+3 常见问题（FAQ）   15
+
+
+   Q1: Linux调用libLJCluster.so的时候，链接不上库    15
+
+
+   Q2: LJCluster系统初始化老是失败  15
+
+
+4 作者简介    16
+
+
+
+
+
+   文本聚类组件(又名Cluster）简介
+
+    文本聚类（Text
+clustering）文档聚类主要是依据著名的聚类假设：同类的文档相似度较大，而不同类
+的文档相似度较小。作为一种无监督的机器学习方法，聚类由于不
+需要训练过程，以及不需要预先对文档手工标注类别，因此具有一定的灵活性和较高的
+自动化处理能力，已经成为对文本信息进行有效地组织、摘要和导航的重要手
+段，为越来越多的研究人员所关注。
+    自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取Clu
+ster组件的最新版本，并欢迎您关注张华平博士的新浪微博 @ICTCLAS张华平博士
+交流。1P_bR$vk0 自然语言处理与信息检索共享平台1H9^+}NE*W;^
+自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+[pic]
+        6b;t.P s@)\J0然语言处理与信息检索共享平台-l3?3v"Z#X|{t#A!d Z
+                            图1：文本聚类功能展示
+                      自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 CLUS_Init
+
+Init the analyzer and prepare necessary data for Cluster according the
+configure file.
+bool CLUS_Init(const char *sDefaultPath,const char *sLicenseCode=0);
+|Routine      |Required Header  |
+|CLUS_Init    |<LJCluster.h>    |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sDefaultPath: Initial Directory Path, where file userfilterword.txt and
+Data directory stored.  the default value is 0, it indicates the initial
+directory is current working directory path
+const char* sLicenceCode: licence coding of input string,
+Remarks
+The CLUS_Init function must be invoked before any operation with Cluster.
+The whole system need call the function only once before starting Cluster.
+When stopping the system and make no more operation, Cluster_Exit should be
+invoked to destroy all working buffer. Any operation will fail if init do
+not succeed.
+CLUS_Init fails mainly because of two reasons: 1) Required data is
+incompatible or missing 2) userfilterword.txt file missing or invalid
+parameters. Moreover, you could learn more from the log file 2014****.log
+in the current directory.
+Example
+int main()
+{
+    if(!CLUS_Init("./Data/Cluster"))
+    {
+       printf("分类模块初始化失败\n");
+       return -1;
+    }
+
+    CLUS_CleanData();
+    CLUS_SetParameter(3, 2);
+    char  sText[100] =
+"中华人民共和国正式成立的时间是1949.10.1，代表人名正式当家作主的日子到了";
+    CLUS_AddContent(sText, sText);
+
+    string sResult;
+    CLUS_GetLatestResult("Result.xml");
+
+    gfn_bReadFile("Result.xml", sResult);
+    gfn_vReplaceSubstr(sResult, "\n", "\r\n");
+
+
+    printf("sResult : %s \n",sResult.c_str());
+    CLUS_Exit();
+    return 0;
+}
+Output
+
+1.2 CLUS_Exit()
+
+Exit the program and free all resources and destroy all working buffer used
+in Cluster.
+void CLUS_Exit();
+|Routine      |Required Header  |
+|CLUS_Exit    |<LJCluster.h>    |
+
+
+Return Value
+none.
+Parameters
+none
+Remarks
+The CLUS_Exit function must be invoked while stopping the system and make
+no more operation. And call CLUS_Exit() function to restart Cluster.
+Example
+int main()
+{
+    if(!CLUS_Init("./Data/Cluster"))
+    {
+       printf("分类模块初始化失败\n");
+       return -1;
+    }
+
+    CLUS_CleanData();
+    CLUS_SetParameter(3, 2);
+    char  sText[100] =
+"中华人民共和国正式成立的时间是1949.10.1，代表人名正式当家作主的日子到了";
+    CLUS_AddContent(sText, sText);
+
+    string sResult;
+    CLUS_GetLatestResult("Result.xml");
+
+    gfn_bReadFile("Result.xml", sResult);
+    gfn_vReplaceSubstr(sResult, "\n", "\r\n");
+
+
+    printf("sResult : %s \n",sResult.c_str());
+    CLUS_Exit();
+    return 0;
+}
+Output
+
+1.3 CLUS_SetParameter
+
+Set the parameter.
+bool CLUS_SetParameter(int nMaxClus, int nMaxDoc);
+|Routine            |Required Header|
+|CLUS_SetParameter  |<LJCluster.h>  |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+Int nMaxClus:  Maximum  number of classes which output
+Int nMaxDoc:   Maximum  number of document which output inner each class
+Remarks
+This function must be invoked before other functions int the process,or
+the default parameters were 2000;parameter is greater,more system
+memory,processing speed is slower, class and documents in the class  have
+been sorted according to the importance and timeliness.
+Example
+int main()
+{
+    if(!CLUS_Init("./Data/Cluster"))
+    {
+       printf("分类模块初始化失败\n");
+       return -1;
+    }
+
+    CLUS_CleanData();
+    CLUS_SetParameter(3, 2);
+    char  sText[100] =
+"中华人民共和国正式成立的时间是1949.10.1，代表人名正式当家作主的日子到了";
+    CLUS_AddContent(sText, sText);
+
+    string sResult;
+    CLUS_GetLatestResult("Result.xml");
+
+    gfn_bReadFile("Result.xml", sResult);
+    gfn_vReplaceSubstr(sResult, "\n", "\r\n");
+
+
+    printf("sResult : %s \n",sResult.c_str());
+    CLUS_Exit();
+    return 0;
+}
+Output
+
+
+
+1.4 CLUS_AddContent
+
+
+Additional content.
+
+bool CLUS_AddContent(const char *sText, const char* sSignature);
+|Routine            |Required      |
+|                   |Header        |
+|CLUS_AddContent    |<LJCluster.h> |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sText: [IN] The Text content[The string which the last character is \0]
+sSignature: [IN] The unique identifier [The string which the last character
+is \0]
+
+Remarks
+This function can be performed repeatedly before the result is printed
+in the process
+Example
+int main()
+{
+    if(!CLUS_Init("./Data/Cluster"))
+    {
+       printf("分类模块初始化失败\n");
+       return -1;
+    }
+
+    CLUS_CleanData();
+    CLUS_SetParameter(3, 2);
+    char  sText[100] =
+"中华人民共和国正式成立的时间是1949.10.1，代表人名正式当家作主的日子到了";
+    CLUS_AddContent(sText, sText);
+
+    string sResult;
+    CLUS_GetLatestResult("Result.xml");
+
+    gfn_bReadFile("Result.xml", sResult);
+    gfn_vReplaceSubstr(sResult, "\n", "\r\n");
+
+
+    printf("sResult : %s \n",sResult.c_str());
+    CLUS_Exit();
+    return 0;
+}
+Output
+
+1.5 CLUS_AddFile
+
+bool CLUS_AddFile(const char *sFileName, const char* sSignature);
+|Routine               |Required     |
+|                      |Header       |
+|CLUS_AddFile          |<LJCluster.h>|
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+
+Parameters
+sFileName: [IN] a full path of the file
+sSignature: [IN] The unique identifier [The string which the last character
+is \0]
+Remarks
+This function can be performed repeatedly before the result is printed
+in the process
+Example
+int main()
+{
+    if(!CLUS_Init("./Data/Cluster"))
+    {
+       const char* sMsg = CLUS_GetLastErrMsg();
+       printf("分类模块初始化失败: %s\n",sMsg);
+       return -1;
+    }
+
+    CLUS_CleanData();
+    CLUS_SetParameter(3, 2);
+    char  sText[100] =
+"中华人民共和国正式成立的时间是1949.10.1，代表人名正式当家作主的日子到了";
+    CLUS_AddFile("旅游业已成为西部地区的重要产业.txt", "旅游业");
+
+    string sResult;
+    CLUS_GetLatestResult("Result.xml");
+    gfn_bReadFile("Result.xml", sResult);
+    gfn_vReplaceSubstr(sResult, "\n", "\r\n");
+    printf("sResult : %s \n",sResult.c_str());
+    CLUS_Exit();
+    return 0;
+}
+Output
+
+1.6 CLUS_GetLatestResult
+
+Print the result.
+bool CLUS_GetLatestResult(const char* sXmlFileName);
+
+|Routine            |Required      |
+|                   |Header        |
+|CLUS_GetLatestResul|<LJCluster.h> |
+|t                  |              |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sXmlFileName: [OUT]  XML file name;
+Remarks
+Output clustering content to XML file;
+Example
+   int main()
+   {
+       if(!CLUS_Init("./Data/Cluster"))
+       {
+          printf("分类模块初始化失败\n");
+          return -1;
+       }
+
+
+       CLUS_CleanData();
+       CLUS_SetParameter(3, 2);
+       char  sText[100] =
+"中华人民共和国正式成立的时间是1949.10.1，代表人名正式当家作主的日子到了";
+       CLUS_AddContent(sText, sText);
+
+
+       string sResult;
+       CLUS_GetLatestResult("Result.xml");
+       gfn_bReadFile("Result.xml", sResult);
+       gfn_vReplaceSubstr(sResult, "\n", "\r\n");
+       printf("sResult : %s \n",sResult.c_str());
+       CLUS_Exit();
+       return 0;
+   }
+Output
+
+1.7 CLUS_CleanData
+
+Clean history data .
+void CLUS_CleanData();
+
+|Routine            |Required      |
+|                   |Header        |
+|CLUS_CleanData     |<LJCluster.h> |
+
+
+Return Value
+NULL.
+Parameters
+NULL
+Remarks
+Clean all history data
+Example
+   int main()
+   {
+       if(!CLUS_Init("./Data/Cluster"))
+       {
+          printf("分类模块初始化失败\n");
+          return -1;
+       }
+
+
+       CLUS_CleanData();
+       CLUS_SetParameter(3, 2);
+       char  sText[100] =
+"中华人民共和国正式成立的时间是1949.10.1，代表人名正式当家作主的日子到了";
+       CLUS_AddContent(sText, sText);
+
+
+       string sResult;
+       CLUS_GetLatestResult("Result.xml");
+       gfn_bReadFile("Result.xml", sResult);
+       gfn_vReplaceSubstr(sResult, "\n", "\r\n");
+       printf("sResult : %s \n",sResult.c_str());
+       CLUS_Exit();
+       return 0;
+   }
+Output
+
+1.8 CLUS_GetLastErrMsg
+
+
+const char* CLUS_GetLastErrMsg();
+
+|Routine            |Required      |
+|                   |Header        |
+|CLUS_GetLastErrMsg |<LJCluster.h> |
+
+
+Return Value
+The lastest error information.
+Parameters
+NULL
+Remarks
+Get the latest error information.
+Example
+int main()
+{
+    if(!CLUS_Init("./Data/Cluster"))
+    {
+       const char* sMsg = CLUS_GetLastErrMsg();
+       printf("分类模块初始化失败: %s\n",sMsg);
+       return -1;
+    }
+    CLUS_Exit();
+    return 0;
+}
+Output
+
+
+
+
+
+2  Cluster运行环境
+
+   1. 可以支持Windows、Linux、FreeBSD等多种环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q1: Linux调用libLJCluster.so的时候，链接不上库
+
+例如执行示例程序结果如下：
+[root@localhost linux_c_sample]# ./test
+./test: error while loading shared libraries: libLJCluster.so:  cannot  open
+shared object file: No such file or directory
+Answer:
+应当设置系统的LD_LIBRARY_PATH，即：export LD_LIBRARY_PATH=./
+并且请保证在本目录也有libNLPIR.so
+
+Q2: LJCluster系统初始化老是失败
+
+Answer:
+请您保证在您的Data目录中包含有userfilterword.txt，并且cluster.user文件未过期
+，另外可参考“20***.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+

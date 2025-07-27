@@ -1,0 +1,363 @@
+﻿
+
+
+
+
+
+              细粒度情感分析组件(LJSentimentAnalysis) 接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+For    the    latest    information    about     NLPIR,     please     visit
+Http://ICTCLAS.nlpir.org/
+
+
+                                    目录
+
+
+细粒度情感分析组件(LJSentimentAnalysis) 接口文档  1
+
+
+目录   3
+
+
+0.  细粒度情感分析组件(又名LJSentimentAnalysis）简介 4
+
+
+1．C＋＋接口  5
+
+
+   1.1 LJST_Inits   5
+
+
+   1.2 LJST_Exits   6
+
+
+   1.3 LJST_GetFileSent   7
+
+
+2  LJSentimentAnalysis运行环境   8
+
+
+3 常见问题（FAQ）   10
+
+
+   Q1: Linux调用libLJSentimentAnalysis.so的时候，链接不上库    10
+
+
+   Q2: LJSentimentAnalysis组件初始化老是失败  10
+
+
+4 作者简介    11
+
+
+
+
+
+   细粒度情感分析组件(又名LJSentimentAnalysis）简介
+
+   中文情感词汇本体库是大连理工大学信息检索研究室在林鸿飞教授的指导下经过全体
+教研室成员的努力整理和标注的一个中文本体资源。该资源从不同角度描述一个中文词
+汇或者短语，包括词语词性种类、情感类别、情感强度及极性等信息。
+   中文情感词汇本体的情感分类体系是在国外比较有影响的Ekman的6大类情感分类体系
+的基础上构建的。在Ekman的基础上，词汇本体加入情感类别“好”对褒义情感进行了更细
+致的划分。最终词汇本体中的情感共分为7大类21小类。
+   构造该资源的宗旨是在情感计算领域，为中文文本情感分析和倾向性分析提供一个便
+捷可靠的辅助手段。中文情感词汇本体可以用于解决多类别情感分类的问题，同时也可
+以用于解决一般的倾向性分析的问题。
+   自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取Key
+Extract组件的最新版本，并欢迎您关注张华平博士的新浪微博 @ICTCLAS张华平博士
+交流。1P_bR$vk0 自然语言处理与信息检索共享平台1H9^+}NE*W;^
+自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+
+
+
+
+
+
+
+
+
+                      自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 LJST_Inits
+
+Init the analyzer and prepare necessary data for LJST according the
+configure file.
+int LJST_Inits(const char *path, int encode, const char*sLicenceCode=0);
+
+|Routine      |Required Header   |
+|LJST_Inits   |<                 |
+|             |LJSentimentAnalysi|
+|             |s.h>              |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+sDataPath: Initial Directory Path, where Data directory stored.  the
+default value is 0, it indicates the initial directory is current working
+directory path
+int encoding: 默认为 GBK_CODE (GBK encoding), 也能是 UTF8_CODE (UTF8
+encoding) 和 BIG5_CODE (BIG5 encoding).
+char* sLicenceCode: license code, special use for some commercial users.
+Other users ignore the argument
+Remarks
+The LJST_Inits function must be invoked before any operation with
+LJSentimentAnalysis. You can use the [userdict.txt] youself to import user
+dict or user [userdict.txt] that we offer ,The whole system need call the
+function only once before starting LJSentimentAnalysis. When stopping the
+system and make no more operation, LJST_Inits should be invoked to destroy
+all working buffer. Any operation will fail if init do not succeed.
+LJST_Inits fails mainly because of two reasons: 1) Required data is
+incompatible or missing 2) invalid parameters. Moreover, you could learn
+more from the log file 2014****.log in the current directory.
+Example
+int main(int argc, char* argv[])
+{
+
+    //初始化
+    int values = LJST_Inits("",GBK_CODE);
+    if(!values)
+    {
+       printf("初始化失败！\n");
+       return -1;
+    }
+
+    char szRes[40] = {0};
+    bool bResult= LJST_GetFileSent("./Input/test.txt", szRes);
+    if(!bResult)
+    {
+       printf("get feel info failed!\n");
+       return -1;
+    }
+    printf("本篇文章的情感类型是: %s\n", szRes);
+
+    LJST_Exits();
+    system("pause");
+    return 0;
+}
+ Output
+
+1.2 LJST_Exits
+
+Exit the program and free all resources and destroy all working buffer used
+in LJSentimentAnalysis.
+void LJST_Exits();
+|Routine      |Required Header   |
+|LJST_Exits   |<                 |
+|             |LJSentimentAnalysi|
+|             |s.h>              |
+
+
+Return Value
+Return true if succeed,or return false.
+Parameters
+none
+Remarks
+The LJST_Exits function must be invoked while stopping the system and make
+no more operation. And call LJST_Exits  function to restart
+LJSentimentAnalysis.
+Example
+int main(int argc, char* argv[])
+{
+
+    //初始化
+    int values = LJST_Inits("",GBK_CODE);
+    if(!values)
+    {
+       printf("初始化失败！\n");
+       return -1;
+    }
+
+    char szRes[40] = {0};
+    bool bResult= LJST_GetFileSent("./Input/test.txt", szRes);
+    if(!bResult)
+    {
+       printf("get feel info failed!\n");
+       return -1;
+    }
+    printf("本篇文章的情感类型是: %s\n", szRes);
+
+    LJST_Exits();
+    system("pause");
+    return 0;
+}
+Output
+
+1.3 LJST_GetFileSent
+
+
+bool LJST_GetFileSent(const char* lpszFilename, char* szRes);
+
+|Routine            |Required Header     |
+|LJST_GetFileSent   |<                   |
+|                   |LJSentimentAnalysis.|
+|                   |h>                  |
+
+
+Return Value
+Return true if succeed,or return false.
+Parameters
+lpszFilename:  [IN] file name with directory or not;
+   情感词宏定义
+   #define EMOTION_HAPPY 0                                    //乐
+   #define EMOTION_GOOD  EMOTION_HAPPY+1                 //好
+   #define EMOTION_ANGER EMOTION_HAPPY+2                 //怒
+   #define EMOTION_SORROW EMOTION_HAPPY+3               //哀
+   #define EMOTION_FEAR EMOTION_HAPPY+4                   //惧
+   #define EMOTION_EVIL EMOTION_HAPPY+5                    //恶
+   #define EMOTION_SURPRISE EMOTION_HAPPY+6               //惊
+szRes:   [OUT] file sentiment value with weight.
+for example: output: EMOTION_SORROW/22
+Remarks
+Get sentiment value from file.
+Example
+int main(int argc, char* argv[])
+{
+
+    //初始化
+    int values = LJST_Inits("",GBK_CODE);
+    if(!values)
+    {
+       printf("初始化失败！\n");
+       return -1;
+    }
+
+    char szRes[40] = {0};
+    bool bResult= LJST_GetFileSent("./Input/test.txt", szRes);
+    if(!bResult)
+    {
+       printf("get feel info failed!\n");
+       return -1;
+    }
+    printf("本篇文章的情感类型是: %s\n", szRes);
+
+    LJST_Exits();
+    system("pause");
+    return 0;
+}
+Output
+
+
+
+
+
+
+
+2  LJSentimentAnalysis运行环境
+
+   1. 可以支持Windows、Linux、FreeBSD等多种环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q1: Linux调用libLJSentimentAnalysis.so的时候，链接不上库
+
+例如执行示例程序结果如下：
+[root@localhost linux_c_sample]# ./test
+./test: error while loading shared libraries:  libLJSentimentAnalysis  t.so:
+cannot open shared object file: No such file or directory
+Answer:
+应当设置系统的LD_LIBRARY_PATH，即：export LD_LIBRARY_PATH=./
+并且请保证在本目录也有libNLPIR.so
+
+Q2: LJSentimentAnalysis组件初始化老是失败
+
+Answer:
+请您保证NLPIR.user文件未过期，另外可参考“20***.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+

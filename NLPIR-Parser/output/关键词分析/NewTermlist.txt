@@ -1,0 +1,5 @@
+﻿Word	Part-Of-Speech	Weight	Frequency
+class name	n_new	3.36	10
+分类体系	n_new	2.50	3
+可以用于	n_new	2.00	2
+自动提取	n_new	1.62	4

@@ -1,0 +1,283 @@
+﻿
+
+
+
+
+实体抽取/n_new 及/cc 情感/n 正负/n 度/qv 分析/vn 组件/n 
+
+
+接口/n 文档/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[/wkz pic/n ]/wky pic/n ]/wky http/n :/wm ICTCLAS.nlpir.org/n //wp @/wp ICTCLAS/x 张华平/nr 博士/n 
+2012-12/t 
+
+
+目录/n 
+
+
+实体抽取/n_new 及/cc 情感/n 正负/n 度/qv 分析/vn 组件/n     1/m 
+
+
+接口/n 文档/n     1/m 
+
+
+目录/n       3/m 
+
+
+0./m   实体抽取/n_new 组件/n 简介/n   4/m 
+
+
+1．C＋＋/x 接口/n     5/m 
+
+
+1.1/m   DE/nz _/n Init/x       5/m 
+
+
+1.2/m   DE/nz _/n Exit/a (/wkz )/wky   7/m 
+
+
+1.3/m DE_ParseDoc/n 8/m 
+
+1.4/m CLUS_AddContent/n 11/m 
+
+1.5/m DE_GetLastErrMsg/n 12/m 
+
+2/m     DocExtrator/n 运行/vn 环境/n   13/m 
+
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky       14/m 
+
+
+Q1/x :/wm   Linux/x 调用/v libDocExtrator.so/x 的/ude1 时候/n ，/wd 链接/n_new 不/d 上/vf 库/n     14/m 
+
+
+Q2/x :/wm   DocExtractor/x 系统/n 初始化/v 老是/d 失败/vi       14/m 
+
+
+4/m   作者/n 简介/n         15/m 
+
+
+
+
+
+实体抽取/n_new 组件/n 简介/n 
+
+实体抽取/n_new （/wkz Entity/vd 
+Extrator/n ）/wky 实体/n 关系/n 抽取/v 是/vshi 指/v 自动/d 识别/v 包含/v 在/p 自然/n 语言/n 文本/n 中/f 的/ude1 两/m 个/q 实体/n 之间/f 的/ude1 预定/vn 义/ng 
+关系/n 。/wj 所谓/v 实体/n 是/vshi 指/v 文本/n 中/f 包含/v 的/ude1 特定/b 事实/n 信息/n ,/wd 如/v 人物/n 、/wn 组织/n 机构/n 、/wn 地理/n 位置/n 等/udeng 。/wj 实体/n 
+关系/n 抽取/v 在/p 数据/n 结构/n 化/v 、/wn 信息检索/n_new 和/cc 自动/d 应答/vi 系统/n 等/udeng 领域/n 有着/v 重要/a 的/ude1 研究/vn 意义/n 。/wj 美国/nsf 国/n 
+家/q 标准/n 技术/n 研究院/n (/wkz NIST/x )/wky 在/p 2008年/t 组织/v 的/ude1 自动/b 内容/n 抽取/v (/wkz ACE/n ,/wd AutomaticContentExtract/x 
+ion/n )/wky 评测/vn 中/f 定义/v 了/ule 7/m 种/q 实体/n 关系/n 类型/n 和/cc 18/m 种子/n 类型/n 。/wj 
+
+
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n //w J/n   nHB/x -/wp O/nz (/wkz b1/x [/wkz 
+Y/o X/n 
+
+
+
+
+访问/v http/x :/wm //w //w ictclas.nlpir.org/x //w (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky ，/wd 您/rr 可以/v 获取/v Doc/nz 
+Extrator/n 组/n 件/q 的/ude1 最新/a 版本/n ，/wd 并/cc 欢迎/v 您/rr 关注/v 张华平/nr 博士/n 的/ude1 新浪/ntz 微/ag 博/ag   @/wp ICTCLAS/x 张华平/nr 博士/n 
+交流/vn 。/wj 1P/x _/n bR/x $/wp vk0/x   自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 1H9/x ^/wp +/wp }/wp NE/nz */wp W/n ;/wf ^/wp 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 5H8/x ]/wky   |/wp U/o   ]/wky 4`/m s/vshi "/wyz Q/n [/wkz pic/n ]/wky ^/wp 
+
+[/wkz pic/n ]/wky 6b/x ;/wf t.P/x   s/xe @/wp )/wky \/n J0/x 然/rz 语言/n 处理/vn 与/cc 信息检索/n_new 共享/vn 平台/n -/wp l3/x ?/ww 3v/x "/wyz Z/n #/wp X/n |/wp {/wp t/rzt #/wp A/rzv !/wt d/o   Z/n 
+图/n 1/m ：/wm 文档/n 正负/b 情感/n 分析/vn 功能/n 展示/v 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n -/wp r/o 
+UM/n "/w c3u/n pic/n ]/wky 
+1．C＋＋/x 接口/n 
+
+
+1.1/m DE_Init/n 
+Init/n the/rzt analyzer/v and/c prepare/v necessary/a data/n for/p DocExtrator/n according/p the/rzt configure/n file/n ./wj int/n DE_Init/n (/wkz const/n char/n sPath/n =/wp 0/m ,/wd int/n nEncoding/n =/wp GBK_CODE/n ,/wd const/n char/n */w sLicenseCode/n =/wp 0/m )/wky |/w Routine/n Required/vd Header/a |/w DE_Init/n DocExtractor.h/n >/wky 
+
+Return/value Value/n Return/value true/a if/c init/n succeed/v ./wj Otherwise/d return/value false/a ./wj Parameters/n sDefaultPath/n :/wm Initial/directory Directory/n Path/n ,/wd where/ry Data/n directory/n stored/n ./wj the/rzt default/n value/n is/vshi 0/m ,/wd it/rzt indicates/v the/rzt initial/directory directory/n is/vshi current/directory working/vi directory/n path/n nEncoding/n :/wm Encoding/n of/p input/n string/n ,/wd default/n is/vshi GBK_CODE/n GBK/n encoding/n )/wky and/c it/rzt can/vyou be/vshi set/vd with/p UTF8_CODE/n UTF8/n encoding/n )/wky and/c BIG5_CODE/n BIG5/n encoding/n )/wky ./wj const/n char/n */w sLicenceCode/n :/wm licence/n coding/n of/p input/n string/n ,/wd Remarks/n The/rzt DE_Init/n function/n must/vyou be/vshi invoked/vd before/p any/rzv operation/n with/p DocExtrator/n ./wj The/rzt whole/a system/n need/n call/v the/rzt function/n only/d once/d before/p starting/v DocExtrator/n ./wj When/ry stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ,/wd DE_Exit/n should/vyou be/vshi invoked/vd to/pba destroy/v all/a working/vi buffer/n ./wj Any/rzv operation/n will/vyou fail/v if/c init/n do/vyou not/d succeed/v ./wj DE_Init/n fails/v mainly/d because/c of/p two/m reasons/n :/wm 1/m )/wky Required/vd data/n is/vshi incompatible/a or/c missing/a 2/m )/wky invalid/n parameters/n ./wj Moreover/d ,/wd you/rzt could/vyou learn/v more/cc from/p the/rzt log/n file/n 2014/m */w .log/n in/p the/rzt current/directory directory/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+//w //w   初始化/v 
+if/c (/wkz DE_Init/n (/wkz UTF8_CODE/n )/wky printf/n (/wkz %s\n/n "/w DE_GetLastErrMsg/n (/wkz return/value 1/m ;/wf }/wp 
+
+//w //w   扫描/vn 
+int/n nRealCount/n ;/wf vector/n </wkz string/n >/wky vsFileName/n ;/wf fn_vScanFiles/n (/wkz argv/n [/wkz 1/m ]/wky vsFileName/n ,/wd txt/n "/w 
+//wp //wp fn_vScanFiles/n (/wkz std/n :/wm string/n &/w sFolderName/n ,/wd std/n :/wm vector/n </wkz std/n :/wm string/n >/wky vsFileName/n ,/wd tstring/n &/w sFilter/n )/wky string/n sOutput/n 
+//w //w   加载/nr2 
+printf/x (/wkz "/wyz 分析/vn 文章/n （/wkz Total/a   %d/x ）/wky ./wj ./wj ./wj \/n n/o "/wyy ,/wd vsFileName.size/x (/wkz )/wky )/wky ;/wf 
+int/n i/rzt ;/wf _tDocExtractResult/n result/n ;/wf for/p (/wkz i/rzt =/wp 0/m ;/wf i/rzt </wkz vsFileName.size/n (/wkz i/rzt +/wp string/n sContent/n ;/wf gfn_bReadFile/n (/wkz vsFileName/n [/wkz i/rzt ]/wky .c_str/n (/wkz sContent/n )/wky 
+DE_ParseDoc/n (/wkz sContent.c_str/n (/wkz result/n ,/wd true/a )/wky LOCATION_REQUIRED/n |/w ORGANIZATION_/n REQUIRED/vd |/w PERSON_REQUIRED/n printf/x (/wkz "/wyz -------------------------------------/wp 
+\/n n/o 文件/n :/wm %s/x \/n n/o 内容/n ：/wm \/n n%s/x \/n n/o \/n n/o ------------------------------------/wp 
+\/n n/o 分析/vn 结果/n ：/wm \/n n/o "/wyz ,/wd   vsFileName/x [/wkz i/rzt ]/wky ./wj c/o _/n str/d (/wkz )/wky ,/wd   sContent.c/x _/n str/d (/wkz )/wky )/wky ;/wf 
+printf/n (/wkz Person/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_PERSON/n ]/wky printf/n (/wkz Loc/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_LOCATION/n ]/wky printf/n (/wkz Org/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_ORGANIZATION/n ]/wky printf/n (/wkz Abstract/a list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_ABSTRACT/n ]/wky printf/n (/wkz Keyword/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_KEYWORD/n ]/wky printf/n (/wkz Media/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_MEDIA/n ]/wky printf/n (/wkz Author/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_AUTHOR/n ]/wky printf/n (/wkz Country/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_COUNTRY/n ]/wky 
+printf/n (/wkz Province/v :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_PROVINCE/n ]/wky printf/n (/wkz Food/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_FOOD/n ]/wky 
+printf/n (/wkz Transportation/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_TRANS/n ]/wky printf/n (/wkz Apps/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_APPS/n ]/wky printf/n (/wkz SENTIMENT/n :/wm %d\n/n "/w result.sentiment_score/n )/wky fTime/n =/wp float/v )/wky lTime/n //wp float/v )/wky CLOCKS_PER_SEC/n ;/wf Time/n cost/n printf/n (/wkz Size/n =/wp %d/n Bytes\n/n "/w sContent.size/n (/wkz }/wp 
+
+//w //w   退出/v 
+DE_Exit/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.2/m DE_Exit/n (/wkz 
+Exit/a the/rzt program/n and/c free/a all/a resources/n and/c destroy/v all/a working/vi buffer/n used/vd in/p DocExtrator/n ./wj void/n DE_Exit/n (/wkz |/w Routine/n Required/vd Header/a |/w DE_Exit/n DocExtractor.h/n >/wky 
+
+Return/value Value/n none/d ./wj Parameters/n none/d Remarks/n The/rzt DE_Exit/n function/n must/vyou be/vshi invoked/vd while/c stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ./wj And/c call/v DE_Exit/n function/n to/pba restart/n DocExtrator/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+//w //w   初始化/v 
+if/c (/wkz DE_Init/n (/wkz UTF8_CODE/n )/wky printf/n (/wkz %s\n/n "/w DE_GetLastErrMsg/n (/wkz return/value 1/m ;/wf }/wp 
+
+//w //w   扫描/vn 
+int/n nRealCount/n ;/wf vector/n </wkz string/n >/wky vsFileName/n ;/wf fn_vScanFiles/n (/wkz argv/n [/wkz 1/m ]/wky vsFileName/n ,/wd txt/n "/w 
+//wp //wp fn_vScanFiles/n (/wkz std/n :/wm string/n &/w sFolderName/n ,/wd std/n :/wm vector/n </wkz std/n :/wm string/n >/wky vsFileName/n ,/wd tstring/n &/w sFilter/n )/wky string/n sOutput/n 
+//w //w   加载/nr2 
+printf/x (/wkz "/wyz 分析/vn 文章/n （/wkz Total/a   %d/x ）/wky ./wj ./wj ./wj \/n n/o "/wyy ,/wd vsFileName.size/x (/wkz )/wky )/wky ;/wf 
+int/n i/rzt ;/wf _tDocExtractResult/n result/n ;/wf for/p (/wkz i/rzt =/wp 0/m ;/wf i/rzt </wkz vsFileName.size/n (/wkz i/rzt +/wp string/n sContent/n ;/wf gfn_bReadFile/n (/wkz vsFileName/n [/wkz i/rzt ]/wky .c_str/n (/wkz sContent/n )/wky 
+DE_ParseDoc/n (/wkz sContent.c_str/n (/wkz result/n ,/wd true/a )/wky LOCATION_REQUIRED/n |/w ORGANIZATION_/n REQUIRED/vd |/w PERSON_REQUIRED/n printf/x (/wkz "/wyz -------------------------------------/wp 
+\/n n/o 文件/n :/wm %s/x \/n n/o 内容/n ：/wm \/n n%s/x \/n n/o \/n n/o ------------------------------------/wp 
+\/n n/o 分析/vn 结果/n ：/wm \/n n/o "/wyz ,/wd   vsFileName/x [/wkz i/rzt ]/wky ./wj c/o _/n str/d (/wkz )/wky ,/wd   sContent.c/x _/n str/d (/wkz )/wky )/wky ;/wf 
+printf/n (/wkz Person/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_PERSON/n ]/wky printf/n (/wkz Loc/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_LOCATION/n ]/wky printf/n (/wkz Org/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_ORGANIZATION/n ]/wky printf/n (/wkz Abstract/a list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_ABSTRACT/n ]/wky printf/n (/wkz Keyword/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_KEYWORD/n ]/wky printf/n (/wkz Media/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_MEDIA/n ]/wky printf/n (/wkz Author/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_AUTHOR/n ]/wky printf/n (/wkz Country/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_COUNTRY/n ]/wky 
+printf/n (/wkz Province/v :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_PROVINCE/n ]/wky printf/n (/wkz Food/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_FOOD/n ]/wky 
+printf/n (/wkz Transportation/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_TRANS/n ]/wky printf/n (/wkz Apps/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_APPS/n ]/wky printf/n (/wkz SENTIMENT/n :/wm %d\n/n "/w result.sentiment_score/n )/wky fTime/n =/wp float/v )/wky lTime/n //wp float/v )/wky CLOCKS_PER_SEC/n ;/wf Time/n cost/n printf/n (/wkz Size/n =/wp %d/n Bytes\n/n "/w sContent.size/n (/wkz }/wp 
+
+//w //w   退出/v 
+DE_Exit/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.3/m DE_ParseDoc/n 
+Generation/n of/p single/a document/n summarization/vf ./wj bool/n DE_ParseDoc/n (/wkz const/n char/n sText/n ,/wd _tDocExtractResult/n &/w result/n ,/wd bool/n bSummaryNeeded/n =/wp true/a ,/wd unsigned/a int/n nFuncRequired/n =/wp ALL_REQUIRED/n )/wky |/w Routine/n Required/vd Header/a |/w |/w DE_ParseDoc/n DocExtractor.h/n |/w |/wp                                       |/wp >/wp                             |/wp 
+
+
+Return/value Value/n Return/value true/a if/c init/n succeed/v ./wj Otherwise/d return/value false/a ./wj Parameters/n sText/n :/wm document/n content/n result/n :/wm document/n extract/v result/n typedef/n struct/n _tDocExtractResult/n {/wkz Char/n entity_list/n [/wkz DOC_EXTRACT_TYPE_COUNT/n ]/wky DOC_EXTRACT_TYPE_MAX_LENGTH/n +/wp 1/m ]/wky //wp //wp personal/a name/n list/n ,/wd delimiter/v with/p int/x   sentiment/n _/n score/n ;/wf //w //w 情感/n 极性/n 判/v 分/v 
+}/wky DOC_EXTRAXT_RESULT/n ;/wf bSummaryNeeded/n :/wm whether/c or/c not/d calculated/vd summary/n Remarks/n Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+//w //w   初始化/v 
+if/c (/wkz DE_Init/n (/wkz UTF8_CODE/n )/wky printf/n (/wkz %s\n/n "/w DE_GetLastErrMsg/n (/wkz return/value 1/m ;/wf }/wp 
+
+//w //w   扫描/vn 
+int/n nRealCount/n ;/wf vector/n </wkz string/n >/wky vsFileName/n ;/wf fn_vScanFiles/n (/wkz argv/n [/wkz 1/m ]/wky vsFileName/n ,/wd txt/n "/w string/n sOutput/n 
+//w //w   加载/nr2 
+printf/x (/wkz "/wyz 分析/vn 文章/n （/wkz Total/a   %d/x ）/wky ./wj ./wj ./wj \/n n/o "/wyy ,/wd vsFileName.size/x (/wkz )/wky )/wky ;/wf 
+int/n i/rzt ;/wf _tDocExtractResult/n result/n ;/wf for/p (/wkz i/rzt =/wp 0/m ;/wf i/rzt </wkz vsFileName.size/n (/wkz i/rzt +/wp string/n sContent/n ;/wf gfn_bReadFile/n (/wkz vsFileName/n [/wkz i/rzt ]/wky .c_str/n (/wkz sContent/n )/wky 
+DE_ParseDoc/n (/wkz sContent.c_str/n (/wkz result/n ,/wd true/a )/wky LOCATION_REQUIRED/n |/w ORGANIZATION_/n REQUIRED/vd |/w PERSON_REQUIRED/n printf/x (/wkz "/wyz -------------------------------------/wp 
+\/n n/o 文件/n :/wm %s/x \/n n/o 内容/n ：/wm \/n n%s/x \/n n/o \/n n/o ------------------------------------/wp 
+\/n n/o 分析/vn 结果/n ：/wm \/n n/o "/wyz ,/wd   vsFileName/x [/wkz i/rzt ]/wky ./wj c/o _/n str/d (/wkz )/wky ,/wd   sContent.c/x _/n str/d (/wkz )/wky )/wky ;/wf 
+printf/n (/wkz Person/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_PERSON/n ]/wky printf/n (/wkz Loc/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_LOCATION/n ]/wky printf/n (/wkz Org/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_ORGANIZATION/n ]/wky printf/n (/wkz Abstract/a list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_ABSTRACT/n ]/wky printf/n (/wkz Keyword/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_KEYWORD/n ]/wky printf/n (/wkz Media/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_MEDIA/n ]/wky printf/n (/wkz Author/n list/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_AUTHOR/n ]/wky printf/n (/wkz Country/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_COUNTRY/n ]/wky 
+printf/n (/wkz Province/v :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_PROVINCE/n ]/wky printf/n (/wkz Food/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_FOOD/n ]/wky 
+printf/n (/wkz Transportation/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_TRANS/n ]/wky printf/n (/wkz Apps/n :/wm %s\n/n "/w result.entity_list/n [/wkz DOC_EXTRACT_TYPE_APPS/n ]/wky printf/n (/wkz SENTIMENT/n :/wm %d\n/n "/w result.sentiment_score/n )/wky fTime/n =/wp float/v )/wky lTime/n //wp float/v )/wky CLOCKS_PER_SEC/n ;/wf Time/n cost/n printf/n (/wkz Size/n =/wp %d/n Bytes\n/n "/w sContent.size/n (/wkz }/wp 
+
+//w //w   退出/v 
+DE_Exit/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+
+
+1.4/m CLUS_AddContent/n 
+
+get/v Positive/a or/c negative/a emotion/n in/p the/rzt document/n ./wj 
+int/n DE_ComputeSentimentDoc/n (/wkz const/n char/n sText/n )/wky |/wp Routine/n                         |/wp Required/n             |/wp 
+|/wp                                       |/wp Header/a                 |/wp 
+|/w DE_ComputeSentiment/n |/w DocExtractor/n ./wj |/wp Doc/nz                                 |/wp h/o >/wp                         |/wp 
+
+
+Return/value Value/n the/rzt emotional/a value/n about/p the/rzt document/n ./wj Parameters/n sText/n :/wm IN/p ]/wky Document/n content/n 
+Remarks/n This/r function/n can/vyou be/vshi performed/n repeatedly/d before/p the/rzt result/n is/vshi printed/vd in/p the/rzt process/n Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+//w //w   初始化/v 
+if/c (/wkz DE_Init/n (/wkz UTF8_CODE/n )/wky printf/n (/wkz %s\n/n "/w DE_GetLastErrMsg/n (/wkz return/value 1/m ;/wf }/wp 
+//w //w   扫描/vn 
+int/n nRealCount/n ;/wf vector/n </wkz string/n >/wky vsFileName/n ;/wf fn_vScanFiles/n (/wkz argv/n [/wkz 1/m ]/wky vsFileName/n ,/wd txt/n "/w string/n sOutput/n printf/x (/wkz "/wyz 分析/vn 文章/n （/wkz Total/a   %d/x ）/wky ./wj ./wj ./wj \/n n/o "/wyy ,/wd vsFileName.size/x (/wkz )/wky )/wky ;/wf 
+int/n i/rzt ;/wf for/p (/wkz i/rzt =/wp 0/m ;/wf i/rzt </wkz vsFileName.size/n (/wkz i/rzt +/wp string/n sContent/n ;/wf gfn_bReadFile/n (/wkz vsFileName/n [/wkz i/rzt ]/wky .c_str/n (/wkz sContent/n )/wky int/n nSent/n DE_ComputeSentimentDoc/n (/wkz sContent.c_str/n (/wkz printf/n (/wkz SENTIMENT/n :/wm %d\n/n "/w nSent/n )/wky }/wp 
+
+//w //w   退出/v 
+DE_Exit/n (/wkz }/wp 
+Output/n 
+
+1.5/m DE_GetLastErrMsg/n 
+const/n char/n */w DE_GetLastErrMsg/n (/wkz |/wp Routine/n                               |/wp Required/n           |/wp 
+|/wp                                             |/wp Header/a               |/wp 
+|/w DE_GetLastErrMsg/n DocExtractor/n |/w |/wp                                             |/wp ./wj h/o >/wp                     |/wp 
+
+
+Return/value Value/n Return/value the/rzt lastest/n error/n msg/n ./wj 
+Parameters/n NULL/a Remarks/n This/r function/n can/vyou be/vshi performed/n repeatedly/d before/p the/rzt result/n is/vshi printed/vd in/p the/rzt process/n Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+//w //w   初始化/v 
+if/c (/wkz DE_Init/n (/wkz UTF8_CODE/n )/wky printf/n (/wkz %s\n/n "/w DE_GetLastErrMsg/n (/wkz return/value 1/m ;/wf }/wp 
+//w //w   扫描/vn 
+int/n nRealCount/n ;/wf vector/n </wkz string/n >/wky vsFileName/n ;/wf fn_vScanFiles/n (/wkz argv/n [/wkz 1/m ]/wky vsFileName/n ,/wd txt/n "/w string/n sOutput/n printf/x (/wkz "/wyz 分析/vn 文章/n （/wkz Total/a   %d/x ）/wky ./wj ./wj ./wj \/n n/o "/wyy ,/wd vsFileName.size/x (/wkz )/wky )/wky ;/wf 
+int/n i/rzt ;/wf for/p (/wkz i/rzt =/wp 0/m ;/wf i/rzt </wkz vsFileName.size/n (/wkz i/rzt +/wp string/n sContent/n ;/wf gfn_bReadFile/n (/wkz vsFileName/n [/wkz i/rzt ]/wky .c_str/n (/wkz sContent/n )/wky int/n nSent/n DE_ComputeSentimentDoc/n (/wkz sContent.c_str/n (/wkz printf/n (/wkz SENTIMENT/n :/wm %d\n/n "/w nSent/n )/wky }/wp 
+
+//w //w   退出/v 
+DE_Exit/n (/wkz }/wp 
+Output/n 
+
+
+
+2/m     DocExtrator/n 运行/vn 环境/n 
+
+1./m   可以/v 支持/v Windows/n 、/wn Linux/x 、/wn FreeBSD/x 等/udeng 多种/m 环境/n ，/wd 支持/v 普通/a PC/x 机器/n 即可/v 运行/vi 。/wj 
+2./m   支持/v GBK/x //w UTF/x -/wp 8/m //w BIG5/x 
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky 
+
+
+Q1/x :/wm   Linux/x 调用/v libDocExtrator.so/x 的/ude1 时候/n ，/wd 链接/n_new 不/d 上/vf 库/n 
+
+例如/v 执行/v 示例/n 程序/n 结果/n 如下/vi ：/wm 
+[/wkz root@localhost/xe linux_c_sample/n ]/wky ./wj //wp test/n ./wj //wp test/n :/wm error/n while/c loading/vd shared/v libraries/n :/wm libDocExtrator.so/n :/wm cannot/n open/a shared/v object/n file/n :/wm No/rzt such/p file/n or/c directory/n Answer/n :/wm 应当/v 设置/v 系统/n 的/ude1 LD/a _/n LIBRARY/n _/n PATH/n ，/wd 即/v ：/wm export/n   LD/a _/n LIBRARY/n _/n PATH/n =/wp ./wj //w 
+并且/c 请/v 保证/v 在/p 本/rz 目录/n 也/d 有/vyou libNLPIR.so/x 
+
+Q2/x :/wm   DocExtractor/x 系统/n 初始化/v 老是/d 失败/vi 
+
+Answer/n :/wm 请/v 您/rr 保证/v NLPIR.user/x 文件/n 未/d 过期/vi ，/wd 另外/c 可/v 参考/v “/wyz 20***./m err/v ”/wyy 文件/n 查看/v 错误/a 信息/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4/m   作者/n 简介/n 
+
+
+
+
+
+
+
+
+
+
+
+张华平/nr   博士/n   副教授/n   硕/ag 导/vg 
+北京理工大学/nt 计算机/n 学院/n   院长/n 助理/n 
+北京理工大学/nt 网络/n 搜索/vn 挖掘/vn 与/cc 安全实验室/n_new   主任/n 
+地址/n ：/wm 北京海淀区中关村/ns 南/b 大街/n 5/m 号/q   100081/m 
+电话/n ：+/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf 网站/n :/wm   http/x :/wm //w //w ictclas.nlpir.org/x   (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky 
+博客/nz :/wm http/x :/wm //w //w hi.baidu.com/x //w drkevinzhang/x //w 
+微/ag 博/ag :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+
+
+Dr./a   Kevin/x   Zhang/x     (/wkz 张华平/nr ，/wd Zhang/x   Hua/x -/wp Ping/n )/wky 
+Associate/n Professor/nr1 ,/wd Graduate/n Supervisor/n Dean/nz Assistant/n ,/wd School/n of/p Computer/n Director/nr1 ,/wd Web/n Search/n ,/wd Mining/nz and/c Security/n Lab/n ./wj Beijing/nsf Institute/n of/p Technology/n Add/v :/wm No.5/n ,/wd South/nz St./n ,/wd Zhongguancun/n ,/wd Haidian/n District/n ,/wd Beijing/nsf ,/wd P.R.C/n PC/n :/wm 100081/m Tel/x :/wm   +/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf Website/n :/wm http/n :/wm ictclas.nlpir.org/n Natural/n Language/n Processing/n and/c Information/n Retrieval/a Sharing/vi Platform/n )/wky Blog/n :/wm http/n :/wm hi.baidu.com/n //wp drkevinzhang/n //wp Twitter/vi :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+[/wkz pic/n ]/wky pic/n ]/wky 

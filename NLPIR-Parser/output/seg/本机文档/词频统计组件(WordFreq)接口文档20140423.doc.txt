@@ -1,0 +1,215 @@
+﻿
+
+
+
+
+词频统计/n_new 组件/n (/wkz LJWordFreq/x )/wky   接口/n 文档/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[/wkz pic/n ]/wky pic/n ]/wky http/n :/wm ICTCLAS.nlpir.org/n //wp @/wp ICTCLAS/x 张华平/nr 博士/n 
+2012-12/t 
+For/p the/rzt latest/a information/n about/p NLPIR/n ,/wd please/v visit/n Http/n :/wm ICTCLAS.nlpir.org/n //wp 
+
+目录/n 
+
+
+词频统计/n_new 组件/n (/wkz LJWordFreq/x )/wky   接口/n 文档/n         1/m 
+
+
+目录/n       2/m 
+
+
+0./m   词频统计/n_new 组件/n (/wkz 又/d 名/q LJWordFreq/x ）/wky 简介/n   3/m 
+
+
+1．C＋＋/x 接口/n     4/m 
+
+
+1.1/m LJWF_Inits/n 4/m 
+
+1.2/m LJWF_Exits/n 5/m 
+
+1.3/m LJWF_WordFreqOutput/n 6/m 
+
+2/m     LJWordFreq/x 运行/vn 环境/n     7/m 
+
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky       8/m 
+
+
+Q1/x :/wm   LJWordFreq/x 组件/n 初始化/v 老是/d 失败/vi   8/m 
+
+
+Q2/x :/wm   java/nz 获取/v xls/x 中/b 词频统计/n_new 结果/n 失败/vi         8/m 
+
+
+4/m   作者/n 简介/n         9/m 
+
+
+
+
+
+词频统计/n_new 组件/n (/wkz 又/d 名/q LJWordFreq/x ）/wky 简介/n 
+
+指/v 词/n 的/ude1 频率/n ,/wd 即/v 词/n 在/p 一定/b 的/ude1 语料/n 中/f 出现/v 的/ude1 次数/n 。/wj 词频/n 的/ude1 统计/vn 计算/vn 是/vshi 计算/v 语言学/n 的/ude1 重要/a 
+内容/n 之一/rz 。/wj ./wj ./wj ./wj 词频统计/n_new 的/ude1 应用/vn 范围/n 很/d 广/a ，/wd 它/rr 可以用于/n_new 某部/rz 著作/n 或/c 某/rz 人/n 的/ude1 全部/m 著作/n ，/wd 从而/c 
+揭示/v 作家/n 或/c 著作/n 的/ude1 用/p 词/n 特点/n 和/cc 语言/n 风格/n 。/wj 
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n //w J/n   nHB/x -/wp O/nz (/wkz b1/x [/wkz 
+Y/o X/n 
+
+
+
+
+访问/v http/x :/wm //w //w ictclas.nlpir.org/x //w (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky ，/wd 您/rr 可以/v 获取/v Key/n 
+Extract/v 组/n 件/q 的/ude1 最新/a 版本/n ，/wd 并/cc 欢迎/v 您/rr 关注/v 张华平/nr 博士/n 的/ude1 新浪/ntz 微/ag 博/ag   @/wp ICTCLAS/x 张华平/nr 博士/n 
+交流/vn 。/wj 1P/x _/n bR/x $/wp vk0/x   自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 1H9/x ^/wp +/wp }/wp NE/nz */wp W/n ;/wf ^/wp 
+[/wkz pic/n ]/wky 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/n 5H8/x ]/wky   |/wp U/o   ]/wky 4`/m s/vshi "/wyz Q/n [/wkz pic/n ]/wky ^/wp 
+
+图/n 1/m ：/wm 词频统计/n_new 组件/n 演示/vn 
+
+
+
+
+
+自然语言处理/n_new 与/cc 信息检索/n_new 共享/vn 平台/n -/wp r/o 
+UM/n "/w c3u/n pic/n ]/wky 
+1．C＋＋/x 接口/n 
+
+
+1.1/m LJWF_Inits/n 
+Init/n the/rzt analyzer/v and/c prepare/v necessary/a data/n for/p LJWFaccording/n the/rzt configure/n file/n ./wj int/n LJWF_Inits/n (/wkz const/n char/n path/n ,/wd int/n encode/v ,/wd const/n char/n */w sLicenceCode/n =/wp 0/m )/wky 
+|/w Routine/n Required/vd Header/a |/w LJWF_Inits/n LJWordFreq.h/n >/wky 
+
+Return/value Value/n Return/value non/u 0/m if/c init/n succeed/v ./wj Otherwise/d return/value lower/a 0/m ./wj Parameters/n sDataPath/n :/wm Initial/directory Directory/n Path/n ,/wd where/ry Data/n directory/n stored/n ./wj the/rzt default/n value/n is/vshi 0/m ,/wd it/rzt indicates/v the/rzt initial/directory directory/n is/vshi current/directory working/vi directory/n path/n int/x   encoding/n :/wm   默认/v 为/v   GBK/x _/n CODE/n   (/wkz GBK/x   encoding/n )/wky ,/wd   也/d 能/v 是/vshi   UTF8/x _/n CODE/n   (/wkz UTF8/x 
+encoding/n )/wky 和/n BIG5_CODE/n BIG5/n encoding/n )/wky ./wj char/n */w sLicenceCode/n :/wm license/n code/n ,/wd special/a use/n for/p some/rzv commercial/a users/n ./wj Other/rzs users/n ignore/v the/rzt argument/n Remarks/n The/rzt LJWF_Inits/n function/n must/vyou be/vshi invoked/vd before/p any/rzv operation/n with/p LJWordFreq/n ./wj The/rzt whole/a system/n need/n call/v the/rzt function/n only/d once/d before/p starting/v LJWordFreq/n ./wj When/ry stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ,/wd LJWF_Inits/n should/vyou be/vshi invoked/vd to/pba destroy/v all/a working/vi buffer/n ./wj Any/rzv operation/n will/vyou fail/v if/c init/n do/vyou not/d succeed/v ./wj LJWF_Inits/n fails/v mainly/d because/c of/p two/m reasons/n :/wm 1/m )/wky Required/vd data/n is/vshi incompatible/a or/c missing/a 2/m )/wky invalid/n parameters/n ./wj Moreover/d ,/wd you/rzt could/vyou learn/v more/cc from/p the/rzt log/n file/n 2014/m */w .log/n in/p the/rzt current/directory directory/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+if/c (/wkz LJWF/x _/n Inits/x (/wkz "/wyz "/wyy ,/wd 0)/m   </wp   0)/m 
+{/wp 
+printf/x (/wkz "/wyz 初始化失败/n_new \/n n/o "/wyy )/wky ;/wf 
+return/value 1/m ;/wf }/wp 
+
+if/c (/wkz !/wt LJWF/x _/n WordFreqOutput/x (/wkz "/wyz E/o :/wm \/n \/n LJParse/x \/n \/n 演示/vn 语料/n \/n \/n "/wyy ,/wd   "/wyz ./wj //w "/wyy )/wky )/wky 
+{/wp 
+printf/x (/wkz "/wyz 词频统计/n_new 失败/vn \/n n/o "/wyy )/wky ;/wf 
+return/value 1/m ;/wf }/wp 
+LJWF_Exits/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.2/m LJWF_Exits/n 
+Exit/a the/rzt program/n and/c free/a all/a resources/n and/c destroy/v all/a working/vi buffer/n used/vd in/p LJWordFreq/n ./wj void/n LJWF_Exits/n (/wkz |/w Routine/n Required/vd Header/a |/w LJWF_Exits/n LJWordFreq.h/n >/wky 
+
+Return/value Value/n NULL/a ./wj Parameters/n none/d Remarks/n The/rzt LJWF_Exits/n function/n must/vyou be/vshi invoked/vd while/c stopping/vi the/rzt system/n and/c make/v no/rzt more/cc operation/n ./wj And/c call/v LJWF_Exits/n function/n to/pba restart/n LJWordFreq/n ./wj Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+if/c (/wkz LJWF/x _/n Inits/x (/wkz "/wyz "/wyy ,/wd 0)/m   </wp   0)/m 
+{/wp 
+printf/x (/wkz "/wyz 初始化失败/n_new \/n n/o "/wyy )/wky ;/wf 
+return/value 1/m ;/wf }/wp 
+
+if/c (/wkz !/wt LJWF/x _/n WordFreqOutput/x (/wkz "/wyz E/o :/wm \/n \/n LJParse/x \/n \/n 演示/vn 语料/n \/n \/n "/wyy ,/wd   "/wyz ./wj //w "/wyy )/wky )/wky 
+{/wp 
+printf/x (/wkz "/wyz 词频统计/n_new 失败/vn \/n n/o "/wyy )/wky ;/wf 
+return/value 1/m ;/wf }/wp 
+LJWF_Exits/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+1.3/m LJWF_WordFreqOutput/n 
+
+bool/n LJWF_WordFreqOutput/n (/wkz const/n char/n */w lpszFilename/n ,/wd char/n */w DataPath/n )/wky 
+|/w Routine/n Required/vd Header/a |/w LJWF_WordFreqOutput/n |/w LJWordFreq.h/n >/wky 
+
+Return/value Value/n Return/value true/a if/c succeed/v ,/wd or/c return/value false/a ./wj Parameters/n lpszFilename/n :/wm IN/p ]/wky directory/n that/c process/n statistics/n of/p word/Part-Of-Speech frequency/n or/c not/d ;/wf DataPath/n :/wm OUT/pbei ]/wky directory/n that/c dictionary/n file/n Data/n ]/wky ./wj Remarks/n The/rzt dynamic/a library/n depends/v on/p NLPIR.dll/n or/c libNLPIR.so.and/n you/rzt will/vyou get/v the/rzt result/n from/p current/directory directory/n the/rzt directory/n “/w //wp output”/n you/rzt wil/n find/v three/m .xls/n file/n [/wkz Bigrams.xls/n ]/wky FreqSortByWord.xls/n ]/wky FreqTrans.xls/n ]/wky So/cc you/rzt will/vyou find/v the/rzt answer/n from/p this/r file/n ./wj The/rzt directory/n seg/n ]/wky include/v all/a file/n have/vyou been/vshi process/n by/p NLPIR_FileProcess/n ;/wf Example/n int/n main/a (/wkz int/n argc/n ,/wd char/n */w argv/n [/wkz {/wp 
+if/c (/wkz LJWF/x _/n Inits/x (/wkz "/wyz "/wyy ,/wd 0)/m   </wp   0)/m 
+{/wp 
+printf/x (/wkz "/wyz 初始化失败/n_new \/n n/o "/wyy )/wky ;/wf 
+return/value 1/m ;/wf }/wp 
+
+if/c (/wkz !/wt LJWF/x _/n WordFreqOutput/x (/wkz "/wyz E/o :/wm \/n \/n LJParse/x \/n \/n 演示/vn 语料/n \/n \/n "/wyy ,/wd   "/wyz ./wj //w "/wyy )/wky )/wky 
+{/wp 
+printf/x (/wkz "/wyz 词频统计/n_new 失败/vn \/n n/o "/wyy )/wky ;/wf 
+return/value 1/m ;/wf }/wp 
+LJWF_Exits/n (/wkz return/value 0/m ;/wf }/wp 
+Output/n 
+
+
+
+
+
+2/m     LJWordFreq/x 运行/vn 环境/n 
+
+1./m   目前/t 可以/v 支持/v Windows/n 环境/n ，/wd 支持/v 普通/a PC/x 机器/n 即可/v 运行/vi 。/wj 
+2./m   支持/v GBK/x //w UTF/x -/wp 8/m //w BIG5/x 
+
+3/m   常见/a 问题/n （/wkz FAQ/x ）/wky 
+
+
+Q1/x :/wm   LJWordFreq/x 组件/n 初始化/v 老是/d 失败/vi 
+
+Answer/n :/wm 请/v 您/rr 保证/v NLPIR.user/x 文件/n 未/d 过期/vi ，/wd 另外/c 可/v 参考/v “/wyz 20***./m err/v ”/wyy 文件/n 查看/v 错误/a 信息/n 
+
+Q2/x :/wm   java/nz 获取/v xls/x 中/b 词频统计/n_new 结果/n 失败/vi 
+
+Answer/n :/wm 请/v 您/rr 保证/v java/nz 的/ude1 LJWF/x _/n WordFreqOutput/x 接口/n 的/ude1 第一/m 个/q 参数/n 的/ude1 路径/n 不/d 是/vshi 中文/nz 路径/n ，/wd Java/nz 中/f S/vshi 
+tring/x 默认/v 是/vshi unicode/x 编码/n 格式/n ，/wd 传入/v 到/v 该/rz 接口/n 中/f 可能/v 无/v 法/n 访问/v 该/rz 路径/n ，/wd 另外/c 可/v 参考/v “/wyz 20*/m 
+*/wp */wp ./wj err/v ”/wyy 文件/n 查看/v 错误/a 信息/n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4/m   作者/n 简介/n 
+
+
+
+
+
+
+
+
+
+
+
+张华平/nr   博士/n   副教授/n   硕/ag 导/vg 
+北京理工大学/nt 计算机/n 学院/n   院长/n 助理/n 
+北京理工大学/nt 网络/n 搜索/vn 挖掘/vn 与/cc 安全实验室/n_new   主任/n 
+地址/n ：/wm 北京海淀区中关村/ns 南/b 大街/n 5/m 号/q   100081/m 
+电话/n ：+/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf 网站/n :/wm   http/x :/wm //w //w ictclas.nlpir.org/x   (/wkz 自然语言处理/n_new 与/cc 信息检索/n_new 共享/v 平/a 台/q )/wky 
+博客/nz :/wm http/x :/wm //w //w hi.baidu.com/x //w drkevinzhang/x //w 
+微/ag 博/ag :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+
+
+Dr./a   Kevin/x   Zhang/x     (/wkz 张华平/nr ，/wd Zhang/x   Hua/x -/wp Ping/n )/wky 
+Associate/n Professor/nr1 ,/wd Graduate/n Supervisor/n Dean/nz Assistant/n ,/wd School/n of/p Computer/n Director/nr1 ,/wd Web/n Search/n ,/wd Mining/nz and/c Security/n Lab/n ./wj Beijing/nsf Institute/n of/p Technology/n Add/v :/wm No.5/n ,/wd South/nz St./n ,/wd Zhongguancun/n ,/wd Haidian/n District/n ,/wd Beijing/nsf ,/wd P.R.C/n PC/n :/wm 100081/m Tel/x :/wm   +/wp 86-10-68918642/m 
+Email/n :/wm kevinzhang@bit.edu.cn/xe MSN/ntz :/wm pipy_zhang@msn.com/xe ;/wf Website/n :/wm http/n :/wm ictclas.nlpir.org/n Natural/n Language/n Processing/n and/c Information/n Retrieval/a Sharing/vi Platform/n )/wky Blog/n :/wm http/n :/wm hi.baidu.com/n //wp drkevinzhang/n //wp Twitter/vi :/wm   @/wp ICTCLAS/x 张华平/nr 博士/n 
+[/wkz pic/n ]/wky pic/n ]/wky 

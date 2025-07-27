@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<LJCluster-Result>
+
+<clusnum>2</clusnum>
+
+<clus id="1">
+	<feature>文本分类组件 组件 文本 抽取 本分 词频 </feature>
+	<docs num="2">
+		<doc>f:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\文本分类组件(Classifier)接口文档20140328.doc.txt</doc>
+		<doc>f:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\ReadMe.txt.txt</doc>
+	</docs>
+</clus>
+
+<clus id="2">
+	<feature>文本摘要组件 组件 文本 提取 摘要 </feature>
+	<docs num="2">
+		<doc>f:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\文本摘要组件(Summary)接口文档20140328.doc.txt</doc>
+		<doc>f:\NLPIR-team\NLPIR\NLPIR-Parser\演示语料\本机文档\ReadMe.txt.txt</doc>
+	</docs>
+</clus>
+
+</LJCluster-Result>

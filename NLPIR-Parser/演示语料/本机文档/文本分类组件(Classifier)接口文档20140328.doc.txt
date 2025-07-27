@@ -1,0 +1,569 @@
+﻿
+
+
+
+
+
+                      文本分类组件(Classifier) 接口文档
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pic][pic]
+                          http://ICTCLAS.nlpir.org/
+                             @ICTCLAS张华平博士
+                                   2012-12
+For    the    latest    information    about     NLPIR,     please     visit
+Http://ICTCLAS.nlpir.org/
+  Document Information
+
+
+                                    目录
+
+
+文本分类组件(Classifier) 接口文档    1
+
+
+目录   3
+
+
+0. 文本分类组件(又名Classifier）简介 4
+
+
+1．C＋＋接口  6
+
+
+   1.1 classifier_init 6
+
+
+   1.2 classifier_exit()  7
+
+
+   1.3 classifier_exec 9
+
+
+   1.4 classifier_exec_ext    11
+
+
+   1.5 classifier_detail  12
+
+
+   1.6 classifier_setsimthresh   14
+
+
+2  Classifier运行环境  15
+
+
+3 常见问题（FAQ）   16
+
+
+   Q1: Linux调用libLJClassifier.so的时候，链接不上库 16
+
+
+   Q2: LJClassifier系统初始化老是失败   16
+
+
+4 作者简介    16
+
+
+
+
+
+   文本分类组件(又名Classifier）简介
+
+    文本分类是指在给定的分类体系下,根据文语义元是统计语义方法中的原子,是不可分
+本的内容自动确定文本类别的过程.当前的文本割的最小单位,在文本分类中语义元是词
+；
+    文本分类一般包括了文本的表达、                      分类器的选择与训练、
+分类结果的评价与反馈等过程，其中文本的表达又可细分为文本预处理、索引和统计、
+特征抽取等步骤。文本分类系统的总体功能模块为:
+    （1） 预处理：将原始语料格式化为同一格式，便于后续的统一处理；
+    （2） 索引：将文档分解为基本处理单元，同时降低后续处理的开销；
+    （3） 统计：词频统计，项（单词、概念）与分类的相关概率；
+    （4） 特征抽取：从文档中抽取出反映文档主题的特征；
+    （5） 分类器：分类器的训练；
+    （6） 评价：分类器的测试结果分析
+
+
+    自然语言处理与信息检索共享平台/J nHB-O(b1[
+    Y
+    X
+
+
+
+
+
+访问http://ictclas.nlpir.org/(自然语言处理与信息检索共享平台)，您可以获取Cla
+ssifier组件的最新版本，并欢迎您关注张华平博士的新浪微博 @ICTCLAS张华平博士
+交流。1P_bR$vk0 自然语言处理与信息检索共享平台1H9^+}NE*W;^
+自然语言处理与信息检索共享平台5H8] |U ]4`s"Q[pic]^
+
+[pic]
+        6b;t.P s@)\J0然语言处理与信息检索共享平台-l3?3v"Z#X|{t#A!d Z
+                          图1：文本分类功能训练展示
+                                    [pic]
+
+
+
+
+         )O1pa[?]C-M(]&U0 自然语言处理与信息检索共享平台tO[?]RZ;]0e
+                        图2：文本分类功能语料分类展示
+                      自然语言处理与信息检索共享平台-r
+                                UM"c3u ][pic]
+
+1．C＋＋接口
+
+
+1.1 classifier_init
+
+Init the analyzer and prepare necessary data for NLPIR according the
+configure file.
+bool classifier_init(const char *conf="rulelist.xml",const
+char*sLicenceCode=NULL);
+|Routine      |Required Header  |
+|classifier_in|<LJClassifier.h> |
+|it           |                 |
+
+
+Return Value
+Return true if init succeed. Otherwise return false.
+Parameters
+conf: Initial Directory Path, where file Configure.xml and Data directory
+stored.  the default value is 0, it indicates the initial directory is
+current working directory path
+const char* sLicenceCode: slicence code ,default is NULL.
+Remarks
+The classifier_init function must be invoked before any operation with
+Classifier. The whole system need call the function only once before
+starting Classifier. When stopping the system and make no more operation,
+Classifier_Exit should be invoked to destroy all working buffer. Any
+operation will fail if init do not succeed.
+classifier_init fails mainly because of two reasons: 1) Required data is
+incompatible or missing 2) Configure file missing or invalid parameters.
+Moreover, you could learn more from the log file NLPIR.log in the default
+directory.
+Example
+#include "NLPIR.h"
+#include <stdio.h>
+#include <string.h>
+int main(int argc, char* argv[])
+{
+    if(!classifier_init("rulelist.xml")) {
+       printf("classifier_init failed!\n");
+       return 1;
+    }
+    stDoc d;
+    d.sTitle = "天翼定制手机天语E600";
+    d.sContent = "全球旅行必备:天翼定制手机天语E600 新浪 2011-9-26
+15:53手机——这项人们使用率最高的电子产品,其更新换代速度更是快得无法想象。那么
+对于我们消费者而言,应当如何选择呢?
+显然,频繁的换机是非常不划算的,更会增加生活开支,平白增添生活负担。因此,我们在
+购机之初就应当选择一款满足自身需求的手机。...";
+
+    d.sAuthor = "飞香";
+    d.sBoard = "69";
+    d.sDatatype = "论坛";
+    string sResult = classifier_exec(d);
+    printf("\n过滤结果： %s\n\n", sResult.c_str());
+    vector<string> vsItems;
+    gfn_bSplit(sResult.c_str(), vsItems, "\t");
+    for(int i=0; i<vsItems.size(); i++) {              //保存分类结果到内存
+       string sDetail = classifier_detail(vsItems[i].c_str());
+       printf("过滤理由： %s\n", sDetail.c_str());
+    }
+    classifier_exit();
+    printf("Please input enter to quit...");
+    getchar();
+    return 0;
+}
+Output
+
+1.2 classifier_exit()
+
+Exit the program and free all resources and destroy all working buffer used
+in Classifier.
+void classifier_exit();
+
+|Routine      |Required Header  |
+|classifier_ex|<LJClassifier.h> |
+|it           |                 |
+
+
+Return Value
+none.
+Parameters
+none
+Remarks
+The classifier_exit function must be invoked while stopping the system and
+make no more operation. And call classifier_exit() function to restart
+Classifier.
+Example
+#include "NLPIR.h"
+#include <stdio.h>
+#include <string.h>
+int main(int argc, char* argv[])
+{
+    if(!classifier_init("rulelist.xml")) {
+       printf("classifier_init failed!\n");
+       return 1;
+    }
+    stDoc d;
+    d.sTitle = "天翼定制手机天语E600";
+    d.sContent = "全球旅行必备:天翼定制手机天语E600 新浪 2011-9-26
+15:53手机——这项人们使用率最高的电子产品,其更新换代速度更是快得无法想象。那么
+对于我们消费者而言,应当如何选择呢?
+显然,频繁的换机是非常不划算的,更会增加生活开支,平白增添生活负担。因此,我们在
+购机之初就应当选择一款满足自身需求的手机。...";
+
+    d.sAuthor = "飞香";
+    d.sBoard = "69";
+    d.sDatatype = "论坛";
+    string sResult = classifier_exec(d);
+    printf("\n过滤结果： %s\n\n", sResult.c_str());
+    vector<string> vsItems;
+    gfn_bSplit(sResult.c_str(), vsItems, "\t");
+    for(int i=0; i<vsItems.size(); i++) {              //保存分类结果到内存
+       string sDetail = classifier_detail(vsItems[i].c_str());
+       printf("过滤理由： %s\n", sDetail.c_str());
+    }
+    classifier_exit();
+    printf("Please input enter to quit...");
+    getchar();
+    return 0;
+}
+Output
+
+1.3 classifier_exec
+
+classifies  the article structure of the input.
+const char* classifier_exec(stDoc& d, int iType=0);
+
+|Routine            |Required     |
+|                   |Header       |
+|classifier_exec    |<LJClassifier|
+|                   |.h>          |
+
+
+Return Value
+Topic categories, All are separated by an \t ,The class  name  ranking  from
+high to low according to confidence level.
+Parameters
+d: a point of article structure.
+typedef struct _stDoc {
+    string sTitle;
+    string sContent;
+    string sAuthor;
+    string sBoard;
+    string sDatatype;
+}stDoc;
+int itype :
+   iType=0: output class name, separated by an \t between the various
+classes, For example “要闻 敏感  诉讼”
+   iType=1: output class name and confidence level, separated by an \t
+between the various classes, separated by an “ ” between class name and
+weight, for example “要闻 1.00   敏感 0.95 诉讼 0.82”
+   Default: itype = 0
+Remarks
+The classifier_exec function works properly only if classifier_init
+succeeds.
+Example
+#include "NLPIR.h"
+#include <stdio.h>
+#include <string.h>
+int main(int argc, char* argv[])
+{
+    if(!classifier_init("rulelist.xml")) {
+       printf("classifier_init failed!\n");
+       return 1;
+    }
+    stDoc d;
+    d.sTitle = "天翼定制手机天语E600";
+    d.sContent = "全球旅行必备:天翼定制手机天语E600 新浪 2011-9-26
+15:53手机——这项人们使用率最高的电子产品,其更新换代速度更是快得无法想象。那么
+对于我们消费者而言,应当如何选择呢?
+显然,频繁的换机是非常不划算的,更会增加生活开支,平白增添生活负担。因此,我们在
+购机之初就应当选择一款满足自身需求的手机。...";
+
+    d.sAuthor = "飞香";
+    d.sBoard = "69";
+    d.sDatatype = "论坛";
+    string sResult = classifier_exec(d);
+    printf("\n过滤结果： %s\n\n", sResult.c_str());
+    vector<string> vsItems;
+    gfn_bSplit(sResult.c_str(), vsItems, "\t");
+    for(int i=0; i<vsItems.size(); i++) {              //保存分类结果到内存
+       string sDetail = classifier_detail(vsItems[i].c_str());
+       printf("过滤理由： %s\n", sDetail.c_str());
+    }
+    classifier_exit();
+    printf("Please input enter to quit...");
+    getchar();
+    return 0;
+}
+Output
+DataFile/RunLog.txt
+DataFile/ChnDict.dct
+InitSentiClfData is OK!
+Success in loading double-array!
+clfdata.WordNum=318615
+The size of trainset is 2
+The size of labelset is 2
+0   0
+InitTextClf is OK!
+1       E600 Completed!
+2       天翼定制手机天语 Completed!
+3       分割符号 Completed!
+
+过滤结果： 天语E600
+
+过滤理由： RULE0:
+SUBRULE1: E600 2        天翼定制手机天语 2
+
+
+1.4 classifier_exec_ext
+
+
+classifies  the article structure of the input，It is the 1.3 expansion
+.
+const char* classifier_exec_ext(const char* sTitle,const char*
+sContent,const char* sAuthor,const char* sBoard,const char* sDatatyp, int
+iType=0);
+|Routine            |Required      |
+|                   |Header        |
+|classifier_exec_ext|<LJClassifier.|
+|                   |h>            |
+
+
+Return Value
+Topic categories, All are separated by an \t ,The class  name  ranking  from
+high to low according to confidence level.
+Parameters
+sTitle: The Text title
+sContent: The Text content
+sAuthor: the Text Author
+sBoard:  The Text Board
+sDatatype:  The Text DataType
+int itype :
+   iType=0: output class name, separated by an \t between the various
+classes, For example “要闻 敏感  诉讼”
+   iType=1: output class name and confidence level, separated by an \t
+between the various classes, separated by an “ ” between class name and
+weight, for example “要闻 1.00   敏感 0.95 诉讼 0.82”
+   Default: itype = 0
+Remarks
+The classifier_exec_ext function works properly only if classifier_init
+succeeds.
+Example
+#include "NLPIR.h"
+#include <stdio.h>
+#include <string.h>
+int main(int argc, char* argv[])
+{
+    if(!classifier_init("rulelist.xml")) {
+       printf("classifier_init failed!\n");
+       return 1;
+    }
+    stDoc d;
+    d.sTitle = "天翼定制手机天语E600";
+    d.sContent = "全球旅行必备:天翼定制手机天语E600 新浪 2011-9-26
+15:53手机——这项人们使用率最高的电子产品,其更新换代速度更是快得无法想象。那么
+对于我们消费者而言,应当如何选择呢?
+显然,频繁的换机是非常不划算的,更会增加生活开支,平白增添生活负担。因此,我们在
+购机之初就应当选择一款满足自身需求的手机。...";
+
+    d.sAuthor = "飞香";
+    d.sBoard = "69";
+    d.sDatatype = "论坛";
+    string sResult = classifier_exec_ext(d.sTitle,d.sContent,d.sAuthor,
+d.sBoard, d.sDatatype);
+    printf("\n过滤结果： %s\n\n", sResult.c_str());
+    vector<string> vsItems;
+    gfn_bSplit(sResult.c_str(), vsItems, "\t");
+    for(int i=0; i<vsItems.size(); i++) {              //保存分类结果到内存
+       string sDetail = classifier_detail(vsItems[i].c_str());
+       printf("过滤理由： %s\n", sDetail.c_str());
+    }
+    classifier_exit();
+    printf("Please input enter to quit...");
+    getchar();
+    return 0;
+}
+Output
+
+1.5 classifier_detail
+
+const char* classifier_detail(const char *classname);
+|Routine               |Required     |
+|                      |Header       |
+|classifier_detail     |<LJClassifier|
+|                      |.h>          |
+
+
+Return Value
+Detailed results,for example:
+/*        RULE3:
+          SUBRULE1: 内幕 1
+          SUBRULE2: 股市 1 基金 3    股票 8
+          SUBRULE3: 书摘 2 */
+
+Parameters
+Const char* classname: Returns the class name
+Remarks
+The classifier_detail function works properly only if classifier_Init
+succeeds.
+For the current document, enter the class name, get the details.
+Example
+    if(!classifier_init("rulelist.xml")) {
+       printf("classifier_init failed!\n");
+       return 1;
+    }
+    stDoc d;
+    d.sTitle = "天翼定制手机天语E600";
+    d.sContent = "全球旅行必备:天翼定制手机天语E600 新浪 2011-9-26
+15:53手机——这项人们使用率最高的电子产品,其更新换代速度更是快得无法想象。那么
+对于我们消费者而言,应当如何选择呢?
+显然,频繁的换机是非常不划算的,更会增加生活开支,平白增添生活负担。因此,我们在
+购机之初就应当选择一款满足自身需求的手机。...";
+
+    d.sAuthor = "飞香";
+    d.sBoard = "69";
+    d.sDatatype = "论坛";
+    string sResult = classifier_exec(d);
+    printf("\n过滤结果： %s\n\n", sResult.c_str());
+    vector<string> vsItems;
+    gfn_bSplit(sResult.c_str(), vsItems, "\t");
+    for(int i=0; i<vsItems.size(); i++) {              //保存分类结果到内存
+       string sDetail = classifier_detail(vsItems[i].c_str());
+       printf("过滤理由： %s\n", sDetail.c_str());
+    }
+    classifier_exit();
+Output
+
+1.6 classifier_setsimthresh
+
+Set document similar .
+void classifier_setsimthresh(float fSim);
+
+|Routine            |Required      |
+|                   |Header        |
+|classifier_setsimth|<LJClassifier.|
+|resh               |h>            |
+
+
+Return Value
+NULL.
+Parameters
+fSim: Similarity;
+Remarks
+The classifier_setsimthresh function works properly only if classifier_Init
+succeeds.
+Example
+    if(!classifier_init("rulelist.xml")) {
+       printf("classifier_init failed!\n");
+       return 1;
+    }
+    float fSim = theDlg->m_SliderSim.GetPos()/100.0;
+    classifier_setsimthresh(fSim);
+   classifier_exit();
+Output
+
+
+
+
+
+2  Classifier运行环境
+
+   1. 可以支持Windows、Linux、FreeBSD等多种环境，支持普通PC机器即可运行。
+   2. 支持GBK/UTF-8/BIG5
+
+3 常见问题（FAQ）
+
+
+Q1: Linux调用libLJClassifier.so的时候，链接不上库
+
+例如执行示例程序结果如下：
+[root@localhost linux_c_sample]# ./test
+./test: error while loading  shared  libraries:  libLJClassifier.so:  cannot
+open shared object file: No such file or directory
+Answer:
+应当设置系统的LD_LIBRARY_PATH，即：export LD_LIBRARY_PATH=./
+并且请保证在本目录也有libNLPIR.so
+
+Q2: LJClassifier系统初始化老是失败
+
+Answer:
+请您保证在您的本目录中包含有Datafile目录，并且classifier.user文件未过期，另外
+可参考“20***.err”文件查看错误信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4 作者简介
+
+
+
+
+
+
+
+
+
+
+
+张华平 博士 副教授 硕导
+北京理工大学计算机学院 院长助理
+北京理工大学网络搜索挖掘与安全实验室 主任
+地址：北京海淀区中关村南大街5号 100081
+电话：+86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+网站: http://ictclas.nlpir.org (自然语言处理与信息检索共享平台)
+博客:http://hi.baidu.com/drkevinzhang/
+微博: @ICTCLAS张华平博士
+
+
+Dr. Kevin Zhang  (张华平，Zhang Hua-Ping)
+Associate Professor, Graduate Supervisor
+Dean Assistant, School of Computer
+Director, Web Search,Mining and Security Lab.
+Beijing Institute of Technology
+Add: No.5, South St.,Zhongguancun,Haidian District,Beijing,P.R.C  PC:100081
+Tel: +86-10-68918642
+Email:kevinzhang@bit.edu.cn
+MSN:  pipy_zhang@msn.com;
+Website: http://ictclas.nlpir.org (Natural Language Processing and
+Information Retrieval Sharing Platform)
+Blog:http://hi.baidu.com/drkevinzhang/
+Twitter: @ICTCLAS张华平博士
+[pic][pic]
+
